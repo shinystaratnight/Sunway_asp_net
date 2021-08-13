@@ -1,0 +1,189 @@
+﻿{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Complete Booking",
+    "type": "object",
+    "description": "Widget that renders the button at the bottom of the payment page that complete a booking",
+    "properties": {
+        "Title": {
+            "type": "string"
+        },
+        "Message": {
+            "type": "string"
+        },
+        "Button": {
+            "type": "object",
+            "title": "Button",
+            "description": "Button that is clicked to make the booking.",
+            "properties": {
+                "Text": {
+                    "default": "Book now",
+                    "type": "string"
+                }
+            }
+        },
+        "Warnings": {
+            "type": "object",
+            "title": "Warnings",
+            "description": "Configure warning messages that are displayed when required data is not valid",
+            "properties": {
+                "MandatoryFields": {
+                    "default": "Please ensure that all required fields are set. Incorrect fields have been highlighted.",
+                    "description": "Warning displayed at the top of the page when the user does not fill in all mandatory fields.",
+                    "type": "string"
+                },
+                "FailedPayment": {
+                    "default": "Sorry the payment has failed. Please try again or use an alternative card.",
+                    "description": "Warning displayed at the top of the page when the payment fails.",
+                    "type": "string"
+                },
+                "FailedBooking": {
+                    "default": "Sorry we could not confirm your booking.",
+                    "description": "Warning displayed at the top of the page when the booking fails.",
+                    "type": "string"
+                },
+                "Guest": {
+                    "type": "object",
+                    "title": "Guest",
+                    "description": "Warnings for guest and lead guest validation",
+                    "properties": {
+                        "Title": {
+                            "type": "string",
+                            "default": "No title set",
+                            "description": "Warning displayed when the user does not enter a title for a guest or lead guest.",
+                        },
+                        "FirstName": {
+                            "default": "No first name set",
+                            "description": "Warning displayed when the user does not enter a first name for a guest or lead guest.",
+                            "type": "string"
+                        },
+                        "LastName": {
+                            "default": "No last name set",
+                            "description": "Warning displayed when the user does not enter a last name for a guest or lead guest.",
+                            "type": "string"
+                        },
+                        "DateOfBirth": {
+                            "default": "No date of birth set",
+                            "description": "Warning displayed when the user does not enter a date of birth for a guest when one is required.",
+                            "type": "string"
+                        },
+                        "Address": {
+                            "default": "No address set",
+                            "description": "Warning displayed when the user does not enter an address for a lead guest",
+                            "type": "string"
+                        },
+                        "City": {
+                            "default": "No city set",
+                            "description": "Warning displayed when the user does not enter a city for a lead guest",
+                            "type": "string"
+                        },
+                        "Postcode": {
+                            "default": "No postcode set",
+                            "description": "Warning displayed when the user does not enter a postcode for a lead guest",
+                            "type": "string"
+                        },
+                        "Country": {
+                            "default": "No country set",
+                            "description": "Warning displayed when the user does not enter a country for a lead guest",
+                            "type": "string"
+                        },
+                        "Phone": {
+                            "default": "Invalid phone number",
+                            "description": "Warning displayed when the user does not enter a valid phone number for a lead guest",
+                            "type": "string"
+                        },
+                        "Email": {
+                            "default": "Invalid Email",
+                            "description": "Warning displayed when the user does not enter a valid email for a lead guest",
+                            "type": "string"
+                        }
+                    }
+                },
+                "PaymentDetails": {
+                    "type": "object",
+                    "title": "Payment Details",
+                    "description": "Warnings for payment details",
+                    "properties": {
+                        "CardType": {
+                            "type": "string",
+                            "default": "No card type set",
+                            "description": "Warning displayed when the user does not select a card type."
+                        },
+                        "CardHoldersName": {
+                            "type": "string",
+                            "default": "No card holder name set",
+                            "description": "Warning displayed when the user does not enter a card holder name."
+                        },
+                        "CardNumber": {
+                            "default": "No card number set",
+                            "description": "Warning displayed when the user does not enter a card number.",
+                            "type": "string"
+                        },
+                        "ExpiryDate": {
+                            "default": "Invalid expiry date",
+                            "description": "Warning displayed when the user enters an invalid expiry date",
+                            "type": "string"
+                        },
+                        "SecurityNumber": {
+                            "default": "No security number set",
+                            "description": "Warning displayed when the user does not enter a security number.",
+                            "type": "string"
+                        }
+                    }
+                },
+                "CancellationTerms": {
+                    "default": "The Cancellation terms has not been accepted.",
+                    "description": "Warning displayed when the user does not accept the cancellation Terms and Conditions.",
+                    "type": "string"
+                },
+                "Errata": {
+                    "default": "The Errata has not been accepted.",
+                    "description": "Warning displayed when the user does not accept the errata Terms and Conditions.",
+                    "type": "string"
+                },
+                "TermsAndConditions": {
+                    "default": "Terms and Conditions have not been accepted.",
+                    "description": "Warning displayed when the user does not accept the Terms and Conditions.",
+                    "type": "string"
+                },
+                "TradeReference": {
+                    "default": "No Trade Reference Set",
+                    "description": "Warning displayed when the user has not entered a trade reference if one is required.",
+                    "type": "string"
+                },
+                "PriceIncrease": {
+                    "default": "The price increase has not been accepted",
+                    "description": "Warning displayed when the user has not accepted a price increase",
+                    "type": "string"
+                }
+            }
+        },
+        "Configuration": {
+            "type": "object",
+            "title": "Configuration",
+            "description": "Configuration options for the complete booking widget",
+            "properties": {
+                "ContainerStyle": {
+                    "type": "string",
+                    "format": "select",
+                    "default": "Highlight",
+                    "enum": [
+                        "Default",
+                        "Highlight",
+                        "Alternate"
+                    ]
+                },
+                "ContainerPadding": {
+                    "type": "string",
+                    "format": "select",
+                    "default": "Medium",
+                    "enum": [
+                        "None",
+                        "Small",
+                        "Medium",
+                        "Large"
+                    ]
+                }
+            }
+        }
+    }
+}

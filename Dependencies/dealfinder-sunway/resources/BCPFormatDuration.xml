@@ -1,0 +1,40 @@
+﻿<BCPFORMAT xmlns="http://schemas.microsoft.com/sqlserver/2004/bulkload/format" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <RECORD>
+        <FIELD ID="MasterID"             xsi:type="CharTerm" TERMINATOR=","    MAX_LENGTH="100" />
+        <FIELD ID="TPKey"                xsi:type="CharTerm" TERMINATOR=","    MAX_LENGTH="100" />
+        <FIELD ID="RoomTypeCode"         xsi:type="CharTerm" TERMINATOR=","    MAX_LENGTH="30"  />
+        <FIELD ID="MealBasisCode"        xsi:type="CharTerm" TERMINATOR=","    MAX_LENGTH="30"  />
+        <FIELD ID="MealBasisDescription" xsi:type="CharTerm" TERMINATOR=","    MAX_LENGTH="200" />
+        <FIELD ID="ArrivalDate"          xsi:type="CharTerm" TERMINATOR=","    MAX_LENGTH="10"  />
+        <FIELD ID="Duration"             xsi:type="CharTerm" TERMINATOR=","    MAX_LENGTH="2"   />
+        <FIELD ID="Occupancy"            xsi:type="CharTerm" TERMINATOR=","    MAX_LENGTH="2"   />
+        <FIELD ID="Adults"               xsi:type="CharTerm" TERMINATOR=","    MAX_LENGTH="2"   />
+        <FIELD ID="Children"             xsi:type="CharTerm" TERMINATOR=","    MAX_LENGTH="2"   />
+        <FIELD ID="Youths"               xsi:type="CharTerm" TERMINATOR=","    MAX_LENGTH="2"   />
+        <FIELD ID="CurrencyCode"         xsi:type="CharTerm" TERMINATOR=","    MAX_LENGTH="20"  />
+        <FIELD ID="OriginalPrice"        xsi:type="CharTerm" TERMINATOR=","    MAX_LENGTH="10"  />
+        <FIELD ID="Price"                xsi:type="CharTerm" TERMINATOR=","    MAX_LENGTH="10"  />
+        <FIELD ID="PriceReference"       xsi:type="CharTerm" TERMINATOR=","    MAX_LENGTH="100" />        
+        <FIELD ID="ImportGroup"          xsi:type="CharTerm" TERMINATOR=","    MAX_LENGTH="100" />
+        <FIELD ID="OnRequest"            xsi:type="CharTerm" TERMINATOR="\r\n" MAX_LENGTH="2"   />
+    </RECORD>
+    <ROW>
+        <COLUMN SOURCE="MasterID"             NAME="MasterID"             xsi:type="SQLINT"      NULLABLE="YES" />
+        <COLUMN SOURCE="TPKey"                NAME="TPKey"                xsi:type="SQLVARYCHAR" NULLABLE="YES" />
+        <COLUMN SOURCE="RoomTypeCode"         NAME="RoomTypeCode"         xsi:type="SQLVARYCHAR" />
+        <COLUMN SOURCE="MealBasisCode"        NAME="MealBasisCode"        xsi:type="SQLVARYCHAR" />
+        <COLUMN SOURCE="MealBasisDescription" NAME="MealBasisDescription" xsi:type="SQLVARYCHAR" NULLABLE="YES" />
+        <COLUMN SOURCE="ArrivalDate"          NAME="ArrivalDate"          xsi:type="SQLDATETIME" />
+        <COLUMN SOURCE="Duration"             NAME="Duration"             xsi:type="SQLINT"      />
+        <COLUMN SOURCE="Occupancy"            NAME="Occupancy"            xsi:type="SQLINT"      />
+        <COLUMN SOURCE="Adults"               NAME="Adults"               xsi:type="SQLINT"      />
+        <COLUMN SOURCE="Children"             NAME="Children"             xsi:type="SQLINT"      />
+        <COLUMN SOURCE="Youths"               NAME="Youths"               xsi:type="SQLINT"      />
+        <COLUMN SOURCE="CurrencyCode"         NAME="CurrencyCode"         xsi:type="SQLVARYCHAR" />
+        <COLUMN SOURCE="OriginalPrice"        NAME="OriginalPrice"        xsi:type="SQLDECIMAL"  PRECISION="14" SCALE="2" />
+        <COLUMN SOURCE="Price"                NAME="Price"                xsi:type="SQLDECIMAL"  PRECISION="14" SCALE="2" />
+        <COLUMN SOURCE="PriceReference"       NAME="PriceReference"       xsi:type="SQLVARYCHAR" />        
+        <COLUMN SOURCE="ImportGroup"          NAME="ImportGroup"          xsi:type="SQLVARYCHAR" NULLABLE="YES" />
+        <COLUMN SOURCE="OnRequest"            NAME="OnRequest"            xsi:type="SQLBIT"      />
+    </ROW>
+</BCPFORMAT>

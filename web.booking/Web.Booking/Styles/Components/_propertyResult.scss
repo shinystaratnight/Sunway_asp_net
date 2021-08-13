@@ -1,0 +1,267 @@
+﻿@import "../mixins/clearfix";
+@import "../mixins/media";
+@import "../variables";
+
+.property-result {
+    @include clearfix;
+    position: relative;
+    margin-bottom: 20px;
+    clear: both;
+    background: #fff;
+
+    .carousel-container {
+        width: 25%;
+        height: 180px;
+        float: left;
+
+        .img-container {
+            width: 100%;
+        }
+
+        .carousel-items {
+            height: 180px;
+        }
+
+        .full-screen .carousel-control.left {
+            display: none;
+        }
+
+        .full-screen .carousel-control.right {
+            display: none;
+        }
+    }
+
+    .img-container {
+        width: 25%;
+        height: 180px;
+        float: left;
+        cursor: pointer;
+    }
+
+    .property-link {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    .hotel-information {
+        width: 75%;
+        height: 180px;
+        padding: $padding-small;
+        float: left;
+    }
+
+    .hotel-information {
+        position: relative;
+
+        .fa-chevron-right {
+            position: absolute;
+            top: 50%;
+            right: $padding-small;
+            margin-top: -12px;
+            font-size: 1.5rem;
+        }
+    }
+
+    .rating {
+        margin-bottom: 10px;
+    }
+
+    .result-summary {
+        margin-bottom: 10px;
+        font-size: 0.875em;
+        line-height: 1.125rem;
+    }
+
+    .result-options-container {
+        padding: $spacing-sm;
+        clear: both;
+    }
+
+    .room-option-header {
+        display: table;
+        width: 100%;
+        background: $table-header-bg;
+        color: #fff;
+    }
+
+    .room-option {
+        display: block;
+
+        .room-details {
+            display: table;
+            width: 100%;
+            border: 2px solid #fff;
+        }
+
+        &.selected {
+            .room-details {
+                border: 2px solid $brand-primary;
+            }
+        }
+
+        &.room-multiple {
+            cursor: pointer;
+        }
+
+        .room-book-xs .btn {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    }
+
+    .room-col {
+        display: table-cell;
+        padding: $spacing-sm;
+    }
+
+    .room-type {
+        width: 300px;
+    }
+
+    .room-meal-basis {
+        width: 200px;
+    }
+
+    .room-book {
+        width: 170px;
+    }
+
+    .room-price {
+        width: 165px;
+    }
+
+    .result-multi-room-book {
+        .price {
+            height: $btn-height-sm;
+            line-height: $btn-height-sm;
+        }
+    }
+
+    .rendered-markdown {
+        h1 {
+            margin: 0;
+            font-size: 1.0625rem;
+        }
+
+        h2 {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        p + h1,
+        p + h2 {
+            margin-top: $spacing-sm;
+        }
+    }
+
+    @include break-sm() {
+
+        .carousel-container {
+            width: 280px;
+            
+            .carousel-items {
+                height: 300px;
+            }
+
+            .full-screen .carousel-control.left {
+                display: block;
+                left: 10px;
+                margin-left: 0;
+            }
+
+            .full-screen .carousel-control.right {
+                display: block;
+                right: 10px;
+                margin-right: 0;
+            }
+        }
+
+        .img-container {
+            width: 280px;
+            height: 300px;
+        }
+
+        .hotel-information {
+            width: 440px;
+            height: 300px;
+            padding: 10px;
+
+            .property-name {
+                font-size: 1.25rem;
+            }
+
+            .from-price-room {
+                margin-top: 10px;
+            }
+        }
+
+        .property-name {
+            &::after {
+                display: none;
+            }
+        }
+
+        .from-price {
+            position: relative;
+            width: 100%;
+            padding: $padding-base;
+            float: left;
+            background: $brand-inverse;
+            color: $body-alt-color;
+
+            .btn {
+                width: 124px;
+                margin-top: 10px;
+                text-align: center;
+            }
+
+            .price {
+                display: inline;
+                font-size: 1.125rem;
+                line-height: 1.5rem;
+
+                .price-amount {
+                    font-size: 2.625rem;
+                    line-height: 2.75rem;
+                }
+            }
+
+            .pax-summary,
+            .total-price-summary {
+                margin-top: 0;
+                font-size: 1rem;
+            }
+        }
+    }
+
+    @include break-md() {
+        .hotel-information {
+            width: 420px;
+        }
+    }
+
+    @include break-lg() {
+        .hotel-information {
+            width: 343px;
+        }
+
+        .from-price {
+            position: relative;
+            width: 250px;
+            height: 300px;
+
+            .btn {
+                position: absolute;
+                right: $padding-base;
+                bottom: $padding-base;
+                left: $padding-base;
+                width: 150px;
+                margin-top: 0;
+            }
+        }
+    }
+}

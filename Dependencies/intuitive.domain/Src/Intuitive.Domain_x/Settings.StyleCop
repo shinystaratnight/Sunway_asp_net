@@ -1,0 +1,10 @@
+<StyleCopSettings Version="105">
+  <GlobalSettings>
+    <CollectionProperty Name="RecognizedWords">
+      <Value>AdHoc</Value>
+      <Value>Enum</Value>
+    </CollectionProperty>
+    <StringProperty Name="LinkedSettingsFile">C:\ProjectsStash\DLLRepository\Shared Settings\Settings.StyleCop</StringProperty>
+    <StringProperty Name="MergeSettingsFiles">Linked</StringProperty>
+  </GlobalSettings>
+</StyleCopSettings>

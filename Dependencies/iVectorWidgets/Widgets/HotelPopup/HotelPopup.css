@@ -1,0 +1,18 @@
+﻿#divHotelPopup {z-index:100;}
+
+/*#region Print */
+
+@media print 
+{
+    #divTopHeader, #divAll, #divMain, #divHeader, #divSubHeader, #divSidebar, #divContent, #divContentFull, #divFooter, #divOpacityContainer, #divHotelPopup_EmailForm {display:none;}
+    
+    #divHotelPopup {width:100%;}
+    div.modalpopup {position:absolute;top:0 !important;left:0 !important;border:none !important;padding:0;width:100%;}   
+    div.overlay {height:0px !important;}
+    div.modalpopup a.close, #divHotelPopup a.print {display:none !important;}
+    
+    #divHotelPopup_Information div.left {width:520px !important;}
+    #divHotelPopup table.def, #divHotelPopup #imgStaticMap, #aHotelPopup_HideInformation, #aHotelPopup_ShowInformation {display:none !important;}
+}
+
+/*#endregion*/

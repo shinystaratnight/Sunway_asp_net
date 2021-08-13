@@ -1,0 +1,254 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Search Results",
+  "description": "Widget to display search results",
+  "type": "object",
+  "properties": {
+    "SortLabel": {
+      "default": "Sort By",
+      "type": "string"
+    },
+    "FilterTitle": {
+      "default": "Filter Results",
+      "type": "string"
+    },
+    "FlightResultTitle": {
+      "default": "Your Selected Flight",
+      "type": "string"
+    },
+    "DisplayRatingAsStars": {
+      "default": true,
+      "type": "boolean",
+      "description": "Show star symbol instead of - 5 Stars "
+    },
+    "SearchSummaryTitle": {
+      "default": "#count# #component# in #location#",
+      "type": "string",
+      "description": "Control the position of location component and count using: #count# #component# #location#.\ne.g. #count# #component# in #location#"
+    },
+    "CharterPackageText": {
+      "default": "",
+      "type": "string",
+      "description": "Text that displays on each result if its a charter package"
+    },
+    "CharterFlightText": {
+      "default": "",
+      "type": "string",
+      "description": "Text that displays on each result if its a charter flight"
+    },
+    "FlightFilterOptions": {
+      "type": "object",
+      "title": "Flight Filter Options",
+      "properties": {
+        "Price": {
+          "type": "object",
+          "title": "Price",
+          "properties": {
+            "DefaultCollapsed": {
+              "type": "boolean",
+              "default": false
+            }
+          }
+        },
+        "MaxStops": {
+          "type": "object",
+          "title": "Max Stops",
+          "properties": {
+            "DefaultCollapsed": {
+              "type": "boolean",
+              "default": false
+            }
+          }
+        },
+        "FlightCarrier": {
+          "type": "object",
+          "title": "Flight Carrier",
+          "properties": {
+            "DefaultCollapsed": {
+              "type": "boolean",
+              "default": false
+            }
+          }
+        },
+        "OutboundTimeOfDay": {
+          "type": "object",
+          "title": "Outbound Time Of Day",
+          "properties": {
+            "DefaultCollapsed": {
+              "type": "boolean",
+              "default": false
+            }
+          }
+        },
+        "ReturnTimeOfDay": {
+          "type": "object",
+          "title": "Return Time Of Day",
+          "properties": {
+            "DefaultCollapsed": {
+              "type": "boolean",
+              "default": false
+            }
+          }
+        },
+        "FlightClass": {
+          "type": "object",
+          "title": "Flight Class",
+          "properties": {
+            "DefaultCollapsed": {
+              "type": "boolean",
+              "default": false
+            }
+          }
+        },
+        "DepartureAirport": {
+          "type": "object",
+          "title": "Departure Airport",
+          "properties": {
+            "DefaultCollapsed": {
+              "type": "boolean",
+              "default": false
+            }
+          }
+        },
+        "ArrivalAirport": {
+          "type": "object",
+          "title": "Arrival Airport",
+          "properties": {
+            "DefaultCollapsed": {
+              "type": "boolean",
+              "default": false
+            }
+          }
+        }
+      }
+    },
+    "HotelFilterOptions": {
+      "type": "object",
+      "title": "Property Filter Options",
+      "properties": {
+        "Price": {
+          "type": "object",
+          "title": "Price",
+          "properties": {
+            "DefaultCollapsed": {
+              "type": "boolean",
+              "default": false
+            }
+          }
+        },
+        "Rating": {
+          "type": "object",
+          "title": "Rating",
+          "properties": {
+            "DefaultCollapsed": {
+              "type": "boolean",
+              "default": false
+            }
+          }
+        },
+        "Resort": {
+          "type": "object",
+          "title": "Resort",
+          "properties": {
+            "DefaultCollapsed": {
+              "type": "boolean",
+              "default": false
+            }
+          }
+        },
+        "HotelName": {
+          "type": "object",
+          "title": "Hotel Name",
+          "properties": {
+            "DefaultCollapsed": {
+              "type": "boolean",
+              "default": false
+            }
+          }
+        },
+        "MealBasis": {
+          "type": "object",
+          "title": "Meal Basis",
+          "properties": {
+            "DefaultCollapsed": {
+              "type": "boolean",
+              "default": false
+            }
+          }
+        }
+      }
+    },
+    "FlightButtons": {
+      "type": "object",
+      "properties": {
+        "BookNow": {
+          "title": "Book Now",
+          "type": "string",
+          "default": "Book Now"
+        },
+        "SelectFlight": {
+          "title": "SelectFlight",
+          "type": "string",
+          "default": "Select"
+        },
+        "ChangeSelectedFlight": {
+          "title": "Change Selected Flight",
+          "type": "string",
+          "default": "Change"
+        },
+        "Cancel": {
+          "title": "Cancel",
+          "type": "string",
+          "default": "Cancel"
+        }
+      }
+    },
+    "Configuration": {
+      "type": "object",
+      "title": "Configuration",
+      "description": "Configuration options for the search results widget",
+      "properties": {
+        "ContainerStyle": {
+          "type": "string",
+          "format": "select",
+          "default": "Default",
+          "enum": [
+            "Default",
+            "Highlight",
+            "Alternate"
+          ]
+        },
+        "ContainerPadding": {
+          "type": "string",
+          "format": "select",
+          "default": "None",
+          "description": "Sets the padding for the widget.",
+          "enum": [
+            "None",
+            "Small",
+            "Medium",
+            "Large"
+          ]
+        },
+        "SearchMode": {
+          "type": "string",
+          "format": "select",
+          "default": "Hotel",
+          "enum": [
+            "Hotel",
+            "Flight"
+          ]
+        },
+        "ResultsPerPage": {
+          "type": "integer",
+          "default": 10
+        },
+        "RenderPaxSummary": {
+          "type": "boolean",
+          "default": false,
+          "description": "Controls whether the pax summary is displayed within each result."
+        }
+      }
+    }
+  }
+}

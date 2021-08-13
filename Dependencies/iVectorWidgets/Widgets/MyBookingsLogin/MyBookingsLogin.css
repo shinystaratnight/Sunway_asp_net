@@ -1,0 +1,11 @@
+﻿
+#divContentFull {min-height:400px;}
+#divBookingLogin {margin:50px auto 0px auto;}
+
+#divBookingLogin.sidebarBox {width:360px;}
+#divBookingLogin.sidebarBox div.boxTitle {width:362px;}
+#divBookingLogin label {width:145px;float:left;}
+#divBookingLogin input, #divBookingLogin label {margin-bottom:10px;}
+#divBookingLogin a.button {float:right;clear:both;margin-top:5px;}
+#divBookingLogin #txtDepartureDate {width:100px;}
+#divBookingLogin div.icon.calendar i {cursor:pointer;}

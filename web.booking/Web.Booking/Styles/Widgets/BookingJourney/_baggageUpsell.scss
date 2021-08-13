@@ -1,0 +1,31 @@
+﻿
+.widget-baggageupsell {
+
+    .loading-icon {
+        width: 32px;
+        height: 32px;
+        margin-right: 10px;
+        float: left;
+        background: url("/booking/Images/loader.gif");
+    }
+
+    .baggage-quantity {
+        width: 85px;
+
+        .form-group {
+            margin: 0;
+        }
+
+        .custom-select {
+            width: 60px;
+        }
+    }
+
+    .baggage-price {
+        width: 150px;
+    }
+
+    .baggage-total {
+        width: 100px;
+    }
+}

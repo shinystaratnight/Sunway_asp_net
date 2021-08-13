@@ -1,0 +1,23 @@
+﻿#divBasket h3.section {margin:0 0 10px 0;}
+
+#divBasket div.property {padding-bottom:10px;margin-bottom:10px;}
+#divBasket div.property img {float:left;width:105px;margin-right:5px;}
+#divBasket div.property h4 {width:164px;display:inline-block;margin:0;}
+#divBasket div.property div.room {float:left;clear:both;margin-top:10px;}
+
+#divBasket div.flights {padding-bottom:10px;margin-bottom:20px;}
+#divBasket div.flights p + p {margin:0;}
+#divBasket div.flights p + h5 {margin-top:10px;}
+#divBasket div.flights div.seats {margin-bottom:10px;}
+#divBasket div.flights div.seats h5 {color:#0a8ab8;}
+
+#divBasket div.transfer {padding-bottom:10px;margin-bottom:20px;}
+#divBasket div.transfer p + p {margin:0;}
+#divBasket div.transfer p + h5 {margin-top:10px;}
+
+#divBasket div.extra {padding-bottom:10px;margin-bottom:20px;}
+
+#divBasket h3.price {margin-top:10px;text-align:right;}
+
+#divBasket div.total {margin-bottom:10px;}
+#divBasket div.total h2 span {float:right;}

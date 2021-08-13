@@ -1,0 +1,208 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net472</TargetFrameworks>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <AssemblyName>Intuitive</AssemblyName>
+    <RootNamespace>Intuitive</RootNamespace>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>1.8.0</Version>
+    <Authors>Chris Thacker</Authors>
+    <Company>Intuitive Limited</Company>
+    <Description>Common utility library for Intuitive projects</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Configuration\**" />
+    <Compile Remove="Date\**" />
+    <Compile Remove="Diagnostics\**" />
+    <Compile Remove="DistributedCache\**" />
+    <Compile Remove="Email\**" />
+    <Compile Remove="ExceptionHandling\**" />
+    <Compile Remove="Extensions\**" />
+    <Compile Remove="Fax\**" />
+    <Compile Remove="Hashing\**" />
+    <Compile Remove="HttpModules\**" />
+    <Compile Remove="Images\**" />
+    <Compile Remove="IoC\**" />
+    <Compile Remove="IOUtility\**" />
+    <Compile Remove="IO\**" />
+    <Compile Remove="IPLookup\**" />
+    <Compile Remove="iVector\**" />
+    <Compile Remove="LargeData\**" />
+    <Compile Remove="LogViewer\**" />
+    <Compile Remove="Mobile\**" />
+    <Compile Remove="Net\**" />
+    <Compile Remove="NOSQL\**" />
+    <Compile Remove="ObjectMapping\**" />
+    <Compile Remove="Patterns\**" />
+    <Compile Remove="Regex\**" />
+    <Compile Remove="Registry\**" />
+    <Compile Remove="ReturnObjects\**" />
+    <Compile Remove="Scheduling\**" />
+    <Compile Remove="Security\**" />
+    <Compile Remove="SqlInstance\**" />
+    <Compile Remove="SQL\**" />
+    <Compile Remove="Storage\**" />
+    <Compile Remove="Utility\**" />
+    <Compile Remove="Validation\**" />
+    <Compile Remove="WebControls\**" />
+    <Compile Remove="Web\**" />
+    <Compile Remove="Xml\**" />
+    <Compile Remove="XPathMultilingual\**" />
+    <EmbeddedResource Remove="Configuration\**" />
+    <EmbeddedResource Remove="Date\**" />
+    <EmbeddedResource Remove="Diagnostics\**" />
+    <EmbeddedResource Remove="DistributedCache\**" />
+    <EmbeddedResource Remove="Email\**" />
+    <EmbeddedResource Remove="ExceptionHandling\**" />
+    <EmbeddedResource Remove="Extensions\**" />
+    <EmbeddedResource Remove="Fax\**" />
+    <EmbeddedResource Remove="Hashing\**" />
+    <EmbeddedResource Remove="HttpModules\**" />
+    <EmbeddedResource Remove="Images\**" />
+    <EmbeddedResource Remove="IoC\**" />
+    <EmbeddedResource Remove="IOUtility\**" />
+    <EmbeddedResource Remove="IO\**" />
+    <EmbeddedResource Remove="IPLookup\**" />
+    <EmbeddedResource Remove="iVector\**" />
+    <EmbeddedResource Remove="LargeData\**" />
+    <EmbeddedResource Remove="LogViewer\**" />
+    <EmbeddedResource Remove="Mobile\**" />
+    <EmbeddedResource Remove="Net\**" />
+    <EmbeddedResource Remove="NOSQL\**" />
+    <EmbeddedResource Remove="ObjectMapping\**" />
+    <EmbeddedResource Remove="Patterns\**" />
+    <EmbeddedResource Remove="Regex\**" />
+    <EmbeddedResource Remove="Registry\**" />
+    <EmbeddedResource Remove="ReturnObjects\**" />
+    <EmbeddedResource Remove="Scheduling\**" />
+    <EmbeddedResource Remove="Security\**" />
+    <EmbeddedResource Remove="SqlInstance\**" />
+    <EmbeddedResource Remove="SQL\**" />
+    <EmbeddedResource Remove="Storage\**" />
+    <EmbeddedResource Remove="Utility\**" />
+    <EmbeddedResource Remove="Validation\**" />
+    <EmbeddedResource Remove="WebControls\**" />
+    <EmbeddedResource Remove="Web\**" />
+    <EmbeddedResource Remove="Xml\**" />
+    <EmbeddedResource Remove="XPathMultilingual\**" />
+    <None Remove="Configuration\**" />
+    <None Remove="Date\**" />
+    <None Remove="Diagnostics\**" />
+    <None Remove="DistributedCache\**" />
+    <None Remove="Email\**" />
+    <None Remove="ExceptionHandling\**" />
+    <None Remove="Extensions\**" />
+    <None Remove="Fax\**" />
+    <None Remove="Hashing\**" />
+    <None Remove="HttpModules\**" />
+    <None Remove="Images\**" />
+    <None Remove="IoC\**" />
+    <None Remove="IOUtility\**" />
+    <None Remove="IO\**" />
+    <None Remove="IPLookup\**" />
+    <None Remove="iVector\**" />
+    <None Remove="LargeData\**" />
+    <None Remove="LogViewer\**" />
+    <None Remove="Mobile\**" />
+    <None Remove="Net\**" />
+    <None Remove="NOSQL\**" />
+    <None Remove="ObjectMapping\**" />
+    <None Remove="Patterns\**" />
+    <None Remove="Regex\**" />
+    <None Remove="Registry\**" />
+    <None Remove="ReturnObjects\**" />
+    <None Remove="Scheduling\**" />
+    <None Remove="Security\**" />
+    <None Remove="SqlInstance\**" />
+    <None Remove="SQL\**" />
+    <None Remove="Storage\**" />
+    <None Remove="Utility\**" />
+    <None Remove="Validation\**" />
+    <None Remove="WebControls\**" />
+    <None Remove="Web\**" />
+    <None Remove="Xml\**" />
+    <None Remove="XPathMultilingual\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Configuration\ConfigReader.vb" />
+    <Compile Include="Configuration\ConfigSettings.vb" />
+    <Compile Include="Configuration\IConfigReader.vb" />
+    <Compile Include="Date\DateFunctions.vb" />
+    <Compile Include="Diagnostics\Diagnostics.vb" />
+    <Compile Include="Email\Email.vb" />
+    <Compile Include="Email\IEmail.vb" />
+    <Compile Include="Email\IXSLEmail.vb" />
+    <Compile Include="Email\XSLEmail.vb" />
+    <Compile Include="Extensions\CoreExtensions.vb" />
+    <Compile Include="Hashing\HashCode.vb" />
+    <Compile Include="IoC\IoCModule.vb" />
+    <Compile Include="IOUtility\AmazonStorage.vb" />
+    <Compile Include="IOUtility\FileFunctions.vb" />
+    <Compile Include="IOUtility\Logging.vb" />
+    <Compile Include="IO\ILogWriter.vb" />
+    <Compile Include="IO\LogFileWriter.vb" />
+    <Compile Include="LargeData\CSVWriter.vb" />
+    <Compile Include="LargeData\LargeDataFunctions.vb" />
+    <Compile Include="Net\IRequest.vb" />
+    <Compile Include="Net\RequestHeaderName.vb" />
+    <Compile Include="Net\WebRequests.vb" />
+    <Compile Include="ReturnObjects\FunctionReturn.vb" />
+    <Compile Include="Scheduling\LittleManOnTheServer.vb" />
+    <Compile Include="Security\SecretKeeper.vb" />
+    <Compile Include="Security\SecurityFunctions.vb" />
+    <Compile Include="SQL\AsyncSQL.vb" />
+    <Compile Include="SQL\SQL.vb" />
+    <Compile Include="SQL\SQLTransaction.vb" />
+    <Compile Include="Utility\Functions.vb" />
+    <Compile Include="Validation\Validators.vb" />
+    <Compile Include="WebControls\AutoComplete.vb" />
+    <Compile Include="WebControls\ControlBase.vb" />
+    <Compile Include="WebControls\DataList.vb" />
+    <Compile Include="WebControls\DropDown.vb" />
+    <Compile Include="WebControls\Grid.vb" />
+    <Compile Include="WebControls\Hidden.vb" />
+    <Compile Include="WebControls\Paging.vb" />
+    <Compile Include="WebControls\PlaceHolder.vb" />
+    <Compile Include="WebControls\WebControlBase.vb" />
+    <Compile Include="WebControls\XSL.vb" />
+    <Compile Include="Web\Cookies.vb" />
+    <Compile Include="Web\VersionLinkedFiles.vb" />
+    <Compile Include="Xml\Serialization\Serializer.vb" />
+    <Compile Include="Xml\SOAPEnvelopeNamespace.vb" />
+    <Compile Include="Xml\XMLBuilder.vb" />
+    <Compile Include="Xml\XMLFunctions.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Autofac">
+      <Version>4.9.2</Version>
+    </PackageReference>
+    <PackageReference Include="AWSSDK.S3">
+      <Version>3.3.102.1</Version>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>12.0.2</Version>
+    </PackageReference>
+    <PackageReference Include="SharpZipLib">
+      <Version>1.1.0</Version>
+    </PackageReference>
+    <PackageReference Include="SSH.NET">
+      <Version>2016.1.0</Version>
+    </PackageReference>
+    <PackageReference Include="StackExchange.Redis">
+      <Version>1.2.6</Version>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Security" />
+  </ItemGroup>
+
+</Project>

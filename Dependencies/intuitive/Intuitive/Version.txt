@@ -1,0 +1,6 @@
+﻿Version 1.0.0	19/12/2012
+----------------------------------------------------------------------
+
+test test test
+1. Issue - 2936 - Lowcost - DS - malformed translations cause untrapper error handling in multilingual class. Added error trapping and increased diagnostics
+2. Development - n/a - Lowcost - DS - FTP file listing cut off the response when the response was less than the max buffer size as opposed to being zero length, hence returned a random list of files and folders. Now returns them all.

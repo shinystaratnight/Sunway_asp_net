@@ -1,0 +1,69 @@
+﻿{
+  "Websites": [
+    {
+      "SiteName": "Sunway",
+      "Environment": "dev",
+      "Url": "http://sunwaytest.ivector.co.uk",
+      "Urls": [
+        "http://sunwaytest.ivector.co.uk/booking/",
+        "https://sunwaytest.ivector.co.uk",
+        "https://sunwaytest.ivector.co.uk/booking/"
+      ]
+    },
+    {
+      "SiteName": "Sunway",
+      "Environment": "staging",
+      "Url": "http://sunwaystaging.ivector.co.uk",
+      "Urls": [
+        "http://sunwaystaging.ivector.co.uk/booking/",
+        "https://sunwaystaging.ivector.co.uk/booking/",
+        "https://sunwaystaging.ivector.co.uk/"
+      ]
+    },
+    {
+      "SiteName": "Sunway",
+      "Environment": "live",
+      "Url": "http://agent.sunway.ie",
+      "Urls": [
+        "http://sunwaylive.ivector.co.uk/booking/",
+        "https://sunwaylive.ivector.co.uk/booking/",
+        "http://agent.sunway.ie/booking/",
+        "https://agent.sunway.ie/booking/",
+        "https://agent.sunway.ie/"
+      ]
+    },
+    {
+      "SiteName": "SunwayB2C",
+      "Environment": "dev",
+      "Url": "http://sunwayb2ctest.ivector.co.uk",
+      "Urls": [
+        "http://sunwayb2ctest.ivector.co.uk/booking/",
+		"https://sunwayb2ctest.ivector.co.uk/booking/",
+		"https://sunwayb2ctest.ivector.co.uk/"
+      ]
+    },
+    {
+      "SiteName": "SunwayB2C",
+      "Environment": "staging",
+      "Url": "http://sunwayb2cstaging.ivector.co.uk",
+      "Urls": [
+        "http://sunwayb2cstaging.ivector.co.uk/booking/",
+		"https://sunwayb2cstaging.ivector.co.uk/booking/",
+		"https://sunwayb2cstaging.ivector.co.uk/"
+      ]
+    },
+    {
+      "SiteName": "SunwayB2C",
+      "Environment": "live",
+      "Url": "http://agent.sunway.ie",
+      "Urls": [
+        "http://sunwayb2clive.ivector.co.uk/booking/",
+        "http://www.sunway.ie/booking/",
+        "http://booking.sunway.ie/booking/",
+        "https://sunwayb2clive.ivector.co.uk/booking/",
+        "https://www.sunway.ie/booking/",
+        "https://booking.sunway.ie/booking/"
+      ]
+    }
+  ]
+}

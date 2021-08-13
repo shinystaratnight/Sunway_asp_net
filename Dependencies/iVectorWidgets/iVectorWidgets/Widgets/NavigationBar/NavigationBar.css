@@ -1,0 +1,23 @@
+﻿
+#divNavigationBar {width:960px;margin:10px 0px;font-size:13px;padding:0;height:34px;line-height:34px;}
+
+#divNavigationBar ul {list-style-type:none;list-style-position:outside;height:34px;line-height:34px;margin:0;padding:0;position:relative;}
+#divNavigationBar ul li.title {background:#e4e4e4;float:left;padding:0px 30px 0px 15px;}
+#divNavigationBar ul li {position:relative;height:34px;float:left;}
+#divNavigationBar ul li a {height:34px;line-height:34px;padding:0px 7px;float:left;}
+
+#divNavigationBar ul li ul {display:none;}
+#divNavigationBar ul li:hover ul.droplist {display:block;}
+
+#divNavigationBar ul li ul.droplist {position:absolute;top:34px;left:0;width:150px;height:auto;z-index:20;padding-bottom:5px;}
+#divNavigationBar ul.droplist li {display:block;width:150px;float:none;height:24px;line-height:24px;}
+#divNavigationBar ul.droplist li a {margin:0px 5px;width:125px;height:24px;line-height:24px;}
+
+/* Theme */
+
+#divNavigationBar {font-family:stentigaregular;border:3px solid #e4e4e4;border-radius:3px;color:#1a9abc;}
+#divNavigationBar ul.droplist {background-color:#ff8400;}
+#divNavigationBar ul.droplist li a {color:#fff;font-family:arial;border-bottom:1px solid #ffb700;}
+#divNavigationBar ul li:hover a {background-color:#ff8400;color:#fff;text-decoration:none;}
+#divNavigationBar ul li, #divNavigationBar ul li a {color:#1a9abc;}
+

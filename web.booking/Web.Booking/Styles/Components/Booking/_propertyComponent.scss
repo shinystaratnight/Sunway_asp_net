@@ -1,0 +1,39 @@
+﻿@import "../../mixins/clearfix";
+@import "../../mixins/media";
+@import "../../variables";
+
+
+.booking-property-details {
+    @include clearfix;
+
+    .property-image {
+        width: 100%;
+    }
+
+    .property-label {
+        width: 150px;
+        float: left;
+        font-weight: 700;
+    }
+
+    p + p {
+        margin-top: 0;
+    }
+
+    @media print {
+        .property-image-container {
+            width: 210px;
+            float: left;
+        }
+
+        .property-summary {
+            width: 350px;
+            float: left;
+        }
+
+        .property-rooms {
+            width: 350px;
+            float: left;
+        }
+    }
+}

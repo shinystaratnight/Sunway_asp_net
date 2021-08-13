@@ -1,0 +1,126 @@
+﻿
+#divCarHireSearch fieldset {box-sizing:border-box; float:left;width:47%;margin-bottom:10px;}
+#divCarHireSearch * {box-sizing:border-box}
+#divCarHireSearch fieldset:first-of-type {margin-right:6%;}
+
+#divCarHireSearch dl dt {float:left;clear:both;width:30%;}
+#divCarHireSearch dl dd {float:left;}
+#divCarHireSearch label {display:inline-block;}
+	
+#divCarHireSearch fieldset dl.pax {clear:both;}
+#divCarHireSearch fieldset select {width:75%}
+#divCarHireSearch fieldset div input {width:40%;}
+#divCarHireSearch fieldset div div.textbox {display:inline;}
+#divCarHireSearch fieldset div {margin-bottom:10px;}
+#divCarHireSearch fieldset div label {width:20%;}
+#divCarHireSearch fieldset div label.time {width:10%;}
+#divCarHireSearch fieldset div input.time {width:20%;}
+#divCarHireSearch fieldset div.textbox.icon i {position:absolute;right:15px;top:-7px;font-size:20px}
+#divCarHireSearch input.button {float:right;}
+#divCarHireSearch input.button.search {margin-left:10px;}
+
+#divCarHireResults {margin-top:20px;}
+#divCarHireResults input.button.primary {float:right;margin-top:20px;}
+#divCarHireResults #pSearchWait {margin-top:10px;text-align:center;}
+#divCarHireResults p.noResults {margin-top:10px;text-align:left;}
+#divCarHireResults #imgLoading {margin:0 auto;display:block;margin-top:15px;}
+
+/* table styling for results and selected car */
+#divCarHire .carHireResults {}
+#divCarHire .carHireResults td {padding:0;background-color:#fff;vertical-align:middle;}
+#divCarHire .carHireResults td.col1 {width:151px;}
+#divCarHire .carHireResults td.col1 img {max-width:200px;}
+#divCarHire .carHireResults td.col2 {padding-top:10px;padding-left:10px;}
+#divCarHire .carHireResults td.col2 div.singleCar {}
+#divCarHire .carHireResults td.col2 div.singleCar h4 {font-size:15px;}
+#divCarHire .carHireResults td.col2 div.singleCar h4 span {margin-left:5px;font-size:12px;font-weight:normal;letter-spacing:normal;
+                                                              font-family:Helvetica, Arial, sans-serif;}
+#divCarHire .options {margin-top:10px;display:block;}
+#divCarHire .singleCar .mobileHide {display:inline;}
+#divCarHire .carHireResults span.carType {display:block;}                                                              
+#divCarHire .carHireResults span.featureIcon {height:20px;width:20px;display:inline-block;margin-top:15px;
+                                                 margin-right:3px;position:relative;}
+#divCarHire .carHireResults label {position:relative;top:-4px;margin-right:4px;letter-spacing:-1px;}
+
+#divCarHire .carHireResults span.featureIcon.pax {background:url(/themes/thesunholidays/images/sprite2.png) no-repeat -256px -3px;}
+#divCarHire .carHireResults span.featureIcon.paxMultiple {background:url(/themes/thesunholidays/images/sprite2.png) no-repeat -278px -3px;}
+#divCarHire .carHireResults span.featureIcon.baggage {background:url(/themes/thesunholidays/images/sprite2.png) no-repeat -256px -47px;}
+#divCarHire .carHireResults span.featureIcon.baggageMultiple {background:url(/themes/thesunholidays/images/sprite2.png) no-repeat -278px -25px;}
+#divCarHire .carHireResults span.featureIcon.doors {background:url(/themes/thesunholidays/images/sprite2.png) no-repeat -256px -25px;}
+#divCarHire .carHireResults span.featureIcon.transmission {background:url(/themes/thesunholidays/images/sprite2.png) no-repeat -256px -69px;}
+#divCarHire .carHireResults span.featureIcon.airCon {background:url(/themes/thesunholidays/images/sprite2.png) no-repeat -278px -47px;}
+
+
+#divCarHire .carHireResults td.col3 {width:100px;}
+#divCarHire .carHireResults td.col3 p.price {font-size:20px;font-weight:bold;}
+#divCarHire .carHireResults td.col3 p.rateServiceType {margin-top:2px;}
+#divCarHire .carHireResults td.col3 p.rateServiceType a.info {height:11px;width:11px;display:inline-block;position:relative;top:1px;
+                                                                 background:url(/themes/thesunholidays/images/sprite2.png) no-repeat -174px -81px;}
+
+#divCarHire .carHireResults td.col4 {vertical-align:middle;min-width:35px;text-align:center;}
+
+#divCarHire .carHireResults td.col4 span.selected {display:none;}
+#divCarHire .carHireResults tr.selected td.col4 span.selected {display:inline;}
+#divCarHire .carHireResults tr.selected td.col4 input.button {display:none;}
+
+div.modalpopup.rentalConditions {width:500px;}
+
+#divSelectedCar .includedExtras ul {margin-top:8%}
+#divSelectedCar .includedExtras ul li {padding-bottom:2%}	
+
+#divSelectedCar .includedExtras, 
+#divSelectedCar .bookableExtras {float:left;box-sizing:border-box;border:1px solid #ccc;padding:3%;}
+#divSelectedCar .includedExtras {width:33%;margin-right:3%}
+#divSelectedCar .bookableExtras {width:64%;}
+#divSelectedCar .bookableExtras div {width:48%;float:left;box-sizing:border-box;margin-top:4%;height:90px;padding:2%;background:#efefef}
+#divSelectedCar .bookableExtras div:nth-child(even) {}
+#divSelectedCar .bookableExtras div:nth-child(odd) {margin-left:4%;}
+
+/* target first 2 boxes, first element is header so ignore */
+#divSelectedCar .bookableExtras div:nth-child(2),
+#divSelectedCar .bookableExtras div:nth-child(3) {margin-top:2%}
+
+#divSelectedCar .bookableExtras div span {float:left;width:60%;box-sizing:border-box;margin-right:10%}
+#divSelectedCar .bookableExtras div select {float:right;box-sizing:border-box;width:30%;padding:0 4%;}
+#divSelectedCar .bookableExtras div strong {clear:both;margin-top:6%;display:block}
+#divSelectedCar input.button {float:right;margin-top:3%;}
+
+ @media only screen and (max-width: 959px)  
+ {
+ 	#divCarHireSearch fieldset div.textbox.icon i {display:none;}
+	#divCarHireSearch label {height:20px;line-height:20px;}	
+	#divCarHireSearch dl dd {margin-bottom:10px;}	
+	#divSelectedCar .bookableExtras div select {padding:0;}	
+	 	
+ }
+
+ @media only screen and (max-width: 767px) 
+ {
+ 	#divCarHireSearch dl dt {width:100%;}
+ 	#divCarHireSearch fieldset div {margin-bottom:0;}
+	#divCarHireSearch fieldset div label {display:block;width:100%;}
+	#divCarHireSearch fieldset div input {width:65%;}
+	#divCarHireSearch fieldset div input.time {width:40%;}
+	
+ 	#divCarHire tr.mobileShow {display:table-row;}
+ 	#divCarHire tr.carResultRow td {border:0}
+	#divCarHire tr.features {border:0;border-bottom:solid 1px #f0f0f0}
+ 	#divCarHire tr.mobileShow td {border:0;margin:5px 0 0}
+ 	#divCarHire h4.carName {padding-top:10px;}
+ 	
+ 	#divSelectedCar .includedExtras, 
+	#divSelectedCar .bookableExtras {float:none;width:100%;}
+	#divSelectedCar .includedExtras {margin-bottom:3%;}
+	#divSelectedCar .includedExtras ul {margin-top:3%}
+ 	
+ }
+
+ @media only screen and (max-width: 480px) 
+ {
+	#divCarHireSearch label {display:block;width:100%;margin-top:5px;}
+ 	#divCarHireSearch dl dt {width:auto;float:none;}
+ 	#divCarHireSearch fieldset div input {width:75%;}
+	#divCarHireSearch fieldset div input.time {width:50%;}
+	
+	
+ }

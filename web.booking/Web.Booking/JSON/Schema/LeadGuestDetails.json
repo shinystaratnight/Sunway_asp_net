@@ -1,0 +1,89 @@
+﻿{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Widget that allows you to enter details regarding the lead guest to your booking",
+    "properties": {
+        "Title": {
+            "default": "Lead Guest Details",
+            "description": "Title displayed at the top of the widget.",
+            "type": "string"
+        },
+        "Message": {
+            "default": "",
+            "description": "Messaged displayed below the title that explains what this widget is to the user.",
+            "type": "string"
+        },
+        "Labels": {
+            "type": "object",
+            "title": "Labels",
+            "description": "Configure label text that appears on the form",
+            "properties": {
+                "Title": {
+                    "default": "Title",
+                    "description": "Label displayed next to the title select",
+                    "type": "string"
+                },
+                "FirstName": {
+                    "default": "First Name",
+                    "description": "Label displayed next to the first name text box",
+                    "type": "string"
+                },
+                "LastName": {
+                    "default": "Last Name",
+                    "description": "Label displayed next to the last name text box",
+                    "type": "string"
+                },
+                "Email": {
+                    "default": "Email",
+                    "description": "Label displayed next to the Email text box",
+                    "type": "string"
+                },
+                "Phone": {
+                    "default": "Phone Number",
+                    "description": "Label displayed next to the phone text box",
+                    "type": "string"
+                },
+                "Address": {
+                    "default": "Address",
+                    "description": "Label displayed next to the address text box",
+                    "type": "string"
+                },
+                "City": {
+                    "default": "City",
+                    "description": "Label displayed next to the city text box",
+                    "type": "string"
+                },
+                "Postcode": {
+                    "default": "Postcode",
+                    "description": "Label displayed next to the postcode text box",
+                    "type": "string"
+                },
+                "Country": {
+                    "default": "Country",
+                    "description": "Label displayed next to the country drop down",
+                    "type": "string"
+                }
+            }
+        },
+        "Configuration": {
+            "type": "object",
+            "title": "Configuration",
+            "description": "Configuration options for the payment details widget",
+            "properties": {
+                "ContainerStyle": {
+                    "type": "string",
+                    "format": "select",
+                    "default": "Highlight",
+                    "enum": [ "Default", "Highlight", "Alternate" ]
+                },
+                "ContainerPadding": {
+                    "type": "string",
+                    "format": "select",
+                    "default": "Medium",
+                    "enum": [ "None", "Small", "Medium", "Large" ]
+                }
+            }
+        }
+    },
+    "title": "Lead Guest Details",
+    "type": "object"
+}

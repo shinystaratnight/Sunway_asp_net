@@ -1,0 +1,6 @@
+﻿#divTermsAndConditions {min-height:50px;}
+
+#divTermsAndConditions p {margin-bottom:5px;}
+
+#divTermsAndConditions label {padding:5px 5px 4px 5px;}
+#divTermsAndConditions label > input {position:relative;top:2px;margin-right:5px;}

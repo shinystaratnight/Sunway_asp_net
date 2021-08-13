@@ -1,0 +1,169 @@
+﻿@import "../../mixins/clearfix";
+
+body.admin-mode {
+    padding-top: 61px;
+}
+
+.widget-sitebuildertoolbar {
+    padding: 0;
+}
+
+.site-builder-toolbar {
+    @include clearfix;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    background: #fff;
+    z-index: 1000;
+
+    .toolbar-logo {
+        margin-right: 20px;
+        float: left;
+
+        p {
+            color: #333;
+            font-weight: 600;
+            line-height: 40px;
+        }
+    }
+
+    .toolbar-nav {
+        margin-top: 2px;
+        margin-right: 50px;
+        float: left;
+    }
+
+    .toolbar-view {
+        float: left;
+    }
+
+    .nav-label {
+        height: 36px;
+        padding: 0 10px;
+        float: left;
+
+        span {
+            line-height: 36px;
+        }
+
+        .fa {
+            margin-right: 5px;
+        }
+    }
+
+    .nav-item {
+        height: 36px;
+        padding: 0 10px;
+        text-align: center;
+        cursor: pointer;
+
+        &:hover {
+            color: #2a63c1;
+        }
+
+        .fa {
+            display: block;
+        }
+
+        span {
+            font-size: 0.875rem;
+        }
+    }
+
+    .toolbar-user {
+        float: right;
+    }
+
+    .status-container {
+        display: block;
+        width: 20px;
+        height: 20px;
+        margin: 0 auto;
+        padding: 2px;
+        border: 2px solid #ddd;
+        border-radius: 50%;
+
+        .status {
+            display: block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #ddd;
+        }
+
+        &.active.live,
+        &.live:hover {
+            border: 2px solid #197b30;
+
+            .status {
+                background: #197b30;
+            }
+        }
+
+        &.active.draft,
+        &.draft:hover {
+            border: 2px solid #ffc105;
+
+            .status {
+                background: #ffc105;
+            }
+        }
+    }
+
+
+    .user-icon {
+        display: block;
+        width: 32px;
+        height: 32px;
+        margin: 4px 10px 0 0;
+        float: left;
+        border-radius: 50%;
+        background: #ddd;
+
+        &::before {
+            display: block;
+            width: 32px;
+            font-family: FontAwesome;
+            font-size: 18px;
+            line-height: 32px;
+            text-align: center;
+            content: "\f007";
+        }
+    }
+
+    .user-name {
+        display: block;
+        height: 40px;
+        margin-right: 20px;
+        float: left;
+        line-height: 40px;
+    }
+
+    .user-logout {
+        display: block;
+        height: 40px;
+        float: left;
+        color: #2a63c1;
+        line-height: 40px;
+        cursor: pointer;
+        
+        &::before {
+            display: inline-block;
+            position: relative;
+            top: 2px;
+            width: 32px;
+            font-family: FontAwesome;
+            font-size: 18px;
+            line-height: 32px;
+            text-align: center;
+            content: "\f011";
+        }
+
+        &:hover {
+            color: #6990d2;
+        }
+    }
+}

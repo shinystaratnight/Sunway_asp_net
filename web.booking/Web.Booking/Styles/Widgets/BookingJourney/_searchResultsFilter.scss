@@ -1,0 +1,116 @@
+﻿@import "../../mixins/clearfix";
+@import "../../mixins/media";
+@import "../../variables";
+
+.search-results-filter {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #fff;
+
+    input[type=text] {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .filters-container {
+        padding-top: $padding-base;
+    }
+
+    .h-secondary {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+
+    .filter-type {
+        @include clearfix;
+        margin-top: 20px;
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        .h-tertiary {
+            position: relative;
+            width: 100%;
+            margin-bottom: $spacing-sm;
+            padding-right: 20px;
+            font-size: 1.125rem;
+            cursor: pointer;
+
+            &::after {
+                display: block;
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform: translateY(-50%);
+                color: $gray-dark;
+                font-family: FontAwesome;
+                font-size: 0.875rem;
+                text-align: right;
+                content: "\f067";
+            }
+        }
+
+        &.filter-expanded {
+            .h-tertiary {
+                &::after {
+                    content: "\f068";
+                }
+            }
+        }
+    }
+
+    .filter-option label {
+        padding-right: 30px;
+    }
+
+    .filter-item-count {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        font-size: 0.875rem;
+        text-align: right;
+    }
+
+    .rating {
+        display: inline-block;
+        font-size: 0;
+
+        &[data-rating="0.0"] {
+            font-size: 0.875rem;
+        }
+
+        &:after {
+            position: relative;
+            top: 2px;
+        }
+    }
+
+    .slider-input-container {
+        width: 100%;
+    }
+
+    .slider-input {
+        width: 100%;
+        clear: both;
+    }
+
+    @include break-md-down() {
+        .filter-title {
+            position: relative;
+            margin-bottom: 0;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .filter-menu-icon {
+            position: absolute;
+            right: 0;
+            font-size: 1.5rem;
+            line-height: 2.5rem;
+        }
+    }
+}

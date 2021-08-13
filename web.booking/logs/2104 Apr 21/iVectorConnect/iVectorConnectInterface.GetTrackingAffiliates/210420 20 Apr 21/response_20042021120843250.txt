@@ -1,0 +1,91 @@
+URL: http://sunwaytest.ivectorconnect.co.uk/ivectorconnect.ashx
+Headers:
+Authorization - sunwayb2c|sunwayb2c
+Content-Type - application/xml
+Host - sunwaytest.ivectorconnect.co.uk
+Content-Length - 701
+Expect - 100-continue
+Body:
+<GetTrackingAffiliatesResponse><TrackingAffiliates><TrackingAffiliate><TrackingAffiliateID>5</TrackingAffiliateID><Name>Google TagManager Head</Name><BrandID>0</BrandID><Type>Advanced Tracking</Type><QueryStringIdentifier /><ValidForDays>0</ValidForDays><Script>&lt;script&gt;
+window.dataLayer = window.dataLayer || [];
+dataLayer.push({   
+   'transactionAffiliation': 'B2C Booking',   
+   'transactionTax': 0.00,
+   'transactionShipping': 1,
+   'transactionProducts': [{
+       'sku': 'DestAirport',
+       'category': 'Package',
+       'quantity': 1
+   }]
+});
+&lt;/script&gt;
+&lt;!-- Google Tag Manager --&gt;
+&lt;script&gt;(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-THCTCP');&lt;/script&gt;
+&lt;!-- End Google Tag Manager --&gt;</Script><LandingPageScript /><ConfirmationScript /><Pages>All</Pages><Position>Bottom Header</Position><Secure>1</Secure><SecureScript>&lt;script&gt;
+window.dataLayer = window.dataLayer || [];
+dataLayer.push({   
+   'transactionAffiliation': 'B2C Booking',   
+   'transactionTax': 0.00,
+   'transactionShipping': 1,
+   'transactionProducts': [{
+       'sku': 'DestAirport',
+       'category': 'Package',
+       'quantity': 1
+   }]
+});
+&lt;/script&gt;
+&lt;!-- Google Tag Manager --&gt;
+&lt;script&gt;(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-THCTCP');&lt;/script&gt;
+&lt;!-- End Google Tag Manager --&gt;</SecureScript><CMSWebsiteID>1</CMSWebsiteID><FlightAndAccomTokenOverride>Package</FlightAndAccomTokenOverride><AccomTokenOverride>FlightOnly</AccomTokenOverride><FlightTokenOverride>HotelOnly</FlightTokenOverride><SelectedPages /></TrackingAffiliate><TrackingAffiliate><TrackingAffiliateID>8</TrackingAffiliateID><Name>Google TagManager Body</Name><BrandID>0</BrandID><Type>Advanced Tracking</Type><QueryStringIdentifier /><ValidForDays>0</ValidForDays><Script>&lt;!-- Google Tag Manager (noscript) --&gt;
+&lt;noscript&gt;&lt;iframe src="https://www.googletagmanager.com/ns.html?id=GTM-THCTCP"
+height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;&lt;/noscript&gt;
+&lt;!-- End Google Tag Manager (noscript) --&gt;</Script><LandingPageScript /><ConfirmationScript /><Pages>All</Pages><Position>Top Body</Position><Secure>1</Secure><SecureScript>&lt;!-- Google Tag Manager (noscript) --&gt;
+&lt;noscript&gt;&lt;iframe src="https://www.googletagmanager.com/ns.html?id=GTM-THCTCP"
+height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;&lt;/noscript&gt;
+&lt;!-- End Google Tag Manager (noscript) --&gt;
+
+&lt;script&gt;
+window.dataLayer = window.dataLayer || [];
+dataLayer.push({
+   'transactionId': '1234',
+   'transactionAffiliation': 'B2C Booking',
+   'transactionTotal': 0.00,
+   'transactionTax': 0.00,
+   'transactionShipping': 0,
+   'transactionProducts': [{
+       'sku': '##BookingReference##',
+       'name': '##ArrivalAirport##',
+       'category': '##Type##',
+       'price': 0.00,
+       'quantity': 1
+   },{
+       'sku': '##BookingReference##',
+       'name': '##ArrivalAirport##',
+       'category': '##Type##',
+       'price': 0.00,
+       'quantity': 1
+   }]
+});
+&lt;/script&gt;</SecureScript><CMSWebsiteID>1</CMSWebsiteID><FlightAndAccomTokenOverride>Package</FlightAndAccomTokenOverride><AccomTokenOverride>FlightOnly</AccomTokenOverride><FlightTokenOverride>HotelOnly</FlightTokenOverride><SelectedPages /></TrackingAffiliate><TrackingAffiliate><TrackingAffiliateID>10</TrackingAffiliateID><Name>Google API Key Verify</Name><BrandID>0</BrandID><Type>Advanced Tracking</Type><QueryStringIdentifier /><ValidForDays>0</ValidForDays><Script>&lt;meta name="google-site-verification" content="BHCNa3dhOVKflKBAbgDl8vMBX5Z8mjN1weXBJ2yBXek" /&gt;</Script><LandingPageScript /><ConfirmationScript /><Pages>All</Pages><Position>Top Header</Position><Secure>1</Secure><SecureScript>&lt;meta name="google-site-verification" content="BHCNa3dhOVKflKBAbgDl8vMBX5Z8mjN1weXBJ2yBXek" /&gt;</SecureScript><CMSWebsiteID>1</CMSWebsiteID><FlightAndAccomTokenOverride /><AccomTokenOverride /><FlightTokenOverride /><SelectedPages /></TrackingAffiliate><TrackingAffiliate><TrackingAffiliateID>12</TrackingAffiliateID><Name>Custom CSS</Name><BrandID>0</BrandID><Type>Advanced Tracking</Type><QueryStringIdentifier /><ValidForDays>0</ValidForDays><Script>&lt;link rel="stylesheet" href="https://www.sunway.ie/css/ivector.css?v=4"&gt;
+&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"&gt;
+&lt;script src="https://www.sunway.ie/js/jquery-3.4.1.min.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="https://www.sunway.ie/js/ivector.js?v=5"&gt;&lt;/script&gt;
+
+&lt;script src="https://www.sunway.ie/js/test-ivector.js"&gt;&lt;/script&gt;
+&lt;script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin&gt;&lt;/script&gt;
+&lt;script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin&gt;&lt;/script&gt;</Script><LandingPageScript /><ConfirmationScript /><Pages>All</Pages><Position>Top Header</Position><Secure>1</Secure><SecureScript>&lt;link rel="stylesheet" href="https://www.sunway.ie/css/ivector.css?v=4"&gt;
+&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"&gt;
+&lt;script src="https://www.sunway.ie/js/jquery-3.4.1.min.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="https://www.sunway.ie/js/ivector.js?v=5"&gt;&lt;/script&gt;
+
+&lt;script src="https://www.sunway.ie/js/test-ivector.js"&gt;&lt;/script&gt;
+&lt;script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin&gt;&lt;/script&gt;
+&lt;script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin&gt;&lt;/script&gt;</SecureScript><CMSWebsiteID>1</CMSWebsiteID><FlightAndAccomTokenOverride /><AccomTokenOverride /><FlightTokenOverride /><SelectedPages /></TrackingAffiliate><TrackingAffiliate><TrackingAffiliateID>13</TrackingAffiliateID><Name>TrustPilot Reviews</Name><BrandID>0</BrandID><Type>Advanced Tracking</Type><QueryStringIdentifier /><ValidForDays>0</ValidForDays><Script>&lt;script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async&gt;&lt;/script&gt;</Script><LandingPageScript /><ConfirmationScript /><Pages>All</Pages><Position>Top Header</Position><Secure>0</Secure><SecureScript /><CMSWebsiteID>1</CMSWebsiteID><FlightAndAccomTokenOverride /><AccomTokenOverride /><FlightTokenOverride /><SelectedPages /></TrackingAffiliate></TrackingAffiliates><TrackingAffiliateTypeIDs /><ReturnStatus><Success>true</Success><Exceptions /><ThirdPartyErrors /></ReturnStatus></GetTrackingAffiliatesResponse>

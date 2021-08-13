@@ -1,0 +1,96 @@
+﻿@import "../../../../styles/mixins/media";
+
+.flight-search-container {
+    @include break-md-down() {
+        .flight-searchtool {
+            padding: 0;
+
+            .search-tool-holder {
+                padding: 0 8px;
+            }
+        }
+
+        .widget-searchtool {
+            .sidebar-view {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    @include break-md {
+        .search-selected-flight {
+            .search-summary.FlightPlusHotel {
+                display: none;
+            }
+        }
+    }
+
+    .flight-result {
+        margin-bottom: 0;
+
+        .flight-information {
+            @include break-sm-down() {
+                .flight-code,
+                .flight-class {
+                    display: block;
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
+
+@include break-sm-down() {
+    .header {
+        margin-bottom: 0;
+    }
+
+    .flight-result {
+        .result-price {
+            text-align: right;
+
+            .price {
+                margin-bottom: 0 !important;
+                .price-amount {
+                    font-size: 2.0rem;
+                }
+            }
+
+            .btn {
+                font-size: 1.5rem;
+                margin-top: 5px;
+            }
+        }
+    }
+}
+
+@include break-md-down() {
+    .search-results-list {
+        .search-result-summary-container {
+            margin: 0;
+
+            .search-results-list-sort {
+                padding: 0;
+                float: none;
+                position: absolute;
+                width: 49%;
+                right: 0;
+                top: -56px;
+
+                .form-group {
+                    &.inline {
+                        float: none;
+                    }
+                }
+
+                .form-control {
+                    height: 34px;
+                }
+            }
+
+            .sort-label {
+                display: none;
+            }
+        }
+    }
+}

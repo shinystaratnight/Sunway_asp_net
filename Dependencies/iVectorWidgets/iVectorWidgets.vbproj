@@ -1,0 +1,728 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{4609F6D8-AC64-4571-BAD9-8553755ECE71}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>iVectorWidgets</RootNamespace>
+    <AssemblyName>iVectorWidgets</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>false</UseIISExpress>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication>enabled</IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>disabled</IISExpressWindowsAuthentication>
+    <IISExpressUseClassicPipelineMode>true</IISExpressUseClassicPipelineMode>
+    <TargetFrameworkProfile />
+    <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>iVectorWidgets.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>iVectorWidgets.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>On</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>Off</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>12.0.2</Version>
+    </PackageReference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AutoDocumentation\ClientDoc.xsl" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Script\fastclick.js" />
+    <Content Include="Script\jquery.popupoverlay.js" />
+    <Content Include="Script\LanguageScripts\datepicker-af.js" />
+    <Content Include="Script\LanguageScripts\datepicker-ar-DZ.js" />
+    <Content Include="Script\LanguageScripts\datepicker-ar.js" />
+    <Content Include="Script\LanguageScripts\datepicker-az.js" />
+    <Content Include="Script\LanguageScripts\datepicker-be.js" />
+    <Content Include="Script\LanguageScripts\datepicker-bg.js" />
+    <Content Include="Script\LanguageScripts\datepicker-bs.js" />
+    <Content Include="Script\LanguageScripts\datepicker-ca.js" />
+    <Content Include="Script\LanguageScripts\datepicker-cs.js" />
+    <Content Include="Script\LanguageScripts\datepicker-cy-GB.js" />
+    <Content Include="Script\LanguageScripts\datepicker-da.js" />
+    <Content Include="Script\LanguageScripts\datepicker-de.js" />
+    <Content Include="Script\LanguageScripts\datepicker-el.js" />
+    <Content Include="Script\LanguageScripts\datepicker-en-AU.js" />
+    <Content Include="Script\LanguageScripts\datepicker-en-GB.js" />
+    <Content Include="Script\LanguageScripts\datepicker-en-NZ.js" />
+    <Content Include="Script\LanguageScripts\datepicker-eo.js" />
+    <Content Include="Script\LanguageScripts\datepicker-es.js" />
+    <Content Include="Script\LanguageScripts\datepicker-et.js" />
+    <Content Include="Script\LanguageScripts\datepicker-eu.js" />
+    <Content Include="Script\LanguageScripts\datepicker-fa.js" />
+    <Content Include="Script\LanguageScripts\datepicker-fi.js" />
+    <Content Include="Script\LanguageScripts\datepicker-fo.js" />
+    <Content Include="Script\LanguageScripts\datepicker-fr-CA.js" />
+    <Content Include="Script\LanguageScripts\datepicker-fr-CH.js" />
+    <Content Include="Script\LanguageScripts\datepicker-fr.js" />
+    <Content Include="Script\LanguageScripts\datepicker-gl.js" />
+    <Content Include="Script\LanguageScripts\datepicker-he.js" />
+    <Content Include="Script\LanguageScripts\datepicker-hi.js" />
+    <Content Include="Script\LanguageScripts\datepicker-hr.js" />
+    <Content Include="Script\LanguageScripts\datepicker-hu.js" />
+    <Content Include="Script\LanguageScripts\datepicker-hy.js" />
+    <Content Include="Script\LanguageScripts\datepicker-id.js" />
+    <Content Include="Script\LanguageScripts\datepicker-is.js" />
+    <Content Include="Script\LanguageScripts\datepicker-it-CH.js" />
+    <Content Include="Script\LanguageScripts\datepicker-it.js" />
+    <Content Include="Script\LanguageScripts\datepicker-ja.js" />
+    <Content Include="Script\LanguageScripts\datepicker-ka.js" />
+    <Content Include="Script\LanguageScripts\datepicker-kk.js" />
+    <Content Include="Script\LanguageScripts\datepicker-km.js" />
+    <Content Include="Script\LanguageScripts\datepicker-ko.js" />
+    <Content Include="Script\LanguageScripts\datepicker-ky.js" />
+    <Content Include="Script\LanguageScripts\datepicker-lb.js" />
+    <Content Include="Script\LanguageScripts\datepicker-lt.js" />
+    <Content Include="Script\LanguageScripts\datepicker-lv.js" />
+    <Content Include="Script\LanguageScripts\datepicker-mk.js" />
+    <Content Include="Script\LanguageScripts\datepicker-ml.js" />
+    <Content Include="Script\LanguageScripts\datepicker-ms.js" />
+    <Content Include="Script\LanguageScripts\datepicker-nb.js" />
+    <Content Include="Script\LanguageScripts\datepicker-nl-BE.js" />
+    <Content Include="Script\LanguageScripts\datepicker-nl.js" />
+    <Content Include="Script\LanguageScripts\datepicker-nn.js" />
+    <Content Include="Script\LanguageScripts\datepicker-no.js" />
+    <Content Include="Script\LanguageScripts\datepicker-pl.js" />
+    <Content Include="Script\LanguageScripts\datepicker-pt-BR.js" />
+    <Content Include="Script\LanguageScripts\datepicker-pt.js" />
+    <Content Include="Script\LanguageScripts\datepicker-rm.js" />
+    <Content Include="Script\LanguageScripts\datepicker-ro.js" />
+    <Content Include="Script\LanguageScripts\datepicker-ru.js" />
+    <Content Include="Script\LanguageScripts\datepicker-sk.js" />
+    <Content Include="Script\LanguageScripts\datepicker-sl.js" />
+    <Content Include="Script\LanguageScripts\datepicker-sq.js" />
+    <Content Include="Script\LanguageScripts\datepicker-sr-SR.js" />
+    <Content Include="Script\LanguageScripts\datepicker-sr.js" />
+    <Content Include="Script\LanguageScripts\datepicker-sv.js" />
+    <Content Include="Script\LanguageScripts\datepicker-ta.js" />
+    <Content Include="Script\LanguageScripts\datepicker-th.js" />
+    <Content Include="Script\LanguageScripts\datepicker-tj.js" />
+    <Content Include="Script\LanguageScripts\datepicker-tr.js" />
+    <Content Include="Script\LanguageScripts\datepicker-uk.js" />
+    <Content Include="Script\LanguageScripts\datepicker-vi.js" />
+    <Content Include="Script\LanguageScripts\datepicker-zh-CN.js" />
+    <Content Include="Script\LanguageScripts\datepicker-zh-HK.js" />
+    <Content Include="Script\LanguageScripts\datepicker-zh-TW.js" />
+    <Content Include="Script\polyfills.js" />
+    <Content Include="Script\forms.js" />
+    <Content Include="Script\lib.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.config.txt" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Widgets\AlternateEmail\AlternateEmail.js" />
+    <Content Include="Widgets\AlternateEmail\AlternateEmail.xsl" />
+    <Content Include="Widgets\Baggage\Baggage.js" />
+    <Content Include="Widgets\Baggage\Baggage.xsl">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Widgets\Baggage\ZeroPriceBaggage.xsl" />
+    <Content Include="Widgets\Basket\Basket.css" />
+    <Content Include="Widgets\Basket\Basket.js" />
+    <Content Include="Widgets\Basket\Basket.xsl">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Widgets\BookingConfirmationPrint\BookingConfirmationPrint.css" />
+    <Content Include="Widgets\BookingConfirmationPrint\BookingConfirmationPrint.js" />
+    <Content Include="Widgets\BookingConfirmationPrint\BookingConfirmationPrint.xsl" />
+    <Content Include="Widgets\BookingConfirmation\BookingConfirmation.css" />
+    <Content Include="Widgets\BookingConfirmation\BookingConfirmation.js" />
+    <Content Include="Widgets\BookingConfirmation\BookingConfirmation.xsl">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Widgets\Breadcrumbs\Breadcrumbs.xsl">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Widgets\CancellationCharges\CancellationCharges.js" />
+    <Content Include="Widgets\CancellationCharges\CancellationCharges.xsl">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Widgets\CarHire\CarHire.ascx" />
+    <Content Include="Widgets\CarHire\CarHire.css" />
+    <Content Include="Widgets\CarHire\CarHire.js" />
+    <Content Include="Widgets\CarHire\CarHire.xsl">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Widgets\CarHire\CarHireResults.xsl">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Widgets\CarHire\CarHireInformationPopup.xsl" />
+    <Content Include="Widgets\CarHire\SelectedCarHire.xsl" />
+    <Content Include="Widgets\ChangeFlight\ChangeFlight.css" />
+    <Content Include="Widgets\ChangeFlight\ChangeFlight.js" />
+    <Content Include="Widgets\ChangeFlight\ChangeFlight.xsl" />
+    <Content Include="Widgets\CompleteBooking\CompleteBooking.css" />
+    <Content Include="Widgets\CompleteBooking\CompleteBooking.js" />
+    <Content Include="Widgets\CompleteBooking\CompleteBooking.ascx" />
+    <Content Include="Widgets\CookieCompliance\CookieCompliance.css" />
+    <Content Include="Widgets\CookieCompliance\CookieCompliance.js" />
+    <Content Include="Widgets\CookieCompliance\CookieCompliance.xsl" />
+    <Content Include="Widgets\HotelResults\HotelResults_Errata.xsl" />
+    <Content Include="Widgets\Logger\Logger.js" />
+    <Content Include="Widgets\PageNotFound\PageNotFound.xsl" />
+    <Content Include="Widgets\Sitemap\Sitemap.css" />
+    <Content Include="Widgets\Sitemap\Sitemap.xsl" />
+    <Content Include="Widgets\TradeReference\TradeReference.js" />
+    <Content Include="Widgets\TradeReference\TradeReference.xsl" />
+    <Content Include="Widgets\Transfers\TransferInformationPopup.xsl" />
+    <Content Include="Widgets\WaitMessage\WaitMessageTimeout.xsl" />
+    <Content Include="Widgets\ContactUs\ContactUs.css" />
+    <Content Include="Widgets\ContactUs\ContactUs.js" />
+    <Content Include="Widgets\ContactUs\ContactUs.xsl">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Widgets\Deeplink\Deeplink.js" />
+    <Content Include="Widgets\Deposit\Deposit.css" />
+    <Content Include="Widgets\Deposit\Deposit.js" />
+    <Content Include="Widgets\Deposit\Deposit.xsl" />
+    <Content Include="Widgets\Errata\Errata.js" />
+    <Content Include="Widgets\Errata\Errata.xsl">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Widgets\ErrorHandler\ErrorHandler.css" />
+    <Content Include="Widgets\ErrorHandler\ErrorHandler.xsl">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Widgets\Extras\ExtraResults.xsl" />
+    <Content Include="Widgets\Extras\Extras.js" />
+    <Content Include="Widgets\Extras\Extras.xsl">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Widgets\FavouriteHotels\FavouriteHotels.css" />
+    <Content Include="Widgets\FavouriteHotels\FavouriteHotels.xsl">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Widgets\FindBooking\FindBooking.css" />
+    <Content Include="Widgets\FindBooking\FindBooking.js" />
+    <Content Include="Widgets\FindBooking\FindBooking.xsl" />
+    <Content Include="Widgets\FlightExtras\FlightExtras.js" />
+    <Content Include="Widgets\FlightExtras\FlightExtras.xsl" />
+    <Content Include="Widgets\FlightResultsFilter\FlightResultsFilter.css" />
+    <Content Include="Widgets\FlightResultsFilter\FlightResultsFilter.js" />
+    <Content Include="Widgets\FlightResultsFilter\FlightResultsFilter.xsl">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Widgets\HotelDetails\HotelDetails_RequestRoomPopup.xsl">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Widgets\HotelEmailDescription\EmailBody.xsl">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Widgets\HotelEmailDescription\HotelEmailDescription.js" />
+    <Content Include="Widgets\HotelEmailDescription\HotelEmailDescription.xsl">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Widgets\HotelPopup\HotelPopup_Images.xsl" />
+    <Content Include="Widgets\HotelRequests\HotelRequests.js" />
+    <Content Include="Widgets\HotelRequests\HotelRequests.css" />
+    <Content Include="Widgets\HotelRequests\HotelRequests.ascx" />
+    <Content Include="Widgets\HotelPopup\HotelDetailsEmail.xsl" />
+    <Content Include="Widgets\HotelPopup\HotelPopup.css" />
+    <Content Include="Widgets\HotelPopup\HotelPopup.js" />
+    <Content Include="Widgets\HotelPopup\HotelPopup.xsl">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Widgets\HotelResults\HotelContent.xsl" />
+    <Content Include="Widgets\HotelResults\HotelResultsMapPopup.xsl" />
+    <Content Include="Widgets\HotelResults\HotelResults_CancellationCharges.xsl">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Widgets\HotelResults\HotelResults_RequestRoomPopup.xsl">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Widgets\HotelUpsell\HotelUpsell.js" />
+    <Content Include="Widgets\HotelUpsell\HotelUpsell.css" />
+    <Content Include="Widgets\HotelUpsell\HotelUpsell.xsl" />
+    <Content Include="Widgets\Map\Map.css" />
+    <Content Include="Widgets\Map\Map.ascx" />
+    <Content Include="Widgets\MyBookingsLogin\GetCustomerPoints.txt" />
+    <Content Include="Widgets\PaymentAuthorisation\PaymentAuthorisation.xsl" />
+    <Content Include="Widgets\PaymentDetails\PaymentDetails.js" />
+    <Content Include="Widgets\PaymentDetails\PaymentDetails.ascx" />
+    <Content Include="Widgets\PromoCode\PromoCode.css" />
+    <Content Include="Widgets\PromoCode\PromoCode.js" />
+    <Content Include="Widgets\PromoCode\PromoCode.xsl">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Widgets\ResponsiveImageRotator\ResponsiveImageRotator.css" />
+    <Content Include="Widgets\ResponsiveImageRotator\ResponsiveImageRotator.js" />
+    <Content Include="Widgets\ResponsiveImageRotator\ResponsiveImageRotator.xsl" />
+    <Content Include="Widgets\ResultsCarousel\ResultsCarousel.css" />
+    <Content Include="Widgets\ResultsCarousel\ResultsCarousel.js" />
+    <Content Include="Widgets\ResultsCarousel\ResultsCarousel.xsl">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Widgets\FlightResults\FlightResults.css" />
+    <Content Include="Widgets\FlightResults\FlightResults.js" />
+    <Content Include="Widgets\FlightResults\FlightResults.xsl" />
+    <Content Include="Widgets\GuestDetails\GuestDetails.js" />
+    <Content Include="Widgets\GuestDetails\GuestDetails.xsl">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Widgets\HotelDetails\HotelDetails.css" />
+    <Content Include="Widgets\HotelDetails\HotelDetails.js" />
+    <Content Include="Widgets\HotelDetails\HotelDetails.xsl" />
+    <Content Include="Widgets\HotelListLinks\HotelListLinks.xsl" />
+    <Content Include="Widgets\HotelResultsFilter\HotelResultsFilter.js" />
+    <Content Include="Widgets\HotelResultsFilter\HotelResultsFilter.xsl">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Widgets\HotelResultsFooter\HotelResultsFooter.css" />
+    <Content Include="Widgets\HotelResultsFooter\HotelResultsFooter.js" />
+    <Content Include="Widgets\HotelResultsFooter\HotelResultsFooter.ascx" />
+    <Content Include="Widgets\HotelResults\HotelResults.css" />
+    <Content Include="Widgets\HotelResults\HotelResults.js" />
+    <Content Include="Widgets\HotelResults\HotelResults.xsl">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Widgets\ImageRotator\ImageRotator.css" />
+    <Content Include="Widgets\ImageRotator\ImageRotator.js" />
+    <Content Include="Widgets\ImageRotator\ImageRotator.xsl">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Widgets\LeadGuestDetails\LeadGuestDetails.css" />
+    <Content Include="Widgets\LeadGuestDetails\LeadGuestDetails.js" />
+    <Content Include="Widgets\LeadGuestDetails\LeadGuestDetails.ascx" />
+    <Content Include="Widgets\Map\Map.js" />
+    <Content Include="Widgets\MyBookingsLogin\MyBookingsLogin.css" />
+    <Content Include="Widgets\MyBookingsLogin\MyBookingsLogin.js" />
+    <Content Include="Widgets\MyBookingsLogin\MyBookingsLogin.xsl" />
+    <Content Include="Widgets\MyBookings\MyBookings.css" />
+    <Content Include="Widgets\MyBookings\MyBookings.js" />
+    <Content Include="Widgets\MyBookings\MyBookings.xsl">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Widgets\NavigationBar\NavigationBar.css" />
+    <Content Include="Widgets\NavigationBar\NavigationBar.xsl" />
+    <Content Include="Widgets\Newsletter\Newsletter.css" />
+    <Content Include="Widgets\Newsletter\Newsletter.js" />
+    <Content Include="Widgets\Newsletter\Newsletter.xsl">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Widgets\RelatedPages\RelatedPages.xsl" />
+    <Content Include="Widgets\SearchSummary\SearchSummary.css" />
+    <Content Include="Widgets\SearchSummary\SearchSummary.js" />
+    <Content Include="Widgets\SearchSummary\SearchSummary.ascx" />
+    <Content Include="Widgets\SearchSummary\SearchSummaryTabs.xsl" />
+    <Content Include="Widgets\SearchTool\SearchTool.css" />
+    <Content Include="Widgets\SearchTool\SearchTool.js" />
+    <Content Include="Widgets\SearchTool\SearchTool.ascx" />
+    <Content Include="Widgets\SeatSelection\SeatSelection.css" />
+    <Content Include="Widgets\SeatSelection\SeatSelection.js" />
+    <Content Include="Widgets\SeatSelection\SeatSelection.xsl" />
+    <Content Include="Widgets\SessionPersister\SessionPersister.js" />
+    <Content Include="Widgets\SessionPersister\SessionPersister.xsl" />
+    <Content Include="Widgets\SimilarHotels\SimilarHotels.css" />
+    <Content Include="Widgets\SimilarHotels\SimilarHotels.xsl" />
+    <Content Include="Widgets\TermsAndConditions\TermsAndConditions.css" />
+    <Content Include="Widgets\TermsAndConditions\TermsAndConditions.js" />
+    <Content Include="Widgets\TermsAndConditions\TermsAndConditions.xsl">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Widgets\Theme_Content\Theme_Content.htm" />
+    <Content Include="Widgets\Theme_Content_RWD\Theme_Content_RWD.htm" />
+    <Content Include="Widgets\Theme_Sidebar_RWD\Theme_Sidebar_RWD.htm" />
+    <Content Include="Widgets\Theme_Subheader\Theme_Subheader.htm" />
+    <Content Include="Widgets\Theme_Sidebar\Theme_Sidebar.htm" />
+    <Content Include="Widgets\TrackingAffiliate\TrackingAffiliate.xsl" />
+    <Content Include="Widgets\TradeBookings\CancelComponentPopup.xsl">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Widgets\TradeBookings\EmailPopup.xsl" />
+    <Content Include="Widgets\TradeBookings\TradeBookings.css" />
+    <Content Include="Widgets\TradeBookings\TradeBookings.js" />
+    <Content Include="Widgets\TradeBookings\TradeBookings.xsl">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Widgets\TradeLogin\TradeLogin.js" />
+    <Content Include="Widgets\TradeLogin\TradeLogin.xsl" />
+    <Content Include="Widgets\Transfers\Transfers.js" />
+    <Content Include="Widgets\Transfers\Transfers.xsl">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Widgets\UsefulLinks\UsefulLinks.xsl" />
+    <Content Include="Widgets\WaitMessage\WaitMessage.css" />
+    <Content Include="Widgets\WaitMessage\WaitMessage.js" />
+    <Content Include="Widgets\WaitMessage\WaitMessage.xsl">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Widgets\Warning\Warning.js" />
+    <Content Include="XSL\Functions.xsl" />
+    <Content Include="XSL\Markdown.xsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AutoDocumentation\AutoDocsResource.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AutoDocsResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="AutoDocumentation\AutoDocumentation.vb" />
+    <Compile Include="AutoDocumentation\CustomAttributes.vb" />
+    <Compile Include="Classes\PageBase.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Classes\UserControlBase.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.vb">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Resource\res.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>res.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Assets.ashx.vb">
+      <DependentUpon>Assets.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\BrowserPerformanceLog.ashx.vb">
+      <DependentUpon>BrowserPerformanceLog.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ExtraHandler.ashx.vb">
+      <DependentUpon>ExtraHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\View-Documentation.ashx.vb">
+      <DependentUpon>View-Documentation.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Widgets\AlternateEmail\AlternateEmail.vb" />
+    <Compile Include="Widgets\Basket\BasketComponentSortDef.vb" />
+    <Compile Include="Widgets\ChangeFlight\ChangeFlight.vb" />
+    <Compile Include="Widgets\CookieCompliance\CookieCompliance.vb" />
+    <Compile Include="Widgets\Logger\Logger.vb" />
+    <Compile Include="Widgets\PageNotFound\PageNotFound.vb" />
+    <Compile Include="Widgets\Baggage\Baggage.vb" />
+    <Compile Include="Widgets\Basket\Basket.vb" />
+    <Compile Include="Widgets\BookingConfirmationPrint\BookingConfirmationPrint.vb" />
+    <Compile Include="Widgets\BookingConfirmation\BookingConfirmation.vb" />
+    <Compile Include="Widgets\Breadcrumbs\Breadcrumbs.vb" />
+    <Compile Include="Widgets\CancellationCharges\CancellationCharges.vb" />
+    <Compile Include="Widgets\CarHire\CarHire.ascx.designer.vb">
+      <DependentUpon>CarHire.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Widgets\CarHire\CarHire.ascx.vb">
+      <DependentUpon>CarHire.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Widgets\CarHire\CarHire.vb" />
+    <Compile Include="Widgets\CompleteBooking\CompleteBooking.ascx.designer.vb">
+      <DependentUpon>CompleteBooking.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Widgets\CompleteBooking\CompleteBooking.ascx.vb">
+      <DependentUpon>CompleteBooking.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Widgets\CompleteBooking\CompleteBooking.vb" />
+    <Compile Include="Widgets\ContactUs\ContactUs.vb" />
+    <Compile Include="Widgets\Deeplink\Deeplink.vb" />
+    <Compile Include="Widgets\Deposit\Deposit.vb" />
+    <Compile Include="Widgets\Errata\Errata.vb" />
+    <Compile Include="Widgets\ErrorHandler\ErrorHandler.vb" />
+    <Compile Include="Widgets\Extras\Extras.vb" />
+    <Compile Include="Widgets\FavouriteHotels\FavouriteHotels.vb" />
+    <Compile Include="Widgets\FindBooking\FindBooking.vb" />
+    <Compile Include="Widgets\FlightExtras\FlightExtras.vb" />
+    <Compile Include="Widgets\FlightResultsFilter\FlightResultsFilter.vb" />
+    <Compile Include="Widgets\HotelEmailDescription\HotelEmailDescription.vb" />
+    <Compile Include="Widgets\HotelRequests\HotelRequests.vb" />
+    <Compile Include="Widgets\HotelRequests\HotelRequests.ascx.designer.vb">
+      <DependentUpon>HotelRequests.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Widgets\HotelRequests\HotelRequests.ascx.vb">
+      <DependentUpon>HotelRequests.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Widgets\HotelPopup\HotelPopup.vb" />
+    <Compile Include="Widgets\HotelUpsell\HotelUpsell.vb" />
+    <Compile Include="Widgets\Map\Map.ascx.designer.vb">
+      <DependentUpon>Map.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Widgets\Map\Map.ascx.vb">
+      <DependentUpon>Map.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Widgets\PaymentAuthHandler\PaymentAuthHandler.vb" />
+    <Compile Include="Widgets\PaymentAuthorisation\PaymentAuthorisation.vb" />
+    <Compile Include="Widgets\PaymentDetails\PaymentDetails.ascx.designer.vb">
+      <DependentUpon>PaymentDetails.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Widgets\PaymentDetails\PaymentDetails.ascx.vb">
+      <DependentUpon>PaymentDetails.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Widgets\PaymentDetails\PaymentDetails.vb" />
+    <Compile Include="Widgets\PromoCode\PromoCode.vb" />
+    <Compile Include="Widgets\ResponsiveImageRotator\ResponsiveImageRotator.vb" />
+    <Compile Include="Widgets\ResultsCarousel\ResultsCarousel.vb" />
+    <Compile Include="Widgets\FlightResults\FlightResults.vb" />
+    <Compile Include="Widgets\GuestDetails\GuestDetails.vb" />
+    <Compile Include="Widgets\HotelDetails\HotelDetails.vb" />
+    <Compile Include="Widgets\HotelListLinks\HotelListLinks.vb" />
+    <Compile Include="Widgets\HotelResultsFilter\HotelResultsFilter.vb" />
+    <Compile Include="Widgets\HotelResultsFooter\HotelResultsFooter.ascx.designer.vb">
+      <DependentUpon>HotelResultsFooter.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Widgets\HotelResultsFooter\HotelResultsFooter.ascx.vb">
+      <DependentUpon>HotelResultsFooter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Widgets\HotelResultsFooter\HotelResultsFooter.vb" />
+    <Compile Include="Widgets\HotelResults\HotelResults.vb" />
+    <Compile Include="Widgets\ImageRotator\ImageRotator.vb" />
+    <Compile Include="Widgets\LeadGuestDetails\LeadGuestDetails.ascx.designer.vb">
+      <DependentUpon>LeadGuestDetails.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Widgets\LeadGuestDetails\LeadGuestDetails.ascx.vb">
+      <DependentUpon>LeadGuestDetails.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Widgets\LeadGuestDetails\LeadGuestDetails.vb" />
+    <Compile Include="Widgets\Map\Map.vb" />
+    <Compile Include="Widgets\MyBookingsLogin\MyBookingsLogin.vb" />
+    <Compile Include="Widgets\MyBookings\MyBookings.vb" />
+    <Compile Include="Widgets\NavigationBar\NavigationBar.vb" />
+    <Compile Include="Widgets\Newsletter\Newsletter.vb" />
+    <Compile Include="Widgets\RelatedPages\RelatedPages.vb" />
+    <Compile Include="Widgets\SearchSummary\SearchSummary.ascx.designer.vb">
+      <DependentUpon>SearchSummary.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Widgets\SearchSummary\SearchSummary.ascx.vb">
+      <DependentUpon>SearchSummary.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Widgets\SearchSummary\SearchSummary.vb" />
+    <Compile Include="Widgets\SearchTool\DefaultSearchValues.vb" />
+    <Compile Include="Widgets\SearchTool\SearchTool.vb" />
+    <Compile Include="Widgets\SearchTool\SearchTool.ascx.designer.vb">
+      <DependentUpon>SearchTool.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Widgets\SearchTool\SearchTool.ascx.vb">
+      <DependentUpon>SearchTool.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Widgets\SeatSelection\SeatSelection.vb" />
+    <Compile Include="Widgets\SessionPersister\SessionPersister.vb" />
+    <Compile Include="Widgets\SimilarHotels\SimilarHotels.vb" />
+    <Compile Include="Widgets\Sitemap\Sitemap.vb" />
+    <Compile Include="Widgets\TermsAndConditions\TermsAndConditions.vb" />
+    <Compile Include="Widgets\TrackingAffiliate\TrackingAffiliate.vb" />
+    <Compile Include="Widgets\TradeBookings\TradeBookings.vb" />
+    <Compile Include="Widgets\TradeLogin\TradeLogin.vb" />
+    <Compile Include="Widgets\TradeReference\TradeReference.vb" />
+    <Compile Include="Widgets\Transfers\Transfers.vb" />
+    <Compile Include="Widgets\UsefulLinks\UsefulLinks.vb" />
+    <Compile Include="Widgets\WaitMessage\WaitMessage.vb" />
+    <Compile Include="Widgets\Warning\Warning.vb" />
+    <Compile Include="XSL\XSL.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AutoDocumentation\AutoDocsResource.resx">
+      <CustomToolNamespace>AutoDocs.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AutoDocsResource.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\res.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>res.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="Services\View-Documentation.ashx" />
+    <Content Include="Services\Assets.ashx" />
+    <Content Include="Services\BrowserPerformanceLog.ashx" />
+    <Content Include="Services\ExtraHandler.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Widgets\XSLTest\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\iVectorConnectInterface\iVectorConnectInterface.vbproj">
+      <Project>{783382a3-1b3e-4958-81bf-1337f446b2ae}</Project>
+      <Name>iVectorConnectInterface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\intuitive.domain\Src\Intuitive.Domain\Intuitive.Domain.csproj">
+      <Project>{0af4ae89-11c2-4efe-a9a6-e2697abe9bf3}</Project>
+      <Name>Intuitive.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\intuitive\Intuitive\Intuitive.vbproj">
+      <Project>{67d15438-75e8-43e7-b3aa-82ecb52bcddf}</Project>
+      <Name>Intuitive</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\intuitiveweb\IntuitiveWeb.vbproj">
+      <Project>{3781092c-1d88-4563-bb7b-7f9518dc8fd9}</Project>
+      <Name>IntuitiveWeb</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>49669</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

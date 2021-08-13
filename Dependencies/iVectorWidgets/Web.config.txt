@@ -1,0 +1,15 @@
+﻿<?xml version="1.0"?>
+<configuration>
+
+	<appSettings>
+	</appSettings>
+	
+	
+	<system.web>
+		<sessionState timeout="20"/>
+		<customErrors mode="Off"/>
+		<compilation debug="true" strict="false" explicit="true"/>
+		<authentication mode="Windows"/>
+    </system.web>
+
+</configuration>

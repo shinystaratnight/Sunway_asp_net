@@ -1,0 +1,9 @@
+URL: http://sunwaytest.ivectorconnect.co.uk/ivectorconnect.ashx
+Headers:
+Authorization - sunwayb2c|sunwayb2c
+Content-Type - application/xml
+Host - sunwaytest.ivectorconnect.co.uk
+Content-Length - 1487
+Expect - 100-continue
+Body:
+<PackageSearchResponse><ReturnStatus><Success>false</Success><Exceptions><Exception>No property search results</Exception><Exception>No flight search results</Exception></Exceptions><ThirdPartyErrors /></ReturnStatus><LeadInPrice>0.0</LeadInPrice><ArrivalDate>1900-01-01T00:00:00.001</ArrivalDate><Duration>0</Duration><PropertyResults /><Flights /></PackageSearchResponse>

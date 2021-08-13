@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "iVectorConnectInterface", "iVectorConnectInterface.vbproj", "{783382A3-1B3E-4958-81BF-1337F446B2AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iVectorConnectInterface.Tests", "..\iVectorConnectInterface.Tests\iVectorConnectInterface.Tests.csproj", "{71CF4FDB-78E7-49BA-8E0E-AFB006E00B1B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{783382A3-1B3E-4958-81BF-1337F446B2AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{783382A3-1B3E-4958-81BF-1337F446B2AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{783382A3-1B3E-4958-81BF-1337F446B2AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{783382A3-1B3E-4958-81BF-1337F446B2AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71CF4FDB-78E7-49BA-8E0E-AFB006E00B1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71CF4FDB-78E7-49BA-8E0E-AFB006E00B1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71CF4FDB-78E7-49BA-8E0E-AFB006E00B1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71CF4FDB-78E7-49BA-8E0E-AFB006E00B1B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(VaultVsipSolution-v2) = preSolution
+		VaultHost = http://athena.intuitivesystems.co.uk/VaultService
+		VaultRepositoryID = 9
+		VaultRepositoryGUID = 28acc998-f186-4411-8306-4aa6f4cd0479
+		ProjectCount = 1
+		ProjectRelativeDiskPath1 = iVectorConnectInterface.vbproj
+	EndGlobalSection
+EndGlobal

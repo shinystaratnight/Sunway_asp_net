@@ -1,0 +1,69 @@
+﻿{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "title": "Promo Code",
+    "description": "Widget that allows you to apply an iVector Promo Code to your booking",
+    "properties": {
+        "Title": {
+            "default": "Promotional Code",
+            "description": "Title displayed at the top of the widget.",
+            "type": "string"
+        },
+        "Message": {
+            "default": "If you have a promotion code, please enter it in the field below and click update to re-price your booking.",
+            "description": "Messaged displayed below the title that explains what this widget is to the user.",
+            "type": "string"
+        },
+        "PromoCodeMessage": {
+            "default": "The promotional code has been successfully applied to your booking and has discounted.",
+            "description": "Message displayed if you have a promotional code sucessfully applied to your basket",
+            "type": "string"
+        },
+        "InvalidCodeWarning": {
+            "default": "Invalid Code",
+            "description": "Warning displayed if the user attempts to apply an invalid promo code.",
+            "type": "string"
+        },
+        "ApplyButton": {
+            "type": "object",
+            "title": "Button",
+            "description": "Button that is clicked to apply the Promo Code",
+            "properties": {
+                "Text": {
+                    "default": "Apply",
+                    "type": "string"
+                }
+            }
+        },
+        "RemoveButton": {
+            "type": "object",
+            "title": "Button",
+            "description": "Button that is clicked to remote an already applied Promo Code",
+            "properties": {
+                "Text": {
+                    "default": "Remove",
+                    "type": "string"
+                }
+            }
+        },
+        "Configuration": {
+            "type": "object",
+            "title": "Configuration",
+            "description": "Configuration options for the promo code widget",
+            "properties": {
+                "ContainerStyle": {
+                    "type": "string",
+                    "format": "select",
+                    "default": "Highlight",
+                    "enum": [ "Default", "Highlight", "Alternate" ]
+                },
+                "ContainerPadding": {
+                    "type": "string",
+                    "format": "select",
+                    "default": "Medium",
+                    "enum": [ "None", "Small", "Medium", "Large" ]
+                }
+            }
+        }
+    }
+}

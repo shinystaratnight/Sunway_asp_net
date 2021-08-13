@@ -1,0 +1,13 @@
+﻿@import "../../mixins/media";
+@import "../../variables";
+
+
+.widget-searchsummary {
+    .search-summary {
+        margin-top: $padding-small;
+        padding: $padding-base;
+        border: 1px solid $gray-light;
+        background-color: #fff;
+        line-height: 1rem;
+    }
+}

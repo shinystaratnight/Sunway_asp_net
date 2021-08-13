@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{3781092C-1D88-4563-BB7B-7F9518DC8FD9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Intuitive.Web</RootNamespace>
+    <AssemblyName>IntuitiveWeb</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>IntuitiveWeb.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>IntuitiveWeb.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>On</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>Off</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>12.0.2</Version>
+    </PackageReference>
+    <PackageReference Include="SharpZipLib">
+      <Version>1.1.0</Version>
+    </PackageReference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="iVectorConnectInterface" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Web" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Basket\Collections\List.vb" />
+    <Compile Include="Basket\Interfaces\IBasketVisitor.vb" />
+    <Compile Include="Basket\Interfaces\IBasketVisitable.vb" />
+    <Compile Include="Basket\Visitors\ExtrasVisitor.vb" />
+    <Compile Include="Basket\Visitors\MaxBasketComponentIDVisitor.vb" />
+    <Compile Include="Booking\Booking3DSecure.vb" />
+    <Compile Include="Booking\BookingAdjustment.vb" />
+    <Compile Include="Booking\BookingAvailability.vb" />
+    <Compile Include="Booking\BookingBase.vb" />
+    <Compile Include="Booking\BookingBasket.vb" />
+    <Compile Include="Booking\BookingCarHire.vb" />
+    <Compile Include="Booking\BookingDeeplink.vb" />
+    <Compile Include="Booking\BookingExtra.vb" />
+    <Compile Include="Booking\BookingFlight.vb" />
+    <Compile Include="Booking\BookingManagement.vb" />
+    <Compile Include="Booking\BookingOffsitePayment.vb" />
+    <Compile Include="Booking\FlightResultHandler.vb" />
+    <Compile Include="Booking\IBooking3DSecure.vb" />
+    <Compile Include="Booking\PostcodeLookup.vb" />
+    <Compile Include="Booking\BookingProperty.vb" />
+    <Compile Include="Booking\BookingSearch.vb" />
+    <Compile Include="Booking\BookingsHandler.vb" />
+    <Compile Include="Booking\BookingTrackingAffiliate.vb" />
+    <Compile Include="Booking\BookingTrade.vb" />
+    <Compile Include="Booking\BookingTransfer.vb" />
+    <Compile Include="Booking\ExtraResultsHandler.vb" />
+    <Compile Include="Booking\Properties\PropertyResult.vb" />
+    <Compile Include="Booking\Properties\PropertyResultsFactory.vb" />
+    <Compile Include="Booking\PropertyResultsHandler.vb" />
+    <Compile Include="Booking\StoreBasket.vb" />
+    <Compile Include="Booking\TwoStepExtraResultsHandler.vb" />
+    <Compile Include="Classes\Cache\Cache.vb" />
+    <Compile Include="Classes\Cache\iVectorSettings.vb" />
+    <Compile Include="Classes\Cache\ThirdPartyConfig.vb" />
+    <Compile Include="Classes\Extensions.vb" />
+    <Compile Include="Classes\OpenGraph.vb" />
+    <Compile Include="Classes\Support\BrowserSupport.vb" />
+    <Compile Include="CMS\CMS.vb" />
+    <Compile Include="Container.vb" />
+    <Compile Include="Controller.vb" />
+    <Compile Include="Controls\Dropdown.vb" />
+    <Compile Include="Controls\Paging.vb" />
+    <Compile Include="DataStore\Logger.vb" />
+    <Compile Include="DataStore\PageRequest\RequestLog.vb" />
+    <Compile Include="DataStore\Search\Departure\AirportDeparture.vb" />
+    <Compile Include="DataStore\Search\Departure\AirportGroupDeparture.vb" />
+    <Compile Include="DataStore\Search\Departure\Departure.vb" />
+    <Compile Include="DataStore\Search\Departure\IDepartureStrategy.vb" />
+    <Compile Include="DataStore\Search\Destination\Destination.vb" />
+    <Compile Include="DataStore\Search\Destination\ILocationStrategy.vb" />
+    <Compile Include="DataStore\Search\Destination\RegionLocation.vb" />
+    <Compile Include="DataStore\Search\Destination\ResortLocation.vb" />
+    <Compile Include="DataStore\Search\Request\FlightRequest.vb" />
+    <Compile Include="DataStore\Search\Request\IRequestStrategy.vb" />
+    <Compile Include="DataStore\Search\Request\PropertyRequest.vb" />
+    <Compile Include="DataStore\Search\Request\SearchRequest.vb" />
+    <Compile Include="DataStore\Search\SearchPassengers.vb" />
+    <Compile Include="DataStore\Search\SearchStore.vb" />
+    <Compile Include="CSSOverride.vb" />
+    <Compile Include="Extras\Interfaces\IAirportLoungeRepository.vb" />
+    <Compile Include="Extras\Poco\AirportLounge.vb" />
+    <Compile Include="Extras\Facade\Searcher.vb" />
+    <Compile Include="Extras\Save.vb" />
+    <Compile Include="Extras\Search.vb" />
+    <Compile Include="Extras\Poco\CarParking.vb" />
+    <Compile Include="Extras\Repositories\AirportLoungeRepository.vb" />
+    <Compile Include="Extras\Repositories\CarParkingRepository.vb" />
+    <Compile Include="Extras\Interfaces\ICarParkingRepository.vb" />
+    <Compile Include="HtmlHelpers\Dropdown.vb" />
+    <Compile Include="Head.vb" />
+    <Compile Include="Interfaces\iResultsHandler.vb" />
+    <Compile Include="Logging\EventsLogger.vb" />
+    <Compile Include="Logging\RequestDiagnostic.vb" />
+    <Compile Include="Lookups\Lookups.vb" />
+    <Compile Include="Master.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Overbranding.vb" />
+    <Compile Include="PageBase.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PageDefinition.vb" />
+    <Compile Include="PageServer.vb" />
+    <Compile Include="PageServer_Beta.vb" />
+    <Compile Include="TrackingControl.vb" />
+    <Compile Include="Tracking\Affiliate.vb" />
+    <Compile Include="Tracking\Scripts.vb" />
+    <Compile Include="Tracking\Token.vb" />
+    <Compile Include="Tracking\TrackingAffiliate.vb" />
+    <Compile Include="Tracking\WebsiteTracking.vb" />
+    <Compile Include="Translation\Translation.vb" />
+    <Compile Include="Translation\XslTranslation.vb" />
+    <Compile Include="Utility\HttpHandlerRouteHandler.vb" />
+    <Compile Include="Utility\LinkChecker.vb" />
+    <Compile Include="Logging\Logging.vb" />
+    <Compile Include="Utility\SearchDiagnostics.vb" />
+    <Compile Include="Utility\Utility.vb" />
+    <Compile Include="Utility\WebFileFunctions.vb" />
+    <Compile Include="Logging\WebSupportToolbar.vb" />
+    <Compile Include="WebAssets\Assets.vb" />
+    <Compile Include="Widgets\WidgetBase.vb" />
+    <Compile Include="WidgetSettings.vb" />
+    <Compile Include="Widgets\BasketSQL.vb" />
+    <Compile Include="Widgets\HTML.vb" />
+    <Compile Include="Widgets\RawHTML.vb" />
+    <Compile Include="Widgets\SimpleCMS.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Classes\Cache\BigC\iVectorSettings.txt" />
+    <Content Include="Classes\Cache\BigC\ThirdPartyConfig.txt" />
+    <Content Include="Translation\README.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\\iVectorConnectInterface\iVectorConnectInterface.vbproj">
+      <Project>{783382a3-1b3e-4958-81bf-1337f446b2ae}</Project>
+      <Name>iVectorConnectInterface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\intuitive\Intuitive\Intuitive.vbproj">
+      <Project>{67d15438-75e8-43e7-b3aa-82ecb52bcddf}</Project>
+      <Name>Intuitive</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

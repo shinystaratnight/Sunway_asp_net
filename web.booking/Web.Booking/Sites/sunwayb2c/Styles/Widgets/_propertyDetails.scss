@@ -1,0 +1,444 @@
+﻿@import "../../../../styles/mixins/media";
+@import '../../../../styles/variables';
+
+.property-details-content {
+
+    .property-result {
+
+        .property-name {
+            display: inline-block;
+        }
+
+        .rating {
+            display: inline-block;
+            margin-left: 10px;
+            margin-bottom: 5px;
+        }
+
+        .property-location {
+            margin-bottom: 10px;
+        }
+
+        .height-xs {
+            .img-container {
+                height: 150px;
+            }
+        }
+
+        .whats-included {
+            background: #ebebeb;
+            float: left;
+            width: 100%;
+            position: relative;
+            padding-top: 30px;
+
+            h3 {
+                color: $brand-inverse;
+                padding: 0 25px;
+                margin: 0;
+                font-weight: bold;
+                font-size: 1.5rem;
+                padding-bottom: 15px;
+                border-bottom: $panel-border;
+            }
+
+            .included {
+                position: relative;
+                border-bottom: $panel-border;
+                line-height: 34px;
+                padding: 0 25px;
+                margin: 0;
+                font-weight: bold;
+                font-size: 1.125rem;
+
+                a {
+                    float: right;
+                    line-height: 34px;
+                    cursor: pointer;
+                }
+
+                &:before {
+                    font-style: normal;
+                    margin-right: 10px;
+                    width: 24px;
+                    display: inline-block;
+                    content: "";
+                    height: 24px;
+                    background-size: cover;
+                    float: left;
+                    margin-top: 5px;
+                }
+
+                &.bag:before {
+                    background-image: url(/booking/assets/sunway/images/baggage.png);
+                }
+
+                &.bed:before {
+                    background-image: url(/booking/assets/sunway/images/bed.png);
+                }
+
+                &.bus:before {
+                    background-image: url(/booking/assets/sunway/images/bus.png);
+                }
+
+                &.euro:before {
+                    background-image: url(/booking/assets/sunway/images/euro.png);
+                }
+
+                &.flight:before {
+                    background-image: url(/booking/assets/sunway/images/plane.png);
+                }
+
+                &.food:before {
+                    background-image: url(/booking/assets/sunway/images/fork.png);
+                }
+            }
+
+            .payment-plan {
+                position: absolute;
+                background: #fff;
+                z-index: 3;
+                box-shadow: -1px 2px 2px 0px #ccc;
+                border: $panel-border;
+                top: 10px;
+                width: 270px;
+                right: 10px;
+
+                table {
+                    width: 100%;
+                }
+
+                td, th {
+                    padding: 2px 10px;
+                    text-align: left;
+                }
+
+                th {
+                    background: #ccc;
+                }
+
+                td {
+                    font-size: 0.85rem;
+                    width: 75%;
+
+                    &.amount {
+                        width: 25%;
+
+                        p, span {
+                            font-size: 1em;
+                        }
+                    }
+                }
+            }
+
+            .price-details {
+                width: 100%;
+                background: #FCD839;
+                font-weight: bold;
+                color: #000;
+
+                .top-row {
+                    td {
+                        padding: 10px 25px 5px;
+                    }
+                }
+
+                .bottom-row {
+                    td {
+                        padding: 5px 25px 10px;
+                    }
+                }
+
+                .price {
+                    text-align: right;
+                }
+
+                .total-price {
+
+
+                    .price-amount {
+                        font-size: 1.25rem;
+                    }
+                }
+            }
+        }
+
+        .property-result-content {
+
+            .map-container {
+                height: 175px;
+                float: left;
+                width: 350px;
+                margin: 20px 0;
+
+                .map {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            @include break-md-down() {
+                .hotel-information {
+                    width: 100%;
+                }
+
+                .whats-included {
+                    height: auto;
+
+                    .price {
+                        text-align: right;
+                        padding-right: 20px;
+                    }
+                }
+
+                .results-image {
+                    height: auto;
+
+                    .carousel-container {
+                        height: auto;
+
+                        .carousel-items {
+                            height: auto;
+
+                            &:after {
+                                content: "";
+                                display: block;
+                                padding-top: 60%;
+                            }
+
+                            .carousel-item {
+                                height: auto;
+                            }
+                        }
+
+                        .img-container {
+                            height: 0;
+                            padding-top: 60%;
+                        }
+                    }
+                }
+            }
+
+            @include break-md() {
+                @include break-lg-down() {
+                    .hotel-information {
+                        width: 625px;
+                    }
+
+                    .whats-included {
+                        width: 315px;
+                    }
+                }
+            }
+
+            @include break-lg() {
+                .hotel-information {
+                    width: 820px;
+                }
+
+                .whats-included {
+                    width: 350px;
+                }
+            }
+
+            .hotel-map-container {
+                background-color: #fff;
+                border: 2px solid #fff;
+                border-radius: 3px;
+                box-shadow: 0 2px 6px rgba(0,0,0,.3);
+                cursor: pointer;
+                margin-bottom: 22px;
+                text-align: center;
+            }
+
+            .hotel-map {
+                font-size: 16px;
+                line-height: 38px;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+
+            .carousel-container {
+                &.fluid {
+                    .carousel {
+                        .carousel-control {
+                            background: rgba(85,85,85,0.4);
+                            height: 100px;
+                            line-height: 100px;
+                            font-size: 2.5rem;
+                            font-weight: normal;
+                            opacity: 1;
+                            border-radius: 0;
+                            width: 50px;
+
+                            @include break-sm-down() {
+                                height: 75px;
+                                line-height: 75px;
+                            }
+
+                            @include break-xs-down() {
+                                height: 50px;
+                                line-height: 50px;
+                            }
+
+                            &:before {
+                                color: #fff;
+                            }
+
+                            &.right {
+                                right: 0;
+                            }
+
+                            &.left {
+                                left: 0;
+                            }
+                        }
+                    }
+                }
+            }
+
+            @include break-sm() {
+                .hotel-information {
+                    padding: 10px 15px;
+                }
+
+                .carousel-container {
+                    height: auto;
+                    width: 100%;
+
+                    .carousel-items {
+                        &.height-xl {
+                            height: 411px;
+                        }
+
+                        &.height-xs {
+                            height: 150px;
+                            margin-top: 10px;
+                            margin-bottom: 10px;
+                        }
+                    }
+
+                    &.tiles {
+                        padding: 0;
+
+                        .carousel {
+                            padding: 10px 30px;
+
+                            .carousel-control {
+                                background: none;
+                                height: 70px;
+                                line-height: 70px;
+
+                                &:before {
+                                    font-size: 2rem;
+                                }
+
+                                &.right {
+                                    right: 0;
+                                }
+
+                                &.left {
+                                    left: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .height-xl {
+                    .img-container {
+                        width: 100%;
+                        height: 411px;
+                    }
+                }
+
+                .from-price {
+                    position: relative;
+                    top: auto;
+                    left: auto;
+                    width: 280px;
+                    height: auto;
+
+                    .price {
+                        font-size: 1.5rem;
+                    }
+
+                    .price-amount {
+                        font-size: 2.625rem;
+                    }
+                }
+            }
+
+            @include break-lg-down() {
+                .map-container {
+                    width: 265px;
+                    margin: 20px 15px 0 0;
+                }
+            }
+
+            @include break-sm-down() {
+                .map-container {
+                    height: 190px;
+                    width: 100%;
+                    margin: 20px auto;
+                }
+
+                .carousel-container {
+                    height: auto;
+                }
+            }
+
+            @include break-md() {
+                .carousel-container {
+                    .carousel-items {
+                        &.height-xl {
+                            height: 536px;
+                        }
+
+                        &.height-xs {
+                            height: 116px;
+                        }
+                    }
+                }
+
+                .height-xl {
+                    .img-container {
+                        height: 536px;
+                    }
+                }
+
+                .height-xs {
+                    .img-container {
+                        height: 116px;
+                    }
+                }
+            }
+
+            @include break-lg() {
+                .carousel-container {
+                    .carousel-items {
+                        &.height-xl {
+                            height: 668px;
+                        }
+
+                        &.height-xs {
+                            height: 150px;
+                        }
+                    }
+                }
+
+                .height-xl {
+                    .img-container {
+                        height: 668px;
+                    }
+                }
+
+                .height-xs {
+                    .img-container {
+                        height: 150px;
+                    }
+                }
+            }
+        }
+    }
+}

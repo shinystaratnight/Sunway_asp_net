@@ -1,0 +1,88 @@
+﻿@import "../../../../styles/variables";
+@import "../../../../styles/mixins/clearfix";
+@import "../../../../styles/mixins/media";
+
+.flight-result-container {
+    width: 100%;
+}
+
+.search-filter {
+    clear: left;
+}
+
+.flight-toggle {
+    float: left;
+    clear: left;
+    width: 100%;
+
+    &.hidden-md-up {
+        cursor: pointer;
+    }
+}
+
+.search-selected-flight {
+
+    .h-tertiary {
+        color: $header-secondary-color;
+
+        @include break-md-down() {
+            display: none;
+        }
+    }
+
+    @include break-md-down() {
+        padding-top: 0;
+
+        .search-summary {
+            text-align: center;
+            padding: 0 0 20px;
+        }
+
+        .btn-change-flight {
+            margin-bottom: 20px;
+        }
+    }
+
+    .flight-toggle.h-secondary {
+        padding: 20px;
+        background: #fff;
+        margin-bottom: 10px;
+        text-transform: capitalize;
+        font-size: 1.75rem;
+        line-height: 1.625rem;
+
+        &:before {
+            font-style: normal;
+            margin-right: 10px;
+            width: 26px;
+            display: inline-block;
+            content: "";
+            height: 26px;
+            background-size: cover;
+            float: left;
+            background-image: url(/booking/assets/sunway/images/green-plane.png);
+        }
+
+        &:after {
+            font-style: normal;
+            margin-left: 10px;
+            width: 26px;
+            display: inline-block;
+            content: "-";
+            height: 26px;
+            float: right;
+            font-size: 2.5rem;
+            font-weight: bold;
+            line-height: 1.625rem;
+        }
+
+        &.collapsed:after {
+            content: "+";
+            font-size: 2rem;
+        }
+
+        @include break-sm-down() {
+            border: 1px solid #ccc;
+        }
+    }
+}

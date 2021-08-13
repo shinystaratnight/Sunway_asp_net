@@ -1,0 +1,40 @@
+﻿{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "title": "CancellationCharges",
+    "description": "Widget to display cancellation charges on a payment page.",
+    "properties": {
+        "Title": {
+            "default": "Cancellation Charges",
+            "type": "string"
+        },
+        "Message": {
+            "default": "The following costs will apply when making a cancellation of this booking.",
+            "description": "Messaged displayed below the title.",
+            "type": "string"
+        },
+        "AcceptanceCheckboxLabel": {
+            "default": "To continue with your booking you must accept these cancellation charges. I Agree.",
+            "type": "string"
+        },
+        "Configuration": {
+            "type": "object",
+            "title": "Configuration",
+            "description": "Configuration options for the cancellation charges details widget",
+            "properties": {
+                "ContainerStyle": {
+                    "type": "string",
+                    "format": "select",
+                    "default": "Highlight",
+                    "enum": [ "Default", "Highlight", "Alternate" ]
+                },
+                "ContainerPadding": {
+                    "type": "string",
+                    "format": "select",
+                    "default": "Medium",
+                    "enum": [ "None", "Small", "Medium", "Large" ]
+                }
+            }
+        }
+    }
+}

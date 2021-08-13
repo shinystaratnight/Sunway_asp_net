@@ -1,0 +1,146 @@
+﻿/* File Created: October 23, 2014 */
+#divChangeFlight{
+    width:inherit;
+}
+#divChangeFlight p + p {
+    margin-top:5px;
+}
+#divChangeFlight h4{
+    font-size:1.2em;
+    clear:both;
+    margin-bottom:15px
+}
+#divChangeFlight #aChangeFlight{
+    line-height:normal;
+}
+#divChangeFlight div.flightResult{
+    margin-bottom:20px;
+    border-radius:5px;
+    padding:10px;
+    display:table;  /* so we can make the "table" layout responsive */
+    box-sizing:border-box; /* box-sizing and 100% width make this work in any container layout */
+    width:100%;
+}
+#divChangeFlight div.flightLegs{
+    display:table-cell;
+}
+#divChangeFlight div.flightLeg{
+    background-color:#fff;
+    margin-bottom:10px;
+}
+#divChangeFlight div.flightLeg:last-child {
+    margin-top:10px;
+}
+#divChangeFlight div.flightLeg p strong{
+    font-weight:bold;
+} 
+#divChangeFlight div.carrierLogo img{
+    width:100%;
+}
+#divChangeFlight div.carrierLogo{
+    width:16%;
+    float:left;
+    margin-right:6%;
+}
+#divChangeFlight div.airports{
+    float:left; 
+    width:36%;
+    margin-right:10%;
+}
+#divChangeFlight div.times{
+    width:10%;
+    float:left;
+}
+#divChangeFlight div.dates{
+    width:15%;
+    float:left;
+}
+#divChangeFlight div.prices{
+    width:18%;
+    position:relative;
+    display:table-cell;
+    vertical-align:middle;
+}
+#divChangeFlight div.prices h2{
+    margin: 0;
+    padding: 7px 3%;
+    width: 94%;
+    position: relative;
+    top: -10px;
+    text-align: center;
+}
+#divChangeFlight div.prices h2 span.plusSign{
+	position: relative;
+    top: -1px;
+}
+#divChangeFlight div.prices a.button{
+    margin:0 auto;
+    text-align:center;
+    display:block;
+    width:32%;
+    padding: 8px 10px;
+    width:60%;
+}
+
+
+@media only screen and (max-width: 959px) 
+{
+	#divChangeFlight #aChangeFlight{
+        float:none;
+        margin:20px auto 0;
+    }
+    #divChangeFlight div.flightLegs {
+        display:table-header-group;   
+    }	
+	
+	#divChangeFlight div.prices{
+        display:table-footer-group;
+    }
+	#divChangeFlight div.prices h2{
+        margin: 15px auto 0;
+        width:60%;
+    }
+	#divChangeFlight div.prices a.button{
+        text-align:center;
+        width: 45%;
+    }   
+    #divChangeFlight div.flightLeg > div {
+     
+    }
+}
+
+@media only screen and (max-width: 767px) 
+{
+
+    #divChangeFlight div.prices h2{
+        width:90%;
+    }
+
+    #divChangeFlight div.carrierLogo {
+        float:none;
+        margin-top:none;    
+        width:24%;
+    }
+
+    #divChangeFlight div.airports{
+        float:left; 
+        width:43%;
+        margin-right:10%;
+    }
+    #divChangeFlight div.times{
+        width:18%;
+        float:left;
+    }
+    #divChangeFlight div.dates{
+        width:23%;
+        float:left;
+    }
+
+	#divChangeFlight h4 
+	{
+		text-align:center;
+		font-size:24px;
+		
+	}
+
+}

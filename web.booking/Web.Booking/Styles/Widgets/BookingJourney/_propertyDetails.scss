@@ -1,0 +1,116 @@
+﻿@import "../../mixins/media";
+@import "../../variables";
+
+.property-details-content {
+    
+    .property-result {
+        clear: both;
+
+        .hotel-information {
+            height: auto;
+            min-height: 280px;
+        }
+
+        .mobile-from-price,
+        .fa-chevron-right,
+        .property-link {
+            display: none;
+        }
+
+
+        .img-container,
+        .hotel-information,
+        .carousel-container {
+         
+            width: 100%;
+        }
+
+        .result-summary {
+            h1, h2 {
+                font-size: 1.125rem;
+                line-height: 1.25rem;
+            }
+        }
+         .carousel-container {
+
+            .full-screen .carousel-control.left {
+                display: block;
+                left: 10px;
+                margin-left: 0;
+            }
+
+            .full-screen .carousel-control.right {
+                display: block;
+                right: 10px;
+                margin-right: 0;
+            }
+        }
+
+        @include break-sm() {
+
+            .carousel-container {
+                width: 280px;
+            }
+
+            .img-container {
+                width: 280px;
+            }
+
+            .hotel-information {
+                width: 440px;
+                min-height: 371px;
+            }
+
+            &.display-pax {
+                .hotel-information {
+                    min-height: 450px;
+                }
+            }
+
+
+            &.display-pax.display-text {
+                .hotel-information {
+                    min-height: 490px;
+                }
+            }
+
+            .result-options-container {
+                padding: $spacing-lg $spacing-sm $spacing-sm;
+            }
+
+            .from-price {
+                position: absolute;
+                top: 300px;
+                left: 0;
+                width: 280px;
+                height: auto;
+
+                .price {
+                    font-size: 1.5rem;
+                }
+
+                .price-amount {
+                    font-size: 2.625rem;
+                }
+            }
+        }
+        
+        @include break-md() {
+            .hotel-information {
+                width: 660px;
+            }
+
+        }
+
+        @include break-lg() {
+            .hotel-information {
+                width: 890px;
+            }
+
+            .from-price .price {
+                display: inline;
+            }
+        }
+    }
+
+}

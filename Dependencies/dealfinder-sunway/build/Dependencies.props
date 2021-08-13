@@ -1,0 +1,120 @@
+<Project>
+    <PropertyGroup Label="Properties">
+        <DotNetCoreAppTargetVersion>netcoreapp2.2</DotNetCoreAppTargetVersion>
+        <IntuitiveFrameworkVersion Condition="'$(IntuitiveFrameworkVersion)'==''">0.11.0</IntuitiveFrameworkVersion>
+        <IntuitiveCodeGenerationVersion Condition="'$(IntuitiveCodeGenerationVersion)'==''">0.1.0</IntuitiveCodeGenerationVersion>
+        <CodeGenerationRoslynVersion Condition="'$(CodeGenerationRoslynVersion)'==''">0.6.1</CodeGenerationRoslynVersion>
+
+        <TestOptions_Framework Condition="'$(TestOptions_Framework)'==''">xunit</TestOptions_Framework>
+    </PropertyGroup>
+
+    <ItemGroup Label="Framework">
+      <PackageReference Update="Intuitive.Framework" Version="$(IntuitiveFrameworkVersion)" />
+      <PackageReference Update="Intuitive.Framework.Web" Version="$(IntuitiveFrameworkVersion)" />
+      <PackageReference Update="Intuitive.Core" Version="$(IntuitiveFrameworkVersion)" />
+      <PackageReference Update="Intuitive.Core.Abstractions" Version="$(IntuitiveFrameworkVersion)" />
+      <PackageReference Update="Intuitive.Data" Version="$(IntuitiveFrameworkVersion)" />
+      <PackageReference Update="Intuitive.Data.Abstractions" Version="$(IntuitiveFrameworkVersion)" />
+      <PackageReference Update="Intuitive.Web" Version="$(IntuitiveFrameworkVersion)" />
+      <PackageReference Update="Intuitive.Web.Abstractions" Version="$(IntuitiveFrameworkVersion)" />
+    </ItemGroup>
+
+    <ItemGroup Label="CodeGeneration">
+      <PackageReference Update="Intuitive.CodeGeneration" Version="$(IntuitiveCodeGenerationVersion)" />
+      <PackageReference Update="Intuitive.CodeGeneration.Abstractions" Version="$(IntuitiveCodeGenerationVersion)" />
+      <PackageReference Update="Intuitive.CodeGeneration.Attributes" Version="$(IntuitiveCodeGenerationVersion)" />
+      <PackageReference Update="Intuitive.CodeGeneration.Generator" Version="$(IntuitiveCodeGenerationVersion)" 
+                        PrivateAssets="all" IncludeAssets="runtime;build;native;contentfiles;analyzers" />
+    </ItemGroup>
+  
+    <ItemGroup Label="System">
+      <PackageReference Update="System.ServiceProcess.ServiceController" Version="4.6.0-preview5.19224.8" />
+    </ItemGroup>
+
+    <ItemGroup Label="Microsoft">
+      <PackageReference Update="Microsoft.Data.SqlClient" Version="1.0.19249.1" />
+      <PackageReference Update="Microsoft.Diagnostics.Tracing.EventRegister" Version="1.1.28" />
+      <PackageReference Update="Microsoft.Diagnostics.Tracing.TraceEvent" Version="2.0.42" />
+      <PackageReference Update="Microsoft.Extensions.CommandlineUtils" Version="1.1.1" />
+      <PackageReference Update="Microsoft.Extensions.Configuration" Version="2.2.0" />
+      <PackageReference Update="Microsoft.Extensions.Configuration.Abstractions" Version="2.2.0" />
+      <PackageReference Update="Microsoft.Extensions.Configuration.Binder" Version="2.2.0" />
+      <PackageReference Update="Microsoft.Extensions.Configuration.CommandLine" Version="2.2.0" />
+      <PackageReference Update="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="2.2.0" />
+      <PackageReference Update="Microsoft.Extensions.Configuration.Json" Version="2.2.0" />
+      <PackageReference Update="Microsoft.Extensions.DependencyModel" Version="2.1.0" />
+      <PackageReference Update="Microsoft.Extensions.DependencyInjection" Version="2.2.0" />
+      <PackageReference Update="Microsoft.Extensions.DependencyInjection.Abstractions" Version="2.2.0" />
+      <PackageReference Update="Microsoft.Extensions.Diagnostics.HealthChecks" Version="2.2.0" />
+      <PackageReference Update="Microsoft.Extensions.FileProviders.Abstractions" Version="2.2.0" />
+      <PackageReference Update="Microsoft.Extensions.FileProviders.Embedded" Version="2.2.0" />
+      <PackageReference Update="Microsoft.Extensions.Hosting" Version="2.2.0" />
+      <PackageReference Update="Microsoft.Extensions.Hosting.Abstractions" Version="2.2.0" />
+      <PackageReference Update="Microsoft.Extensions.Http" Version="2.2.0" />
+      <PackageReference Update="Microsoft.Extensions.Http.Polly" Version="2.2.0" />
+      <PackageReference Update="Microsoft.Extensions.Logging" Version="2.2.0" />
+      <PackageReference Update="Microsoft.Extensions.Logging.Abstractions" Version="2.2.0" />
+      <PackageReference Update="Microsoft.Extensions.Logging.Console" Version="2.2.0" />
+      <PackageReference Update="Microsoft.Extensions.Logging.EventLog" Version="2.2.0" />
+      <PackageReference Update="Microsoft.Extensions.Options" Version="2.2.0" />
+      <PackageReference Update="Microsoft.Extensions.Options.ConfigurationExtensions" Version="2.2.0" />
+      <PackageReference Update="Microsoft.AspNetCore.Diagnostics.HealthChecks" Version="2.2.0" />
+      <PackageReference Update="Microsoft.AspNetCore.Hosting" Version="2.2.0" />
+      <PackageReference Update="Microsoft.AspNetCore.Hosting.Abstractions" Version="2.2.0" />
+      <PackageReference Update="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
+      <PackageReference Update="Microsoft.AspNetCore.Mvc.Abstractions" Version="2.2.0" />
+      <PackageReference Update="Microsoft.AspNetCore.Mvc.Formatters.Xml" Version="2.2.0" />
+    </ItemGroup>
+  
+    <ItemGroup Label="Third Party">
+      <PackageReference Update="Amazon.Lambda.Core" Version="1.1.0" />
+      <PackageReference Update="Amazon.Lambda.Logging.AspNetCore" Version="2.2.0" />
+      <PackageReference Update="AWSSDK.Extensions.NETCore.Setup" Version="3.3.100.1" />
+      <PackageReference Update="AWSSDK.Redshift" Version="3.3.101.12" />
+      <PackageReference Update="AWSSDK.S3" Version="3.3.101.16" />
+      <PackageReference Update="CodeGeneration.Roslyn" Version="$(CodeGenerationRoslynVersion)" />
+      <PackageReference Update="CodeGeneration.Roslyn.BuildTime" Version="$(CodeGenerationRoslynVersion)" 
+                        PrivateAssets="all" IncludeAssets="runtime;build;native;contentfiles;analyzers" />
+      <PackageReference Update="CodeGeneration.Roslyn.Attributes" Version="$(CodeGenerationRoslynVersion)" />
+      <PackageReference Update="Dapper" Version="1.60.6" />
+      <PackageReference Update="dbup-core-custom" Version="4.1.1-redshift-support0001" />
+      <PackageReference Update="dbup-postgresql-custom" Version="4.1.1-redshift-support0001" />
+      <PackageReference Update="FluentValidation" Version="8.4.0" />
+      <PackageReference Update="MediatR" Version="7.0.0" />
+      <PackageReference Update="MediatR.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+      <PackageReference Update="Newtonsoft.Json" Version="12.0.2" />
+      <PackageReference Update="Nito.AsyncEx" Version="5.0.0" />
+      <PackageReference Update="NodaTime" Version="2.4.5" />
+      <PackageReference Update="Npgsql" Version="3.2.6" />
+      <PackageReference Update="Quartz" Version="3.0.7" />
+      <PackageReference Update="Sentry" Version="1.1.2" />
+      <PackageReference Update="Sentry.Extensions.Logging" Version="1.1.2" />
+      <PackageReference Update="Swashbuckle.AspNetCore" Version="5.0.0-rc2" />
+    </ItemGroup>
+
+    <ItemGroup Label="Test Packages Setup" Condition="'$(IntuitiveProjectType)'=='UnitTest'">
+        <PackageReference Condition="'$(TestOptions_Framework)'=='nunit'" Include="nunit" />
+        <PackageReference Condition="'$(TestOptions_Framework)'=='nunit'" Include="NUnit3TestAdapter" />
+
+        <PackageReference Condition="'$(TestOptions_Framework)'=='xunit'" Include="xunit" />
+        <PackageReference Condition="'$(TestOptions_Framework)'=='xunit'" Include="xunit.runner.visualstudio" />
+
+        <PackageReference Include="Microsoft.NET.Test.Sdk" />
+        <PackageReference Include="Moq" />
+        <PackageReference Include="NodaTime.Testing" />
+    </ItemGroup>
+      
+    <ItemGroup Label="Test Packages">
+        <PackageReference Update="nunit" Version="3.11.0" />
+        <PackageReference Update="NUnit3TestAdapter" Version="3.11.0" />
+        <PackageReference Update="xunit" Version="2.4.0" />
+        <PackageReference Update="xunit.runner.visualstudio" Version="2.4.0" />
+        <PackageReference Update="Microsoft.NET.Test.Sdk" Version="15.9.0" />
+        <PackageReference Update="Moq" Version="4.7.63" />
+        <PackageReference Update="NodaTime.Testing" Version="2.4.5" />
+    </ItemGroup>
+
+    <ItemGroup Label="Tools">
+        <DotNetCliToolReference Update="dotnet-codegen" Version="$(CodeGenerationRoslynVersion)" />
+    </ItemGroup>
+</Project>

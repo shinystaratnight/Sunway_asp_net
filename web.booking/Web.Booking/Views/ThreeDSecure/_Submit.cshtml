@@ -1,0 +1,14 @@
+﻿@{
+    Layout = "";
+}
+
+@model Web.Template.Application.Interfaces.Models.IBasket
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>3D Secure</title>
+</head>
+@Html.Raw(Model.PaymentDetails.ThreeDSecureHtml);
+</html>

@@ -1,0 +1,10 @@
+﻿
+.cookieCompliance .button{width:auto;float:left;margin-right:10px;}
+
+.cookieCompliance{position:fixed;left:0px;right:0px;bottom:0px;min-height:50px;z-index:2;
+     -webkit-transition:all 200ms ease;transition:all 200ms ease;-webkit-transform:translateZ(0);}
+
+@media only screen and (max-width: 767px) 
+{
+	.cookieCompliance .button{width:100%;margin-bottom:10px;}
+}

@@ -1,0 +1,44 @@
+<BCPFORMAT xmlns="http://schemas.microsoft.com/sqlserver/2004/bulkload/format" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <RECORD>
+   <FIELD ID="StartChar"          xsi:type="CharTerm"     TERMINATOR="&quot;"        MAX_LENGTH="100" />
+    <FIELD ID="ArrivalDate"        xsi:type="CharTerm"     TERMINATOR="&quot;,&quot;" MAX_LENGTH="100" />
+   <FIELD ID="Duration"           xsi:type="CharTerm"     TERMINATOR="&quot;,&quot;" MAX_LENGTH="100" />
+   <FIELD ID="TPKey"              xsi:type="CharTerm"     TERMINATOR="&quot;,&quot;" MAX_LENGTH="30"  />
+   <FIELD ID="PropertyName"       xsi:type="CharTerm"     TERMINATOR="&quot;,&quot;" MAX_LENGTH="200" />
+   <FIELD ID="Rating"             xsi:type="CharTerm"     TERMINATOR="&quot;,&quot;" MAX_LENGTH="100" />
+   <FIELD ID="TownCity"           xsi:type="CharTerm"     TERMINATOR="&quot;,&quot;" MAX_LENGTH="10"  />
+   <FIELD ID="NumberOfRooms"      xsi:type="CharTerm"     TERMINATOR="&quot;,&quot;" MAX_LENGTH="20"  />
+   <FIELD ID="MealBasisCode"      xsi:type="CharTerm"     TERMINATOR="&quot;,&quot;" MAX_LENGTH="20"  />
+    <FIELD ID="Internal"           xsi:type="CharTerm"     TERMINATOR="&quot;,&quot;" MAX_LENGTH="20"  />
+   <FIELD ID="RoomTypeCode"       xsi:type="CharTerm"     TERMINATOR="&quot;,&quot;" MAX_LENGTH="20"  />
+    <FIELD ID="MealBasisID"        xsi:type="CharTerm"     TERMINATOR="&quot;,&quot;" MAX_LENGTH="20"  />
+   <FIELD ID="RoomType"           xsi:type="CharTerm"     TERMINATOR="&quot;,&quot;" MAX_LENGTH="200"  />
+   <FIELD ID="RoomView"           xsi:type="CharTerm"     TERMINATOR="&quot;,&quot;" MAX_LENGTH="20"  />
+   <FIELD ID="LocalCost"          xsi:type="CharTerm"     TERMINATOR="&quot;,&quot;" MAX_LENGTH="20"  />
+   <FIELD ID="CurrencyCode"       xsi:type="CharTerm"     TERMINATOR="&quot;,&quot;" MAX_LENGTH="20"  />
+   <FIELD ID="SystemCurrencyCode" xsi:type="CharTerm"     TERMINATOR="&quot;,&quot;" MAX_LENGTH="20"  />
+   <FIELD ID="TotalCost"          xsi:type="CharTerm"     TERMINATOR="&quot;,&quot;" MAX_LENGTH="20"  />
+   <FIELD ID="Source"             xsi:type="CharTerm"     TERMINATOR="&quot;,&quot;" MAX_LENGTH="20" />
+   <FIELD ID="Pax"                xsi:type="CharTerm"     TERMINATOR="&quot;,&quot;" MAX_LENGTH="20"   />
+   <FIELD ID="AirportCode"                xsi:type="CharTerm"     TERMINATOR="&quot;,&quot;" MAX_LENGTH="20"   />
+   <FIELD ID="Temp1"                xsi:type="CharTerm"     TERMINATOR="&quot;,&quot;" MAX_LENGTH="20"   />
+   <FIELD ID="Temp2"                xsi:type="CharTerm"     TERMINATOR="&quot;,&quot;" MAX_LENGTH="20"   />
+   <FIELD ID="Temp3"        xsi:type="CharTerm"     TERMINATOR="&quot;"        MAX_LENGTH="500" />
+    <FIELD ID="EndChar"            xsi:type="CharTerm"     TERMINATOR="\n"            MAX_LENGTH="500" />
+ </RECORD>
+ <ROW>
+   <COLUMN SOURCE="Source"          NAME="Source"            xsi:type="SQLVARYCHAR"  NULLABLE="YES" />
+   <COLUMN SOURCE="TPKey"           NAME="TPKy"             xsi:type="SQLVARYCHAR"  NULLABLE="YES" />
+    <COLUMN SOURCE="PropertyName"    NAME="PropertyName"      xsi:type="SQLVARYCHAR"  NULLABLE="YES" />
+    <COLUMN SOURCE="ArrivalDate"     NAME="ArrivalDate"       xsi:type="SQLVARYCHAR"  NULLABLE="YES" />
+    <COLUMN SOURCE="Duration"        NAME="Duration"          xsi:type="SQLINT"       NULLABLE="YES" />
+    <COLUMN SOURCE="StartChar"       NAME="Adults"            xsi:type="SQLINT"       NULLABLE="YES" />
+    <COLUMN SOURCE="EndChar"         NAME="Children"          xsi:type="SQLINT"       NULLABLE="YES" />
+   <COLUMN SOURCE="RoomType"        NAME="RoomType"          xsi:type="SQLVARYCHAR"  NULLABLE="YES" />
+
+<COLUMN SOURCE="MealBasisCode"   NAME="MealBasisCode"     xsi:type="SQLVARYCHAR"  NULLABLE="YES" />
+    <COLUMN SOURCE="CurrencyCode"    NAME="CurrencyCode"      xsi:type="SQLVARYCHAR"  NULLABLE="YES" />
+   <COLUMN SOURCE="LocalCost"       NAME="Cost"              xsi:type="SQLDECIMAL"   PRECISION="18" SCALE="3" NULLABLE="YES" />
+   <COLUMN SOURCE="Pax"             NAME="Pax"               xsi:type="SQLVARYCHAR"  NULLABLE="YES" />
+ </ROW>
+</BCPFORMAT>

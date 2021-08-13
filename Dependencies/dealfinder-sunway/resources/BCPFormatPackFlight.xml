@@ -1,0 +1,34 @@
+<BCPFORMAT xmlns="http://schemas.microsoft.com/sqlserver/2004/bulkload/format" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <RECORD>
+    <FIELD ID="StartCharacter"        xsi:type="CharTerm" TERMINATOR="&quot;"         MAX_LENGTH="100" />
+    <FIELD ID="FlightCarrier"         xsi:type="CharTerm" TERMINATOR="&quot;,&quot;"  MAX_LENGTH="100" />
+	<FIELD ID="OutboundDepartureDate" xsi:type="CharTerm" TERMINATOR="&quot;,&quot;"  MAX_LENGTH="100" />
+    <FIELD ID="Duration"              xsi:type="CharTerm" TERMINATOR="&quot;,&quot;"  MAX_LENGTH="100" />
+    <FIELD ID="DepartureAirport"      xsi:type="CharTerm" TERMINATOR="&quot;,&quot;"  MAX_LENGTH="30"  />
+    <FIELD ID="ArrivalAirport"        xsi:type="CharTerm" TERMINATOR="&quot;,&quot;"  MAX_LENGTH="100" />
+    <FIELD ID="column6"               xsi:type="CharTerm" TERMINATOR="&quot;,&quot;"  MAX_LENGTH="200" />
+    <FIELD ID="column7"               xsi:type="CharTerm" TERMINATOR="&quot;,&quot;"  MAX_LENGTH="10"  />
+    <FIELD ID="OutboundFlightCode"    xsi:type="CharTerm" TERMINATOR="&quot;,&quot;"  MAX_LENGTH="20"  />
+    <FIELD ID="OutboundDepartureTime" xsi:type="CharTerm" TERMINATOR="&quot;,&quot;"  MAX_LENGTH="20"  />
+	<FIELD ID="OutboundArrivalTime"   xsi:type="CharTerm" TERMINATOR="&quot;,&quot;"  MAX_LENGTH="20"  />
+    <FIELD ID="ReturnDepartureDate"   xsi:type="CharTerm" TERMINATOR="&quot;,&quot;"  MAX_LENGTH="20"  />
+	<FIELD ID="ReturnFlightCode"      xsi:type="CharTerm" TERMINATOR="&quot;,&quot;"  MAX_LENGTH="20"  />
+    <FIELD ID="ReturnDepartureTime"   xsi:type="CharTerm" TERMINATOR="&quot;,&quot;"  MAX_LENGTH="20"  />
+	<FIELD ID="ReturnArrivalTime"     xsi:type="CharTerm" TERMINATOR="&quot;,&quot;"  MAX_LENGTH="20"  />
+	<FIELD ID="Cost"                  xsi:type="CharTerm" TERMINATOR="&quot;,&quot;"  MAX_LENGTH="20"  />
+	<FIELD ID="column16"              xsi:type="CharTerm" TERMINATOR="&quot;,&quot;"  MAX_LENGTH="20"  />
+	<FIELD ID="column17"              xsi:type="CharTerm" TERMINATOR="&quot;,&quot;"  MAX_LENGTH="20"  />
+	<FIELD ID="CurrencyCode"          xsi:type="CharTerm" TERMINATOR="&quot;"       MAX_LENGTH="20"  />
+	<FIELD ID="EndCharacter"          xsi:type="CharTerm" TERMINATOR="\n"       MAX_LENGTH="20"  />
+  </RECORD>
+  <ROW>
+    <COLUMN SOURCE="DepartureAirport"      NAME="DepartureAirportCode" xsi:type="SQLVARYCHAR" NULLABLE="YES" />
+	<COLUMN SOURCE="ArrivalAirport"        NAME="ArrivalAirportCode"   xsi:type="SQLVARYCHAR" NULLABLE="YES" />
+	<COLUMN SOURCE="OutboundDepartureDate" NAME="DepartureDateString"  xsi:type="SQLVARYCHAR" NULLABLE="YES" />
+	<COLUMN SOURCE="StartCharacter"        NAME="DepartureDate"        xsi:type="SQLVARYCHAR" NULLABLE="YES" />
+    <COLUMN SOURCE="Duration"              NAME="Duration"             xsi:type="SQLVARYCHAR" NULLABLE="YES" />
+    <COLUMN SOURCE="EndCharacter"          NAME="Cost"                 xsi:type="SQLVARYCHAR" NULLABLE="YES" />
+	<COLUMN SOURCE="Cost"                  NAME="CostInPence"          xsi:type="SQLVARYCHAR" NULLABLE="YES" />
+	<COLUMN SOURCE="CurrencyCode"          NAME="CurrencyCode"         xsi:type="SQLVARYCHAR" NULLABLE="YES" />
+  </ROW>
+</BCPFORMAT>

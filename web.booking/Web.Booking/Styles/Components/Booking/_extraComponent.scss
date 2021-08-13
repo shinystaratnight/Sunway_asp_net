@@ -1,0 +1,24 @@
+﻿@import "../../mixins/clearfix";
+@import "../../mixins/media";
+@import "../../variables";
+
+
+.booking-extra-details {
+
+    .extra-label {
+        width: 100px;
+        float: left;
+        font-size: 0.875rem;
+    }
+
+    .extra-detail {
+        font-size: 0.875rem;
+    }
+
+    @media print {
+        .col-md-4 {
+            width: 33.3333%;
+            float: left;
+        }
+    }
+}

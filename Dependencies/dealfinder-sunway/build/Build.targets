@@ -1,0 +1,3 @@
+<Project ToolsVersion="15.0">
+    <Import Project="../build-custom/build.targets" Condition="Exists('../build-custom/build.targets')" />
+</Project>

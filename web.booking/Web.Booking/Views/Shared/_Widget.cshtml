@@ -1,0 +1,48 @@
+﻿@model Web.Template.Application.PageDefinition.Widget
+
+@{
+    string containerId = $"widget-{Model.Name.ToLower()}-container";
+    if (!string.IsNullOrEmpty(Model.Context))
+    {
+        containerId = $"{containerId}-{Model.Context}";
+    }
+
+    string containerClass = $"section-widget section-{Model.Name.ToLower()}";
+
+    string containerNamespace = "Containers";
+    if (!string.IsNullOrEmpty(Model.ContainerNamespace))
+    {
+        containerNamespace = Model.ContainerNamespace;
+    } else if (Model.Site != null)
+    {
+      containerNamespace = $"{Model.Site.Name}Containers";
+    }
+}
+
+<section id="@containerId" data-context="@Model.Context" class="@containerClass">
+    @{
+        try
+        {
+            if (Model.ServerSideRender 
+                && (!Model.User.AdminMode || Model.NotEditable)
+                && (Model.Overbranded == Model.User.OverBranded))
+            {
+               @Html.React($"{containerNamespace}.{Model.Name}Container", new
+               {
+                   context = Model.Context,
+                   contentJSON = Model.ContentJSON,
+                   user = Model.User,
+                   site = Model.Site,
+                   page = Model.Page,
+                   entitiesCollection = Model.EntitiesContent,
+                   specificEntitiesCollection = Model.SpecificEntitiesContent
+               }, serverOnly: true)
+            }
+        }
+        catch (Exception ex)
+        {
+            Intuitive.FileFunctions.AddLogEntry("Widget", "Server Render Error", ex.ToString());
+        }
+
+    }
+</section>

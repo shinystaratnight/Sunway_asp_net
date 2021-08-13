@@ -1,0 +1,3886 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+iVectorWidgets
+</name>
+</assembly>
+<members>
+<member name="T:iVectorWidgets.My.MyWebExtension">
+ <summary>
+ Module used to define the properties that are available in the My Namespace for Web projects.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:iVectorWidgets.My.MyWebExtension.Application">
+ <summary>
+ Returns information about the current application.
+ </summary>
+</member>
+<member name="P:iVectorWidgets.My.MyWebExtension.Computer">
+ <summary>
+ Returns information about the host computer.
+ </summary>
+</member>
+<member name="P:iVectorWidgets.My.MyWebExtension.User">
+ <summary>
+ Returns information for the current Web user.
+ </summary>
+</member>
+<member name="P:iVectorWidgets.My.MyWebExtension.Request">
+ <summary>
+ Returns Request object.
+ </summary>
+</member>
+<member name="P:iVectorWidgets.My.MyWebExtension.Response">
+ <summary>
+ Returns Response object.
+ </summary>
+</member>
+<member name="P:iVectorWidgets.My.MyWebExtension.Log">
+ <summary>
+ Returns the Asp log object.
+ </summary>
+</member>
+<member name="P:iVectorWidgets.My.MyWebExtension.WebServices">
+ <summary>
+ Provides access to WebServices added to this project.
+ </summary>
+</member>
+<member name="T:iVectorWidgets.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:iVectorWidgets.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:iVectorWidgets.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:iVectorWidgets.AutoDocs.Resources.AutoDocsResource">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:iVectorWidgets.AutoDocs.Resources.AutoDocsResource.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:iVectorWidgets.AutoDocs.Resources.AutoDocsResource.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:iVectorWidgets.AutoDocs.Resources.AutoDocsResource.ClientDoc">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;xsl:stylesheet version=&quot;1.0&quot; xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot;
+    xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot; exclude-result-prefixes=&quot;msxsl&quot;
+&gt;
+    &lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot;/&gt;
+
+    &lt;xsl:template match=&quot;/Documentation&quot;&gt;
+
+		&lt;html&gt;
+			&lt;head&gt;
+				&lt;title&gt;Widgets&lt;/title&gt;
+
+				&lt;style&gt;
+					* {font-family:calibri;color:#444;}
+					.widget {margin-bottom:20px;}
+					table {border:1px solid #444;border-collapse:collapse;margin-bottom: [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="F:iVectorWidgets._Default._frm">
+<summary>
+frm control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets._Default._divAll">
+<summary>
+divAll control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="T:iVectorWidgets.res">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.AlternateEmail">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;1.0&quot;&gt;
+	&lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot; omit-xml-declaration=&quot;yes&quot;/&gt;
+	
+	&lt;xsl:param name=&quot;TradeContactEmail&quot; /&gt;
+
+	&lt;xsl:template match=&quot;/&quot;&gt;
+
+		&lt;div id=&quot;divAlternateEmail&quot; class=&quot;alternate-email box primary&quot;&gt;
+			
+			&lt;div class=&quot;boxTitle&quot;&gt;
+				&lt;h2 ml=&quot;Alternate Email&quot;&gt;Confirmation Email&lt;/h2&gt;
+			&lt;/div&gt;
+			
+			&lt;p&gt;
+				&lt;trans ml=&quot;Alternate Email&quot;&gt;Your documentation will be sent to&lt;/ [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.Baggage">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;1.0&quot;&gt;
+	&lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot; omit-xml-declaration=&quot;yes&quot;/&gt;
+
+	&lt;xsl:include href=&quot;../../xsl/functions.xsl&quot;/&gt;
+
+	&lt;xsl:param name=&quot;Title&quot; /&gt;
+	&lt;xsl:param name=&quot;CurrencySymbol&quot; /&gt;
+	&lt;xsl:param name=&quot;CurrencySymbolPosition&quot; /&gt;
+	&lt;xsl:param name=&quot;PriceFormat&quot; /&gt;
+
+	&lt;xsl:template match=&quot;/&quot;&gt;
+
+		&lt;div id=&quot;divBaggage&quot; class=&quot;box primary&quot;&gt;
+
+			&lt;input type=&quot;hidden&quot; id=&quot;hidBaggagePax&quot;  [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.Basket">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;1.0&quot;&gt;
+&lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot; omit-xml-declaration=&quot;yes&quot;/&gt;
+
+	&lt;xsl:include href=&quot;../../xsl/functions.xsl &quot;/&gt;
+	
+	&lt;xsl:param name=&quot;Title&quot; /&gt;
+	&lt;xsl:param name=&quot;ExcludeSubtotals&quot; /&gt;	
+	&lt;xsl:param name=&quot;PassengerBreakdown&quot; /&gt;
+	&lt;xsl:param name=&quot;HideBaggage&quot; /&gt;
+	&lt;xsl:param name=&quot;TotalComponents&quot; /&gt;
+	
+	&lt;xsl:param name=&quot;CurrencySymbol&quot; /&gt;
+	&lt;xsl:param name=&quot;CurrencySymbolPosition&quot; [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.BookingConfirmation">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;1.0&quot;&gt;
+	&lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot; omit-xml-declaration=&quot;yes&quot; /&gt;
+
+	&lt;xsl:param name=&quot;TradeSite&quot; /&gt;
+	&lt;xsl:param name=&quot;SummaryTitle&quot; /&gt;
+	&lt;xsl:param name=&quot;DetailedPriceBreakdown&quot; /&gt;
+	&lt;xsl:param name=&quot;SummaryIncludeDates&quot; /&gt;
+	&lt;xsl:param name=&quot;PriceFormat&quot; /&gt;
+	&lt;xsl:param name=&quot;SubText&quot; /&gt;
+
+	&lt;xsl:template match=&quot;/&quot;&gt;
+
+		&lt;div id=&quot;divConfirmation&quot;&gt;
+
+			&lt;xsl:for-each select=&quot;GetBoo [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.BookingConfirmationPrint">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;1.0&quot;&gt;
+	&lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot; omit-xml-declaration=&quot;yes&quot; /&gt;
+
+	&lt;xsl:param name=&quot;BookingReference&quot; /&gt;
+	&lt;xsl:param name=&quot;HeaderText&quot; /&gt;
+	&lt;xsl:param name=&quot;BookingDocument&quot; /&gt;
+  &lt;xsl:param name=&quot;HideDocuments&quot;/&gt;
+
+	&lt;xsl:template match=&quot;/&quot;&gt;
+
+		&lt;div id=&quot;divConfirmationPrint&quot; class=&quot;sidebarBox primary&quot;&gt;
+
+			&lt;div class=&quot;boxTitle&quot;&gt;
+				&lt;h2&gt;
+					&lt;xsl:choose&gt;
+						&lt;xsl:when t [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.Breadcrumbs">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;1.0&quot;&gt;
+&lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot; omit-xml-declaration=&quot;yes&quot;/&gt;
+	
+&lt;xsl:param name=&quot;BaseURL&quot; /&gt;
+&lt;xsl:param name=&quot;BookingPathway&quot; select=&quot;&apos;false&apos;&quot;/&gt;
+&lt;xsl:param name=&quot;CurrentPage&quot; /&gt;
+&lt;xsl:param name=&quot;SearchMode&quot; /&gt;
+&lt;xsl:param name=&quot;ExtraTypes&quot; /&gt;
+&lt;xsl:param name=&quot;UseAccessibleURLs&quot; /&gt;
+&lt;xsl:param name=&quot;SeparateXML&quot; /&gt;
+&lt;xsl:param name=&quot;UseNumbers&quot; /&gt;
+&lt;xsl:param name=&quot;ObjectType [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.CancelComponentPopup">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;xsl:stylesheet version=&quot;1.0&quot; xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot;
+    xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot; exclude-result-prefixes=&quot;msxsl&quot;
+&gt;
+	&lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot;/&gt;
+	&lt;xsl:param name=&quot;SellingCurrencySymbol&quot; /&gt;
+
+	&lt;xsl:template match=&quot;/&quot;&gt;
+
+		&lt;input type=&quot;hidden&quot; id=&quot;hidCancelComponent_SellingCurrencySymbol&quot; value=&quot;{$SellingCurrencySymbol}&quot; /&gt;
+		&lt;input type=&quot;hidden&quot; id=&quot;hidCancelComponent_BookingReference&quot; value=&quot;{Cancellatio [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.CancellationCharges">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;1.0&quot;&gt;
+	&lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot; omit-xml-declaration=&quot;yes&quot;/&gt;
+
+	&lt;xsl:param name=&quot;CurrencySymbol&quot;  /&gt;
+	&lt;xsl:param name=&quot;CurrencySymbolPosition&quot;  /&gt;
+	&lt;xsl:param name=&quot;DateToday&quot; /&gt;
+	&lt;xsl:param name=&quot;SearchMode&quot; /&gt;
+	&lt;xsl:param name=&quot;IntroductionOverride&quot; /&gt;
+
+
+	&lt;xsl:template match=&quot;/&quot;&gt;
+		&lt;xsl:if test=&quot;count(/BookingBasket/PreBookResponse/PropertyBookings/PropertyPreBookRespon [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.CarHire">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;1.0&quot;&gt;
+	&lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot; omit-xml-declaration=&quot;yes&quot;/&gt;
+
+	&lt;xsl:include href=&quot;../../xsl/functions.xsl&quot;/&gt;
+
+	&lt;xsl:param name=&quot;Title&quot; /&gt;
+	&lt;xsl:param name=&quot;SubTitle&quot; /&gt;
+	&lt;xsl:param name=&quot;Theme&quot; /&gt;
+	&lt;xsl:param name=&quot;CurrencySymbol&quot; /&gt;
+	&lt;xsl:param name=&quot;CurrencySymbolPosition&quot; /&gt;
+	&lt;xsl:param name=&quot;CSSClassOverride&quot; /&gt;
+	&lt;xsl:param name=&quot;SearchMode&quot; /&gt;
+	&lt;xsl:param name=&quot;Aut [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.CarHireResults">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;1.0&quot;&gt;
+	&lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot; omit-xml-declaration=&quot;yes&quot;/&gt;
+
+	&lt;xsl:include href=&quot;../../xsl/functions.xsl&quot;/&gt;
+
+	&lt;xsl:param name=&quot;Title&quot; /&gt;
+	&lt;xsl:param name=&quot;Theme&quot; /&gt;
+	&lt;xsl:param name=&quot;CurrencySymbol&quot; /&gt;
+	&lt;xsl:param name=&quot;CurrencySymbolPosition&quot; /&gt;
+	&lt;xsl:param name=&quot;CSSClassOverride&quot; /&gt;
+	&lt;xsl:param name=&quot;SearchMode&quot; /&gt;
+	&lt;xsl:param name=&quot;AutomaticSearchType&quot; /&gt;
+	&lt;xsl:para [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.ChangeFlight">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;1.0&quot;&gt;
+	&lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot; omit-xml-declaration=&quot;yes&quot;/&gt;
+
+	&lt;xsl:include href=&quot;../../xsl/functions.xsl&quot;/&gt;
+	&lt;xsl:include href=&quot;../../xsl/markdown.xsl&quot;/&gt;
+
+	&lt;xsl:param name=&quot;Theme&quot; /&gt;
+	&lt;xsl:param name=&quot;SelectedFlightToken&quot; /&gt;
+	&lt;xsl:param name=&quot;CurrencySymbol&quot; /&gt;
+	&lt;xsl:param name=&quot;Template&quot; /&gt;
+	&lt;xsl:param name=&quot;Passengers&quot; /&gt;
+    &lt;xsl:param name=&quot;CMSBaseURL&quot; /&gt;
+	&lt;xsl:par [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.ContactUs">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;1.0&quot;&gt;
+	&lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot; omit-xml-declaration=&quot;yes&quot;/&gt;
+
+
+	&lt;xsl:include href=&quot;../../xsl/functions.xsl&quot;/&gt;
+	&lt;xsl:include href=&quot;../../xsl/markdown.xsl&quot;/&gt;
+
+	&lt;xsl:param name=&quot;IncludeContactInformation&quot; /&gt;
+	&lt;xsl:param name=&quot;IncludeMainImage&quot; /&gt;
+	&lt;xsl:param name=&quot;IncludeBreadcrumbs&quot; /&gt;
+	&lt;xsl:param name=&quot;ShowHeading&quot;/&gt;
+	&lt;xsl:param name=&quot;WarningText&quot;/&gt;
+	&lt;xsl:param name=&quot;Cap [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.CookieCompliance">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;1.0&quot;&gt;
+	&lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot; omit-xml-declaration=&quot;yes&quot;/&gt;
+
+	&lt;xsl:param name=&quot;RequiresAccepting&quot; /&gt;
+  &lt;xsl:param name=&quot;HideCookieMessage&quot;/&gt;
+  
+	&lt;xsl:template match=&quot;/&quot;&gt;
+
+		&lt;div class=&quot;cookieCompliance&quot; id=&quot;divCookieCompliance&quot;&gt;
+
+			&lt;div class=&quot;container&quot;&gt;
+				
+				&lt;p&gt;
+					&lt;xsl:value-of select =&quot;CookieCompliance/Message&quot;/&gt;
+					&lt;xsl:text&gt; &lt;/xsl:text&gt;
+				&lt;/p&gt;
+
+		 [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.Deposit">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;1.0&quot;&gt;
+&lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot; omit-xml-declaration=&quot;yes&quot;/&gt;
+	
+	&lt;xsl:include href=&quot;../../xsl/functions.xsl &quot;/&gt;
+	
+	&lt;xsl:param name=&quot;CurrencySymbol&quot; /&gt;
+	&lt;xsl:param name=&quot;CurrencySymbolPosition&quot; /&gt;
+	&lt;xsl:param name=&quot;CSSClassOverride&quot; /&gt;
+	&lt;xsl:param name=&quot;Text&quot; /&gt;
+	&lt;xsl:param name=&quot;InjectDiv&quot; /&gt;
+	&lt;xsl:param name=&quot;UpdateTotalPriceDisplay&quot; /&gt;
+	
+&lt;xsl:template match=&quot;/&quot;&gt;
+
+	&lt;di [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.EmailBody">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;1.0&quot;&gt;
+	&lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot; omit-xml-declaration=&quot;yes&quot;/&gt;
+
+	&lt;xsl:include href=&quot;../../xsl/functions.xsl &quot;/&gt;
+	&lt;xsl:include href=&quot;../../xsl/markdown.xsl &quot;/&gt;
+
+	&lt;xsl:param name=&quot;Message&quot;/&gt;
+	&lt;xsl:param name=&quot;Duration&quot;/&gt;
+	&lt;xsl:param name=&quot;DepartureDate&quot;/&gt;
+	&lt;xsl:param name=&quot;CurrencySymbol&quot;/&gt;
+	&lt;xsl:param name=&quot;CurrencySymbolPosition&quot;/&gt;
+	&lt;xsl:param name=&quot;TotalPax&quot;/&gt;
+	&lt;xsl:para [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.EmailPopup">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;1.0&quot;&gt;
+	&lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot; omit-xml-declaration=&quot;yes&quot;/&gt;
+
+	&lt;xsl:param name=&quot;BookingReference&quot;/&gt;
+
+	&lt;xsl:template match=&quot;/&quot;&gt;
+
+		&lt;input type=&quot;hidden&quot; id=&quot;hidEmailBookingReference&quot;/&gt;
+
+		&lt;div id=&quot;divSendDocumentationForm&quot; class=&quot;box primary&quot;&gt;
+
+			&lt;div class=&quot;boxTitle&quot;&gt;
+				&lt;h2 ml=&quot;Trade Bookings&quot;&gt;Email documents&lt;/h2&gt;
+			&lt;/div&gt;
+
+			&lt;p ml=&quot;Trade Bookings&quot;&gt;Please specify [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.Errata">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;1.0&quot;&gt;
+	&lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot; omit-xml-declaration=&quot;yes&quot;/&gt;
+
+	&lt;xsl:include href=&quot;../../xsl/functions.xsl&quot;/&gt;
+	&lt;xsl:include href=&quot;../../xsl/markdown.xsl&quot;/&gt;
+	
+	&lt;xsl:param name=&quot;Title&quot; /&gt;
+    &lt;xsl:param name=&quot;CustomErrataType&quot; /&gt;
+
+	&lt;xsl:template match=&quot;/&quot;&gt;
+
+        &lt;xsl:variable name=&quot;BasketErrataCount&quot; select=&quot;count(/BookingBasket/BasketErrata/Erratum)&quot; /&gt;
+        &lt;xsl:va [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.ErrorHandler">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;xsl:stylesheet version=&quot;1.0&quot; xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot;&gt;
+	&lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot; omit-xml-declaration=&quot;yes&quot;/&gt;
+
+	&lt;xsl:template match=&quot;/&quot;&gt;
+
+		&lt;div id=&quot;divErrorHandler&quot; class=&quot;contentBox&quot;&gt;
+			&lt;div class=&quot;logo&quot;&gt;
+				&lt;xsl:text&gt; &lt;/xsl:text&gt;
+			&lt;/div&gt;
+			&lt;div ml=&quot;Error&quot;&gt;
+				An unexpected error has occurred.
+			&lt;/div&gt;
+			&lt;div&gt;
+				&lt;a href=&quot;/&quot; ml=&quot;Error&quot;&gt;Return to Homepage&lt;/a&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+
+	&lt;/xsl:template&gt;
+&lt;/xsl:s [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.Extras">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;1.0&quot;&gt;
+	&lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot; omit-xml-declaration=&quot;yes&quot;/&gt;
+	&lt;xsl:include href=&quot;../../xsl/functions.xsl &quot;/&gt;
+	&lt;xsl:param name=&quot;Title&quot; /&gt;
+	&lt;xsl:param name=&quot;DisplayType&quot; /&gt;
+	&lt;xsl:param name=&quot;CurrentBasketExtraCode&quot; /&gt;
+	&lt;xsl:param name=&quot;JustResults&quot; /&gt;
+	&lt;xsl:param name=&quot;Identifier&quot; /&gt;
+	&lt;xsl:param name=&quot;ExtraCount&quot; /&gt;
+	&lt;xsl:param name=&quot;CurrencySymbol&quot; /&gt;
+	&lt;xsl:param name=&quot;Cur [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.FavouriteHotels">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;1.0&quot;&gt;
+	&lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot; omit-xml-declaration=&quot;yes&quot;/&gt;
+
+	&lt;xsl:template match=&quot;/&quot;&gt;
+
+		&lt;div id=&quot;divFavouriteHotels&quot;&gt;
+
+			&lt;h2 ml=&quot;Favourite Hotels&quot;&gt;Favourite Hotels&lt;/h2&gt;
+
+			&lt;xsl:for-each select=&quot;FavouriteHotels/FavouriteHotel&quot;&gt;
+				&lt;a class=&quot;favouriteHotel&quot; href=&quot;{URL}&quot;&gt;
+					&lt;img src=&quot;{MainImage}&quot; alt=&quot;Hotel&quot;/&gt;
+
+					&lt;h3&gt;
+						&lt;xsl:value-of select=&quot;Name&quot;/&gt;
+				 [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.FindBooking">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;1.0&quot;&gt;
+	&lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot; omit-xml-declaration=&quot;yes&quot;/&gt;
+
+	&lt;xsl:param name=&quot;Reference&quot; /&gt;
+	&lt;xsl:param name=&quot;GuestName&quot; /&gt;
+	&lt;xsl:param name=&quot;Booked&quot; /&gt;
+	&lt;xsl:param name=&quot;Arrival&quot; /&gt;
+	&lt;xsl:param name=&quot;BookedStartDate&quot; /&gt;
+	&lt;xsl:param name=&quot;BookedEndDate&quot; /&gt;
+	&lt;xsl:param name=&quot;ArrivalStartDate&quot; /&gt;
+	&lt;xsl:param name=&quot;ArrivalEndDate&quot; /&gt;
+	&lt;xsl:param name=&quot;CustomDateChange&quot; /&gt; [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.FlightExtras">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;1.0&quot;&gt;
+	&lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot; omit-xml-declaration=&quot;yes&quot;/&gt;
+
+	&lt;xsl:include href=&quot;../../xsl/functions.xsl&quot;/&gt;
+
+	&lt;xsl:param name=&quot;Title&quot;/&gt;
+	&lt;xsl:param name=&quot;CurrencySymbol&quot;/&gt;
+	&lt;xsl:param name=&quot;CurrencySymbolPosition&quot;/&gt;
+	&lt;xsl:param name=&quot;PriceFormat&quot;/&gt;
+	&lt;xsl:param name=&quot;BaggageQuantityError&quot;/&gt;
+	&lt;xsl:param name=&quot;ExtraQuantityError&quot;/&gt;
+
+	&lt;xsl:template match=&quot;/&quot;&gt;
+
+		&lt;div id=&quot; [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.FlightResults">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;1.0&quot;&gt;
+	&lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot; omit-xml-declaration=&quot;yes&quot;/&gt;
+
+	&lt;xsl:include href=&quot;../../xsl/functions.xsl&quot;/&gt;
+	&lt;xsl:include href=&quot;../../xsl/markdown.xsl&quot;/&gt;
+
+	&lt;xsl:param name=&quot;CMSBaseURL&quot; /&gt;
+	&lt;xsl:param name=&quot;CurrencySymbol&quot; /&gt;
+	&lt;xsl:param name=&quot;CurrencySymbolPosition&quot; /&gt;
+	&lt;xsl:param name=&quot;TotalPassengers&quot; /&gt;
+	&lt;xsl:param name=&quot;DisplayMode&quot; /&gt;
+	&lt;xsl:param name=&quot;SelectButton [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.FlightResultsFilter">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;1.0&quot;&gt;
+	&lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot; omit-xml-declaration=&quot;yes&quot;/&gt;
+
+	&lt;xsl:include href=&quot;../../xsl/functions.xsl&quot;/&gt;
+
+	&lt;xsl:param name=&quot;CurrencySymbol&quot; /&gt;
+	&lt;xsl:param name=&quot;CurrencySymbolPosition&quot; /&gt;
+	&lt;xsl:param name=&quot;CMSBaseURL&quot; /&gt;
+	&lt;xsl:param name=&quot;PerPersonPrices&quot; /&gt;
+	&lt;xsl:param name=&quot;PaxCount&quot; /&gt;
+	&lt;xsl:param name=&quot;TimeOfDayControls&quot; /&gt;
+	&lt;xsl:param name=&quot;TimeSliders&quot; /&gt;
+	&lt;xs [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.Functions">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;1.0&quot;&gt;
+	&lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot;/&gt;
+
+	&lt;xsl:template name=&quot;FormatMoney&quot;&gt;
+		&lt;xsl:param name=&quot;Currency&quot;/&gt;
+		&lt;xsl:param name=&quot;Value&quot;/&gt;
+
+		&lt;xsl:variable name=&quot;Sign&quot;&gt;
+			&lt;xsl:if test=&quot;$Value &amp;lt; 0&quot;&gt;-&lt;/xsl:if&gt;
+		&lt;/xsl:variable&gt;
+
+		&lt;xsl:variable name=&quot;NewValue&quot;&gt;
+			&lt;xsl:choose&gt;
+				&lt;xsl:when test=&quot;$Value &amp;lt; 0&quot;&gt;
+					&lt;xsl:value-of select=&quot;$Value * -1&quot;/&gt;
+				&lt;/xsl:when&gt;
+		 [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.GetCustomerPoints">
+<summary>
+  Looks up a localized string similar to -- Parameters
+declare @iCustomerID int
+
+-- Set Parameters
+
+set @iCustomerID = {0}
+
+-- Begin
+
+Select SUM(Amount)
+	from PointsTransaction
+	where CustomerID = @iCustomerID.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.GuestDetails">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;1.0&quot;&gt;
+	&lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot; omit-xml-declaration=&quot;yes&quot;/&gt;
+
+	&lt;xsl:param name=&quot;AdultYears&quot;/&gt;
+	&lt;xsl:param name=&quot;ChildYears&quot;/&gt;
+	&lt;xsl:param name=&quot;InfantYears&quot;/&gt;
+	&lt;xsl:param name=&quot;RequiresDOB&quot; select=&quot;&apos;true&apos;&quot;/&gt;
+	&lt;xsl:param name=&quot;ShowCopyLastName&quot; select=&quot;&apos;false&apos;&quot; /&gt;
+	&lt;xsl:param name=&quot;FirstDepartureDate&quot; /&gt;
+	&lt;xsl:param name=&quot;RequiresInfantDOB&quot; select=&quot;&apos;false&apos;&quot;/&gt;
+	&lt;xsl:param n [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.HotelContent">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;xsl:stylesheet version=&quot;1.0&quot; xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot;
+    xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot; exclude-result-prefixes=&quot;msxsl&quot;
+&gt;
+	&lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot;/&gt;
+
+	&lt;xsl:include href=&quot;../../xsl/functions.xsl&quot;/&gt;
+	&lt;xsl:include href=&quot;../../xsl/markdown.xsl&quot;/&gt;
+
+	&lt;xsl:param name=&quot;PropertyReferenceID&quot;/&gt;
+	&lt;xsl:param name=&quot;MapMarkerPath&quot;/&gt;
+
+	&lt;xsl:template match=&quot;/&quot;&gt;
+		&lt;xsl:for-each select=&quot;Property&quot;&gt;
+			&lt;div class=&quot;leftCont [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.HotelDetails">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;1.0&quot;&gt;
+	&lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot; omit-xml-declaration=&quot;yes&quot;/&gt;
+	
+	&lt;xsl:include href=&quot;../../xsl/markdown.xsl &quot;/&gt;
+	&lt;xsl:include href=&quot;../../xsl/functions.xsl &quot;/&gt;
+
+	&lt;xsl:param name=&quot;CurrencySymbol&quot; /&gt;
+	&lt;xsl:param name=&quot;CurrencySymbolPosition&quot; /&gt;
+
+
+	&lt;xsl:template match=&quot;/&quot;&gt;
+
+		&lt;div id=&quot;divHotelDetails&quot;&gt;
+
+			
+			&lt;!-- Hotel main details --&gt;
+			&lt;div class=&quot;maindetails&quot;&gt;
+			 [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.HotelDetails_RequestRoomPopup">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;1.0&quot;&gt;
+	&lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot; omit-xml-declaration=&quot;yes&quot;/&gt;
+
+	&lt;xsl:include href=&quot;../../xsl/functions.xsl&quot;/&gt;
+	&lt;xsl:include href=&quot;../../xsl/markdown.xsl&quot;/&gt;
+
+	&lt;xsl:template match=&quot;/&quot;&gt;
+
+		&lt;div class=&quot;overlay&quot;&gt;
+			&lt;xsl:text&gt; &lt;/xsl:text&gt;
+		&lt;/div&gt;
+
+		&lt;div class=&quot;popup&quot;&gt;
+			&lt;p id=&quot;pRoomRequestSuccess&quot; class=&quot;message success&quot; ml=&quot;Hotel Details&quot; style=&quot;display:none;&quot;&gt;Your reque [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.HotelDetailsEmail">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;1.0&quot;&gt;
+	&lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot; omit-xml-declaration=&quot;yes&quot; /&gt;
+
+	&lt;xsl:param name=&quot;BaseURL&quot; /&gt;
+	&lt;xsl:param name=&quot;Theme&quot; /&gt;
+	&lt;xsl:param name=&quot;Message&quot; /&gt;
+	&lt;xsl:param name=&quot;SenderName&quot; /&gt;
+	&lt;xsl:param name=&quot;SellingCurrencySymbol&quot; /&gt;
+	&lt;xsl:param name=&quot;RoomCount&quot; /&gt;
+	&lt;xsl:param name=&quot;ResultsSummary&quot; /&gt;
+	&lt;xsl:param name=&quot;EmailLogoName&quot; /&gt;
+
+	&lt;xsl:template match=&quot;/&quot;&gt;
+
+		&lt;xsl:va [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.HotelEmailDescription">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;1.0&quot;&gt;
+	&lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot; omit-xml-declaration=&quot;yes&quot;/&gt;
+	&lt;xsl:param name=&quot;PropertyReferenceID&quot; /&gt;
+	&lt;xsl:include href=&quot;../../xsl/markdown.xsl &quot;/&gt;
+	&lt;xsl:include href=&quot;../../xsl/functions.xsl &quot;/&gt;
+
+
+
+	&lt;xsl:template match=&quot;/&quot;&gt;
+		&lt;!-- Email hotel --&gt;
+		&lt;div id=&quot;divHotelEmailDescription&quot;&gt;
+			&lt;h4 ml=&quot;Hotel Results&quot; &gt;Email description to...&lt;/h4&gt;
+			&lt;p id=&quot;pHotelEmailDescr [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.HotelListLinks">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;1.0&quot;&gt;
+	&lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot; omit-xml-declaration=&quot;yes&quot;/&gt;
+
+	&lt;xsl:template match=&quot;/&quot;&gt;
+
+    &lt;xsl:if test=&quot;count(HotelListLinks/HotelListLink) &amp;gt; 0&quot;&gt;
+    
+		  &lt;div class=&quot;sidebarBox linklist&quot;&gt;
+
+			  &lt;div class=&quot;boxTitle&quot;&gt;
+				  &lt;h2&gt;
+					  &lt;trans ml=&quot;Hotel List Links&quot;&gt;Hotels in&lt;/trans&gt;
+					  &lt;xsl:text&gt; &lt;/xsl:text&gt;
+					  &lt;xsl:value-of select=&quot;HotelListLinks/Destin [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.HotelPopup">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;1.0&quot;&gt;
+	&lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot; omit-xml-declaration=&quot;yes&quot; /&gt;
+
+	&lt;xsl:include href=&quot;../../xsl/Markdown.xsl&quot; /&gt;
+	&lt;xsl:include href=&quot;../../xsl/Functions.xsl&quot; /&gt;
+
+	&lt;xsl:param name=&quot;CurrencySymbol&quot; /&gt;
+	&lt;xsl:param name=&quot;CurrencySymbolPosition&quot; /&gt;
+	&lt;xsl:param name=&quot;PropertyReferenceID&quot; /&gt;
+	&lt;xsl:param name=&quot;MapMarkerPath&quot; /&gt;
+	&lt;xsl:param name=&quot;PerPersonPrice&quot; /&gt;
+
+	&lt;xsl:template  [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.HotelPopup_Images">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;1.0&quot;&gt;
+	&lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot; omit-xml-declaration=&quot;yes&quot; /&gt;
+
+	&lt;xsl:template match=&quot;/&quot;&gt;
+
+		&lt;xsl:for-each select=&quot;Property[1]&quot;&gt;
+
+			&lt;div id=&quot;divProperty_Images&quot; class=&quot;popupTrans&quot;&gt;
+
+				&lt;h3&gt;
+					&lt;xsl:value-of select=&quot;Region&quot; /&gt;
+					&lt;xsl:text&gt; - &lt;/xsl:text&gt;
+					&lt;xsl:value-of select=&quot;Resort&quot; /&gt;
+					&lt;xsl:text&gt; - &lt;/xsl:text&gt;
+					&lt;xsl:value-of select=&quot;Name&quot; /&gt;
+				&lt;/ [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.HotelResults">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;1.0&quot;&gt;
+&lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot; omit-xml-declaration=&quot;yes&quot;/&gt;
+
+&lt;xsl:include href=&quot;../../xsl/functions.xsl&quot;/&gt;
+&lt;xsl:include href=&quot;../../xsl/markdown.xsl&quot;/&gt;
+	
+&lt;xsl:param name=&quot;CurrencySymbol&quot; /&gt;
+&lt;xsl:param name=&quot;CurrencySymbolPosition&quot; /&gt;
+&lt;xsl:param name=&quot;TabbedContent&quot; /&gt;
+&lt;xsl:param name=&quot;SummaryLength&quot; /&gt;
+&lt;xsl:param name=&quot;RedirectURL&quot; /&gt;
+&lt;xsl:param name=&quot;PackagePrice&quot; /&gt;
+&lt; [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.HotelResults_CancellationCharges">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;xsl:stylesheet version=&quot;1.0&quot; xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot;
+    xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot; exclude-result-prefixes=&quot;msxsl&quot;
+&gt;
+    &lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot;/&gt;
+
+	&lt;xsl:param name=&quot;CancellationChargesPosition&quot; /&gt;
+	&lt;xsl:param name=&quot;PropertyReferenceID&quot; /&gt;
+	&lt;xsl:param name=&quot;Index&quot; /&gt;
+
+	&lt;xsl:param name=&quot;CurrencySymbol&quot;  /&gt;
+	&lt;xsl:param name=&quot;CurrencySymbolPosition&quot;  /&gt;
+	&lt;xsl:param name=&quot;DateToday&quot; /&gt;
+	&lt;xsl:param name [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.HotelResults_Errata">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;xsl:stylesheet version=&quot;1.0&quot; xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot;
+    xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot; exclude-result-prefixes=&quot;msxsl&quot;
+&gt;
+	&lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot;/&gt;
+
+	&lt;xsl:param name=&quot;CancellationChargesPosition&quot; /&gt;
+	&lt;xsl:param name=&quot;PropertyReferenceID&quot; /&gt;
+	&lt;xsl:param name=&quot;Index&quot; /&gt;
+
+	&lt;xsl:param name=&quot;CurrencySymbol&quot;  /&gt;
+	&lt;xsl:param name=&quot;CurrencySymbolPosition&quot;  /&gt;
+	&lt;xsl:param name=&quot;DateToday&quot; /&gt;
+	&lt;xsl:param name=&quot;D [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.HotelResults_RequestRoomPopup">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;1.0&quot;&gt;
+	&lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot; omit-xml-declaration=&quot;yes&quot;/&gt;
+
+	&lt;xsl:include href=&quot;../../xsl/functions.xsl&quot;/&gt;
+	&lt;xsl:include href=&quot;../../xsl/markdown.xsl&quot;/&gt;
+
+	&lt;xsl:template match=&quot;/&quot;&gt;
+
+		&lt;div class=&quot;overlay&quot;&gt;
+			&lt;xsl:text&gt; &lt;/xsl:text&gt;
+		&lt;/div&gt;
+
+		&lt;div class=&quot;popup&quot;&gt;
+			&lt;p id=&quot;pRoomRequestSuccess&quot; class=&quot;message success&quot; ml=&quot;Hotel Results&quot; style=&quot;display:none;&quot;&gt;Your reque [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.HotelResultsFilter">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;1.0&quot;&gt;
+&lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot; omit-xml-declaration=&quot;yes&quot;/&gt;
+	
+&lt;xsl:include href=&quot;../../xsl/functions.xsl&quot;/&gt;
+	
+&lt;xsl:param name=&quot;CurrencySymbol&quot; /&gt;
+&lt;xsl:param name=&quot;CurrencySymbolPosition&quot; /&gt;	
+&lt;xsl:param name=&quot;PerPersonPrices&quot; /&gt;
+&lt;xsl:param name=&quot;ShowMapLink&quot; /&gt;
+&lt;xsl:param name=&quot;ScrollToTopAfterFilter&quot; /&gt;
+&lt;xsl:param name=&quot;ShowAverageScoreFilter&quot; /&gt;
+&lt;xsl:param name=&quot;MaxAver [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.HotelResultsMapPopup">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;1.0&quot;&gt;
+&lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot; omit-xml-declaration=&quot;yes&quot;/&gt;
+	
+&lt;xsl:include href=&quot;../../xsl/functions.xsl&quot;/&gt;
+&lt;xsl:include href=&quot;../../xsl/markdown.xsl&quot;/&gt;
+	
+&lt;xsl:param name=&quot;CurrencySymbol&quot; /&gt;
+&lt;xsl:param name=&quot;CurrencySymbolPosition&quot; /&gt;
+&lt;xsl:param name=&quot;PackagePrice&quot; /&gt;
+&lt;xsl:param name=&quot;PerPersonPrice&quot; /&gt;
+&lt;xsl:param name=&quot;PriceFormat&quot; /&gt;
+&lt;xsl:param name=&quot;HotelPriceOnly&quot; /&gt; [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.HotelUpsell">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;1.0&quot;&gt;
+	&lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot; omit-xml-declaration=&quot;yes&quot;/&gt;
+
+	&lt;xsl:param name=&quot;SearchMode&quot; /&gt;
+	&lt;xsl:param name=&quot;Format&quot; /&gt;
+
+	&lt;xsl:param name=&quot;CurrencySymbol&quot; /&gt;
+	&lt;xsl:param name=&quot;CurrencySymbolPosition&quot; /&gt;
+	&lt;xsl:param name=&quot;PriceFormat&quot; /&gt;
+	&lt;xsl:param name=&quot;FlightPrice&quot; /&gt;
+	&lt;xsl:param name=&quot;HotelsToDisplay&quot; /&gt;
+	&lt;xsl:param name=&quot;JustResults&quot; select=&quot;false&quot; /&gt;
+
+	&lt;xsl:pa [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.ImageRotator">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;1.0&quot;&gt;
+	&lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot; omit-xml-declaration=&quot;yes&quot;/&gt;
+
+	&lt;xsl:param name=&quot;Identifier&quot; /&gt;
+	&lt;xsl:param name=&quot;NavigationType&quot; /&gt;
+	&lt;xsl:param name=&quot;TransitionType&quot; select =&quot;&apos;slide&apos;&quot;/&gt;
+	&lt;xsl:param name=&quot;HoldTime&quot; select=&quot;2&quot; /&gt;
+	&lt;xsl:param name=&quot;ImageWidth&quot; /&gt;
+	&lt;xsl:param name=&quot;CMSBaseURL&quot; /&gt;
+	&lt;xsl:param name=&quot;Overbranded&quot; /&gt;
+	
+	&lt;xsl:template match=&quot;/&quot;&gt;
+
+		&lt;xsl:choose&gt; [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.Markdown">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+&lt;xsl:stylesheet version=&quot;1.0&quot; xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot;&gt;
+	&lt;xsl:output method=&quot;xml&quot; omit-xml-declaration=&quot;yes&quot; indent=&quot;yes&quot;/&gt;
+
+	&lt;xsl:param name=&quot;text&quot; /&gt;
+	&lt;xsl:param name=&quot;mode&quot; /&gt;
+
+
+	&lt;!-- Markdown --&gt;
+	&lt;xsl:template name=&quot;Markdown&quot;&gt;
+		&lt;xsl:param name=&quot;text&quot;/&gt;
+		&lt;xsl:param name=&quot;mode&quot;/&gt;
+
+		&lt;xsl:variable name=&quot;line&quot;&gt;
+			&lt;xsl:choose&gt;
+				&lt;xsl:when test=&quot;contains($text,&apos;&amp;#xA;&apos;)&quot;&gt;
+					&lt;xsl:value-of select=&quot;substring-before($text, &apos;&amp;# [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.MyBookings">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;1.0&quot;&gt;
+	&lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot; omit-xml-declaration=&quot;yes&quot;/&gt;
+
+	&lt;xsl:param name=&quot;CurrencySymbol&quot;/&gt;
+	&lt;xsl:param name=&quot;CurrencySymbolPosition&quot;/&gt;
+	&lt;xsl:param name=&quot;CMSBaseURL&quot; /&gt;
+	&lt;xsl:param name=&quot;CSSClassOverride&quot; /&gt;
+	&lt;xsl:param name=&quot;SeatReservations&quot;/&gt;
+	&lt;xsl:param name=&quot;SeatReservationsChanged&quot;/&gt;
+	&lt;xsl:param name=&quot;LogoutRedirectURL&quot;/&gt;
+	&lt;xsl:param name=&quot;Theme&quot;/&gt;
+	&lt;xsl:para [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.MyBookingsLogin">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;1.0&quot;&gt;
+	&lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot; omit-xml-declaration=&quot;yes&quot; /&gt;
+
+	&lt;xsl:param name=&quot;LoginType&quot; /&gt;
+	&lt;xsl:param name=&quot;MMBURL&quot; /&gt;
+	&lt;xsl:param name=&quot;CSSClassOverride&quot; /&gt;
+	&lt;xsl:param name=&quot;ShowReminderLink&quot; /&gt;
+	&lt;xsl:param name=&quot;InsertWarningAfter&quot; /&gt;
+
+	&lt;xsl:template match=&quot;/&quot;&gt;
+
+		&lt;div id=&quot;divBookingLogin&quot; class=&quot;sidebarBox primary&quot;&gt;
+			&lt;xsl:if test=&quot;$CSSClassOverride != &apos;&apos;&quot;&gt;
+	 [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.NavigationBar">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;1.0&quot;&gt;
+&lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot; omit-xml-declaration=&quot;yes&quot;/&gt;
+
+&lt;xsl:template match=&quot;/&quot;&gt;
+
+	&lt;div id=&quot;divNavigationBar&quot;&gt;
+
+		&lt;ul&gt;
+			&lt;li class=&quot;title&quot;&gt;
+				&lt;xsl:value-of select=&quot;NavigationBar/NavigationBarTitle&quot;/&gt;
+			&lt;/li&gt;
+			&lt;xsl:for-each select=&quot;NavigationBar/MainMenu/MainMenuItem&quot;&gt;
+			&lt;li&gt;
+				&lt;!-- menu items --&gt;
+				&lt;a href=&quot;{URL}&quot;&gt;
+					&lt;xsl:value-of select=&quot;Name&quot;/&gt;
+ [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.Newsletter">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;1.0&quot;&gt;
+	&lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot; omit-xml-declaration=&quot;yes&quot;/&gt;
+
+	&lt;xsl:param name=&quot;CSSClassOverride&quot; /&gt;
+	&lt;xsl:param name=&quot;InjectContainer&quot; /&gt;
+	&lt;xsl:param name=&quot;ErrorStyle&quot; /&gt;
+	
+	
+	&lt;xsl:template match=&quot;/&quot;&gt;	
+			
+		&lt;div id=&quot;divNewsletter&quot;&gt;			
+			&lt;xsl:if test=&quot;$InjectContainer != &apos;&apos;&quot;&gt;
+				&lt;xsl:attribute name=&quot;style&quot;&gt;&lt;xsl:text&gt;display:none;&lt;/xsl:text&gt;&lt;/xsl:attribute&gt;
+			&lt;/xsl: [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.PageNotFound">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;xsl:stylesheet version=&quot;1.0&quot; xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot;
+    xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot; exclude-result-prefixes=&quot;msxsl&quot;
+&gt;
+    &lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot;/&gt;
+
+    &lt;xsl:template match=&quot;/&quot;&gt;
+
+		&lt;div class=&quot;container&quot;&gt;
+
+			&lt;div class=&quot;sixteen columns&quot;&gt;
+
+				&lt;div class=&quot;box&quot;&gt;
+					&lt;h1&gt;Sorry - we haven&apos;t been able to find the page you are looking for.&lt;/h1&gt;
+					&lt;p&gt;You may have followed a broken or outdated link, o [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.PaymentAuthorisation">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;1.0&quot;&gt;
+	&lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot; omit-xml-declaration=&quot;yes&quot;/&gt;
+
+	&lt;xsl:param name=&quot;HTML&quot; /&gt;
+	
+	&lt;xsl:template match=&quot;/&quot;&gt;
+
+		&lt;xsl:value-of select=&quot;$HTML&quot; disable-output-escaping=&quot;yes&quot;/&gt;
+		
+    &lt;/xsl:template&gt;
+&lt;/xsl:stylesheet&gt;
+.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.PromoCode">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;1.0&quot;&gt;
+	&lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot; omit-xml-declaration=&quot;yes&quot;/&gt;
+
+	&lt;xsl:include href = &quot;../../xsl/Functions.xsl&quot; /&gt;
+	
+	&lt;xsl:param name=&quot;InfoParagraph&quot; /&gt;
+	&lt;xsl:param name=&quot;Title&quot; /&gt;
+	&lt;xsl:param name=&quot;CurrencySymbol&quot; /&gt;
+	&lt;xsl:param name=&quot;CurrencySymbolPosition&quot; /&gt;
+	&lt;xsl:param name=&quot;InjectTarget&quot; /&gt;
+	&lt;xsl:param name=&quot;CurrentDiscount&quot; /&gt;
+
+	&lt;xsl:template match=&quot;/&quot;&gt;
+
+		&lt;div id [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.RelatedPages">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;1.0&quot;&gt;
+&lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot; omit-xml-declaration=&quot;yes&quot;/&gt;
+
+&lt;xsl:template match=&quot;/&quot;&gt;
+
+  &lt;xsl:if test=&quot;count(RelatedPages/RelatedPage) &amp;gt; 0&quot;&gt;
+    
+    &lt;div class=&quot;sidebarBox linklist&quot;&gt;
+
+      &lt;div class=&quot;boxTitle&quot;&gt;
+        &lt;h2&gt;
+          &lt;xsl:choose&gt;
+            &lt;xsl:when test=&quot;RelatedPages/RelatedPagesHeader != &apos;&apos;&quot;&gt;
+              &lt;xsl:value-of select=&quot;RelatedPages [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.ResponsiveImageRotator">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;1.0&quot;&gt;
+	&lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot; omit-xml-declaration=&quot;yes&quot;/&gt;
+
+	&lt;xsl:param name=&quot;Identifier&quot; /&gt;
+	&lt;xsl:param name=&quot;NavigationType&quot; /&gt;
+	&lt;xsl:param name=&quot;TransitionType&quot; select =&quot;&apos;slide&apos;&quot;/&gt;
+	&lt;xsl:param name=&quot;HoldTime&quot; select=&quot;2&quot; /&gt;
+	&lt;xsl:param name=&quot;CMSBaseURL&quot; /&gt;
+
+	&lt;xsl:template match=&quot;/&quot;&gt;
+
+		&lt;xsl:variable name=&quot;ImageCount&quot; select=&quot;count(ImageRotator/Images/Image)&quot; /&gt;
+		&lt;x [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.ResultsCarousel">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;1.0&quot;&gt;
+	&lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot; omit-xml-declaration=&quot;yes&quot;/&gt;
+
+	&lt;xsl:include href=&quot;../../xsl/functions.xsl&quot;/&gt;
+	&lt;xsl:include href=&quot;../../xsl/markdown.xsl&quot;/&gt;
+
+	&lt;xsl:param name=&quot;CurrencySymbol&quot; /&gt;
+	&lt;xsl:param name=&quot;CurrencySymbolPosition&quot; /&gt;
+	
+	&lt;xsl:param name=&quot;Title&quot; /&gt;	
+	&lt;xsl:param name=&quot;Mode&quot; /&gt;	
+	&lt;xsl:param name=&quot;DaysEitherSide&quot; /&gt;
+	&lt;xsl:param name=&quot;DaysPerPage&quot; /&gt;
+	&lt;x [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.SeatSelection">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;1.0&quot;&gt;
+	&lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot; omit-xml-declaration=&quot;yes&quot;/&gt;
+
+	&lt;xsl:param name=&quot;CurrencySymbol&quot; /&gt;
+	&lt;xsl:param name=&quot;CurrencySymbolPosition&quot; /&gt;
+
+	&lt;xsl:template match=&quot;/&quot;&gt;
+
+		&lt;div id=&quot;divSeatSelections&quot;&gt;
+
+			&lt;xsl:for-each select=&quot;BookingBasket/BasketFlights/BasketFlight&quot;&gt;
+
+				&lt;xsl:if test=&quot;count(SeatMaps/SeatMap/Seats/Seat) &amp;gt; 0&quot;&gt;
+
+					&lt;div id=&quot;divSeatSelection&quot; cl [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.SelectedCarHire">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;1.0&quot;&gt;
+	&lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot; omit-xml-declaration=&quot;yes&quot;/&gt;
+	&lt;xsl:include href=&quot;../../xsl/functions.xsl&quot;/&gt;
+
+
+	&lt;xsl:param name=&quot;CurrencySymbol&quot; /&gt;
+	&lt;xsl:param name=&quot;CurrencySymbolPosition&quot; /&gt;
+	&lt;xsl:param name=&quot;ListClass&quot; /&gt;
+	&lt;xsl:param name=&quot;ListItemClass&quot; /&gt;
+
+
+	&lt;xsl:template match=&quot;/BasketCarHire&quot;&gt;
+
+		&lt;xsl:for-each select=&quot;CarHire&quot;&gt;
+			&lt;h3&gt;Your selected car hire&lt;/h3&gt; [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.SessionPersister">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;1.0&quot;&gt;
+	&lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot; omit-xml-declaration=&quot;yes&quot;/&gt;
+
+	&lt;xsl:template match=&quot;/&quot;&gt;
+
+		&lt;script type=&quot;text/javascript&quot;&gt;
+			int.ll.OnLoad.Run(function () { SessionPersister.Persist(); });
+		&lt;/script&gt;
+
+
+	&lt;/xsl:template&gt;
+
+&lt;/xsl:stylesheet&gt;
+.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.SimilarHotels">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;1.0&quot;&gt;
+	&lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot; omit-xml-declaration=&quot;yes&quot;/&gt;
+
+	&lt;xsl:template match=&quot;/&quot;&gt;
+
+		&lt;div id=&quot;divSimilarHotels&quot;&gt;
+			
+				&lt;h2 ml=&quot;Similar Hotels&quot;&gt;Similar Hotels&lt;/h2&gt;
+
+				&lt;xsl:for-each select=&quot;SimilarHotels/SimilarHotel&quot;&gt;
+					&lt;a class=&quot;similarHotel&quot; href=&quot;{URL}&quot;&gt;
+						&lt;img src=&quot;{MainImage}&quot; alt=&quot;Hotel&quot;/&gt;
+
+						&lt;h3&gt;&lt;xsl:value-of select=&quot;Name&quot;/&gt;&lt;/h3&gt;
+						&lt;p cl [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.Sitemap">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;1.0&quot;&gt;
+	&lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot; omit-xml-declaration=&quot;yes&quot;/&gt;
+
+	&lt;xsl:template match=&quot;/&quot;&gt;		
+
+			&lt;xsl:for-each select=&quot;Sitemap&quot;&gt;
+
+				&lt;div id=&quot;divSitemap&quot;&gt;
+
+					&lt;xsl:if test=&quot;Header != &apos;&apos;&quot;&gt;
+						&lt;h1&gt;
+							&lt;xsl:value-of select=&quot;Header&quot;/&gt;
+						&lt;/h1&gt;
+					&lt;/xsl:if&gt;
+
+					&lt;xsl:for-each select=&quot;Groups/Group&quot;&gt;
+						&lt;div class=&quot;group clear&quot;&gt;
+
+							&lt;!--Title--&gt;
+				 [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.TermsAndConditions">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;1.0&quot;&gt;
+&lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot; omit-xml-declaration=&quot;yes&quot;/&gt;
+
+&lt;xsl:param name=&quot;DocumentPath&quot; /&gt;
+&lt;xsl:param name=&quot;IAgreeText&quot; /&gt;
+&lt;xsl:param name=&quot;CSSClassOverride&quot; /&gt;
+	
+&lt;xsl:template match=&quot;/&quot;&gt;
+
+	&lt;div id=&quot;divTermsAndConditions&quot;&gt;
+
+    &lt;xsl:attribute name =&quot;class&quot;&gt;
+      &lt;xsl:choose&gt;
+        &lt;xsl:when test=&quot;$CSSClassOverride != &apos;&apos;&quot;&gt;
+          &lt;xsl:value-of select=&quot;$CSSCla [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.TrackingAffiliate">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;1.0&quot;&gt;
+	&lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot; omit-xml-declaration=&quot;yes&quot;/&gt;
+	
+	&lt;xsl:param name=&quot;Confirmation&quot; select=&quot;&apos;false&apos;&quot; /&gt;
+	
+	&lt;xsl:template match=&quot;/&quot;&gt;		
+		
+		&lt;xsl:for-each select=&quot;TrackingAffiliates/TrackingAffiliate&quot;&gt;
+			
+			&lt;xsl:choose&gt;
+				&lt;xsl:when test=&quot;$Confirmation = &apos;true&apos; and ConfirmationScript != &apos;&apos;&quot;&gt;
+					&lt;xsl:value-of select=&quot;ConfirmationScript&quot; disable-output-escapi [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.TradeBookings">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;1.0&quot;&gt;
+	&lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot; omit-xml-declaration=&quot;yes&quot;/&gt;
+	
+	&lt;xsl:param name=&quot;SellingCurrencyExchange&quot; /&gt;
+	&lt;xsl:param name=&quot;CurrencySymbol&quot; /&gt;
+	&lt;xsl:param name=&quot;CurrencySymbolPosition&quot; /&gt;
+	&lt;xsl:param name=&quot;CreditCardAgent&quot; /&gt;
+	&lt;xsl:param name=&quot;Update&quot; /&gt;
+
+	&lt;xsl:template match=&quot;/&quot;&gt;
+
+		&lt;xsl:choose&gt;
+			&lt;xsl:when test=&quot;$Update = &apos;True&apos;&quot;&gt;
+				&lt;xsl:call-template name=&quot;Boo [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.TradeLogin">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;1.0&quot;&gt;
+	&lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot; omit-xml-declaration=&quot;yes&quot;/&gt;
+
+	&lt;xsl:param name=&quot;LoginType&quot; /&gt;
+	&lt;xsl:param name=&quot;LoginMethod&quot; /&gt;
+	&lt;xsl:param name=&quot;RedirectURL&quot; /&gt;
+	&lt;xsl:param name=&quot;Email&quot; /&gt;
+	&lt;xsl:param name=&quot;HideHeader&quot; /&gt;
+	&lt;xsl:param name=&quot;Placeholders&quot; /&gt;
+	&lt;xsl:param name=&quot;DrawRememberMe&quot; /&gt;
+	&lt;xsl:param name=&quot;UseLoginType&quot; /&gt;
+
+	&lt;xsl:template match=&quot;/&quot;&gt;
+
+		&lt;div id=&quot;d [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.TradeReference">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;1.0&quot;&gt;
+	&lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot; omit-xml-declaration=&quot;yes&quot;/&gt;
+
+
+	&lt;xsl:template match=&quot;/&quot;&gt;
+
+		&lt;div id=&quot;divTradeReference&quot; class=&quot;trade-reference box primary&quot;&gt;
+
+			&lt;div class=&quot;boxTitle&quot;&gt;
+				&lt;h2&gt;
+					&lt;trans ml=&quot;Trade Reference&quot;&gt;Your Reference&lt;/trans&gt;
+					&lt;span ml=&quot;Trade Reference&quot;&gt;*&lt;/span&gt;
+				&lt;/h2&gt;
+			&lt;/div&gt;
+
+			&lt;input type=&quot;text&quot; name=&quot;txtTradeReference&quot; id=&quot;txtTrad [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.TransferInformationPopup">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;1.0&quot;&gt;
+  &lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot; omit-xml-declaration=&quot;yes&quot;/&gt;
+
+  &lt;xsl:include href=&quot;../../xsl/functions.xsl&quot;/&gt;
+  &lt;xsl:include href=&quot;../../xsl/markdown.xsl&quot; /&gt;
+
+    &lt;xsl:template match=&quot;/&quot;&gt;
+
+      &lt;xsl:if test=&quot;TransferInformationReturn/Response/VehicleDetails != &apos;&apos;&quot;&gt;
+        &lt;h5 ml=&quot;Transfers&quot;&gt;
+          &lt;xsl:text&gt;Vehicle Details&lt;/xsl:text&gt;
+        &lt;/h5&gt;
+        &lt;xsl:ca [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.Transfers">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;1.0&quot;&gt;
+&lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot; omit-xml-declaration=&quot;yes&quot;/&gt;
+	
+&lt;xsl:include href=&quot;../../xsl/functions.xsl&quot;/&gt;
+	
+&lt;xsl:param name=&quot;Theme&quot;/&gt;
+&lt;xsl:param name=&quot;Title&quot; /&gt;
+&lt;xsl:param name=&quot;CurrencySymbol&quot; /&gt;
+&lt;xsl:param name=&quot;CurrencySymbolPosition&quot; /&gt;
+&lt;xsl:param name=&quot;SearchMode&quot; /&gt;
+&lt;xsl:param name=&quot;ShowFlightCodeFields&quot; /&gt;
+&lt;xsl:param name=&quot;RequiresPhoneNumber&quot; /&gt;
+&lt;xsl:param nam [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.UsefulLinks">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;1.0&quot;&gt;
+	&lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot; omit-xml-declaration=&quot;yes&quot;/&gt;
+
+	&lt;xsl:include href=&quot;../../xsl/markdown.xsl&quot;/&gt;
+
+	&lt;xsl:template match=&quot;/&quot;&gt;
+
+		&lt;div class=&quot;sidebarBox linklist&quot;&gt;
+
+			&lt;div class=&quot;boxTitle&quot;&gt;
+				&lt;h2 ml=&quot;Useful Links&quot;&gt;Useful Links&lt;/h2&gt;
+			&lt;/div&gt;
+
+			&lt;xsl:call-template name=&quot;Markdown&quot;&gt;
+				&lt;xsl:with-param name=&quot;text&quot; select=&quot;UsefulLinks&quot;/&gt;
+			&lt;/xsl:call-templ [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.WaitMessage">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;1.0&quot;&gt;
+	&lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot; omit-xml-declaration=&quot;yes&quot;/&gt;
+
+	&lt;xsl:param name=&quot;Type&quot; /&gt;
+	&lt;xsl:param name=&quot;Theme&quot; /&gt;
+	&lt;xsl:param name=&quot;Website&quot; /&gt;
+	&lt;xsl:param name=&quot;Hidden&quot; select=&quot;&apos;False&apos;&quot; /&gt;
+    &lt;xsl:param name=&quot;RemoveProtocall&quot; select=&quot;&apos;True&apos;&quot; /&gt;
+	
+	&lt;xsl:template match=&quot;/&quot;&gt;
+
+		&lt;div id=&quot;divWaitMessage&quot;&gt;
+			
+			&lt;xsl:if test=&quot;$Hidden = &apos;True&apos;&quot;&gt;
+				&lt;xsl:attribute name [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.WaitMessageTimeout">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;1.0&quot;&gt;
+	&lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot; omit-xml-declaration=&quot;yes&quot;/&gt;
+
+	&lt;xsl:param name=&quot;Type&quot; /&gt;
+	&lt;xsl:param name=&quot;Theme&quot; /&gt;
+	&lt;xsl:param name=&quot;Website&quot; /&gt;
+	&lt;xsl:param name=&quot;Hidden&quot; select=&quot;&apos;False&apos;&quot; /&gt;
+    &lt;xsl:param name=&quot;RemoveProtocall&quot; select=&quot;&apos;True&apos;&quot; /&gt;
+	
+	&lt;xsl:template match=&quot;/&quot;&gt;
+		
+		
+		&lt;xsl:if test=&quot;WaitMessages/WaitMessage[Type=$Type]/TimeoutText and WaitMessages/WaitMe [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:iVectorWidgets.res.ZeroPriceBaggage">
+<summary>
+  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;1.0&quot;&gt;
+	&lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot; omit-xml-declaration=&quot;yes&quot;/&gt;
+
+	&lt;xsl:include href=&quot;../../xsl/functions.xsl&quot;/&gt;
+
+	&lt;xsl:param name=&quot;Title&quot; /&gt;
+	&lt;xsl:param name=&quot;CurrencySymbol&quot; /&gt;
+	&lt;xsl:param name=&quot;CurrencySymbolPosition&quot; /&gt;
+	&lt;xsl:param name=&quot;PriceFormat&quot; /&gt;
+
+	&lt;xsl:template match=&quot;/&quot;&gt;
+
+		&lt;div id=&quot;divBaggage&quot; class=&quot;box primary&quot;&gt;
+
+			&lt;input type=&quot;hidden&quot; id=&quot;hidBaggagePax&quot;  [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="M:iVectorWidgets.Basket.WidgetRender(System.Boolean,System.Boolean)">
+ <summary>
+ Common render function, whether from page load or ajax
+ </summary>
+ <param name="IncludeContainer">True on page load, false on ajax so we only replace inner content</param>
+ <param name="Translate">False on page load as this happens in master page code, true on ajax so "ml"s are correctly replaced</param>
+ <returns>HTML string</returns>
+</member>
+<member name="M:iVectorWidgets.Basket.GenerateXML(Intuitive.Web.BookingBasket)">
+ <summary>
+ Generates the basket xml
+ </summary>
+ <param name="Basket">Pass in the BookingBasket</param>
+ <returns>HTML string</returns>
+</member>
+<member name="F:iVectorWidgets.CarHire1._hidDefaultDriverCountryID">
+<summary>
+hidDefaultDriverCountryID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.CarHire1._hidAutoSearch">
+<summary>
+hidAutoSearch control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.CarHire1._hidCarHireResultsPage">
+<summary>
+hidCarHireResultsPage control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.CarHire1._h2CarHire">
+<summary>
+h2CarHire control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.CarHire1._pSubTitle">
+<summary>
+pSubTitle control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.CarHire1._divCarHireContainer">
+<summary>
+divCarHireContainer control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.CarHire1._divCarHireSearch">
+<summary>
+divCarHireSearch control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.CarHire1._ddlCarHirePickUpDepotID">
+<summary>
+ddlCarHirePickUpDepotID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.CarHire1._hidCarHirePickUpDate">
+<summary>
+hidCarHirePickUpDate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.CarHire1._ddlCarHireDropOffDepotID">
+<summary>
+ddlCarHireDropOffDepotID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.CarHire1._hidCarHireDropOffDate">
+<summary>
+hidCarHireDropOffDate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.CarHire1._ddlCarHireDriverAge">
+<summary>
+ddlCarHireDriverAge control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.CarHire1._ddlCarHireLeadDriverBookingCountryID">
+<summary>
+ddlCarHireLeadDriverBookingCountryID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.CarHire1._divSelectedCar">
+<summary>
+divSelectedCar control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.CarHire1._divCustomScript">
+<summary>
+divCustomScript control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.CompleteBookingControl._divCompleteBooking">
+<summary>
+divCompleteBooking control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.CompleteBookingControl._hCompleteHeader">
+<summary>
+hCompleteHeader control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.CompleteBookingControl._pText">
+<summary>
+pText control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.CompleteBookingControl._divCompletePrices">
+<summary>
+divCompletePrices control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.CompleteBookingControl._strTotalPrice">
+<summary>
+strTotalPrice control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.CompleteBookingControl._strDepositPrice">
+<summary>
+strDepositPrice control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.CompleteBookingControl._aCompleteBooking_Back">
+<summary>
+aCompleteBooking_Back control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.CompleteBookingControl._aCompleteBooking_AddComponent">
+<summary>
+aCompleteBooking_AddComponent control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.CompleteBookingControl._btnCompleteBooking">
+<summary>
+btnCompleteBooking control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.CompleteBookingControl._hidFailURL">
+<summary>
+hidFailURL control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.CompleteBookingControl._hidRedirectURL">
+<summary>
+hidRedirectURL control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.CompleteBookingControl._hidCompleteBooking_CurrencySymbol">
+<summary>
+hidCompleteBooking_CurrencySymbol control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.CompleteBookingControl._hidCompleteBooking_CurrencyPosition">
+<summary>
+hidCompleteBooking_CurrencyPosition control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.CompleteBookingControl._hidInsertWarningAfter">
+<summary>
+hidInsertWarningAfter control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.CompleteBookingControl._hidWarningMessage">
+<summary>
+hidWarningMessage control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.CompleteBookingControl._hidShowTimeoutMessage">
+<summary>
+hidShowTimeoutMessage control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="M:iVectorWidgets.FlightResultsFilter.GetCustomSetting">
+ <summary>
+ Gets all the custom settings from the client
+ </summary>
+ <returns>Custom Setting with client's settings</returns>
+ <remarks></remarks>
+</member>
+<member name="F:iVectorWidgets.HotelRequestsControl._divHotelRequests">
+<summary>
+divHotelRequests control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.HotelRequestsControl._hHotelRequests_Title">
+<summary>
+hHotelRequests_Title control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.HotelRequestsControl._pHotelRequests_Text">
+<summary>
+pHotelRequests_Text control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.HotelRequestsControl._divArrivalTime">
+<summary>
+divArrivalTime control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.HotelRequestsControl._ddlArrivalTime">
+<summary>
+ddlArrivalTime control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.HotelRequestsControl._txtHotelRequests_Requests">
+<summary>
+txtHotelRequests_Requests control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.MapControl._divMapHolder">
+<summary>
+divMapHolder control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.MapControl._h2Title">
+<summary>
+h2Title control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.MapControl._hidMapIcons">
+<summary>
+hidMapIcons control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.MapControl._hidMapTheme">
+<summary>
+hidMapTheme control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.MapControl._hidMapPoints">
+<summary>
+hidMapPoints control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.MapControl._hidPopupX">
+<summary>
+hidPopupX control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.MapControl._hidPopupY">
+<summary>
+hidPopupY control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.MapControl._hidClusterPopupX">
+<summary>
+hidClusterPopupX control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.MapControl._hidClusterPopupY">
+<summary>
+hidClusterPopupY control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.PaymentControl._divPaymentDetails_Options">
+<summary>
+divPaymentDetails_Options control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.PaymentControl._hPaymentOption_Title">
+<summary>
+hPaymentOption_Title control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.PaymentControl._divBillingAddress">
+<summary>
+divBillingAddress control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.PaymentControl._h1">
+<summary>
+h1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.PaymentControl._hidUseBillingAddress">
+<summary>
+hidUseBillingAddress control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.PaymentControl._ddlBillingAddress_Title">
+<summary>
+ddlBillingAddress_Title control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.PaymentControl._ddlBillingAddress_BookingCountry">
+<summary>
+ddlBillingAddress_BookingCountry control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.PaymentControl._divPaymentDetails">
+<summary>
+divPaymentDetails control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.PaymentControl._hPayment_Title">
+<summary>
+hPayment_Title control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.PaymentControl._hidDisablePriceUpdate">
+<summary>
+hidDisablePriceUpdate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.PaymentControl._pPayment_Text">
+<summary>
+pPayment_Text control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.PaymentControl._ddlCCCardTypeID">
+<summary>
+ddlCCCardTypeID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.PaymentControl._ddlCCStartMonth">
+<summary>
+ddlCCStartMonth control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.PaymentControl._ddlCCStartYear">
+<summary>
+ddlCCStartYear control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.PaymentControl._ddlCCExpireMonth">
+<summary>
+ddlCCExpireMonth control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.PaymentControl._ddlCCExpireYear">
+<summary>
+ddlCCExpireYear control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.PaymentControl._aPayment_CSVTooltip">
+<summary>
+aPayment_CSVTooltip control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.PaymentControl._dtIssueNumber">
+<summary>
+dtIssueNumber control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.PaymentControl._ddIsueNumber">
+<summary>
+ddIsueNumber control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.PaymentControl._hidSurcharge">
+<summary>
+hidSurcharge control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.PaymentControl._hidTotalAmount">
+<summary>
+hidTotalAmount control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.PaymentControl._hidCurrencySymbol">
+<summary>
+hidCurrencySymbol control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.PaymentControl._hidPerformValidation">
+<summary>
+hidPerformValidation control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="M:iVectorWidgets.FlightResults.GetCustomSetting">
+ <summary>
+ Gets all the custom settings from the client
+ </summary>
+ <returns>Custom Setting with client's settings</returns>
+ <remarks></remarks>
+</member>
+<member name="M:iVectorWidgets.HotelResultsFilter.GetCustomSetting">
+ <summary>
+ Gets all the custom settings from the client
+ </summary>
+ <returns>Custom Setting with client's settings</returns>
+ <remarks></remarks>
+</member>
+<member name="F:iVectorWidgets.HotelResultsFooterControl._divHotelResultsFooterControls">
+<summary>
+divHotelResultsFooterControls control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.HotelResultsFooterControl._divPagingBottom">
+<summary>
+divPagingBottom control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.HotelResultsFooterControl._pagingBottom">
+<summary>
+pagingBottom control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.HotelResultsFooterControl._btnBackToTop">
+<summary>
+btnBackToTop control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.HotelResultsFooterControl._pDisclaimerText">
+<summary>
+pDisclaimerText control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="M:iVectorWidgets.HotelResults.GetCustomSetting">
+ <summary>
+ Gets all the custom settings from the client
+ </summary>
+ <returns>Custom Setting with client's settings</returns>
+ <remarks></remarks>
+</member>
+<member name="M:iVectorWidgets.HotelResults.GetPointsXML">
+ <summary>
+ get our points values (currently only used for monster)
+ </summary>
+ <returns>Points values BigC XML</returns>
+ <remarks></remarks>
+</member>
+<member name="M:iVectorWidgets.HotelResults.GetHotelResultsXML">
+ <summary>
+ Get the XML for the results widget
+ </summary>
+ <returns>XML doc for results widget</returns>
+ <remarks></remarks>
+</member>
+<member name="M:iVectorWidgets.HotelResults.GetHotelMoreInfo(System.Int32)">
+ <summary>
+ Gets hotel info from BigC when we click on the more info tab
+ </summary>
+ <param name="PropertyReferenceID">PropertyReferenceID of proeprty we want info for</param>
+ <returns>More Info HTML as string</returns>
+ <remarks>created by Matt S 09/10/14</remarks>
+</member>
+<member name="F:iVectorWidgets.LeadGuestDetailsControl._divLeadGuestDetails">
+<summary>
+divLeadGuestDetails control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.LeadGuestDetailsControl._h2LeadGuestDetails">
+<summary>
+h2LeadGuestDetails control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.LeadGuestDetailsControl._ddlLeadGuestDetails_Title">
+<summary>
+ddlLeadGuestDetails_Title control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.LeadGuestDetailsControl._txtLeadGuestDetails_FirstName">
+<summary>
+txtLeadGuestDetails_FirstName control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.LeadGuestDetailsControl._txtLeadGuestDetails_LastName">
+<summary>
+txtLeadGuestDetails_LastName control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.LeadGuestDetailsControl._txtLeadGuestDetails_Email">
+<summary>
+txtLeadGuestDetails_Email control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.LeadGuestDetailsControl._txtLeadGuestDetails_RepeatEmail">
+<summary>
+txtLeadGuestDetails_RepeatEmail control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.LeadGuestDetailsControl._trPostcodeLookup">
+<summary>
+trPostcodeLookup control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.LeadGuestDetailsControl._txtPostcodeLookup_Postcode">
+<summary>
+txtPostcodeLookup_Postcode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.LeadGuestDetailsControl._txtLeadGuestDetails_Address">
+<summary>
+txtLeadGuestDetails_Address control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.LeadGuestDetailsControl._txtLeadGuestDetails_City">
+<summary>
+txtLeadGuestDetails_City control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.LeadGuestDetailsControl._trPostCode">
+<summary>
+trPostCode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.LeadGuestDetailsControl._lblLeadGuestDetails_Postcode">
+<summary>
+lblLeadGuestDetails_Postcode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.LeadGuestDetailsControl._txtLeadGuestDetails_Postcode">
+<summary>
+txtLeadGuestDetails_Postcode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.LeadGuestDetailsControl._ddlLeadGuestDetails_BookingCountry">
+<summary>
+ddlLeadGuestDetails_BookingCountry control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.LeadGuestDetailsControl._txtLeadGuestDetails_PhoneNumber">
+<summary>
+txtLeadGuestDetails_PhoneNumber control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.LeadGuestDetailsControl._txtLeadGuestDetails_MobileNumber">
+<summary>
+txtLeadGuestDetails_MobileNumber control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.LeadGuestDetailsControl._hidLeadGuestDetails_ValidationExclude">
+<summary>
+hidLeadGuestDetails_ValidationExclude control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="M:iVectorWidgets.MyBookings.GetDocumentationURL(System.String)">
+ <summary>
+ This function should never be called directly from the browser - it gets the public URL of customer documentation that
+ should never be exposed on the front end eg lch.ivector.co.uk/bookingdocumentation/2234345.pdf
+ This can easily be changed to view another customers documentation
+ </summary>
+ <param name="key">
+ the key that maps to the public URL of a booking document internally - will be stored on the session by the ShowDocumentation function below 
+ The ShowDocumentation function is the one that should be called from the browser
+ </param>
+ <returns>
+ a one off URL stored on the session that will return the PDF booking document without exposing the ivector URL
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="F:iVectorWidgets.SearchSummaryControl._divSearchSummary">
+<summary>
+divSearchSummary control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchSummaryControl._hSummary">
+<summary>
+hSummary control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchSummaryControl._divSearchSummaryControls">
+<summary>
+divSearchSummaryControls control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchSummaryControl._pagingTop">
+<summary>
+pagingTop control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchSummaryControl._divSortOrder">
+<summary>
+divSortOrder control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchSummaryControl._lblSortBy">
+<summary>
+lblSortBy control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchSummaryControl._ddlSortOrder">
+<summary>
+ddlSortOrder control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchSummaryControl._divSearchSummaryViewTabs">
+<summary>
+divSearchSummaryViewTabs control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchSummaryControl._aMapView">
+<summary>
+aMapView control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchSummaryControl._aQuickView">
+<summary>
+aQuickView control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchSummaryControl._aPopular">
+<summary>
+aPopular control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchSummaryControl._divPopularHelper">
+<summary>
+divPopularHelper control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="M:iVectorWidgets.SearchTool.GetListOfBrandProperties">
+ <summary>
+ A function that returns a list of all properties that are valid to the current brand
+ </summary>
+ <returns></returns>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._divSearch">
+<summary>
+divSearch control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._hidInsertWarningAfter">
+<summary>
+hidInsertWarningAfter control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._hidDefaultSearchValues">
+<summary>
+hidDefaultSearchValues control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._hidDatepickerCultureCode">
+<summary>
+hidDatepickerCultureCode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._divSearchTitle">
+<summary>
+divSearchTitle control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._h2_SearchTitle">
+<summary>
+h2_SearchTitle control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._divSearchMode">
+<summary>
+divSearchMode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._ulSearchMode">
+<summary>
+ulSearchMode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._hidSearchMode">
+<summary>
+hidSearchMode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._hidFlightPlusHotelURL">
+<summary>
+hidFlightPlusHotelURL control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._hidUseFlightCarouselResults">
+<summary>
+hidUseFlightCarouselResults control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._lblDepartureLocation">
+<summary>
+lblDepartureLocation control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._divDepartingFromCountryCountry">
+<summary>
+divDepartingFromCountryCountry control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._ddlDepartingFromCountryID">
+<summary>
+ddlDepartingFromCountryID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._divDepartingFromDropdown">
+<summary>
+divDepartingFromDropdown control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._ddlDepartingFromID">
+<summary>
+ddlDepartingFromID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._divDepartingFromAuto">
+<summary>
+divDepartingFromAuto control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._acpDepartingFromID">
+<summary>
+acpDepartingFromID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._acpDepartingFromIDHidden">
+<summary>
+acpDepartingFromIDHidden control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._acpDepartingFromIDScript">
+<summary>
+acpDepartingFromIDScript control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._divShowHideDepartingFromAutoComplete">
+<summary>
+divShowHideDepartingFromAutoComplete control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._aShowDepartingFromDropdown">
+<summary>
+aShowDepartingFromDropdown control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._aShowDepartingFromAutoComplete">
+<summary>
+aShowDepartingFromAutoComplete control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._hidAirportDepartingFromID">
+<summary>
+hidAirportDepartingFromID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._lblDestination">
+<summary>
+lblDestination control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._divArrivingAtDestination">
+<summary>
+divArrivingAtDestination control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._divArrivingAtCountryCountry">
+<summary>
+divArrivingAtCountryCountry control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._ddlCountryID">
+<summary>
+ddlCountryID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._divArrivingAtDropdown">
+<summary>
+divArrivingAtDropdown control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._ddlRegionID">
+<summary>
+ddlRegionID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._divArrivingAtAuto">
+<summary>
+divArrivingAtAuto control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._acpArrivingAtID">
+<summary>
+acpArrivingAtID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._acpArrivingAtIDHidden">
+<summary>
+acpArrivingAtIDHidden control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._acpArrivingAtIDScript">
+<summary>
+acpArrivingAtIDScript control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._divShowHideArrivingAtAutoComplete">
+<summary>
+divShowHideArrivingAtAutoComplete control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._aShowArrivingAtDropdown">
+<summary>
+aShowArrivingAtDropdown control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._aShowArrivingAtAutoComplete">
+<summary>
+aShowArrivingAtAutoComplete control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._divArrivingAtAirport">
+<summary>
+divArrivingAtAirport control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._ddlArrivalAirportID">
+<summary>
+ddlArrivalAirportID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._divArrivingAtAirportAuto">
+<summary>
+divArrivingAtAirportAuto control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._acpArrivingAtAirportID">
+<summary>
+acpArrivingAtAirportID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._acpArrivingAtAirportIDHidden">
+<summary>
+acpArrivingAtAirportIDHidden control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._acpArrivingAtAirportIDScript">
+<summary>
+acpArrivingAtAirportIDScript control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._divShowHideAirportArrivingAtAutoComplete">
+<summary>
+divShowHideAirportArrivingAtAutoComplete control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._aShowAutoComplete">
+<summary>
+aShowAutoComplete control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._aHideAutoComplete">
+<summary>
+aHideAutoComplete control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._hidArrivingAtID">
+<summary>
+hidArrivingAtID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._fldPriorityProperty">
+<summary>
+fldPriorityProperty control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._lblProperty">
+<summary>
+lblProperty control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._acpPriorityPropertyID">
+<summary>
+acpPriorityPropertyID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._acpPriorityPropertyIDHidden">
+<summary>
+acpPriorityPropertyIDHidden control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._lblDepartureDate">
+<summary>
+lblDepartureDate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._dlReturn">
+<summary>
+dlReturn control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._lblReturnDate">
+<summary>
+lblReturnDate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._lblDuration">
+<summary>
+lblDuration control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._ddlDuration">
+<summary>
+ddlDuration control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._hidDurationSingularSuffix">
+<summary>
+hidDurationSingularSuffix control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._hidDurationPluralSuffix">
+<summary>
+hidDurationPluralSuffix control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._hidDatepickerMonths">
+<summary>
+hidDatepickerMonths control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._hidDatepickerFirstDay">
+<summary>
+hidDatepickerFirstDay control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._hidShowDatePickerDropDowns">
+<summary>
+hidShowDatePickerDropDowns control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._hidReturnDatepicker">
+<summary>
+hidReturnDatepicker control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._hidDaysAhead">
+<summary>
+hidDaysAhead control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._hidReturnMinDaysAhead">
+<summary>
+hidReturnMinDaysAhead control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._lblRooms">
+<summary>
+lblRooms control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._ddlRooms">
+<summary>
+ddlRooms control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._hidRoomsSingularSuffix">
+<summary>
+hidRoomsSingularSuffix control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._hidRoomsPluralSuffix">
+<summary>
+hidRoomsPluralSuffix control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._lblPickupLocation">
+<summary>
+lblPickupLocation control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._ddlPickupType">
+<summary>
+ddlPickupType control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._acpPropertyIDTransferPickup">
+<summary>
+acpPropertyIDTransferPickup control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._acpPropertyIDTransferPickupHidden">
+<summary>
+acpPropertyIDTransferPickupHidden control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._acpAirportIDTransferPickup">
+<summary>
+acpAirportIDTransferPickup control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._acpAirportIDTransferPickupHidden">
+<summary>
+acpAirportIDTransferPickupHidden control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._divAirportDropdownTransferPickup">
+<summary>
+divAirportDropdownTransferPickup control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._ddlAirportTransferPickup">
+<summary>
+ddlAirportTransferPickup control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._divShowHideTransferDepartingFromAutoComplete">
+<summary>
+divShowHideTransferDepartingFromAutoComplete control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._aShowTransferDepartingFromDropDown">
+<summary>
+aShowTransferDepartingFromDropDown control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._aShowTransferDepartingFromAutoComplete">
+<summary>
+aShowTransferDepartingFromAutoComplete control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._hidTransferPickupLocationID">
+<summary>
+hidTransferPickupLocationID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._lblDropOffLocation">
+<summary>
+lblDropOffLocation control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._ddlDropOffType">
+<summary>
+ddlDropOffType control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._acpPropertyIDTransferDropOff">
+<summary>
+acpPropertyIDTransferDropOff control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._acpPropertyIDTransferDropOffHidden">
+<summary>
+acpPropertyIDTransferDropOffHidden control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._acpAirportIDTransferDropOff">
+<summary>
+acpAirportIDTransferDropOff control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._acpAirportIDTransferDropOffHidden">
+<summary>
+acpAirportIDTransferDropOffHidden control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._divAirportDropdownTransferDropOff">
+<summary>
+divAirportDropdownTransferDropOff control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._ddlAirportTransferDropoff">
+<summary>
+ddlAirportTransferDropoff control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._divShowHideTransferArrivingAtAutoComplete">
+<summary>
+divShowHideTransferArrivingAtAutoComplete control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._aShowTransferArrivingAtDropDown">
+<summary>
+aShowTransferArrivingAtDropDown control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._aShowTransferArrivingAtAutoComplete">
+<summary>
+aShowTransferArrivingAtAutoComplete control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._hidTransferDropOffLocationID">
+<summary>
+hidTransferDropOffLocationID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._hidReturnTransfer">
+<summary>
+hidReturnTransfer control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._lblPickupDate">
+<summary>
+lblPickupDate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._lblArrivalTime">
+<summary>
+lblArrivalTime control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._lblDropOffDate">
+<summary>
+lblDropOffDate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._lblDropOffTime">
+<summary>
+lblDropOffTime control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._lblPassengers">
+<summary>
+lblPassengers control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._lblAdults">
+<summary>
+lblAdults control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._lblChildren">
+<summary>
+lblChildren control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._lblInfants">
+<summary>
+lblInfants control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._tdRoom1">
+<summary>
+tdRoom1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._ddlAdults_1">
+<summary>
+ddlAdults_1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._ddlChildren_1">
+<summary>
+ddlChildren_1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._ddlInfants_1">
+<summary>
+ddlInfants_1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._ddlChildAge_1_1">
+<summary>
+ddlChildAge_1_1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._ddlChildAge_1_2">
+<summary>
+ddlChildAge_1_2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._ddlChildAge_1_3">
+<summary>
+ddlChildAge_1_3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._ddlChildAge_1_4">
+<summary>
+ddlChildAge_1_4 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._ddlAdults_2">
+<summary>
+ddlAdults_2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._ddlChildren_2">
+<summary>
+ddlChildren_2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._ddlInfants_2">
+<summary>
+ddlInfants_2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._ddlChildAge_2_1">
+<summary>
+ddlChildAge_2_1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._ddlChildAge_2_2">
+<summary>
+ddlChildAge_2_2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._ddlChildAge_2_3">
+<summary>
+ddlChildAge_2_3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._ddlChildAge_2_4">
+<summary>
+ddlChildAge_2_4 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._ddlAdults_3">
+<summary>
+ddlAdults_3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._ddlChildren_3">
+<summary>
+ddlChildren_3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._ddlInfants_3">
+<summary>
+ddlInfants_3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._ddlChildAge_3_1">
+<summary>
+ddlChildAge_3_1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._ddlChildAge_3_2">
+<summary>
+ddlChildAge_3_2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._ddlChildAge_3_3">
+<summary>
+ddlChildAge_3_3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._ddlChildAge_3_4">
+<summary>
+ddlChildAge_3_4 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._hidAdultsSingularSuffix">
+<summary>
+hidAdultsSingularSuffix control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._hidAdultsPluralSuffix">
+<summary>
+hidAdultsPluralSuffix control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._hidChildrenSingularSuffix">
+<summary>
+hidChildrenSingularSuffix control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._hidChildrenPluralSuffix">
+<summary>
+hidChildrenPluralSuffix control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._hidInfantsSingularSuffix">
+<summary>
+hidInfantsSingularSuffix control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._hidInfantsPluralSuffix">
+<summary>
+hidInfantsPluralSuffix control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._hidAgeSingularSuffix">
+<summary>
+hidAgeSingularSuffix control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._hidAgePluralSuffix">
+<summary>
+hidAgePluralSuffix control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._divSearch_Advanced">
+<summary>
+divSearch_Advanced control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._ddlMealBasisID">
+<summary>
+ddlMealBasisID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._hidRating">
+<summary>
+hidRating control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._hidPropertyReferenceID">
+<summary>
+hidPropertyReferenceID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._aShowAdvancedOptions">
+<summary>
+aShowAdvancedOptions control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._aHideAdvancedOptions">
+<summary>
+aHideAdvancedOptions control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._btnClear">
+<summary>
+btnClear control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._btnHide">
+<summary>
+btnHide control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._btnClose">
+<summary>
+btnClose control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._btnSearch">
+<summary>
+btnSearch control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._hidSingleRoomLabel">
+<summary>
+hidSingleRoomLabel control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._hidMultiRoomLabel">
+<summary>
+hidMultiRoomLabel control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._hidWarning_Invalid">
+<summary>
+hidWarning_Invalid control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._hidWarning_NoResults">
+<summary>
+hidWarning_NoResults control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._hidStartMode">
+<summary>
+hidStartMode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._hidExpandAction">
+<summary>
+hidExpandAction control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._hidUseShortDates">
+<summary>
+hidUseShortDates control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._hidSearchRedirects">
+<summary>
+hidSearchRedirects control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._lblHighRatedHotelFilter">
+<summary>
+lblHighRatedHotelFilter control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._spnHighRatedHotelFilter">
+<summary>
+spnHighRatedHotelFilter control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._divSearchAgain">
+<summary>
+divSearchAgain control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._btnSearchAgain">
+<summary>
+btnSearchAgain control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:iVectorWidgets.SearchToolUserControl._plcPreSearchScript">
+<summary>
+plcPreSearchScript control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+</members>
+</doc>

@@ -1,0 +1,121 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+IntuitiveWeb
+</name>
+</assembly>
+<members>
+<member name="T:Intuitive.Web.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Intuitive.Web.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Intuitive.Web.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:Intuitive.Web.FlightResultHandler.SaveiVectorConnectResult(System.Int32,iVectorConnectInterface.Flight.SearchResponse.Flight)">
+ <summary>
+ Adds the results to our internal store to access later
+ </summary>
+ <param name="Key">Unique integer key for the result</param>
+ <param name="iVectorConnectResult">ivc result</param>
+ <remarks>Should only be being called in the save routine, which loops. So the key should always be unique. Overwrite if it isn't though to be safe</remarks>
+</member>
+<member name="P:Intuitive.Web.BookingSearch.FlightItineraryDef.FlightCenters">
+ <summary>
+ 'When doing a flight itinerary search denotes the number of legs you search for.
+ </summary>
+ <value>
+ The flight centers you search for as an integer, defaults to 0.
+ </value>
+</member>
+<member name="P:Intuitive.Web.BookingSearch.FlightItineraryDef.CurrentCenter">
+ <summary>
+ When doing a flight itinerary search with hotels, used to track which of the flight centers we are currently searching hotels for
+ </summary>
+ <value>
+ The current center you are searching for, as an integer, defaults to 0.
+ </value>
+</member>
+<member name="M:Intuitive.Web.PropertyResultHandler.SaveiVectorConnectResult(System.Int32,iVectorConnectInterface.Property.SearchResponse.PropertyResult)">
+ <summary>
+ Adds the results to our internal store to access later
+ </summary>
+ <param name="Key">Unique integer key for the result</param>
+ <param name="iVectorConnectResult">ivc result</param>
+ <remarks>Should only be being called in the save routine, which loops. So the key should always be unique. Overwrite if it isn't though to be safe</remarks>
+</member>
+<member name="M:Intuitive.Web.PropertyResultHandler.SaveiVectorConnectResult(System.Int32,Intuitive.Web.Booking.Property.PropertyResult)">
+ <summary>
+ Adds the results to our internal store to access later
+ </summary>
+ <param name="Key">Unique integer key for the result</param>
+ <param name="PropertyResult">property result</param>
+ <remarks>Should only be being called in the save routine, which loops. So the key should always be unique. Overwrite if it isn't though to be safe</remarks>
+</member>
+<member name="M:Intuitive.Web.PropertyResultHandler.SetupSelectedFlight(System.Boolean)">
+ <summary>
+ Sets up selected flight
+ </summary>
+ <param name="HideHotelsWithoutSelectedFlight">True by default, set to false if the routine calling this function calls Filter afterwards
+ anyway as there is no need to iterate over the result set then</param>
+ <remarks></remarks>
+</member>
+<member name="T:Intuitive.Web.DataStore.Logger">
+ <summary>
+ This class is responsible for taking sets of specific data and logging to a database.
+ It should not be a store of any data.
+ </summary>
+ <remarks>
+ Any global values, eg connect strings or setting values should be passed into the constructor.
+ </remarks>
+</member>
+<member name="T:Intuitive.Web.PageServer_Beta">
+ <summary>
+ This beta class is so we have backwards compatible code (we could remove the page server interface otherwise), 
+ although this is an improved architecture for widgets + their settings
+ we should really migrate other customers gradually and generalise code eg zuji do lots differently in their page server class
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Intuitive.Web.Tracking.TrackingAffiliate">
+ <summary>
+ Class to represent data entity from iVC - not exclusively an affiliate, just an object for tracking/affiliate data
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Intuitive.Web.XslTranslation">
+ <summary>
+ Provides an interface to translate Xsl templates, rather than translating HTML at runtime
+ It should handle nested Xsl includes
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Intuitive.Web.XslTranslation.TranslateTemplateFromString(System.String,System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="Xsl">string of xsl to translate</param>
+ <param name="WidgetName">widget name, must be set</param>
+ <returns>Translated template, only uses root attribute but do this so caching is consistent</returns>
+ <remarks>Assumes this is a library widget with xsl from resource file being passed in so we ignore any includes. Includes property should be empty</remarks>
+</member>
+<member name="M:Intuitive.Web.XslTranslation.TranslateTemplateFromPath(System.String)">
+ <summary>
+ Pre translates Xsl templates so we do not translate whole HTML on every page load
+ </summary>
+ <param name="XslFilePath">Absolute file path to top level file</param>
+ <returns>Translated template root file location and also file locations of included xsl templates</returns>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

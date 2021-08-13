@@ -1,0 +1,193 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "title": "Search Tool",
+  "description": "Widget that allows the user to set their search options and perform a search",
+  "properties": {
+    "Header": {
+      "type": "string",
+      "description": "Main Header that will appear at the top of the search tool (optional)"
+    },
+    "Placeholders": {
+      "type": "object",
+      "title": "Placeholders",
+      "description": "Default placeholder text that appears on the inputs before a value is selected.",
+      "properties": {
+        "Departure": {
+          "type": "string",
+          "default": "Departing from..."
+        },
+        "ArrivalSelect": {
+          "type": "string",
+          "default": "Going To..."
+        },
+        "ArrivalAutoSuggest": {
+          "type": "string",
+          "default": "Choose your City or Resort"
+        },
+        "ArrivalAirport": {
+          "type": "string",
+          "default": "Landing at..."
+        },
+        "Duration": {
+          "type": "string",
+          "default": "Nights..."
+        },
+        "Property": {
+          "type": "string",
+          "default": "Property"
+        }
+      }
+    },
+    "Buttons": {
+      "type": "object",
+      "title": "Buttons",
+      "description": "Set the text that appears on the buttons",
+      "properties": {
+        "Search": {
+          "type": "string",
+          "default": "Search"
+        },
+        "SearchAgain": {
+          "type": "string",
+          "default": "Search Again"
+        },
+        "ClearSearch": {
+          "type": "string",
+          "default": "Clear"
+        }
+      }
+    },
+    "Warnings": {
+      "type": "object",
+      "title": "Warnings",
+      "description": "Warning text that displays underneath the input if a value is not selected.",
+      "properties": {
+        "Departure": {
+          "type": "string",
+          "default": "Departure must be set"
+        },
+        "Arrival": {
+          "type": "string",
+          "default": "Arrival must be set"
+        },
+        "Duration": {
+          "type": "string",
+          "default": "Nights must be set"
+        }
+      }
+    },
+    "Configuration": {
+      "type": "object",
+      "title": "Configuration",
+      "description": "Configuration options for the search tool widget",
+      "properties": {
+        "ContainerStyle": {
+          "type": "string",
+          "format": "select",
+          "default": "Default",
+          "enum": [
+            "Default",
+            "Highlight",
+            "Alternate"
+          ]
+        },
+        "ContainerPadding": {
+            "type": "string",
+            "format": "select",
+            "default": "None",
+            "description": "Sets the padding for the widget.",
+            "enum": [
+                "None",
+                "Small",
+                "Medium",
+                "Large"
+            ]
+        },
+        "DisplayWidget": {
+          "type": "boolean",
+            "default": true,
+            "description": "Option to hide the search tool from the page"
+        },
+        "StartCollapsed": {
+          "type": "boolean",
+          "default": false
+        },
+        "SidebarDisplay": {
+          "type": "boolean",
+          "default": false
+        },
+        "ClearSearchButton": {
+          "type": "boolean",
+          "description": "Sets whether the clear search button is displayed",
+          "default": false
+        },
+        "DestinationSearchOptions": {
+          "type": "object",
+          "title": "Destination Search Options",
+          "description": "Options for the destination",
+          "properties": {
+            "DisplayAutoComplete": {
+              "type": "boolean",
+              "default": true
+            },
+            "DisplayDropdown": {
+              "type": "boolean",
+              "default": true
+            },
+            "DisplayAirportGroups": {
+              "type": "boolean",
+              "default": false
+            },
+            "AirportGroupsFormat": {
+              "type": "string",
+              "format": "select",
+              "default": "Top",
+              "description": "Sets the style of the airport groups if used.",
+              "enum": [
+                "Top",
+                "Mixed"
+              ]
+            },
+            "FilterByAirportRoute": {
+              "type": "boolean",
+              "default": false,
+              "description": "Filters destinations by selected airport route availability"
+            }
+          }
+        },
+        "AdditionalSearchOptions": {
+          "type": "object",
+          "title": "Additional Search Options",
+          "description": "Set which additional search options are displayed on the search tool.",
+          "properties": {
+            "DisplayText": {
+              "type": "string",
+              "default": "Additional Search Options"
+            },
+            "HideText": {
+              "type": "string",
+              "default": "Hide Additional Search Options"
+            },
+            "Property": {
+              "type": "boolean",
+              "default": false
+            },
+            "MealBasis": {
+              "type": "boolean",
+              "default": false
+            },
+            "MinRating": {
+              "type": "boolean",
+              "default": false
+            },
+            "FlightClass": {
+              "type": "boolean",
+              "default": false
+            }
+          }
+        }
+      }
+    }
+  }
+}

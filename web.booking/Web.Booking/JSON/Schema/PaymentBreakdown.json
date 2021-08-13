@@ -1,0 +1,39 @@
+﻿{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "title": "PaymentBreakdown",
+    "description": "Widget to payments due on a payment page.",
+    "properties": {
+        "Title": {
+            "default": "Payment Breakdown",
+            "type": "string"
+        },
+        "Message": {
+            "default": "The booking is payment on account.",
+            "type": "string"
+        },
+        "PaymentScheduleTitle": {
+            "default": "Payment Schedule",
+            "type": "string"
+        },
+        "Configuration": {
+            "type": "object",
+            "title": "Configuration",
+            "description": "Configuration options for the payment breakdown widget",
+            "properties": {
+                "ContainerStyle": {
+                    "type": "string",
+                    "format": "select",
+                    "default": "Highlight",
+                    "enum": [ "Default", "Highlight", "Alternate" ]
+                },
+                "ContainerPadding": {
+                    "type": "string",
+                    "format": "select",
+                    "default": "Medium",
+                    "enum": [ "None", "Small", "Medium", "Large" ]
+                }
+            }
+        }
+    }
+}

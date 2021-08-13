@@ -1,0 +1,36 @@
+﻿
+.widget-guestdetails {
+
+    .guest-date-select {
+        padding-right: 2px;
+        padding-left: 2px;
+    }
+
+    .guest-dob {
+        max-width: 305px;
+    }
+
+    .guest-dob .guest-date-input {
+        margin-left: -2px;
+    }
+
+    .dob-child-age {
+        pointer-events: none;
+        padding-right: 0;
+        padding-left: 0;
+        border: none;
+        text-align: center;
+        box-shadow: none;
+    }
+
+    .guest-title {
+        width: 14%;
+        min-width: 100px;
+    }
+
+    @media(min-width: 1220px) {
+        .guest-dob {
+            width: 36%;
+        }
+    }
+}

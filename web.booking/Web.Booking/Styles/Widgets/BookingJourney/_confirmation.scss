@@ -1,0 +1,99 @@
+﻿@import "../../mixins/media";
+@import "../../variables";
+
+.confirmation-content {
+    .print-icon {
+        margin-right: 5px;
+        font-family: FontAwesome;
+        font-style: normal;
+
+        &::before {
+            content: "\f02f";
+        }
+    }
+
+    .booking-payment-details {
+        padding: $spacing-md;
+        background: $brand-inverse;
+
+        .data-list {
+            margin-top: 0;
+            margin-bottom: 0;
+            color: $body-alt-color;
+
+            .total-price {
+                font-size: 1rem;
+
+                .price-amount {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+    @include break-sm() {
+        .booking-payment-details {
+            .data-list {
+                .total-price {
+                    font-size: 1.25rem;
+
+                    .price-amount {
+                        font-size: 1.125rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media print {
+    .header,
+    .footer,
+    .widget-breadcrumb,
+    .img-container {
+        display: none !important;
+    }
+
+    .confirmation-content {
+        .booking-options {
+            display: none !important;
+        }
+
+        .booking-payment-details {
+            width: 400px;
+            float: right;
+        }
+
+        .btn {
+            display: none !important;
+        }
+    }
+    .property-information {
+        width: 100% !important;
+        border-left: 1px solid #000;
+
+        .arrow-link {
+            display: none !important;
+        }
+    }
+
+    .property-summary {
+        display: none !important;
+    }
+
+    .property-booking {
+        clear: both;
+    }
+
+    .booking-payment-details {
+        width: 100% !important;
+    }
+    
+    .booking-terms {
+        width: 100%;
+    }
+
+    .booking-payment {
+        width: 100%;
+    }
+}

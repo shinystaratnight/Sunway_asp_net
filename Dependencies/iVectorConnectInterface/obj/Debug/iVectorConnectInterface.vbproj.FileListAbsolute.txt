@@ -1,0 +1,128 @@
+C:\Users\nick\Desktop\Sunway Source Code\Dependencies\iVectorConnectInterface\bin\Debug\iVectorConnectInterface.dll.config
+C:\Users\nick\Desktop\Sunway Source Code\Dependencies\iVectorConnectInterface\bin\Debug\iVectorConnectInterface.dll
+C:\Users\nick\Desktop\Sunway Source Code\Dependencies\iVectorConnectInterface\bin\Debug\iVectorConnectInterface.pdb
+C:\Users\nick\Desktop\Sunway Source Code\Dependencies\iVectorConnectInterface\bin\Debug\iVectorConnectInterface.xml
+C:\Users\nick\Desktop\Sunway Source Code\Dependencies\iVectorConnectInterface\bin\Debug\Intuitive.dll
+C:\Users\nick\Desktop\Sunway Source Code\Dependencies\iVectorConnectInterface\bin\Debug\Intuitive.Domain.dll
+C:\Users\nick\Desktop\Sunway Source Code\Dependencies\iVectorConnectInterface\bin\Debug\AWSSDK.Core.dll
+C:\Users\nick\Desktop\Sunway Source Code\Dependencies\iVectorConnectInterface\bin\Debug\Autofac.dll
+C:\Users\nick\Desktop\Sunway Source Code\Dependencies\iVectorConnectInterface\bin\Debug\AWSSDK.S3.dll
+C:\Users\nick\Desktop\Sunway Source Code\Dependencies\iVectorConnectInterface\bin\Debug\Newtonsoft.Json.dll
+C:\Users\nick\Desktop\Sunway Source Code\Dependencies\iVectorConnectInterface\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\nick\Desktop\Sunway Source Code\Dependencies\iVectorConnectInterface\bin\Debug\Intuitive.Domain.pdb
+C:\Users\nick\Desktop\Sunway Source Code\Dependencies\iVectorConnectInterface\bin\Debug\Intuitive.Domain.dll.config
+C:\Users\nick\Desktop\Sunway Source Code\Dependencies\iVectorConnectInterface\bin\Debug\Intuitive.pdb
+C:\Users\nick\Desktop\Sunway Source Code\Dependencies\iVectorConnectInterface\obj\Debug\iVectorConnectInterface.vbprojAssemblyReference.cache
+C:\Users\nick\Desktop\Sunway Source Code\Dependencies\iVectorConnectInterface\obj\Debug\iVectorConnectInterface.Resources.resources
+C:\Users\nick\Desktop\Sunway Source Code\Dependencies\iVectorConnectInterface\obj\Debug\iVectorConnectInterface.vbproj.GenerateResource.cache
+C:\Users\nick\Desktop\Sunway Source Code\Dependencies\iVectorConnectInterface\obj\Debug\iVectorConnectInterface.vbproj.CopyComplete
+C:\Users\nick\Desktop\Sunway Source Code\Dependencies\iVectorConnectInterface\obj\Debug\iVectorConnectInterface.dll
+C:\Users\nick\Desktop\Sunway Source Code\Dependencies\iVectorConnectInterface\obj\Debug\iVectorConnectInterface.xml
+C:\Users\nick\Desktop\Sunway Source Code\Dependencies\iVectorConnectInterface\obj\Debug\iVectorConnectInterface.pdb
+X:\new2\Dependencies\iVectorConnectInterface\bin\Debug\iVectorConnectInterface.dll.config
+X:\new2\Dependencies\iVectorConnectInterface\bin\Debug\iVectorConnectInterface.dll
+X:\new2\Dependencies\iVectorConnectInterface\bin\Debug\iVectorConnectInterface.pdb
+X:\new2\Dependencies\iVectorConnectInterface\bin\Debug\iVectorConnectInterface.xml
+X:\new2\Dependencies\iVectorConnectInterface\bin\Debug\Intuitive.dll
+X:\new2\Dependencies\iVectorConnectInterface\bin\Debug\Intuitive.Domain.dll
+X:\new2\Dependencies\iVectorConnectInterface\bin\Debug\AWSSDK.Core.dll
+X:\new2\Dependencies\iVectorConnectInterface\bin\Debug\Autofac.dll
+X:\new2\Dependencies\iVectorConnectInterface\bin\Debug\AWSSDK.S3.dll
+X:\new2\Dependencies\iVectorConnectInterface\bin\Debug\Newtonsoft.Json.dll
+X:\new2\Dependencies\iVectorConnectInterface\bin\Debug\ICSharpCode.SharpZipLib.dll
+X:\new2\Dependencies\iVectorConnectInterface\bin\Debug\Intuitive.Domain.pdb
+X:\new2\Dependencies\iVectorConnectInterface\bin\Debug\Intuitive.Domain.dll.config
+X:\new2\Dependencies\iVectorConnectInterface\bin\Debug\Intuitive.pdb
+X:\new2\Dependencies\iVectorConnectInterface\obj\Debug\iVectorConnectInterface.vbprojAssemblyReference.cache
+X:\new2\Dependencies\iVectorConnectInterface\obj\Debug\iVectorConnectInterface.Resources.resources
+X:\new2\Dependencies\iVectorConnectInterface\obj\Debug\iVectorConnectInterface.vbproj.GenerateResource.cache
+X:\new2\Dependencies\iVectorConnectInterface\obj\Debug\iVectorConnectInterface.vbproj.CopyComplete
+X:\new2\Dependencies\iVectorConnectInterface\obj\Debug\iVectorConnectInterface.dll
+X:\new2\Dependencies\iVectorConnectInterface\obj\Debug\iVectorConnectInterface.xml
+X:\new2\Dependencies\iVectorConnectInterface\obj\Debug\iVectorConnectInterface.pdb
+\\svr2019\Workspace\Jonas\webco\new2\Dependencies\iVectorConnectInterface\bin\Debug\iVectorConnectInterface.dll.config
+\\svr2019\Workspace\Jonas\webco\new2\Dependencies\iVectorConnectInterface\bin\Debug\iVectorConnectInterface.dll
+\\svr2019\Workspace\Jonas\webco\new2\Dependencies\iVectorConnectInterface\bin\Debug\iVectorConnectInterface.pdb
+\\svr2019\Workspace\Jonas\webco\new2\Dependencies\iVectorConnectInterface\bin\Debug\iVectorConnectInterface.xml
+\\svr2019\Workspace\Jonas\webco\new2\Dependencies\iVectorConnectInterface\bin\Debug\Intuitive.dll
+\\svr2019\Workspace\Jonas\webco\new2\Dependencies\iVectorConnectInterface\bin\Debug\Intuitive.Domain.dll
+\\svr2019\Workspace\Jonas\webco\new2\Dependencies\iVectorConnectInterface\bin\Debug\AWSSDK.Core.dll
+\\svr2019\Workspace\Jonas\webco\new2\Dependencies\iVectorConnectInterface\bin\Debug\Autofac.dll
+\\svr2019\Workspace\Jonas\webco\new2\Dependencies\iVectorConnectInterface\bin\Debug\AWSSDK.S3.dll
+\\svr2019\Workspace\Jonas\webco\new2\Dependencies\iVectorConnectInterface\bin\Debug\Newtonsoft.Json.dll
+\\svr2019\Workspace\Jonas\webco\new2\Dependencies\iVectorConnectInterface\bin\Debug\ICSharpCode.SharpZipLib.dll
+\\svr2019\Workspace\Jonas\webco\new2\Dependencies\iVectorConnectInterface\bin\Debug\Intuitive.Domain.pdb
+\\svr2019\Workspace\Jonas\webco\new2\Dependencies\iVectorConnectInterface\bin\Debug\Intuitive.Domain.dll.config
+\\svr2019\Workspace\Jonas\webco\new2\Dependencies\iVectorConnectInterface\bin\Debug\Intuitive.pdb
+\\svr2019\Workspace\Jonas\webco\new2\Dependencies\iVectorConnectInterface\obj\Debug\iVectorConnectInterface.vbprojAssemblyReference.cache
+\\svr2019\Workspace\Jonas\webco\new2\Dependencies\iVectorConnectInterface\obj\Debug\iVectorConnectInterface.Resources.resources
+\\svr2019\Workspace\Jonas\webco\new2\Dependencies\iVectorConnectInterface\obj\Debug\iVectorConnectInterface.vbproj.GenerateResource.cache
+\\svr2019\Workspace\Jonas\webco\new2\Dependencies\iVectorConnectInterface\obj\Debug\iVectorConnectInterface.vbproj.CopyComplete
+\\svr2019\Workspace\Jonas\webco\new2\Dependencies\iVectorConnectInterface\obj\Debug\iVectorConnectInterface.dll
+\\svr2019\Workspace\Jonas\webco\new2\Dependencies\iVectorConnectInterface\obj\Debug\iVectorConnectInterface.xml
+\\svr2019\Workspace\Jonas\webco\new2\Dependencies\iVectorConnectInterface\obj\Debug\iVectorConnectInterface.pdb
+C:\Users\js\Source\Repos\new2\Dependencies\iVectorConnectInterface\bin\Debug\iVectorConnectInterface.dll.config
+C:\Users\js\Source\Repos\new2\Dependencies\iVectorConnectInterface\bin\Debug\iVectorConnectInterface.dll
+C:\Users\js\Source\Repos\new2\Dependencies\iVectorConnectInterface\bin\Debug\iVectorConnectInterface.pdb
+C:\Users\js\Source\Repos\new2\Dependencies\iVectorConnectInterface\bin\Debug\iVectorConnectInterface.xml
+C:\Users\js\Source\Repos\new2\Dependencies\iVectorConnectInterface\bin\Debug\Intuitive.dll
+C:\Users\js\Source\Repos\new2\Dependencies\iVectorConnectInterface\bin\Debug\Intuitive.Domain.dll
+C:\Users\js\Source\Repos\new2\Dependencies\iVectorConnectInterface\bin\Debug\AWSSDK.Core.dll
+C:\Users\js\Source\Repos\new2\Dependencies\iVectorConnectInterface\bin\Debug\Autofac.dll
+C:\Users\js\Source\Repos\new2\Dependencies\iVectorConnectInterface\bin\Debug\AWSSDK.S3.dll
+C:\Users\js\Source\Repos\new2\Dependencies\iVectorConnectInterface\bin\Debug\Newtonsoft.Json.dll
+C:\Users\js\Source\Repos\new2\Dependencies\iVectorConnectInterface\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\js\Source\Repos\new2\Dependencies\iVectorConnectInterface\bin\Debug\Intuitive.Domain.pdb
+C:\Users\js\Source\Repos\new2\Dependencies\iVectorConnectInterface\bin\Debug\Intuitive.Domain.dll.config
+C:\Users\js\Source\Repos\new2\Dependencies\iVectorConnectInterface\bin\Debug\Intuitive.pdb
+C:\Users\js\Source\Repos\new2\Dependencies\iVectorConnectInterface\obj\Debug\iVectorConnectInterface.vbprojAssemblyReference.cache
+C:\Users\js\Source\Repos\new2\Dependencies\iVectorConnectInterface\obj\Debug\iVectorConnectInterface.Resources.resources
+C:\Users\js\Source\Repos\new2\Dependencies\iVectorConnectInterface\obj\Debug\iVectorConnectInterface.vbproj.GenerateResource.cache
+C:\Users\js\Source\Repos\new2\Dependencies\iVectorConnectInterface\obj\Debug\iVectorConnectInterface.vbproj.CopyComplete
+C:\Users\js\Source\Repos\new2\Dependencies\iVectorConnectInterface\obj\Debug\iVectorConnectInterface.dll
+C:\Users\js\Source\Repos\new2\Dependencies\iVectorConnectInterface\obj\Debug\iVectorConnectInterface.xml
+C:\Users\js\Source\Repos\new2\Dependencies\iVectorConnectInterface\obj\Debug\iVectorConnectInterface.pdb
+C:\Users\js\Source\Repos\new3\Dependencies\iVectorConnectInterface\bin\Debug\iVectorConnectInterface.dll.config
+C:\Users\js\Source\Repos\new3\Dependencies\iVectorConnectInterface\bin\Debug\iVectorConnectInterface.dll
+C:\Users\js\Source\Repos\new3\Dependencies\iVectorConnectInterface\bin\Debug\iVectorConnectInterface.pdb
+C:\Users\js\Source\Repos\new3\Dependencies\iVectorConnectInterface\bin\Debug\iVectorConnectInterface.xml
+C:\Users\js\Source\Repos\new3\Dependencies\iVectorConnectInterface\bin\Debug\Intuitive.dll
+C:\Users\js\Source\Repos\new3\Dependencies\iVectorConnectInterface\bin\Debug\Intuitive.Domain.dll
+C:\Users\js\Source\Repos\new3\Dependencies\iVectorConnectInterface\bin\Debug\AWSSDK.Core.dll
+C:\Users\js\Source\Repos\new3\Dependencies\iVectorConnectInterface\bin\Debug\Autofac.dll
+C:\Users\js\Source\Repos\new3\Dependencies\iVectorConnectInterface\bin\Debug\AWSSDK.S3.dll
+C:\Users\js\Source\Repos\new3\Dependencies\iVectorConnectInterface\bin\Debug\Newtonsoft.Json.dll
+C:\Users\js\Source\Repos\new3\Dependencies\iVectorConnectInterface\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\js\Source\Repos\new3\Dependencies\iVectorConnectInterface\bin\Debug\Intuitive.Domain.pdb
+C:\Users\js\Source\Repos\new3\Dependencies\iVectorConnectInterface\bin\Debug\Intuitive.Domain.dll.config
+C:\Users\js\Source\Repos\new3\Dependencies\iVectorConnectInterface\bin\Debug\Intuitive.pdb
+C:\Users\js\Source\Repos\new3\Dependencies\iVectorConnectInterface\obj\Debug\iVectorConnectInterface.vbprojAssemblyReference.cache
+C:\Users\js\Source\Repos\new3\Dependencies\iVectorConnectInterface\obj\Debug\iVectorConnectInterface.Resources.resources
+C:\Users\js\Source\Repos\new3\Dependencies\iVectorConnectInterface\obj\Debug\iVectorConnectInterface.vbproj.GenerateResource.cache
+C:\Users\js\Source\Repos\new3\Dependencies\iVectorConnectInterface\obj\Debug\iVectorConnectInterface.vbproj.CopyComplete
+C:\Users\js\Source\Repos\new3\Dependencies\iVectorConnectInterface\obj\Debug\iVectorConnectInterface.dll
+C:\Users\js\Source\Repos\new3\Dependencies\iVectorConnectInterface\obj\Debug\iVectorConnectInterface.xml
+C:\Users\js\Source\Repos\new3\Dependencies\iVectorConnectInterface\obj\Debug\iVectorConnectInterface.pdb
+D:\Workspace\csharp\Sunway\Dependencies\iVectorConnectInterface\bin\Debug\iVectorConnectInterface.dll.config
+D:\Workspace\csharp\Sunway\Dependencies\iVectorConnectInterface\bin\Debug\iVectorConnectInterface.dll
+D:\Workspace\csharp\Sunway\Dependencies\iVectorConnectInterface\bin\Debug\iVectorConnectInterface.pdb
+D:\Workspace\csharp\Sunway\Dependencies\iVectorConnectInterface\bin\Debug\iVectorConnectInterface.xml
+D:\Workspace\csharp\Sunway\Dependencies\iVectorConnectInterface\bin\Debug\Intuitive.dll
+D:\Workspace\csharp\Sunway\Dependencies\iVectorConnectInterface\bin\Debug\Intuitive.Domain.dll
+D:\Workspace\csharp\Sunway\Dependencies\iVectorConnectInterface\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Workspace\csharp\Sunway\Dependencies\iVectorConnectInterface\bin\Debug\AWSSDK.Core.dll
+D:\Workspace\csharp\Sunway\Dependencies\iVectorConnectInterface\bin\Debug\Autofac.dll
+D:\Workspace\csharp\Sunway\Dependencies\iVectorConnectInterface\bin\Debug\AWSSDK.S3.dll
+D:\Workspace\csharp\Sunway\Dependencies\iVectorConnectInterface\bin\Debug\Newtonsoft.Json.dll
+D:\Workspace\csharp\Sunway\Dependencies\iVectorConnectInterface\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\Workspace\csharp\Sunway\Dependencies\iVectorConnectInterface\bin\Debug\Intuitive.Domain.pdb
+D:\Workspace\csharp\Sunway\Dependencies\iVectorConnectInterface\bin\Debug\Intuitive.Domain.dll.config
+D:\Workspace\csharp\Sunway\Dependencies\iVectorConnectInterface\bin\Debug\Intuitive.pdb
+D:\Workspace\csharp\Sunway\Dependencies\iVectorConnectInterface\obj\Debug\iVectorConnectInterface.vbproj.AssemblyReference.cache
+D:\Workspace\csharp\Sunway\Dependencies\iVectorConnectInterface\obj\Debug\iVectorConnectInterface.Resources.resources
+D:\Workspace\csharp\Sunway\Dependencies\iVectorConnectInterface\obj\Debug\iVectorConnectInterface.vbproj.GenerateResource.cache
+D:\Workspace\csharp\Sunway\Dependencies\iVectorConnectInterface\obj\Debug\iVectorConnectInterface.vbproj.CoreCompileInputs.cache
+D:\Workspace\csharp\Sunway\Dependencies\iVectorConnectInterface\obj\Debug\iVectorConnectInterface.vbproj.CopyComplete
+D:\Workspace\csharp\Sunway\Dependencies\iVectorConnectInterface\obj\Debug\iVectorConnectInterface.dll
+D:\Workspace\csharp\Sunway\Dependencies\iVectorConnectInterface\obj\Debug\iVectorConnectInterface.xml
+D:\Workspace\csharp\Sunway\Dependencies\iVectorConnectInterface\obj\Debug\iVectorConnectInterface.pdb

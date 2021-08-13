@@ -1,0 +1,62 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "title": "Prebook Booking",
+  "description": "Widget that controls the continuation of the booking journey from the booking summary to the payment page",
+  "properties": {
+    "PrebookFailWarning": {
+      "default": "Sorry we could not confirm availability for your selected holiday. Please try again or choose an alternative option.",
+      "description": "warning displayed when the prebook fails.",
+      "type": "string"
+    },
+    "MandatoryFieldsWarning": {
+      "default": "Please ensure that all required fields are set. Incorrect fields have been highlighted.",
+      "description": "Warning displayed at the top of the page when the user does not fill in all mandatory fields.",
+      "type": "string"
+    },
+    "Message": {
+      "default": "Continue to our secure payment page",
+      "description": "Message that displays next to the continue button",
+      "type": "string"
+    },
+    "Button": {
+      "type": "object",
+      "title": "Button",
+      "description": "Button that is clicked to make the booking.",
+      "properties": {
+        "Text": {
+          "default": "Book now",
+          "type": "string"
+        }
+      }
+    },
+    "Configuration": {
+      "type": "object",
+      "title": "Configuration",
+      "description": "Configuration options for the complete booking widget",
+      "properties": {
+        "ContainerStyle": {
+          "type": "string",
+          "format": "select",
+          "default": "Highlight",
+          "enum": [
+            "Default",
+            "Highlight",
+            "Alternate"
+          ]
+        },
+        "ContainerPadding": {
+          "type": "string",
+          "format": "select",
+          "default": "Medium",
+          "enum": [
+            "None",
+            "Small",
+            "Medium",
+            "Large"
+          ]
+        }
+      }
+    }
+  }
+}

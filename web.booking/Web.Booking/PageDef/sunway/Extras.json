@@ -1,0 +1,163 @@
+﻿{
+    "Id": 1,
+    "Name": "Extras",
+    "Sections": [
+        {
+            "Id": 1,
+            "Name": "header",
+            "Widgets": [
+                {
+                    "Id": 1,
+                    "Name": "SiteBuilderToolbar",
+                    "ServerSideRender": false,
+                    "ClientSideRender": true,
+                    "Access": "AdminLoggedIn"
+                },
+                {
+                    "Id": 1,
+                    "Name": "Header",
+                    "Context": "default",
+                    "ServerSideRender": true
+                },
+                {
+                    "Id": 1,
+                    "Name": "OverBrandedHeader",
+                    "Context": "default",
+                    "ServerSideRender": true,
+                    "ClientSideRender": false,
+                    "Overbranded": true,
+                    "NotEditable": true
+                }
+            ]
+        },
+        {
+            "Id": 2,
+            "Name": "fullcontenttop",
+            "Widgets": [
+                {
+                    "Id": 1,
+                    "Name": "SalesMessage",
+                    "Context": "default",
+                    "Shared": true,
+                    "ServerSideRender": false,
+                    "ClientSideRender": true
+                },
+                {
+                    "Id": 1,
+                    "Name": "Breadcrumb",
+                    "Context": "default",
+                    "Shared": true,
+                    "ServerSideRender": false,
+                    "ClientSideRender": true
+                },
+                {
+                    "Id": 1,
+                    "Name": "Alerts",
+                    "Context": "default",
+                    "Shared": true,
+                    "ServerSideRender": false,
+                    "ClientSideRender": true,
+                    "NotEditable": true
+                }
+            ]
+        },
+        {
+            "Id": 2,
+            "Name": "sidebar",
+            "Widgets": [
+                {
+                    "Id": 1,
+                    "Name": "Basket",
+                    "Context": "default",
+                    "Shared": true,
+                    "ServerSideRender": false,
+                    "ClientSideRender": true
+                }
+            ]
+        },
+        {
+            "Id": 2,
+            "Name": "main",
+          "Widgets": [
+            {
+              "Id": 1,
+              "Name": "WidgetEdit",
+              "ServerSideRender": false,
+              "ClientSideRender": true,
+              "Access": "AdminLoggedIn"
+            },
+            {
+              "Id": 1,
+              "Name": "WaitMessageWidget",
+              "Context": "default",
+              "ServerSideRender": false,
+              "ClientSideRender": true
+            },
+            {
+              "Id": 2,
+              "Name": "SearchSummary",
+              "Shared": true,
+              "Context": "default",
+              "ServerSideRender": false,
+              "ClientSideRender": true
+            },
+            {
+              "Id": 2,
+              "Name": "BaggageUpsell",
+              "Shared": true,
+              "Context": "searchresults-baggageupsell",
+              "ServerSideRender": false,
+              "ClientSideRender": true
+            },
+            {
+              "Id": 2,
+              "Name": "TransferUpsell",
+              "Shared": true,
+              "Context": "default",
+              "ServerSideRender": false,
+              "ClientSideRender": true
+            },
+            {
+              "Id": 2,
+              "Name": "InsuranceUpsell",
+              "Shared": true,
+              "Context": "default",
+              "ServerSideRender": false,
+              "ClientSideRender": true
+            },
+            {
+              "Id": 1,
+              "Name": "PreBookBooking",
+              "Context": "default",
+              "Shared": true,
+              "ServerSideRender": false,
+              "ClientSideRender": true
+            }
+          ]
+        },
+        {
+            "Id": 1,
+            "Name": "footer",
+            "Widgets": [
+                {
+                    "Id": 1,
+                    "Name": "Footer",
+                    "Context": "default",
+                    "ServerSideRender": true,
+                    "ClientSideRender": false
+                },
+                {
+                    "Id": 1,
+                    "Name": "OverBrandedFooter",
+                    "Context": "default",
+                    "ServerSideRender": true,
+                    "ClientSideRender": false,
+                    "Overbranded": true,
+                    "NotEditable":  true
+                }
+            ]
+        }
+    ],
+    "Template": "StandardSidebarLeft",
+    "Url": "extras"
+}

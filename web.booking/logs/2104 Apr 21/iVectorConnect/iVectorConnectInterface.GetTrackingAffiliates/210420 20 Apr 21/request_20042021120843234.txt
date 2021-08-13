@@ -1,0 +1,9 @@
+URL: http://sunwaytest.ivectorconnect.co.uk/ivectorconnect.ashx
+Headers:
+Authorization - sunwayb2c|sunwayb2c
+Content-Type - application/xml
+Host - sunwaytest.ivectorconnect.co.uk
+Content-Length - 701
+Expect - 100-continue
+Body:
+<?xml version="1.0"?><GetTrackingAffiliatesRequest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><LoginDetails><Login>sunwayb2c</Login><Password>sunwayb2c</Password><AgentReference /><SellingCurrencyID>1</SellingCurrencyID><LanguageID>1</LanguageID><TrackingAffiliateID>0</TrackingAffiliateID><BrandID>16</BrandID><BookingSourceID>0</BookingSourceID><SalesChannelID>0</SalesChannelID><TradeID>0</TradeID><SellingCountryID>0</SellingCountryID><CurrencyID>0</CurrencyID><ItineraryInformation>false</ItineraryInformation></LoginDetails><BrandID>2</BrandID><CMSWebsiteID>0</CMSWebsiteID><SalesChannelID>2</SalesChannelID></GetTrackingAffiliatesRequest>

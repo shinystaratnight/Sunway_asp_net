@@ -1,0 +1,5 @@
+﻿#divCompleteBooking {min-height:10px;}
+
+#divCompleteBooking p {display:inline-block;height:33px;line-height:33px;}
+
+#divCompleteBooking input[type=button] {float:right;display:inline-block;}

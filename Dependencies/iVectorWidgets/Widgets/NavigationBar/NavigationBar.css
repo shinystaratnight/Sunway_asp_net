@@ -1,0 +1,15 @@
+﻿#divNavigationBar ul {position:relative;}
+#divNavigationBar ul li.title {float:left;}
+#divNavigationBar ul li {position:relative;float:left;}
+#divNavigationBar ul li a {float:left;}
+
+#divNavigationBar ul li ul.droplist li {display:block;}
+
+/* hide sub menus */
+#divNavigationBar ul li ul.droplist {display:none;}
+
+/* show sub menu on hover of menu */
+#divNavigationBar ul li:hover ul.sub {display:block;}
+
+/* show sub-sub menu on hover of sub menu */
+#divNavigationBar ul li ul.sub li:hover ul.subsub {display:block;}

@@ -1,0 +1,4 @@
+<Project>
+    <Import Project="./Settings.props" />
+    <Import Project="./Dependencies.props" />
+</Project>

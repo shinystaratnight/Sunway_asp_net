@@ -1,0 +1,18 @@
+﻿@import "../../../../styles/mixins/media";
+@import "../../../../styles/variables";
+
+.sunway .widget-transferupsell {
+    .table .table-header {
+        .transfer-price {
+            text-align: right;
+        }
+        
+        .transfer-quantity {
+            text-align: right;
+        }
+
+        .transfer-selected {
+            text-align: right;
+        }
+    }
+}

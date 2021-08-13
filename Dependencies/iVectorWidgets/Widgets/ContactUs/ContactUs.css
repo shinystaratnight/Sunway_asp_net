@@ -1,0 +1,12 @@
+﻿
+#divContactUsHeading {margin-bottom:20px;}
+#divContactUsHeading h1 {margin-bottom:10px;}
+
+#divContactUsForm #divInputs {position:relative;display:inline-block;padding-bottom:40px;}
+#divContactUsForm label {float:left;clear:left;width:170px;}
+#divContactUsForm input {width:260px;}
+#divContactUsForm textarea {float:left;height:200px;width:436px;font-family:Arial;}
+#divContactUsForm label, #divContactUsForm input {margin-bottom:10px;}
+#divContactUsForm #aSubmit {position:absolute;bottom:0;right:0;}
+
+#divContactUsForm #pThankYou {position:absolute;display:inline;bottom:6px;left:170px;}

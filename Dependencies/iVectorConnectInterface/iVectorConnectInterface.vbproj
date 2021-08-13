@@ -1,0 +1,339 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{783382A3-1B3E-4958-81BF-1337F446B2AE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>iVectorConnectInterface</RootNamespace>
+    <AssemblyName>iVectorConnectInterface</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>iVectorConnectInterface.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>iVectorConnectInterface.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>On</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>Off</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.AsyncInterfaces.1.1.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.6.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.4.7.1\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Intuitive" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Runtime.Serialization" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Interfaces\AdHoc\PropertyBookRequest.vb" />
+    <Compile Include="Interfaces\AdHoc\PropertyBookResponse.vb" />
+    <Compile Include="Interfaces\APIS\APISInformation.vb" />
+    <Compile Include="Interfaces\APIS\Guest.vb" />
+    <Compile Include="Interfaces\Basket\BasketRequest.vb" />
+    <Compile Include="Interfaces\Basket\BasketResponse.vb" />
+    <Compile Include="Interfaces\Basket\BookableBasketRequest.vb" />
+    <Compile Include="Interfaces\Basket\BookableBasketResponse.vb" />
+    <Compile Include="Interfaces\Basket\BookRequest.vb" />
+    <Compile Include="Interfaces\Basket\BookResponse.vb" />
+    <Compile Include="Interfaces\Basket\PreBookRequest.vb" />
+    <Compile Include="Interfaces\Basket\PreBookResponse.vb" />
+    <Compile Include="Interfaces\Basket\QuoteRequest.vb" />
+    <Compile Include="Interfaces\Basket\QuoteResponse.vb" />
+    <Compile Include="Interfaces\Booking\AddComponentRequest.vb" />
+    <Compile Include="Interfaces\Booking\AddComponentResponse.vb" />
+    <Compile Include="Interfaces\Booking\CancelComponentRequest.vb" />
+    <Compile Include="Interfaces\Booking\CancelComponentResponse.vb" />
+    <Compile Include="Interfaces\Booking\CancelRequest.vb" />
+    <Compile Include="Interfaces\Booking\CancelResponse.vb" />
+    <Compile Include="Interfaces\Booking\Component.vb" />
+    <Compile Include="Interfaces\Booking\CreateBookingReferenceRequest.vb" />
+    <Compile Include="Interfaces\Booking\CreateBookingReferenceResponse.vb" />
+    <Compile Include="Interfaces\Booking\GetBookingDetailsRequest.vb" />
+    <Compile Include="Interfaces\Booking\GetBookingDetailsResponse.vb" />
+    <Compile Include="Interfaces\Booking\MakePaymentRequest.vb" />
+    <Compile Include="Interfaces\Booking\MakePaymentResponse.vb" />
+    <Compile Include="Interfaces\Booking\PreCancelComponentRequest.vb" />
+    <Compile Include="Interfaces\Booking\PreCancelComponentResponse.vb" />
+    <Compile Include="Interfaces\Booking\PreCancelRequest.vb" />
+    <Compile Include="Interfaces\Booking\PreCancelResponse.vb" />
+    <Compile Include="Interfaces\Booking\Quote.vb" />
+    <Compile Include="Interfaces\Booking\QuoteSearchRequest.vb" />
+    <Compile Include="Interfaces\Booking\QuoteSearchResponse.vb" />
+    <Compile Include="Interfaces\Booking\SearchBookingsRequest.vb" />
+    <Compile Include="Interfaces\Booking\SearchBookingsResponse.vb" />
+    <Compile Include="Interfaces\Booking\SendDocumentationRequest.vb" />
+    <Compile Include="Interfaces\Booking\SendDocumentationResponse.vb" />
+    <Compile Include="Interfaces\Booking\ViewDocumentationRequest.vb" />
+    <Compile Include="Interfaces\Booking\ViewDocumentationResponse.vb" />
+    <Compile Include="Interfaces\CarHire\BookRequest.vb" />
+    <Compile Include="Interfaces\CarHire\BookResponse.vb" />
+    <Compile Include="Interfaces\CarHire\CarHireInsuranceQuoteRequest.vb" />
+    <Compile Include="Interfaces\CarHire\CarHireInsuranceQuoteResponse.vb" />
+    <Compile Include="Interfaces\CarHire\PreBookRequest.vb" />
+    <Compile Include="Interfaces\CarHire\PreBookResponse.vb" />
+    <Compile Include="Interfaces\CarHire\SearchRequest.vb" />
+    <Compile Include="Interfaces\CarHire\SearchResponse.vb" />
+    <Compile Include="Interfaces\CRM\CustomerLoginRequest.vb" />
+    <Compile Include="Interfaces\CRM\CustomerLoginResponse.vb" />
+    <Compile Include="Interfaces\CRM\NewsletterSignupRequest.vb" />
+    <Compile Include="Interfaces\CRM\NewsletterSignupResponse.vb" />
+    <Compile Include="Interfaces\CRM\TradeLoginRequest.vb" />
+    <Compile Include="Interfaces\CRM\TradeLoginResponse.vb" />
+    <Compile Include="Interfaces\Cruise\Helpers\Cabin.vb" />
+    <Compile Include="Interfaces\CustomQueries\CustomQueryRequest.vb" />
+    <Compile Include="Interfaces\CustomQueries\CustomQueryResponse.vb" />
+    <Compile Include="Interfaces\Extra\AvailabilityRequest.vb" />
+    <Compile Include="Interfaces\Extra\AvailabilityResponse.vb" />
+    <Compile Include="Interfaces\Extra\BookingAnswer.vb" />
+    <Compile Include="Interfaces\Extra\BookingQuestion.vb" />
+    <Compile Include="Interfaces\Extra\BookRequest.vb" />
+    <Compile Include="Interfaces\Extra\BookResponse.vb" />
+    <Compile Include="Interfaces\Extra\OptionsRequest.vb" />
+    <Compile Include="Interfaces\Extra\OptionsResponse.vb" />
+    <Compile Include="Interfaces\Extra\PreBookRequest.vb" />
+    <Compile Include="Interfaces\Extra\PreBookResponse.vb" />
+    <Compile Include="Interfaces\Extra\SearchRequest.vb" />
+    <Compile Include="Interfaces\Extra\SearchResponse.vb" />
+    <Compile Include="Interfaces\Extra\Support\ExtraLocation.vb" />
+    <Compile Include="Interfaces\Extra\Support\JourneyDetails.vb" />
+    <Compile Include="Interfaces\Flight\BookRequest.vb" />
+    <Compile Include="Interfaces\Flight\BookResponse.vb" />
+    <Compile Include="Interfaces\Flight\FareFamily\FareFamily.vb" />
+    <Compile Include="Interfaces\Flight\FareFamily\Service.vb" />
+    <Compile Include="Interfaces\Flight\FareFamily\ServiceGroup.vb" />
+    <Compile Include="Interfaces\Flight\FlightItinerarySearchRequest.vb" />
+    <Compile Include="Interfaces\Flight\FlightItinerarySearchResponse.vb" />
+    <Compile Include="Interfaces\Flight\PreBookRequest.vb" />
+    <Compile Include="Interfaces\Flight\PreBookResponse.vb" />
+    <Compile Include="Interfaces\Flight\ReleaseFlightSeatLockRequest.vb" />
+    <Compile Include="Interfaces\Flight\ReleaseFlightSeatLockResponse.vb" />
+    <Compile Include="Interfaces\Flight\SearchRequest.vb" />
+    <Compile Include="Interfaces\Flight\SearchResponse.vb" />
+    <Compile Include="Interfaces\Itinerary\OwnArrangementsResponse.vb" />
+    <Compile Include="Interfaces\LoginDetails.vb" />
+    <Compile Include="Interfaces\Miscellaneous\AddURLRedirectRequest.vb" />
+    <Compile Include="Interfaces\Miscellaneous\AddURLRedirectResponse.vb" />
+    <Compile Include="Interfaces\Miscellaneous\ApplyPromoCodeRequest.vb" />
+    <Compile Include="Interfaces\Miscellaneous\ApplyPromoCodeResponse.vb" />
+    <Compile Include="Interfaces\Miscellaneous\BookingAdjustmentSearchRequest.vb" />
+    <Compile Include="Interfaces\Miscellaneous\BookingAdjustmentSearchResponse.vb" />
+    <Compile Include="Interfaces\Miscellaneous\CalendarRequest.vb" />
+    <Compile Include="Interfaces\Miscellaneous\CalendarResponse.vb" />
+    <Compile Include="Interfaces\Miscellaneous\CheckBookingAdjustmentRequest.vb" />
+    <Compile Include="Interfaces\Miscellaneous\CheckBookingAdjustmentResponse.vb" />
+    <Compile Include="Interfaces\Miscellaneous\DeleteURLRedirectRequest.vb" />
+    <Compile Include="Interfaces\Miscellaneous\DeleteURLRedirectResponse.vb" />
+    <Compile Include="Interfaces\Miscellaneous\FlightCarouselRequest.vb" />
+    <Compile Include="Interfaces\Miscellaneous\FlightCarouselResponse.vb" />
+    <Compile Include="Interfaces\Miscellaneous\Get3DSecureRedirectRequest.vb" />
+    <Compile Include="Interfaces\Miscellaneous\Get3DSecureRedirectResponse.vb" />
+    <Compile Include="Interfaces\Miscellaneous\GetAddressRequest.vb" />
+    <Compile Include="Interfaces\Miscellaneous\GetAddressResponse.vb" />
+    <Compile Include="Interfaces\Miscellaneous\GetOffsitePaymentRedirectRequest.vb" />
+    <Compile Include="Interfaces\Miscellaneous\GetOffsitePaymentRedirectResponse.vb" />
+    <Compile Include="Interfaces\Miscellaneous\GetPackageDetailsRequest.vb" />
+    <Compile Include="Interfaces\Miscellaneous\GetPackageDetailsResponse.vb" />
+    <Compile Include="Interfaces\Miscellaneous\GetReviewsRequest.vb" />
+    <Compile Include="Interfaces\Miscellaneous\GetReviewsResponse.vb" />
+    <Compile Include="Interfaces\Miscellaneous\GetThirdPartySettingsRequest.vb" />
+    <Compile Include="Interfaces\Miscellaneous\GetThirdPartySettingsResponse.vb" />
+    <Compile Include="Interfaces\Miscellaneous\GetTrackingAffiliatesRequest.vb" />
+    <Compile Include="Interfaces\Miscellaneous\GetTrackingAffiliatesResponse.vb" />
+    <Compile Include="Interfaces\Miscellaneous\ModifyURLRedirectRequest.vb" />
+    <Compile Include="Interfaces\Miscellaneous\ModifyURLRedirectResponse.vb" />
+    <Compile Include="Interfaces\Miscellaneous\PostcodeLookupRequest.vb" />
+    <Compile Include="Interfaces\Miscellaneous\PostcodeLookupResponse.vb" />
+    <Compile Include="Interfaces\Miscellaneous\Process3DSecureReturnRequest.vb" />
+    <Compile Include="Interfaces\Miscellaneous\Process3DSecureReturnResponse.vb" />
+    <Compile Include="Interfaces\Miscellaneous\ProcessOffsitePaymentRequest.vb" />
+    <Compile Include="Interfaces\Miscellaneous\ProcessOffsitePaymentResponse.vb" />
+    <Compile Include="Interfaces\Miscellaneous\ReserveSeatsRequest.vb" />
+    <Compile Include="Interfaces\Miscellaneous\ReserveSeatsResponse.vb" />
+    <Compile Include="Interfaces\Miscellaneous\RetrieveStoredBasketRequest.vb" />
+    <Compile Include="Interfaces\Miscellaneous\RetrieveStoredBasketResponse.vb" />
+    <Compile Include="Interfaces\Miscellaneous\StoreBasketRequest.vb" />
+    <Compile Include="Interfaces\Miscellaneous\StoreBasketResponse.vb" />
+    <Compile Include="Interfaces\Miscellaneous\TranslationRequest.vb" />
+    <Compile Include="Interfaces\Miscellaneous\TranslationResponse.vb" />
+    <Compile Include="Interfaces\Miscellaneous\UpdateFlightPassengerRequest.vb" />
+    <Compile Include="Interfaces\Miscellaneous\UpdateFlightPassengerResponse.vb" />
+    <Compile Include="Interfaces\Modules\ModuleRequest.vb" />
+    <Compile Include="Interfaces\Modules\ModuleResponse.vb" />
+    <Compile Include="Interfaces\Packaging\SearchRequest.vb" />
+    <Compile Include="Interfaces\Packaging\SearchResponse.vb" />
+    <Compile Include="Interfaces\Property\BookRequest.vb" />
+    <Compile Include="Interfaces\Property\BookResponse.vb" />
+    <Compile Include="Interfaces\Property\PreBookLiteRequest.vb" />
+    <Compile Include="Interfaces\Property\PreBookLiteResponse.vb" />
+    <Compile Include="Interfaces\Property\PreBookRequest.vb" />
+    <Compile Include="Interfaces\Property\PreBookResponse.vb" />
+    <Compile Include="Interfaces\Property\RoomAvailabilityRequest.vb" />
+    <Compile Include="Interfaces\Property\RoomAvailabilityResponse.vb" />
+    <Compile Include="Interfaces\Property\SearchLiteRequest.vb" />
+    <Compile Include="Interfaces\Property\SearchLiteResponse.vb" />
+    <Compile Include="Interfaces\Property\SearchRequest.vb" />
+    <Compile Include="Interfaces\Property\SearchResponse.vb" />
+    <Compile Include="Interfaces\Quote\QuoteAdhocComponent.vb" />
+    <Compile Include="Interfaces\Quote\QuoteCarHire.vb" />
+    <Compile Include="Interfaces\Quote\QuoteCruise.vb" />
+    <Compile Include="Interfaces\Quote\QuoteExtra.vb" />
+    <Compile Include="Interfaces\Quote\QuoteFlight.vb" />
+    <Compile Include="Interfaces\Quote\QuoteFlightSector.vb" />
+    <Compile Include="Interfaces\Quote\QuoteProperty.vb" />
+    <Compile Include="Interfaces\Quote\QuoteRetrieveRequest.vb" />
+    <Compile Include="Interfaces\Quote\QuoteRetrieveResponse.vb" />
+    <Compile Include="Interfaces\Quote\QuoteTransfer.vb" />
+    <Compile Include="Interfaces\ResponseStatus.vb" />
+    <Compile Include="Interfaces\ReturnStatus.vb" />
+    <Compile Include="Interfaces\Transfer\BookRequest.vb" />
+    <Compile Include="Interfaces\Transfer\BookResponse.vb" />
+    <Compile Include="Interfaces\Transfer\InformationRequest.vb" />
+    <Compile Include="Interfaces\Transfer\InformationResponse.vb" />
+    <Compile Include="Interfaces\Transfer\PreBookRequest.vb" />
+    <Compile Include="Interfaces\Transfer\PreBookResponse.vb" />
+    <Compile Include="Interfaces\Transfer\SearchRequest.vb" />
+    <Compile Include="Interfaces\Transfer\SearchResponse.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Support\Address.vb" />
+    <Compile Include="Support\BookingAdjustmentDef.vb" />
+    <Compile Include="Support\BookingTag.vb" />
+    <Compile Include="Support\Cancellation.vb" />
+    <Compile Include="Support\CreditCardFeeDetail.vb" />
+    <Compile Include="Support\Erratum.vb" />
+    <Compile Include="Support\FlightErratum.vb" />
+    <Compile Include="Support\FlightSector.vb" />
+    <Compile Include="Support\GuestConfiguration.vb" />
+    <Compile Include="Support\GuestDetail.vb" />
+    <Compile Include="Support\InstalmentPaymentOption.vb" />
+    <Compile Include="Support\InterfaceDefintion.vb" />
+    <Compile Include="Support\LeadCustomerDetails.vb" />
+    <Compile Include="Support\PassengerFare.vb" />
+    <Compile Include="Support\PassengerFareBreakdown.vb" />
+    <Compile Include="Support\PaymentAmountDetail.vb" />
+    <Compile Include="Support\PaymentDetails.vb" />
+    <Compile Include="Support\PaymentDue.vb" />
+    <Compile Include="Support\PayPalTransaction.vb" />
+    <Compile Include="Support\PayWithCustomerCardCharge.vb" />
+    <Compile Include="Support\ProductAttribute.vb" />
+    <Compile Include="Support\RoomBooking.vb" />
+    <Compile Include="Support\SupplierDetails.vb" />
+    <Compile Include="Support\Tax.vb" />
+    <Compile Include="Support\WarningMessage.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Deploy iVectorConnectInterface.bat" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\intuitive.domain\Src\Intuitive.Domain\Intuitive.Domain.csproj">
+      <Project>{368475cf-f854-4203-882f-bb24caa4566b}</Project>
+      <Name>Intuitive.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\intuitive\Intuitive\Intuitive.vbproj">
+      <Project>{b4e03fb2-afb0-4902-bc66-8a3f3ff61d44}</Project>
+      <Name>Intuitive</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

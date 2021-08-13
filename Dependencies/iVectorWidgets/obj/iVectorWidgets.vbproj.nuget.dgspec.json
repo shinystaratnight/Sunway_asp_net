@@ -1,0 +1,271 @@
+{
+  "format": 1,
+  "restore": {
+    "X:\\new2\\Dependencies\\iVectorWidgets\\iVectorWidgets.vbproj": {}
+  },
+  "projects": {
+    "X:\\new2\\Dependencies\\intuitive.domain\\Src\\Intuitive.Domain\\Intuitive.Domain.csproj": {
+      "version": "1.7.0",
+      "restore": {
+        "projectUniqueName": "X:\\new2\\Dependencies\\intuitive.domain\\Src\\Intuitive.Domain\\Intuitive.Domain.csproj",
+        "projectName": "Intuitive.Domain",
+        "projectPath": "X:\\new2\\Dependencies\\intuitive.domain\\Src\\Intuitive.Domain\\Intuitive.Domain.csproj",
+        "packagesPath": "C:\\Users\\js\\.nuget\\packages\\",
+        "outputPath": "X:\\new2\\Dependencies\\intuitive.domain\\Src\\Intuitive.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "configFilePaths": [
+          "C:\\Users\\js\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Users\\js\\.nuget\\packages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.2.0, )"
+            },
+            "StyleCop.Error.MSBuild": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "StyleCop.MSBuild": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.1.0, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "X:\\new2\\Dependencies\\intuitiveweb\\IntuitiveWeb.vbproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "X:\\new2\\Dependencies\\intuitiveweb\\IntuitiveWeb.vbproj",
+        "projectName": "IntuitiveWeb",
+        "projectPath": "X:\\new2\\Dependencies\\intuitiveweb\\IntuitiveWeb.vbproj",
+        "packagesPath": "C:\\Users\\js\\.nuget\\packages\\",
+        "outputPath": "X:\\new2\\Dependencies\\intuitiveweb\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\Users\\js\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Users\\js\\.nuget\\packages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "X:\\new2\\Dependencies\\intuitive\\Intuitive\\Intuitive.vbproj": {
+                "projectPath": "X:\\new2\\Dependencies\\intuitive\\Intuitive\\Intuitive.vbproj"
+              },
+              "X:\\new2\\Dependencies\\iVectorConnectInterface\\iVectorConnectInterface.vbproj": {
+                "projectPath": "X:\\new2\\Dependencies\\iVectorConnectInterface\\iVectorConnectInterface.vbproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.2, )"
+            },
+            "SharpZipLib": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    },
+    "X:\\new2\\Dependencies\\intuitive\\Intuitive\\Intuitive.vbproj": {
+      "version": "1.8.0",
+      "restore": {
+        "projectUniqueName": "X:\\new2\\Dependencies\\intuitive\\Intuitive\\Intuitive.vbproj",
+        "projectName": "Intuitive",
+        "projectPath": "X:\\new2\\Dependencies\\intuitive\\Intuitive\\Intuitive.vbproj",
+        "packagesPath": "C:\\Users\\js\\.nuget\\packages\\",
+        "outputPath": "X:\\new2\\Dependencies\\intuitive\\Intuitive\\obj\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "configFilePaths": [
+          "C:\\Users\\js\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Users\\js\\.nuget\\packages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "AWSSDK.S3": {
+              "target": "Package",
+              "version": "[3.3.102.1, )"
+            },
+            "Autofac": {
+              "target": "Package",
+              "version": "[4.9.2, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.2, )"
+            },
+            "SSH.NET": {
+              "target": "Package",
+              "version": "[2016.1.0, )"
+            },
+            "SharpZipLib": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "StackExchange.Redis": {
+              "target": "Package",
+              "version": "[1.2.6, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "X:\\new2\\Dependencies\\iVectorConnectInterface\\iVectorConnectInterface.vbproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "X:\\new2\\Dependencies\\iVectorConnectInterface\\iVectorConnectInterface.vbproj",
+        "projectName": "iVectorConnectInterface",
+        "projectPath": "X:\\new2\\Dependencies\\iVectorConnectInterface\\iVectorConnectInterface.vbproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "X:\\new2\\Dependencies\\intuitive.domain\\Src\\Intuitive.Domain\\Intuitive.Domain.csproj": {
+                "projectPath": "X:\\new2\\Dependencies\\intuitive.domain\\Src\\Intuitive.Domain\\Intuitive.Domain.csproj"
+              },
+              "X:\\new2\\Dependencies\\intuitive\\Intuitive\\Intuitive.vbproj": {
+                "projectPath": "X:\\new2\\Dependencies\\intuitive\\Intuitive\\Intuitive.vbproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "X:\\new2\\Dependencies\\iVectorWidgets\\iVectorWidgets.vbproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "X:\\new2\\Dependencies\\iVectorWidgets\\iVectorWidgets.vbproj",
+        "projectName": "iVectorWidgets",
+        "projectPath": "X:\\new2\\Dependencies\\iVectorWidgets\\iVectorWidgets.vbproj",
+        "packagesPath": "C:\\Users\\js\\.nuget\\packages\\",
+        "outputPath": "X:\\new2\\Dependencies\\iVectorWidgets\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\Users\\js\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Users\\js\\.nuget\\packages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "X:\\new2\\Dependencies\\intuitive.domain\\Src\\Intuitive.Domain\\Intuitive.Domain.csproj": {
+                "projectPath": "X:\\new2\\Dependencies\\intuitive.domain\\Src\\Intuitive.Domain\\Intuitive.Domain.csproj"
+              },
+              "X:\\new2\\Dependencies\\intuitiveweb\\IntuitiveWeb.vbproj": {
+                "projectPath": "X:\\new2\\Dependencies\\intuitiveweb\\IntuitiveWeb.vbproj"
+              },
+              "X:\\new2\\Dependencies\\intuitive\\Intuitive\\Intuitive.vbproj": {
+                "projectPath": "X:\\new2\\Dependencies\\intuitive\\Intuitive\\Intuitive.vbproj"
+              },
+              "X:\\new2\\Dependencies\\iVectorConnectInterface\\iVectorConnectInterface.vbproj": {
+                "projectPath": "X:\\new2\\Dependencies\\iVectorConnectInterface\\iVectorConnectInterface.vbproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.2, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

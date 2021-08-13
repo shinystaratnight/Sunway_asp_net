@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Services\**" />
+    <EmbeddedResource Remove="Services\**" />
+    <None Remove="Services\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Services\CalendarService.cs" />
+    <Compile Include="Services\DealFinderSDKServiceBase.cs" />
+    <Compile Include="Services\FlightCacheSearchService.cs" />
+    <Compile Include="Services\LookupsService.cs" />
+    <Compile Include="Services\SearchService.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" />
+    <PackageReference Include="Newtonsoft.Json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DealFinder.Abstractions\DealFinder.Abstractions.csproj" />
+  </ItemGroup>
+
+</Project>

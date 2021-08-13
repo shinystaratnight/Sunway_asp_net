@@ -1,0 +1,9 @@
+﻿
+
+/* selected flight */
+div.selectedflight div.outbound {float:left;}
+div.selectedflight div.return {float:left;}
+div.selectedflight p + p {margin:0;}
+
+.GroupRoomType {width:138px;}
+.GroupRoomTypeWider {width:270px;}

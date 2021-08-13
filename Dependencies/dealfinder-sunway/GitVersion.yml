@@ -1,0 +1,42 @@
+assembly-versioning-scheme: MajorMinor
+branches:
+  develop:
+    regex: develop
+    is-release-branch: false
+    increment: None
+    mode: ContinuousDeployment
+    tag: 'unstable'
+  bugfix:
+    regex: bugfix[/-]
+    is-release-branch: false
+    mode: ContinuousDeployment
+    increment: None
+    tag: useBranchName
+    source-branches: ['develop', 'feature']
+  feature:
+    regex: features?[/-]
+    is-release-branch: false
+    mode: ContinuousDeployment
+    increment: None
+    tag: useBranchName
+  master:
+    regex: master
+    is-release-branch: true
+    increment: None
+    mode: ContinuousDelivery
+    tag: ''
+  hotfix:
+    regex: hotfix[/-]
+    is-release-branch: false
+    mode: ContinuousDeployment
+    increment: None
+    tag: useBranchName
+    source-branches: ['master', 'release']
+  release:
+    regex: release
+    is-release-branch: true
+    increment: None
+    mode: ContinuousDelivery
+    tag: ''
+ignore:
+  sha: []

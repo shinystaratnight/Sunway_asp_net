@@ -1,0 +1,37 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Property Details",
+  "type": "object",
+  "description": "Widget that renders property details",
+  "properties": {
+    "CharterPackageText": {
+      "default": "",
+      "type": "string",
+      "description": "Text that displays with the from price if its a charter package"
+    },
+    "Configuration": {
+      "type": "object",
+      "title": "Configuration",
+      "description": "Configuration options for the Text Panel widget",
+      "properties": {
+        "ContainerStyle": {
+          "type": "string",
+          "format": "select",
+          "default": "Highlight",
+          "enum": [ "Default", "Highlight", "Alternate" ]
+        },
+        "ContainerPadding": {
+          "type": "string",
+          "format": "select",
+          "default": "Medium",
+          "enum": [ "None", "Small", "Medium", "Large" ]
+        },
+        "RenderPaxSummary": {
+          "type": "boolean",
+          "default": false,
+          "description": "Controls whether the pax summary is displayed with the from price"
+        }
+      }
+    }
+  }
+}

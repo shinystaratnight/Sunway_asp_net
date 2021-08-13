@@ -1,0 +1,16 @@
+﻿
+#divResultsCarousel {position:relative;margin-bottom:15px;}
+#divResultsCarousel h3 {margin-bottom:10px;}
+
+#divResultsCarousel div.rotatorBoxContent {width:630px;height:90px;}
+#divResultsCarousel div.itemHolder {height:90px;}
+
+#divResultsCarousel div.itemHolder p {margin:0;}
+
+#divResultsCarousel div.carousel {height:90px;width:90px;float:left;text-align:center;position:relative;}
+#divResultsCarousel div.noflights {cursor:default;}
+
+#divResultsCarousel a.scroller {cursor:pointer;}
+
+#divResultsCarousel a.scroller.left {left:-10px;}
+#divResultsCarousel a.scroller.right {right:-10px;}

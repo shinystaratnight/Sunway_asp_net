@@ -1,0 +1,83 @@
+@import "../../variables";
+@import "../../mixins/media";
+
+//== Modal Popup Styling
+//
+//## Component specific styling relating to modal popups used on the website
+
+.modal-open {
+    margin-left: -17px;
+    overflow: hidden;
+}
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $modal-backdrop-bg;
+    z-index: $zindex-modal-backdrop;
+
+    &.fade {
+        opacity: 0;
+    }
+
+    &.show {
+        opacity: $modal-backdrop-opacity;
+    }
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: $zindex-modal;
+
+    &.fade {
+        transition: opacity 0.15s linear;
+        opacity: 0;
+
+        .modal-container {
+            transform: translate(0, -150%);
+            transition: $modal-transition;
+        }
+    }
+
+    &.show {
+        opacity: 1;
+
+        .modal-container {
+            transform: translate(0, -50%);
+        }
+    }
+}
+
+
+.modal-container {
+    position: relative;
+    width: auto;
+    margin: $modal-container-margin;
+}
+
+
+@include break-sm() {
+
+    .modal-container {
+        max-width: $modal-md;
+        margin: 0 auto;
+    }
+
+    .modal-sm {
+        max-width: $modal-sm;
+    }
+}
+
+@include break-lg() {
+
+    .modal-container {
+        max-width: $modal-lg;
+    }
+}

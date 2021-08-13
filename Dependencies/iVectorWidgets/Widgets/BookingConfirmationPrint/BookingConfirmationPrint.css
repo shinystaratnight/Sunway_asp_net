@@ -1,0 +1,14 @@
+﻿
+#divConfirmationPrint div a {text-align:center;font-size:14px;margin:10px 5px 0px 0px;}
+#divConfirmationPrint div.boxTitle h2 {font-size:16px;}
+
+@media print 
+{
+#divFooter, #divTopHeader {display:none;}
+#divConfirmationPrint {display:none;}
+#divConfirmation {margin:auto;}
+body.frm, div, p, dt, dd {font-size:12pt;}
+#divConfirmation div.boxTitle h2 {font-size:18pt;}
+#divConfirmation div a {font-size:14pt;}
+#divConfirmation dt.multiline.tall {height:100px;}
+}

@@ -1,0 +1,23 @@
+﻿#divHotelUpsell a.button{width:93%;padding:20px 5% 20px 2%;margin-bottom:15px;}
+
+#divHotelUpsell a.button i{color:#fff;font-family:"Glyphicons";float:right;position:relative;}
+#divHotelUpsell a.button i:before{content:"\e224";border-radius:15px;float:right;width:15px;height:16px;font-size:11px;padding-left:4px;padding-top:3px;position:absolute;right:-15px;top:-4px;}
+
+#divHotelUpsellResults #divHotelUpsellResultsContent div.result {padding:0;}
+#divHotelUpsellResults div.details{float:left;width:55%;padding:3% 0% 0% 3%;box-sizing:border-box;}
+#divHotelUpsellResults div.details h2 {float:left;}
+#divHotelUpsellResults div.details h3 {float:left;clear:left;}
+#divHotelUpsellResults div.details span {float:left;clear:both;margin:5px 0px 10px;}
+#divHotelUpsellResults div.details img{float:left;border-radius:5px;width:23%;clear:left;}
+#divHotelUpsellResults div.details p{float:left;width:72%;padding-left:5%;}
+
+#divHotelUpsellResults div.reviews {float:left;box-sizing:border-box;width:25%;padding-top:3%;}
+#divHotelUpsellResults div.reviews span.bestseller {width:70%;border-radius:5px;float:right;padding:5% 1%;text-align:center;margin-right:10%;}
+
+#divHotelUpsellResults div.price{float:right;width:20%;text-align:center;padding:75px 0;box-sizing:border-box;border-left:1px solid #cacaca;}
+#divHotelUpsellResults div.price h2 {width:75%;border-radius:5px;padding:5% 2%;margin:0 auto;}
+
+#divHotelUpsellResults div.ratesTable {float:left;width:100%;}
+
+#divHotelUpsellResults a.viewToggle {float:right;margin:2% 3%;}
+#divHotelUpsellResults #aHotelUpsellMoreHotels {float:right;}

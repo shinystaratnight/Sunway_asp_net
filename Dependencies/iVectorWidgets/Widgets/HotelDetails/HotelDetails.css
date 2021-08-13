@@ -1,0 +1,52 @@
+﻿
+
+/* general */
+#divHotelDetails {margin-bottom:10px;}
+#divHotelDetails h3 {margin-bottom:10px;}
+#divHotelDetails h4 {margin-bottom:5px;}
+#divHotelDetails div.top h4 {margin-bottom:0px;}
+#divHotelDetails h1 span.rating {padding-left:4px;}
+
+
+/* main details */
+#divHotelDetails div.maindetails {margin-bottom:10px;}
+
+
+/* images */
+#divHotelDetails div.hotelimages {margin-bottom:10px;}
+#divHotelDetails #imgMainImage {float:left;margin-right:10px;}
+#divHotelDetails #divOtherImages {float:left;}
+#divHotelDetails #divOtherImages img {margin:0 2px 2px 0;float:left;}
+
+
+/* description */
+#divHotelDetails div.description {margin-bottom:10px;}
+
+
+
+/* search result details */
+#divHotelDetails div.resultdetails {margin-bottom:10px;}
+
+/* selected flight */
+#divHotelDetails div.selectedflight {margin-bottom:15px;}
+#divHotelDetails div.selectedflight h2 {margin-bottom:5px;}
+#divHotelDetails div.selectedflight h3 {margin:0;}
+#divHotelDetails div.selectedflight p + p {margin:0;}
+#divHotelDetails div.outbound {float:left;}
+#divHotelDetails div.return {float:left;}
+
+
+/* rates table */
+#divHotelDetails div.rates {margin-bottom:15px;}
+#divHotelDetails div.rates h2 {margin-bottom:5px;}
+#divHotelDetails div.rates table {width:100%;}
+#divHotelDetails div.rates table th {padding:10px;font-size:12px;}
+#divHotelDetails div.rates table td {padding:10px;}
+
+
+/* facilities */
+#divHotelDetails div.facilities {margin-bottom:10px;}
+
+
+/* Back to results */
+#divHotelDetails #aBackToResults {display:block;margin-bottom:10px;}

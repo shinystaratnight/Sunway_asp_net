@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="AlternateEmail" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Widgets\AlternateEmail\AlternateEmail.xsl;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Baggage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Widgets\Baggage\Baggage.xsl;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Basket" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Widgets\Basket\Basket.xsl;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BookingConfirmation" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Widgets\BookingConfirmation\BookingConfirmation.xsl;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="BookingConfirmationPrint" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Widgets\BookingConfirmationPrint\BookingConfirmationPrint.xsl;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Breadcrumbs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Widgets\Breadcrumbs\Breadcrumbs.xsl;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CancelComponentPopup" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Widgets\TradeBookings\CancelComponentPopup.xsl;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CancellationCharges" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Widgets\CancellationCharges\CancellationCharges.xsl;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CarHire" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Widgets\CarHire\CarHire.xsl;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CarHireResults" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Widgets\CarHire\CarHireResults.xsl;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ChangeFlight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Widgets\ChangeFlight\ChangeFlight.xsl;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ContactUs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Widgets\ContactUs\ContactUs.xsl;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="CookieCompliance" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\widgets\cookiecompliance\cookiecompliance.xsl;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Deposit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Widgets\Deposit\Deposit.xsl;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="EmailBody" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\widgets\hotelemaildescription\emailbody.xsl;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="EmailPopup" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Widgets\TradeBookings\EmailPopup.xsl;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Errata" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\widgets\errata\errata.xsl;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ErrorHandler" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Widgets\ErrorHandler\ErrorHandler.xsl;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Extras" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\widgets\extras\extras.xsl;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="FavouriteHotels" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Widgets\FavouriteHotels\FavouriteHotels.xsl;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="FindBooking" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Widgets\FindBooking\FindBooking.xsl;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="FlightExtras" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Widgets\FlightExtras\FlightExtras.xsl;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="FlightResults" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Widgets\FlightResults\FlightResults.xsl;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="FlightResultsFilter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Widgets\FlightResultsFilter\FlightResultsFilter.xsl;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Functions" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\XSL\Functions.xsl;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GetCustomerPoints" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\widgets\mybookingslogin\getcustomerpoints.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="GuestDetails" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Widgets\GuestDetails\GuestDetails.xsl;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="HotelContent" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hotelcontent.xsl;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="HotelDetails" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Widgets\HotelDetails\HotelDetails.xsl;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="HotelDetailsEmail" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Widgets\HotelPopup\HotelDetailsEmail.xsl;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="HotelDetails_RequestRoomPopup" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\widgets\hoteldetails\hoteldetails_requestroompopup.xsl;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="HotelEmailDescription" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\widgets\hotelemaildescription\hotelemaildescription.xsl;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="HotelListLinks" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Widgets\HotelListLinks\HotelListLinks.xsl;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="HotelPopup" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Widgets\HotelPopup\HotelPopup.xsl;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="HotelPopup_Images" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Widgets\HotelPopup\HotelPopup_Images.xsl;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="HotelResults" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Widgets\HotelResults\HotelResults.xsl;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="HotelResultsFilter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Widgets\HotelResultsFilter\HotelResultsFilter.xsl;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="HotelResultsMapPopup" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Widgets\HotelResults\HotelResultsMapPopup.xsl;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="HotelResults_CancellationCharges" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\widgets\hotelresults\hotelresults_cancellationcharges.xsl;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+	<data name="HotelResults_Errata" type="System.Resources.ResXFileRef, System.Windows.Forms">
+		<value>..\widgets\hotelresults\hotelresults_errata.xsl;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+	</data>
+  <data name="HotelResults_RequestRoomPopup" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\widgets\hotelresults\hotelresults_requestroompopup.xsl;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="HotelUpsell" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Widgets\HotelUpsell\HotelUpsell.xsl;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ImageRotator" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Widgets\ImageRotator\ImageRotator.xsl;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Markdown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\XSL\Markdown.xsl;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="MyBookings" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Widgets\MyBookings\MyBookings.xsl;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="MyBookingsLogin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Widgets\MyBookingsLogin\MyBookingsLogin.xsl;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="NavigationBar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Widgets\NavigationBar\NavigationBar.xsl;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Newsletter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Widgets\Newsletter\Newsletter.xsl;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="PageNotFound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Widgets\PageNotFound\PageNotFound.xsl;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="PaymentAuthorisation" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Widgets\PaymentAuthorisation\PaymentAuthorisation.xsl;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="PromoCode" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Widgets\PromoCode\PromoCode.xsl;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="RelatedPages" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Widgets\RelatedPages\RelatedPages.xsl;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ResponsiveImageRotator" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\widgets\responsiveimagerotator\responsiveimagerotator.xsl;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ResultsCarousel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Widgets\ResultsCarousel\ResultsCarousel.xsl;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="SeatSelection" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Widgets\SeatSelection\SeatSelection.xsl;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="SelectedCarHire" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Widgets\CarHire\SelectedCarHire.xsl;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="SessionPersister" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\widgets\sessionpersister\sessionpersister.xsl;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="SimilarHotels" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Widgets\SimilarHotels\SimilarHotels.xsl;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Sitemap" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\widgets\sitemap\sitemap.xsl;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="TermsAndConditions" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Widgets\TermsAndConditions\TermsAndConditions.xsl;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="TrackingAffiliate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Widgets\TrackingAffiliate\TrackingAffiliate.xsl;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="TradeBookings" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Widgets\TradeBookings\TradeBookings.xsl;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="TradeLogin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Widgets\TradeLogin\TradeLogin.xsl;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="TradeReference" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Widgets\TradeReference\TradeReference.xsl;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="TransferInformationPopup" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Widgets\Transfers\TransferInformationPopup.xsl;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Transfers" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Widgets\Transfers\Transfers.xsl;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="UsefulLinks" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Widgets\UsefulLinks\UsefulLinks.xsl;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="WaitMessage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Widgets\WaitMessage\WaitMessage.xsl;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="WaitMessageTimeout" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Widgets\WaitMessage\WaitMessageTimeout.xsl;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ZeroPriceBaggage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Widgets\Baggage\ZeroPriceBaggage.xsl;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+</root>

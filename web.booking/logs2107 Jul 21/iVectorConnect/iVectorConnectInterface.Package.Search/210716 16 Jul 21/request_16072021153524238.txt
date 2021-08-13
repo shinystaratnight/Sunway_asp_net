@@ -1,0 +1,10 @@
+URL: http://sunway.ivectorconnect.co.uk/ivectorconnect.ashx
+Headers:
+Authorization - sunwayb2c|sunwayb2c
+Content-Type - application/xml
+Host - sunway.ivectorconnect.co.uk
+Content-Length - 1488
+Expect - 100-continue
+Connection - Keep-Alive
+Body:
+<?xml version="1.0"?><PackageSearchRequest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><LoginDetails><Login>sunwayb2c</Login><Password>sunwayb2c</Password><AgentReference /><SellingCurrencyID>1</SellingCurrencyID><LanguageID>1</LanguageID><TrackingAffiliateID>0</TrackingAffiliateID><BrandID>19</BrandID><BookingSourceID>0</BookingSourceID><SalesChannelID>0</SalesChannelID><TradeID>0</TradeID><SellingCountryID>0</SellingCountryID><CurrencyID>0</CurrencyID><ItineraryInformation>false</ItineraryInformation></LoginDetails><DepartureAirportID>1</DepartureAirportID><DepartureAirportGroupID>0</DepartureAirportGroupID><ArrivalAirportID>0</ArrivalAirportID><ArrivalAirportGroupID>0</ArrivalAirportGroupID><RegionID>120</RegionID><ResortID>0</ResortID><PropertyReferenceID>0</PropertyReferenceID><MealBasisID>0</MealBasisID><MinStarRating>0</MinStarRating><DepartureDate>2021-12-22T00:00:00</DepartureDate><Duration>1</Duration><FlightClassID>0</FlightClassID><InboundFlightClassID>0</InboundFlightClassID><ExactMatch>false</ExactMatch><AllowMultisectorFlights>true</AllowMultisectorFlights><WidenSearch>true</WidenSearch><MixedFlightClasses>false</MixedFlightClasses><RoomRequests><RoomRequest><GuestConfiguration><Adults>2</Adults><Children>0</Children><Infants>0</Infants><AdultAges /><ChildAges /></GuestConfiguration></RoomRequest></RoomRequests><MultiCarrier>true</MultiCarrier><OffsetDays xsi:nil="true" /></PackageSearchRequest>

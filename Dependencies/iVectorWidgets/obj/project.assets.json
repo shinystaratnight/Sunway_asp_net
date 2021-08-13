@@ -1,0 +1,972 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.7.2": {
+      "Autofac/4.9.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Autofac.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Autofac.dll": {}
+        }
+      },
+      "AWSSDK.Core/3.3.101.11": {
+        "type": "package",
+        "compile": {
+          "lib/net45/AWSSDK.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net45/AWSSDK.Core.dll": {}
+        }
+      },
+      "AWSSDK.S3/3.3.102.1": {
+        "type": "package",
+        "dependencies": {
+          "AWSSDK.Core": "[3.3.101.11, 3.4.0)"
+        },
+        "compile": {
+          "lib/net45/AWSSDK.S3.dll": {}
+        },
+        "runtime": {
+          "lib/net45/AWSSDK.S3.dll": {}
+        }
+      },
+      "EntityFramework/6.2.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations"
+        ],
+        "compile": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        }
+      },
+      "Newtonsoft.Json/12.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "SharpZipLib/1.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/ICSharpCode.SharpZipLib.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ICSharpCode.SharpZipLib.dll": {}
+        }
+      },
+      "SSH.NET/2016.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Renci.SshNet.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Renci.SshNet.dll": {}
+        }
+      },
+      "StackExchange.Redis/1.2.6": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System",
+          "System.IO.Compression"
+        ],
+        "compile": {
+          "lib/net46/StackExchange.Redis.dll": {}
+        },
+        "runtime": {
+          "lib/net46/StackExchange.Redis.dll": {}
+        }
+      },
+      "StyleCop.Error.MSBuild/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "StyleCop.MSBuild": "4.7.49"
+        },
+        "build": {
+          "build/_._": {}
+        }
+      },
+      "Intuitive/1.8.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "AWSSDK.S3": "3.3.102.1",
+          "Autofac": "4.9.2",
+          "Newtonsoft.Json": "12.0.2",
+          "SSH.NET": "2016.1.0",
+          "SharpZipLib": "1.1.0",
+          "StackExchange.Redis": "1.2.6"
+        },
+        "compile": {
+          "bin/placeholder/Intuitive.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Intuitive.dll": {}
+        }
+      },
+      "Intuitive.Domain/1.7.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "EntityFramework": "6.2.0",
+          "StyleCop.Error.MSBuild": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Intuitive.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Intuitive.Domain.dll": {}
+        }
+      },
+      "IntuitiveWeb/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "Intuitive": "1.8.0",
+          "Newtonsoft.Json": "12.0.2",
+          "SharpZipLib": "1.1.0",
+          "iVectorConnectInterface": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/IntuitiveWeb.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/IntuitiveWeb.dll": {}
+        }
+      },
+      "iVectorConnectInterface/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Intuitive": "1.0.0",
+          "Intuitive.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/iVectorConnectInterface.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/iVectorConnectInterface.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.2/win": {
+      "Autofac/4.9.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Autofac.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Autofac.dll": {}
+        }
+      },
+      "AWSSDK.Core/3.3.101.11": {
+        "type": "package",
+        "compile": {
+          "lib/net45/AWSSDK.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net45/AWSSDK.Core.dll": {}
+        }
+      },
+      "AWSSDK.S3/3.3.102.1": {
+        "type": "package",
+        "dependencies": {
+          "AWSSDK.Core": "[3.3.101.11, 3.4.0)"
+        },
+        "compile": {
+          "lib/net45/AWSSDK.S3.dll": {}
+        },
+        "runtime": {
+          "lib/net45/AWSSDK.S3.dll": {}
+        }
+      },
+      "EntityFramework/6.2.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations"
+        ],
+        "compile": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        }
+      },
+      "Newtonsoft.Json/12.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "SharpZipLib/1.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/ICSharpCode.SharpZipLib.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ICSharpCode.SharpZipLib.dll": {}
+        }
+      },
+      "SSH.NET/2016.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Renci.SshNet.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Renci.SshNet.dll": {}
+        }
+      },
+      "StackExchange.Redis/1.2.6": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System",
+          "System.IO.Compression"
+        ],
+        "compile": {
+          "lib/net46/StackExchange.Redis.dll": {}
+        },
+        "runtime": {
+          "lib/net46/StackExchange.Redis.dll": {}
+        }
+      },
+      "StyleCop.Error.MSBuild/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "StyleCop.MSBuild": "4.7.49"
+        },
+        "build": {
+          "build/_._": {}
+        }
+      },
+      "Intuitive/1.8.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "AWSSDK.S3": "3.3.102.1",
+          "Autofac": "4.9.2",
+          "Newtonsoft.Json": "12.0.2",
+          "SSH.NET": "2016.1.0",
+          "SharpZipLib": "1.1.0",
+          "StackExchange.Redis": "1.2.6"
+        },
+        "compile": {
+          "bin/placeholder/Intuitive.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Intuitive.dll": {}
+        }
+      },
+      "Intuitive.Domain/1.7.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "EntityFramework": "6.2.0",
+          "StyleCop.Error.MSBuild": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Intuitive.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Intuitive.Domain.dll": {}
+        }
+      },
+      "IntuitiveWeb/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "Intuitive": "1.8.0",
+          "Newtonsoft.Json": "12.0.2",
+          "SharpZipLib": "1.1.0",
+          "iVectorConnectInterface": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/IntuitiveWeb.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/IntuitiveWeb.dll": {}
+        }
+      },
+      "iVectorConnectInterface/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Intuitive": "1.0.0",
+          "Intuitive.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/iVectorConnectInterface.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/iVectorConnectInterface.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.2/win-x64": {
+      "Autofac/4.9.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Autofac.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Autofac.dll": {}
+        }
+      },
+      "AWSSDK.Core/3.3.101.11": {
+        "type": "package",
+        "compile": {
+          "lib/net45/AWSSDK.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net45/AWSSDK.Core.dll": {}
+        }
+      },
+      "AWSSDK.S3/3.3.102.1": {
+        "type": "package",
+        "dependencies": {
+          "AWSSDK.Core": "[3.3.101.11, 3.4.0)"
+        },
+        "compile": {
+          "lib/net45/AWSSDK.S3.dll": {}
+        },
+        "runtime": {
+          "lib/net45/AWSSDK.S3.dll": {}
+        }
+      },
+      "EntityFramework/6.2.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations"
+        ],
+        "compile": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        }
+      },
+      "Newtonsoft.Json/12.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "SharpZipLib/1.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/ICSharpCode.SharpZipLib.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ICSharpCode.SharpZipLib.dll": {}
+        }
+      },
+      "SSH.NET/2016.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Renci.SshNet.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Renci.SshNet.dll": {}
+        }
+      },
+      "StackExchange.Redis/1.2.6": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System",
+          "System.IO.Compression"
+        ],
+        "compile": {
+          "lib/net46/StackExchange.Redis.dll": {}
+        },
+        "runtime": {
+          "lib/net46/StackExchange.Redis.dll": {}
+        }
+      },
+      "StyleCop.Error.MSBuild/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "StyleCop.MSBuild": "4.7.49"
+        },
+        "build": {
+          "build/_._": {}
+        }
+      },
+      "Intuitive/1.8.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "AWSSDK.S3": "3.3.102.1",
+          "Autofac": "4.9.2",
+          "Newtonsoft.Json": "12.0.2",
+          "SSH.NET": "2016.1.0",
+          "SharpZipLib": "1.1.0",
+          "StackExchange.Redis": "1.2.6"
+        },
+        "compile": {
+          "bin/placeholder/Intuitive.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Intuitive.dll": {}
+        }
+      },
+      "Intuitive.Domain/1.7.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "EntityFramework": "6.2.0",
+          "StyleCop.Error.MSBuild": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Intuitive.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Intuitive.Domain.dll": {}
+        }
+      },
+      "IntuitiveWeb/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "Intuitive": "1.8.0",
+          "Newtonsoft.Json": "12.0.2",
+          "SharpZipLib": "1.1.0",
+          "iVectorConnectInterface": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/IntuitiveWeb.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/IntuitiveWeb.dll": {}
+        }
+      },
+      "iVectorConnectInterface/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Intuitive": "1.0.0",
+          "Intuitive.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/iVectorConnectInterface.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/iVectorConnectInterface.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.2/win-x86": {
+      "Autofac/4.9.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Autofac.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Autofac.dll": {}
+        }
+      },
+      "AWSSDK.Core/3.3.101.11": {
+        "type": "package",
+        "compile": {
+          "lib/net45/AWSSDK.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net45/AWSSDK.Core.dll": {}
+        }
+      },
+      "AWSSDK.S3/3.3.102.1": {
+        "type": "package",
+        "dependencies": {
+          "AWSSDK.Core": "[3.3.101.11, 3.4.0)"
+        },
+        "compile": {
+          "lib/net45/AWSSDK.S3.dll": {}
+        },
+        "runtime": {
+          "lib/net45/AWSSDK.S3.dll": {}
+        }
+      },
+      "EntityFramework/6.2.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations"
+        ],
+        "compile": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        }
+      },
+      "Newtonsoft.Json/12.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "SharpZipLib/1.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/ICSharpCode.SharpZipLib.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ICSharpCode.SharpZipLib.dll": {}
+        }
+      },
+      "SSH.NET/2016.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Renci.SshNet.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Renci.SshNet.dll": {}
+        }
+      },
+      "StackExchange.Redis/1.2.6": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System",
+          "System.IO.Compression"
+        ],
+        "compile": {
+          "lib/net46/StackExchange.Redis.dll": {}
+        },
+        "runtime": {
+          "lib/net46/StackExchange.Redis.dll": {}
+        }
+      },
+      "StyleCop.Error.MSBuild/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "StyleCop.MSBuild": "4.7.49"
+        },
+        "build": {
+          "build/_._": {}
+        }
+      },
+      "Intuitive/1.8.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "AWSSDK.S3": "3.3.102.1",
+          "Autofac": "4.9.2",
+          "Newtonsoft.Json": "12.0.2",
+          "SSH.NET": "2016.1.0",
+          "SharpZipLib": "1.1.0",
+          "StackExchange.Redis": "1.2.6"
+        },
+        "compile": {
+          "bin/placeholder/Intuitive.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Intuitive.dll": {}
+        }
+      },
+      "Intuitive.Domain/1.7.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "EntityFramework": "6.2.0",
+          "StyleCop.Error.MSBuild": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Intuitive.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Intuitive.Domain.dll": {}
+        }
+      },
+      "IntuitiveWeb/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "Intuitive": "1.8.0",
+          "Newtonsoft.Json": "12.0.2",
+          "SharpZipLib": "1.1.0",
+          "iVectorConnectInterface": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/IntuitiveWeb.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/IntuitiveWeb.dll": {}
+        }
+      },
+      "iVectorConnectInterface/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Intuitive": "1.0.0",
+          "Intuitive.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/iVectorConnectInterface.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/iVectorConnectInterface.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Autofac/4.9.2": {
+      "sha512": "lfCcNOzU97f2WFtdo/+SkR0XtpdH20QA5Ob/T2Iv027wFMvDk7EZZ2oj6ERtWL+LBfPTOrbk9zyLj6Okx2CoHA==",
+      "type": "package",
+      "path": "autofac/4.9.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "autofac.4.9.2.nupkg.sha512",
+        "autofac.nuspec",
+        "lib/net45/Autofac.dll",
+        "lib/net45/Autofac.pdb",
+        "lib/net45/Autofac.xml",
+        "lib/netstandard1.1/Autofac.dll",
+        "lib/netstandard1.1/Autofac.pdb",
+        "lib/netstandard1.1/Autofac.xml",
+        "lib/netstandard2.0/Autofac.dll",
+        "lib/netstandard2.0/Autofac.pdb",
+        "lib/netstandard2.0/Autofac.xml"
+      ]
+    },
+    "AWSSDK.Core/3.3.101.11": {
+      "sha512": "1kJFjmakUXME4/s8pGUu5DKzU4pK9EsA7OvVHX63Z3daaDJQjjZHouAPO8R064svyAps68337kYn4Zok1VKcsw==",
+      "type": "package",
+      "path": "awssdk.core/3.3.101.11",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "awssdk.core.3.3.101.11.nupkg.sha512",
+        "awssdk.core.nuspec",
+        "lib/MonoAndroid10/AWSSDK.Core.XML",
+        "lib/MonoAndroid10/AWSSDK.Core.dll",
+        "lib/MonoAndroid10/AWSSDK.Core.pdb",
+        "lib/MonoTouch10/AWSSDK.Core.XML",
+        "lib/MonoTouch10/AWSSDK.Core.dll",
+        "lib/Xamarin.Mac20/AWSSDK.Core.XML",
+        "lib/Xamarin.Mac20/AWSSDK.Core.dll",
+        "lib/Xamarin.iOS10/AWSSDK.Core.XML",
+        "lib/Xamarin.iOS10/AWSSDK.Core.dll",
+        "lib/net35/AWSSDK.Core.dll",
+        "lib/net35/AWSSDK.Core.pdb",
+        "lib/net35/AWSSDK.Core.xml",
+        "lib/net45/AWSSDK.Core.dll",
+        "lib/net45/AWSSDK.Core.pdb",
+        "lib/net45/AWSSDK.Core.xml",
+        "lib/netstandard1.3/AWSSDK.Core.dll",
+        "lib/netstandard1.3/AWSSDK.Core.pdb",
+        "lib/netstandard1.3/AWSSDK.Core.xml",
+        "lib/netstandard2.0/AWSSDK.Core.dll",
+        "lib/netstandard2.0/AWSSDK.Core.pdb",
+        "lib/netstandard2.0/AWSSDK.Core.xml",
+        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.Core.XML",
+        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.Core.dll",
+        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.Core.pdb",
+        "lib/uap/AWSSDK.Core.XML",
+        "lib/uap/AWSSDK.Core.dll",
+        "lib/uap/AWSSDK.Core.pdb",
+        "lib/win8/AWSSDK.Core.XML",
+        "lib/win8/AWSSDK.Core.dll",
+        "lib/win8/AWSSDK.Core.pdb",
+        "lib/wp8/AWSSDK.Core.XML",
+        "lib/wp8/AWSSDK.Core.dll",
+        "lib/wp8/AWSSDK.Core.pdb",
+        "lib/wpa81/AWSSDK.Core.XML",
+        "lib/wpa81/AWSSDK.Core.dll",
+        "lib/wpa81/AWSSDK.Core.pdb",
+        "tools/account-management.ps1"
+      ]
+    },
+    "AWSSDK.S3/3.3.102.1": {
+      "sha512": "hxVpSVSNttR6kmZBboiyg2aX6/cLgI9clpD1moK+OmMvvESLEo1w4kZ+6MGgkVBoVi/6Wu2uMhzljtWvd7KUcw==",
+      "type": "package",
+      "path": "awssdk.s3/3.3.102.1",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "analyzers/dotnet/cs/AWSSDK.S3.CodeAnalysis.dll",
+        "awssdk.s3.3.3.102.1.nupkg.sha512",
+        "awssdk.s3.nuspec",
+        "lib/MonoAndroid10/AWSSDK.S3.XML",
+        "lib/MonoAndroid10/AWSSDK.S3.dll",
+        "lib/MonoTouch10/AWSSDK.S3.XML",
+        "lib/MonoTouch10/AWSSDK.S3.dll",
+        "lib/MonoTouch10/AWSSDK.S3.pdb",
+        "lib/Xamarin.iOS10/AWSSDK.S3.XML",
+        "lib/Xamarin.iOS10/AWSSDK.S3.dll",
+        "lib/net35/AWSSDK.S3.dll",
+        "lib/net35/AWSSDK.S3.pdb",
+        "lib/net35/AWSSDK.S3.xml",
+        "lib/net45/AWSSDK.S3.dll",
+        "lib/net45/AWSSDK.S3.pdb",
+        "lib/net45/AWSSDK.S3.xml",
+        "lib/netstandard1.3/AWSSDK.S3.dll",
+        "lib/netstandard1.3/AWSSDK.S3.pdb",
+        "lib/netstandard1.3/AWSSDK.S3.xml",
+        "lib/netstandard2.0/AWSSDK.S3.dll",
+        "lib/netstandard2.0/AWSSDK.S3.pdb",
+        "lib/netstandard2.0/AWSSDK.S3.xml",
+        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.S3.XML",
+        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.S3.dll",
+        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.S3.pdb",
+        "lib/uap/AWSSDK.S3.XML",
+        "lib/uap/AWSSDK.S3.dll",
+        "lib/uap/AWSSDK.S3.pdb",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
+      ]
+    },
+    "EntityFramework/6.2.0": {
+      "sha512": "ptGyXOf26qLrtn+2doAmylIlCxOnBJANwlyyLrXDmqIk9O18IzLWHyxDwwAyhgXkxmbiaA0WNpRy67WRReInBw==",
+      "type": "package",
+      "path": "entityframework/6.2.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/net40/App.config.transform",
+        "content/net40/Web.config.transform",
+        "entityframework.6.2.0.nupkg.sha512",
+        "entityframework.nuspec",
+        "lib/net40/EntityFramework.SqlServer.dll",
+        "lib/net40/EntityFramework.SqlServer.xml",
+        "lib/net40/EntityFramework.dll",
+        "lib/net40/EntityFramework.xml",
+        "lib/net45/EntityFramework.SqlServer.dll",
+        "lib/net45/EntityFramework.SqlServer.xml",
+        "lib/net45/EntityFramework.dll",
+        "lib/net45/EntityFramework.xml",
+        "tools/EntityFramework.PowerShell.Utility.dll",
+        "tools/EntityFramework.PowerShell.dll",
+        "tools/EntityFramework.psd1",
+        "tools/EntityFramework.psm1",
+        "tools/about_EntityFramework.help.txt",
+        "tools/init.ps1",
+        "tools/install.ps1",
+        "tools/migrate.exe"
+      ]
+    },
+    "Newtonsoft.Json/12.0.2": {
+      "sha512": "rTK0s2EKlfHsQsH6Yx2smvcTCeyoDNgCW7FEYyV01drPlh2T243PR2DiDXqtC5N4GDm4Ma/lkxfW5a/4793vbA==",
+      "type": "package",
+      "path": "newtonsoft.json/12.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.12.0.2.nupkg.sha512",
+        "newtonsoft.json.nuspec"
+      ]
+    },
+    "SharpZipLib/1.1.0": {
+      "sha512": "6cwSz51tzupsfb8q5AVRDqvD4vSeDDJuv3CYWCvQ+T3wrAjQtniICiczb+++j93z3NNuCZN+TiRjZ5lnfWtleQ==",
+      "type": "package",
+      "path": "sharpziplib/1.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/ICSharpCode.SharpZipLib.dll",
+        "lib/net45/ICSharpCode.SharpZipLib.pdb",
+        "lib/net45/ICSharpCode.SharpZipLib.xml",
+        "lib/netstandard2.0/ICSharpCode.SharpZipLib.dll",
+        "lib/netstandard2.0/ICSharpCode.SharpZipLib.pdb",
+        "lib/netstandard2.0/ICSharpCode.SharpZipLib.xml",
+        "sharpziplib.1.1.0.nupkg.sha512",
+        "sharpziplib.nuspec"
+      ]
+    },
+    "SSH.NET/2016.1.0": {
+      "sha512": "b0fcFFOE044KNRhq1uGujmK04ab+OzA9xARdeVCoZrY6I4D1IIaR6dn6qBIa+er4bJapGBhznDitwcRQpSRC0w==",
+      "type": "package",
+      "path": "ssh.net/2016.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net35/Renci.SshNet.dll",
+        "lib/net35/Renci.SshNet.xml",
+        "lib/net40/Renci.SshNet.dll",
+        "lib/net40/Renci.SshNet.xml",
+        "lib/netstandard1.3/Renci.SshNet.dll",
+        "lib/netstandard1.3/Renci.SshNet.xml",
+        "lib/sl4/Renci.SshNet.dll",
+        "lib/sl4/Renci.SshNet.xml",
+        "lib/sl5/Renci.SshNet.dll",
+        "lib/sl5/Renci.SshNet.xml",
+        "lib/uap10/Renci.SshNet.dll",
+        "lib/uap10/Renci.SshNet.xml",
+        "lib/wp71/Renci.SshNet.dll",
+        "lib/wp71/Renci.SshNet.xml",
+        "lib/wp8/Renci.SshNet.dll",
+        "lib/wp8/Renci.SshNet.xml",
+        "ssh.net.2016.1.0.nupkg.sha512",
+        "ssh.net.nuspec"
+      ]
+    },
+    "StackExchange.Redis/1.2.6": {
+      "sha512": "uBzdFmPmsCJWZ/Iau85+2Ogal6nPiY5gT8pl2gA7R4dQ14GwRpwyTGkTuD1+hgHVuBW+zkCSnysmWc7h277r/g==",
+      "type": "package",
+      "path": "stackexchange.redis/1.2.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/StackExchange.Redis.dll",
+        "lib/net45/StackExchange.Redis.xml",
+        "lib/net46/StackExchange.Redis.dll",
+        "lib/net46/StackExchange.Redis.xml",
+        "lib/netstandard1.5/StackExchange.Redis.dll",
+        "lib/netstandard1.5/StackExchange.Redis.xml",
+        "stackexchange.redis.1.2.6.nupkg.sha512",
+        "stackexchange.redis.nuspec"
+      ]
+    },
+    "StyleCop.Error.MSBuild/1.0.0": {
+      "sha512": "yuJMyzsNKLcA6dSxW6zS6I70uAyLoOCzFIb/PEkhQiFdfCGH+0hxhMbN2f1lFb077I5SnbArBvEPuJNPuRzfng==",
+      "type": "package",
+      "path": "stylecop.error.msbuild/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/StyleCop.Error.MSBuild.Targets",
+        "license.txt",
+        "stylecop.error.msbuild.1.0.0.nupkg.sha512",
+        "stylecop.error.msbuild.nuspec"
+      ]
+    },
+    "Intuitive/1.8.0": {
+      "type": "project",
+      "path": "../intuitive/Intuitive/Intuitive.vbproj",
+      "msbuildProject": "../intuitive/Intuitive/Intuitive.vbproj"
+    },
+    "Intuitive.Domain/1.7.0": {
+      "type": "project",
+      "path": "../intuitive.domain/Src/Intuitive.Domain/Intuitive.Domain.csproj",
+      "msbuildProject": "../intuitive.domain/Src/Intuitive.Domain/Intuitive.Domain.csproj"
+    },
+    "IntuitiveWeb/1.0.0": {
+      "type": "project",
+      "path": "../intuitiveweb/IntuitiveWeb.vbproj",
+      "msbuildProject": "../intuitiveweb/IntuitiveWeb.vbproj"
+    },
+    "iVectorConnectInterface/1.0.0": {
+      "type": "project",
+      "path": "../iVectorConnectInterface/iVectorConnectInterface.vbproj",
+      "msbuildProject": "../iVectorConnectInterface/iVectorConnectInterface.vbproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.7.2": [
+      "Intuitive >= 1.8.0",
+      "Intuitive.Domain >= 1.7.0",
+      "IntuitiveWeb >= 1.0.0",
+      "Newtonsoft.Json >= 12.0.2",
+      "iVectorConnectInterface >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\js\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "X:\\new2\\Dependencies\\iVectorWidgets\\iVectorWidgets.vbproj",
+      "projectName": "iVectorWidgets",
+      "projectPath": "X:\\new2\\Dependencies\\iVectorWidgets\\iVectorWidgets.vbproj",
+      "packagesPath": "C:\\Users\\js\\.nuget\\packages\\",
+      "outputPath": "X:\\new2\\Dependencies\\iVectorWidgets\\obj\\",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "configFilePaths": [
+        "C:\\Users\\js\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net472"
+      ],
+      "sources": {
+        "C:\\Users\\js\\.nuget\\packages": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net472": {
+          "projectReferences": {
+            "X:\\new2\\Dependencies\\intuitive.domain\\Src\\Intuitive.Domain\\Intuitive.Domain.csproj": {
+              "projectPath": "X:\\new2\\Dependencies\\intuitive.domain\\Src\\Intuitive.Domain\\Intuitive.Domain.csproj"
+            },
+            "X:\\new2\\Dependencies\\intuitiveweb\\IntuitiveWeb.vbproj": {
+              "projectPath": "X:\\new2\\Dependencies\\intuitiveweb\\IntuitiveWeb.vbproj"
+            },
+            "X:\\new2\\Dependencies\\intuitive\\Intuitive\\Intuitive.vbproj": {
+              "projectPath": "X:\\new2\\Dependencies\\intuitive\\Intuitive\\Intuitive.vbproj"
+            },
+            "X:\\new2\\Dependencies\\iVectorConnectInterface\\iVectorConnectInterface.vbproj": {
+              "projectPath": "X:\\new2\\Dependencies\\iVectorConnectInterface\\iVectorConnectInterface.vbproj"
+            }
+          }
+        }
+      }
+    },
+    "frameworks": {
+      "net472": {
+        "dependencies": {
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[12.0.2, )"
+          }
+        }
+      }
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  }
+}

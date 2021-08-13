@@ -1,0 +1,7 @@
+﻿
+#divFavouriteHotels {font-size:13px;}
+#divFavouriteHotels h2 {margin-bottom:5px;}
+#divFavouriteHotels a.favouriteHotel {display:block;position:relative;padding:10px 10px 10px 100px;margin-bottom:8px;min-height:64px;}
+#divFavouriteHotels a.favouriteHotel h3 {margin:0;}
+#divFavouriteHotels img {position:absolute;top:10px;left:10px;width:80px;height:64px;display:block;}
+#divFavouriteHotels p {margin-bottom:3px;margin-top:0px;}

@@ -1,0 +1,67 @@
+﻿{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "title": "Confirmation",
+    "description": "Widget that displays a booking confirmation",
+    "properties": {
+        "Title": {
+            "default": "Thank you for booking. Your booking reference is ##reference##",
+            "description": "Main page heading. Use the token ##reference## to add in the booking reference.",
+            "type": "string"
+        },
+        "Message": {
+            "type": "string",
+            "description": "Main text to appear underneath the page heading"
+        },
+        "BookingSummary": {
+            "type": "object",
+            "title": "Booking Summary",
+            "description": "Options for the booking summary that appears on the confirmation",
+            "properties": {
+                "Title": {
+                    "type": "string",
+                    "default": "Booking Summary"
+                },
+                "FlightTitle": {
+                    "type": "string",
+                    "default": "Your Flight"
+                },
+                "PropertyTitle": {
+                    "type": "string",
+                    "default": "Your Hotel"
+                },
+                "TransferTitle": {
+                    "type": "string",
+                    "default": "Your Transfer"
+                },
+                "ExtrasTitle": {
+                    "type": "string",
+                    "default": "Your Extras"
+                }
+            }
+        },
+        "Disclaimer": {
+            "type": "string",
+            "description": "Body of text to appear at the bottom of the page"
+        },
+        "Configuration": {
+            "type": "object",
+            "title": "Configuration",
+            "description": "Configuration options for the deposit widget",
+            "properties": {
+                "ContainerStyle": {
+                    "type": "string",
+                    "format": "select",
+                    "default": "Default",
+                    "enum": [ "Default", "Highlight", "Alternate" ]
+                },
+                "ContainerPadding": {
+                    "type": "string",
+                    "format": "select",
+                    "default": "None",
+                    "enum": [ "None", "Small", "Medium", "Large" ]
+                }
+            }
+        }
+    }
+}

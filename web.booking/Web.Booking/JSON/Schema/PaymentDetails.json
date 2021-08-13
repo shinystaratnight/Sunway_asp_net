@@ -1,0 +1,81 @@
+﻿{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Payment Details",
+    "type": "object",
+    "description": "Widget that allows the customer to enter their payment details",
+    "properties": {
+        "Title": {
+            "type": "string",
+            "default": "Payment Details"
+        },
+        "Labels": {
+            "type": "object",
+            "title": "Labels",
+            "description": "Configure label text that appears on the form",
+            "properties": {
+                "CardType": {
+                    "type": "string",
+                    "default": "Card type"
+                },
+                "CardNumber": {
+                    "type": "string",
+                    "default": "Card Number"
+                },
+                "CardHoldersName": {
+                    "type": "string",
+                    "default": "name"
+                },
+                "StartDate": {
+                    "type": "string",
+                    "default": "Start date"
+                },
+                "ExpiryDate": {
+                    "type": "string",
+                    "default": "Expiry date"
+                },
+                "SecurityNumber": {
+                    "type": "string",
+                    "default": "Security number"
+                }
+            }
+        },
+        "Placeholders": {
+            "type": "object",
+            "title": "Labels",
+            "description": "Configure placeholder text that appears on the form",
+            "properties": {
+                "CardType": {
+                    "type": "string",
+                    "default": "Select card"
+                },
+                "Month": {
+                    "type": "string",
+                    "default": "Month"
+                },
+                "Year": {
+                    "type": "string",
+                    "default": "Year"
+                }
+            }
+        },
+        "Configuration": {
+            "type": "object",
+            "title": "Configuration",
+            "description": "Configuration options for the payment details widget",
+            "properties": {
+                "ContainerStyle": {
+                    "type": "string",
+                    "format": "select",
+                    "default": "Highlight",
+                    "enum": [ "Default", "Highlight", "Alternate" ]
+                },
+                "ContainerPadding": {
+                    "type": "string",
+                    "format": "select",
+                    "default": "Medium",
+                    "enum": [ "None", "Small", "Medium", "Large" ]
+                }
+            }
+        }
+    }
+}

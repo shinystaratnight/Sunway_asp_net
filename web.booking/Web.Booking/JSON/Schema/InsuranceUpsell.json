@@ -1,0 +1,74 @@
+﻿{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Insurance Upsell",
+    "description": "Widget to display insurance upsell",
+    "type": "object",
+    "properties": {
+        "Title": {
+            "type": "string",
+            "default": "Insurance"
+        },
+        "Description": {
+            "type": "string",
+            "default": "Why not add insurance to your booking?"
+        },
+        "TableHeadings": {
+            "type": "object",
+            "properties": {
+                "Description": {
+                    "type": "string",
+                    "default": "Policy Name"
+                },
+                "Price": {
+                    "type": "string",
+                    "default": "Price"
+                },
+                "Selected": {
+                    "type": "string",
+                    "default": "Selected"
+                }
+            }
+        },
+        "SearchWaitMessage": {
+            "type": "string",
+            "description": "This is the text that appears while searching for insurance.",
+            "default": "Please wait as we find your insurance options..."
+        },
+        "SearchFailedMessage": {
+            "type": "string",
+            "description": "This is the message that appears when an insurance search returns no results",
+            "default": "Sorry there are no insurance options available."
+        },
+        "Configuration": {
+            "type": "object",
+            "title": "Configuration",
+            "description": "Configuration options for the search results widget",
+            "properties": {
+                "ContainerStyle": {
+                    "type": "string",
+                    "format": "select",
+                    "default": "Default",
+                    "enum": [ "Default", "Highlight", "Alternate" ]
+                },
+                "ContainerPadding": {
+                    "type": "string",
+                    "format": "select",
+                    "default": "None",
+                    "description": "Sets the padding for the widget.",
+                    "enum": [ "None", "Small", "Medium", "Large" ]
+                },
+                "DisplayWidget": {
+                    "type": "boolean",
+                    "default": false
+                },
+                "ExtraTypes": {
+                    "type": "array",
+                    "items": {
+                        "type": "integer",
+                        "format": "automultilookup,extra/extratypes"
+                    }
+                }
+            }
+        }
+    }
+}

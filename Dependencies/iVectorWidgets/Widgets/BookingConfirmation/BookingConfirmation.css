@@ -1,0 +1,18 @@
+﻿
+#divConfirmation dl {margin:0;}
+#divConfirmation dd, #divConfirmation dt {margin-bottom:5px;}
+#divConfirmation dd, #divConfirmation dt, #divConfirmation dd p {line-height:1.6em;}
+#divConfirmation dd {display:block;clear:right;}
+#divConfirmation dt {float:left;width:170px;font-weight:bold;display:block;}
+#divConfirmation dd.multiline {padding-left:130px;}
+
+#divConfirmation dl.property dt {width:100px;}
+#divConfirmation dl.property dd.multiline {padding-left:60px;}
+
+#divConfirmation dl.return {margin-top:20px;}
+#divConfirmation dl.property {padding-left:220px;}
+
+#divConfirmation img {float:left;margin-right:10px;width:100%;}
+#divConfirmation h2 span {margin-left:5px;vertical-align:middle;}
+
+#divConfirmation p {margin:0;}

@@ -1,0 +1,23 @@
+﻿.widget.widget-waitmessagewidget {
+    padding: 0;
+}
+
+.waitmessage-content {
+    width: 400px;
+    margin: 100px auto;
+    padding: 25px;
+    background: #fff;
+
+    img {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    p {
+        text-align: center;
+    }
+}
+
+.modal .waitmessage-content {
+    margin: 0 auto;
+}

@@ -1,0 +1,48 @@
+<BCPFORMAT xmlns="http://schemas.microsoft.com/sqlserver/2004/bulkload/format" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <RECORD>
+    <FIELD ID="MasterID"             xsi:type="CharTerm" TERMINATOR=","    MAX_LENGTH="100" /> 
+    <FIELD ID="TPKey"                xsi:type="CharTerm" TERMINATOR=","    MAX_LENGTH="100" />
+    <FIELD ID="RoomTypeCode"         xsi:type="CharTerm" TERMINATOR=","    MAX_LENGTH="30"  />
+    <FIELD ID="MealBasisCode"        xsi:type="CharTerm" TERMINATOR=","    MAX_LENGTH="50"  />
+    <FIELD ID="MealBasisDescription" xsi:type="CharTerm" TERMINATOR=","    MAX_LENGTH="200" />
+    <FIELD ID="StayDate"             xsi:type="CharTerm" TERMINATOR=","    MAX_LENGTH="10"  />
+    <FIELD ID="CurrencyCode"         xsi:type="CharTerm" TERMINATOR=","    MAX_LENGTH="20"  />
+    <FIELD ID="RoomPrice"            xsi:type="CharTerm" TERMINATOR=","    MAX_LENGTH="10"  />
+    <FIELD ID="AdultPrice"           xsi:type="CharTerm" TERMINATOR=","    MAX_LENGTH="10"  />
+    <FIELD ID="ThirdAdultPrice"      xsi:type="CharTerm" TERMINATOR=","    MAX_LENGTH="10"  />
+    <FIELD ID="FourthAdultPrice"     xsi:type="CharTerm" TERMINATOR=","    MAX_LENGTH="10"  />
+    <FIELD ID="FifthAdultPrice"      xsi:type="CharTerm" TERMINATOR=","    MAX_LENGTH="10"  />
+    <FIELD ID="SixthAdultPrice"      xsi:type="CharTerm" TERMINATOR=","    MAX_LENGTH="10"  />
+    <FIELD ID="ChildPrice"           xsi:type="CharTerm" TERMINATOR=","    MAX_LENGTH="10"  />
+    <FIELD ID="SecondChildPrice"     xsi:type="CharTerm" TERMINATOR=","    MAX_LENGTH="10"  />
+    <FIELD ID="YouthPrice"           xsi:type="CharTerm" TERMINATOR=","    MAX_LENGTH="10"  />
+    <FIELD ID="SecondYouthPrice"     xsi:type="CharTerm" TERMINATOR=","    MAX_LENGTH="10"  />
+    <FIELD ID="PriceReference"       xsi:type="CharTerm" TERMINATOR=","    MAX_LENGTH="100" />
+    <FIELD ID="MinStay"              xsi:type="CharTerm" TERMINATOR=","    MAX_LENGTH="2"   />
+    <FIELD ID="MaxStay"              xsi:type="CharTerm" TERMINATOR=","    MAX_LENGTH="3"   />
+		<FIELD ID="ImportGroup"          xsi:type="CharTerm" TERMINATOR="\r\n" MAX_LENGTH="100" />
+  </RECORD>
+  <ROW>
+    <COLUMN SOURCE="MasterID"             NAME="MasterID"             xsi:type="SQLINT"      NULLABLE="YES" />
+    <COLUMN SOURCE="TPKey"                NAME="TPKey"                xsi:type="SQLVARYCHAR" NULLABLE="YES" />
+    <COLUMN SOURCE="RoomTypeCode"         NAME="RoomTypeCode"         xsi:type="SQLVARYCHAR" />
+    <COLUMN SOURCE="MealBasisCode"        NAME="MealBasisCode"        xsi:type="SQLVARYCHAR" />
+    <COLUMN SOURCE="MealBasisDescription" NAME="MealBasisDescription" xsi:type="SQLVARYCHAR" NULLABLE="YES" />
+    <COLUMN SOURCE="StayDate"             NAME="StayDate"             xsi:type="SQLDATETIME" />
+    <COLUMN SOURCE="CurrencyCode"         NAME="CurrencyCode"         xsi:type="SQLVARYCHAR" />
+    <COLUMN SOURCE="RoomPrice"            NAME="RoomPrice"            xsi:type="SQLDECIMAL"  PRECISION="14" SCALE="2" NULLABLE="YES" />
+    <COLUMN SOURCE="AdultPrice"           NAME="AdultPrice"           xsi:type="SQLDECIMAL"  PRECISION="14" SCALE="2" NULLABLE="YES" />
+    <COLUMN SOURCE="ThirdAdultPrice"      NAME="ThirdAdultPrice"      xsi:type="SQLDECIMAL"  PRECISION="14" SCALE="2" NULLABLE="YES" />
+    <COLUMN SOURCE="FourthAdultPrice"     NAME="FourthAdultPrice"     xsi:type="SQLDECIMAL"  PRECISION="14" SCALE="2" NULLABLE="YES" />
+    <COLUMN SOURCE="FifthAdultPrice"      NAME="FifthAdultPrice"      xsi:type="SQLDECIMAL"  PRECISION="14" SCALE="2" NULLABLE="YES" />
+    <COLUMN SOURCE="SixthAdultPrice"      NAME="SixthAdultPrice"      xsi:type="SQLDECIMAL"  PRECISION="14" SCALE="2" NULLABLE="YES" />
+    <COLUMN SOURCE="ChildPrice"           NAME="ChildPrice"           xsi:type="SQLDECIMAL"  PRECISION="14" SCALE="2" NULLABLE="YES" />
+    <COLUMN SOURCE="SecondChildPrice"     NAME="SecondChildPrice"     xsi:type="SQLDECIMAL"  PRECISION="14" SCALE="2" NULLABLE="YES" />
+    <COLUMN SOURCE="YouthPrice"           NAME="YouthPrice"           xsi:type="SQLDECIMAL"  PRECISION="14" SCALE="2" NULLABLE="YES" />
+    <COLUMN SOURCE="SecondYouthPrice"     NAME="SecondYouthPrice"     xsi:type="SQLDECIMAL"  PRECISION="14" SCALE="2" NULLABLE="YES" />
+    <COLUMN SOURCE="PriceReference"       NAME="PriceReference"       xsi:type="SQLVARYCHAR" />
+    <COLUMN SOURCE="MinStay"              NAME="MinStay"              xsi:type="SQLINT"      NULLABLE="YES" />
+    <COLUMN SOURCE="MaxStay"              NAME="MaxStay"              xsi:type="SQLINT"      NULLABLE="YES" />
+		<COLUMN SOURCE="ImportGroup"          NAME="ImportGroup"          xsi:type="SQLVARYCHAR" NULLABLE="YES" />
+  </ROW>
+</BCPFORMAT>

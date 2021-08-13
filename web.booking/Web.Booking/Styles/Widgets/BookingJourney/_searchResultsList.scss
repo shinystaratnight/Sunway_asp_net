@@ -1,0 +1,232 @@
+﻿@import "../../mixins/clearfix";
+@import "../../mixins/media";
+@import "../../variables";
+
+.widget.widget-deeplinksearch {
+    padding: 0;
+}
+
+.search-selected-flight {
+    padding-top: 20px;
+
+    .h-tertiary {
+        margin-bottom: 10px;
+    }
+}
+
+.search-result-summary-container {
+    position: relative;
+    margin-bottom: 20px;
+
+    .h-secondary {
+        margin-bottom: 10px;
+
+        span {
+            font-size: inherit;
+            line-height: inherit;
+        }
+    }
+
+    .search-results-list-sort {
+        padding: $padding-base 0;
+        float: left;
+    }
+
+    @include break-sm() {
+        .search-results-list-sort {
+            @include clearfix;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            padding: 0;
+
+            .form-group {
+                margin-bottom: 0;
+                float: right;
+            }
+        }
+    }
+}
+
+.flight-result {
+    display: table;
+    width: 100%;
+    margin-bottom: 20px;
+    background: #fff;
+
+    .flight-information {
+        display: table-row;
+        vertical-align: top;
+    }
+
+    .flight-journey {
+        padding: 20px;
+
+        &.flight-outbound {
+            border-bottom: 1px solid #dcdcdc;
+        }
+    }
+
+    .flight-summary {
+        @include clearfix;
+        position: relative;
+
+        &.additional-sector {
+            padding-top: $padding-base;
+        }
+
+        .icon-toggle {
+            position: absolute;
+            top: 0;
+            right: 0;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .flight-carrier {
+            display: block;
+            margin-bottom: $padding-small;
+        }
+
+        .flight-code {
+            display: inline-block;
+            padding-left: $padding-small;
+        }
+
+        .flight-depart {
+            display: table-cell;
+            width: 160px;
+            text-align: right;
+            vertical-align: middle;
+        }
+
+        .flight-journey-details {
+            display: table-cell;
+            width: 180px;
+            padding: 0 28px 0 20px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .flight-journey-arrow {
+            display: block;
+            position: relative;
+            width: 100%;
+            height: 4px;
+            background: #ccc;
+
+            &::after {
+                display: block;
+                position: absolute;
+                top: -6px;
+                right: -8px;
+                width: 0;
+                height: 0;
+                border-top: 8px solid transparent;
+                border-bottom: 8px solid transparent;
+                border-left: 8px solid #ccc;
+                content: " ";
+            }
+        }
+
+        .flight-arrival {
+            display: table-cell;
+            width: 160px;
+            vertical-align: middle;
+        }
+
+        .flight-airport {
+            font-size: 0.75rem;
+        }
+
+        .flight-time {
+            display: block;
+            font-weight: 600;
+        }
+    }
+
+    .result-price {
+        display: table-cell;
+        position: relative;
+        padding: $padding-base;
+        background: $brand-inverse;
+        color: $body-alt-color;
+
+        .btn {
+            width: 100%;
+        }
+    }
+
+    @include break-xs-l() {
+        .flight-summary {
+            .flight-carrier {
+                display: table-cell;
+                width: 180px;
+                margin-bottom: 0;
+                padding-right: 20px;
+                text-align: center;
+                vertical-align: middle;
+            }
+
+            .flight-carrier-logo {
+                width: 160px;
+            }
+
+            .flight-code {
+                display: initial;
+                padding-left: 0;
+            }
+        }
+    }
+
+    @include break-sm() {
+        .flight-information {
+            display: table-cell;
+        }
+
+        .price {
+            font-size: 1.125rem;
+            line-height: 1.5rem;
+
+            .symbol {
+                font-size: 2.25rem;
+            }
+
+            .price-amount {
+                font-size: 2.25rem;
+                line-height: 2.75rem;
+            }
+        }
+
+        .result-price {
+            width: 250px;
+
+            .btn {
+                position: absolute;
+                bottom: 20px;
+                left: 20px;
+                width: 160px;
+            }
+
+            .btn-change-flight {
+                top: 50%;
+                bottom: initial;
+                transform: translateY(-50%);
+            }
+
+            &.price-diff {
+                width: 250px;
+
+                .btn {
+                    width: 210px;
+                }
+            }
+        }
+
+        .total-price-summary {
+            font-size: 1rem;
+        }
+    }
+}

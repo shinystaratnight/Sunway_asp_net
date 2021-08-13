@@ -1,0 +1,82 @@
+﻿@import "../../variables";
+
+.widget-basket {
+    .panel .panel-body {
+        padding: $spacing-md 0;
+    }
+
+    .basket-item {
+        padding: $spacing-md;
+        transition: background-color 0.5s ease;
+        border-bottom: 1px solid #ddd;
+        background-color: #fff;
+    }
+
+    .basket-item-header {
+        margin-bottom: $spacing-sm;
+    }
+
+    .basket-sub-item-header {
+        margin-bottom: $spacing-xs;
+    }
+
+    .basket-item-name {
+        font-size: 0.875rem;
+    }
+
+    .basket-item-subname {
+        font-size: 0.75rem;
+    }
+
+    .rating {
+        margin-bottom: $spacing-sm;
+    }
+
+    .img-block {
+        width: 100%;
+    }
+
+    .data-list {
+        dt, dd, dd p {
+            font-size: 0.75rem;
+        }
+    }
+
+    .basket-sub-component {
+
+        .description {
+            font-size: 0.75rem;
+        }
+    }
+
+    .header-outbound {
+        &::before {
+            margin-right: 5px;
+            font-family: FontAwesome;
+            font-weight: 400;
+            content: "\f061";
+        }
+    }
+
+    .header-return {
+        &::before {
+            margin-right: 5px;
+            font-family: FontAwesome;
+            font-weight: 400;
+            content: "\f060";
+        }
+    }
+
+    .basket-total {
+        height: 50px;
+        padding: 0 10px;
+        background: $brand-inverse;
+        color: $body-alt-color;
+        font-weight: 500;
+        line-height: 50px;
+    }
+
+    .price-amount {
+        margin-left: 5px;
+    }
+}

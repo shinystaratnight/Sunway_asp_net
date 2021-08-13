@@ -1,0 +1,18 @@
+﻿<Project>
+  <PropertyGroup Label="Project">
+    <Version>0.2.0</Version>
+    <InformationalVersion>0.2.0+73.Branch.master.Sha.ef0fd9913646f84b1545a8c15d8361e9a56f588b</InformationalVersion>
+    <Product>iVector</Product>
+
+    <Copyright>intuitive Ltd</Copyright>
+
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <!--<LangVersion>preview</LangVersion>
+    <NullableContextOptions>enable</NullableContextOptions>-->
+
+    <TestOptions_Framework>nunit</TestOptions_Framework>
+  </PropertyGroup>
+
+  <PropertyGroup Label="Supressions">
+  </PropertyGroup>
+</Project>

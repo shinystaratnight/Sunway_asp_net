@@ -1,0 +1,38 @@
+﻿@import "../../variables";
+@import "../../mixins/media";
+
+.widget-simpletextcontent {
+
+    .text-align-center {
+        text-align: center;
+    }
+
+    .text-align-left {
+        text-align: left;
+    }
+
+    .text-align-right {
+        text-align: right;
+    }
+
+    .text-color-alt {
+        color: $body-alt-color;
+    }
+
+    .simple-text-content {
+        z-index: 2;
+    }
+}
+
+.overlay {
+    &::after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.3);
+        content: " ";
+        z-index: 1;
+    }
+}

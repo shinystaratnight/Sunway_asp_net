@@ -1,0 +1,5 @@
+﻿#divWaitMessage {padding:10px;width:400px;margin:0 auto 20px;}
+#divWaitMessage img {display:block;margin-bottom:10px;}
+
+#divWaitMessageTimeout {text-align:center;}
+#divWaitMessageTimeout .button {margin-top:15px;}

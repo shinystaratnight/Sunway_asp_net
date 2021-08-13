@@ -1,0 +1,2 @@
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at ASP._Page_Views_Shared__Widget_cshtml.Execute() in X:\new2\web.booking\Web.Booking\Views\Shared\_Widget.cshtml:line 26

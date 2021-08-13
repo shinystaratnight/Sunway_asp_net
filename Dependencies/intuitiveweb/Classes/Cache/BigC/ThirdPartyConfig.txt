@@ -1,0 +1,27 @@
+﻿insert into BigC
+	select top 1 'ThirdPartyConfig',1,0,0,'','','01/01/1900'
+		where not exists (select *
+			from BigC
+			where ObjectType = 'ThirdPartyConfig')
+
+update BigC set LastModifiedDateTime = GETDATE(),
+	ContentXML=(
+				select null, 
+				(select distinct ThirdParty.ThirdPartyID,
+								 ThirdParty.ThirdParty, 
+								 ThirdParty.ThirdPartyType,
+								 SalesChannel.SalesChannelID, 
+								 ThirdPartySalesChannel.BrandID, 
+								 isnull(ThirdPartyConfiguration.ThirdPartyConfiguration, 'Off') 'Config'
+					from ThirdParty
+						left join ThirdPartySalesChannel
+							on ThirdPartySalesChannel.ThirdPartyID=ThirdParty.ThirdPartyID	
+						left join saleschannel 
+						  on ThirdPartySalesChannel.SalesChannelID = SalesChannel.SalesChannelID
+						left join ThirdPartyConfiguration
+							on ThirdParty.ThirdPartyID=ThirdPartyConfiguration.ThirdPartyID
+							and ThirdPartyConfiguration.ThirdPartyConfigurationID = ThirdPartySalesChannel.ThirdPartyConfigurationID
+					for xml path ('ThirdPartyConfig'), root('ThirdPartyConfigs'), type)
+				for xml path ('ThirdPartyConfigDef')
+				)
+where BigC.ObjectType = 'ThirdPartyConfig'

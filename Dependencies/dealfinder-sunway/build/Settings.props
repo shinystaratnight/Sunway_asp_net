@@ -1,0 +1,27 @@
+<Project>
+    <PropertyGroup>
+        <RepositoryType>git</RepositoryType>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+
+        <!-- Switch to using full debug symbols instead of portable PDBs - ProGet doesn't support the latter -->
+        <DebugType>full</DebugType>
+        
+        <!-- Use the latest version of C# -->
+        <LangVersion>latest</LangVersion>
+      
+        <!-- Default suppressions -->
+       <NoWarn>$(NoWarn);CS1591</NoWarn>
+    </PropertyGroup>
+
+    <PropertyGroup Label="Compiler" Condition="'$(CompileOptions_Nullable)'=='true'">
+        <!-- Use the preview version of C# -->
+      <LangVersion>preview</LangVersion>
+      <NullableContextOptions>enable</NullableContextOptions>
+      <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <PropertyGroup Label="Documentation">
+      <!-- Generate 'ProductName'.xml for each project for Swagger -->
+      <DocumentationFile Condition="'$(DocumentationFile)'==''">$(OutputPath)\$(MSBuildProjectName).xml</DocumentationFile>
+    </PropertyGroup>
+</Project>

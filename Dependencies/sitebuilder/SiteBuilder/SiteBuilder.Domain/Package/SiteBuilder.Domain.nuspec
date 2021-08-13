@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package >
+	<metadata>
+		<id>SiteBuilder.Domain.dll</id>
+		<version>1.0.0</version>
+		<title>SiteBuilder Domain</title>
+		<authors>Chris Thacker</authors>
+		<owners>Chris Thacker</owners>
+		<licenseUrl>http://nolicenceurl.com</licenseUrl>
+		<projectUrl>http://stash.intuitivesystems.co.uk:7990/projects/WA/repos/sitebuilder</projectUrl>
+		<iconUrl>http://noiconurl.com</iconUrl>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<description>SiteBuilder domain classes</description>
+		<releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
+		<copyright>Copyright 2017</copyright>
+		<tags></tags>
+		<dependencies>
+			<dependency id="Autofac" version="3.5.2"/>
+			<dependency id="Newtonsoft.Json" version="9.0.1"/>
+		</dependencies>
+	</metadata>
+</package>

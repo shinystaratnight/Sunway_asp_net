@@ -1,0 +1,39 @@
+﻿{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Errata",
+    "type": "object",
+    "description": "Widget to display Errata on a payment page.",
+    "properties": {
+        "Title": {
+            "default": "Booking Conditions",
+            "type": "string"
+        },
+        "Message": {
+            "default": "The following conditions will apply to your booking:",
+            "type": "string"
+        },
+        "AcceptanceCheckboxLabel": {
+            "default": "To continue with your booking you must accept these booking conditions. I Agree.",
+            "type": "string"
+        },
+        "Configuration": {
+            "type": "object",
+            "title": "Configuration",
+            "description": "Configuration options for the Text Panel widget",
+            "properties": {
+                "ContainerStyle": {
+                    "type": "string",
+                    "format": "select",
+                    "default": "Highlight",
+                    "enum": [ "Default", "Highlight", "Alternate" ]
+                },
+                "ContainerPadding": {
+                    "type": "string",
+                    "format": "select",
+                    "default": "Medium",
+                    "enum": [ "None", "Small", "Medium", "Large" ]
+                }
+            }
+        }
+    }
+}

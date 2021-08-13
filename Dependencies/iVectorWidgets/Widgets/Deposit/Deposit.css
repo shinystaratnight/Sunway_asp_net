@@ -1,0 +1,4 @@
+﻿#divDeposit {min-height:50px;}
+
+#divDeposit label {display:block;padding:5px 5px 4px 5px;}
+#divDeposit label > input {position:relative;top:2px;margin-right:5px;}

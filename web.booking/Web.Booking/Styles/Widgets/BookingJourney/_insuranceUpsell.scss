@@ -1,0 +1,68 @@
+﻿@import "../../mixins/clearfix";
+@import "../../mixins/media";
+@import "../../variables";
+
+.widget-insuranceupsell {
+
+    .wait-message-container {
+        @include clearfix;
+
+        .loading-icon {
+            width: 32px;
+            height: 32px;
+            margin-right: 10px;
+            float: left;
+            background: url("/booking/Images/loader.gif");
+        }
+
+        .wait-message {
+            height: 32px;
+            float: left;
+
+            p {
+                line-height: 32px;
+            }
+        }
+    }
+
+    .extra-price {
+        width: 100px;
+    }
+
+    .extra-select {
+        width: 100px;
+    }
+
+    .extra-option {
+        cursor: pointer;
+
+        .table-cell {
+            border-top: 2px solid #fff;
+            border-bottom: 2px solid #fff;
+
+            &:first-child {
+                border-left: 2px solid #fff;
+            }
+
+            &:last-child {
+                border-right: 2px solid #fff;
+            }
+        }
+
+        &.selected {
+
+            .table-cell {
+                border-top: 2px solid $brand-primary;
+                border-bottom: 2px solid $brand-primary;
+
+                &:first-child {
+                    border-left: 2px solid $brand-primary;
+                }
+
+                &:last-child {
+                    border-right: 2px solid $brand-primary;
+                }
+            }
+        }
+    }
+}

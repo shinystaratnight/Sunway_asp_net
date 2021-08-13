@@ -1,0 +1,170 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+iVectorConnectInterface
+</name>
+</assembly>
+<members>
+<member name="T:iVectorConnectInterface.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:iVectorConnectInterface.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:iVectorConnectInterface.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="F:iVectorConnectInterface.GetBookingDetailsResponse.Property.GeographyLevel1ID">
+<summary>
+Taken from PropertyBooking.PropertyID, to be used if PropertyReferenceID is unavailable.
+</summary>
+</member>
+<member name="F:iVectorConnectInterface.Flight.BookRequest.FlightAndHotel">
+ <summary>
+     The flight and hotel.
+ </summary>
+</member>
+<member name="F:iVectorConnectInterface.Flight.BookResponse.MultiCarrierCancellations">
+ <summary>
+     The multi carrier cancellations.
+ </summary>
+</member>
+<member name="T:iVectorConnectInterface.Flight.FareFamily.FareFamily">
+ <summary>
+ Airline Fare Family 
+ </summary>
+</member>
+<member name="F:iVectorConnectInterface.Flight.FareFamily.FareFamily.FareFamilyName">
+ <summary>
+ The fare family name'
+ </summary>
+</member>
+<member name="F:iVectorConnectInterface.Flight.FareFamily.FareFamily.FareFamilyServices">
+ <summary>
+ The fare family services'
+ </summary>
+</member>
+<member name="F:iVectorConnectInterface.Flight.FareFamily.FareFamily.AdditionalCost">
+ <summary>
+ The additional cost.
+ Additional cost of fare relative to the Cost of the Fare returned at search/ pre-book.
+ </summary>
+</member>
+<member name="T:iVectorConnectInterface.Flight.FareFamily.Service">
+ <summary>
+ Airline Fare Family Services
+ </summary>
+</member>
+<member name="F:iVectorConnectInterface.Flight.FareFamily.Service.ServiceName">
+ <summary>
+ The service name
+ </summary>
+</member>
+<member name="F:iVectorConnectInterface.Flight.FareFamily.Service.ServiceInclusion">
+ <summary>
+ The service inclusion
+ The Status of the service
+ </summary>
+</member>
+<member name="T:iVectorConnectInterface.Flight.FareFamily.ServiceGroup">
+ <summary>
+ Airline Fare Family Service Group
+ </summary>
+</member>
+<member name="P:iVectorConnectInterface.Flight.FareFamily.ServiceGroup.ServiceGroupName">
+ <summary>
+ Gets or sets the name of the service group.
+ </summary>
+ <value>
+ The name of the service group.
+ </value>
+</member>
+<member name="P:iVectorConnectInterface.Flight.FareFamily.ServiceGroup.ServiceGroupInclusion">
+ <summary>
+ Gets or sets the service group inclusion.
+ </summary>
+ <value>
+ The service group inclusion.
+ </value>
+</member>
+<member name="P:iVectorConnectInterface.Flight.FareFamily.ServiceGroup.Services">
+ <summary>
+ Gets or sets the services.
+ </summary>
+ <value>
+ The services.
+ </value>
+</member>
+<member name="P:iVectorConnectInterface.Flight.PreBookResponse.MultiCarrier">
+ <summary>
+     Gets a value indicating whether multi carrier.
+ </summary>
+ <value>
+     <c>true</c> if multi carrier; otherwise, <c>false</c>.
+ </value>
+</member>
+<member name="F:iVectorConnectInterface.Flight.PreBookResponse.MultiCarrierCancellations">
+ <summary>
+     The multi carrier cancellations.
+ </summary>
+</member>
+<member name="P:iVectorConnectInterface.Flight.SearchRequest.MultiCarrier">
+ <summary>
+     Gets or sets a value indicating whether multi carrier (mix and match).
+ </summary>
+ <value>
+     <c>true</c> if multi carrier (mix and match); otherwise, <c>false</c>.
+ </value>
+</member>
+<member name="M:iVectorConnectInterface.FlightItinerarySearchRequest.FlightSector.SetArrivalAirportIDs(System.Boolean)">
+ <summary>
+ Use arrival geo 2 or geo 3 id to find the associated airports and populate the collection on the sector
+ However we only want to do that if the user has not specified an airport already
+ </summary>
+ <param name="preferredAirports">if set to <c>true</c> [preferred airports].</param>
+</member>
+<member name="M:iVectorConnectInterface.FlightItinerarySearchRequest.FlightSector.SetDepartureAirportIDs(System.Boolean)">
+ <summary>
+ Use arrival geo 2 or geo 3 id to find the associated airports and populate the collection on the sector
+ However we only want to do that if the user has not specified an airport already
+ </summary>
+ <param name="preferredAirports">if set to <c>true</c> [preferred airports].</param>
+</member>
+<member name="M:iVectorConnectInterface.FlightItinerarySearchRequest.FlightSector.GetGeographyAirports(System.Int32,System.Int32,System.Boolean)">
+ <summary>
+ A function to return the airports associated with the passed in geography with the following rules
+ 1. If a level three ID is provided we will ignore the two ID.
+ 2. If The only preferred airports flag is true we only want preferred airports, unless there are no matches
+ </summary>
+ <param name="geographylevel3ID">The geographylevel3 identifier.</param>
+ <param name="geographylevel2ID">The geographylevel2 identifier.</param>
+ <param name="onlyPreferredAirports">if set to <c>true</c> [only preferred airports].</param>
+ <returns>A list of Airport IDs that match</returns>
+</member>
+<member name="P:iVectorConnectInterface.Property.SearchResponse.PropertyResult.Source">
+ <summary>
+ Source
+ </summary>
+ <returns>Source</returns>
+</member>
+<member name="P:iVectorConnectInterface.Property.SearchResponse.PropertyResult.ContractID">
+ <summary>
+ Contract ID
+ </summary>
+ <returns>Contract ID</returns>
+</member>
+<member name="T:iVectorConnectInterface.Support.GuestConfiguration">
+ <summary>
+ Used by Search and prebook requests
+ </summary>
+</member>
+</members>
+</doc>

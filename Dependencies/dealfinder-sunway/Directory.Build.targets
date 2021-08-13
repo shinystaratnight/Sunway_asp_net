@@ -1,0 +1,4 @@
+<Project>
+  <Import Project="./build/Build.props" />
+  <Import Project="./build/Build.targets" />
+</Project>

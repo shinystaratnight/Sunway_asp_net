@@ -1,0 +1,106 @@
+﻿@import "../../../../styles/mixins/media";
+@import '../../../../styles/variables';
+
+.search-results-container {
+
+    .search-filter {
+        @include break-md-down() {
+            padding: 0;
+
+            .search-tool-holder,
+            .search-results-filter {
+                padding: 0 8px;
+            }
+        }
+    }
+
+    .search-results-filter {
+        @include break-md-down() {
+            padding: 0;
+
+            .filters-container {
+                padding: 20px;
+            }
+
+            .filter-menu-icon {
+                &.fa-plus {
+                    &:before {
+                        content: "";
+                    }
+                }
+
+                &.fa-minus {
+                    &:before {
+                        content: "";
+                    }
+                }
+            }
+        }
+
+        &.Hotel {
+            margin-top: 0 !important;
+        }
+    }
+
+
+
+    @include break-md {
+        &.hotel {
+            .search-results-filter {
+                margin-top: 98px;
+            }
+        }
+    }
+
+    @include break-md-down() {
+        .search-result-summary-container.hidden-md-up {
+            display: none;
+        }
+
+        .search-results-filter {
+            background: none;
+            margin-bottom: 20px;
+
+            .filters-container {
+                background: #fff;
+                position: absolute;
+                top: 100%;
+                z-index: 3;
+                width: 100%;
+            }
+
+            &.filter-collapsed .filter-title:after {
+                border-top: 8px solid #fff;
+                border-bottom: none;
+                border-right: 6px solid transparent;
+                border-left: 6px solid transparent;
+            }
+
+            .filter-title {
+                width: 49%;
+                font-size: 1rem;
+                line-height: 1rem;
+                background: $brand-inverse;
+                color: #fff;
+                padding: 10px;
+
+                &:after {
+                    display: block;
+                    position: absolute;
+                    top: 50%;
+                    right: 12px;
+                    width: 0;
+                    height: 0;
+                    margin-top: -4px;
+                    border-bottom: 8px solid #fff;
+                    border-right: 6px solid transparent;
+                    border-left: 6px solid transparent;
+                    border-top: none;
+                    content: " ";
+                    cursor: pointer;
+                    z-index: 0;
+                }
+            }
+        }
+    }
+}

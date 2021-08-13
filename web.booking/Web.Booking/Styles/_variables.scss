@@ -1,0 +1,372 @@
+﻿
+/* 
+    Variables
+    ---------------------------------------------
+    1. Colours
+    2. Generic
+    3. Typography
+    4. Components
+    5. Buttons
+    6. Tables
+    7. Forms
+    8. Boxes
+    9. Z-index master list
+    10. Modal
+    11. Rating
+    12. Header
+    13. Widgets
+    14. Grid
+*/ 
+
+//== 1. Colors
+//
+//## Gray and brand colours used across the site
+
+$gray-dark: #292b2c !default;
+$gray: #464a4c !default;
+$gray-light: #636c72 !default;
+$gray-lighter: #eceeef !default;
+$gray-lightest: #f7f7f9 !default;
+
+$brand-primary: #0275d8 !default;
+$brand-success: #5cb85c !default;
+$brand-info: #5bc0de !default;
+$brand-warning: #f0ad4e !default;
+$brand-danger: #d9534f !default;
+$brand-danger-background: #ffdada !default;
+$brand-inverse: #292b2c !default;
+$brand-highlight: #fff !default;
+
+
+//== 2. Generic
+//
+//## Settings for some of the most global styles.
+
+$body-bg: #f4f4f4 !default;
+$body-alt-bg: $brand-inverse;
+$body-highlight-bg: #fff;
+
+$spacing-xs: 5px !default;
+$spacing-sm: 10px !default;
+$spacing-md: 20px !default;
+$spacing-lg: 30px !default;
+
+
+//== 2. Icons
+//
+//## Icon size and sprite image source
+
+$sprite-image: "/assets/sunway/images/sprite.svg" !default;
+$icon-size-xs: 20px !default;
+$icon-size-sm: 30px !default;
+$icon-size-md: 45px !default;
+$icon-size-lg: 60px !default;
+
+
+//== 3. Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+
+$font-size-base: 16px !default;
+$line-height-base: 1.125rem !default;
+
+$font-weight-normal: 400 !default;
+$font-weight-bold: 700 !default;
+
+$header-font-stack: "Futura-PT", arial, helvetica, "Sans-Serif" !default;
+
+// header primary
+$header-primary-font-size: 3.875rem !default;
+$header-primary-line-height: 4rem !default;
+$header-primary-font-weight: 500 !default;
+$header-primary-color: #1c1c1c !default;
+$header-primary-inverse-color: #fff !default;
+$header-primary-margin: $spacing-md;
+
+// header secondary
+$header-secondary-font-size: 2.625rem !default;
+$header-secondary-line-height: 2.75rem !default;
+$header-secondary-font-weight: 300 !default;
+$header-secondary-color: #1c1c1c !default;
+$header-secondary-inverse-color: #fff !default;
+$header-secondary-margin: $spacing-lg !default;
+
+// header tertiary
+$header-tertiary-font-size: 1.5rem !default;
+$header-tertiary-line-height: 1.625rem !default;
+$header-tertiary-font-weight: 400 !default;
+$header-tertiary-color: #1c1c1c !default;
+$header-tertiary-inverse-color: #fff !default;
+$header-tertiary-margin: 0;
+
+// preamble
+$preamble-font-stack: "Futura-PT", arial, helvetica, "Sans-Serif" !default;
+$preamble-font-weight: 300 !default;
+$preamble-font-size: 1.5rem !default;
+$preamble-line-height: 2rem !default;
+$preamble-color: #5e5e5e !default;
+$preamble-inverse-color: #5e5e5e !default;
+
+// body
+$body-font-stack: "Proxima-Nova", arial, helvetica, "Sans-Serif" !default;
+$body-font-size: 1rem !default;
+$body-font-weight: 400 !default;
+$body-line-height: 1.5rem !default;
+$body-color: #5e5e5e !default;
+$body-alt-color: #fff !default;
+$body-secondary-color: #5e5e5e !default;
+
+$body-font-size-xs: 0.875rem !default;
+$body-font-weight-xs: 400 !default;
+$body-line-height-xs: 1.25rem !default;
+
+// links
+$link-font-stack: "Futura-PT", arial, helvetica, "Sans-Serif" !default;
+$link-color: $brand-primary !default;
+$link-decoration: none !default;
+$link-font-size: 1.125rem !default;
+$link-line-height: 1.25rem !default;
+$link-font-weight: 400 !default;
+$link-hover-color: darken($brand-primary, 5%) !default;
+$link-hover-decoration: none !default;
+
+// labels
+$label-font-size: 0.75rem !default;
+$label-color: #1c1c1c !default;
+
+// list
+$list-primary-color: #5e5e5e !default;
+$list-secondary-color: #38939b !default;
+
+
+//== 4. Components
+//
+//## Define common padding and border radius sizes and more.
+
+$padding-base: $spacing-md;
+$padding-large: $spacing-lg;
+$padding-small: $spacing-sm;
+
+$widget-vertical-padding-sm: 30px;
+$widget-vertical-padding-md: 65px;
+$widget-vertical-padding-lg: 85px;
+
+$border-radius-base: 0 !default;
+$border-radius-large: 0 !default;
+$border-radius-small: 3px !default;
+
+$border-color-base: #ccc !default;
+
+
+//== 5. Buttons
+//
+//## For each of button, define text, background and border color.
+
+// colours
+$btn-default-color: #1c1c1c !default;
+$btn-default-bg: rgba(255, 255, 255, 0) !default;
+$btn-default-border: 1px solid #1c1c1c !default;
+$btn-default-hover-color: #fff !default;
+$btn-default-hover-bg: #1a1a1a !default;
+$btn-default-hover-border: 1px solid #1c1c1c !default;
+
+$btn-primary-color: #fff !default;
+$btn-primary-bg: $brand-primary !default;
+$btn-primary-border: none !default;
+$btn-primary-hover-color: #fff !default;
+$btn-primary-hover-bg: lighten($brand-primary, 10%) !default;
+$btn-primary-hover-border: none !default;
+
+$btn-inverse-color: #fff !default;
+$btn-inverse-bg: rgba(255, 255, 255, 0) !default;
+$btn-inverse-border: 1px solid #fff !default;
+$btn-inverse-hover-color: #1a1a1a !default;
+$btn-inverse-hover-bg: #fff !default;
+$btn-inverse-hover-border: 1px solid #fff !default;
+
+// sizes
+$btn-height-xs: 30px !default;
+$btn-height-sm: 38px !default;
+$btn-height-md: 44px !default;
+$btn-height-lg: 54px !default;
+
+$btn-padding-x-xs: 30px !default;
+$btn-padding-x-sm: 30px !default;
+$btn-padding-x-md: 30px !default;
+$btn-padding-x-lg: 30px !default;
+
+$btn-font-size-xs: 400 !default;
+$btn-font-size-sm: 400 !default;
+$btn-font-size-md: 400 !default;
+$btn-font-size-lg: 400 !default;
+
+$btn-font-weight-xs: 400 !default;
+$btn-font-weight-sm: 400 !default;
+$btn-font-weight-md: 400 !default;
+$btn-font-weight-lg: 400 !default;
+
+$btn-line-height-xs: $btn-height-xs !default;
+$btn-line-height-sm: $btn-height-sm !default;
+$btn-line-height-md: $btn-height-md !default;
+$btn-line-height-lg: $btn-height-lg !default;
+
+$btn-border-radius-xs: 0 !default;
+$btn-border-radius-sm: 0 !default;
+$btn-border-radius-md: 0 !default;
+$btn-border-radius-lg: 0 !default;
+
+
+//== 6. Tables
+//
+//## Customizes the `.table` component with basic values, each used across all table variations.
+
+$table-border: none !default;
+
+$table-bg: #fff !default;
+$table-bg-accent: #f9f9f9 !default;
+
+$table-bg-hover: #f5f5f5 !default;
+$table-bg-active: $table-bg-hover !default;
+
+$table-header-bg: #333 !default;
+$table-header-padding: 5px 10px !default;
+$table-header-border: none !default;
+
+$table-cell-padding: 10px !default;
+$table-condensed-cell-padding: 5px !default;
+
+
+//== 7. Forms
+//
+//## Customizes form inputs
+
+$input-padding-x: $spacing-sm !default;
+$input-padding-y: $spacing-xs !default;
+
+$input-height-sm: 24px !default;
+$input-height-md: 36px !default;
+$input-height-lg: 48px !default;
+
+$input-font-size: $body-font-size !default;
+$input-line-height: $body-line-height !default;
+
+$input-bg: #fff !default;
+$input-bg-disabled: $gray-lighter !default;
+
+$input-color: $gray !default;
+$input-placeholder-color: $gray !default;
+
+$input-border: 1px solid #ccc !default;
+
+$input-border-radius-sm: $border-radius-large !default;
+$input-border-radius-md: $border-radius-base !default;
+$input-border-radius-lg: $border-radius-small !default;
+
+$input-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075) !default;
+$input-focus-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 4px rgba(244, 208, 63, 0.6) !default;
+$input-focus-border: 1px solid $brand-primary !default;
+
+
+//== 8. Boxes
+//
+//## Customizes boxes
+$panel-border-radius: 0 !default;
+$panel-bg: #fff !default;
+$panel-border: 1px solid #ccc !default;
+$panel-header-bg: #fefefe !default;
+$panel-header-border: 1px solid #ddd !default;
+$panel-header-color: #333 !default;
+$panel-primary-header-color: #fefefe !default;
+$panel-primary-header-bg: #1c1c1c;
+$panel-footer-border: 1px solid #ddd !default;
+
+$panel-shadow-h: 0 !default;
+$panel-shadow-v: 0 !default;
+$panel-shadow-blur: 0 !default;
+$panel-shadow-spread: 0 !default;
+$panel-shadow-color: #000 !default;
+
+
+// 9. Z-index master list
+//
+// Warning: Avoid customizing these values. They're used for a bird's eye view
+// of components dependent on the z-axis and are designed to all work together.
+
+$zindex-dropdown-backdrop: 990 !default;
+$zindex-dropdown: 1000 !default;
+$zindex-sticky: 1020 !default;
+$zindex-fixed: 1030 !default;
+$zindex-modal-backdrop: 1040 !default;
+$zindex-modal: 1050 !default;
+$zindex-popover: 1060 !default;
+$zindex-tooltip: 1070 !default;
+
+
+//== 10. Modal
+//
+//## Customizes modal popups
+
+$modal-sm:  300px !default;
+$modal-md:  500px !default;
+$modal-lg:  600px !default;
+
+$modal-container-margin: 10px !default;
+$modal-container-sm-up-margin-y: 100px !default;
+
+$modal-backdrop-bg: #000 !default;
+$modal-backdrop-opacity: 0.7 !default;
+$modal-transition: transform 0.3s ease-out;
+
+
+//== 11. Rating
+//
+//## Define size and colour for ratings
+
+$rating-size: 1rem !default;
+$rating-color: #909090 !default;
+
+$rating-size-xs: 0.5625rem !default;
+$rating-text-size-xs : 0.75rem !default;
+
+$rating-size-sm: 0.75rem !default;
+$rating-text-size-sm: 0.875rem !default;
+
+$rating-size-lg: 1.25rem !default;
+$rating-text-size-lg: 1.375rem !default;
+
+
+//==12. Header
+//
+//## Define header variables
+
+$page-header-height-md: 110px;
+$page-header-height-xs: 65px;
+
+$page-header-top-nav-height: 50px;
+$page-header-primary-color: #1c1c1c;
+$page-header-top-nav-color: #fff;
+$page-header-top-nav-border-color: #2a2a2a;
+$page-header-top-nav-font-size: 0.75rem;
+$page-header-border-color-secondary: #2c2c2c;
+
+$page-header-main-nav-height: 60px;
+$page-header-main-nav-font-size: 0.75rem;
+
+$page-header-font-weight: 500;
+$page-header-font-size: 0.75rem;
+
+//==13. Widgets
+//
+//## Define variables for various widgets
+
+//## Month-graph
+$bar-color-primary: #dcbc87;
+$bar-color-secondary: #e4cba2;
+
+$axis-color: #dcdcdc;
+$background-bar-highlight: #fafafa;
+
+//==14. Grid
+//
+//## Define variables for the grid
+$gutter-padding: 8px;

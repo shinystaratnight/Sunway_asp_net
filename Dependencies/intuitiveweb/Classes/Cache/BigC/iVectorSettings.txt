@@ -1,0 +1,16 @@
+﻿insert into BigC
+	select 'iVectorSettings',1,0,0,'','','01/01/1900'
+		where not exists
+			(select *
+				from BigC
+				where ObjectType = 'iVectorSettings')
+
+
+update BigC
+	set LastModifiedDateTime = GETDATE(),
+		ContentXML =
+		(select Module, Setting, SettingValue, DefaultValue
+			from Setting
+			order by Module, Setting
+			for xml path('Setting'), root('Settings'))
+	where ObjectType = 'iVectorSettings'

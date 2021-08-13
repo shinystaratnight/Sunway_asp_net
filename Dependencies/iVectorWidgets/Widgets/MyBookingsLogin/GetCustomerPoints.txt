@@ -1,0 +1,12 @@
+﻿-- Parameters
+declare @iCustomerID int
+
+-- Set Parameters
+
+set @iCustomerID = {0}
+
+-- Begin
+
+Select SUM(Amount)
+	from PointsTransaction
+	where CustomerID = @iCustomerID

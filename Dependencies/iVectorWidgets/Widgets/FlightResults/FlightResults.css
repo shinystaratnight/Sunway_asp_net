@@ -1,0 +1,19 @@
+﻿
+#divFlightResults div.result {margin-bottom:10px;}
+#divFlightResults div.details {float:left;}
+#divFlightResults div.price {float:left;text-align:center;}
+#divFlightResults div.outbound, #divFlightResults div.return {padding:20px 0px;margin:0px 20px;}
+#divFlightResults div.outbound div, #divFlightResults div.return div {float:left;}
+
+#divFlightResults img.carrierlogo {float:left;}
+
+#divFlightResults div.result p + p {margin-top:6px;}
+#divFlightResults div.result div.price p + p {margin-top:0px;line-height:1.2em;}
+#divFlightResults div.result div.price p.price {margin-top:5px;font-weight:bold;}
+#divFlightResults div.result div.price p.price span.TotalPricePP {font-size:15px;}
+#divFlightResults div.result div.price p.price span.TotalPriceAllPax {width: 100%;display: block;font-size: 12px;margin-top: -10px;}
+#divFlightResults div.result #pFlightTaxesSummary span.PriceMessage {font-size:13px;}
+#divFlightResults div.result a.button {margin-top:10px;text-decoration:none;}
+
+#divFlightResults div.result div.flightLeg p span.timeTitle {display:none;}
+#divFlightResults div.result div.flightLeg p span.dateTitle {display:none;}

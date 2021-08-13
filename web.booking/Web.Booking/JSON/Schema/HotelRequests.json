@@ -1,0 +1,39 @@
+﻿{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Hotel Requests",
+    "type": "object",
+    "description": "Widget to collect hotel requests on a payment page.",
+    "properties": {
+        "Title": {
+            "default": "HotelRequests",
+            "type": "string"
+        },
+        "Message": {
+            "default": "We will ensure your request is passed to the accommodation, but cannot guarantee your requirement can always be met.",
+            "type": "string"
+        },
+        "RequestPlaceholder": {
+            "default": "Please enter your requests here",
+            "type": "string"
+        },
+        "Configuration": {
+            "type": "object",
+            "title": "Configuration",
+            "description": "Configuration options for the Text Panel widget",
+            "properties": {
+                "ContainerStyle": {
+                    "type": "string",
+                    "format": "select",
+                    "default": "Highlight",
+                    "enum": [ "Default", "Highlight", "Alternate" ]
+                },
+                "ContainerPadding": {
+                    "type": "string",
+                    "format": "select",
+                    "default": "Medium",
+                    "enum": [ "None", "Small", "Medium", "Large" ]
+                }
+            }
+        }
+    }
+}

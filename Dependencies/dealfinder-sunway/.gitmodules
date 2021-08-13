@@ -1,0 +1,3 @@
+[submodule "build"]
+	path = build
+url=ssh://git@stash.intuitivesystems.co.uk:7999/fx/build.git

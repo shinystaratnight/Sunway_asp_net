@@ -1,0 +1,37 @@
+﻿@import "../../variables";
+@import "../../Mixins/clearfix";
+@import "../../Mixins/media";
+
+.widget.widget-overbrandedfooter {
+    padding: 0;
+
+    .footer-top-section {
+        padding: $spacing-md 0;
+        background-color: initial;
+
+        .nav {
+            padding-bottom: 20px;
+        }
+
+        .company-details {
+            text-align: center;
+
+            .detail-item {
+                display: block;
+            }
+        }
+    }
+
+    .footer-bottom-section {
+        padding: 20px 0;
+        background-color: $brand-highlight;
+        text-align: center;
+    }
+
+    @include break-sm {
+        .footer-top-section .company-details .detail-item {
+            display: inline-block;
+            padding: 0 $spacing-md;
+        }
+    }
+}
