@@ -1,0 +1,51 @@
+﻿{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Basket",
+    "type": "object",
+    "description": "Widget that renders the button at the bottom of the payment page that complete a booking",
+    "properties": {
+        "Title": {
+            "type": "string",
+            "default": "Travel Summary"
+        },
+        "FlightTitle": {
+            "type": "string",
+            "default": "Your Flight"
+        },
+        "HotelTitle": {
+            "type": "string",
+            "default": "Your Hotel"
+        },
+        "TransferTitle": {
+            "type": "string",
+            "default": "Your Transfer"
+        },
+        "ExtrasTitle": {
+            "type": "string",
+            "default": "Your Extras"
+        },
+        "TotalText": {
+            "type": "string",
+            "default": "Total Price"
+        },
+        "Configuration": {
+            "type": "object",
+            "title": "Configuration",
+            "description": "Configuration options for the Text Panel widget",
+            "properties": {
+                "ContainerStyle": {
+                    "type": "string",
+                    "format": "select",
+                    "default": "Highlight",
+                    "enum": [ "Default", "Highlight", "Alternate" ]
+                },
+                "ContainerPadding": {
+                    "type": "string",
+                    "format": "select",
+                    "default": "Medium",
+                    "enum": [ "None", "Small", "Medium", "Large" ]
+                }
+            }
+        }
+    }
+}

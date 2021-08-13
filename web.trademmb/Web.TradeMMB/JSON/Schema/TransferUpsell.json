@@ -1,0 +1,92 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Search Results",
+  "description": "Widget to display transfer upsell",
+  "type": "object",
+  "properties": {
+    "Title": {
+      "type": "string",
+      "default": "Transfer" 
+    },
+    "Description": {
+      "type": "string",
+      "default":  "Why not add a transfer to your booking?" 
+    },
+    "TableHeadings": {
+      "type": "object",
+      "properties": {
+        "Description": {
+          "type": "string",
+          "default": "Vehicle Description"
+        },
+        "Price": {
+          "type": "string",
+          "default": "Price"
+        },
+        "Quantity": {
+          "type": "string",
+          "default": "Quantity"
+        },
+        "Selected": {
+          "type": "string",
+          "default": "Selected"
+        }
+      }
+    },
+    "OutboundHeader": {
+      "type": "string",
+      "description": "This is the text that appears above the outbound search details",
+      "default": "Outbound"
+    },
+    "ReturnHeader": {
+      "type": "string",
+      "description": "This is the text that appears above the return search details",
+      "default": "Return"
+    },
+    "AirportPrependedText": {
+      "type": "string",
+      "description": "This is the text that appears before the name of the airport",
+      "default": "Search for transfers from"
+    },
+    "SearchButton": {
+      "type": "string",
+      "description": "This is the text that appears on the search button",
+      "default": "Search for transfers"
+    },
+    "FailedSearchMessage": {
+      "type": "string",
+      "description": "This is the message that appears when a transfer search returns no results",
+      "default": "Sorry no transfers are available for your current search"
+    },
+    "FlightCodeErrorMessage": {
+      "type": "string",
+      "description": "This is the text that appears when the flight code fails validation",
+      "default": "Please enter your flight time"
+    },
+    "FlightTimeErrorMessage": {
+      "type": "string",
+      "description": "This is the text that appears when the flight time fails validation",
+      "default": "Please enter your flight code"
+    },
+    "Configuration": {
+      "type": "object",
+      "title": "Configuration",
+      "description": "Configuration options for the search results widget",
+      "properties": {
+        "ContainerStyle": {
+          "type": "string",
+          "format": "select",
+          "default": "Default",
+          "enum": [ "Default", "Highlight", "Alternate" ]
+        },
+        "ContainerPadding": {
+          "type": "string",
+          "format": "select",
+          "default": "None",
+          "description": "Sets the padding for the widget.",
+          "enum": [ "None", "Small", "Medium", "Large" ]
+        }
+      }
+    }
+  }
+}

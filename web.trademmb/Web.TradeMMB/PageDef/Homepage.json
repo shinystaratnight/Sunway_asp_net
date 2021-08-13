@@ -1,0 +1,69 @@
+﻿  {
+    "Id": 0,
+    "Name": "HomePage",
+    "Access":  "TradeLoggedIn",
+    "Sections": [
+        {
+            "Id": 1,
+            "Name": "header",
+            "Widgets": [
+                {
+                    "Id": 1,
+                    "Name": "SiteBuilderToolbar",
+                    "ServerSideRender": false,
+                    "ClientSideRender": true,
+                    "Access": "AdminLoggedIn"
+                },
+                {
+                    "Id": 1,
+                    "Name": "Header",
+                    "Context": "default",
+                    "ServerSideRender": true,
+                    "ClientSideRender":  true 
+                }
+            ]
+        },
+        {
+            "Id": 2,
+            "Name": "main",
+            "Widgets": [
+                {
+                    "Id": 1,
+                    "Name": "WidgetEdit",
+                    "ServerSideRender": false,
+                    "ClientSideRender": true,
+                    "Access": "AdminLoggedIn"
+                },
+                {
+                    "Id": 2,
+                    "Name": "DirectDebitList",
+                    "Context": "default",
+                    "ServerSideRender": false,
+                    "ClientSideRender": true
+                },
+                {
+                    "Id": 3,
+                    "Name": "BookingList",
+                    "Context": "default",
+                    "ServerSideRender": false,
+                    "ClientSideRender": true
+                }
+            ]
+        },
+        {
+            "Id": 1,
+            "Name": "footer",
+            "Widgets": [
+                {
+                    "Id": 1,
+                    "Name": "Footer",
+                    "Context": "default",
+                    "ServerSideRender": true,
+                    "ClientSideRender": false
+                }
+            ]
+        }
+    ],
+    "Template": "FullContent",
+    "Url": "/"
+}

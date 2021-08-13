@@ -1,0 +1,822 @@
+﻿@import "../../variables";
+@import "../../mixins/media";
+@import "../../mixins/sprite";
+
+/* 
+    Carousel Content
+    ---------------------------------------------
+    1. Generic
+    2. Carousel
+    3. Indicators
+    4. Controls
+    5. Tiles
+    6. Hero Banner
+    7. Tiles
+
+*/
+
+//== 1. Generic
+//
+//## Generic content styling
+#widget-propertyheroimage-container-property-hero-image {
+    @include break-md() {
+        min-height: 750px;
+    }
+}
+
+.widget-staticheroimage {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.carousel-content {
+    &.herobanner {
+        padding: 0;
+    }
+}
+
+.carousel-container {
+
+    .h-secondary,
+    .preamble {
+        text-align: center;
+    }
+
+    .hero-center-btn {
+        position: relative;
+        z-index: 100;
+    }
+
+    .btn {
+        margin-top: 20px;
+    }
+
+    &.tiles {
+        .carousel.indicators {
+            padding-bottom: 50px;
+        }
+    }
+
+    @include break-md() {
+        .carousel.arrows {
+            padding-right: 100px;
+            padding-left: 100px;
+        }
+
+        .carousel.arrows.side-preview, .carousel.arrows.full-screen {
+            padding-right: 0;
+            padding-left: 0;
+        }
+    }
+}
+
+
+//== 2. Carousel styling
+//
+//## Base carousel styling
+
+.carousel {
+    position: relative;
+    z-index: 2;
+
+    .hide-carousel-caption {
+
+        .carousel-caption {
+            display: none;
+        }
+    }
+
+    .row {
+        position: relative;
+    }
+
+    .carousel-items {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .carousel-item {
+        display: none;
+        transition-duration: 1s;
+        transition-property: left;
+        transition-timing-function: ease-in-out;
+
+        &.no-transition {
+            transition: none;
+        }
+
+        &.fluid {
+            width: 100%;
+        }
+
+        &.display {
+            display: block;
+            position: absolute;
+            top: 0;
+            height: 100%;
+
+            .widget-textcontent {
+                height: 100%;
+
+                .style-alt {
+                    background-color: transparent;
+                }
+            }
+        }
+
+        &.active,
+        &.active-1 {
+            left: 0;
+        }
+
+        &.prev,
+        &.prev-1 {
+            left: -100%;
+        }
+
+        &.next,
+        &.next-1 {
+            left: 100%;
+        }
+    }
+
+    @include break-md() {
+        .row {
+            position: static;
+        }
+    }
+
+    &.side-preview {
+
+        .carousel-item {
+            left: 50%;
+            width: 90%;
+            transform: translateX(-50%);
+            transition-property: transform;
+
+            &.preview {
+                display: block;
+                position: absolute;
+                top: 0;
+            }
+
+            &.active,
+            &.active-1 {
+                transform: translateX(-150%);
+            }
+
+            &.active-2 {
+                transform: translateX(-50%);
+            }
+
+            &.active-3 {
+                transform: translateX(50%);
+            }
+
+            &.prev,
+            &.prev-1 {
+                transform: translateX(-250%);
+            }
+
+            &.next,
+            &.next-1 {
+                transform: translateX(150%);
+            }
+        }
+    }
+
+    @include break-md() {
+        &.side-preview {
+            .carousel-item {
+                width: 940px;
+            }
+        }
+    }
+
+    @include break-lg() {
+        &.side-preview {
+            .carousel-item {
+                width: 1170px;
+            }
+        }
+    }
+}
+
+.side-preview {
+
+    .carousel-item {
+        border-right: 2px solid #fff;
+        border-left: 2px solid #fff;
+    }
+
+    @include break-md() {
+        .carousel-item {
+            border-right: 4px solid #fff;
+            border-left: 4px solid #fff;
+        }
+    }
+}
+
+
+//== 3. Indicator styling
+//
+//## Carousel indicator styling
+
+.carousel {
+
+    .carousel-indicators-container {
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        width: 100%;
+        height: 10px;
+
+        .container {
+            position: relative;
+            max-width: 100%;
+            height: 10px;
+        }
+    }
+
+    .carousel-indicators {
+        position: absolute;
+        width: 60%;
+        height: 10px;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        z-index: 10;
+
+        &.center {
+            left: 50%;
+            margin-left: -30%;
+            text-align: center;
+        }
+
+        &.right {
+            right: 20px;
+            text-align: right;
+        }
+
+        &.left {
+            left: 20px;
+            text-align: left;
+        }
+    }
+
+    .carousel-indicator {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        margin-right: 5px;
+        border-radius: 10px;
+        background: $gray-light;
+        cursor: pointer;
+
+        &.active {
+            background: $btn-primary-bg;
+        }
+
+        &:hover {
+            background: $btn-primary-hover-bg;
+        }
+    }
+}
+
+
+//== 4. Control styling
+//
+//## Carousel control styling
+
+.carousel-container {
+
+    .carousel-control {
+        display: none;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        z-index: 15;
+
+        &.left {
+            left: 0;
+            transform: translateY(-50%) rotate(180deg);
+        }
+
+        &.right {
+            right: 0;
+        }
+    }
+
+    @include break-md() {
+        .carousel-control {
+            display: block;
+        }
+    }
+
+    .side-preview .carousel-control,
+    .full-screen .carousel-control {
+
+
+        @include break-md() {
+            &.left {
+                transform: translateY(-50%) rotate(180deg);
+            }
+
+            &.left {
+                left: 50%;
+                margin-left: -492px;
+            }
+
+            &.right {
+                right: 50%;
+                margin-right: -492px;
+            }
+        }
+
+        @include break-lg() {
+            &.left {
+                margin-left: -608px;
+            }
+
+            &.right {
+                margin-right: -608px;
+            }
+        }
+    }
+}
+
+
+//== 5. Tiles
+//
+//## Styling for Carousel Tiles
+
+.carousel .tiles-2 {
+
+    .container {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .carousel-item {
+
+        &.active-2 {
+            left: 50%;
+        }
+
+        &.prev-1 {
+            left: -50%;
+        }
+
+        &.prev-2 {
+            left: -100%;
+        }
+
+        &.next-2 {
+            left: 150%;
+        }
+    }
+}
+
+.carousel .tiles-3 {
+
+    .container {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .carousel-item {
+
+        &.active-2 {
+            left: 33.3333%;
+        }
+
+        &.active-3 {
+            left: 66.6667%;
+        }
+
+        &.prev-1 {
+            left: -33.3333%;
+        }
+
+        &.prev-2 {
+            left: -66.6667%;
+        }
+
+        &.prev-3 {
+            left: -100%;
+        }
+
+        &.next-2 {
+            left: 133.3333%;
+        }
+
+        &.next-3 {
+            left: 166.6667%;
+        }
+    }
+}
+
+//== 6. Hero Banner
+//
+//## Styling for Carousel Hero Banner
+
+.widget-sidepreviewcarousel {
+    .hero-banner {
+        &.overlay {
+            &::after {
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), transparent, transparent);
+                z-index: 5;
+            }
+        }
+    }
+}
+
+.hero-banner {
+    width: 100%;
+
+    .container {
+        position: relative;
+    }
+
+    .h-primary {
+        color: #fff !important;
+        text-shadow: 0 3px 0 rgba(0, 0, 0, 0.4);
+    }
+
+    .h-secondary {
+        color: #fff !important;
+        text-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+    }
+
+    .h-tertiary {
+        color: #fff !important;
+        text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+    }
+
+    &.overlay::after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        transition-delay: 1s;
+        transition-duration: 1s;
+        transition-property: background;
+        transition-timing-function: linear;
+        background: rgba(0, 0, 0, 0.4);
+        content: " ";
+        z-index: 2;
+    }
+
+    .carousel-caption {
+        position: absolute;
+        min-height: 50px;
+        overflow: hidden;
+        z-index: 6;
+
+        .carousel-caption-content {
+            position: relative;
+            top: 0;
+            transition-delay: 1s;
+            transition-duration: 1s;
+            transition-property: all;
+            transition-timing-function: linear;
+            opacity: 1;
+            z-index: 10;
+
+            .h-primary + .h-secondary {
+                margin: -$padding-small 0 $padding-small;
+            }
+
+            .h-secondary {
+                font-size: 1rem;
+                line-height: 1.5rem;
+                text-transform: uppercase;
+            }
+
+            .h-tertiary {
+                height: auto;
+
+                @include break-md-down {
+
+                    $font-size: 1.25rem;
+                    $line-height: 1.4;
+                    $lines-to-show: 4;
+
+
+                    height: $font-size*$line-height*$lines-to-show;
+                    font-size: $font-size;
+                    line-height: $line-height;
+                    /* stylelint-disable */
+                    display: -webkit-box;
+                    -webkit-line-clamp: $lines-to-show;
+                    -webkit-box-orient: vertical;
+                    /* stylelint-enable */
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                }
+            }
+        }
+
+        &.left {
+            left: 0;
+
+            .h-primary,
+            .h-secondary,
+            .h-tertiary {
+                text-align: left;
+            }
+        }
+
+        &.right {
+            right: 0;
+
+            .h-primary,
+            .h-secondary,
+            .h-tertiary {
+                text-align: right;
+            }
+        }
+
+        &.center {
+            left: 50%;
+            transform: translateX(-50%);
+
+            .h-primary,
+            .h-secondary,
+            .h-tertiary {
+                text-align: center;
+            }
+
+            &.middle {
+                top: 50%;
+                transform: translateX(-50%) translateY(-50%);
+            }
+        }
+
+        &.top {
+            top: $padding-base;
+        }
+
+        &.middle {
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        &.bottom {
+            bottom: $padding-base;
+        }
+    }
+
+    .banner-tags {
+        display: inline;
+        width: 85%;
+        padding-left: 20px;
+        float: left;
+        clear: both;
+        color: $body-alt-color;
+        text-align: center;
+
+        .banner-tag {
+            display: inline;
+            list-style: none;
+            text-decoration: underline;
+            cursor: pointer;
+
+            &:hover {
+                color: $gray-light;
+
+                a {
+                    color: $gray-light;
+                }
+            }
+
+            a {
+                color: $body-alt-color;
+            }
+
+            &:before {
+                display: inline-block;
+                width: 15px;
+                height: 30px;
+                padding-right: 2px;
+                text-align: center;
+                content: " ";
+            }
+
+            &:first-child:before {
+                display: inline-block;
+                position: relative;
+                top: 10px;
+                margin-left: 5px;
+                content: " ";
+            }
+        }
+    }
+
+    .banner-date {
+        color: $body-alt-color;
+    }
+
+    .banner-date:before {
+        display: inline-block;
+        position: relative;
+        top: 10px;
+        margin-left: 5px;
+        content: " ";
+    }
+
+    @include break-sm() {
+        .banner-tags {
+            width: auto;
+            float: none;
+            clear: none;
+            text-align: left;
+        }
+
+        .banner-date {
+            display: block;
+        }
+
+        .banner-tag {
+            display: inline;
+        }
+    }
+}
+
+.no-transition .hero-banner {
+
+    &.overlay::after {
+        transition: none;
+    }
+}
+
+.herobanner {
+
+    .carousel-indicators-container {
+        display: none;
+    }
+
+    @include break-md() {
+        .carousel-indicators-container {
+            display: block;
+        }
+    }
+}
+
+.carousel-item.init,
+.carousel-item.next-1,
+.carousel-item.prev-1 {
+    .hero-banner {
+        &.overlay::after,
+        &.overlay::after {
+            background: rgba(0, 0, 0, 0);
+        }
+
+        .carousel-caption-content {
+            top: 500px;
+            opacity: 0;
+        }
+    }
+}
+
+.side-preview {
+    @include break-md() {
+        .hero-banner {
+            .h-primary,
+            .h-tertiary {
+                width: 100%;
+            }
+
+            .h-tertiary {
+                font-size: 2.625rem;
+                line-height: 2.75rem;
+            }
+        }
+    }
+}
+
+.carousel-item.preview {
+    .hero-banner {
+        .carousel-caption-content {
+            top: 500px;
+            opacity: 0;
+        }
+
+        &.overlay::after,
+        &.overlay::after {
+            background: rgba(255, 255, 255, 0.5);
+        }
+    }
+
+    .caption-image {
+        opacity: 0.5;
+    }
+}
+
+//== 7. Caption Image
+//
+//## Stying for Carousel Caption Image
+
+.caption-image {
+    width: 100%;
+
+    .img-container {
+        width: 100%;
+        height: 190px;
+        margin-bottom: 20px;
+        border: 3px solid #fff;
+
+        @include break-md() {
+            height: 240px;
+        }
+    }
+}
+
+
+.carousel.captionimage {
+    &.side-preview {
+        .carousel-item {
+            width: 66%;
+            border-right: none;
+            border-left: none;
+        }
+
+        .carousel-indicators-container {
+            display: none;
+        }
+
+        .carousel-control {
+            display: none;
+        }
+    }
+}
+
+//== 8. Side Image
+//
+//## Styling for Carousel Side Image
+.carousel-item {
+    .widget-textcontent {
+        /*.image-container {
+
+        .img-background {
+            position: relative;
+            height: 252px;
+            background-position: top;
+        }
+    }*/
+        .markdown-content {
+
+            &.style-default {
+                background-color: $body-bg;
+
+                .rendered-markdown h1, h2, h3, h4, p {
+                    color: $body-color;
+                }
+            }
+
+            &.style-highlight {
+                background-color: $body-highlight-bg;
+
+                .rendered-markdown h1, h2, h3, h4, p {
+                    color: $body-color;
+                }
+            }
+
+            &.style-alt {
+                background-color: $body-alt-bg;
+
+                .rendered-markdown h1, h2, h3, h4, p {
+                    color: $body-alt-color;
+                }
+            }
+
+            .txt-right {
+                padding: 0 $padding-base $padding-large;
+            }
+
+            .txt-left {
+                padding: 0 $padding-base $padding-large;
+            }
+        }
+    }
+}
+
+.widget-imagepanelcarousel {
+    margin-bottom: $spacing-md;
+}
+
+.widget-teamitemvisited {
+    .team-visited-header {
+        margin-bottom: 20px;
+        .h-tertiary {
+            padding-left: 8px;
+        }
+    }
+}

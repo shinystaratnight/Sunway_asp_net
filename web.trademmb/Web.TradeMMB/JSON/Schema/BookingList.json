@@ -1,0 +1,237 @@
+﻿{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Booking List",
+    "description": "Widget to display all bookings",
+    "type": "object",
+    "properties": {
+        "TableHeadings": {
+            "type": "object",
+            "properties": {
+                "Reference": {
+                    "type": "string",
+                    "default": "Reference"
+                },
+                "LeadGuest": {
+                    "type": "string",
+                    "description": "This is the text that appears above the lead guest name",
+                    "default": "Lead Guest"
+                },
+                "BookingDate": {
+                    "type": "string",
+                    "description": "This is the text that appears above the booking date",
+                    "default": "Booking Date"
+                },
+                "ArrivalDate": {
+                    "type": "string",
+                    "description": "This is the text that appears above the arrival date",
+                    "default": "Arrival Date"
+                },
+                "Resort": {
+                    "type": "string",
+                    "description": "This is the text that appears before the name of the Resort",
+                    "default": "Resort"
+                },
+                "PropertyOrVehicleName": {
+                    "type": "string",
+                    "description": "This is the text that appears above the property or vehicle name",
+                    "default": "Property/Vehicle Name"
+                },
+                "Price": {
+                    "type": "string",
+                    "description": "This is the message that appears above the price",
+                    "default": "Price"
+                },
+                "Commission": {
+                    "type": "string",
+                    "description": "This is the text that appears above the commission",
+                    "default": "Commission"
+                },
+                "BookingStatus": {
+                    "type": "string",
+                    "description": "This is the text that appears above the booking status",
+                    "default": "Booking Status"
+                },
+                "PaymentStatus": {
+                    "type": "string",
+                    "description": "This is the text that appears above the payment status",
+                    "default": "Payment Status"
+                },
+                "Documentation": {
+                    "type": "string",
+                    "description": "This is the text that appears above the documentation options",
+                    "default": "Docs"
+                },
+                "CancelRequest": {
+                    "type": "string",
+                    "description": "This is the text that appears above the cancel request options",
+                    "default": "Cancel Request"
+                }
+            }
+        },
+        "NoBookingsWarning": {
+            "type": "string",
+            "description": "This is the message that displays when no bookings match the filters selected.",
+            "default": "No bookings match the current filter settings."
+        },
+        "NoBookingsForTrade": {
+            "type": "string",
+            "description": "This is the message that displays when no bookings match the trade member who is logged in.",
+            "default": "Sorry there are no bookings associated with your account."
+        },
+        "Filters": {
+            "type": "object",
+            "description": "You can set the placeholders, where applicable, and the labels for each filter",
+            "properties": {
+                "Reference": {
+                    "type": "object",
+                    "properties": {
+                        "Label": {
+                            "type": "string",
+                            "default": "Reference"
+                        },
+                        "Placeholder": {
+                            "type": "string",
+                            "default": "Reference Number"
+                        }
+                    }
+                },
+                "GuestName": {
+                    "type": "object",
+                    "properties": {
+                        "Label": {
+                            "type": "string",
+                            "default": "Guest Name"
+                        },
+                        "Placeholder": {
+                            "type": "string",
+                            "default": "Guest Name"
+                        }
+                    }
+                },
+                "Booked": {
+                    "type": "object",
+                    "properties": {
+                        "Label": {
+                            "type": "string",
+                            "default": "Booked"
+                        }
+                    }
+                },
+                "Travelling": {
+                    "type": "object",
+                    "properties": {
+                        "Label": {
+                            "type": "string",
+                            "default": "Travelling"
+                        }
+                    }
+                }
+            }
+        },
+        "Quote": {
+            "type": "object",
+            "title": "Quote",
+            "description": "Options for quotes",
+            "properties": {
+                "TableHeadings": {
+                    "type": "object",
+                    "properties": {
+                        "Reference": {
+                            "type": "string",
+                            "default": "Reference"
+                        },
+                        "LeadGuest": {
+                            "type": "string",
+                            "description": "This is the text that appears above the lead guest name",
+                            "default": "Lead Guest"
+                        },
+                        "EnquiryDate": {
+                            "type": "string",
+                            "description": "This is the text that appears above the enquiry date",
+                            "default": "Enquiry Date"
+                        },
+                        "DepartureDate": {
+                            "type": "string",
+                            "description": "This is the text that appears above the departure date",
+                            "default": "Departure Date"
+                        },
+                        "Resort": {
+                            "type": "string",
+                            "description": "This is the text that appears before the name of the Resort",
+                            "default": "Resort"
+                        },
+                        "PropertyName": {
+                            "type": "string",
+                            "description": "This is the text that appears above the property name",
+                            "default": "Property"
+                        },
+                        "Price": {
+                            "type": "string",
+                            "description": "This is the message that appears above the price",
+                            "default": "Price"
+                        },
+                        "Commission": {
+                            "type": "string",
+                            "description": "This is the text that appears above the commission",
+                            "default": "Commission"
+                        },
+                        "Documentation": {
+                            "type": "string",
+                            "description": "This is the text that appears above the documentation options",
+                            "default": "Docs"
+                        },
+                        "Reprice": {
+                            "type": "string",
+                            "description": "This is the text that appears above the reprice link",
+                            "default": "Reprice"
+                        }
+                    }
+                },
+                "NoQuotesWarning": {
+                    "type": "string",
+                    "description": "This is the message that displays when no quotes match the filters selected.",
+                    "default": "No quotes match the current filter settings."
+                }
+            }
+        },
+        "Configuration": {
+            "type": "object",
+            "title": "Configuration",
+            "description": "Configuration options for the search results widget",
+            "properties": {
+                "ContainerStyle": {
+                    "type": "string",
+                    "format": "select",
+                    "default": "Default",
+                    "enum": [
+                        "Default",
+                        "Highlight",
+                        "Alternate"
+                    ]
+                },
+                "ContainerPadding": {
+                    "type": "string",
+                    "format": "select",
+                    "default": "None",
+                    "description": "Sets the padding for the widget.",
+                    "enum": [
+                        "None",
+                        "Small",
+                        "Medium",
+                        "Large"
+                    ]
+                },
+                "DisplayCancelRequestColumn": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "Display the Cancel Request column."
+                },
+                "FindQuoteOption": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "Enable/Disable the option to find a quote"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+﻿{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Search Results",
+    "description": "Widget to display search results",
+    "type": "object",
+    "properties": {
+        "SortLabel": {
+            "default": "Sort By",
+            "type": "string"
+        },
+        "FilterTitle": {
+            "default": "Filter Results",
+            "type": "string"
+        },
+        "Configuration": {
+            "type": "object",
+            "title": "Configuration",
+            "description": "Configuration options for the search results widget",
+            "properties": {
+                "ContainerStyle": {
+                    "type": "string",
+                    "format": "select",
+                    "default": "Default",
+                    "enum": [ "Default", "Highlight", "Alternate" ]
+                },
+                "ContainerPadding": {
+                    "type": "string",
+                    "format": "select",
+                    "default": "None",
+                    "description": "Sets the padding for the widget.",
+                    "enum": [ "None", "Small", "Medium", "Large" ]
+                },
+                "SearchMode": {
+                    "type": "string",
+                    "format": "select",
+                    "default": "Hotel",
+                    "enum": [ "Hotel", "Flight" ]
+                },
+                "ResultsPerPage": {
+                    "type": "integer",
+                    "default": 10
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+﻿{
+    "Websites": [
+        {
+            "SiteName": "Sunway",
+            "Environment": "dev",
+            "Url": "http://sunwaytest.ivector.co.uk",
+            "Urls": [
+                "http://sunwaytest.ivector.co.uk/tradebookings/"
+            ]
+        },
+        {
+            "SiteName": "Sunway",
+            "Environment": "staging",
+            "Url": "http://sunwaystaging.ivector.co.uk",
+            "Urls": [
+                "http://sunwaystaging.ivector.co.uk/tradebookings/"
+            ]
+        },
+      {
+        "SiteName": "Sunway",
+        "Environment": "live",
+        "Url": "https://agent.sunway.ie",
+        "Urls": [
+          "http://sunwaylive.ivector.co.uk/tradebookings/",
+          "http://agent.sunway.ie/tradebookings/",
+          "http://www.sunway.ie/tradebookings/",
+		  "https://agent.sunway.ie/tradebookings/",
+        ]
+      },
+        {
+            "SiteName": "SunwayB2C",
+            "Environment": "dev",
+            "Url": "http://sunwayb2ctest.ivector.co.uk",
+            "Urls": [
+                "http://sunwayb2ctest.ivector.co.uk/tradebookings/"
+            ]
+        },
+        {
+            "SiteName": "SunwayB2C",
+            "Environment": "live",
+            "Url": "http://www.sunway.ie",
+            "Urls": [
+                "http://sunwayb2clive.ivector.co.uk/tradebookings/"
+                
+            ]
+        }
+    ]
+}

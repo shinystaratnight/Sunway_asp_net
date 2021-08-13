@@ -1,0 +1,271 @@
+﻿@import "../../mixins/media";
+@import "../../variables";
+
+.widget-bookinglist {
+
+    .tabs {
+        .tab-item {
+            width: 50%;
+            margin: 0;
+            text-align: center;
+
+            @include break-sm() {
+                width: auto;
+                margin-right: 40px;
+                padding: 0;
+            }
+
+            &.tab-selected,
+            &:hover {
+                height: 50px;
+                border-bottom: 2px solid $brand-primary;
+
+                .tab-item-name {
+                    color: #1c1c1c;
+                }
+            }
+
+            .tab-item-name {
+                font-family: $header-font-stack;
+                font-size: 1.125rem;
+                font-weight: 400;
+                text-transform: none;
+
+                @include break-sm() {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+    
+    .sort-btn-container {
+        position: absolute;
+        top: -8px;
+        left: 0;
+        width: 100%;
+        height: 16px;
+        padding-left: $padding-small;
+    }
+
+    .fa {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .fa-file {
+        position: relative;
+    }
+
+    .document-letter {
+        position: absolute;
+        bottom: -5px;
+        left: 4px;
+        color: $body-highlight-bg;
+        font-size: 0.5rem;
+    }
+
+    .sort-btn-group {
+        width: 38px;
+        height: 100%;
+        border-radius: 5px;
+        background-color: $brand-inverse;
+        font-size: 0.6rem;
+        line-height: 1rem;
+        text-align: center;
+    }
+
+    .sort-btn {
+        margin: 0 1px;
+    }
+
+    .table-header {
+        position: relative;
+    }
+
+    .table-row-highlight {
+        background-color: $gray-light;
+    }
+
+    .booking-list-filter {
+        padding-bottom: $padding-base;
+    }
+
+    .date-input {
+        label {
+            display: inline-block;
+            min-width: 70px;
+            line-height: 2.125rem;
+        }
+
+        .date-input-text-input {
+
+            .icon {
+                top: 0;
+                right: 0;
+                text-align: center;
+            }
+        }
+    }
+
+    .result-per-page {
+        display: block;
+        width: 40px;
+        height: 40px;
+        margin-right: 4px;
+        float: left;
+        background-color: $btn-default-bg;
+        color: $btn-default-color;
+        line-height: 40px;
+        text-align: center;
+
+        &.selected {
+            background-color: $brand-inverse;
+            color: $header-primary-inverse-color;
+        }
+
+        &:hover {
+            background-color: $brand-inverse;
+            color: $header-primary-inverse-color;
+            cursor: pointer;
+        }
+    }
+
+
+    @include break-sm-down() {
+        .reset-btn {
+            margin-top: $padding-small;
+        }
+
+        .mobile-table-cell {
+            font-size: 0.75rem !important;
+        }
+
+        .mobile-table-row {
+            margin-right: 0;
+            margin-left: 0;
+        }
+    }
+
+    .table {
+        .table-cell, .table-header {
+
+            @include break-sm() {
+                padding: 5px;
+                font-size: 0.75rem !important;
+            }
+
+            @include break-md() {
+                font-size: 0.875rem !important;
+            }
+
+            @include break-lg() {
+                font-size: $font-size-base !important;
+            }
+        }
+    }
+}
+
+.modal {
+    &.fade {
+        .container.request-cancellation {
+            transform: translate(0, -150%);
+            transition: transform 0.3s ease-out;
+        }
+   }
+    &.show {
+        .container.request-cancellation {
+            transform: translate(0, -50%);
+        }
+    }
+}
+
+.request-cancellation {
+    
+    .content {
+        max-height: 491px;
+
+        @media (min-height: 700px) {
+            max-height: 591px;
+        }
+        @media (min-height: 800px) {
+            max-height: 691px;
+        }
+        @media (min-height: 900px) {
+            max-height: 891px;
+        }
+
+        overflow: hidden;
+        overflow-y: auto;
+    }
+    .panel {
+        position: relative;
+
+        .panel-section {
+            width: 100%;
+        }
+
+        .panel-footer {
+            position: relative;
+            padding-bottom: $padding-base + $btn-height-md;
+        }
+    }
+    .btn-cancel,
+    .fa-times {
+        position: absolute;
+        right: $padding-base;
+    }
+
+    .fa-times {
+        top: $padding-base;
+    }
+
+    .btn-cancel {
+        bottom: $padding-base;
+        height: $btn-height-md;
+        &.disabled, &.disabled:hover {
+            border: 1px solid #9d9d9d;
+            background: hsla(0, 0%, 100%, 0);
+            color: #9d9d9d;
+        }
+    }
+
+    .component-name,
+    .component-fee {
+        width: 35%;
+        margin-top: 0;
+        float: left;
+    }
+
+    .content-row {
+        width: 100%;
+
+        .form-check {
+            margin: 0;
+        }
+
+        .form-check-input {
+            left: 325px;
+
+            @include break-sm-down() {
+                right: 0;
+                left: auto;
+            }
+        }
+    }
+    .email-details {
+        margin-top: $spacing-sm;
+        padding: 0;
+        clear: left;
+
+        .message {
+            margin-bottom: $spacing-sm;
+            &.warning {
+                color: $brand-danger;
+            }
+            &.success {
+                color: $brand-success;
+            }
+        }
+    }
+}

@@ -1,0 +1,69 @@
+﻿@import "../../variables";
+
+.section-adminlogin {
+	min-height: 374px;
+}
+
+.admin-login-container {
+    width: 600px;
+    padding: 20px;
+    background: #fff;
+
+    .text-input-container {
+        position: relative;
+        height: 36px;
+        border: solid 1px #ddd;
+
+        &.has-icon {
+            padding-left: 34px;
+        }
+
+        .icon {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 34px;
+            height: 34px;
+            border-right: 1px solid #ddd;
+            background: #eee;
+            line-height: 34px;
+            text-align: center;
+        }
+
+        .form-control {
+            height: 34px;
+            padding: 5px 10px;
+            border: none;
+        }
+    }
+
+    .warning {
+        position: relative;
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid $brand-warning;
+        color: $brand-warning;
+
+        .icon {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .warning-text {
+            display: inline-block;
+        }
+    }
+
+    .form-group {
+        margin-bottom: 10px;
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .btn {
+        float: right;
+    }
+}

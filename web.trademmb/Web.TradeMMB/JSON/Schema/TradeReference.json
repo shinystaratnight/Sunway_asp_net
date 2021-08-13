@@ -1,0 +1,36 @@
+﻿{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "title": "Trade Reference",
+    "description": "Widget to collect trade reference on a payment page.",
+    "properties": {
+        "Title": {
+            "default": "Your Reference",
+            "type": "string"
+        },
+        "Message": {
+            "default": "",
+            "description": "Messaged displayed below the title.",
+            "type": "string"
+        },
+        "Configuration": {
+            "type": "object",
+            "title": "Configuration",
+            "description": "Configuration options for the trade reference widget",
+            "properties": {
+                "ContainerStyle": {
+                    "type": "string",
+                    "format": "select",
+                    "default": "Highlight",
+                    "enum": [ "Default", "Highlight", "Alternate" ]
+                },
+                "ContainerPadding": {
+                    "type": "string",
+                    "format": "select",
+                    "default": "Medium",
+                    "enum": [ "None", "Small", "Medium", "Large" ]
+                }
+            }
+        }
+    }
+}

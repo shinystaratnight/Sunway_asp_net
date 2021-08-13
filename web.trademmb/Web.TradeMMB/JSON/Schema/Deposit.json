@@ -1,0 +1,47 @@
+﻿{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "title": "Deposit",
+    "description": "Widget that allows you to select a deposit payment",
+    "properties": {
+        "Title": {
+            "default": "Deposit",
+            "description": "Title displayed at the top of the widget.",
+            "type": "string"
+        },
+        "Message": {
+            "default": "Please select from the payment options below",
+            "description": "Messaged displayed below the title that explains what this widget is to the user.",
+            "type": "string"
+        },
+        "DepositLabel": {
+            "default": "Secure your booking with a deposit of",
+            "description": "Text displayed for the deposit option.",
+            "type": "string"
+        },
+        "FullAmountLabel": {
+            "default": "Pay the full amount of",
+            "description": "Text displayed for the full amount option",
+            "type": "string"
+        },
+        "Configuration": {
+            "type": "object",
+            "title": "Configuration",
+            "description": "Configuration options for the deposit widget",
+            "properties": {
+                "ContainerStyle": {
+                    "type": "string",
+                    "format": "select",
+                    "default": "Highlight",
+                    "enum": [ "Default", "Highlight", "Alternate" ]
+                },
+                "ContainerPadding": {
+                    "type": "string",
+                    "format": "select",
+                    "default": "Medium",
+                    "enum": [ "None", "Small", "Medium", "Large" ]
+                }
+            }
+        }
+    }
+}

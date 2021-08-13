@@ -1,0 +1,35 @@
+﻿{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Terms And Conditions",
+    "type": "object",
+    "description": "Widget to display terms and conditions on a payment page.",
+    "properties": {
+        "Title": {
+            "default": "Terms and Conditions",
+            "type": "string"
+        },
+        "Message": {
+            "default": "Tick this box to confirm all the information entered above is correct and that you have read and understand our booking.",
+            "type": "string"
+        },
+        "Configuration": {
+            "type": "object",
+            "title": "Configuration",
+            "description": "Configuration options for the Text Panel widget",
+            "properties": {
+                "ContainerStyle": {
+                    "type": "string",
+                    "format": "select",
+                    "default": "Highlight",
+                    "enum": [ "Default", "Highlight", "Alternate" ]
+                },
+                "ContainerPadding": {
+                    "type": "string",
+                    "format": "select",
+                    "default": "Medium",
+                    "enum": [ "None", "Small", "Medium", "Large" ]
+                }
+            }
+        }
+    }
+}

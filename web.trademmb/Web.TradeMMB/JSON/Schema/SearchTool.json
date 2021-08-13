@@ -1,0 +1,110 @@
+﻿{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "title": "Search Tool",
+    "description": "Widget that allows the user to set their search options and perform a search",
+    "properties": {
+        "Header": {
+            "type": "string",
+            "description": "Main Header that will appear at the top of the search tool (optional)"
+        },
+        "Placeholders": {
+            "type": "object",
+            "title": "Placeholders",
+            "description": "Default placeholder text that appears on the inputs before a value is selected.",
+            "properties": {
+                "Departure": {
+                    "type": "string",
+                    "default": "Departing from..."
+                },
+                "ArrivalSelect": {
+                    "type": "string",
+                    "default": "Going To..."
+                },
+                "ArrivalAutoSuggest": {
+                    "type": "string",
+                    "default": "Choose your City or Resort"
+                },
+                "ArrivalAirport": {
+                    "type": "string",
+                    "default": "Landing at..."
+                },
+                "Duration": {
+                    "type": "string",
+                    "default": "Nights..."
+                },
+                "Property": {
+                    "type": "string",
+                    "default": "Property"
+                }
+            }
+        },
+        "Buttons": {
+            "type": "object",
+            "title": "Buttons",
+            "description": "Set the text that appears on the buttons",
+            "properties": {
+                "Search": {
+                    "type": "string",
+                    "default": "Search"
+                },
+                "SearchAgain": {
+                    "type": "string",
+                    "default": "Search Again"
+                },
+                "ClearSearch": {
+                    "type": "string",
+                    "default": "Clear"
+                }
+            }
+        },
+        "Warnings": {
+            "type": "object",
+            "title": "Warnings",
+            "description": "Warning text that displays underneath the input if a value is not selected.",
+            "properties": {
+                "Departure": {
+                    "type": "string",
+                    "default": "Departure must be set"
+                },
+                "Arrival": {
+                    "type": "string",
+                    "default": "Arrival must be set"
+                },
+                "Duration": {
+                    "type": "string",
+                    "default": "Nights must be set"
+                }
+            }
+        },
+        "Configuration": {
+            "type": "object",
+            "title": "Configuration",
+            "description": "Configuration options for the search tool widget",
+            "properties": {
+                "ContainerStyle": {
+                    "type": "string",
+                    "format": "select",
+                    "default": "Default",
+                    "enum": [ "Default", "Highlight", "Alternate" ]
+                },
+                "ContainerPadding": {
+                    "type": "string",
+                    "format": "select",
+                    "default": "None",
+                    "description": "Sets the padding for the widget.",
+                    "enum": [ "None", "Small", "Medium", "Large" ]
+                },
+                "StartCollapsed": {
+                    "type": "boolean",
+                    "default": false 
+                },
+                "ClearSearchButton": {
+                    "type": "boolean",
+                    "description": "Sets whether the clear search button is displayed",
+                    "default":  false 
+                }
+            }
+        }
+    }
+}

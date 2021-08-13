@@ -1,0 +1,43 @@
+﻿{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Guest Details",
+    "type": "object",
+    "description": "Widget to display terms and conditions on a payment page.",
+    "properties": {
+        "Title": {
+            "default": "Guest Details",
+            "type": "string"
+        },
+        "FirstNameLabel": {
+            "default": "First Name",
+            "type": "string"
+        },
+        "LastNameLabel": {
+            "default": "Last Name",
+            "type": "string"
+        },
+        "RoomLabel": {
+            "default": "Room Number",
+            "type": "string"
+        },
+        "Configuration": {
+            "type": "object",
+            "title": "Configuration",
+            "description": "Configuration options for the Text Panel widget",
+            "properties": {
+                "ContainerStyle": {
+                    "type": "string",
+                    "format": "select",
+                    "default": "Highlight",
+                    "enum": [ "Default", "Highlight", "Alternate" ]
+                },
+                "ContainerPadding": {
+                    "type": "string",
+                    "format": "select",
+                    "default": "Medium",
+                    "enum": [ "None", "Small", "Medium", "Large" ]
+                }
+            }
+        }
+    }
+}

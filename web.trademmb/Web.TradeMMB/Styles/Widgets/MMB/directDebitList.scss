@@ -1,0 +1,11 @@
+﻿@import "../../mixins/media";
+@import "../../variables";
+
+.widget-directdebitlist {
+
+    .displayed {
+        padding-top: $widget-vertical-padding-sm;
+        padding-bottom: $widget-vertical-padding-sm;
+    }
+
+}
