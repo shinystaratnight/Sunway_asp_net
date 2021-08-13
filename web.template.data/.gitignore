@@ -1,0 +1,8 @@
+web.template.data.tests/bin/
+web.template.data/bin/
+web.template.data/obj/
+web.template.data.tests/obj/
+*.user
+bin/
+obj/
+packages/
