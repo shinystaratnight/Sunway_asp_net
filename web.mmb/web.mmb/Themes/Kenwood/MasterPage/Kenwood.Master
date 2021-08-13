@@ -1,0 +1,57 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Kenwood.Master.vb" Inherits="Web.MMB.KenwoodMaster" %>
+<%@ register assembly="IntuitiveWeb" namespace="Intuitive.Web" tagprefix="web" %>
+
+<!DOCTYPE html>
+<html>
+
+<web:head id="Head" runat="server"/>
+
+<body id="frm">
+
+    <web:trackingcontrol id="TopBody" runat="server"/>
+
+	<!-- Top Header -->
+	<web:container id="divTopHeader" cssclass="clear" runat="server"></web:container>
+
+	<web:container id="divSubTopHeader" cssclass="clear" runat="server"></web:container>
+
+	<web:container id="divAll" cssclass="clear container" runat="server">
+		
+		<web:container id="divMain" cssclass="clear" runat="server">
+
+			<!-- Header -->
+			<web:container id="divHeader" cssclass="clear" runat="server"></web:container>
+
+			<!-- Subheader -->
+			<web:container id="divSubHeader" cssclass="clear sixteen columns" runat="server"></web:container>
+
+			<!-- Sidebar -->
+			<web:container id="divSidebar" cssclass="clear four columns" runat="server"></web:container>
+            
+             <!-- Content -->
+		    <web:container id="divContent" cssclass="clear twelve columns" runat="server"></web:container>
+
+            <!-- SidebarRight -->
+			<web:container id="divSidebarRight" cssclass="clear four columns" runat="server"></web:container>
+
+            <!-- ContentLeft -->
+		    <web:container id="divContentLeft" cssclass="clear twelve columns" runat="server"></web:container>
+
+             <!-- Full Width Content -->
+		    <web:container id="divContentFull" cssclass="clear sixteen columns" runat="server"></web:container>		
+			
+		</web:container>
+			
+	</web:container>
+
+    <!-- Extended content for full screen width -->
+    <web:container id="divContentExtended" cssclass="clear" runat="server"></web:container>
+
+	<!-- Footer -->
+	<web:container id="divFooter" cssclass="clear" runat="server"></web:container>
+
+    <web:trackingcontrol id="BottomBody" runat="server"/>
+	
+</body>
+
+</html>

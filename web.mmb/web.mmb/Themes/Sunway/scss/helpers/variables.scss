@@ -1,0 +1,114 @@
+﻿//general
+$font_family_primary: verdana,arial, helvetica, sans-serif;
+$font_size_huge: 1.8rem;
+$font_size_xlarge: 1.25rem;
+$font_size_large: 1.125rem;
+$font_size_standard: 1rem;
+$font_size_medium: 0.9rem;
+$font_size_small: 0.8rem;
+$font_size_tiny: 0.5rem;
+
+$font_color_primary: #5e5e5e;
+$font_color_secondary: #fff;
+
+$background_primary: #f4f4f4;
+$background_secondary: #f4d03f;
+$background_tertiary: #f2f2f2;
+$section_background_primary: #fff;
+
+$information: #5bc0de;
+$success: #5cb85c;
+$warning: rgba(217, 83, 79, 0.4);
+
+//borders
+$border_color_primary: #ccc;
+$border_color_secondary: #ccc;
+$border_color_tertiary: #fff;
+$border_primary: 1px solid $border_color_primary;
+$border_secondary: 1px solid $border_color_secondary;
+$border_tertiary: 1px solid $border_color_tertiary;
+
+//button
+$button_font_size: $font_size_standard;
+$button_font_primary: helvetica;
+$button_color_primary: #c0392b;
+$button_background_primary: #f4d03f;
+$button_color_secondary: $font_color_secondary;
+$button_background_secondary: $button_background_primary;
+$button_border_radius: 0px;
+
+//datepicker
+$datepicker_head_background: #5e5e5e;
+$datepicker_head_color: #fff;
+$datepicker_head_size: 1rem;
+$datepicker_background: #fafafa;
+$datepicker_selected_background: #f4d03f;
+$datepicker_selected_color: #c0392b;
+$datepicker_font_size: 0.75rem;
+
+//icon
+$icon_color: #5e5e5e;
+
+//input
+$input_font_color_primary: #6d6868;
+
+//label
+$label_font_color_primary: $font_color_primary;
+
+//navigation
+$navigation_color_primary: rgba(76, 137, 195, 0.6);
+$navigation_color_secondary: rgba(76, 137, 195, 0.6);
+
+//select
+$select_background: $background_tertiary;
+$select_font_color_primary: $input_font_color_primary;
+
+//tabs
+$tab_background_primary: #97badb;
+$tab_background_selected: #fff;
+$tab_background_secondary: $tab_background_primary;
+
+//table
+$table_background: #2f7bc2;
+$table_th_background: #2f7bc2;
+$table_th_color: $font_color_secondary;
+$table_td_background: #f2f2f2;
+$table_td_color: $font_color_primary;
+
+//textbox
+$textbox_font_color_primary: $input_font_color_primary;
+
+//url
+$url_sprite: url(/themes/Sunway/images/sprite.png);
+$datepicker_icon_next: $url_sprite no-repeat -70px -310px;
+$datepicker_icon_prev: $url_sprite no-repeat -45px -310px;
+
+//header
+$title_header_size: 1.8rem;
+$title_header_color: $font_color_primary;
+$title_header_family: $font_family_primary;
+$title_header_background: none;
+
+$primary_header_size: 1.25rem;
+$primary_header_color: #feaa3a;
+$primary_header_family: $font_family_primary;
+$primary_header_background: #006f3b;
+
+$secondary_header_size: 1.125rem;
+$secondary_header_color: $font_color_secondary;
+$secondary_header_family: $font_family_primary;
+$secondary_header_background: #006f3b;
+
+$tertiary_header_size: 1.1rem;
+$tertiary_header_color: #feaa3a;
+$tertiary_header_family: $font_family_primary;
+$tertiary_header_background: #006f3b;
+
+$body_text_size: 0.9rem;
+$body_text_color: $font_color_primary;
+
+$body_text_sm_size: 0.8rem;
+$body_text_sm_color: $font_color_primary;
+
+$body_text_lg_size:1.2rem;
+$body_text_lg_color:$font_color_primary;

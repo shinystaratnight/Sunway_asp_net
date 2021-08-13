@@ -1,0 +1,5 @@
+﻿/* Safari only */
+
+/*#region Guest Details*/
+#divGuestDetails div#divBoxTitleCollapsible.boxTitle.collapsed a::after {top:-27px;}
+/*#endregion */

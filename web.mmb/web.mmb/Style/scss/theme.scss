@@ -1,0 +1,566 @@
+﻿#divBookingLogin {
+    background: $background_primary;
+    border: $border_secondary;
+
+    &.section {
+        background: $section_background_primary;
+        border: $border_tertiary;
+    }
+
+    h2 {
+        font-weight: 400;
+        color: $font_color_secondary;
+        background: $primary_header_background;
+    }
+
+    label, input {
+        font-size: $body_text_size;
+    }
+
+    div.calendar {
+        i {
+            cursor: pointer;
+            content: "\e046";
+            border-radius: 0;
+            color: $icon_color;
+        }
+    }
+}
+
+#divWaitMessage {
+    p {
+        text-align: center;
+    }
+}
+
+#divMyBookings {
+
+    #btnShowApis {
+        text-align: center;
+    }
+
+    h1 {
+        font-size: $title_header_size;
+    }
+
+    > a {
+        font-size: $body_text_size;
+    }
+
+    div {
+        &.booking {
+            background: $background_primary;
+            border: none;
+
+            h2 {
+                background: $primary_header_background;
+            }
+        }
+
+        &.LeadGuest {
+            font-size: $body_text_size;
+        }
+
+        &.section {
+            background: $section_background_primary;
+            border: $border_tertiary;
+        }
+
+        &.componentDetails {
+            .flight {
+                .outbound, .return {
+                    div {
+                        &.flightroute {
+                            p {
+                                line-height: normal;
+                            }
+                        }
+
+                        font-size: $body_text_size;
+
+                        &.small {
+                            font-size: $body_text_sm_size;
+                        }
+                    }
+                }
+            }
+
+            .transfer {
+                &.outbound, &.return {
+                    div {
+                        font-size: $body_text_size;
+
+                        &.small {
+                            font-size: $body_text_size;
+                        }
+                    }
+                }
+            }
+
+            .carhireDetails {
+                & + .carhireDetails {
+                    border-top: $border_secondary;
+                }
+
+                th {
+                    font-size: $body_text_size;
+                }
+
+                td, th {
+                    text-align: left;
+                }
+            }
+
+            .extraDetails {
+                & + .extraDetails {
+                    border-top: $border_secondary;
+                }
+
+                th {
+                    font-size: $body_text_size;
+                }
+
+                td, th {
+                    text-align: left;
+                }
+            }
+
+            &.adhoc {
+                ul li {
+                    font-size: $body_text_size;
+
+                    &.subdescription {
+                        line-height: normal;
+                    }
+                }
+            }
+        }
+
+        &.details {
+            h3 {
+                a {
+                    font-size: $body_text_size;
+                }
+            }
+
+            dt {
+                font-size: $body_text_size;
+            }
+
+            dd {
+                font-size: $body_text_size;
+
+                &.roomguests {
+                    font-size: $body_text_sm_size;
+                    line-height: normal;
+                }
+            }
+        }
+    }
+
+    p {
+        &.FlightGuests, &.baggage {
+            font-size: $body_text_size;
+            line-height: 1.1em;
+        }
+    }
+}
+
+div {
+    &.totalprice {
+        font-size: $body_text_lg_size;
+        text-align: right;
+
+        span {
+            &.left {
+                text-align: left;
+            }
+        }
+    }
+
+    &.csvTooltip {
+        font-size: $body_text_size;
+    }
+
+    &.result table.def {
+        td {
+            /*background-color: $secondary;*/
+            font-size: $body_text_size;
+
+            &:first-child {
+                border-left: 5px solid $border_color_secondary;
+            }
+
+            &.priceHotelOnly {
+                /*color: $secondary;*/
+                font-size: $body_text_size;
+
+                strong {
+                    font-size: $body_text_size;
+                }
+            }
+
+            &.book {
+                border-left: 5px solid $border_color_secondary;
+
+                input.button.primary {
+                    font-size: $body_text_size;
+                }
+            }
+
+            span {
+                &.specialoffer {
+                    text-decoration: underline;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+
+                &.moreRooms:after {
+                    background-color: $border_color_secondary;
+                    /*color: $secondary;*/
+                }
+            }
+
+            &.bookdiv.result table.def tr.FlightPlusHotel {
+                font-size: $body_text_size;
+            }
+        }
+
+        th {
+            font-size: $body_text_size;
+        }
+
+        tr {
+            td {
+                &.book {
+                    background-color: $background_tertiary;
+
+                    &.single {
+                        background-color: $background_secondary;
+                    }
+
+                    &.last {
+                        background-color: $background_secondary;
+                    }
+                }
+
+                &:last-child {
+                    border-right: 5px solid $border_color_primary;
+                }
+            }
+
+            &.selected {
+                td {
+                    border-top: 1px solid $border_color_primary;
+                    border-bottom: 1px solid $border_color_primary;
+
+                    &:first-child {
+                        border-left: 5px solid $border_color_primary;
+                    }
+
+                    &:last-child {
+                        border-right: 5px solid $border_color_primary;
+                        border-left: none;
+                    }
+
+                    &.book {
+                        border-left: 5px solid $border_color_primary;
+                        background-color: $border_color_primary;
+                    }
+                }
+
+                span.selected {
+                    /*color: $secondary;*/
+                    background-color: $background_secondary;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        + input.button {
+            font-size: $body_text_size;
+        }
+    }
+
+    &.modalpopup.hotel-popup {
+        position: absolute !important;
+    }
+}
+
+/*#region Amendment*/
+
+#divAmendment {
+    a.close {
+        border-radius: 0;
+    }
+}
+
+#divAmendmentInputs {
+    div {
+        &.left {
+            label {
+                line-height: 30px;
+            }
+        }
+
+        &.calendar {
+            i {
+                cursor: pointer;
+                content: "\e046";
+                border-radius: 0;
+                background: transparent;
+            }
+        }
+
+        &.authorise label {
+            line-height: $body_text_size;
+        }
+    }
+}
+
+#divAmendmentForm {
+
+    #divRequestSent {
+        font-size: $body_text_size;
+    }
+
+    #divRequestNotSent {
+        font-size: $body_text_size;
+    }
+
+    .confirm {
+        a {
+            text-align: center;
+        }
+    }
+}
+
+/*#endregion*/
+
+
+#btnPayBalanceShow {
+    font-size: $body_text_size;
+    text-align: center;
+}
+
+
+/*#region Payment Details*/
+
+#divPaymentDetailsForm {
+
+    .totals {
+        border-bottom: 1px solid $border_color_primary;
+    }
+
+    #divBillingAddress {
+        .selected {
+            .billing-address {
+                opacity: 1;
+            }
+        }
+
+        .billing-address {
+            opacity: 0.6;
+        }
+    }
+}
+
+#divPaymentDetails {
+
+    dl {
+        label {
+            line-height: normal;
+        }
+
+        select {
+            line-height: normal;
+        }
+    }
+
+    #divNewAddress {
+        p {
+            font-size: 0.75rem;
+        }
+    }
+
+    .paymentTotal {
+        span {
+            text-align: right;
+
+            &.payment {
+                text-align: left;
+            }
+        }
+    }
+
+    #spnCreditCardSurcharge {
+        font-size: 0.75rem;
+    }
+}
+
+/*#endregion*/
+
+/*#region APIS*/
+
+#divModalPopup .divModalPopup_close {
+    &:after {
+        font-size: 10px;
+    }
+}
+
+#divAPIS {
+    h2 {
+        color: $primary_header_color;
+
+        &.leftBorder {
+            background-color: $primary_header_background;
+            color: $secondary_header_color;
+            border: 1px solid $border_color_primary;
+            font-size: $body_text_size;
+        }
+    }
+
+    input {
+        border: $border_primary;
+    }
+
+    a:visited {
+        color: $button_color_primary;
+    }
+
+    #divAPISDateOfBirth i {
+        border-radius: 0;
+        background: transparent;
+    }
+
+    div.twos i {
+        border-radius: 0;
+    }
+}
+
+/*#endregion*/
+
+#divBookingLogin div.calendar i {
+    color: $icon_color;
+}
+
+#divAmendmentInputs div.calendar i {
+    color: $icon_color;
+}
+
+#divAmendmentForm div.confirm a {
+    background-color: $button_background_primary;
+}
+
+@media only screen and (max-width: 767px) {
+    #divBookingLogin {
+        label {
+            line-height: 1.5em;
+        }
+    }
+
+    #divMobileButton {
+        font-size: 30px;
+    }
+
+
+
+    #divMyBookings {
+
+        .buttom.primary {
+            text-align: center;
+        }
+
+        .LeadGuest {
+
+            dt {
+                font-weight: bold;
+            }
+
+            #aSendDocumentation {
+                text-align: center;
+            }
+        }
+
+
+        div {
+            &.componentDetails {
+                &.adhoc {
+                    .customDetails {
+                        td:first-child {
+                            font-weight: bold;
+                        }
+
+                        .custom {
+                            text-transform: capitalize;
+                        }
+                    }
+                }
+
+                .outbound, .return {
+                    div {
+                        > span:first-child {
+                            font-weight: bold;
+                            font-size: $body_text_size;
+                        }
+                    }
+                }
+
+                .extraDetails {
+                    th, td {
+                        line-height: normal;
+
+                        &.small {
+                            font-weight: bold;
+                        }
+                    }
+                }
+
+                .property {
+                    .details {
+                        dt {
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    #divBookingLogin {
+        label {
+            line-height: 42px;
+        }
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    #divMyBookings {
+        .totalprice {
+            > span {
+                text-align: right;
+            }
+        }
+    }
+}
+
+#divModalPopup.hotel-popup {
+    max-height: 60%;
+    overflow: scroll;
+}
+
+#divBookingLogin div.calendar i {
+    color: $icon_color;
+}
+
+#divAmendmentInputs div.calendar i {
+    color: $icon_color;
+}
+
+#divAmendmentForm div.confirm a {
+    background-color: $button_background_primary;
+}

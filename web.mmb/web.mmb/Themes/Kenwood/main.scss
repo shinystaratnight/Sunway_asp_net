@@ -1,0 +1,20 @@
+﻿//Vairables
+@import 'scss/helpers/variables.scss';
+
+// base
+@import '../../Style/scss/base/reset';
+@import '../../Style/scss/base/base';
+@import 'scss/grid';
+
+// theme
+@import '../../Style/scss/theme.scss';
+
+// widget library
+@import '../../Style/scss/widgetlibrary/MyBookingsLogin';
+@import '../../Style/scss/widgetlibrary/MyBookingsPayment';
+@import '../../Style/scss/widgetlibrary/MyBookings';
+@import '../../Style/scss/widgetlibrary/WaitMessage';
+@import '../../Style/scss/widgetlibrary/HeaderFooter';
+
+//widgets
+@import '../../Widgets/APIS/APIS.scss';

@@ -1,0 +1,22 @@
+{
+  "name": "webtemplate.prototype",
+  "version": "1.0.0",
+  "description": "prototype of the new web template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.9.0",
+    "eslint": "^2.9.0",
+    "eslint-config-airbnb": "^9.0.1",
+    "eslint-plugin-react": "^5.1.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-eslint": "^2.0.0",
+    "gulp-sass": "^3.2.1",
+    "gulp-sass-lint": "^1.1.1"
+  }
+}

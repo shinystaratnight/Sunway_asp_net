@@ -1,0 +1,43 @@
+﻿#divWaitMessage {
+    img {
+        width: 100%;
+
+        &.spinner {
+            display: block;
+            margin: 10px auto 0;
+            width: auto;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    div {
+        &.modalpopup.waitmessage {
+            width: 90%;
+            padding: 5%;
+
+            #divWaitMessage {
+                width: 95%;
+            }
+
+            img {
+                width: 100%;
+                margin: 0 auto;
+                display: block;
+
+                &.spinner {
+                    max-width: 32px;
+                }
+            }
+        }
+    }
+
+    #frm #divWaitMessage {
+        width: 100%;
+        box-sizing: border-box;
+
+        img.spinner {
+            width: 10%;
+        }
+    }
+}

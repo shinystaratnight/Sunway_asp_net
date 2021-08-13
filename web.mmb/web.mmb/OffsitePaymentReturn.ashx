@@ -1,0 +1,1 @@
+﻿<%@ WebHandler Language="VB" CodeBehind="OffsitePaymentReturn.ashx.vb" Class="Web.MMB.OffsitePaymentReturn" %>

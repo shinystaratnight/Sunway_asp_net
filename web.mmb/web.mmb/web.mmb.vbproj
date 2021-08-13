@@ -1,0 +1,576 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{940C870C-0208-4302-A223-17425E9EB985}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Web.MMB</RootNamespace>
+    <AssemblyName>Web.MMB</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <UseIISExpress>true</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+    <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Web.MMB.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Web.MMB.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Text</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>On</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="SharpZipLib">
+      <Version>1.1.0</Version>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>12.0.2</Version>
+    </PackageReference>
+    <Reference Include="ibex40, Version=4.7.2.3, Culture=neutral, PublicKeyToken=bd32d4f9ec352863, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Ibex\ibex40.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Intuitive.Web" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitignore" />
+    <Content Include="API\Log.ashx" />
+    <Content Include="Fonts\fontawesome-webfont.eot" />
+    <Content Include="Fonts\fontawesome-webfont.ttf" />
+    <Content Include="Fonts\fontawesome-webfont.woff" />
+    <Content Include="Fonts\fontawesome-webfont.woff2" />
+    <Content Include="Fonts\FontAwesome.otf" />
+    <Content Include="Ibex\xmlpdf.lic" />
+    <Content Include="OffsitePaymentReturn.ashx" />
+    <None Include="package.json" />
+    <Content Include="Fonts\fontawesome-webfont.svg" />
+    <Content Include="Ibex\ibex40.dll" />
+    <Content Include="Themes\Kenwood\Base.css" />
+    <Content Include="Themes\Kenwood\font-awesome.min.css" />
+    <Content Include="Themes\Kenwood\ie9.css" />
+    <Content Include="Themes\Kenwood\Images\bg-footer.jpg" />
+    <Content Include="Themes\Kenwood\Images\bg-home-btns.jpg" />
+    <Content Include="Themes\Kenwood\Images\bxslider\bx_loader.gif" />
+    <Content Include="Themes\Kenwood\Images\bxslider\controls.png" />
+    <Content Include="Themes\Kenwood\Images\favicon.ico" />
+    <Content Include="Themes\Kenwood\Images\favicons\aberdeen\favicon.ico" />
+    <Content Include="Themes\Kenwood\Images\favicons\adt\favicon.ico" />
+    <Content Include="Themes\Kenwood\Images\favicons\belfastcity\favicon.ico" />
+    <Content Include="Themes\Kenwood\Images\favicons\belfastint\favicon.ico" />
+    <Content Include="Themes\Kenwood\Images\favicons\birmingham\favicon.ico" />
+    <Content Include="Themes\Kenwood\Images\favicons\cardiff\favicon.ico" />
+    <Content Include="Themes\Kenwood\Images\favicons\derry\favicon.ico" />
+    <Content Include="Themes\Kenwood\Images\favicons\exeter\favicon.ico" />
+    <Content Include="Themes\Kenwood\Images\favicons\gatwick\favicon.ico" />
+    <Content Include="Themes\Kenwood\Images\favicons\gurnesy\favicon.ico" />
+    <Content Include="Themes\Kenwood\Images\favicons\jersey\favicon.ico" />
+    <Content Include="Themes\Kenwood\Images\favicons\leedsbradford\favicon.ico" />
+    <Content Include="Themes\Kenwood\Images\favicons\liverpool\favicon.ico" />
+    <Content Include="Themes\Kenwood\Images\favicons\luton\favicon.ico" />
+    <Content Include="Themes\Kenwood\Images\favicons\southampton\favicon.ico" />
+    <Content Include="Themes\Kenwood\Images\favicons\southend\favicon.ico" />
+    <Content Include="Themes\Kenwood\Images\flags\CS.png" />
+    <Content Include="Themes\Kenwood\Images\flags\DA.png" />
+    <Content Include="Themes\Kenwood\Images\flags\DE.png" />
+    <Content Include="Themes\Kenwood\Images\flags\EN.png" />
+    <Content Include="Themes\Kenwood\Images\flags\ES.png" />
+    <Content Include="Themes\Kenwood\Images\flags\FI.png" />
+    <Content Include="Themes\Kenwood\Images\flags\FR.png" />
+    <Content Include="Themes\Kenwood\Images\flags\HR.png" />
+    <Content Include="Themes\Kenwood\Images\flags\HU.png" />
+    <Content Include="Themes\Kenwood\Images\flags\IS.png" />
+    <Content Include="Themes\Kenwood\Images\flags\IT.png" />
+    <Content Include="Themes\Kenwood\Images\flags\NL.png" />
+    <Content Include="Themes\Kenwood\Images\flags\NO.png" />
+    <Content Include="Themes\Kenwood\Images\flags\PL.png" />
+    <Content Include="Themes\Kenwood\Images\flags\PT.png" />
+    <Content Include="Themes\Kenwood\Images\flags\RU.png" />
+    <Content Include="Themes\Kenwood\Images\flags\SQ.png" />
+    <Content Include="Themes\Kenwood\Images\flags\SV.png" />
+    <Content Include="Themes\Kenwood\Images\hotel-mini-slider\img-1.jpg" />
+    <Content Include="Themes\Kenwood\Images\hotel-mini-slider\img-2.jpg" />
+    <Content Include="Themes\Kenwood\Images\hotel-mini-slider\img-3.jpg" />
+    <Content Include="Themes\Kenwood\Images\image-grid\img-canada.jpg" />
+    <Content Include="Themes\Kenwood\Images\image-grid\img-caribbean.jpg" />
+    <Content Include="Themes\Kenwood\Images\image-grid\img-europe.jpg" />
+    <Content Include="Themes\Kenwood\Images\image-grid\img-far-east.jpg" />
+    <Content Include="Themes\Kenwood\Images\image-grid\img-florida.jpg" />
+    <Content Include="Themes\Kenwood\Images\image-grid\img-hawaii.jpg" />
+    <Content Include="Themes\Kenwood\Images\image-grid\img-indian-ocean.jpg" />
+    <Content Include="Themes\Kenwood\Images\image-grid\img-last-small.jpg" />
+    <Content Include="Themes\Kenwood\Images\image-grid\img-last.jpg" />
+    <Content Include="Themes\Kenwood\Images\image-grid\img-malaysia.jpg" />
+    <Content Include="Themes\Kenwood\Images\image-grid\img-middle-east.jpg" />
+    <Content Include="Themes\Kenwood\Images\image-grid\img-multi-centre.jpg" />
+    <Content Include="Themes\Kenwood\Images\image-grid\img-south-africa.jpg" />
+    <Content Include="Themes\Kenwood\Images\image-grid\img-thailand.jpg" />
+    <Content Include="Themes\Kenwood\Images\image-grid\img-usa.jpg" />
+    <Content Include="Themes\Kenwood\Images\image-grid\img-vietnam.jpg" />
+    <Content Include="Themes\Kenwood\Images\loader.gif" />
+    <Content Include="Themes\Kenwood\Images\loading.gif" />
+    <Content Include="Themes\Kenwood\Images\logo-mobile.png" />
+    <Content Include="Themes\Kenwood\Images\logo.png" />
+    <Content Include="Themes\Kenwood\Images\main-slider\image-1.jpg" />
+    <Content Include="Themes\Kenwood\Images\main-slider\image-2.jpg" />
+    <Content Include="Themes\Kenwood\Images\main-slider\image-3.jpg" />
+    <Content Include="Themes\Kenwood\Images\main-slider\image-4.jpg" />
+    <Content Include="Themes\Kenwood\Images\main-slider\img-2.jpg" />
+    <Content Include="Themes\Kenwood\Images\main-slider\slider-img-01.jpg" />
+    <Content Include="Themes\Kenwood\Images\main-slider\small.mp4" />
+    <Content Include="Themes\Kenwood\Images\special-offers-slider\img-1.jpg" />
+    <Content Include="Themes\Kenwood\Images\special-offers-slider\img-2.jpg" />
+    <Content Include="Themes\Kenwood\Images\special-offers-slider\img-3.jpg" />
+    <Content Include="Themes\Kenwood\Images\special-offers-slider\img-wide-1.jpg" />
+    <Content Include="Themes\Kenwood\Images\special-offers-slider\img-wide-2.jpg" />
+    <Content Include="Themes\Kenwood\Images\sprite.png" />
+    <Content Include="Themes\Kenwood\Images\sprite2.png" />
+    <Content Include="Themes\Kenwood\Images\_sprite.png" />
+    <Content Include="Themes\Kenwood\PageDefinition.xml" />
+    <Content Include="Themes\Kenwood\Safari.css" />
+    <Content Include="Themes\Kenwood\Widgets\Footer\Footer.xsl" />
+    <Content Include="Themes\Kenwood\Widgets\Header\Header.js" />
+    <Content Include="Themes\Kenwood\Widgets\Header\Header.xsl" />
+    <Content Include="Themes\Kenwood\Widgets\WaitMessage\Waitmessage.js" />
+    <Content Include="Themes\Kenwood\main.scss" />
+    <Content Include="Themes\Kenwood\MasterPage\Kenwood.Master" />
+    <Content Include="Themes\Kenwood\PSDs\sprite.psd" />
+    <Content Include="Style\scss\base\base.scss" />
+    <Content Include="Style\scss\base\reset.scss" />
+    <Content Include="Style\scss\helpers\mixins.scss" />
+    <Content Include="Themes\Kenwood\scss\helpers\variables.scss" />
+    <Content Include="Style\scss\widgetlibrary\HeaderFooter.scss" />
+    <Content Include="Style\scss\widgetlibrary\MyBookings.scss" />
+    <Content Include="Style\scss\widgetlibrary\MyBookingsLogin.scss" />
+    <Content Include="Style\scss\widgetlibrary\MyBookingsPayment.scss" />
+    <Content Include="Style\scss\widgetlibrary\WaitMessage.scss" />
+    <Content Include="Style\scss\theme.scss" />
+    <Content Include="Themes\Kenwood\theme.scss.rej" />
+    <Content Include="Themes\Sunway\theme.scss.rej" />
+    <Content Include="Themes\Sunway\SiteImportConfig.json" />
+    <Content Include="Themes\Sunway\scss\grid.scss" />
+    <Content Include="Themes\Kenwood\scss\grid.scss" />
+    <None Include="web.config">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Default.aspx" />
+    <Content Include="Fonts\glyphicons-regular.svg" />
+    <Content Include="Fonts\Lato-Bold.svg" />
+    <Content Include="Fonts\Lato-BoldItalic.svg" />
+    <Content Include="Fonts\Lato-Italic.svg" />
+    <Content Include="Fonts\Lato-Light.svg" />
+    <Content Include="Fonts\Lato.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="gulpfile.js" />
+    <Content Include="PageDefinition.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Script\AutoComplete.js" />
+    <Content Include="Script\datepicker.js" />
+    <Content Include="Script\placeholder.js" />
+    <Content Include="Script\GoogleMap.js" />
+    <Content Include="Script\json2.js" />
+    <Content Include="Style\glyphicons-halflings.png" />
+    <Content Include="Style\masterlayout.css" />
+    <Content Include="Themes\Sunway\Base.css" />
+    <Content Include="Themes\Sunway\font-awesome.min.css" />
+    <Content Include="Themes\Sunway\ie9.css" />
+    <Content Include="Themes\Sunway\Images\bg-footer.jpg" />
+    <Content Include="Themes\Sunway\Images\bg-home-btns.jpg" />
+    <Content Include="Themes\Sunway\Images\bxslider\bx_loader.gif" />
+    <Content Include="Themes\Sunway\Images\bxslider\controls.png" />
+    <Content Include="Themes\Sunway\Images\favicon.ico" />
+    <Content Include="Themes\Sunway\Images\favicons\aberdeen\favicon.ico" />
+    <Content Include="Themes\Sunway\Images\favicons\adt\favicon.ico" />
+    <Content Include="Themes\Sunway\Images\favicons\belfastcity\favicon.ico" />
+    <Content Include="Themes\Sunway\Images\favicons\belfastint\favicon.ico" />
+    <Content Include="Themes\Sunway\Images\favicons\birmingham\favicon.ico" />
+    <Content Include="Themes\Sunway\Images\favicons\cardiff\favicon.ico" />
+    <Content Include="Themes\Sunway\Images\favicons\derry\favicon.ico" />
+    <Content Include="Themes\Sunway\Images\favicons\exeter\favicon.ico" />
+    <Content Include="Themes\Sunway\Images\favicons\gatwick\favicon.ico" />
+    <Content Include="Themes\Sunway\Images\favicons\gurnesy\favicon.ico" />
+    <Content Include="Themes\Sunway\Images\favicons\jersey\favicon.ico" />
+    <Content Include="Themes\Sunway\Images\favicons\leedsbradford\favicon.ico" />
+    <Content Include="Themes\Sunway\Images\favicons\liverpool\favicon.ico" />
+    <Content Include="Themes\Sunway\Images\favicons\luton\favicon.ico" />
+    <Content Include="Themes\Sunway\Images\favicons\southampton\favicon.ico" />
+    <Content Include="Themes\Sunway\Images\favicons\southend\favicon.ico" />
+    <Content Include="Themes\Sunway\Images\flags\CS.png" />
+    <Content Include="Themes\Sunway\Images\flags\DA.png" />
+    <Content Include="Themes\Sunway\Images\flags\DE.png" />
+    <Content Include="Themes\Sunway\Images\flags\EN.png" />
+    <Content Include="Themes\Sunway\Images\flags\ES.png" />
+    <Content Include="Themes\Sunway\Images\flags\FI.png" />
+    <Content Include="Themes\Sunway\Images\flags\FR.png" />
+    <Content Include="Themes\Sunway\Images\flags\HR.png" />
+    <Content Include="Themes\Sunway\Images\flags\HU.png" />
+    <Content Include="Themes\Sunway\Images\flags\IS.png" />
+    <Content Include="Themes\Sunway\Images\flags\IT.png" />
+    <Content Include="Themes\Sunway\Images\flags\NL.png" />
+    <Content Include="Themes\Sunway\Images\flags\NO.png" />
+    <Content Include="Themes\Sunway\Images\flags\PL.png" />
+    <Content Include="Themes\Sunway\Images\flags\PT.png" />
+    <Content Include="Themes\Sunway\Images\flags\RU.png" />
+    <Content Include="Themes\Sunway\Images\flags\SQ.png" />
+    <Content Include="Themes\Sunway\Images\flags\SV.png" />
+    <Content Include="Themes\Sunway\Images\hotel-mini-slider\img-1.jpg" />
+    <Content Include="Themes\Sunway\Images\hotel-mini-slider\img-2.jpg" />
+    <Content Include="Themes\Sunway\Images\hotel-mini-slider\img-3.jpg" />
+    <Content Include="Themes\Sunway\Images\image-grid\img-canada.jpg" />
+    <Content Include="Themes\Sunway\Images\image-grid\img-caribbean.jpg" />
+    <Content Include="Themes\Sunway\Images\image-grid\img-europe.jpg" />
+    <Content Include="Themes\Sunway\Images\image-grid\img-far-east.jpg" />
+    <Content Include="Themes\Sunway\Images\image-grid\img-florida.jpg" />
+    <Content Include="Themes\Sunway\Images\image-grid\img-hawaii.jpg" />
+    <Content Include="Themes\Sunway\Images\image-grid\img-indian-ocean.jpg" />
+    <Content Include="Themes\Sunway\Images\image-grid\img-last-small.jpg" />
+    <Content Include="Themes\Sunway\Images\image-grid\img-last.jpg" />
+    <Content Include="Themes\Sunway\Images\image-grid\img-malaysia.jpg" />
+    <Content Include="Themes\Sunway\Images\image-grid\img-middle-east.jpg" />
+    <Content Include="Themes\Sunway\Images\image-grid\img-multi-centre.jpg" />
+    <Content Include="Themes\Sunway\Images\image-grid\img-south-africa.jpg" />
+    <Content Include="Themes\Sunway\Images\image-grid\img-thailand.jpg" />
+    <Content Include="Themes\Sunway\Images\image-grid\img-usa.jpg" />
+    <Content Include="Themes\Sunway\Images\image-grid\img-vietnam.jpg" />
+    <Content Include="Themes\Sunway\Images\loader.gif" />
+    <Content Include="Themes\Sunway\Images\loading.gif" />
+    <Content Include="Themes\Sunway\Images\logo-mobile.png" />
+    <Content Include="Themes\Sunway\Images\logo.png" />
+    <Content Include="Themes\Sunway\Images\main-slider\image-1.jpg" />
+    <Content Include="Themes\Sunway\Images\main-slider\image-2.jpg" />
+    <Content Include="Themes\Sunway\Images\main-slider\image-3.jpg" />
+    <Content Include="Themes\Sunway\Images\main-slider\image-4.jpg" />
+    <Content Include="Themes\Sunway\Images\main-slider\img-2.jpg" />
+    <Content Include="Themes\Sunway\Images\main-slider\slider-img-01.jpg" />
+    <Content Include="Themes\Sunway\Images\main-slider\small.mp4" />
+    <Content Include="Themes\Sunway\Images\special-offers-slider\img-1.jpg" />
+    <Content Include="Themes\Sunway\Images\special-offers-slider\img-2.jpg" />
+    <Content Include="Themes\Sunway\Images\special-offers-slider\img-3.jpg" />
+    <Content Include="Themes\Sunway\Images\special-offers-slider\img-wide-1.jpg" />
+    <Content Include="Themes\Sunway\Images\special-offers-slider\img-wide-2.jpg" />
+    <Content Include="Themes\Sunway\Images\sprite.png" />
+    <Content Include="Themes\Sunway\Images\sprite2.png" />
+    <Content Include="Themes\Sunway\Images\_sprite.png" />
+    <Content Include="Themes\Sunway\main.scss" />
+    <Content Include="Themes\Sunway\MasterPage\Sunway.Master" />
+    <Content Include="Themes\Sunway\PageDefinition.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Themes\Sunway\PSDs\sprite.psd" />
+    <Content Include="Themes\Sunway\Safari.css" />
+    <Content Include="Themes\Sunway\scss\helpers\variables.scss" />
+    <Content Include="Themes\Sunway\Widgets\SunwayFooter\Footer.xsl" />
+    <Content Include="Themes\Sunway\Widgets\SunwayHeader\Header.js" />
+    <Content Include="Themes\Sunway\Widgets\SunwayHeader\Header.xsl" />
+    <Content Include="Themes\Kenwood\Widgets\Footer\Footer.xsl" />
+    <Content Include="Themes\Kenwood\Widgets\Header\Header.js" />
+    <Content Include="Themes\Kenwood\Widgets\Header\Header.xsl" />
+    <Content Include="ThreeDSecure.aspx" />
+    <Content Include="Widgets\MyBookingsLogin\MyBookingsLogin.js" />
+    <Content Include="Widgets\MyBookingsLogin\MyBookingsLogin.xsl" />
+    <Content Include="Widgets\OffsitePaymentRedirect\OffsitePaymentRedirect.js" />
+    <Content Include="Widgets\MyBookings\AmmendmentEmail.xsl" />
+    <Content Include="Widgets\APIS\APIS.css" />
+    <Content Include="Widgets\APIS\APIS.js" />
+    <Content Include="Widgets\APIS\APIS.xsl">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Widgets\APIS\APISEmail.xsl">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Widgets\MyBookings\MyBookings.js" />
+    <Content Include="Widgets\MyBookings\MyBookings.xsl">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Widgets\MyBookings\MyBookingsPayment.ascx" />
+    <Content Include="webconfig.txt" />
+    <Content Include="WebsiteURLSettings.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="WidgetsLibrary\createfolder.css" />
+    <Content Include="Widgets\PaymentAuthHandler\PaymentAuthHandler.js" />
+    <Content Include="Widgets\PaymentAuthHandler\PaymentAuthHandler.xsl" />
+    <Content Include="Widgets\WaitMessage\WaitMessage.xsl">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XSL\Functions.xsl">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XSL\Markdown.xsl">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Widgets\APIS\APIS.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Booking.vb" />
+    <Compile Include="Classes\Config.vb" />
+    <Compile Include="Classes\MasterPage.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage\Default.Master.designer.vb">
+      <DependentUpon>Default.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage\Default.Master.vb">
+      <DependentUpon>Default.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="OffsitePaymentReturn.ashx.vb">
+      <DependentUpon>OffsitePaymentReturn.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Themes\Kenwood\MasterPage\Kenwood.Master.designer.vb">
+      <DependentUpon>Kenwood.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Themes\Kenwood\MasterPage\Kenwood.Master.vb">
+      <DependentUpon>Kenwood.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Themes\Kenwood\Widgets\Footer\Footer.vb" />
+    <Compile Include="Themes\Kenwood\Widgets\Header\Header.vb" />
+    <Compile Include="Themes\Sunway\MasterPage\Sunway.Master.designer.vb">
+      <DependentUpon>Sunway.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Themes\Sunway\MasterPage\Sunway.Master.vb">
+      <DependentUpon>Sunway.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Themes\Sunway\Widgets\SunwayFooter\Footer.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Themes\Sunway\Widgets\SunwayHeader\Header.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ThreeDSecure.aspx.designer.vb">
+      <DependentUpon>ThreeDSecure.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ThreeDSecure.aspx.vb">
+      <DependentUpon>ThreeDSecure.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Widgets\APIS\APIS.vb" />
+    <Compile Include="Widgets\MyBookings\MyBookings.vb" />
+    <Compile Include="Widgets\MyBookings\MyBookingsPayment.ascx.designer.vb">
+      <DependentUpon>MyBookingsPayment.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Widgets\MyBookings\MyBookingsPayment.ascx.vb">
+      <DependentUpon>MyBookingsPayment.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Widgets\OffsitePaymentRedirect\OffsitePaymentRedirect.vb" />
+    <Compile Include="Widgets\PaymentAuthHandler\PaymentAuthHandler.vb" />
+    <Compile Include="Widgets\RealexPaymentAuthHandler\RealexPaymentAuthHandler.vb" />
+    <Compile Include="Widgets\Warning\Warning.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MasterPage\Default.Master" />
+    <None Include="Fonts\glyphicons-regular.eot" />
+    <None Include="Fonts\glyphicons-regular.otf" />
+    <None Include="Fonts\glyphicons-regular.ttf" />
+    <None Include="Fonts\glyphicons-regular.woff" />
+    <None Include="Fonts\Lato-Bold.eot" />
+    <None Include="Fonts\Lato-Bold.ttf" />
+    <None Include="Fonts\Lato-Bold.woff" />
+    <None Include="Fonts\Lato-BoldItalic.eot" />
+    <None Include="Fonts\Lato-BoldItalic.ttf" />
+    <None Include="Fonts\Lato-BoldItalic.woff" />
+    <None Include="Fonts\Lato-Italic.eot" />
+    <None Include="Fonts\Lato-Italic.ttf" />
+    <None Include="Fonts\Lato-Italic.woff" />
+    <None Include="Fonts\Lato-Light.eot" />
+    <None Include="Fonts\Lato-Light.ttf" />
+    <None Include="Fonts\Lato-Light.woff" />
+    <None Include="Fonts\Lato.eot" />
+    <None Include="Fonts\Lato.ttf" />
+    <None Include="Fonts\Lato.woff" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Script\LanguageScripts\" />
+    <Folder Include="Services\" />
+    <Folder Include="Themes\Kenwood\Images\favicons\manchester\" />
+    <Folder Include="Themes\Sunway\Images\favicons\manchester\" />
+    <Folder Include="Themes\Sunway\Widgets\WaitMessage\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Dependencies\iVectorConnectInterface\iVectorConnectInterface.vbproj">
+      <Project>{783382a3-1b3e-4958-81bf-1337f446b2ae}</Project>
+      <Name>iVectorConnectInterface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Dependencies\intuitiveweb\IntuitiveWeb.vbproj">
+      <Project>{3781092c-1d88-4563-bb7b-7f9518dc8fd9}</Project>
+      <Name>IntuitiveWeb</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Dependencies\intuitive\Intuitive\Intuitive.vbproj">
+      <Project>{67d15438-75e8-43e7-b3aa-82ecb52bcddf}</Project>
+      <Name>Intuitive</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Dependencies\iVectorWidgets\iVectorWidgets.vbproj">
+      <Project>{4609f6d8-ac64-4571-bad9-8553755ece71}</Project>
+      <Name>iVectorWidgets</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>56177</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:8086</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

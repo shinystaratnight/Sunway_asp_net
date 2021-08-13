@@ -1,0 +1,913 @@
+﻿#divMyBookings {
+    #divShowApis {
+        overflow: auto;
+    }
+
+    #btnShowApis {
+        float: right;
+        clear: both;
+        width: auto;
+    }
+
+    h1 {
+        margin: 20px 0;
+    }
+
+    > a {
+        float: right;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    div {
+
+        &.totalprice {
+            padding: 10px 0;
+
+
+            > span {
+                min-width: 100px;
+                display: inline-block;
+
+                &.left {
+                    display: inline-block;
+                    float: left;
+                    margin-right: 20px;
+                }
+            }
+        }
+
+        &.modalpopup.action {
+            max-width: 940px;
+        }
+
+        &.optionalParagraph {
+            margin-bottom: 25px;
+            margin-top: 25px;
+        }
+
+        &.section {
+            margin-bottom: 20px;
+            text-transform: capitalize;
+        }
+
+        &.componentDetails {
+            padding: 20px;
+        }
+
+        .property {
+
+            & + .property {
+                margin-top: 20px;
+            }
+
+            .mainImage {
+                width: 25%;
+                float: left;
+                clear: left;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .details {
+                width: 70%;
+                float: right;
+
+                h3 {
+                    float: left;
+                    width: auto;
+                    padding-right: 15px;
+                }
+
+                span.rating {
+                    float: left;
+                }
+
+
+                dl {
+                    width: 100%;
+                    margin-top: 10px;
+                }
+
+                dt {
+                    width: 35%;
+                    float: left;
+                    margin-top: 10px;
+                    clear: left;
+                }
+
+                dd {
+                    width: 65%;
+                    float: left;
+                    margin-top: 10px;
+
+                    &.multi {
+                        padding-left: 35%;
+                    }
+
+                    &.roomguests {
+                        margin-top: 2px;
+                    }
+                }
+            }
+
+            .sidebarBox {
+                float: right;
+                padding: 0;
+                margin-bottom: 0;
+                text-align: right;
+            }
+        }
+
+        .flight {
+            margin-bottom: 20px;
+
+            & + .flight {
+                padding-top: 20px;
+                border-top: $border_secondary;
+            }
+        }
+
+        .outbound, .return {
+            margin-bottom: 10px;
+            overflow: auto;
+
+            h3 {
+                margin-bottom: 10px;
+            }
+
+            div {
+                margin-bottom: 5px;
+                float: left;
+                width: 50%;
+
+                &.flightroute {
+                    p {
+                        & + p {
+                            margin: 0;
+                        }
+                    }
+
+                    clear: left;
+                }
+
+                &.small {
+                    width: 25%;
+                }
+            }
+        }
+
+        .carhireDetails {
+            table {
+                width: 100%;
+            }
+
+            & + .carhireDetails {
+                margin-top: 20px;
+                padding-top: 20px;
+            }
+
+            .top th {
+                padding-top: 0;
+            }
+
+            .bottom th, .bottom td {
+                padding-bottom: 0;
+            }
+
+            td, th {
+                padding: 5px;
+                min-width: 150px;
+
+                &.left {
+                    padding-left: 0;
+                }
+            }
+        }
+
+        .extraDetails {
+            width: 100%;
+
+            & + .extraDetails {
+                margin-top: 20px;
+                padding-top: 20px;
+            }
+
+            .top th {
+                padding-top: 0;
+            }
+
+            .bottom th, .bottom td {
+                padding-bottom: 0;
+            }
+
+            td, th {
+                padding: 5px;
+                min-width: 150px;
+
+                &.small {
+                    min-width: 0;
+                }
+
+                &.left {
+                    padding-left: 0;
+                }                
+            }
+
+            tr.extra, tr.expires {
+                & + .extra {
+                    th, td {
+                        padding-top: 15px;
+                        }
+                    }
+                }
+        }
+
+        .adhoc {
+            > .left, > .right {
+                width: 50%;
+            }
+
+            > .left {
+                float: left;
+            }
+
+            > .right {
+                float: right;
+            }
+
+            ul li {
+                padding: 5px 0;
+            }
+
+            .date {
+                margin-bottom: 10px;
+            }
+
+            .customDetails {
+                .custom {
+                    td {
+                        padding: 5px 0;
+
+                        &:first-child {
+                            padding-right: 20px;
+                        }
+                    }
+
+                    &.top {
+                        padding-top: 0;
+                    }
+
+                    &.bottom {
+                        padding-bottom: 0;
+                    }
+                }
+            }
+        }
+
+
+        &.LeadGuest {
+            overflow: hidden;
+            margin-top: 0;
+            padding: 20px;
+
+            dl {
+                dt {
+                    margin-bottom: 10px;
+                    float: left;
+                    width: 30%;
+
+                    &:last-of-type {
+                        margin-bottom: 2px;
+                    }
+
+                    &.address {
+                        margin-bottom: 2px;
+                    }
+                }
+
+                dd {
+                    margin-bottom: 10px;
+                    float: left;
+                    width: 70%;
+
+                    &:last-of-type {
+                        margin-bottom: 2px;
+                    }
+
+                    &.address {
+                        margin-bottom: 2px;
+                    }
+                }
+            }
+
+            .button {
+                width: auto;
+                float: right;
+                margin-top: 10px;
+            }
+        }
+
+        &.booking {
+            float: left;
+            min-width: 100%;
+            position: relative;
+
+            h2 {
+                padding: 10px;
+            }
+        }
+
+        &.paymentInformation {
+            float: right;
+            padding-right: 20px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .transfer {
+        &.outbound, &.return {
+            margin-bottom: 15px;
+            overflow: auto;
+
+            h3 {
+                margin-bottom: 10px;
+            }
+
+            div {
+                margin-bottom: 5px;
+                float: left;
+                width: 50%;
+
+                &.vehicle {
+                    width: 40%;
+                }
+
+                &.passengers {
+                    width: 100%;
+                    margin-top: 5px;
+                }
+
+                &.small {
+                    width: 25%;
+
+                    &:last-child {
+                        width: 35%;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .amendBooking {
+        display: inline;
+        position: absolute;
+        bottom: 30px;
+    }
+
+    .actionLinks {
+        display: inline;
+    }
+
+    .button.primary {
+        font-size: 1rem;
+    }
+}
+
+#divEmailDocuments {
+    min-width: 300px;
+
+    #divEmailWaitMessage {
+        margin-top: 10px;
+
+        p {
+            padding-left: 10px;
+            padding-top: 10px;
+        }
+
+        img.spinner {
+            float: left;
+            margin-right: 10px;
+        }
+    }
+
+    #divEmailSuccess {
+        margin-top: 10px;
+        float: left;
+
+        p {
+            padding-left: 10px;
+        }
+    }
+}
+
+#divAmendment {
+    padding: 10px;
+
+    h1 {
+        margin-bottom: 15px;
+        display: block;
+        width: 87%;
+    }
+
+    a.close {
+        padding: 0 12px 0 0;
+        display: block;
+    }
+
+    div.confirm a {
+        float: right;
+        width: 20%;
+        margin-top: 10px;
+    }
+
+    #divAmendRequestWaitMessage {
+        img {
+            margin: 10px 0;
+        }
+
+        #divRequestSent {
+            margin: 10px 0;
+        }
+    }
+}
+
+#divAmendmentInputs {
+    margin-top: 20px;
+
+    div {
+        &.left {
+            div {
+                margin-bottom: 10px;
+                float: left;
+                padding-right: 0;
+                width: 33%;
+
+                input {
+                    width: 100%;
+                    box-sizing: border-box;
+                    height: 44px;
+                }
+
+                &.bottom {
+                    clear: left;
+                    width: 100%;
+                }
+            }
+
+            .divhotelname {
+                display: block;
+                width: 100%;
+            }
+
+            label {
+                float: left;
+                margin-right: 1%;
+                height: 30px;
+                width: 15%;
+
+                &.checkout {
+                    margin-left: 2%;
+                }
+
+                &.destination, &.hotelname {
+                    clear: left;
+                }
+            }
+        }
+
+        &.calendar {
+            i {
+            }
+        }
+
+        textarea {
+            height: 75px;
+            width: 40%;
+        }
+
+        &.bottom {
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+#divPaymentDetails {
+    &.MMB {
+        a {
+            &.Close {
+                float: right;
+                padding: 6px 10px;
+            }
+
+            &#btnPayBalance {
+                float: right;
+                width: 30%;
+                margin-top: -10px;
+                margin-bottom: 0;
+            }
+        }
+
+        div {
+            &.boxTitle h2 {
+                padding: 0;
+                margin-bottom: 15px;
+                display: inline-block;
+            }
+
+            &.paymentTotal h3 {
+                float: left;
+                width: 60%;
+
+                span {
+                    display: inline-block;
+                    width: 20%;
+
+                    &:first-child {
+                        width: 55%;
+                    }
+                }
+            }
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        dt {
+            float: left;
+            margin-bottom: 10px;
+            width: 30%;
+        }
+
+        dd {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        dl dt label span.applicable {
+            display: inline;
+        }
+    }
+
+    .paymentAmount {
+        border: 1px solid #b3b3b3;
+        position: relative;
+
+        #spnAmount {
+            color: #6d6868;
+            font-size: 0.9rem;
+            height: 32px;
+            position: absolute;
+            top: 10px;
+            padding-left: 10px;
+        }
+
+        #txtAmount {
+            border: none;
+            padding-left: 19px;
+        }
+    }
+}
+
+#divAPIS {
+
+    #divAPISDateOfBirth i {
+        top: 0;
+        right: 0;
+    }
+
+    div.twos i {
+        top: 0;
+    }
+}
+
+img.ui-datepicker-trigger {
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 1px;
+    right: 34px;
+}
+
+#btnPayBalanceShow {
+    float: right;
+    width: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#divModalPopup.hotel-popup {
+    max-height: 60%;
+    overflow: scroll;
+}
+
+@media(min-width: 768px) and (max-width: 959px) {
+    #divMyBookings {
+    }
+
+    div.modalpopup.action {
+        max-width: 767px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #divMyBookings {
+        h1 {
+            text-align: center;
+        }
+
+        > a {
+            width: 100%;
+            margin-bottom: 20px;
+            margin-top: -15px;
+        }
+
+        .button.primary {
+            width: 100% !important;
+        }
+
+        div {
+
+            &.LeadGuest {
+                padding: 15px;
+
+                dl {
+                    dt, dd {
+                        width: 100%;
+                        clear: left;
+
+                        &.blank {
+                            display: none;
+                        }
+                    }
+
+                    dt {
+                        margin-bottom: 2px;
+                    }
+                }
+
+                #aSendDocumentation {
+                    margin-top: 15px;
+                }
+            }
+
+            &.property {
+                .mainImage {
+                    display: none;
+                }
+
+                .details {
+                    margin: 0;
+                    width: 100%;
+
+                    h3 {
+                        width: 100%;
+                        padding: 0;
+                    }
+
+                    .rating {
+                        clear: left;
+                        margin-top: 10px;
+                    }
+
+                    .sidebarBox {
+                        margin-top: 10px;
+                    }
+
+                    dl {
+                        width: 100%;
+                    }
+
+                    dt {
+                        width: 100%;
+
+                        &.blank {
+                            display: none;
+                        }
+                    }
+
+                    dd {
+                        width: 100%;
+                        clear: left;
+
+                        &.roomguests {
+                            margin-top: 5px;
+                        }
+
+                        &.multi {
+                            padding-left: 0;
+                        }
+                    }
+                }
+            }
+
+            .flight {
+                .outbound, .return {
+                    margin-bottom: 20px;
+
+                    h5 {
+                        width: 100%;
+                    }
+
+                    dl {
+                        width: 100%;
+                    }
+
+                    div {
+                        width: 100%;
+
+                        + .flightroute {
+                            margin-top: 10px;
+                        }
+
+                        &.small {
+                            width: 100%;
+                            min-width: 160px;
+                        }
+
+                        span {
+                            width: 100%;
+                            display: inline-block;
+                            margin: 5px 0;
+                        }
+                    }
+                }
+            }
+
+            &.transfer {
+                &.outbound, &.return {
+                    dl {
+                        width: 100%;
+                    }
+
+                    div {
+                        width: 100%;
+
+                        &.small {
+                            min-width: 160px;
+                            width: 100%;
+                        }
+
+                        span {
+                            width: 100%;
+                            display: inline-block;
+                            margin: 5px 0;
+                        }
+
+                        &.pax {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+
+            &.componentDetails {
+                padding: 15px;
+
+                .carhireDetails {
+                    .top {
+                        display: none !important;
+                    }
+
+                    .bottom {
+                        padding-bottom: 5px;
+                    }
+
+                    td, th {
+                        min-width: 0;
+                        float: left;
+                        clear: left;
+                        padding-left: 0;
+                    }
+                }
+
+                .extraDetails {
+
+                    .top {
+                        display: none !important;
+                    }
+
+                    .bottom {
+                        td, th {
+                            padding-bottom: 5px;
+                        }
+                    }
+
+                    .extra + .extra, .expires + .extra {
+                        th {
+                            padding-top: 20px;
+                        }
+                    }
+
+                    td, th {
+                        min-width: 0;
+                        float: left;
+                        clear: left;
+                        padding: 0 0 5px;
+
+                        &.blank {
+                            display: none;
+                        }
+                    }
+                }
+
+                &.adhoc {
+                    > .left, > .right {
+                        width: 100%;
+                        float: left;
+                    }
+
+                    .customDetails {
+                        margin-top: 10px;
+
+                        table {
+                            width: 100%;
+                        }
+
+                        .custom {
+                            td {
+                                float: left;
+                                clear: left;
+                                line-height: normal;
+                                padding: 0 0 5px;
+
+                                &:first-child {
+                                    padding-right: 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .amendBooking {
+                position: relative;
+                bottom:0;
+            }
+
+            &.paymentInformation {
+                width: 100%;
+                padding: 0 15px;
+                box-sizing: border-box;
+            }
+
+            &.totalprice {
+                margin-left: 0;
+                width: 100%;
+            }
+        }
+
+    #divAmendment {
+
+        h1 {
+            display: block;
+            width: 100%;
+            padding-right: 35px;
+            box-sizing: border-box;
+        }
+    }
+
+    #divAmendmentInputs div.left {
+        div, label, textarea {
+            width: 100%;
+        }
+
+        input {
+            width: 39%;
+        }
+
+        textarea {
+            box-sizing: border-box;
+            height: auto;
+        }
+    }
+
+    #divAmendmentForm div.confirm a {
+        width: auto;
+    }
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    #divMyBookings {
+        #btnShowApis {
+            width: 100%;
+        }
+
+        .totalprice {
+            > span {
+                width: 100%;
+
+                &.left {
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+}

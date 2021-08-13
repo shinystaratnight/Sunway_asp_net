@@ -1,0 +1,1 @@
+var CancellationCharges=new function(){this.Validate=function(e){int.f.RemoveClass(int.f.GetObject("lblCancellationCharges"),"error"),int.f.SetClassIf("lblCancellationCharges","error",0==int.cb.Checked("chkAcceptCancellation")),null!=e&&void 0!=e&&e()}};

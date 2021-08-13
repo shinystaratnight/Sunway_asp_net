@@ -1,0 +1,1 @@
+var Deeplink=Deeplink||{};Deeplink.Search=function(){int.ff.Call("=iVectorWidgets.Deeplink.Search",function(e){Deeplink.SearchComplete(e)})},Deeplink.SearchComplete=function(e){var i=JSON.parse(e);-1==i.RedirectURL.indexOf("Invalid")?web.Window.Redirect(i.RedirectURL):web.InfoBox.Show(i.InvalidMessage,"warning")};

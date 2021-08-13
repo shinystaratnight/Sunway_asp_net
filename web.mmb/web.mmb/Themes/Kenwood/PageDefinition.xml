@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Pages>
+	<!-- common elements (header and footer) -->
+	<CommonElements>
+		<Widgets>
+      
+      <Widget>
+        <Name>Header</Name>
+        <Type>Custom</Type>
+        <Section>TopHeader</Section>
+        <FromLibrary>false</FromLibrary>
+        <ThemeSpecific>true</ThemeSpecific>
+      </Widget>
+
+      <Widget>
+        <Name>Footer</Name>
+        <Type>Custom</Type>
+        <Section>Footer</Section>
+        <FromLibrary>false</FromLibrary>
+        <ThemeSpecific>true</ThemeSpecific>
+      </Widget>
+      
+			<Widget>
+				<Name>WaitMessage</Name>
+				<Section>ContentFull</Section>
+				<FromLibrary>true</FromLibrary>
+				<ThemeSpecific>true</ThemeSpecific>
+				<Type>Custom</Type>
+				<Settings>
+					<WidgetSetting><Key>ObjectType</Key><Value>WaitMessage</Value></WidgetSetting>
+					<WidgetSetting><Key>TemplateOverride</Key><Value>/Widgets/WaitMessage/WaitMessage.xsl</Value></WidgetSetting>
+				</Settings>
+			</Widget>
+      
+			<Widget>
+				<Name>Warning</Name>
+				<Type>Custom</Type>
+				<Section>TopHeader</Section>
+				<FromLibrary>false</FromLibrary>
+        <ThemeSpecific>true</ThemeSpecific>
+				<ParentWidget>Warning</ParentWidget>
+				<Settings>
+					<WidgetSetting><Key>ObjectType</Key><Value>WarningMessage</Value></WidgetSetting>
+				</Settings>
+			</Widget>
+		</Widgets>
+	</CommonElements>
+  
+	<!--Login-->
+	<PageDefinition>
+		<PageName>Login</PageName>
+		<URL>/booking-login</URL>
+		<Head>
+			<Title>Login</Title>
+		</Head>
+		<Widgets>
+			<Widget>
+				<Name>MyBookingsLogin</Name>
+				<Section>ContentFull</Section>
+				<FromLibrary>true</FromLibrary>
+				<Type>Custom</Type>
+				<ThemeSpecific>true</ThemeSpecific>
+				<Settings>
+					<WidgetSetting><Key>LoginType</Key><Value>BookingDetails</Value></WidgetSetting>
+					<WidgetSetting><Key>ClearBasket</Key><Value>true</Value></WidgetSetting>
+				</Settings>
+			</Widget>
+		</Widgets>
+	</PageDefinition>
+  
+	<!--My Bookings-->
+	<PageDefinition>
+		<PageName>MyBookings</PageName>
+		<URL>/my-bookings</URL>
+		<Head>
+			<Title>My Bookings</Title>
+		</Head>
+		<Widgets>
+      
+			<Widget>
+				<Name>MyBookings</Name>
+				<Section>ContentFull</Section>
+				<FromLibrary>false</FromLibrary>
+				<Type>Custom</Type>
+				<ThemeSpecific>true</ThemeSpecific>
+				<Settings>
+					<WidgetSetting><Key>AmendmentEmailAddress</Key><Value>niranjan@kenwoodtravel.co.uk</Value></WidgetSetting>					
+					<WidgetSetting><Key>CSSClassOverride</Key><Value>box</Value></WidgetSetting>
+					<WidgetSetting><Key>OverrideXSL</Key><Value>Widgets/MyBookings/MyBookings.xsl</Value></WidgetSetting>
+					<WidgetSetting><Key>LogoutRedirectURL</Key><Value>/booking-login</Value></WidgetSetting>		
+					<WidgetSetting><Key>DocumentName</Key><Value>Confirmation Only ( MMB Only )</Value></WidgetSetting>	
+				</Settings>
+			</Widget>
+      
+			<Widget>
+				<Name>APIS</Name>
+				<Section>ContentFull</Section>
+				<FromLibrary>false</FromLibrary>
+				<Type>Custom</Type>
+				<Settings>
+					<WidgetSetting><Key>EmailAddress</Key><Value>niranjan@kenwoodtravel.co.uk</Value></WidgetSetting>					
+				</Settings>
+			</Widget>
+      
+			<Widget>
+				<Name>OffsitePaymentRedirect</Name>
+				<Section>ContentFull</Section>
+				<FromLibrary>false</FromLibrary>
+				<Type>Custom</Type>
+				<ThemeSpecific>true</ThemeSpecific>
+				<Settings>
+					<WidgetSetting><Key>SuccessURL</Key><Value>/my-bookings</Value></WidgetSetting>
+					<WidgetSetting><Key>FailURL</Key><Value>/my-bookings</Value></WidgetSetting>
+				</Settings>
+			</Widget>
+		</Widgets>
+	</PageDefinition>
+
+  <PageDefinition>
+    <PageName>Login</PageName>
+    <URL>/booking-login</URL>
+    <Head>
+      <Title>Login</Title>
+    </Head>
+    <Widgets>
+      <Widget>
+        <Name>MyBookingsLogin</Name>
+        <Section>ContentFull</Section>
+        <FromLibrary>true</FromLibrary>
+        <Type>Custom</Type>
+        <ThemeSpecific>true</ThemeSpecific>
+        <Settings>
+          <WidgetSetting>
+            <Key>LoginType</Key>
+            <Value>BookingDetails</Value>
+          </WidgetSetting>
+          <WidgetSetting>
+            <Key>ClearBasket</Key>
+            <Value>true</Value>
+          </WidgetSetting>
+        </Settings>
+      </Widget>
+    </Widgets>
+  </PageDefinition>
+  
+	<!-- error -->
+	<PageDefinition>
+		<PageName>paymentAuthHandler</PageName>
+		<URL>/paymentauthorisation</URL>
+		<Head>
+			<Title>paymentauthorisation</Title>
+		</Head>
+		<Widgets>
+
+      <Widget>
+        <Name>PaymentAuthHandler</Name>
+        <Section>ContentFull</Section>
+        <FromLibrary>false</FromLibrary>
+        <Type>Custom</Type>
+      </Widget>
+		</Widgets>
+	</PageDefinition>
+
+  <!-- theme test-->
+  <PageDefinition>
+    <PageName>Theme Designer</PageName>
+    <URL>/theme</URL>
+    <Head>
+      <Title>Theme Designer</Title>
+    </Head>
+    <Widgets>
+      <Widget>
+        <Name>Theme_Subheader</Name>
+        <Section>Subheader</Section>
+        <FromLibrary>true</FromLibrary>
+        <Type>HTML</Type>
+      </Widget>
+      
+      <Widget>
+        <Name>Theme_Sidebar_RWD</Name>
+        <Section>Sidebar</Section>
+        <FromLibrary>true</FromLibrary>
+        <Type>HTML</Type>
+      </Widget>
+      
+      <Widget>
+        <Name>Theme_Content_RWD</Name>
+        <Section>Main</Section>
+        <FromLibrary>true</FromLibrary>
+        <Type>HTML</Type>
+      </Widget>
+    </Widgets>
+  </PageDefinition>
+</Pages>

@@ -1,0 +1,52 @@
+﻿{
+  "Websites": [
+    {
+      "Url": "http://localhost:8086/",
+      "ApiBaseUrl": "http://localhost:64351",
+      "Css": [
+        "http://localhost:64351/assets/sunwayb2c/css/export/main.css"
+      ],
+      "Scripts": [
+        "http://localhost:64351/assets/sunwayb2c/js/export/manifest.js",
+        "http://localhost:64351/assets/sunwayb2c/js/export/vendor.js",
+        "http://localhost:64351/assets/sunwayb2c/js/export/main.js"
+      ]
+    },
+    {
+      "Url": "https://sunwaymmbtest.ivector.co.uk/",
+      "ApiBaseUrl": "http://sunwayb2ctest.ivector.co.uk",
+      "Css": [
+        "https://sunwayb2ctest.ivector.co.uk/assets/sunwayb2c/css/export/main.css"
+      ],
+      "Scripts": [
+        "https://sunwayb2ctest.ivector.co.uk/assets/sunwayb2c/js/export/manifest.js",
+        "https://sunwayb2ctest.ivector.co.uk/assets/sunwayb2c/js/export/vendor.js",
+        "https://sunwayb2ctest.ivector.co.uk/assets/sunwayb2c/js/export/main.js"
+      ]
+    },
+    {
+      "Url": "https://mmb.sunway.ie/",
+      "ApiBaseUrl": "https://agent.sunway.ie",
+      "Css": [
+        "https://agent.sunway.ie/assets/sunwayb2c/css/export/main.css"
+      ],
+      "Scripts": [
+        "https://agent.sunway.ie/assets/sunwayb2c/js/export/manifest.js",
+        "https://agent.sunway.ie/assets/sunwayb2c/js/export/vendor.js",
+        "https://agent.sunway.ie/assets/sunwayb2c/js/export/main.js"
+      ]
+    },
+    {
+      "Url": "http://sunwaymmb.ivector.co.uk/",
+      "ApiBaseUrl": "http://agent.sunway.ie",
+      "Css": [
+        "http://agent.sunway.ie/assets/sunwayb2c/css/export/main.css"
+      ],
+      "Scripts": [
+        "http://agent.sunway.ie/assets/sunwayb2c/js/export/manifest.js",
+        "http://agent.sunway.ie/assets/sunwayb2c/js/export/vendor.js",
+        "http://agent.sunway.ie/assets/sunwayb2c/js/export/main.js"
+      ]
+    }
+  ]
+}

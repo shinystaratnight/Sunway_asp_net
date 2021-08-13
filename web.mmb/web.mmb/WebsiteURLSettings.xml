@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<WebsiteURLSettings>
+	
+	<!-- the sun holidays -->
+	
+	<!-- mon urls -->
+	<URL>
+		<BaseURL>http://websun01.lcmon.com/</BaseURL>
+		<WebsiteURL>http://holidays.thesun.co.uk/</WebsiteURL>
+	</URL>
+	
+	<URL>
+		<BaseURL>http://websun02.lcmon.com/</BaseURL>
+		<WebsiteURL>http://holidays.thesun.co.uk/</WebsiteURL>
+	</URL>
+	
+	
+	<!-- atlantic holidays -->
+	<URL>
+		<BaseURL>http://atlanticholidayslive.ivector.co.uk/</BaseURL>
+		<WebsiteURL>http://www.atlanticholidays.com/</WebsiteURL>
+	</URL>
+	
+	<URL>
+		<BaseURL>http://www.atlanticholidays.net/</BaseURL>
+		<WebsiteURL>http://www.atlanticholidays.com/</WebsiteURL>
+	</URL>
+
+
+</WebsiteURLSettings>

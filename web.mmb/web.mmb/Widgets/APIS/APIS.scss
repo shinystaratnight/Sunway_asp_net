@@ -1,0 +1,379 @@
+﻿#divAPIS > div > div {
+    width: 100%;
+    overflow: hidden;
+    height: auto;
+
+    &.closed {
+        height: 0;
+    }
+}
+
+#divAPISWrapper h1 {
+    margin-bottom: 15px;
+}
+
+#divAPIS {
+
+    h2.flightBooking{
+        margin-bottom:20px;
+    }
+
+    h2.leftBorder {
+        padding: 10px;
+        margin-bottom: 15px;
+        margin-top:5px;
+        border-left-style: solid;
+        cursor: pointer;
+
+        &:after {
+            content: "\e224";
+            font-family: "glyphicons";
+            float: right;
+            margin-right: 5px;
+            transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+            -webkit-transform: rotate(90deg);
+            -o-transform: rotate(90deg);
+            -moz-transform: rotate(90deg);
+        }
+
+        &.closed:after {
+            transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            -webkit-transform: rotate(180deg);
+            -o-transform: rotate(180deg);
+            -moz-transform: rotate(180deg);
+        }
+    }
+
+    > div > div > div {
+        margin-bottom: 10px;
+        margin-top: 0px;
+    }
+
+    div.passenger{
+        margin-bottom:20px;
+        &.closed{
+            margin-bottom:0;
+        }
+    }
+
+    span.gender {
+        padding: 1%;
+    }
+
+    label {
+        display: inline-block;
+        width: 15%;
+        line-height: 1.5;
+
+        &.gender {
+            width: 6%;
+        }
+
+        &#lblAPISGender {
+            width: 8%;
+            margin-left: 0.95%;
+        }
+
+        &#lblAPISNationality {
+            width: 32%;
+            margin-left: 0;
+        }
+    }
+
+    input[type=text] {
+        padding: 6px 10px;
+        height: 34px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    select {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .Name input {
+        margin-right: 0.8%;
+        width: 24%;
+
+        &#APISTitle {
+            width: 8%;
+        }
+
+        &#APISLastName {
+            margin-right: 0;
+        }
+    }
+
+    .nationalitycontainer {
+        display: inline-block;
+        width: 32%;
+        margin-left: 3%;
+    }
+
+    .divAPISDateOfBirth {
+        display: inline-block;
+        padding: 0;
+        width: 20%;
+
+        .APISDateOfBirth {
+            width: 100%;
+        }
+    }
+
+    .custom-select {
+        &.nationality {
+            width: 66%;
+
+            select {
+                width: 100%;
+            }
+        }
+
+        &.passportIssue {
+            width: 30%;
+            margin-right: 0 !important;
+
+            select {
+                width: 100%;
+                padding: 0;
+            }
+        }
+    }
+
+    #APISNationality {
+        width: 100%;
+        height: 32px;
+        padding: 0;
+    }
+
+    div.twos {
+        label {
+            width: 15%;
+
+            &[for="APISPassportIssuePlace" ] {
+                position: relative;
+                top: 10px;
+            }
+
+            &[for="APISPassportExpiryDate"] {
+                position: relative;
+                top: 10px;
+            }
+        }
+
+
+        input, select {
+            width: 30%;
+            height: 32px;
+        }
+
+        input {
+            &:first-of-type {
+                margin-right: 8%;
+            }
+
+            &.calendar {
+                width: 100%;
+                margin-right: 0;
+            }
+        }
+
+        div {
+            i {
+                right: 0;
+            }
+
+            width: 30%;
+            padding: 0;
+
+            &:first-of-type {
+                margin-right: 8%;
+            }
+        }
+    }
+
+    a.submit {
+        margin: 5px 0 0;
+        text-align: center;
+        float: right;
+    }
+}
+
+@media (min-width: 960px) and (max-width: 978px) {
+    #divAPIS {
+        .nationalitycontainer {
+            margin-left: 2%;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 959px) {
+    #divAPIS {
+        label {
+            width: 16%;
+
+            &#lblAPISGender {
+                width: auto;
+                margin-left: 4.5%;
+            }
+
+            &#lblAPISNationality {
+                margin-left: 0%;
+                width: 16%;
+            }
+        }
+
+        .nationalitycontainer {
+            display: block;
+            width: 100%;
+            margin-left: 0;
+            margin-top: 10px;
+
+            .custom-select.nationality {
+                width: 30%;
+            }
+        }
+
+        div.Name input {
+            width: 23%;
+        }
+
+        div.twos {
+            label {
+                width: 16%;
+            }
+
+            input:first-of-type, div:first-of-type {
+                margin-right: 4.5%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #divAPISWrapper {
+        margin-top: 25px;
+    }
+
+    #divAPIS {
+
+        span.gender {
+            padding: 0;
+        }
+
+        label {
+            width: 45%;
+        }
+
+        .Name input {
+            &#APISTitle {
+                width: 20%;
+                margin-right: 0;
+                margin-left: -4px;
+                margin-bottom: 10px;
+            }
+
+            width: 55%;
+            margin-right: 0;
+            margin-left: 45%;
+            margin-bottom: 10px;
+        }
+
+        .nationalitycontainer {
+            width: 100%;
+            margin-left: 0;
+        }
+
+        .divAPISDateOfBirth {
+            width: 53%;
+            margin-left: -4px;
+        }
+
+        label#lblAPISGender {
+            width: 45%;
+            margin-left: 0;
+        }
+
+        #APISGendeMale {
+            margin-left: -3px;
+        }
+
+        label.gender {
+            width: 45%;
+        }
+
+        #APISGenderFemale {
+            margin-left: 45%;
+        }
+
+        label#lblAPISNationality {
+            margin-left: 0;
+            width: 45%;
+        }
+
+        .custom-select {
+            &.nationality, &.passportIssue {
+                width: 54%;
+                margin-left: -4px;
+
+                select {
+                    margin-left: 0 !important;
+                }
+            }
+        }
+
+        div.twos label {
+            width: 45%;
+        }
+
+        #APISPassportNumber {
+            margin-right: 0;
+            margin-bottom: 15px;
+        }
+
+        div.twos {
+            input, select {
+                margin-right: 0;
+                margin-left: -4px;
+                margin-bottom: 10px;
+                width: 54%;
+
+                &.calendar {
+                    margin-left: 0;
+                }
+            }
+
+            label {
+                &[for="APISPassportIssuePlace" ] {
+                    position: relative;
+                    top: 0px;
+                }
+            }
+
+            div {
+                margin-right: 0;
+                margin-left: -4px;
+                margin-bottom: 10px;
+                width: 55%;
+
+                i {
+                    right: 4px;
+                }
+
+                &.calendar {
+                    margin-right: 0;
+                    width: 54%;
+                }
+            }
+        }
+
+        a.submit {
+            width: 100%;
+        }
+    }
+}

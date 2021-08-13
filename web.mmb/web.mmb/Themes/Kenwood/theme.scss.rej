@@ -1,0 +1,10 @@
+diff a/web.mmb/Themes/Kenwood/theme.scss b/web.mmb/Themes/Kenwood/theme.scss	(rejected hunks)
+@@ -363,7 +363,7 @@
+ 
+ /*#endregion*/
+ 
+-@media only screen and (max-width: 767px) {
++@media only screen and(max-width: 767px) {
+     #divBookingLogin {
+         label {
+             line-height: 1.5em;

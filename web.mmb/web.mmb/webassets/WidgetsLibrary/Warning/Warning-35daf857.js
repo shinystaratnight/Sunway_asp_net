@@ -1,0 +1,1 @@
+var Warning=new function(){this.Validate=function(n){return void 0!=int.f.GetObject("chkAcceptWarning")?(int.f.RemoveClass(int.f.GetObject("chkAcceptWarning"),"error"),int.f.SetClassIf("pWarning","error",0==int.cb.Checked("chkAcceptWarning")),int.cb.Checked("chkAcceptWarning")?(null!=n&&void 0!=n&&n(),!0):(window.scrollTo(0,0),!1)):(null!=n&&void 0!=n&&n(),!0)}};

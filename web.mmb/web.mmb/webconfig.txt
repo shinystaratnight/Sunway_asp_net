@@ -1,0 +1,50 @@
+﻿<?xml version="1.0"?>
+<configuration>
+
+	<appSettings>
+		
+		<!--Test-->
+		<!--<add key="ServiceUserName" value="WebTemplate"/>
+		<add key="ServicePassword" value="5un4o1id4y5"/>
+		<add key="ServiceAgentReference" value="IntuitiveAdmin"/>
+		<add key="ServiceURL" value="http://localhost:6666/"/>
+		<add key="CMSBaseURL" value="http://WebTemplatetestadmin.ivector.co.uk/content/"/>
+		<add key="WebsiteURL" value="http://sunholidaystest.ivector.co.uk/"/>-->
+		
+
+		<!--Live-->
+		<!--<add key="ServiceUserName" value="WebTemplate"/>
+		<add key="ServicePassword" value="5un4o1id4y5"/>
+		<add key="ServiceAgentReference" value="IntuitiveAdmin"/>
+		<add key="ServiceURL" value="http://localhost:6666/"/>
+		<add key="CMSBaseURL" value="http://WebTemplatetestadmin.ivector.co.uk/content/"/>
+		<add key="WebsiteURL" value="http://sunholidaystest.ivector.co.uk/"/>-->
+		
+		
+
+
+		<add key="LogPath" value="C:\ProjectsStash\webapps\web.mmb\web.mmb\logging\" />
+		<add key="VersionLinkedFiles" value="true"/>
+		<add key="SMTPHost" value="sqldev"/>
+		<add key="SecurePaymentPage" value="false"/>
+		<add key="UseTheme" value="true"/>
+		<add key="iVectorWidgetPath" value="C:\ProjectsStash\Web\iVectorWidgets\"/>
+
+
+	</appSettings>
+
+
+	<system.web>
+		<sessionState timeout="20"/>
+		<customErrors mode="Off"/>
+		<compilation debug="true" strict="false" explicit="true"/>
+		<authentication mode="Windows"/>
+	</system.web>
+
+	<system.webServer>
+		<handlers>
+			<add name="AssemblyResourceLoader-Integrated" path="WebResource.axd" verb="GET,DEBUG" type="System.Web.Handlers.AssemblyResourceLoader" preCondition="integratedMode" />
+		</handlers>
+	</system.webServer>
+	
+</configuration>

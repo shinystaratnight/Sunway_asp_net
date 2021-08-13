@@ -1,0 +1,862 @@
+﻿/*
+	Base Styling
+	0. Reset
+	1. Fonts
+	2. Headers & Text
+	3. Box Styles
+	4. Buttons
+	5. Links
+	6. Form Elements
+	7. Forms
+	8. Table
+	9. Lists
+	10. Tabs
+	11. Paging
+	12. Star Ratings
+	13.	Breadcrumbs
+	14. Warning and Info Boxes
+
+*/
+
+
+
+/*#region 1. Fonts*/
+
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+@FontFamilyImportURLs
+
+/*#endregion*/
+
+/*#region 0. Reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height:1;
+	font-size:100%;
+}
+ol, ul {
+	list-style: none;
+}
+
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+p, label, a, th, li, input {font-size:0.85em;}
+input[type=button] {border-radius:0;}
+li * {font-size:1em;}
+td * {font-size:1em;}
+
+
+/*Sticky footer*/
+html {height:100%;margin:0pt;}
+body  {display:table;height:100%;width:100%;margin:0pt;}
+#divAll {height:auto;}
+#divFooter {display:table-row;height:1px;}
+
+/*#endregion*/
+
+
+
+/*#region 2. Headers & Text */
+
+body {font-family:@FontFamily 'Lato', sans-serif;color:#555;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
+      overflow-x: hidden;background:@Background;}
+
+
+h1 {font-family:@FontFamilyHeader 'Lato', sans-serif;font-weight:normal;font-size:1.5em;margin:0;color:@Primary;}
+h2 {font-family:@FontFamilyHeader 'Lato', sans-serif;font-weight:normal;font-size:1em;margin:0;color:@Primary;}
+h3 {font-family:@FontFamilyHeader 'Lato', sans-serif;font-weight:normal;font-size:1.125em;margin:0;color:@Primary;}
+h4 {font-family:@FontFamilyHeader 'Lato', sans-serif;font-weight:normal;font-size:1em;margin:0;color:@Primary;}
+h5 {font-family:@FontFamilyHeader 'Lato', sans-serif;font-weight:normal;font-size:0.875em;margin:0;color:@Primary;}
+h6 {font-family:@FontFamilyHeader 'Lato', sans-serif;font-weight:normal;font-size:0.75em;margin:0;color:@Primary;}
+
+p {line-height:1.8333333333333333em;/* 22px / 12px */color:#555;margin:0;}
+p + p {margin-top:10px;}
+
+* + h2 {margin-top:20px;}
+* + h3 {margin-top:10px;}
+
+strong{font-weight:bolder;}
+
+/*#endregion*/
+
+
+/*#region 3. Box Styles */
+
+/* Box */
+div.box, div.sidebarBox, div.floatingBox {position:relative;margin-bottom:20px;}
+div.box div.boxTitle h2, div.sidebarBox div.boxTitle h2, div.floatingBox div.boxTitle h2 {margin-bottom:10px;color:@Primary;}                     
+
+
+
+/*#endregion*/
+
+
+/*#region 4. Buttons*/
+
+/* Standard */
+input.button, a.button {padding: 15px 33px;cursor:pointer;background:#555;border:none;
+                        font-family:@FontFamily 'Lato', sans-serif;font-weight:normal;font-size:1em;line-height:0.75em;color:#fff;-webkit-appearance:none;
+                        -webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;-o-transition: all 0.5s ease;transition: all 0.5s ease;
+                        width:100%;box-sizing:border-box}
+input.button:hover, a.button:hover {background:#777;color:#fff}
+
+li .button {font-size:1em;/* 16px / 12px */line-height:1em;}
+td .button {font-size:1em;/* 16px / 12px */line-height:1em;}
+
+input.button.primary, a.button.primary {background:@NavigationPrimary;-webkit-appearance:none;}
+a.button.primary:visited {color:#fff;}
+input.button.primary:hover, a.button.primary:hover {background:@NavigationPrimary;color:#fff}
+
+a.button {display:inline-block;line-height:12px;text-decoration:none;color:#fff;}
+a.button:hover {text-decoration:none;}
+
+a.button.icon i {font-size:10px;margin-right:10px;margin-left:-15px;color:#F0FFFF;}
+a.button.primary.icon i {color:#F0FFFF;}
+
+
+/*#endregion*/
+
+
+/*#region 5. Links */
+
+a, a:visited {color:@NavigationPrimary;}
+a:hover{color:@NavigationPrimary; -webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;-o-transition: all 0.5s ease;transition: all 0.5s ease;}
+a.secondary, a.secondary:visited {color:#555;}
+a.secondary:hover{color:@NavigationPrimary;}
+
+/* remove link borders */
+a, a:active, a:focus {outline-style:none !important;}
+a { _noFocusLine: expression(this.hideFocus=true); } /* For IE7 to hide outline */
+a img {border:none;}
+
+
+/* Tooltip */
+a.tooltip {color:@Secondary;text-decoration:none;display:inline-block;border-bottom:1px dashed @Secondary;padding-bottom:1px;}
+a.tooltip:hover {text-decoration:none;}
+
+div.tooltip {padding:10px;border:1px solid #555;width:auto;background:#fff;z-index:30;}
+
+div.tooltip.age {background:@Secondary;color:#fff;width:40px;}
+div.tooltip.age div.arrow {color:@Secondary;}
+#frm div.tooltip.age div.arrow:after {border-left:6px solid @Secondary;}
+
+div.tooltip.top {margin-top:-10px;}
+div.tooltip.bottom {margin-top:10px;}
+
+div.tooltip.left {margin-left:-10px;}
+div.tooltip.right {margin-left:10px;}
+
+
+div.tooltip div.arrow {position:absolute;width:0;height:0;}
+div.tooltip div.arrow:after {content:"";position:absolute;width:0;height:0;}
+
+div.tooltip.top div.arrow {bottom:-7px;left:50%;margin-left:-8px;border-left:8px solid transparent;border-right:8px solid transparent;border-top:7px solid #555;}
+div.tooltip.top div.arrow:after {margin-left:-6px;bottom:1px;border-left:6px solid transparent;border-right:6px solid transparent;border-top:6px solid #fff;}
+
+div.tooltip.bottom div.arrow {top:-7px;left:50%;margin-left:-8px;border-left:8px solid transparent;border-right:8px solid transparent;border-bottom:7px solid #555;}
+div.tooltip.bottom div.arrow:after {margin-left:-6px;top:1px;border-left:6px solid transparent;border-right:6px solid transparent;border-bottom:6px solid #fff;}
+
+div.tooltip.left div.arrow {right:-7px;top:50%;margin-top:-8px;border-top:8px solid transparent;border-bottom:8px solid transparent;border-left:7px solid #555;}
+div.tooltip.left div.arrow:after {margin-top:-6px;right:1px;border-top:6px solid transparent;border-bottom:6px solid transparent;border-left:6px solid #fff;}
+
+div.tooltip.right div.arrow {left:-7px;top:50%;margin-top:-8px;border-top:8px solid transparent;border-bottom:8px solid transparent;border-right:7px solid #555;}
+div.tooltip.right div.arrow:after {margin-top:-6px;left:1px;border-top:6px solid transparent;border-bottom:6px solid transparent;border-right:6px solid #fff;}
+
+
+/* Modal Popup */
+a.modalpopup {color:#9F000F;text-decoration:none;display:inline-block;border-bottom:1px dashed #9F000F;padding-bottom:1px;}
+a.modalpopup:hover {text-decoration:none;}
+
+div.overlay {position:fixed;top:0;left:0;right:0;bottom:0;background:#555;opacity:0.6;z-index:2;}
+div.modalpopup {overflow:hidden;position:fixed;background:@Background;padding:10px 10px;z-index:6; left: 50% !important;
+    -moz-transform: translate(-50%,0); -ms-transform: translate(-50%,0); -o-transform: translate(-50%,0); -webkit-transform: translate(-50%,0);transform: translate(-50%,0);}
+
+div.modalpopup div.popupTitle {z-index:0;position:absolute;top:0;left:0;width:100%;padding:20px;border-bottom:solid 1px #cacaca;}       
+
+div.modalpopup a.close {z-index:1;position:absolute;top:10px;right:10px;display:block;color:@Background;width:35px;height:24px;line-height:20px;text-decoration:none;padding:0 10px;background:@Primary;}
+div.modalpopup a.close:hover {text-decoration:none;}
+div.modalpopup a.close:after {display:block;position:relative;float:right;line-height:24px;font-size:12px;
+								text-align:center;font-weight:bold;text-transform:uppercase;content:"close";color:@Background;top:-20px;right:0px;z-index:2;background:@Primary;width:100%;}
+
+/*JQUeryPopup*/
+div.popup_content div.popupTitle {z-index:0;position:absolute;top:0;left:0;width:100%;padding:20px;border-bottom:solid 1px #cacaca;}       
+div.popup_content {overflow:hidden;position:fixed;background:@Background;padding:10px 10px;z-index:6;}
+div.popup_content a.close {z-index:1;position:absolute;top:10px;right:10px;display:block;color:@Background;width:35px;height:24px;line-height:20px;text-decoration:none;padding:0 10px;background:@Primary;cursor:pointer;}
+div.popup_content a.close:hover {text-decoration:none;}
+div.popup_content a.close:after {display:block;position:relative;float:right;line-height:24px;font-size:12px;
+								text-align:center;font-weight:bold;text-transform:uppercase;content:"close";color:@Background;top:-20px;right:0px;z-index:2;background:@Primary;width:100%;}
+/*#endregion*/
+
+
+
+
+/*#region 6. Form Elements */
+
+label {height:42px;line-height:42px;font-family:@FontFamily 'Lato', sans-serif;color:#555;}
+
+input.textbox {width:190px;padding:10px;border:solid 1px #c8c8c8;color:#555;height:22px;font-family:@FontFamily 'Lato', sans-serif;}
+
+/* remove ie10 clear X icon */
+input[type=text]::-ms-clear {display:none;}
+
+
+/*placeholders*/
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {color:#a9a9a9;}
+input:-moz-placeholder, textarea:-moz-placeholder {color:#a9a9a9;}
+input::-moz-placeholder, textarea::-moz-placeholder {color:#a9a9a9;}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {color:#a9a9a9;}
+
+select optgroup option:first-child {color:#555;}
+
+
+input.textbox.xlarge {width:400px;}
+input.textbox.large {width:300px;}
+input.textbox.small {width:140px;}
+input.textbox.tiny {width:80px;}
+
+
+/* textbox with icons */
+div.textbox.icon {position:relative;display:inline-block;white-space:nowrap;}
+div.textbox.icon i {background:#fff;border:1px solid #c8c8c8;height:42px;width:42px;line-height:42px;text-align:center;}
+div.textbox.icon input.textbox {display:inline-block;margin-left:0;vertical-align:top;}
+
+
+div.textbox.icon.left {padding-left:42px;}
+div.textbox.icon.left i {position:absolute;top:0;left:0;border-top-left-radius:5px;border-bottom-left-radius:5px;}
+div.textbox.icon.left input.textbox {border-top-left-radius:0;border-bottom-left-radius:0;}
+
+div.textbox.icon.right {padding-right:42px;}
+div.textbox.icon.right i {position:absolute;top:1px;right:4%;border-top-right-radius:5px;border-bottom-right-radius:5px;color:#fff;}
+div.textbox.icon.right input.textbox {border-top-right-radius:0;border-bottom-right-radius:0;border-top-left-radius:0;border-bottom-left-radius:0;}
+
+
+div.textbox.icon.embedded i {background:#fff;border:1px solid #c8c8c8;}
+
+div.textbox.icon.left.embedded i {border-right:none;}
+div.textbox.icon.right.embedded i {border-left:none;}
+
+div.autocompleteoptions {overflow:auto;position:absolute;height:215px;background:#fff;padding:10px 0;cursor:pointer;z-index:10;
+                         border: 1px solid @Border;}
+div.autoCompleteItem {padding:5px 2%;width:97%;}
+div.autoCompleteItem:hover,div.autoCompleteItem.selected {background:#DDD;}
+div.autoCompleteItem em {font-weight:bold;color:@Secondary;}
+
+input.checkbox {position:relative;top:2px;margin:0 5px 0 0;}
+input.radio {position:relative;top:2px;margin:0;}
+
+input.error, select.error, label.error {background:#f2dede;}
+
+select {height:44px;padding:0 10px;color:#555;font-size:0.875em;border:solid 1px #c8c8c8;
+        background:#fff;line-height:34px;font-family:@FontFamily 'Lato', sans-serif;font-weight:normal;/*please dont change the line-height it affects dropdowns in safari*/}
+
+select.large {width:250px;}
+select.small {width:96px;}
+
+textarea {border:solid 1px #c8c8c8;padding:10px;color:#555;width:300px;}
+
+/* remove inpout borders */
+input, input:active, input:focus {outline-style:none !important;}
+input { _noFocusLine: expression(this.hideFocus=true); } /* For IE7 to hide outline */
+
+/*#endregion*/
+
+
+/*#region 7. Date Picker */
+input[type=text] {border-radius:0;}
+
+body div.ui-datepicker {display:none;}
+
+div.ui-datepicker {width:210px;border-radius:5px;border:1px solid #cacaca;background:#fff;}
+div#ui-datepicker-div {width:auto !important;}
+
+div.ui-datepicker div.ui-datepicker-group {float:left;padding-bottom:3px;}
+div.ui-datepicker div.ui-datepicker-group-first {border-top-left-radius:3px;border-right:1px solid #cacaca;}
+div.ui-datepicker div.ui-datepicker-group-last {margin-left:-1px;border-top-right-radius:3px;border-left:1px solid #cacaca;}
+
+/* Header */
+div.ui-datepicker-header {height:50px;line-height:50px;text-align:center;background:#2b9be4;color:#fff;text-transform:uppercase;}
+div.ui-datepicker-group-first div.ui-datepicker-header {border-top-left-radius:3px;}
+div.ui-datepicker-group-last div.ui-datepicker-header {border-top-right-radius:3px;}
+
+div.ui-datepicker-header a {position:absolute;top:0;width:30px;height:30px;cursor:pointer;font-family:'Glyphicons';font-size:10px;text-decoration:none;color:#fff;}
+div.ui-datepicker-header a:hover {background:#dcdcdc;}
+div.ui-datepicker-header a span {display:none;}
+div.ui-datepicker-header a.ui-state-disabled {cursor:not-allowed;}
+div.ui-datepicker-header a.ui-state-disabled:hover {background:#555;}
+
+div.ui-datepicker-header a.ui-datepicker-prev {width:50px;height:50px;line-height:50px;left:0;border-top-left-radius:0px;}
+div.ui-datepicker-header a.ui-datepicker-prev:before {content:"\e225";}
+div.ui-datepicker-header a.ui-datepicker-next {width:50px;height:50px;line-height:50px;right:0;border-top-right-radius:0px;}
+div.ui-datepicker-header a.ui-datepicker-next:before {content:"\e224";}
+
+div.ui-datepicker-header div {height:50px;line-height:52px;font-size:0.8em;font-weight:bold;background-color:@Secondary;}
+
+
+/* table */
+table.ui-datepicker-calendar {margin:10px 10px 5px 10px;border-collapse:collapse;}
+
+table.ui-datepicker-calendar th {color:#777;font-weight:bold;width:30px;height:15px;}
+table.ui-datepicker-calendar td, table.ui-datepicker-calendar th {text-align:center;}
+
+table.ui-datepicker-calendar td {width:30px;height:25px;vertical-align:middle;}
+
+table.ui-datepicker-calendar td a {text-decoration:none;color:#555;}
+table.ui-datepicker-calendar td a:hover {text-decoration:none;color:#ffffff;}
+table.ui-datepicker-calendar td {cursor:pointer;position:relative;}
+table.ui-datepicker-calendar td:hover:before {display:inline-block;z-index:-1;content:" ";position:absolute;left:3px;top:0px;width:25px;height:25px;border-radius:13px;background:@Primary;}
+table.ui-datepicker-calendar td:hover a {z-index:1;color:#ffffff;}
+
+table.ui-datepicker-calendar td.ui-datepicker-current-day:before {display:inline-block;z-index:-1;content:" ";position:absolute;left:3px;top:0px;width:25px;height:25px;border-radius:13px;background:@Primary;}
+table.ui-datepicker-calendar td.ui-datepicker-current-day a {z-index:1;color:#ffffff;}
+
+table.ui-datepicker-calendar td.ui-datepicker-days-cell-over:before {display:inline-block;z-index:-1;content:" ";position:absolute;left:3px;top:0px;width:24px;height:24px;border-radius:13px;background:@Primary}
+table.ui-datepicker-calendar td.ui-datepicker-days-cell-over a {z-index:1;color:#fff;}
+
+table.ui-datepicker-calendar td.ui-state-disabled {cursor:not-allowed;color:#d8d8d8;z-index:-1;}
+table.ui-datepicker-calendar td.ui-state-disabled:before {background:none;}
+
+table.ui-datepicker-calendar td.ui-datepicker-other-month {cursor:auto;border:none;background:#fff;}
+
+
+/*#endregion*/
+
+
+/*#region 7. Forms */
+
+/* standard form */
+div.form fieldset {border:none;padding:0;}
+div.form fieldset legend {font-size:0.875em;font-weight:bold;padding:0 10px;}
+
+div.form fieldset dl {width:100%;margin:0;}
+div.form fieldset dt {clear:left;float:left;padding-top:7px;margin:0;}
+div.form fieldset dt label {color:#555;font-size:0.875em;}
+
+div.form fieldset dt + dd {padding-top:10px;}
+
+div.form fieldset dd {margin:0;}
+div.form fieldset dd label.checkboxLabel {display:block;padding-top:3px;color:#555;}
+
+/* grouped form */
+div.form.grouped dd {float:left;}
+div.form.grouped dt {padding-top:0;margin-bottom:2px;margin:0;}
+
+div.form.grouped dd label.checkboxLabel {padding-top:0;}
+
+/*#endregion*/
+
+
+/*#region 8. Table */
+
+/* Def Styling */
+table.def {width:100%;border-collapse:collapse;border-spacing:0px;color:#555;}
+
+
+table.def th {text-align:left;padding:20px;background-color:@FooterBackground;font-family:@FontFamily 'Lato', sans-serif;font-weight:300;font-size:0.875em;color:@NavigationTertiary;vertical-align:middle;}
+table.def td {padding:10px 20px;border-bottom:1px solid @FooterBackground;background:#fff;color:@NavigationTertiary;}
+
+
+table.def .right {text-align:right;}
+
+/* Striped */
+table.def.striped tr:nth-child(odd) > td {background:#fff;}
+
+
+/*#endregion*/
+
+
+/*#region 9. Lists */
+
+ul {padding:0;color:#555;}
+
+ul.bulleted {padding:0;color:#555;}
+ul.bulleted li {height:30px;padding-left:30px;line-height:30px;list-style:none;background:url('/themes/Kenwood/images/sprite.png') no-repeat -570px -90px;}
+
+ol {padding:0;color:#555;}
+
+/*#endregion*/
+
+
+/*#region 10. Tabs */
+
+
+/* standard */
+div.tabs ul {padding:0;margin:0;}
+div.tabs ul li {overflow:hidden;float:left;height:50px;border-right:1px solid @Border;border-bottom:1px solid @Border;list-style:none;}
+
+div.tabs ul li a {float:left;display:block;height:45px;padding:4px 17px 0 17px;font-weight:normal;text-align:center;line-height:42px;
+                  text-decoration:none;color:#555;background:#fff;}
+div.tabs ul li a:hover {padding-top:0;border-top:5px solid @Secondary;line-height:41px;}
+
+div.tabs ul li:first-child {position:relative;}
+div.tabs ul li:last-child {position:relative;border-right:none;}
+
+div.tabs ul li.selected {border-bottom:none;}
+div.tabs ul li.selected a {padding-top:0;border-top:5px solid @Secondary;border-bottom:0;}
+div.tabs ul li.selected a:hover {line-height:42px;}
+
+
+/* radio */
+div.tabs.radio ul li a {padding:4px 17px 0 0;text-align:left;}
+div.tabs.radio ul li a:hover {padding-top:0;text-decoration:none;}
+
+div.tabs.radio ul li a:before {content:" ";position:relative;float:left;width:30px;height:30px;margin-top:6px;background:url(/themes/JustResorts/images/sprite.png) no-repeat -570px -30px;}
+div.tabs.radio ul li a:hover:before {margin-top:5px;}
+
+div.tabs.radio ul li.selected a {padding-top:0;}
+div.tabs.radio ul li.selected a:before {content:" ";position:relative;float:left;width:30px;height:30px;background-position:-570px 0;}
+div.tabs.radio ul li.selected a:hover:before {margin-top:6px;}
+
+
+/* tabbed box */
+div.tabbedBox {position:relative;padding:10px;min-height:150px;margin:36px 0 20px;border-radius:5px;background:#fff;}
+
+div.tabbedBox div.tabs {position:absolute;top:-38px;left:-1px;width:100%;height:36px;background:none;}
+
+div.tabbedBox div.tabs ul li {height:38px;}
+div.tabbedBox div.tabs ul li a {height:30px;line-height:26px;margin:6px 5px 0 0;border-bottom:none;border-top-left-radius:5px;border-top-right-radius:5px;background:#e7edef;}
+div.tabbedBox div.tabs ul li a:hover {height:36px;line-height:36px;margin:0 5px 0 0;background:#fff;position:relative;}
+
+div.tabbedBox div.tabs ul li.selected a {height:36px;line-height:36px;margin:0 5px 0 0;background:#fff;position:relative;}
+div.tabbedBox div.tabs ul li:first-child a {margin-left:10px;}
+
+
+/*#endregion*/
+
+
+/*#region 11. Paging */
+div.paging {max-width:285px;display:inline;}
+div.paging ul {padding:0;display:inline-block;}
+div.paging ul li {float:left;display:inline;padding-right:5px;}
+div.paging ul li:last-child {padding-right:0;}
+
+div.paging ul li a {display:block;height:2em/* 31 / 12 */;width:2em/* 25 / 12 */;text-align:center;line-height:1.9em/* 31 / 12 */;
+						font-weight:bold;font-size:1.1666666666666666em;/* 14 / 12 */text-decoration:none;color:@NavigationTertiary;background:@Background;}
+div.paging ul li a:hover {text-decoration:none;background:@NavigationTertiary;color:@Background;border-radius:2em;}
+div.paging ul li.current a {background-color:@NavigationTertiary;color:#fff;border-radius:2em;}
+div.paging ul li.totalpages {color:#bbb;margin-top:8px;}
+
+div.paging ul li.prev a, div.paging ul li.next a {background-color:@Background;color:@NavigationTertiary;font-family:'Glyphicons';}
+div.paging ul li.prev a:before{content:'\e225';}
+div.paging ul li.next a:before{content:'\e224';}
+div.paging ul li.prev a:hover, div.paging ul li.next a:hover {background-color:@NavigationTertiary;color:@Background;border-radius:2em;}
+
+#divPagingTop {display:inline-block;float:right;margin-top:5px;margin-right:7px;}
+#divPagingTop div.paging ul li a {background-color:@Secondary;color:#fff;height:1.5em;width:1.5em;line-height:1.5em; }
+#divPagingTop div.paging ul li a:hover {background-color:#d999c4;color:@Secondary;}
+#divPagingTop div.paging ul li.current a {background-color:#d999c4;color:@Secondary; }
+#divPagingTop div.paging ul li.totalpages {color:#d999c4;margin-top:5px;}
+#divPagingTop div.paging ul li.prev {font-size:0.5em;margin-top:4px;}
+#divPagingTop div.paging ul li.prev a {background-color:@Secondary;color:#fff;padding:0.5em;margin-top:-3px;}
+#divPagingTop div.paging ul li.prev a:hover {background-color:#d999c4;color:@Secondary;}
+#divPagingTop div.paging ul li.next {font-size:0.5em;margin-top:4px;}
+#divPagingTop div.paging ul li.next a {background-color:@Secondary;color:#fff;padding:0.5em;margin-top:-3px;}
+#divPagingTop div.paging ul li.next a:hover {background-color:#d999c4;color:@Secondary;}
+/*#endregion*/
+
+/*#region 12. Star Ratings */
+
+span.rating {display:inline-block;width:99px;height:17px;background:url('/themes/Kenwood/images/sprite.png') no-repeat left top;}
+
+span.rating.star0 {background-position:-105px 0px;}
+span.rating.star0.half {background-position:-84px -30px;}	
+span.rating.star1 {background-position:-84px 0px;}
+span.rating.star1.half {background-position:-63px -30px;}
+span.rating.star2 {background-position:-63px 0px;}
+span.rating.star2.half {background-position:-42px -30px;}
+span.rating.star3 {background-position:-42px 0px;}
+span.rating.star3.half {background-position:-21px -30px;}
+span.rating.star4 {background-position:-21px 0px;}
+span.rating.star4.half {background-position:0px -30px;}
+span.rating.star5 {background-position:0px 0px;}
+
+span.rating.small {width:57px;height:11px;}
+
+span.rating.small.star0 {background-position:-270px 0px;}
+span.rating.small.star0.half {background-position:-258px -30px;}
+span.rating.small.star1 {background-position:-258px 0px;}
+span.rating.small.star1.half {background-position:-246px -30px;}
+span.rating.small.star2 {background-position:-246px 0px;}
+span.rating.small.star2.half {background-position:-234px -30px;}
+span.rating.small.star3 {background-position:-234px 0px;}
+span.rating.small.star3.half {background-position:-222px -30px;}
+span.rating.small.star4 {background-position:-222px 0px;}
+span.rating.small.star4.half {background-position:-210px -30px;}
+span.rating.small.star5 {background-position:-210px 0px;}
+
+/*#endregion*/
+
+/*#region 13. Breadcrumbs */
+
+div.breadcrumbs ul {width:940px; margin:0 auto;}
+div.breadcrumbs ul li {display:inline-block; padding:20px 0; margin-right:8px;max-height: 12px;overflow: hidden;}
+div.breadcrumbs ul li a {text-decoration:none; font-size:13px;}
+div.breadcrumbs ul li.current a {text-decoration:none; cursor:default;}
+div.breadcrumbs ul li span.number {margin-right:5px;}
+div.breadcrumbs ul li span.number {padding:2px 6px 2px 5px; font-size:11px; border-radius:16px; position:relative; top:-1px;}
+div.breadcrumbs ul li span.number:first-of-type {margin-left:0px;}
+div.breadcrumbs ul li a:after {font-family:Glyphicons;content:'\e224';color:#999;margin-left:5px;position:relative;font-size:0.75em;}
+div.breadcrumbs ul li:last-of-type a:after {content:' ';}
+div.breadcrumbs ul li.future a {cursor:default;}
+
+/*#endregion*/
+
+
+/*#region 14. Warning and Info Boxes */
+
+/* 14.1 general */
+div.infobox {padding:20px;margin:20px 0;border-radius:5px;}
+
+div.infobox p {line-height:20px;height:30px;}
+div.infobox p.icon i {font-size:2.5em;line-height:30px;vertical-align:middle;margin-right:20px;display:block;float:left;margin-bottom:50px;}
+
+div.infobox a.close {display:block;float:right;height:30px;width:30px;line-height:29px;font-family:@FontFamily helvetica, arial;font-weight:bold;text-decoration:none;
+						text-align:center;font-size:18px;opacity:0.6;color:#555;}
+div.infobox a.close:hover {opacity:0.8;text-decoration:none;}
+
+
+/* 14.2 warning */
+div.infobox.warning {background:#f2dede;border:1px solid #eed3d7;}
+div.infobox.warning p {color:#b94a48;display:inline-block;max-width:88%;}
+
+
+/* 14.3 information */
+div.infobox.information {background:#d9edf7;border:1px solid #bce8f1;}
+div.infobox.information p {color:#3a87ad;}
+
+
+/* 14.4 success */
+div.infobox.success {background:#dff0d8;border:1px solid #d6e9c6;}
+div.infobox.success p {color:#468847;display:inline-block;max-width:88%;}
+
+
+/*#endregion*/
+
+
+/*#region 15. Slider */
+
+div.slider {position:relative;background:#D6D6D6;border-radius:4px;height:16px;width:120px;margin:40px 0 0;top:-30px;}
+
+div.slider label.range {border-radius:5px;padding:5px;font-weight:normal;}
+div.slider label.start {position:absolute;left:-10px;}
+div.slider label.end {position:absolute;right:-15px;}
+
+
+a.sliderbutton {display:block;position:absolute;top:-2px;width:20px;height:20px;cursor:pointer;
+                background-color:#9A9A9A;border-radius:50px;z-index:2;}
+
+div.slider div.highlight {height:14px;position:absolute;top:0;border-radius:4px;border:solid 1px @Tertiary;background:@Tertiary;} 
+
+#divSidebar div.slider {width:170px;}
+
+#divSidebar p.displayrange{font-size:12px;text-align:center;margin-top:10px;}
+
+/*#endregion*/
+
+
+/*#region 16. Theme stying, can delete if needed */
+span.demo{margin-top:5px;}
+
+p.demo{padding-left:5px;float:left;}
+
+ul.demo.float{float:left}
+ul.demo li{padding-bottom:10px;}        
+/*#endregion*/
+
+
+@media only screen and (max-width: 767px) 
+{	
+	div.infobox p {height:auto;padding-left:50px;width:68%;}
+	div.infobox p.icon i {position:absolute;top:45px;left:20px;}
+}
+
+
+/*#region 17. Grid based on:*/
+
+
+
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+
+/* Table of Contents
+==================================================
+    #Base 960 Grid
+    #Tablet (Portrait)
+    #Mobile (Portrait)
+    #Mobile (Landscape)
+/* #Base 960 Grid
+================================================== */
+
+    .container                                  { position: relative; width: 960px; margin: 0 auto; padding: 0; }
+    .container .column,
+    .container .columns                         { float: left; display: inline; margin-left: 10px; margin-right: 10px; }
+    .row                                        { margin-bottom: 20px; }
+
+    /* Nested Column Classes */
+    .column.alpha, .columns.alpha               { margin-left: 0; }
+    .column.omega, .columns.omega               { margin-right: 0; }
+
+    /* Base Grid */
+    .container .one.column,
+    .container .one.columns                     { width: 40px;  }
+    .container .two.columns                     { width: 100px; }
+    .container .three.columns                   { width: 160px; }
+    .container .four.columns                    { width: 220px; }
+    .container .five.columns                    { width: 280px; }
+    .container .six.columns                     { width: 340px; }
+    .container .seven.columns                   { width: 400px; }
+    .container .eight.columns                   { width: 460px; }
+    .container .nine.columns                    { width: 520px; }
+    .container .ten.columns                     { width: 580px; }
+    .container .eleven.columns                  { width: 640px; }
+    .container .twelve.columns                  { width: 700px; }
+    .container .thirteen.columns                { width: 760px; }
+    .container .fourteen.columns                { width: 820px; }
+    .container .fifteen.columns                 { width: 880px; }
+    .container .sixteen.columns                 { width: 940px; }
+
+    .container .one-third.column                { width: 300px; }
+    .container .two-thirds.column               { width: 620px; }
+
+    /* Offsets */
+    .container .offset-by-one                   { padding-left: 60px;  }
+    .container .offset-by-two                   { padding-left: 120px; }
+    .container .offset-by-three                 { padding-left: 180px; }
+    .container .offset-by-four                  { padding-left: 240px; }
+    .container .offset-by-five                  { padding-left: 300px; }
+    .container .offset-by-six                   { padding-left: 360px; }
+    .container .offset-by-seven                 { padding-left: 420px; }
+    .container .offset-by-eight                 { padding-left: 480px; }
+    .container .offset-by-nine                  { padding-left: 540px; }
+    .container .offset-by-ten                   { padding-left: 600px; }
+    .container .offset-by-eleven                { padding-left: 660px; }
+    .container .offset-by-twelve                { padding-left: 720px; }
+    .container .offset-by-thirteen              { padding-left: 780px; }
+    .container .offset-by-fourteen              { padding-left: 840px; }
+    .container .offset-by-fifteen               { padding-left: 900px; }
+
+	/* Mobile/Tablet Element Toggle */
+    .mobileHide                                 {display:inherit;}
+    .mobileShow                                 {display:none;}
+    .tabletHide                                 {display:inherit;}
+    .tabletShow                                 {display:none;}
+
+
+/* #Tablet (Portrait)
+================================================== */
+
+    /* Note: Design for a width of 768px */
+
+    @media only screen and (min-width: 768px) and (max-width: 959px) {
+
+        .container                                  { width: 768px;}
+        .container .column,
+        .container .columns                         { margin-left: 10px; margin-right: 10px;  }
+        .column.alpha, .columns.alpha               { margin-left: 0; margin-right: 10px; }
+        .column.omega, .columns.omega               { margin-right: 0; margin-left: 10px; }
+        .alpha.omega                                { margin-left: 0; margin-right: 0; }
+
+        .container .one.column,
+        .container .one.columns                     { width: 28px; }
+        .container .two.columns                     { width: 76px; }
+        .container .three.columns                   { width: 124px; }
+        .container .four.columns                    { width: 172px; }
+        .container .five.columns                    { width: 220px; }
+        .container .six.columns                     { width: 268px; }
+        .container .seven.columns                   { width: 316px; }
+        .container .eight.columns                   { width: 364px; }
+        .container .nine.columns                    { width: 412px; }
+        .container .ten.columns                     { width: 460px; }
+        .container .eleven.columns                  { width: 508px; }
+        .container .twelve.columns                  { width: 556px; }
+        .container .thirteen.columns                { width: 604px; }
+        .container .fourteen.columns                { width: 652px; }
+        .container .fifteen.columns                 { width: 700px; }
+        .container .sixteen.columns                 { width: 748px; }
+
+        .container .one-third.column                { width: 236px; }
+        .container .two-thirds.column               { width: 492px; }
+
+        /* Offsets */
+        .container .offset-by-one                   { padding-left: 48px; }
+        .container .offset-by-two                   { padding-left: 96px; }
+        .container .offset-by-three                 { padding-left: 144px; }
+        .container .offset-by-four                  { padding-left: 192px; }
+        .container .offset-by-five                  { padding-left: 240px; }
+        .container .offset-by-six                   { padding-left: 288px; }
+        .container .offset-by-seven                 { padding-left: 336px; }
+        .container .offset-by-eight                 { padding-left: 384px; }
+        .container .offset-by-nine                  { padding-left: 432px; }
+        .container .offset-by-ten                   { padding-left: 480px; }
+        .container .offset-by-eleven                { padding-left: 528px; }
+        .container .offset-by-twelve                { padding-left: 576px; }
+        .container .offset-by-thirteen              { padding-left: 624px; }
+        .container .offset-by-fourteen              { padding-left: 672px; }
+        .container .offset-by-fifteen               { padding-left: 720px; }
+        
+         /*Mobile/Tablet Element Toggle */
+		.tabletHide {display:none;}
+		.tabletShow {display:inherit;}
+		
+		/* Breadcrumbs */
+		div.breadcrumbs ul {width:748px;}
+		
+		/*font size*/
+		p, label, a, th, li, input {font-size:0.8em;}
+    }
+
+
+/*  #Mobile (Portrait)
+================================================== */
+
+    /* Note: Design for a width of 320px */
+
+    @media only screen and (max-width: 767px) {
+        .container { width: 300px; }
+        .container .columns,
+        .container .column { margin: 0px auto 0px auto; }
+
+        .container .one.column,
+        .container .one.columns,
+        .container .two.columns,
+        .container .three.columns,
+        .container .four.columns,
+        .container .five.columns,
+        .container .six.columns,
+        .container .seven.columns,
+        .container .eight.columns,
+        .container .nine.columns,
+        .container .ten.columns,
+        .container .eleven.columns,
+        .container .twelve.columns,
+        .container .thirteen.columns,
+        .container .fourteen.columns,
+        .container .fifteen.columns,
+        .container .sixteen.columns,
+        .container .one-third.column,
+        .container .two-thirds.column  { width: 300px; }
+
+        /* Offsets */
+        .container .offset-by-one,
+        .container .offset-by-two,
+        .container .offset-by-three,
+        .container .offset-by-four,
+        .container .offset-by-five,
+        .container .offset-by-six,
+        .container .offset-by-seven,
+        .container .offset-by-eight,
+        .container .offset-by-nine,
+        .container .offset-by-ten,
+        .container .offset-by-eleven,
+        .container .offset-by-twelve,
+        .container .offset-by-thirteen,
+        .container .offset-by-fourteen,
+        .container .offset-by-fifteen { padding-left: 0; }
+
+			/* Mobile Element Toggle */
+        .tabletShow {display:inherit;}
+		.tabletHide {display:none;}
+        .mobileHide {display:none !important;}
+        .mobileShow {display:inherit;}
+		
+		/* Breadcrumbs */
+		div.breadcrumbs ul {width:420px;}
+		
+    }
+
+
+/* #Mobile (Landscape)
+================================================== */
+
+    /* Note: Design for a width of 480px */
+
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+        .container { width: 420px; }
+        .container .columns,
+        .container .column { margin: 0; }
+
+        .container .one.column,
+        .container .one.columns,
+        .container .two.columns,
+        .container .three.columns,
+        .container .four.columns,
+        .container .five.columns,
+        .container .six.columns,
+        .container .seven.columns,
+        .container .eight.columns,
+        .container .nine.columns,
+        .container .ten.columns,
+        .container .eleven.columns,
+        .container .twelve.columns,
+        .container .thirteen.columns,
+        .container .fourteen.columns,
+        .container .fifteen.columns,
+        .container .sixteen.columns,
+        .container .one-third.column,
+        .container .two-thirds.column { width: 420px; }
+        
+         /* Mobile Element Toggle */
+        .tabletShow {display:inherit;}
+        .tabletHide {display:none;}
+        .mobileHide {display:none ;}
+        .mobileShow {display:inherit;}
+		
+		/* Breadcrumbs */
+		div.breadcrumbs ul {width:300px;}
+		
+    }
+    
+    
+    /* FLEX */
+/* You will need another stylesheet for IE9 and below to handle this */
+
+.layout-flex {  
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flexbox;
+  display: -webkit-flex;
+  display: flex; 
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}

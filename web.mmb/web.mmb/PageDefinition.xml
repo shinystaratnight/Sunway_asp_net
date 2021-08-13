@@ -1,0 +1,829 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Pages>
+
+	
+	<!-- common elements (header and footer) -->
+	<CommonElements>
+
+		<Widgets>
+			
+			<Widget>
+				<Name>Header</Name>
+				<Type>Custom</Type>
+				<Section>TopHeader</Section>
+				<FromLibrary>false</FromLibrary>
+				<ThemeSpecific>true</ThemeSpecific>
+			</Widget>
+
+			<Widget>
+				<Name>Footer</Name>
+				<Type>Custom</Type>
+				<Section>Footer</Section>
+				<FromLibrary>false</FromLibrary>
+			</Widget>
+
+			<Widget>
+				<Name>WaitMessage</Name>
+				<Section>ContentFull</Section>
+				<FromLibrary>true</FromLibrary>
+				<Type>Custom</Type>
+				<Settings>
+					<WidgetSetting><Key>ObjectType</Key><Value>WaitMessage</Value></WidgetSetting>
+					<WidgetSetting><Key>TemplateOverride</Key><Value>/Widgets/WaitMessage/WaitMessage.xsl</Value></WidgetSetting>
+				</Settings>
+			</Widget>
+			
+			<Widget>
+				<Name>Warning</Name>
+				<Type>Custom</Type>
+				<Section>TopHeader</Section>
+				<FromLibrary>true</FromLibrary>
+				<Settings>
+					<WidgetSetting><Key>ObjectType</Key><Value>WarningMessage</Value></WidgetSetting>
+				</Settings>
+			</Widget>
+
+		</Widgets>
+
+	</CommonElements>
+
+	<PageDefinition>
+		<PageName>404</PageName>
+		<URL>/404</URL>
+
+		<Head>
+			<Title>404</Title>
+			<Description>Page Not Found</Description>
+		</Head>
+
+		<Widgets>
+
+			<Widget>
+				<Name>PageNotFound</Name>
+				<Section>SubHeader</Section>
+				<FromLibrary>true</FromLibrary>
+				<Type>Custom</Type>
+			</Widget>
+		</Widgets>
+			
+	</PageDefinition>
+		
+	<!-- home page-->
+	<PageDefinition>
+		<PageName>Homepage</PageName>
+		<URL>/</URL>
+		
+		<Head>
+			<Title></Title>
+			<Description></Description>
+		</Head>
+		
+		<Widgets>
+      
+			<Widget>
+				<Name>WebTemplateSearchTool</Name>
+				<Section>TopHeader</Section>
+				<FromLibrary>false</FromLibrary>
+				<ParentWidget>SearchTool</ParentWidget>
+				<Type>Custom</Type>
+				<Settings>
+					<WidgetSetting><Key>SearchModes</Key><Value>Hotel#Hotels,FlightPlusHotel#Flight&#43;Hotel</Value></WidgetSetting>
+					<WidgetSetting><Key>CSSClassOverride</Key><Value>clear box homepage six columns alpha</Value></WidgetSetting>
+					<WidgetSetting><Key>DestinationMode</Key><Value>AutoCompleteAndDropDown</Value></WidgetSetting>
+					<WidgetSetting><Key>AdvancedOptions</Key><Value>True</Value></WidgetSetting>
+					<WidgetSetting><Key>LabelOverrides</Key><Value>btnSearch|Search Now#aShowAdvancedOptions|View Advanced Options#aShowArrivingAtDropdown|View Destination List#aShowAutoComplete|Search Destinations#lblDepartureLocation|Flying From#lblDestination|Destination#lblProperty|Specific Property:#lblDepartureDate|Departing#lblDuration|Nights#lblPassengers|Passengers#lblAdults|Adults#lblChildren|Child#lblInfants|Infant#lblRooms|Rooms</Value></WidgetSetting>
+					<WidgetSetting><Key>PlaceholderOverrides</Key><Value>acpArrivingAtID|Search Destinations#ddlDepartingFromID|Departure Airport#ddlRegionID|All Areas#ddlMealBasisID|Any</Value></WidgetSetting>
+					<WidgetSetting><Key>FlightPlusHotelURL</Key><Value>/search-results</Value></WidgetSetting>
+					<WidgetSetting><Key>DatepickerMonths</Key><Value>1</Value></WidgetSetting>
+					<WidgetSetting><Key>DatepickerFirstDay</Key><Value>0</Value></WidgetSetting>
+					<WidgetSetting><Key>ShowClearButton</Key><Value>false</Value></WidgetSetting>
+					<WidgetSetting><Key>PriorityProperty</Key><Value>false</Value></WidgetSetting>
+					<WidgetSetting><Key>ControlOverride</Key><Value>/Widgets/WebTemplateSearchTool</Value></WidgetSetting>
+				</Settings>
+			</Widget>
+      
+		</Widgets>
+		
+	</PageDefinition>
+    
+	<!-- search results -->
+	<PageDefinition>
+		<PageName>SearchResults</PageName>
+		<URL>/search-results</URL>
+		<RequiresLogin>true</RequiresLogin>
+
+		<Head>
+			<Title>Search Results</Title>
+		</Head>
+
+		<Widgets>
+
+			<Widget>
+				<Name>Breadcrumbs</Name>
+				<Section>SubHeader</Section>
+				<FromLibrary>true</FromLibrary>
+				<Type>Custom</Type>
+				<Settings>
+					<WidgetSetting><Key>BookingPathway</Key><Value>True</Value></WidgetSetting>
+					<WidgetSetting><Key>UseAccessibleURLs</Key><Value>false</Value></WidgetSetting>
+				</Settings>
+			</Widget>
+			
+			<Widget>
+				<Name>SearchSummary</Name>
+				<Section>Content</Section>
+				<FromLibrary>true</FromLibrary>
+				<Type>Custom</Type>
+				<Settings>
+					<WidgetSetting><Key>ShowPopularHelper</Key><Value>True</Value></WidgetSetting>
+					<WidgetSetting><Key>PopularHelperText</Key><Value>Click to view the favourite &amp; most popular hotels in this area</Value></WidgetSetting>
+					<WidgetSetting><Key>FlightPlusHotelSearchSummary</Key><Value>#openstrong##hotelcount# hotels in #destination##closestrong##pax# from #departuredate# to #returndate# (#duration#)</Value></WidgetSetting>
+					<WidgetSetting><Key>HotelOnlySearchSummary</Key><Value>#openstrong##hotelcount# hotels in #destination##closestrong##pax# from #departuredate# to #returndate# (#duration#)</Value></WidgetSetting>
+					<WidgetSetting><Key>LabelOverrides</Key><Value>lblSortBy|Sort by:</Value></WidgetSetting>
+					<WidgetSetting><Key>ShowTotalPages</Key><Value>True</Value></WidgetSetting>
+					<WidgetSetting><Key>ControlOverride</Key><Value>/Widgets/SearchSummary</Value></WidgetSetting>
+				</Settings>
+			</Widget>
+			
+			<Widget>
+				<Name>HotelResults</Name>
+				<Section>Content</Section>
+				<FromLibrary>true</FromLibrary>
+				<Type>Custom</Type>
+				<Settings>
+					<WidgetSetting><Key>TabbedContent</Key><Value>True</Value></WidgetSetting>
+					<WidgetSetting><Key>SummaryLength</Key><Value>130</Value></WidgetSetting> 
+					<WidgetSetting><Key>RedirectURL</Key><Value>/booking-summary</Value></WidgetSetting>
+					<WidgetSetting><Key>PackagePrice</Key><Value>True</Value></WidgetSetting>
+					<WidgetSetting><Key>PerPersonPrice</Key><Value>True</Value></WidgetSetting>
+					<WidgetSetting><Key>PriceFormat</Key><Value>###,##0.00</Value></WidgetSetting>
+					<WidgetSetting><Key>DisplayBestSeller</Key><Value>True</Value></WidgetSetting>
+					<WidgetSetting><Key>BestSellerImagePath</Key><Value></Value></WidgetSetting>
+					<WidgetSetting><Key>BestSellerPosition</Key><Value>Header</Value></WidgetSetting>
+					<WidgetSetting><Key>TemplateOverride</Key><Value>/Widgets/HotelResults/HotelResults.xsl</Value></WidgetSetting>
+					<WidgetSetting><Key>MapTab</Key><Value>True</Value></WidgetSetting>
+					<WidgetSetting><Key>TAReviewsTab</Key><Value>True</Value></WidgetSetting>
+					<WidgetSetting><Key>CancellationChargesPosition</Key><Value>Popup</Value></WidgetSetting>
+				</Settings>
+			</Widget>
+			
+			<Widget>
+				<Name>Map</Name>
+				<Section>Content</Section>
+				<FromLibrary>true</FromLibrary>
+				<Type>Custom</Type>
+				<Settings></Settings>
+			</Widget>
+			
+			<Widget>
+				<Name>HotelPopup</Name>
+				<Section>Content</Section>
+				<FromLibrary>true</FromLibrary>
+				<Type>Custom</Type>
+				<Settings>										<!--NEEDS TO BE CHANGED-->
+					<WidgetSetting><Key>MapMarkerPath</Key><Value>http://www.Bookabed.ie/Themes/Bookabed/Images/map-marker.png</Value></WidgetSetting>
+					<WidgetSetting><Key>EmailLogoName</Key><Value>bookabed-logo.png</Value></WidgetSetting>
+					<WidgetSetting><Key>TemplateOverride</Key><Value>/Widgets/HotelPopup/HotelPopup.xsl</Value></WidgetSetting>
+					<WidgetSetting><Key>EmailTemplateOverride</Key><Value>/Widgets/HotelPopup/HotelDetailsEmail.xsl</Value></WidgetSetting>
+					<WidgetSetting><Key>PerPersonPrice</Key><Value>False</Value></WidgetSetting>					
+				</Settings>
+			</Widget>
+			
+			<Widget>
+				<Name>HotelResultsFooter</Name>
+				<Section>Content</Section>
+				<FromLibrary>true</FromLibrary>
+				<Type>Custom</Type>
+				<Settings>
+					<WidgetSetting><Key>ShowTotalPages</Key><Value>True</Value></WidgetSetting>
+					<WidgetSetting><Key>BackToTop</Key><Value>True</Value></WidgetSetting>
+				</Settings>
+			</Widget>
+			
+			<Widget>
+				<Name>MobileHotelHeader</Name>
+				<Section>Sidebar</Section>
+				<FromLibrary>false</FromLibrary>
+				<Type>Custom</Type>
+			</Widget>
+			
+			<Widget>
+				<Name>WebTemplateSearchTool</Name>
+				<Section>Sidebar</Section>
+				<FromLibrary>false</FromLibrary>
+				<ParentWidget>SearchTool</ParentWidget>
+				<Type>Custom</Type>
+				<Settings>
+					<WidgetSetting><Key>SearchModes</Key><Value>Flight#Flights,Hotel#Hotels,FlightPlusHotel#Flight&#43;Hotel</Value></WidgetSetting>
+					<WidgetSetting><Key>CSSClassOverride</Key><Value>clear box homepage six columns alpha</Value></WidgetSetting>
+					<WidgetSetting><Key>DestinationMode</Key><Value>AutoCompleteAndDropDown</Value></WidgetSetting>
+					<WidgetSetting><Key>AdvancedOptions</Key><Value>True</Value></WidgetSetting>
+					<WidgetSetting><Key>LabelOverrides</Key><Value>btnSearch|Search Now#aShowAdvancedOptions|View Advanced Options#aShowArrivingAtDropdown|View Destination List#aShowAutoComplete|Search Destinations#lblDepartureLocation|Flying From#lblDestination|Destination#lblProperty|Specific Property:#lblDepartureDate|Departing#lblDuration|Nights#lblPassengers|Passengers#lblAdults|Adults#lblChildren|Child#lblInfants|Infant#lblRooms|Rooms</Value></WidgetSetting>
+					<WidgetSetting><Key>PlaceholderOverrides</Key><Value>acpArrivingAtID|Search Destinations#ddlDepartingFromID|Departure Airport#ddlRegionID|Choose Destination#ddlMealBasisID|Any</Value></WidgetSetting>
+					<WidgetSetting><Key>FlightPlusHotelURL</Key><Value>/search-results</Value></WidgetSetting>
+					<WidgetSetting><Key>DatepickerMonths</Key><Value>1</Value></WidgetSetting>
+					<WidgetSetting><Key>DatepickerFirstDay</Key><Value>0</Value></WidgetSetting>
+					<WidgetSetting><Key>ShowClearButton</Key><Value>false</Value></WidgetSetting>
+					<WidgetSetting><Key>PriorityProperty</Key><Value>false</Value></WidgetSetting>
+					<WidgetSetting><Key>ControlOverride</Key><Value>/Widgets/WebTemplateSearchTool</Value></WidgetSetting>
+					<WidgetSetting><Key>StartMode</Key><Value>Collapsed</Value></WidgetSetting>
+					<WidgetSetting><Key>ExpandAction</Key><Value>Popup</Value></WidgetSetting>
+				</Settings>
+			</Widget>
+			
+			<Widget>
+				<Name>HotelResultsFilter</Name>
+				<Section>Sidebar</Section>
+				<FromLibrary>true</FromLibrary>
+				<Type>Custom</Type>
+				<Settings>
+					<WidgetSetting><Key>PerPersonPrices</Key><Value>False</Value></WidgetSetting>
+					<WidgetSetting><Key>ShowMapLink</Key><Value>True</Value></WidgetSetting>
+					<WidgetSetting><Key>ScrollToTopAfterFilter</Key><Value>True</Value></WidgetSetting>
+				</Settings>
+			</Widget>
+			
+			<Widget>
+				<Name>Basket</Name>
+				<Section>Sidebar</Section>
+				<FromLibrary>true</FromLibrary>
+				<Type>Custom</Type>
+				<Settings>					
+					<WidgetSetting><Key>Title</Key><Value>Booking Summary</Value></WidgetSetting>
+					<WidgetSetting><Key>TextOverrides</Key><Value>HotelTitle|Hotel Information#FlightTitle|Flight Information#TransferTitle|Transfer Information</Value></WidgetSetting>
+					<WidgetSetting><Key>ExcludeSubtotals</Key><Value>false</Value></WidgetSetting>
+					<WidgetSetting><Key>PassengerBreakdown</Key><Value>false</Value></WidgetSetting>
+					<WidgetSetting><Key>HideBaggage</Key><Value>True</Value></WidgetSetting>
+					<WidgetSetting><Key>TemplateOverride</Key><Value>/Widgets/Basket/Basket.xsl</Value></WidgetSetting>
+				</Settings>
+			</Widget>
+		</Widgets>
+		
+	</PageDefinition>
+	
+	<!-- Extras -->
+	<PageDefinition>
+		<PageName>BookingSummary</PageName>
+		<URL>/booking-summary</URL>
+		<RequiresLogin>true</RequiresLogin>
+
+		<Head>
+			<Title>Booking Summary</Title>
+		</Head>
+
+		<Widgets>
+
+			<Widget>
+				<Name>Breadcrumbs</Name>
+				<Section>SubHeader</Section>
+				<FromLibrary>true</FromLibrary>
+				<Type>Custom</Type>
+				<Settings>
+					<WidgetSetting><Key>BookingPathway</Key><Value>True</Value></WidgetSetting>
+					<WidgetSetting><Key>UseAccessibleURLs</Key><Value>false</Value></WidgetSetting>
+				</Settings>
+			</Widget>
+						
+			<Widget>
+				<Name>Transfers</Name>
+				<Section>Content</Section>
+				<FromLibrary>true</FromLibrary>
+				<Type>Custom</Type>
+				<Settings>
+					<WidgetSetting><Key>Title</Key><Value>Transfer</Value></WidgetSetting>
+					<WidgetSetting><Key>TextOverrides</Key><Value>Text_TransfersTable|Why not add a transfer to your booking</Value></WidgetSetting>
+					<WidgetSetting><Key>TemplateOverride</Key><Value>/Widgets/Transfers/Transfers.xsl</Value></WidgetSetting>
+					<WidgetSetting><Key>HotelOnlyInitialSearch</Key><Value>true</Value></WidgetSetting>
+				</Settings>
+			</Widget>
+			
+			<Widget>
+				<Name>Baggage</Name>
+				<Section>Content</Section>
+				<FromLibrary>true</FromLibrary>
+				<Type>Custom</Type>
+				<Settings>
+					<WidgetSetting><Key>Title</Key><Value>Your Baggage</Value></WidgetSetting>
+					<WidgetSetting><Key>TextOverrides</Key><Value>Description|Baggage Description#Quantity|Number Of Items#Price|Price Per Item</Value></WidgetSetting>
+					<WidgetSetting><Key>PriceFormat</Key><Value>###,##0</Value></WidgetSetting>
+					<WidgetSetting><Key>TemplateOverride</Key><Value>Themes/ADT/Widgets/Baggage/Baggage.xsl</Value></WidgetSetting>
+				</Settings>
+			</Widget>
+
+			<Widget>
+				<Name>Extras</Name>
+				<Section>Content</Section>
+				<FromLibrary>true</FromLibrary>
+				<Type>Custom</Type>
+				<Settings>
+					<WidgetSetting><Key>Identifier</Key><Value>Insurance</Value></WidgetSetting>
+					<WidgetSetting><Key>ExtraTypes</Key><Value>Third Party Insurance|</Value></WidgetSetting>
+					<WidgetSetting><Key>Title</Key><Value>Insurance</Value></WidgetSetting>
+					<WidgetSetting><Key>DisplayType</Key><Value>SimpleRadio</Value></WidgetSetting>
+				</Settings>
+			</Widget>
+
+			<Widget>
+				<Name>HotelUpsell</Name>
+				<Section>Content</Section>
+				<FromLibrary>false</FromLibrary>
+				<Type>Custom</Type>
+				<Settings>
+					<WidgetSetting><Key>Format</Key><Value>ExtrasPage</Value></WidgetSetting>
+				</Settings>
+			</Widget>
+			
+			<Widget>
+				<Name>HotelPopup</Name>
+				<Section>Content</Section>
+				<FromLibrary>true</FromLibrary>
+				<Type>Custom</Type>
+				<Settings>										<!--NEEDS TO BE CHANGED-->
+					<WidgetSetting><Key>MapMarkerPath</Key><Value>http://www.Bookabed.ie/Themes/Bookabed/Images/map-marker.png</Value></WidgetSetting>
+					<WidgetSetting><Key>EmailLogoName</Key><Value>bookabed-logo.png</Value></WidgetSetting>
+					<WidgetSetting><Key>TemplateOverride</Key><Value>/Widgets/HotelPopup/HotelPopup.xsl</Value></WidgetSetting>
+					<WidgetSetting><Key>EmailTemplateOverride</Key><Value>/Widgets/HotelPopup/HotelDetailsEmail.xsl</Value></WidgetSetting>
+					<WidgetSetting><Key>PerPersonPrice</Key><Value>False</Value></WidgetSetting>					
+				</Settings>
+			</Widget>
+
+			<Widget>
+				<Name>CompleteBooking</Name>
+				<Section>Content</Section>
+				<FromLibrary>true</FromLibrary>
+				<Type>Custom</Type>
+				<Settings>
+					<WidgetSetting><Key>CSSClassOverride</Key><Value>bookingSummary clear</Value></WidgetSetting>
+					<WidgetSetting><Key>CompleteScript</Key><Value>CompleteBooking.SearchToMainBasket();</Value></WidgetSetting>
+					<WidgetSetting><Key>RedirectURL</Key><Value>/payment</Value></WidgetSetting>
+					<WidgetSetting><Key>BasketSkipURL</Key><Value>/payment</Value></WidgetSetting>
+					<WidgetSetting><Key>SearchToMainBasket</Key><Value>true</Value></WidgetSetting>
+					<WidgetSetting><Key>PreBook</Key><Value>true</Value></WidgetSetting>
+					<WidgetSetting><Key>CompleteBooking</Key><Value>false</Value></WidgetSetting>
+					<WidgetSetting><Key>ButtonText</Key><Value>Continue</Value></WidgetSetting>
+					<WidgetSetting><Key>ExtraButtons</Key><Value>aCompleteBooking_Back|Back to {SearchMode} results</Value></WidgetSetting>
+				</Settings>
+			</Widget>
+			
+			<Widget>
+				<Name>MobileExtrasHeader</Name>
+				<Section>Sidebar</Section>
+				<FromLibrary>false</FromLibrary>
+				<Type>Custom</Type>
+			</Widget>
+			
+			<Widget>
+				<Name>WebTemplateSearchTool</Name>
+				<Section>Sidebar</Section>
+				<FromLibrary>false</FromLibrary>
+				<ParentWidget>SearchTool</ParentWidget>
+				<Type>Custom</Type>
+				<Settings>
+					<WidgetSetting><Key>SearchModes</Key><Value>Flight#Flights,Hotel#Hotels,FlightPlusHotel#Flight&#43;Hotel</Value></WidgetSetting>
+					<WidgetSetting><Key>CSSClassOverride</Key><Value>clear box homepage six columns alpha</Value></WidgetSetting>
+					<WidgetSetting><Key>DestinationMode</Key><Value>AutoCompleteAndDropDown</Value></WidgetSetting>
+					<WidgetSetting><Key>AdvancedOptions</Key><Value>True</Value></WidgetSetting>
+					<WidgetSetting><Key>LabelOverrides</Key><Value>btnSearch|Search Now#aShowAdvancedOptions|View Advanced Options#aShowArrivingAtDropdown|View Destination List#aShowAutoComplete|Search Destinations#lblDepartureLocation|Flying From#lblDestination|Destination#lblProperty|Specific Property:#lblDepartureDate|Departing#lblDuration|Nights#lblPassengers|Passengers#lblAdults|Adults#lblChildren|Child#lblInfants|Infant#lblRooms|Rooms</Value></WidgetSetting>
+					<WidgetSetting><Key>PlaceholderOverrides</Key><Value>acpArrivingAtID|Search Destinations#ddlDepartingFromID|Departure Airport#ddlRegionID|Choose Destination#ddlMealBasisID|Any</Value></WidgetSetting>
+					<WidgetSetting><Key>FlightPlusHotelURL</Key><Value>/flight-results</Value></WidgetSetting>
+					<WidgetSetting><Key>DatepickerMonths</Key><Value>1</Value></WidgetSetting>
+					<WidgetSetting><Key>DatepickerFirstDay</Key><Value>0</Value></WidgetSetting>
+					<WidgetSetting><Key>ShowClearButton</Key><Value>false</Value></WidgetSetting>
+					<WidgetSetting><Key>PriorityProperty</Key><Value>false</Value></WidgetSetting>
+					<WidgetSetting><Key>ControlOverride</Key><Value>/Widgets/WebTemplateSearchTool</Value></WidgetSetting>
+					<WidgetSetting><Key>StartMode</Key><Value>Collapsed</Value></WidgetSetting>
+					<WidgetSetting><Key>ExpandAction</Key><Value>Popup</Value></WidgetSetting>
+				</Settings>
+			</Widget>
+			
+			<Widget>
+				<Name>Basket</Name>
+				<Section>Sidebar</Section>
+				<FromLibrary>true</FromLibrary>
+				<Type>Custom</Type>
+				<Settings>					
+					<WidgetSetting><Key>Title</Key><Value>Booking Summary</Value></WidgetSetting>
+					<WidgetSetting><Key>TextOverrides</Key><Value>HotelTitle|Hotel Information#FlightTitle|Flight Information#TransferTitle|Transfer Information</Value></WidgetSetting>
+					<WidgetSetting><Key>ExcludeSubtotals</Key><Value>false</Value></WidgetSetting>
+					<WidgetSetting><Key>PassengerBreakdown</Key><Value>false</Value></WidgetSetting>
+					<WidgetSetting><Key>HideBaggage</Key><Value>True</Value></WidgetSetting>
+					<WidgetSetting><Key>TemplateOverride</Key><Value>/Widgets/Basket/Basket.xsl</Value></WidgetSetting>
+				</Settings>
+			</Widget>
+		</Widgets>		
+	</PageDefinition>
+	
+	<!-- Payment --> 	
+	<PageDefinition>
+		<PageName>Payment</PageName>
+		<URL>/payment</URL>
+		<RequiresLogin>true</RequiresLogin>
+
+		<Head>
+			<Title>Payment</Title>
+		</Head>
+
+		<Widgets>
+			<Widget>
+				<Name>Breadcrumbs</Name>
+				<Section>SubHeader</Section>
+				<FromLibrary>true</FromLibrary>
+				<Type>Custom</Type>
+				<Settings>
+					<WidgetSetting><Key>BookingPathway</Key><Value>True</Value></WidgetSetting>
+					<WidgetSetting><Key>UseAccessibleURLs</Key><Value>false</Value></WidgetSetting>
+				</Settings>
+			</Widget>
+			
+			<Widget>
+			<Name>Deposit</Name>
+			<Section>Content</Section>
+			<FromLibrary>true</FromLibrary>
+			<Type>Custom</Type>
+			<Settings>
+				<WidgetSetting><Key>CSSClassOverride</Key><Value>box primary clear</Value></WidgetSetting>
+				<WidgetSetting><Key>Text</Key><Value>Please select from the payment options below then enter your card details.</Value></WidgetSetting>
+				<WidgetSetting><Key>TemplateOverride</Key><Value>/Widgets/Deposit/Deposit.xsl</Value></WidgetSetting>
+			</Settings>
+			</Widget>
+			
+			<Widget>
+				<Name>Errata</Name>
+				<Section>Content</Section>
+				<FromLibrary>true</FromLibrary>
+				<Type>Custom</Type>
+				<Settings>
+					<WidgetSetting><Key>TemplateOverride</Key><Value>/Widgets/Errata/Errata.xsl</Value></WidgetSetting>
+				</Settings>
+			</Widget>
+						
+			<Widget>
+				<Name>GuestDetails</Name>
+				<Section>Content</Section>
+				<FromLibrary>true</FromLibrary>
+				<Type>Custom</Type>
+				<Settings>
+					<WidgetSetting><Key>BasketType</Key><Value>Main</Value></WidgetSetting>
+					<WidgetSetting><Key>DOBSearchModes</Key><Value>FlightPlusHotel,Flight</Value></WidgetSetting>
+					<WidgetSetting><Key>PopulateLeadGuest</Key><Value>True</Value></WidgetSetting>
+					<WidgetSetting><Key>TemplateOverride</Key><Value>/Widgets/GuestDetails/GuestDetails.xsl</Value></WidgetSetting>
+				</Settings>
+			</Widget>
+			
+			<Widget>
+				<Name>HotelRequests</Name>
+				<Section>Content</Section>
+				<FromLibrary>true</FromLibrary>
+				<Type>Custom</Type>
+				<Settings>
+					<WidgetSetting><Key>Title</Key><Value></Value></WidgetSetting>
+					<WidgetSetting><Key>Text</Key><Value>We will ensure your request is passed to the accommodation, but cannot guarantee your requirement can always be met.</Value></WidgetSetting>
+					<WidgetSetting><Key>TextboxPlaceholder</Key><Value>Please enter your requests here</Value></WidgetSetting>
+					<WidgetSetting><Key>ControlOverride</Key><Value>/Widgets/HotelRequests</Value></WidgetSetting>
+				</Settings>
+			</Widget>
+			
+			<Widget>
+				<Name>LeadGuestDetails</Name>
+				<Section>Content</Section>
+				<FromLibrary>true</FromLibrary>
+				<Type>Custom</Type>
+				<Settings>
+					<WidgetSetting><Key>IsTrade</Key><Value>False</Value></WidgetSetting>
+					<WidgetSetting><Key>BasketType</Key><Value>Main</Value></WidgetSetting>
+					<WidgetSetting><Key>ControlOverride</Key><Value>/Widgets/LeadGuestDetails</Value></WidgetSetting>
+				</Settings>
+			</Widget>
+
+			<Widget>
+				<Name>PaymentDetails</Name>
+				<Section>Content</Section>
+				<FromLibrary>true</FromLibrary>
+				<Type>Custom</Type>
+				<Settings>
+					<WidgetSetting><Key>TradeOptionalCard</Key><Value>False</Value></WidgetSetting>
+					<WidgetSetting><Key>ControlOverride</Key><Value>/Widgets/PaymentDetails</Value></WidgetSetting>
+					<WidgetSetting><Key>IssueNumber</Key><Value>False</Value></WidgetSetting>
+				</Settings>
+			</Widget>
+			
+			<Widget>
+				<Name>TermsAndConditions</Name>
+				<Section>Content</Section>
+				<FromLibrary>true</FromLibrary>
+				<Type>Custom</Type>
+				<Settings>
+					<WidgetSetting><Key>CSSClassOverride</Key><Value>box primary clear</Value></WidgetSetting>
+					<WidgetSetting><Key>DocumentPath</Key><Value>/terms-and-conditions</Value></WidgetSetting>
+					<WidgetSetting><Key>IAgreeText</Key><Value>Please tick this box to confirm you have read and agreed to the Terms &amp; Conditions.</Value></WidgetSetting>
+					<WidgetSetting><Key>TemplateOverride</Key><Value>/Widgets/TermsAndConditions/TermsAndConditions.xsl</Value></WidgetSetting>
+				</Settings>
+			</Widget>
+			
+			<Widget>
+				<Name>CompleteBooking</Name>
+				<Section>Content</Section>
+				<FromLibrary>true</FromLibrary>
+				<Type>Custom</Type>
+				<Settings>
+					<WidgetSetting><Key>CSSClassOverride</Key><Value>payment clear</Value></WidgetSetting>
+					<WidgetSetting><Key>ValidationScript</Key><Value>GuestDetails.Validate#HotelRequests.AddRequestToBasket#LeadGuestDetails.Validate#HotelRequests.AddRequestToBasket#TermsAndConditions.Validate#Errata.Validate#PaymentDetails.Validate#TermsAndConditions.Validate</Value></WidgetSetting>
+					<WidgetSetting><Key>CompleteScript</Key><Value>CompleteBooking.Book();</Value></WidgetSetting>
+					<WidgetSetting><Key>RedirectURL</Key><Value>/confirmation</Value></WidgetSetting>
+					<WidgetSetting><Key>PreBook</Key><Value>false</Value></WidgetSetting>
+					<WidgetSetting><Key>CompleteBooking</Key><Value>true</Value></WidgetSetting>
+					<WidgetSetting><Key>ButtonText</Key><Value>Complete Booking</Value></WidgetSetting>
+					<WidgetSetting><Key>ExtraButtons</Key><Value>aCompleteBooking_Back|Back to Extras</Value></WidgetSetting>
+					<WidgetSetting><Key>ControlOverride</Key><Value>/Widgets/CompleteBooking</Value></WidgetSetting>
+				</Settings>
+			</Widget>
+			
+			<Widget>
+				<Name>MobilePaymentHeader</Name>
+				<Section>Sidebar</Section>
+				<FromLibrary>false</FromLibrary>
+				<Type>Custom</Type>
+			</Widget>
+			
+			<Widget>
+				<Name>Basket</Name>
+				<Section>Sidebar</Section>
+				<FromLibrary>true</FromLibrary>
+				<Type>Custom</Type>
+				<Settings>
+					<WidgetSetting><Key>BasketType</Key><Value>Main</Value></WidgetSetting>
+					<WidgetSetting><Key>Title</Key><Value>Booking Summary</Value></WidgetSetting>
+					<WidgetSetting><Key>TextOverrides</Key><Value>HotelTitle|Hotel Information#FlightTitle|Flight Information#TransferTitle|Transfer Information</Value></WidgetSetting>
+					<WidgetSetting><Key>ExcludeSubtotals</Key><Value>false</Value></WidgetSetting>
+					<WidgetSetting><Key>PassengerBreakdown</Key><Value>false</Value></WidgetSetting>
+					<WidgetSetting><Key>HideBaggage</Key><Value>false</Value></WidgetSetting>
+					<WidgetSetting><Key>TemplateOverride</Key><Value>/Widgets/Basket/Basket.xsl</Value></WidgetSetting>
+				</Settings>
+			</Widget>
+		</Widgets>
+		
+	</PageDefinition>
+	
+	<!-- Confirmation --> 	
+	<PageDefinition>
+		<PageName>Confirmation</PageName>
+		<URL>/confirmation</URL>
+		<RequiresLogin>true</RequiresLogin>
+
+		<Head>
+			<Title>Confirmation</Title>
+		</Head>
+
+		<Widgets>
+			
+			<Widget>
+				<Name>Breadcrumbs</Name>
+				<Section>SubHeader</Section>
+				<FromLibrary>true</FromLibrary>
+				<Type>Custom</Type>
+				<Settings>
+					<WidgetSetting><Key>BookingPathway</Key><Value>True</Value></WidgetSetting>
+					<WidgetSetting><Key>UseAccessibleURLs</Key><Value>false</Value></WidgetSetting>
+				</Settings>
+			</Widget>
+			
+			<Widget>
+				<Name>Basket</Name>
+				<Section>Sidebar</Section>
+				<FromLibrary>true</FromLibrary>
+				<Type>Custom</Type>
+				<Settings>
+					<WidgetSetting><Key>BasketType</Key><Value>Main</Value></WidgetSetting>
+					<WidgetSetting><Key>Title</Key><Value>Booking Summary</Value></WidgetSetting>
+					<WidgetSetting><Key>TextOverrides</Key><Value>HotelTitle|Hotel Information#FlightTitle|Flight Information#TransferTitle|Transfer Information</Value></WidgetSetting>
+					<WidgetSetting><Key>ExcludeSubtotals</Key><Value>false</Value></WidgetSetting>
+					<WidgetSetting><Key>PassengerBreakdown</Key><Value>false</Value></WidgetSetting>
+					<WidgetSetting><Key>HideBaggage</Key><Value>false</Value></WidgetSetting>
+					<WidgetSetting><Key>TemplateOverride</Key><Value>/Widgets/Basket/Basket.xsl</Value></WidgetSetting>
+				</Settings>
+			</Widget>
+			
+			<Widget>
+				<Name>BookingConfirmation</Name>
+				<Type>Custom</Type>
+				<Section>Content</Section>
+				<FromLibrary>true</FromLibrary>
+			</Widget>
+		</Widgets>
+		
+	</PageDefinition>
+	
+	<!-- property page -->
+	<PageDefinition>
+		<PageName>Property</PageName>
+		<URL>ObjectType=Property</URL>
+
+		<Head>
+			<Title>Property Page</Title>
+		</Head>
+
+		<Widgets>
+			
+			<Widget>
+				<Name>HotelDetails</Name>
+				<Type>Custom</Type>
+				<Section>Content</Section>
+				<FromLibrary>true</FromLibrary>
+				<Settings>
+					<WidgetSetting><Key>TemplateOverride</Key><Value>/Widgets/HotelDetails/HotelDetails.xsl</Value></WidgetSetting>
+				</Settings>
+			</Widget>
+
+			<Widget>
+				<Name>Map</Name>
+				<Section>Content</Section>
+				<FromLibrary>true</FromLibrary>
+				<Type>Custom</Type>
+				<Settings></Settings>
+			</Widget>
+
+		</Widgets>
+		
+	</PageDefinition>
+	
+		<!-- Search (Deeplink) -->
+	<PageDefinition>
+		<PageName>Search</PageName>
+		<URL>/search</URL>
+
+		<Head>
+			<Title>Search</Title>
+		</Head>
+
+		<Widgets>
+			
+			<Widget>
+				<Name>WaitMessage</Name>
+				<Section>ContentFull</Section>
+				<FromLibrary>true</FromLibrary>
+				<Type>Custom</Type>
+				<Settings>
+					<WidgetSetting><Key>ObjectType</Key><Value>WaitMessage</Value></WidgetSetting>
+					<WidgetSetting><Key>TemplateOverride</Key><Value>/Widgets/WaitMessage/WaitMessage.xsl</Value></WidgetSetting>
+					<WidgetSetting><Key>Embedded</Key><Value>true</Value></WidgetSetting>
+					<WidgetSetting><Key>Type</Key><Value>Search</Value></WidgetSetting>
+				</Settings>
+			</Widget>
+			
+			<Widget>
+				<Name>Deeplink</Name>
+				<Section>ContentFull</Section>
+				<FromLibrary>true</FromLibrary>
+				<Type>Custom</Type>
+				<Settings>
+					<WidgetSetting><Key>FlightPlusHotelURL</Key><Value>/flight-results</Value></WidgetSetting>
+				</Settings>
+			</Widget>
+			
+		
+		</Widgets>
+
+	</PageDefinition>
+	
+	<!-- theme test-->
+	<PageDefinition>
+		<PageName>Theme Designer</PageName>
+		<URL>/theme</URL>
+
+		<Head>
+			<Title>Theme Designer</Title>
+		</Head>
+
+		<Widgets>
+
+			<Widget>
+				<Name>Theme_Subheader</Name>
+				<Section>Subheader</Section>
+				<FromLibrary>true</FromLibrary>
+				<Type>HTML</Type>
+			</Widget>
+
+			<Widget>
+				<Name>Theme_Sidebar_RWD</Name>
+				<Section>Sidebar</Section>
+				<FromLibrary>true</FromLibrary>
+				<Type>HTML</Type>
+			</Widget>
+
+			<Widget>
+				<Name>Theme_Content_RWD</Name>
+				<Section>Main</Section>
+				<FromLibrary>true</FromLibrary>
+				<Type>HTML</Type>
+			</Widget>
+
+		</Widgets>
+
+	</PageDefinition>
+
+	<!--Login-->
+	<PageDefinition>
+		<PageName>Login</PageName>
+		<URL>/booking-login</URL>
+
+		<Head>
+			<Title>Login</Title>
+		</Head>
+
+		<Widgets>
+
+			<Widget>
+				<Name>MyBookingsLogin</Name>
+				<Section>ContentFull</Section>
+				<FromLibrary>true</FromLibrary>
+				<Type>Custom</Type>
+				<Settings>
+					<WidgetSetting>
+						<Key>LoginType</Key>
+						<Value>BookingDetails</Value>
+					</WidgetSetting>
+				</Settings>
+			</Widget>
+
+		</Widgets>
+
+	</PageDefinition>
+
+	<!--My Bookings-->
+	<PageDefinition>
+		<PageName>MyBookings</PageName>
+		<URL>/my-bookings</URL>
+
+		<Head>
+			<Title>My Bookings</Title>
+		</Head>
+
+		<Widgets>
+
+			<Widget>
+				<Name>MyBookings</Name>
+				<Section>ContentFull</Section>
+				<FromLibrary>true</FromLibrary>
+				<Type>Custom</Type>
+				<Settings>
+					<WidgetSetting>
+						<Key>AmendmentEmailAddress</Key>
+						<Value>info@WebTemplate.ie</Value>
+					</WidgetSetting>
+					<WidgetSetting>
+						<Key>CSSClassOverride</Key>
+						<Value>box</Value>
+					</WidgetSetting>
+				</Settings>
+			</Widget>
+
+		</Widgets>
+
+	</PageDefinition>
+
+
+	<!--My Bookings-->
+	<PageDefinition>
+		<PageName>MyBookings</PageName>
+		<URL>/view-documentation</URL>
+
+		<Head>
+			<Title>Documentation</Title>
+		</Head>
+
+		<Widgets>
+
+			<Widget>
+				<Name>ViewDocumentation</Name>
+				<Section>ContentFull</Section>
+				<FromLibrary>true</FromLibrary>
+				<Type>Custom</Type>
+			</Widget>
+
+		</Widgets>
+
+	</PageDefinition>
+
+	<!-- error -->
+	<PageDefinition>
+		<PageName>Error</PageName>
+		<URL>/error</URL>
+
+		<Head>
+			<Title>Error</Title>
+		</Head>
+
+		<Widgets>
+			
+			<Widget>
+				<Name>ErrorHandler</Name>
+				<Type>Custom</Type>
+				<Section>ContentFull</Section>
+				<FromLibrary>true</FromLibrary>
+			</Widget>
+
+		</Widgets>
+
+	</PageDefinition>
+	
+</Pages>

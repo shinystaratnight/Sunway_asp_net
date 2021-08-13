@@ -1,0 +1,69 @@
+﻿#divBookingLogin {
+    width: 50%;
+    margin: 50px auto;
+
+    h2 {
+        padding:10px;
+    }
+
+    label {
+        width: 35%;
+        float: left;
+        margin-bottom: 10px;
+    }
+
+    input {
+        width: 55%;
+        float: right;
+        margin-bottom: 10px;
+    }
+
+    #divLoginContinue {
+        display: block;
+        text-align: center;
+        margin-bottom: -21px;
+    }
+
+    div.loginDetails{
+        padding:10px;
+
+        &:after{
+            clear:both;
+        }
+        &:after, &:before{
+            content:" ";
+            display:table;
+        }
+    }
+
+    a {
+        width: 50%;
+    }
+
+    div.calendar {
+        width: 55%;
+        float: right;
+        padding: 0;
+
+        input {
+            width: 100%;
+        }
+
+        i {
+            top: 0;
+            right: 0;
+        }
+    }
+}
+
+@media(min-width: 768px) and(max-width: 959px) {
+    #divBookingLogin {
+        width: 60%;
+    }
+}
+
+@media only screen and(max-width: 767px) {
+    #divBookingLogin {
+        width: 100%;
+    }
+}

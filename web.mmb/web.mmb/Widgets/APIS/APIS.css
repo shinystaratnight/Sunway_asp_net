@@ -1,0 +1,73 @@
+﻿
+#divAPIS > div > div {width:100%;overflow:hidden;height:auto;}
+#divAPIS > div > div.closed {height:0;}
+#divADTAPISWrapper h1 {margin-bottom:15px;}
+#divAPIS h2.leftBorder {padding:10px;margin-bottom:15px;border-left-width:5px;border-left-style:solid;cursor:pointer;}
+#divAPIS h2.leftBorder:after {content:"\e224";font-family:"glyphicons";float:right;margin-right:5px;transform:rotate(90deg);-ms-transform:rotate(90deg);-webkit-transform:rotate(90deg);-o-transform:rotate(90deg);-moz-transform:rotate(90deg);}
+#divAPIS h2.leftBorder.closed:after {transform:rotate(180deg);-ms-transform:rotate(180deg);-webkit-transform:rotate(180deg);-o-transform:rotate(180deg);-moz-transform:rotate(180deg);}
+
+#divAPIS > div > div > div {margin-bottom:10px;margin-top:0px;}
+#divAPIS label {display:inline-block;width:15%;}
+#divAPIS input[type=text] {padding:10px;height:44px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+#divAPIS select {-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+
+#divAPIS div.Name input {margin-right:1%;width:24%;}
+#divAPIS div.Name input#APISTitle {width:8%;}
+#divAPIS div.Name input#APISLastName {margin-right:0;}
+
+#divAPIS #divAPISDateOfBirth {display:inline-block;padding:0;width:15%;}
+#divAPIS #divAPISDateOfBirth #APISDateOfBirth {width:100%;}
+#divAPIS label.gender {width:6%;}
+#divAPIS label#lblAPISGender {width:8%;margin-left:6%;}
+#divAPIS label#lblAPISNationality {width:10%;margin-left:6%;}
+#divAPIS #APISNationality {width:20.5%;}
+
+#divAPIS div.twos label {width:15%;}
+#divAPIS div.twos input, #divAPIS div.twos select {width:30%;}
+#divAPIS div.twos input:first-of-type {margin-right:8%;}
+#divAPIS div.twos input.calendar {width:100%;margin-right:0;}
+#divAPIS div.twos div i {right:0;}
+#divAPIS div.twos div {width:30%;padding:0;}
+#divAPIS div.twos div:first-of-type {margin-right:8%;}
+
+#divAPIS a.submit {margin:20px 0;width:30%;text-align:center;float:right;}
+
+
+@media (min-width: 768px) and (max-width: 959px)
+{
+	#divAPIS label {width:16%;}
+	#divAPIS div.Name input {width:23%;}	
+	
+	#divAPIS label#lblAPISGender {width:6%;margin-left:4.5%;}
+	#divAPIS label#lblAPISNationality {margin-left:5%;}
+	
+	#divAPIS div.twos label {width:16%;}
+	#divAPIS div.twos input:first-of-type{margin-right:4.5%;}
+	#divAPIS div.twos div:first-of-type {margin-right:4.5%;}
+	
+	#divAPIS a.submit {width:35%;}
+}
+
+
+@media only screen and (max-width: 767px) 
+{
+	#divAPIS label {width:45%;}
+	#divAPIS div.Name input#APISTitle {width:20%;margin-right:0;margin-left:-1px;}
+	#divAPIS div.Name input {width:55%;margin-right:0;margin-left:45%;margin-bottom:10px;}	
+	
+	#divAPIS #divAPISDateOfBirth {width:55%;margin-left:-4px;}
+	#divAPIS label#lblAPISGender {width:45%;margin-left:0;}
+	#divAPIS #APISGendeMale {margin-left:-3px;}
+	#divAPIS label.gender {width:45%;}
+	#divAPIS #APISGenderFemale {margin-left:45%;}
+	
+	#divAPIS label#lblAPISNationality {margin-left:0;width:45%;}
+	#divAPIS #APISNationality {width:55%;margin-left:-4px;}
+	
+	#divAPIS div.twos label {width:45%;}
+	#divAPIS #APISPassportNumber {margin-right:0;}
+	#divAPIS div.twos input, #divAPIS div.twos select, #divAPIS div.twos div {margin-right:0;margin-left:-4px;margin-bottom:10px;width:55%;}
+	#divAPIS div.twos div.calendar {margin-right:0;margin-left:0;width:53%;}
+	
+	#divAPIS a.submit {width:100%;}	
+}
