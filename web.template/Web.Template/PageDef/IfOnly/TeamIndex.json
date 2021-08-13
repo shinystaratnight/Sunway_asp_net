@@ -1,0 +1,108 @@
+﻿{
+    "Id": 1,
+    "Name": "Team Index",
+    "Sections": [
+        {
+            "Id": 1,
+            "Name": "header",
+            "Widgets": [
+                {
+                    "Id": 1,
+                    "Name": "SiteBuilderToolbar",
+                    "ServerSideRender": false,
+                    "ClientSideRender": true,
+                    "Access": "AdminLoggedIn"
+                },
+                {
+                    "Id": 1,
+                    "Name": "Header",
+                    "Context": "default",
+                    "ServerSideRender": true,
+                    "ClientSideRender": true
+                }
+            ]
+        },
+        {
+            "Id": 2,
+            "Name": "Main",
+            "Widgets": [
+                {
+                    "Id": 1,
+                    "Name": "WidgetEdit",
+                    "ClientSideRender": true,
+                    "ServerSideRender": false,
+                    "Access": "AdminLoggedIn"
+                },
+                {
+                    "Id": 2,
+                    "Name": "StaticHeroImage",
+                    "Context": "team-index-hero-banner",
+                    "ServerSideRender": true,
+                    "ClientSideRender": true
+                },
+                {
+                    "Id": 4,
+                    "Name": "SubNavigation",
+                    "Context": "default",
+                    "ServerSideRender": true,
+                    "ClientSideRender": false,
+                    "EntitySpecific": false
+                },
+                {
+                    "Id": 6,
+                    "Name": "TeamIndexContent",
+                    "Context": "team-index",
+                    "ClientSideRender": false,
+                    "ServerSideRender": true,
+                    "EntitySpecific": false,
+                    "Entities": [ "StaffMember" ]
+                },
+                {
+                    "Id": 7,
+                    "Name": "RedirectEdit",
+                    "ServerSideRender": false,
+                    "ClientSideRender": true,
+                    "Access": "AdminLoggedIn"
+                }
+
+            ]
+        },
+        {
+            "Id": 1,
+            "Name": "footer",
+            "Widgets": [
+                {
+                    "Id": 1,
+                    "Name": "NewsletterSignup",
+                    "Context": "default",
+                    "ServerSideRender": true,
+                    "ClientSideRender": false
+                },
+                {
+                    "Id": 2,
+                    "Name": "Footer",
+                    "Context": "default",
+                    "ServerSideRender": true
+                }
+            ]
+        }
+    ],
+    "Template": "FullContent",
+    "Url": "meet-the-team",
+    "EntityInformations": [
+        {
+            "Id": 0,
+            "Hide": false,
+            "Name": "About",
+            "UrlSafeValue": "about-us",
+            "Value": "About Us"
+        },
+        {
+            "Id": 0,
+            "Hide": false,
+            "Name": "Meet the team",
+            "UrlSafeValue": "meet-the-team",
+            "Value": "Meet the team"
+        }
+    ]
+}

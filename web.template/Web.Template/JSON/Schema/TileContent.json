@@ -1,0 +1,515 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Tile Content",
+  "description": "Widget to display tiled content.",
+  "type": "object",
+  "properties": {
+    "Title": {
+      "type": "string",
+      "default": "Title"
+    },
+    "LeadParagraph": {
+      "type": "string",
+      "format": "textarea",
+      "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare urna augue, vitae pulvinar augue sollicitudin eget. Integer quis quam at risus consectetur facilisis."
+    },
+    "LeadTileType": {
+      "type": "string",
+      "format": "definition,LeadTileItem",
+      "default": "ImageTile",
+      "enum": [
+        "ImageTile",
+        "OfferTile",
+        "BlogTile",
+        "InfoTile",
+        "TextContent"
+      ]
+    },
+    "LeadTileItem": {
+      "type": "object",
+      "title": "Lead Tile Item",
+      "description": "Singular tile to display in the first row that matches chosen Lead Tile Type.",
+      "anyOf": [
+        {
+          "$ref": "#/definitions/ImageTile"
+        },
+        {
+          "$ref": "#/definitions/OfferTile"
+        },
+        {
+          "$ref": "#/definitions/BlogTile"
+        },
+        {
+          "$ref": "#/definitions/InfoTile"
+        },
+        {
+          "$ref": "#/definitions/TextContent"
+        }
+      ]
+    },
+    "TileType": {
+      "type": "string",
+      "format": "definition,TileItems",
+      "default": "ImageTile",
+      "enum": [
+        "ImageTile",
+        "OfferTile",
+        "BlogTile",
+        "InfoTile",
+        "TextContent"
+      ]
+    },
+    "TileItems": {
+      "type": "array",
+      "title": "Tile Items",
+      "description": "List of items to display in tiles that match chosen Tile Type.",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "anyOf": [
+          {
+            "$ref": "#/definitions/ImageTile"
+          },
+          {
+            "$ref": "#/definitions/OfferTile"
+          },
+          {
+            "$ref": "#/definitions/BlogTile"
+          },
+          {
+            "$ref": "#/definitions/InfoTile"
+          },
+          {
+            "$ref": "#/definitions/TextContent"
+          }
+        ]
+      },
+      "default": [
+        {
+          "Title": "Tile 1",
+          "BackgroundImage": "http://placehold.it/600x400&text=%20",
+          "URL": "/",
+          "Sequence": 1
+        },
+        {
+          "Title": "Tile 2",
+          "BackgroundImage": "http://placehold.it/600x400&text=%20",
+          "URL": "/",
+          "Sequence": 2
+        }
+      ]
+    },
+    "Button": {
+      "type": "object",
+      "title": "Button",
+      "description": "Optional button to appear at the bottom of the content.",
+      "properties": {
+        "Text": {
+          "type": "string"
+        },
+        "URL": {
+          "type": "string"
+        },
+        "Style": {
+          "type": "string",
+          "format": "select",
+          "default": "Default",
+          "enum": [
+            "Default",
+            "Arrow"
+          ]
+        }
+      }
+    },
+    "Configuration": {
+      "type": "object",
+      "title": "Configuration",
+      "description": "Configuration options for the Tile Content widget",
+      "properties": {
+        "ContainerStyle": {
+          "type": "string",
+          "format": "select",
+          "default": "Default",
+          "enum": [
+            "Default",
+            "Highlight",
+            "Alternate"
+          ]
+        },
+        "ContainerPadding": {
+          "type": "string",
+          "format": "select",
+          "default": "Default",
+          "enum": [
+            "Default",
+            "None"
+          ]
+        },
+        "LeadTileHeight": {
+          "type": "integer"
+        },
+        "GridType": {
+          "type": "string",
+          "default": "Default",
+          "enum": [
+            "Rows",
+            "Flex"
+          ]
+        },
+        "TileColumns": {
+          "type": "integer",
+          "format": "select",
+          "default": 2,
+          "enum": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        "TileColumnsTablet": {
+          "type": "integer",
+          "format": "select",
+          "default": 2,
+          "enum": [
+            1,
+            2
+          ]
+        },
+        "TileColumnsMobile": {
+          "type": "integer",
+          "format": "select",
+          "default": 1,
+          "enum": [
+            1,
+            2
+          ]
+        },
+        "TileRows": {
+          "type": "integer",
+          "default": 1
+        },
+        "TileHeight": {
+          "type": "integer",
+          "default": 300
+        },
+        "TilesPaddingTop": {
+          "type": "integer"
+        },
+        "TilesPaddingBottom": {
+          "type": "integer"
+        }
+      }
+    }
+  },
+  "required": [
+    "TileType",
+    "TileItems"
+  ],
+  "definitions": {
+    "ImageTile": {
+      "type": "object",
+      "properties": {
+        "Title": {
+          "type": "string"
+        },
+        "Image": {
+          "type": "string",
+          "format": "image"
+        },
+        "BackgroundImage": {
+          "type": "string",
+          "format": "image"
+        },
+        "URL": {
+          "type": "string"
+        },
+        "Sequence": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "Image",
+        "Sequence"
+      ]
+    },
+    "InfoTile": {
+      "type": "object",
+      "properties": {
+        "Image": {
+          "type": "string",
+          "format": "image",
+          "default": ""
+        },
+        "ImageStyle": {
+          "type": "string",
+          "format": "select",
+          "default": "Default",
+          "enum": [
+            "Default",
+            "Rounded",
+            "Circle"
+          ]
+        },
+        "Title": {
+          "type": "string",
+          "default": "Default"
+        },
+        "LeadParagraph": {
+          "type": "string",
+          "default": "Default"
+        },
+        "BodyText": {
+          "type": "string",
+          "default": "Default"
+        },
+        "Button": {
+          "type": "object",
+          "title": "Button",
+          "description": "Optional button to appear at the bottom of the content.",
+          "properties": {
+            "Text": {
+              "type": "string",
+              "default": "Default"
+            },
+            "URL": {
+              "type": "string",
+              "default": "Default"
+            },
+            "Style": {
+              "type": "string",
+              "format": "select",
+              "default": "Default",
+              "enum": [
+                "Default",
+                "Arrow"
+              ]
+            }
+          }
+        }
+      },
+      "required": [
+        "Title"
+      ]
+    },
+    "OfferTile": {
+      "type": "object",
+      "properties": {
+        "PropertyId": {
+          "type": "integer",
+          "format": "autolookup,propertySummary"
+        },
+        "OfferText": {
+          "type": "string"
+        },
+        "OfferPricing": {
+          "type": "string"
+        },
+        "URL": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "PropertyId",
+        "OfferText",
+        "URL"
+      ]
+    },
+    "BlogTile": {
+      "type": "object",
+      "properties": {
+        "Image": {
+          "type": "string"
+        },
+        "Date": {
+          "type": "string",
+          "format": "date"
+        },
+        "Title": {
+          "type": "string"
+        },
+        "Author": {
+          "type": "string"
+        },
+        "Summary": {
+          "type": "string"
+        },
+        "LinkText": {
+          "type": "string"
+        },
+        "URL": {
+          "type": "string"
+        },
+        "DisplayOnMobile": {
+          "type": "boolean",
+          "default": true
+        },
+        "Sequence": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "Image",
+        "Date",
+        "Title",
+        "Author",
+        "Summary",
+        "URL"
+      ]
+    },
+    "TextContent": {
+      "type": "object",
+      "properties": {
+        "MarkdownText": {
+          "type": "string",
+          "format": "textarea",
+          "description": "Markdown text based on CommonMark spec. See http://commonmark.org/help/ for details.",
+          "default": "A paragraph of text.\n      ## A heading\n      A paragraph of text with a [Link](http://commonmark.org/help/)\n      \n      A paragraph of text with **bold** text.\n      \n      A paragraph of text with *italic* text.\n      \n      * List\n      * List\n      * List\n      \n      An image\n      ![Image](http://placehold.it/400x300)\n    "
+        },
+        "SideImage": {
+          "type": "string",
+          "format": "image",
+          "description": "Optional image to appear at the side of the content."
+        },
+        "SideImages": {
+          "type": "array",
+          "title": "Side Images",
+          "description": "list of images to appear in side grid",
+          "maxItems": 6,
+          "uniqueItems": true,
+          "items": {
+            "type": "object",
+            "properties": {
+              "Image": {
+                "type": "string",
+                "format": "image"
+              }
+            }
+          }
+        },
+        "Button": {
+          "type": "object",
+          "title": "Button",
+          "description": "Optional button to appear at the bottom of the content.",
+          "properties": {
+            "Text": {
+              "type": "string"
+            },
+            "URL": {
+              "type": "string"
+            },
+            "Style": {
+              "type": "string",
+              "format": "select",
+              "default": "Default",
+              "enum": [
+                "Default",
+                "Arrow"
+              ]
+            }
+          }
+        },
+        "Configuration": {
+          "type": "object",
+          "format": "tab",
+          "title": "Configuration",
+          "description": "Configuration options for this specific content",
+          "properties": {
+            "TextAlignment": {
+              "type": "object",
+              "title": "Text Alignment",
+              "description": "Set text alignment for each device.",
+              "default": {
+                "Desktop": "Left",
+                "Tablet": "Left",
+                "Mobile": "Left"   
+              },
+              "properties": {
+                "Desktop": {
+                  "type": "string",
+                  "format": "select",
+                  "default": "Left",
+                  "enum": [
+                    "Left",
+                    "Center",
+                    "Right"
+                  ]
+                },
+                "Tablet": {
+                  "type": "string",
+                  "format": "select",
+                  "default": "Left",
+                  "enum": [
+                    "Left",
+                    "Center",
+                    "Right"
+                  ]
+                },
+                "Mobile": {
+                  "type": "string",
+                  "format": "select",
+                  "default": "Left",
+                  "enum": [
+                    "Left",
+                    "Center",
+                    "Right"
+                  ]
+                }
+              }
+            },
+            "SideImage": {
+              "type": "object",
+              "title": "Side Image",
+              "description": "Set side image height and location to overrride the default setting",
+              "properties": {
+                "AspectRatio": {
+                  "type": "string",
+                  "format": "select",
+                  "default": "Use default",
+                  "enum": [
+                    "Use default",
+                    "4:5",
+                    "1:1",
+                    "4:3",
+                    "16:9",
+                    "9:4",
+                    "5:2",
+                    "3:1"
+                  ]
+                },
+                "Width": {
+                  "type": [
+                    "string",
+                    "integer"
+                  ],
+                  "format": "select",
+                  "description": "Set number of columns out of 12 to overrride the default setting",
+                  "default": "Use default",
+                  "enum": [
+                    "Use default",
+                    3,
+                    4,
+                    6,
+                    8,
+                    9,
+                    12
+                  ]
+                },
+                "Location": {
+                  "type": "string",
+                  "format": "select",
+                  "default": "Use default",
+                  "enum": [
+                    "Use default",
+                    "Left",
+                    "Right"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

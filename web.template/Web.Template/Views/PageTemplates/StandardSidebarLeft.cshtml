@@ -1,0 +1,42 @@
+@using Web.Template.Application.PageDefinition
+@model Web.Template.Application.PageDefinition.Page
+
+@if (Model.Sections.Any(section => section.Name.ToLower() == "navigation"))
+{
+    <nav class="navigation">
+        @foreach (Section section in Model.Sections.Where(section => section.Name.ToLower() == "navigation"))
+        {
+            foreach (Widget widget in section.Widgets)
+            {
+                @Html.Partial("_Widget", widget)
+            }
+        }
+    </nav>
+}
+
+<div class="container sidebar-left">
+    <div class="row">
+
+        <aside class="sidebar col-xs-12 col-md-3">
+            @foreach (Section section in Model.Sections.Where(section => section.Name.ToLower() == "sidebar"))
+            {
+                foreach (Widget widget in section.Widgets)
+                {
+                    @Html.Partial("_Widget", widget)
+                }
+            }
+        </aside>
+
+        <main class="main body-content col-xs-12 col-md-9">
+            @foreach (Section section in Model.Sections.Where(section => section.Name.ToLower() == "main"))
+            {
+                foreach (Widget widget in section.Widgets)
+                {
+                    @Html.Partial("_Widget", widget)
+                }
+            }
+        </main>
+
+    </div>
+</div>
+

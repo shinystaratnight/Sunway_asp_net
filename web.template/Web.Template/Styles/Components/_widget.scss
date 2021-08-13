@@ -1,0 +1,150 @@
+﻿@import "../variables";
+@import "../mixins/media";
+
+//== Widget Generic Styling
+//
+
+.widget {
+    padding: $widget-vertical-padding-md 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &.padding-none {
+        padding: 0;
+    }
+
+    &.padding-sm {
+        padding: $widget-vertical-padding-sm 0;
+    }
+
+    &.padding-md {
+        padding: $widget-vertical-padding-md 0;
+    }
+
+    &.padding-lg {
+        padding: $widget-vertical-padding-lg 0;
+    }
+    //Highlighted background
+    &.highlight {
+        background-color: $body-highlight-bg;
+    }
+
+    .highlight {
+        background-color: $body-highlight-bg;
+    }
+
+    @media (max-width: $screen-sm-max) {
+        .highlight-sm-down {
+            background: #fff;
+        }
+    }
+    //Alternate background
+    &.alt {
+        background-color: $brand-inverse;
+        color: $body-alt-color;
+    }
+
+    .alt {
+        background-color: $brand-inverse;
+        color: $body-alt-color;
+    }
+
+    .a-container {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        cursor: pointer;
+        z-index: 4;
+    }
+    // Heights
+    .mobile-height-xs {
+        height: 300px;
+    }
+
+    .mobile-height-sm {
+        height: 350px;
+    }
+
+    .mobile-height-md {
+        height: 400px;
+    }
+
+    .mobile-height-lg {
+        height: 450px;
+    }
+
+    .mobile-height-xl {
+        height: 500px;
+    }
+
+    .mobile-height-xxl {
+        height: 550px;
+    }
+
+    @include break-md() {
+        .height-xs {
+            height: 320px;
+        }
+
+        .height-sm {
+            height: 400px;
+        }
+
+        .height-sm-plus {
+            height: 450px;
+        }
+
+        .height-md {
+            height: 500px;
+        }
+
+        .height-lg {
+            height: 600px;
+        }
+
+        .height-xl {
+            height: 750px;
+        }
+    }
+
+    .balsamiq-image {
+        display: block;
+        max-width: 100%;
+        min-height: 40px;
+        margin: 0 auto;
+    }
+}
+
+/// For when our containers are split, as in tabs
+
+.widget-top {
+    padding-top: $widget-vertical-padding-md;
+    background-color: $body-bg;
+
+    &.highlight {
+        background-color: #fff;
+    }
+
+    &.alt {
+        background-color: $brand-inverse;
+        color: $body-alt-color;
+    }
+}
+
+.widget-bottom {
+    padding-top: 40px;
+    padding-bottom: $widget-vertical-padding-md;
+    background-color: $body-bg;
+
+    &.highlight {
+        background-color: #fff;
+    }
+
+    &.alt {
+        background-color: $brand-inverse;
+        color: $body-alt-color;
+    }
+}

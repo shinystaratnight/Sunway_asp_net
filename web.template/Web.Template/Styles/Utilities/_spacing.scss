@@ -1,0 +1,151 @@
+﻿@import "../mixins/media";
+@import "../variables";
+
+//== Utility Spacing Styling
+//
+//## Classes to help with common styling declarations for spacing
+
+// all
+.m-0 {
+    margin: 0 !important;
+}
+
+.m-1 {
+    margin: $spacing-xs !important;
+}
+
+.m-2 {
+    margin: $spacing-sm !important;
+}
+
+.m-3 {
+    margin: $spacing-md !important;
+}
+
+
+// top and bottom
+.my-0 {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.my-1 {
+    margin-top: $spacing-xs !important;
+    margin-bottom: $spacing-xs !important;
+}
+
+.my-2 {
+    margin-top: $spacing-sm !important;
+    margin-bottom: $spacing-sm !important;
+}
+
+.my-3 {
+    margin-top: $spacing-md !important;
+    margin-bottom: $spacing-md !important;
+}
+
+
+// left and right
+.mx-auto {
+    display: block;
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
+.mx-0 {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+.mx-1 {
+    margin-right: $spacing-xs !important;
+    margin-left: $spacing-xs !important;
+}
+
+.mx-2 {
+    margin-right: $spacing-sm !important;
+    margin-left: $spacing-sm !important;
+}
+
+.mx-3 {
+    margin-right: $spacing-md !important;
+    margin-left: $spacing-md !important;
+}
+
+
+// top
+.mt-0 {
+    margin-top: 0 !important;
+}
+
+.mt-1 {
+    margin-top: $spacing-xs !important;
+}
+
+.mt-2 {
+    margin-top: $spacing-sm !important;
+}
+
+.mt-3 {
+    margin-top: $spacing-md !important;
+}
+
+@include break-sm() {
+    .mt-sm-0 {
+        margin-top: 0 !important;
+    }
+}
+
+
+// right
+.mr-0 {
+    margin-right: 0 !important;
+}
+
+.mr-1 {
+    margin-right: $spacing-xs !important;
+}
+
+.mr-2 {
+    margin-right: $spacing-sm !important;
+}
+
+.mr-3 {
+    margin-right: $spacing-md !important;
+}
+
+
+// bottom
+.mb-0 {
+    margin-bottom: 0 !important;
+}
+
+.mb-1 {
+    margin-bottom: $spacing-xs !important;
+}
+
+.mb-2 {
+    margin-bottom: $spacing-sm !important;
+}
+
+.mb-3 {
+    margin-bottom: $spacing-md !important;
+}
+
+
+// left
+.ml-0 {
+    margin-left: 0 !important;
+}
+
+.ml-1 {
+    margin-left: $spacing-xs !important;
+}
+
+.ml-2 {
+    margin-left: $spacing-sm !important;
+}
+
+.ml-3 {
+    margin-left: $spacing-md !important;
+}

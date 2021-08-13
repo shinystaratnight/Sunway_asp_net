@@ -1,0 +1,102 @@
+﻿{
+    "Id": 0,
+    "Name": "Login",
+    "Sections": [
+        {
+            "Id": 1,
+            "Name": "header",
+            "Widgets": [
+                {
+                    "Id": 1,
+                    "Name": "SiteBuilderToolbar",
+                    "ServerSideRender": false,
+                    "ClientSideRender": true,
+                    "Access": "AdminLoggedIn"
+                },
+                {
+                    "Id": 1,
+                    "Name": "Header",
+                    "Context": "default",
+                    "ServerSideRender": true,
+                    "ClientSideRender": true
+                }
+            ]
+        },
+        {
+            "Id": 2,
+            "Name": "topfullcontent",
+            "Widgets": [
+                {
+                    "Id": 1,
+                    "Name": "Alerts",
+                    "Context": "default",
+                    "Shared": true,
+                    "ServerSideRender": false,
+                    "ClientSideRender": true,
+                    "NotEditable": true,
+                }
+            ]
+        },
+        {
+            "Id": 2,
+            "Name": "leftcontent",
+            "Widgets": [
+                {
+                  "Id": 1,
+                  "Name": "WidgetEdit",
+                  "ServerSideRender": false,
+                  "ClientSideRender": true,
+                  "Access": "AdminLoggedIn"
+                },
+                {
+                    "Id": 1,
+                    "Name": "AgentLogin",
+                    "Context":  "default", 
+                    "ServerSideRender": true,
+                    "ClientSideRender": true
+                },
+                {
+                    "Id": 1,
+                    "Name": "TextPanel",
+                    "Context": "login-text-secondary",
+                    "ServerSideRender": true,
+                    "ClientSideRender": false
+                }
+            ]
+        },
+        {
+            "Id": 3,
+            "Name": "rightcontent",
+            "Widgets": [
+                {
+                    "Id": 1,
+                    "Name": "TextPanel",
+                    "Context": "login-text-primary",
+                    "ServerSideRender": true,
+                    "ClientSideRender": false
+                },
+                {
+                    "Id": 1,
+                    "Name": "AwardsPanel",
+                    "Context": "login-awards",
+                    "ServerSideRender": true,
+                    "ClientSideRender": false
+                }
+            ]
+        },
+        {
+            "Id": 4,
+            "Name": "footer",
+            "Widgets": [
+                {
+                    "Id": 1,
+                    "Name": "Footer",
+                    "Context": "default",
+                    "ServerSideRender": true
+                }
+            ]
+        }
+    ],
+    "Template": "SplitContent",
+    "Url": "login"
+}

@@ -1,0 +1,15 @@
+﻿{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Trade Group",
+    "type": "object",
+    "properties": {
+        "FeaturedIncentiveIds": {
+            "type": "array",
+            "items": {
+                "title": "Featured Incentives",
+                "type": "string",
+                "format": "automulticontextlookup,incentive"
+            }
+        }
+    }
+}

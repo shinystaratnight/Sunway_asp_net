@@ -1,0 +1,83 @@
+﻿{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Header",
+    "type": "object",
+    "properties": {
+        "Logo": {
+            "type": "string",
+            "format": "image"
+        },
+        "BannerImage": {
+            "type": "string",
+            "format":  "image" 
+        },
+        "Offer": {
+            "type": "object",
+            "title": "Offer",
+            "description": "Offer text and link to display above the navigation items.",  
+            "properties": {
+                "Text": {
+                    "type": "string"
+                },
+                "Url": {
+                    "type": "string"
+                }
+            }
+        },
+        "Contact": {
+            "type": "object",
+            "title": "Contact",
+            "description": "Contact text and phone number to display in the header.", 
+            "properties": {
+                "Text": {
+                    "type": "string"
+                },
+                "PhoneNumber": {
+                    "type": "string"
+                }
+            }
+        },
+        "NavigationLinks": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "title": "Navigation Links",
+            "description": "Links to appear on the navigation bar in the header", 
+            "items": {
+                "type": "object",
+                "properties": {
+                    "Name": {
+                        "type": "string"
+                    },
+                    "Url": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "SocialMedia": {
+            "type": "array",
+            "uniqueItems": true,
+            "title": "Social Media",
+            "description": "List of social media items to display in the header", 
+            "items": {
+                "type": "object",
+                "properties": {
+                    "Type": {
+                        "type": "string",
+                        "format":  "select", 
+                        "enum": [
+                            "Facebook",
+                            "Twitter",
+                            "GooglePlus",
+                            "Youtube"
+                        ]
+                    },
+                    "Url": {
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    }
+}

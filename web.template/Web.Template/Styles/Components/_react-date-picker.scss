@@ -1,0 +1,134 @@
+﻿@import "../variables";
+@import "../mixins/media";
+
+.date-input {
+
+	.react-datepicker-wrapper {
+		display: block;
+	}
+
+	.react-datepicker__input {
+		width: 100%;
+
+		&:disabled {
+			background-color: $input-bg-disabled;
+		}
+	}
+
+	.react-datepicker-popper {
+		z-index: $zindex-popover;
+	}
+
+	.react-datepicker {
+		border: none;
+		border-radius: $border-radius-base;
+		cursor: default;
+	}
+
+	.react-datepicker__triangle {
+		border-bottom-color: $gray-dark !important;
+
+		&::before {
+			display: none;
+		}
+	}
+
+	.react-datepicker__navigation {
+		top: 12px;
+	}
+
+	.react-datepicker__navigation--previous {
+		border-right-color: #fff;
+
+		&:hover {
+			border-right-color: $btn-primary-hover-bg;
+		}
+	}
+
+	.react-datepicker__navigation--next {
+		border-left-color: #fff;
+
+		&:hover {
+			border-left-color: $btn-primary-hover-bg;
+		}
+	}
+
+	.react-datepicker__header {
+		border-bottom: none;
+		border-radius: $border-radius-base;
+		background: $gray-dark;
+
+		.react-datepicker__current-month,
+		.react-datepicker__day-name {
+			color: #fff;
+		}
+
+		.react-datepicker__current-month {
+			font-size: 0.875rem;
+		}
+
+		.react-datepicker__day-name {
+			font-size: 0.75rem;
+			line-height: 1rem;
+		}
+	}
+
+	.react-datepicker__day {
+		border-radius: $border-radius-base;
+		font-size: 0.75rem;
+
+		&:hover {
+			border-radius: $border-radius-base;
+		}
+
+		&:not(.react-datepicker__day--disabled):hover {
+			background: $btn-primary-hover-bg;
+			color: $btn-primary-hover-color;
+		}
+	}
+
+	.react-datepicker__day--today {
+		background: #dcdcdc;
+	}
+
+	.react-datepicker__day--weekend {
+		color: $brand-inverse;
+	}
+
+	.react-datepicker__day--selected {
+		border-radius: $border-radius-base;
+		background-color: $btn-primary-bg !important;
+		color: $btn-primary-color !important;
+
+		&:hover {
+			background-color: $btn-primary-bg !important;
+		}
+	}
+
+	.react-datepicker__day--highlighted {
+		border-radius: $border-radius-base;
+		background: $brand-primary;
+	}
+
+	.react-datepicker__day--disabled {
+		color: #dcdcdc;
+	}
+
+	.react-datepicker__input-container {
+		width: 100%;
+	}
+
+	.calendar-key {
+		display: none; //for now, hide this rather than deleting calendar-key, as can be reused in SW-932
+		clear: both;
+	}
+
+	.calendar-key-item {
+		display: inline-block;
+		width: 112px;
+		margin: 2px;
+		color: #fff;
+		font-size: 0.75rem;
+		text-align: center;
+	}
+}

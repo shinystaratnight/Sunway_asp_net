@@ -1,0 +1,53 @@
+﻿@import "../../variables";
+
+.section-widget {
+    &.section-specialoffers {
+        .widget-specialoffers {
+            padding: 0;
+
+            &.padding-none {
+
+                .special-offers-display {
+                    padding: 0;
+                }
+
+                .special-offers-hide {
+                    display: none;
+                }
+            }
+
+            &.padding-sm {
+
+                .special-offers-display {
+                    padding: $widget-vertical-padding-sm 0;
+                }
+
+                .special-offers-hide {
+                    display: none;
+                }
+            }
+
+            &.padding-md {
+
+                .special-offers-display {
+                    padding: $widget-vertical-padding-md 0;
+                }
+
+                .special-offers-hide {
+                    display: none;
+                }
+            }
+
+            &.padding-lg {
+
+                .special-offers-display {
+                    padding: $widget-vertical-padding-lg 0;
+                }
+
+                .special-offers-hide {
+                    display: none;
+                }
+            }
+        }
+    }
+}

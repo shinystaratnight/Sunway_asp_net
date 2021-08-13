@@ -1,0 +1,259 @@
+﻿@import "../../variables";
+@import "../../mixins/clearfix";
+@import "../../mixins/media";
+@import "../../mixins/sprite";
+
+.widget-propertylistheroimage {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+$offer-tile-padding: 24px;
+// The Special Offer Tiles styling
+.widget-propertylist {
+
+    .offer-results-content {
+        display: block;
+        width: 100%;
+        float: left;
+    }
+
+    .offer-horizontal {
+        position: relative;
+        height: auto;
+        margin-top: $offer-tile-padding;
+        border: 1px #dcdcdc solid;
+        background: #fff;
+
+        &:hover {
+            .btn {
+                background: #1c1c1c;
+                color: #fff;
+            }
+        }
+    }
+
+    .offer-link {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        cursor: pointer;
+        z-index: 5;
+    }
+
+    .offer-image-container {
+        display: block;
+        position: relative;
+        width: 100%;
+        min-height: 300px;
+        float: left;
+        overflow: hidden;
+    }
+
+    .offer-image {
+        min-width: 100%;
+        min-height: 100%;
+    }
+
+    .offer-content {
+        display: block;
+        width: 100%;
+        height: auto;
+        padding: $offer-tile-padding;
+        float: left;
+    }
+
+    .rating {
+        margin-top: 8px;
+    }
+
+    .offer-type {
+        margin-top: 16px;
+    }
+
+    .list-styled {
+        margin: 0 0 20px;
+    }
+
+    .offer-pricing {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: $offer-tile-padding;
+        float: left;
+        background: #1c1c1c;
+    }
+
+    .offer-pricing-bottom {
+        position: relative;
+    }
+
+    .offer-results-pagination {
+        display: block;
+        position: relative;
+        width: 100%;
+        padding-top: 30px;
+        float: left;
+    }
+
+    .rendered-markdown {
+        height: auto;
+        max-height: 120px;
+        color: $body-secondary-color;
+    }
+
+    .sort-container {
+        .sort-by-select-label {
+            display: block;
+            width: 20%;
+            margin-top: 16px;
+            float: left;
+        }
+
+        .sort-by-select {
+            border: 1px solid #ccc;
+        }
+
+        .form-group {
+            width: 80%;
+            float: left;
+        }
+    }
+
+    .mobile-button {
+        display: block;
+        width: 100%;
+        margin-top: 1.5rem;
+    }
+
+    .address {
+        text-overflow: ellipsis;
+    }
+
+    @include break-sm() {
+
+        .offer-horizontal {
+            height: 400px;
+        }
+
+        .offer-image-container {
+            width: 40%;
+        }
+
+        .offer-content {
+            position: relative;
+            width: 60%;
+            height: 300px;
+
+            .offer-content-text {
+                max-height: 204px;
+                overflow: hidden;
+            }
+        }
+
+        .offer-pricing {
+            width: 100%;
+            height: 100px;
+        }
+
+        .offer-pricing-bottom {
+            position: absolute;
+            right: $offer-tile-padding;
+            bottom: $offer-tile-padding;
+        }
+
+        .tablet-button {
+            position: absolute;
+            bottom: $offer-tile-padding;
+            left: $offer-tile-padding;
+            width: 392px;
+        }
+
+        .from-price,
+        .per-person {
+            display: inline-block;
+        }
+
+        .per-person {
+            padding-left: 6px;
+        }
+    }
+
+
+    @include break-md() {
+
+        .offer-horizontal {
+            height: 420px;
+        }
+
+        .offer-pricing {
+            height: 120px;
+        }
+
+        .offer-content {
+            .btn {
+                width: auto;
+            }
+        }
+
+        .tablet-button {
+            width: 524px;
+        }
+
+        .rendered-markdown {
+            max-height: 140px;
+        }
+
+        .per-person {
+            padding-left: 12px;
+        }
+    }
+
+    @include break-lg() {
+        .offer-horizontal {
+            height: 300px;
+        }
+
+        .offer-image-container {
+            width: 29%;
+            height: 100%;
+        }
+
+        .offer-content {
+            width: 42%;
+            height: 100%;
+        }
+
+        .offer-pricing {
+            width: 29%;
+            height: 100%;
+        }
+
+        .offer-pricing-bottom {
+            position: absolute;
+            bottom: $offer-tile-padding;
+            left: $offer-tile-padding;
+        }
+
+        .tablet-button {
+            width: 449px;
+        }
+
+        .from-price,
+        .per-person {
+            display: block;
+        }
+
+        .per-person {
+            padding-left: 0;
+        }
+
+        .duration-of-stay {
+            position: absolute;
+            bottom: $padding-base;
+        }
+    }
+}

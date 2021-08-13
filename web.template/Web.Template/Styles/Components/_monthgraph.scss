@@ -1,0 +1,111 @@
+﻿@import "../variables";
+@import "../mixins/sprite";
+
+.map-widget-info {
+    margin: 15px 0 40px;
+    color: $body-color;
+}
+.monthly-grid {
+    position: relative;
+    height: 270px;
+}
+.y-axis-label {
+    position: absolute;
+    top: 270px;
+    left: 6px;
+    width: 270px;
+    padding-left: 80px;
+    transform: rotate(270deg);
+    transform-origin: left top 0;
+}
+@include break-md() {
+    .y-axis-label {
+        left: 20px;
+    }
+    .month-bar .month-value-bar {
+        position: absolute;
+        bottom: 0;
+        left: 10%;
+        width: 80%;
+        background: $bar-color-primary;
+    }
+}
+.y-value-label {
+    display: block;
+    height: 17px;
+    margin-bottom: 34px;
+    float: left;
+    clear: both;
+    color: $body-color;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+.x-axis-label {
+    text-align: center;
+}
+.month-label {
+    display: block;
+    color: $body-color;
+    text-align: center;
+    box-sizing: border-box;
+}
+.month-bars {
+    display: block;
+    height: 270px;
+    float: left;
+}
+.month-bar-container {
+    height: 100%;
+}
+.month-bar {
+    display: block;
+    position: relative;
+    width: 8.3333%;
+    height: 100%;
+    float: left;
+    border-right: 1px solid $body-bg;
+    z-index: 2;
+}
+.month-value-bar {
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    width: 50%;
+    background: $bar-color-primary;
+
+    &.secondary {
+        background: $bar-color-secondary;
+    }
+}
+.background-bars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid $axis-color;
+    border-left: 1px solid $axis-color;
+    z-index: 1;
+}
+.background-bar-small {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 17px;
+    float: left;
+    clear: both;
+    background: $background-bar-highlight;
+    z-index: 1;
+}
+.background-bar-large {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 34px;
+    float: left;
+    clear: both;
+    background: $body-highlight-bg;
+    z-index: 1;
+}

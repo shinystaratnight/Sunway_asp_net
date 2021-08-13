@@ -1,0 +1,141 @@
+﻿{
+    "Id": 0,
+    "Name": "Destination",
+    "Sections": [
+        {
+            "Id": 1,
+            "Name": "header",
+            "Widgets": [
+                {
+                    "Id": 1,
+                    "Name": "SiteBuilderToolbar",
+                    "ServerSideRender": false,
+                    "ClientSideRender": true,
+                    "Access": "AdminLoggedIn"
+                },
+                {
+                    "Id": 1,
+                    "Name": "Header",
+                    "Context": "default",
+                    "ServerSideRender": true,
+                    "ClientSideRender": true
+                }
+            ]
+        },
+        {
+            "Id": 2,
+            "Name": "main",
+            "Widgets": [
+                {
+                    "Id": 1,
+                    "Name": "WidgetEdit",
+                    "ServerSideRender": false,
+                    "ClientSideRender": true,
+                    "Access": "AdminLoggedIn"
+                },
+                {
+                    "Id": 2,
+                    "Name": "StaticHeroImage",
+                    "Context": "destination-hero-image",
+                    "ServerSideRender": true,
+                    "ClientSideRender": true,
+                    "EntitySpecific": true
+                },
+                {
+                    "Id": 3,
+                    "Name": "StickyNav",
+                    "Context": "destination-sticky-nav",
+                    "ServerSideRender": false,
+                    "ClientSideRender": true,
+                    "EntitySpecific": false
+                },
+                {
+                    "Id": 4,
+                    "Name": "SubNavigation",
+                    "Context": "default",
+                    "ServerSideRender": true,
+                    "ClientSideRender":  false,
+                    "EntitySpecific": false
+                },
+                {
+                    "Id": 5,
+                    "Name": "TextContent",
+                    "Context": "destination-overview",
+                    "EntitySpecific": true,
+                    "ServerSideRender": true,
+                    "ClientSideRender": false
+                },
+                {
+                    "Id": 5,
+                    "Name": "AlternatedCountryContent",
+                    "Context": "destination-countries",
+                    "EntitySpecific": true,
+                    "ServerSideRender": false,
+                    "ClientSideRender": true
+                },
+                //{
+                //    "Id": 9,
+                //    "Name": "SpecialOffers",
+                //    "Context": "destination-experiences",
+                //    "ServerSideRender": false,
+                //    "ClientSideRender": true,
+                //    "EntitySpecific": true
+                //},
+                {
+                    "Id": 9,
+                    "Name": "SpecialOffers",
+                    "Context": "destination-special-offers",
+                    "ServerSideRender": false,
+                    "ClientSideRender": true,
+                    "EntitySpecific": true
+                },
+                //{
+                //    "Id": 12,
+                //    "Name": "ExpertOpinionCarousel",
+                //    "Context": "destination-expert-opinion",
+                //    "EntitySpecific": true,
+                //    "ServerSideRender": false,
+                //    "ClientSideRender": true
+                //},
+                {
+                    "Id": 13,
+                    "Name": "SimpleTextContent",
+                    "Context": "destination-text-message",
+                    "EntitySpecific": true,
+                    "ServerSideRender": true,
+                    "ClientSideRender": false
+                },
+                {
+                    "Id": 14,
+                    "Name": "RedirectEdit",
+                    "ServerSideRender": false,
+                    "ClientSideRender": true,
+                    "Access": "AdminLoggedIn"
+                }
+
+            ]
+        },
+        {
+            "Id": 1,
+            "Name": "footer",
+            "Widgets": [
+                {
+                    "Id": 1,
+                    "Name": "NewsletterSignup",
+                    "Context": "default",
+                    "ServerSideRender": true,
+                    "ClientSideRender": false
+                },
+                {
+                    "Id": 2,
+                    "Name": "Footer",
+                    "Context": "default",
+                    "ServerSideRender": true
+                }
+            ]
+        }
+    ],
+    "Template": "FullContent",
+    "EntityType": "destination",
+    "url": "destination"
+}

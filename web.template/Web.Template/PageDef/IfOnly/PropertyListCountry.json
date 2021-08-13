@@ -1,0 +1,99 @@
+{
+    "Id": 1,
+    "Name": "PropertyListCountry",
+    "Sections": [
+        {
+            "Id": 1,
+            "Name": "header",
+            "Widgets": [
+                {
+                    "Id": 1,
+                    "Name": "SiteBuilderToolbar",
+                    "ServerSideRender": false,
+                    "ClientSideRender": true,
+                    "Access": "AdminLoggedIn"
+                },
+                {
+                    "Id": 1,
+                    "Name": "Header",
+                    "Context": "default",
+                    "ServerSideRender": true,
+                    "ClientSideRender": true
+                }
+            ]
+        },
+        {
+            "Id": 2,
+            "Name": "main",
+            "Widgets": [
+                {
+                    "Id": 1,
+                    "Name": "WidgetEdit",
+                    "ClientSideRender": true,
+                    "ServerSideRender": false,
+                    "Access": "AdminLoggedIn"
+                },
+                {
+                    "Id": 2,
+                    "Name": "PropertyListHeroImage",
+                    "Context": "country",
+                    "EntitySpecific": false,
+                    "ServerSideRender": false,
+                    "ClientSideRender": true,
+                    "EntityList": [
+                        {
+                            "Type": "Country",
+                            "SourceType": "",
+                            "Source": "SiteBuilder"
+                        }
+                    ]
+                },
+                {
+                    "Id": 4,
+                    "Name": "SubNavigation",
+                    "Context": "default",
+                    "ServerSideRender": true,
+                    "ClientSideRender": false,
+                    "EntitySpecific": false
+                },
+                {
+                    "Id": 5,
+                    "Name": "PropertyList",
+                    "Context": "property-list-country",
+                    "EntitySpecific": false,
+                    "ServerSideRender": false,
+                    "ClientSideRender": true
+                },
+                {
+                    "Id": 6,
+                    "Name": "RedirectEdit",
+                    "ServerSideRender": false,
+                    "ClientSideRender": true,
+                    "Access": "AdminLoggedIn"
+                }
+
+            ]
+        },
+        {
+            "Id": 1,
+            "Name": "footer",
+            "Widgets": [
+                {
+                    "Id": 1,
+                    "Name": "NewsletterSignup",
+                    "Context": "default",
+                    "ServerSideRender": true,
+                    "ClientSideRender": false
+                },
+                {
+                    "Id": 2,
+                    "Name": "Footer",
+                    "Context": "default",
+                    "ServerSideRender": true
+                }
+            ]
+        }
+    ],
+    "Template": "FullContent",
+    "EntityType": "countrypropertylist" 
+}

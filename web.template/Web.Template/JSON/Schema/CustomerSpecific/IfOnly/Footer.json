@@ -1,0 +1,268 @@
+﻿{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Footer",
+    "type": "object",
+    "properties": {
+        "FooterTiles": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+                "$ref": "#/definitions/FooterTile"
+            }
+        },
+        "FooterSummary": {
+            "type": "object",
+            "maxitems": 1,
+            "items": {
+                "$ref": "#/definitions/FooterSummary"
+            }
+        },
+        "NavColumns": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "maxitems": 4,
+            "items": {
+                "$ref": "#/definitions/NavColumn"
+            }
+        },
+        "InfoSection": {
+            "$ref": "#/definitions/InfoSection"
+        },
+        "LegalSection": {
+            "$ref": "#/definitions/LegalSection"
+        }
+    },
+    "required": [
+        "FooterTiles",
+        "NavColumns",
+        "InfoSection",
+        "LegalSection"
+    ],
+    "definitions": {
+        "FooterTile": {
+            "type": "object",
+            "properties": {
+                "Icon": {
+                    "type": "string",
+                    "format": "select",
+                    "enum": [
+                        "Plane",
+                        "Phone",
+                        "Bell",
+                        "Book"
+                    ]
+                },
+                "Title": {
+                    "type": "string"
+                },
+                "Text": {
+                    "type": "string"
+                },
+                "DisplayFrom": {
+                    "type": "string",
+                    "format": "select",
+                    "enum": [
+                        "tablet",
+                        "desktop",
+                        "mobile"
+                    ]
+                },
+                "LoggedIn": {
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "Icon",
+                "DisplayFrom",
+                "LoggedIn"
+            ]
+        },
+        "FooterSummary": {
+            "type": "object",
+            "properties": {
+                "Summary": {
+                    "type": "string"
+                }
+            }
+        },
+        "LegalSection": {
+            "type": "object",
+            "properties": {
+                "CopyRight": {
+                    "type": "string"
+                },
+                "LegalLinks": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/LegalLink"
+                    }
+                }
+            }
+        },
+        "NavColumn": {
+            "type": "array",
+            "items": {
+                "$ref": "#/definitions/NavSection"
+            }
+        },
+        "NavSection": {
+            "type": "object",
+            "properties": {
+                "Header": {
+                    "type": "string"
+                },
+                "URL": {
+                    "type": "string"
+                },
+                "NavLinks": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/LegalLink"
+                    }
+                }
+            },
+            "required": [
+                "Header",
+                "URL",
+                "NavLinks"
+            ]
+        },
+        "InfoSection": {
+            "type": "object",
+            "properties": {
+                "OpeningHours": {
+                    "type": "object",
+                    "properties": {
+                        "Title": {
+                            "type": "string"
+                        },
+                        "OpeningHourList": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/OpeningHour"
+                            }
+                        }
+                    }
+                },
+                "SocialMedia": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/SocialMedia"
+                    }
+                },
+                "Certifications": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Certification"
+                    }
+                },
+                "GenericThirdParties": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/GenericThirdParty"
+                    }
+                }
+            },
+            "required": [
+                "OpeningHours"
+            ]
+        },
+        "NavLink": {
+            "$ref": "#/definitions/GenericLink"
+        },
+        "LegalLink": {
+            "$ref": "#/definitions/GenericLink"
+        },
+        "GenericLink": {
+            "type": "object",
+            "properties": {
+                "Name": {
+                    "type": "string"
+                },
+                "URL": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "Name",
+                "URL"
+            ]
+        },
+        "SocialMedia": {
+            "type": "object",
+            "properties": {
+                "URL": {
+                    "type": "string"
+                },
+                "Icon": {
+                    "type": "string",
+                    "format": "select",
+                    "enum": [
+                        "Facebook",
+                        "Twitter",
+                        "GooglePlus",
+                        "Linkedin"
+                    ]
+                }
+            },
+            "required": [
+                "URL",
+                "Icon"
+            ]
+        },
+        "Certification": {
+            "type": "object",
+            "properties": {
+                "Name": {
+                    "type": "string"
+                },
+                "URL": {
+                    "type": "string"
+                },
+                "Image": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "Name",
+                "URL",
+                "Image"
+            ]
+        },
+        "GenericThirdParty": {
+            "type": "object",
+            "properties": {
+                "StrapLine": {
+                    "type": "string"
+                },
+                "URL": {
+                    "type": "string"
+                },
+                "Image": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "URL",
+                "Image"
+            ]
+        },
+        "OpeningHour": {
+            "type": "object",
+            "properties": {
+                "DayText": {
+                    "type": "string"
+                },
+                "TimeText": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "Daytext",
+                "TimeText"
+            ]
+        }
+    }
+}

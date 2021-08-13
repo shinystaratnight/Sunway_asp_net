@@ -1,0 +1,14 @@
+﻿@import "../variables";
+
+//== Data list Styling
+//
+//## Component specific styling relating to data lists used on the website
+
+.data-list {
+    dt {
+        clear: left;
+    }
+    dd {
+        margin-left: 0;
+    }
+}

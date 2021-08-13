@@ -1,0 +1,149 @@
+﻿{
+    "Id": 0,
+    "Name": "Experiences",
+    "Sections": [
+        {
+            "Id": 1,
+            "Name": "header",
+            "Widgets": [
+                 {
+                    "Id": 1,
+                    "Name": "SiteBuilderToolbar",
+                    "ServerSideRender": false,
+                    "ClientSideRender": true,
+                    "Access": "AdminLoggedIn"
+                },
+                {
+                    "Id": 1,
+                    "Name": "Header",
+                    "Context": "default",
+                    "ServerSideRender": true,
+                    "ClientSideRender": true
+                }
+            ]
+        },
+        {
+            "Id": 2,
+            "Name": "main",
+            "Widgets": [
+                    {
+                    "Id": 1,
+                    "Name": "WidgetEdit",
+                    "ClientSideRender":  true,
+                    "ServerSideRender": false,
+                    "Access": "AdminLoggedIn"
+                },
+                {
+                    "Id": 2,
+                    "Name": "CarouselContent",
+                    "Context": "experiences-hero-image",
+                    "ServerSideRender": true,
+                    "ClientSideRender":  true, 
+                    "EntitySpecific": true
+                },
+                {
+                    "Id": 3,
+                    "Name": "StickyNav",
+                    "Context": "experiences-sticky-nav",
+                    "ServerSideRender": false,
+                    "ClientSideRender":  true,
+                    "EntitySpecific": false
+                },
+                {
+                    "Id": 4,
+                    "Name": "SubNavigation",
+                    "Context": "default",
+                    "ServerSideRender": true,
+                    "ClientSideRender":  false,
+                    "EntitySpecific": false
+                },
+                {
+                    "Id": 5,
+                    "Name": "TextContent",
+                    "Context": "experiences-overview",
+                    "EntitySpecific": true,
+                    "ServerSideRender": true,
+                    "ClientSideRender":  true
+                },
+                {
+                    "Id": 6,
+                    "Name": "CarouselContent",
+                    "Context": "experiences-moving-text",
+                    "ServerSideRender": false,
+                    "ClientSideRender":  true,
+                    "EntitySpecific": true
+                },
+                {
+                    "Id": 7,
+                    "Name": "SpecialOffers",
+                    "Context": "experiences-special-offers",
+                    "ServerSideRender": false,
+                    "ClientSideRender":  true,
+                    "EntitySpecific": true
+                },
+                {
+                    "Id": 8,
+                    "Name": "TextContent",
+                    "Context": "experiences-alternated-content",
+                    "ServerSideRender": false,
+                    "ClientSideRender":  true,
+                    "EntitySpecific": true
+                },
+                {
+                    "Id": 12,
+                    "Name": "ExpertOpinionCarousel",
+                    "Context": "experiences-expert-opinion",
+                    "EntitySpecific": true,
+                    "ServerSideRender": false,
+                    "ClientSideRender": true
+                },
+                {
+                    "Id": 10,
+                    "Name": "AccordionContent",
+                    "Context": "experiences-faq",
+                    "ServerSideRender": false,
+                    "ClientSideRender":  true,
+                    "EntitySpecific": true
+                },
+                {
+                    "Id": 11,
+                    "Name": "SpecialOffers",
+                    "Context": "experiences-featured-hotels",
+                    "ServerSideRender": false,
+                    "ClientSideRender":  true,
+                    "EntitySpecific": true
+                },
+                {
+                    "Id": 12,
+                    "Name": "RedirectEdit",
+                    "ServerSideRender": false,
+                    "ClientSideRender": true,
+                    "Access": "AdminLoggedIn"
+                }
+
+            ]
+        },
+        {
+            "Id": 1,
+            "Name": "footer",
+            "Widgets": [
+                {
+                    "Id": 1,
+                    "Name": "NewsletterSignup",
+                    "Context": "default",
+                    "ServerSideRender": true,
+                    "ClientSideRender": false
+                },
+                {
+                    "Id": 2,
+                    "Name": "Footer",
+                    "Context": "default",
+                    "ServerSideRender": true
+                }
+            ]
+        }
+    ],
+    "Template": "FullContent",
+    "url": "experience",
+    "EntityType": "productattribute"
+}

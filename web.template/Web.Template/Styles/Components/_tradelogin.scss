@@ -1,0 +1,144 @@
+﻿@import "../variables";
+@import "../mixins/sprite";
+@import "../mixins/media";
+
+.user-menu {
+    display: block;
+    position: absolute;
+    right: 8px;
+    left: 8px;
+    padding: 0 20px 20px;
+    background: #38939b;
+    color: #fff;
+    z-index: 6;
+
+    label {
+        display: block;
+        margin: 10px 0;
+        text-transform: uppercase;
+    }
+
+    &:first-child {
+        label {
+            margin-top: 15px;
+        }
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    .form-group {
+        width: 100%;
+
+        .form-control {
+            width: 100%;
+            padding: 5px;
+            color: $label-color;
+            cursor: text;
+
+            &:first-child {
+                margin: 0;
+            }
+        }
+    }
+
+    .btn {
+        width: 100%;
+        margin: 25px 0 20px;
+        background: #2c757c;
+    }
+
+    &.login {
+
+        a {
+            color: #fff;
+            font-size: 0.8rem;
+            text-decoration: underline;
+        }
+    }
+
+    &.trade {
+        padding: 0;
+
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-list-item {
+            position: relative;
+            padding: 10px;
+            list-style: none;
+
+            &:not(:last-child):after {
+                position: absolute;
+                top: 17px;
+                right: 22px;
+                width: 0;
+                height: 0;
+                border-top: 5px solid transparent;
+                border-bottom: 5px solid transparent;
+                border-left: 5px solid #fff;
+                content: "";
+            }
+
+            &:last-child {
+                padding: 0 20px;
+
+                &:hover {
+                    
+                    span {
+                        border-top: 1px solid transparent;
+                    }
+                }
+
+                span {
+                    padding: 10px 0;
+                    border-top: 1px solid #ccc;
+                }
+
+            }
+
+            &:hover {
+                background: #2c757c;
+
+                a {
+                    border-top: 1px solid transparent;
+                }
+
+                & + .nav-list-item {
+
+                    a, span {
+                        border-top: 1px solid transparent;
+                    }
+
+                }
+
+            }
+
+            @include break-md() {
+                padding: 0 20px;
+            }
+        }
+
+        a {
+            display: block;
+            padding: 10px 0;
+            border-top: 1px solid #ccc;
+            color: #fff;
+        }
+
+        span {
+            display: block;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+
+    @include break-md() {
+        top: -60px;
+        left: 869px;
+        width: 300px;
+    }
+}

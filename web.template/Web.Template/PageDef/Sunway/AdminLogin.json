@@ -1,0 +1,53 @@
+﻿{
+    "Id": 0,
+    "Name": "AdminLogin",
+    "Sections": [
+        {
+            "Id": 1,
+            "Name": "header",
+            "Widgets": [
+                {
+                    "Id": 1,
+                    "Name": "SiteBuilderToolbar",
+                    "ServerSideRender": false,
+                    "ClientSideRender": true,
+                    "Access": "AdminLoggedIn"
+                },
+                {
+                    "Id": 1,
+                    "Name": "Header",
+                    "Context": "default",
+                    "ServerSideRender": true,
+                    "ClientSideRender": true
+                }
+            ]
+        },
+        {
+            "Id": 2,
+            "Name": "main",
+            "Widgets": [
+                {
+                    "Id": 1,
+                    "Name": "AdminLogin",
+                    "Context": "",
+                    "ServerSideRender": false,
+                    "ClientSideRender": true
+                }
+            ]
+        },
+        {
+            "Id": 1,
+            "Name": "footer",
+            "Widgets": [
+                {
+                    "Id": 1,
+                    "Name": "Footer",
+                    "Context": "default",
+                    "ServerSideRender": true
+                }
+            ]
+        }
+    ],
+    "Template": "FullContent",
+    "Url": "admin-login"
+}

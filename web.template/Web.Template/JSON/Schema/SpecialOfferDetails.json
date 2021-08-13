@@ -1,0 +1,46 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Widget to display details of a special offer.",
+  "properties": {
+    "LoggedOutText": {
+      "default": "",
+      "type": "string",
+      "description": "This text appears in the black box on the right hand side of the page when the user is logged out."
+    },
+    "OfferMessage": {
+      "default": "Please contact us for alternative dates, durations and departure airports.      Prices shown are for guidance only and are subject to availability.",
+      "type": "string",
+      "format": "textarea",
+      "description": "This text appears below the view hotel details button"
+    },
+    "Configuration": {
+      "type": "object",
+      "title": "Configuration",
+      "description": "Configuration options for the accordion widget",
+      "properties": {
+        "ContainerStyle": {
+          "type": "string",
+          "format": "select",
+          "default": "Highlight",
+          "enum": [
+            "Default",
+            "Highlight"
+          ]
+        },
+        "ContainerPadding": {
+          "type": "string",
+          "format": "select",
+          "default": "None",
+          "enum": [
+            "None",
+            "Small",
+            "Medium",
+            "Large"
+          ]
+        }
+      }
+    }
+  },
+  "title": "Special Offer Details",
+  "type": "object"
+}

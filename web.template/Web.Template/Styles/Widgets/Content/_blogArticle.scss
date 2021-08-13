@@ -1,0 +1,72 @@
+﻿@import "../../variables";
+@import "../../mixins/media";
+
+.widget-blogarticle {
+    padding-top: 40px;
+
+    ol {
+        padding-left: 16px;
+
+        li {
+            margin-bottom: 30px;
+        }
+    }
+
+    .article-author {
+        width: 100%;
+        margin-top: 40px;
+        float: left;
+        clear: both;
+
+        .author {
+            margin-bottom: 10px;
+        }
+
+        .copy {
+            margin-bottom: 10px;
+            color: #5e5e5e;
+        }
+
+        .author-image {
+            height: 145px;
+        }
+
+        img {
+            width: 145px;
+            height: 145px;
+        }
+    }
+
+    .article-details {
+
+        margin-top: 20px;
+
+        .article-image {
+            height: 168px;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        .copy {
+            margin-left: -8px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 16px;
+            background-color: #f4f4f4;
+        }
+    }
+
+    @include break-md() {
+        .article-details {
+
+            img {
+                height: 100%;
+            }
+            .copy {
+                height: 168px;
+            }
+        }
+    }
+}

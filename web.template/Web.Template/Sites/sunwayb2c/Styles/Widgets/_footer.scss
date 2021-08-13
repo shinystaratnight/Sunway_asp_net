@@ -1,0 +1,41 @@
+﻿@import '../../../../Styles/variables';
+@import '../../../../Styles/Mixins/media';
+
+.widget-footer-container {
+
+    .footer-top-section {
+        padding: $spacing-md 0;
+
+        .nav {
+            padding-bottom: 20px;
+        }
+
+        .company-details {
+            text-align: center;
+
+            .detail-item {
+                display: block;
+            }
+        }
+    }
+
+    .footer-bottom-section {
+        background-color: $brand-highlight;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    @include break-sm {
+        .footer-top-section .company-details .detail-item {
+            display: inline-block;
+            padding: 0 $spacing-md;
+        }
+    }
+}
+
+.wrapper {
+    height: auto;
+    min-height: 100%;    
+    margin: 0 auto -227px;
+    padding: 0 0 227px;
+}

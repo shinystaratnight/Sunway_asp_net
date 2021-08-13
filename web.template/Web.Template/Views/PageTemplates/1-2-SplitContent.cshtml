@@ -1,0 +1,87 @@
+﻿@using Web.Template.Application.PageDefinition
+@model Web.Template.Application.PageDefinition.Page
+
+@if (Model.Sections.Any(section => section.Name.ToLower() == "navigation"))
+{
+    <nav class="navigation">
+        @foreach (Section section in Model.Sections.Where(section => section.Name.ToLower() == "navigation"))
+        {
+            foreach (Widget widget in section.Widgets)
+            {
+                @Html.Partial("_Widget", widget)
+            }
+        }
+    </nav>
+}
+
+<main class="main body-content anbd me">
+
+    @foreach (Section section in Model.Sections.Where(section => section.Name.ToLower() == "topfullcontent"))
+    {
+        foreach (Widget widget in section.Widgets)
+        {
+            @Html.Partial("_Widget", widget)
+        }
+    }
+
+    <div class="container">
+        @if (Model.Sections.Any(section => section.Name.ToLower() == "topcontent"))
+        {
+            <div class="row">
+                <div class="col-xs-12">
+                    @foreach (Section section in Model.Sections.Where(section => section.Name.ToLower() == "topcontent"))
+                    {
+                        foreach (Widget widget in section.Widgets)
+                        {
+                            @Html.Partial("_Widget", widget)
+                        }
+                    }
+                </div>
+            </div>
+        }
+        <div class="row">
+            <div class="col-xs-12 col-md-5">
+                @foreach (Section section in Model.Sections.Where(section => section.Name.ToLower() == "leftcontent"))
+                {
+                    foreach (Widget widget in section.Widgets)
+                    {
+                        @Html.Partial("_Widget", widget)
+                    }
+                }
+            </div>
+
+            <div class="col-xs-12 col-md-7">
+                @foreach (Section section in Model.Sections.Where(section => section.Name.ToLower() == "rightcontent"))
+                {
+                    foreach (Widget widget in section.Widgets)
+                    {
+                        @Html.Partial("_Widget", widget)
+                    }
+                }
+            </div>
+        </div>
+        @if (Model.Sections.Any(section => section.Name.ToLower() == "bottomcontent"))
+        {
+            <div class="row">
+                <div class="col-xs-12">
+                    @foreach (Section section in Model.Sections.Where(section => section.Name.ToLower() == "bottomcontent"))
+                    {
+                        foreach (Widget widget in section.Widgets)
+                        {
+                            @Html.Partial("_Widget", widget)
+                        }
+                    }
+                </div>
+            </div>
+        }
+    </div>
+
+    @foreach (Section section in Model.Sections.Where(section => section.Name.ToLower() == "bottomfullcontent"))
+    {
+        foreach (Widget widget in section.Widgets)
+        {
+            @Html.Partial("_Widget", widget)
+        }
+    }
+
+</main>

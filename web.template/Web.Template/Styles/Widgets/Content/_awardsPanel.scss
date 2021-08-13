@@ -1,0 +1,17 @@
+﻿@import "../../variables";
+
+.widget-awardspanel {
+    .panel-body {
+        padding: $spacing-md $spacing-md ($spacing-md - $gutter-padding);
+    }
+
+    .award {
+        margin-bottom: $gutter-padding * 2;
+        text-align: center;
+    }
+    .award-image {
+        display: block;
+        width: 100%;
+        max-width: 120px;
+    }
+}

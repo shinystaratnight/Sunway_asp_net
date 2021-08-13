@@ -1,0 +1,67 @@
+﻿{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Blog List",
+    "type": "object",
+    "properties": {
+        "FilterTitle": {
+            "type": "string",
+            "default": "Filter News"
+        },
+        "FilterSummary": {
+            "type": "object",
+            "title": "Filter Summary",
+            "description": "Configure the filter summary text. ",
+            "properties": {
+                "Text": {
+                    "type": "string",
+                    "default": "Currently Showing: All News ##category## ##archive##",
+                    "description": "##token## will be replaced by its summary if filter selected"
+                },
+                "CategorySummary": {
+                    "type": "string",
+                    "default": "on ##category##"
+                },
+                "ArchiveSummary": {
+                    "type": "string",
+                    "default": "in ##archive##"
+                }
+            }
+        },
+        "TilesHeader": {
+            "type": "string",
+            "default": "More News"
+        },
+        "TilesButtonText": {
+            "type": "string",
+            "default": "Load More"
+        },
+        "Configuration": {
+            "type": "object",
+            "title": "Configuration",
+            "description": "Configuration options for the blog list widget",
+            "properties": {
+                "ContainerStyle": {
+                    "type": "string",
+                    "format": "select",
+                    "default": "Default",
+                    "enum": [
+                        "Default",
+                        "Highlight",
+                        "Alternate"
+                    ]
+                },
+                "ContainerPadding": {
+                    "type": "string",
+                    "format": "select",
+                    "default": "Medium",
+                    "enum": [
+                        "None",
+                        "Small",
+                        "Medium",
+                        "Large"
+                    ]
+                }
+            }
+        }
+    }
+}

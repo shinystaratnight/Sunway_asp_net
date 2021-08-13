@@ -1,0 +1,46 @@
+﻿{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Blog Item",
+    "type": "object",
+    "properties": {
+        "AuthorId": {
+            "title": "Author",
+            "type": "string",
+            "format": "autocontextlookup,staffmember"
+        },
+        "Title": {
+            "type": "string"
+        },
+        "Date": {
+            "type": "string",
+            "format": "date"
+        },
+        "Categories": {
+            "type": "array",
+            "items": {
+                "type": "string",
+                "format": "automulticustomlookup,BlogItemCategories"
+            }
+        },
+        "HeroImage": {
+            "type": "string",
+            "format": "image",
+            "description": "Main hero image to appear on the blog item page."
+        },
+        "TileImage": {
+            "type": "string",
+            "format": "image",
+            "description": "Smaller image to be used across the site when showing blog tiles."
+        },
+        "LeadParagraph": {
+            "type": "string",
+            "format": "textarea",
+            "description": "Larger styled paragraph to appear before the main content."
+        },
+        "MarkdownText": {
+            "type": "string",
+            "format": "textarea",
+            "description": "Markdown text based on CommonMark spec. See http://commonmark.org/help/ for details."
+        }
+    }
+}

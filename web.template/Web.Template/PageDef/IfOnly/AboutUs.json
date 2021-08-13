@@ -1,0 +1,128 @@
+﻿{
+    "Id": 0,
+    "Name": "AboutUs",
+    "Sections": [
+        {
+            "Id": 1,
+            "Name": "header",
+            "Widgets": [
+                {
+                    "Id": 1,
+                    "Name": "SiteBuilderToolbar",
+                    "ServerSideRender": false,
+                    "ClientSideRender": true,
+                    "Access": "AdminLoggedIn"
+                },
+                {
+                    "Id": 1,
+                    "Name": "Header",
+                    "Context": "default",
+                    "ServerSideRender": true,
+                    "ClientSideRender": true
+                }
+            ]
+        },
+        {
+            "Id": 2,
+            "Name": "main",
+            "Widgets": [
+{
+                    "Id": 1,
+                    "Name": "WidgetEdit",
+                    "ServerSideRender": false,
+                    "ClientSideRender":  true,
+                    "Access": "AdminLoggedIn"
+                },
+                {
+                    "Id": 2,
+                    "Name": "StaticHeroImage",
+                    "Context": "about-us-hero-banner",
+                    "ServerSideRender": true,
+                    "ClientSideRender":  true 
+                },
+                {
+                    "Id": 3,
+                    "Name": "StickyNav",
+                    "Context": "about-us-sticky-nav",
+                    "ServerSideRender": false,
+                    "ClientSideRender":  true 
+                },
+                {
+                    "Id": 4,
+                    "Name": "SubNavigation",
+                    "Context": "default",
+                    "ServerSideRender": true,
+                    "ClientSideRender":  false,
+                    "EntitySpecific": false
+                },
+                {
+                    "Id": 5,
+                    "Name": "TextContent",
+                    "Context": "about-us-overview",
+                    "ServerSideRender": true,
+                    "ClientSideRender": false
+                },
+                {
+                    "Id": 6,
+                    "Name": "CarouselContent",
+                    "Context": "about-us-clients",
+                    "ServerSideRender": false,
+                    "ClientSideRender":  true 
+                },
+                {
+                    "Id": 7,
+                    "Name": "TextContent",
+                    "Context": "about-us-confidence",
+                    "ServerSideRender": true
+                },
+                {
+                    "Id": 12,
+                    "Name": "TextContent",
+                    "Context": "about-us-expert-opinion",
+                    "ServerSideRender": true,
+                    "ClientSideRender": false
+                },
+                {
+                    "Id": 8,
+                    "Name": "TileContent",
+                    "Context": "about-us-awards",
+                    "ServerSideRender": true
+                },
+                {
+                    "Id": 9,
+                    "Name": "TileContent",
+                    "Context": "about-us-company-info",
+                    "ServerSideRender": true
+                },
+                {
+                    "Id": 10,
+                    "Name": "RedirectEdit",
+                    "ServerSideRender": false,
+                    "ClientSideRender": true,
+                    "Access": "AdminLoggedIn"
+                }
+            ]
+        },
+        {
+            "Id": 1,
+            "Name": "footer",
+            "Widgets": [
+                {
+                    "Id": 1,
+                    "Name": "NewsletterSignup",
+                    "Context": "default",
+                    "ServerSideRender": true,
+                    "ClientSideRender": false
+                },
+                {
+                    "Id": 2,
+                    "Name": "Footer",
+                    "Context": "default",
+                    "ServerSideRender": true
+                }
+            ]
+        }
+    ],
+    "Template": "FullContent",
+    "Url": "about-us"
+}

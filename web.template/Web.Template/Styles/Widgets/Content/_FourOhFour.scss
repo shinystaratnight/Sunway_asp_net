@@ -1,0 +1,23 @@
+﻿@import "../../mixins/clearfix";
+@import "../../variables";
+
+.widget-fourohfour {
+    min-height: 600px;
+    padding: 50px 0;
+
+    .four-oh-four {
+        max-width: 600px;
+        margin: auto;
+        margin-top: 90px;
+    }
+
+    .h-primary, .h-secondary, .text {
+        color: $body-alt-color;
+    }
+
+    .btn {
+        margin-top: 40px;
+        border: 1px solid #fff;
+        color: $body-alt-color;
+    }
+}

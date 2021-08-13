@@ -1,0 +1,156 @@
+﻿@import "../variables";
+@import "../mixins/clearfix";
+@import "../mixins/sprite";
+@import "../mixins/media";
+
+//== Tabs Styling
+//
+//## Component specific styling relating to tab elements used on the website
+
+.tabs {
+    @include clearfix;
+    height: 51px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    &.align-center {
+        display: inline-block;
+        margin-bottom: -7px;
+    }
+
+    .tab-item {
+        display: block;
+        height: 50px;
+        margin: 0 1px 1px 0;
+        padding: 0 $padding-base;
+        float: left;
+        cursor: pointer;
+
+        .tab-item-name {
+            display: inline-block;
+            height: 50px;
+            font-size: 0.75rem;
+            line-height: 50px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        &.tab-selected {
+            height: 51px;
+            margin-bottom: 0;
+        }
+    }
+
+    &.container-default {
+        color: $body-color;
+    }
+
+    &.container-highlight {
+        color: $body-color;
+    }
+
+    &.container-alt {
+        color: $body-alt-color;
+    }
+
+    &.selected-default {
+        .tab-selected {
+            background-color: $body-bg;
+
+            .tab-item-name {
+                color: $body-color;
+            }
+        }
+        .tab-item {
+            &:hover {
+                background-color: $body-bg;
+
+                .tab-item-name {
+                    color: $body-color;
+                }
+            }
+        }
+    }
+
+    &.selected-highlight {
+        .tab-selected {
+            background-color: $body-highlight-bg;
+
+            .tab-item-name {
+                color: $body-color;
+            }
+        }
+        .tab-item {
+            &:hover {
+                background-color: $body-highlight-bg;
+
+                .tab-item-name {
+                    color: $body-color;
+                }
+            }
+        }
+    }
+
+    &.selected-alternate {
+        .tab-item.tab-selected {
+             background-color: $body-alt-bg;
+
+            .tab-item-name {
+                color: $body-alt-color;
+            }
+        }
+        .tab-item {
+			background-color: rgba(0, 0, 0, 0.7);
+			.tab-item-name {
+				color: #fff;
+			}
+            &:hover {
+                background-color: $body-alt-bg;
+
+                .tab-item-name {
+                    color: $body-alt-color;
+                }
+            }
+        }
+    }
+
+    &.tabs-mobile {
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+
+        .tab-selected {
+            height: 50px;
+            padding: 0 10px;
+            float: left;
+            line-height: 50px;
+        }
+
+        .tab-menu {
+            width: 50px;
+            height: 50px;
+            padding: 10px;
+            float: right;
+
+            .tab-menu-link {
+                display: block;
+                width: 30px;
+                height: 30px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.tabs-mobile-menu {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    list-style-type: none;
+
+    .tab-item {
+        padding: 10px;
+        cursor: pointer;
+    }
+}

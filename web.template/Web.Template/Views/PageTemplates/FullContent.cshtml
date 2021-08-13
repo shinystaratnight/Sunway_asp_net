@@ -1,0 +1,15 @@
+﻿@using Web.Template.Application.PageDefinition
+@model Web.Template.Application.PageDefinition.Page
+
+@if (Model.Sections.Any(section => section.Name.ToLower() == "main"))
+{
+    <main class="main body-content">
+        @foreach (Section section in Model.Sections.Where(section => section.Name.ToLower() == "main"))
+        {
+            foreach (Widget widget in section.Widgets)
+            {
+                @Html.Partial("_Widget", widget)
+            }
+        }
+    </main>
+}

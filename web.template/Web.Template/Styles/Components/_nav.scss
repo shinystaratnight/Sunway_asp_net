@@ -1,0 +1,147 @@
+﻿@import "../variables";
+@import "../mixins/clearfix";
+@import "../mixins/sprite";
+@import "../mixins/media";
+
+//== Nav Styling
+//
+//## Component specific styling relating to navigation elements used on the website
+
+$nav-padding-x: 15px;
+$nav-padding-y: 15px;
+$nav-font-size: 1rem;
+$nav-color: $link-color;
+$nav-hover-color: $link-hover-color;
+$nav-active-color: $link-hover-color;
+
+$navbar-bg: $gray-dark;
+$navbar-color: $gray-light;
+$navbar-border: 1px solid #fff;
+
+$navbar-hover-bg: $gray;
+$navbar-hover-color: $gray-dark;
+
+$navbar-active-bg: $gray;
+$navbar-active-color: $gray-dark;
+
+$navbar-inverse-bg: $brand-inverse;
+$navbar-inverse-color: $body-alt-color;
+
+$navbar-inverse-hover-bg: lighten($brand-inverse, 10%);
+$navbar-inverse-hover-color: $body-alt-color;
+
+$navbar-inverse-active-bg: lighten($brand-inverse, 10%);
+$navbar-inverse-active-color: $body-alt-color;
+
+
+@mixin navbar-nav-styling ($bg, $color, $hover-bg, $hover-color, $active-bg, $active-color) {
+    .nav-link {
+        border-right: $navbar-border;
+        background: $bg;
+        color: $color;
+
+        &:hover {
+            background: $hover-bg;
+            color: $hover-color;
+        }
+
+        &.active {
+            background: $active-bg;
+            color: $active-color;
+        }
+    }
+
+    .nav-item:last-child {
+        .nav-link {
+            border-right: none;
+        }
+    }
+
+    &.navbar-stacked {
+        .nav-link {
+            border-right: none;
+            border-bottom: $navbar-border;
+        }
+
+        .nav-item:last-child {
+            .nav-link {
+                border-bottom: none;
+            }
+        }
+    }
+}
+
+
+// nav basic
+.nav {
+    @include clearfix;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.nav-item {
+    display: block;
+    float: left;
+}
+
+.nav-link {
+    display: block;
+    padding: $nav-padding-y $nav-padding-x;
+    font-size: $nav-font-size;
+    cursor: pointer;
+}
+
+
+// nav centered
+// Appears stacked on mobile, inline desktop
+.nav-centered {
+    text-align: center;
+
+    .nav-item {
+        float: none;
+    }
+
+    .nav-link {
+        display: inline-block;
+    }
+
+    @include break-md {
+        .nav-item {
+            display: inline;
+        }
+    }
+}
+
+// navbar
+.navbar {
+    background: $navbar-bg;
+
+    @include navbar-nav-styling(
+        $navbar-bg,
+        $navbar-color,
+        $navbar-hover-bg,
+        $navbar-hover-color,
+        $navbar-active-bg,
+        $navbar-active-color
+    );
+
+    &.navbar-inverse {
+        background: $navbar-inverse-bg;
+
+        @include navbar-nav-styling(
+            $navbar-inverse-bg,
+            $navbar-inverse-color,
+            $navbar-inverse-hover-bg,
+            $navbar-inverse-hover-color,
+            $navbar-inverse-active-bg,
+            $navbar-inverse-active-color
+        );
+    }
+
+    &.navbar-stacked {
+        .nav-item {
+            float: none;
+        }
+    }
+}

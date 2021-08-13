@@ -1,0 +1,302 @@
+﻿ALTER proc [dbo].[IfOnly_UpdateBigC_EntityPages] as
+ 
+-- Entity Pages
+if (select count(*) from BigC where ObjectType = 'EntityPages') = 0
+begin
+insert into BigC
+values ('EntityPages', 1, 0, 0, '', '', getdate())
+end
+ 
+ 
+update BigC
+set ContentXML = (select null,
+ 
+(--PropertyPages 
+select dbo.CleanURL(GG.GeographyGrouping) + '/' + dbo.CleanURL(CO.Name)+ '/' + dbo.CleanURL(REG.Name)+ '/' + dbo.CleanURL(PR.PropertyName) Url,
+'Property' EntityType,
+ 
+(select null,
+(select 'GeographyGroup' Name,
+GG.GeographyGrouping Value,
+dbo.CleanURL(GG.GeographyGrouping) UrlSafeValue,
+GG.GeographyGroupingID Id
+ 
+for xml path('PageEntityInformation'), type),
+ 
+(select 'Country' Name,
+CO.Name Value,
+dbo.CleanURL(CO.Name) UrlSafeValue,
+CO.GeographyLevel1ID Id
+for xml path('PageEntityInformation'), type),   
+ 
+(select 'Region' Name,
+REG.Name Value,
+dbo.CleanURL(REG.Name) UrlSafeValue,
+REG.Geographylevel2ID Id
+for xml path('PageEntityInformation'), type),       
+ 
+(select 'Property' Name,
+PR.PropertyName Value,
+dbo.CleanURL(PR.PropertyName) UrlSafeValue,
+PR.PropertyReferenceID Id           
+for xml path('PageEntityInformation'), type)
+for xml path('EntityInformations'), type)   
+ 
+from PropertyReference PR
+inner join geographylevel3 RES
+on PR.Geographylevel3ID = RES.Geographylevel3ID
+inner join geographylevel2 REG
+on RES.Geographylevel2ID = REG.Geographylevel2ID
+inner join Geographylevel1 CO
+on REG.Geographylevel1ID = CO.Geographylevel1ID
+inner join geographyGroupingDef GGD
+on GGD.ParentID = CO.Geographylevel1ID
+and GGD.GeographyGroupingID In(select GeographyGroupingID
+from GeographyGrouping
+where GeographyGrouping.Level = 'country')
+inner join GeographyGrouping GG
+on GGD.GeographyGroupingID = GG.GeographyGroupingID
+inner join CMS_Country CMS_CO
+on CO.GeographyLevel1ID = CMS_CO.SourceID
+inner join CMS_PropertyReference CMS_PR
+on PR.PropertyReferenceID = CMS_PR.SourceID
+where PR.CurrentPropertyReference = 1
+and CMS_CO.PageCreatedOnWebsite = 1
+and CMS_PR.PageCreatedOnWebsite = 1
+for xml path('EntityPage'), type),
+ 
+ 
+(--CountryPages 
+select  dbo.CleanURL(GG.GeographyGrouping) + '/' + dbo.CleanURL(CO.Name) Url,
+'country' EntityType,
+(select null,
+ 
+(select 'GeographyGroup' Name,
+GG.GeographyGrouping Value,
+dbo.CleanURL(GG.GeographyGrouping) UrlSafeValue,
+GG.GeographyGroupingID Id
+ 
+for xml path('PageEntityInformation'), type),
+ 
+(select 'Country' Name,
+CO.Name Value,
+dbo.CleanURL(CO.Name) UrlSafeValue,
+CO.GeographyLevel1ID Id
+for xml path('PageEntityInformation'), type)    
+ 
+for xml path('EntityInformations'), type)
+ 
+from GeographyLevel1 CO
+inner join geographyGroupingDef GGD
+on GGD.ParentID = CO.Geographylevel1ID
+and GGD.GeographyGroupingID In(select GeographyGroupingID
+from GeographyGrouping
+where GeographyGrouping.Level = 'country')
+inner join GeographyGrouping GG
+on GGD.GeographyGroupingID = GG.GeographyGroupingID
+inner join CMS_Country CMS_CO
+on CO.GeographyLevel1ID = CMS_CO.SourceID
+where CMS_CO.PageCreatedOnWebsite = 1
+for xml path('EntityPage'), type),  
+ 
+ 
+(--Destination Pages
+select  dbo.CleanURL(GG.GeographyGrouping) Url,
+'destination' EntityType,
+(select null,
+ 
+(select 'GeographyGroup' Name,
+GG.GeographyGrouping Value,
+dbo.CleanURL(GG.GeographyGrouping) UrlSafeValue,
+GG.GeographyGroupingID Id
+for xml path('PageEntityInformation'), type)    
+ 
+for xml path('EntityInformations'), type)
+ 
+from GeographyGrouping GG
+for xml path('EntityPage'), type),  
+ 
+(--CountryPropertyListPages 
+select  dbo.CleanURL(GG.GeographyGrouping) + '/' + dbo.CleanURL(CO.Name) + '/properties' Url,
+'countrypropertylist' EntityType,
+(select null,
+ 
+(select 'GeographyGroup' Name,
+GG.GeographyGrouping Value,
+dbo.CleanURL(GG.GeographyGrouping) UrlSafeValue,
+GG.GeographyGroupingID Id
+ 
+for xml path('PageEntityInformation'), type),
+ 
+(select 'Country' Name,
+CO.Name Value,
+dbo.CleanURL(CO.Name) UrlSafeValue,
+CO.GeographyLevel1ID Id
+for xml path('PageEntityInformation'), type)    
+ 
+for xml path('EntityInformations'), type)
+ 
+from GeographyLevel1 CO
+inner join geographyGroupingDef GGD
+on GGD.ParentID = CO.Geographylevel1ID
+and GGD.GeographyGroupingID In(select GeographyGroupingID
+from GeographyGrouping
+where GeographyGrouping.Level = 'country')
+inner join GeographyGrouping GG
+on GGD.GeographyGroupingID = GG.GeographyGroupingID
+inner join CMS_Country CMS_CO
+on CO.GeographyLevel1ID = CMS_CO.SourceID
+where CMS_CO.PageCreatedOnWebsite = 1
+for xml path('EntityPage'), type),                          
+ 
+ 
+ 
+(--RegionPages 
+select dbo.CleanURL(GG.GeographyGrouping) + '/' + dbo.CleanURL(CO.Name) + '/' + dbo.CleanURL(RE.Name) Url,
+'region' EntityType,
+(select null,
+ 
+(select 'GeographyGroup' Name,
+GG.GeographyGrouping Value,
+dbo.CleanURL(GG.GeographyGrouping) UrlSafeValue,
+GG.GeographyGroupingID Id
+ 
+for xml path('PageEntityInformation'), type),
+ 
+(select 'Country' Name,
+CO.Name Value,
+dbo.CleanURL(CO.Name) UrlSafeValue,
+CO.GeographyLevel1ID Id
+for xml path('PageEntityInformation'), type),           
+ 
+(select 'Region' Name,
+RE.Name Value,
+dbo.CleanURL(RE.Name) UrlSafeValue,
+RE.GeographyLevel1ID Id         
+for xml path('PageEntityInformation'), type)
+for xml path('EntityInformations'), type)
+from Geographylevel2 RE
+inner join GeographyLevel1 CO
+on RE.Geographylevel1ID = CO.Geographylevel1ID
+inner join geographyGroupingDef GGD
+on GGD.ParentID = CO.Geographylevel1ID
+and GGD.GeographyGroupingID In(select GeographyGroupingID
+from GeographyGrouping
+where GeographyGrouping.Level = 'country')
+inner join GeographyGrouping GG
+on GGD.GeographyGroupingID = GG.GeographyGroupingID
+inner join CMS_Country CMS_CO
+on CO.GeographyLevel1ID = CMS_CO.SourceID
+where CMS_CO.PageCreatedOnWebsite = 1
+ 
+for xml path('EntityPage'), type),
+ 
+(--Region property list pages 
+select dbo.CleanURL(GG.GeographyGrouping) + '/' + dbo.CleanURL(CO.Name) + '/' + dbo.CleanURL(RE.Name) + '/properties'  Url,
+'regionpropertylist' EntityType,
+(select null,
+ 
+(select 'GeographyGroup' Name,
+GG.GeographyGrouping Value,
+dbo.CleanURL(GG.GeographyGrouping) UrlSafeValue,
+GG.GeographyGroupingID Id
+ 
+for xml path('PageEntityInformation'), type),
+ 
+(select 'Country' Name,
+CO.Name Value,
+dbo.CleanURL(CO.Name) UrlSafeValue,
+CO.GeographyLevel1ID Id
+for xml path('PageEntityInformation'), type),           
+ 
+(select 'Region' Name,
+RE.Name Value,
+dbo.CleanURL(RE.Name) UrlSafeValue,
+RE.GeographyLevel2ID Id         
+for xml path('PageEntityInformation'), type)
+for xml path('EntityInformations'), type)
+from Geographylevel2 RE
+inner join GeographyLevel1 CO
+on RE.Geographylevel1ID = CO.Geographylevel1ID
+inner join geographyGroupingDef GGD
+on GGD.ParentID = CO.Geographylevel1ID
+and GGD.GeographyGroupingID In(select GeographyGroupingID
+from GeographyGrouping
+where GeographyGrouping.Level = 'country')
+inner join GeographyGrouping GG
+on GGD.GeographyGroupingID = GG.GeographyGroupingID
+inner join CMS_Country CMS_CO
+on CO.GeographyLevel1ID = CMS_CO.SourceID
+where CMS_CO.PageCreatedOnWebsite = 1
+ 
+for xml path('EntityPage'), type),  
+ 
+(--Resort property list pages 
+select dbo.CleanURL(GG.GeographyGrouping) + '/' + dbo.CleanURL(CO.Name) + '/' + dbo.CleanURL(RE.Name) + '/' + dbo.CleanURL(RES.Name) + '-properties'  Url,
+'resortpropertylist' EntityType,
+(select null,
+ 
+(select 'GeographyGroup' Name,
+GG.GeographyGrouping Value,
+dbo.CleanURL(GG.GeographyGrouping) UrlSafeValue,
+GG.GeographyGroupingID Id
+ 
+for xml path('PageEntityInformation'), type),
+ 
+(select 'Country' Name,
+CO.Name Value,
+dbo.CleanURL(CO.Name) UrlSafeValue,
+CO.GeographyLevel1ID Id
+for xml path('PageEntityInformation'), type),           
+ 
+(select 'Region' Name,
+RE.Name Value,
+dbo.CleanURL(RE.Name) UrlSafeValue,
+RE.GeographyLevel2ID Id         
+for xml path('PageEntityInformation'), type),
+ 
+(select 'Resort' Name,
+RES.Name Value,
+dbo.CleanURL(RES.Name) UrlSafeValue,
+RES.Geographylevel3ID Id            
+for xml path('PageEntityInformation'), type)
+for xml path('EntityInformations'), type)
+from GeographyLevel3 RES
+inner join Geographylevel2 RE
+on RES.Geographylevel2ID = RE.Geographylevel2ID
+inner join GeographyLevel1 CO
+on RE.Geographylevel1ID = CO.Geographylevel1ID
+inner join geographyGroupingDef GGD
+on GGD.ParentID = CO.Geographylevel1ID
+and GGD.GeographyGroupingID In(select GeographyGroupingID
+from GeographyGrouping
+where GeographyGrouping.Level = 'country')
+inner join GeographyGrouping GG
+on GGD.GeographyGroupingID = GG.GeographyGroupingID
+inner join CMS_Country CMS_CO
+on CO.GeographyLevel1ID = CMS_CO.SourceID
+where CMS_CO.PageCreatedOnWebsite = 1
+ 
+for xml path('EntityPage'), type),                  
+ 
+--Experience Pages
+(select dbo.CleanURL(PA.ProductAttribute) Url,
+'productattribute' EntityType,
+(select 'ProductAttribute' Name,
+PA.ProductAttribute Value,
+dbo.CleanURL(PA.ProductAttribute) UrlSafeValue,
+PA.ProductAttributeID Id
+for xml path('PageEntityInformation'), root('EntityInformations'), type)
+from ProductAttribute PA
+inner join ProductAttributeGroup PAG
+on PA.ProductAttributeGroupID = PAG.ProductAttributeGroupID
+inner join ProductAttributeType PAT
+on PAG.ProductAttributeTypeID = PAT.ProductAttributeTypeID
+where PAT.ProductAttributeType = 'Website'
+for xml path('EntityPage'), type)
+ 
+ 
+for xml path('EntityPages'), type), 
+ 
+LastModifiedDateTime = getdate()
+where BigC.ObjectType = 'EntityPages'

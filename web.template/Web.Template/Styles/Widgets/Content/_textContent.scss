@@ -1,0 +1,323 @@
+﻿@import "../../variables";
+@import "../../mixins/clearfix";
+@import "../../mixins/media";
+@import "../../Base/_typography";
+
+// This is for the alternating content slight overlap
+@include break-sm() {
+    .widget-textcontent {
+        .alternated-content {
+            &.markdown-content {
+                .col-md-7 {
+                    width: 52%;
+                }
+
+                .col-md-pull-7 {
+                    right: 52% !important;
+                }
+
+                .col-md-push-7 {
+                    left: 52% !important;
+                }
+
+                .col-md-5 {
+                    width: 48%;
+                }
+
+                .col-md-pull-5 {
+                    right: 48% !important;
+                }
+
+                .col-md-push-5 {
+                    left: 48% !important;
+                }
+            }
+        }
+    }
+}
+
+.widget-textcontent {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &.highlight {
+        background-color: #fff;
+    }
+
+    &.overlay {
+        &::after {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.3);
+            content: " ";
+            z-index: 2;
+        }
+    }
+
+    .text-content-section {
+        @include clearfix;
+
+        &.padding-sm {
+            padding: $padding-small 0;
+        }
+
+        &.padding-md {
+            padding: $padding-base 0;
+        }
+
+        &.padding-lg {
+            padding: $padding-large 0;
+        }
+    }
+
+    .markdown-content {
+        @include clearfix;
+        position: relative;
+        z-index: 5;
+
+        &.middle {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        &.bottom {
+            position: relative;
+            top: 100%;
+            transform: translateY(-100%);
+        }
+    }
+
+    .markdown-header {
+        text-align: center;
+    }
+
+    .markdown-paragraph {
+        text-align: center;
+    }
+
+    .text-align-xs-center {
+        text-align: center;
+    }
+
+    .text-align-xs-left {
+        text-align: left;
+    }
+
+    .text-align-xs-right {
+        text-align: right;
+    }
+
+    p + p {
+        margin-top: 10px;
+    }
+
+    .btn {
+        display: inline-block;
+        margin: 30px auto 0;
+    }
+
+    &.alt {
+        .h-secondary {
+            color: #fff;
+            text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+        }
+
+        .h-tertiary {
+            text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+        }
+
+        .btn {
+            border: 1px solid #fff;
+
+            &:hover {
+                background: #fff;
+                color: #1c1c1c;
+            }
+        }
+    }
+
+    .img-side {
+        margin-top: 20px;
+    }
+
+    &.alt:after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.3);
+        content: " ";
+        z-index: 2;
+    }
+
+    .article-image-container {
+        .row {
+            margin-bottom: 8px;
+        }
+
+        .article-grid-image {
+            padding-right: 0;
+        }
+    }
+
+    @include break-sm() {
+        .text-col-2 {
+            column-count: 2;
+        }
+
+        .text-col-3 {
+            column-count: 3;
+        }
+
+        .text-align-sm-center {
+            text-align: center;
+        }
+
+        .text-align-sm-left {
+            text-align: left;
+        }
+
+        .text-align-sm-right {
+            text-align: right;
+        }
+    }
+
+    @include break-md() {
+        .img-side {
+            margin-top: 0;
+        }
+
+        .txt-left {
+            padding-right: $padding-base;
+        }
+
+        .txt-right {
+            padding-left: $padding-base;
+        }
+
+        .text-align-md-center {
+            text-align: center;
+        }
+
+        .text-align-md-left {
+            text-align: left;
+        }
+
+        .text-align-md-right {
+            text-align: right;
+        }
+    }
+}
+
+$horizontal-rule-color: #f4f4f4;
+
+.rendered-markdown {
+
+    &.alt {
+        background-color: transparent !important;
+
+        h1, h2, h3, h4, h5, h6, p, span, a, div {
+            background-color: transparent;
+            color: $body-alt-color;
+        }
+    }
+
+    h1 {
+        @extend .h-primary;
+
+        a {
+            @extend .h-primary;
+            @extend .h-link;
+        }
+    }
+
+    h2 {
+        @extend .h-secondary;
+
+        a {
+            @extend .h-secondary;
+            @extend .h-link;
+        }
+    }
+
+    * + h3 {
+        margin-top: 2rem;
+    }
+
+    h3 {
+        @extend .h-tertiary;
+
+        a {
+            @extend .h-tertiary;
+            @extend .h-link;
+        }
+    }
+
+    * + h4 {
+        margin-top: 1.5rem;
+    }
+
+    h4 {
+        @extend .preamble;
+
+        a {
+            @extend .preamble;
+            @extend .link;
+        }
+    }
+
+    hr {
+        margin: $padding-base 0;
+        border: 1px solid $horizontal-rule-color;
+    }
+
+    a {
+        color: $link-color;
+        text-decoration: $link-decoration;
+
+        &:hover {
+            color: $link-hover-color;
+            text-decoration: $link-hover-decoration;
+        }
+    }
+}
+
+.overlaid-markdown {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10%;
+    background: rgba(0, 0, 0, 0.4);
+    text-align: center;
+
+    .h-secondary {
+        margin-bottom: 10px;
+    }
+
+    @include break-sm() {
+        padding: 50px 230px;
+
+        .h-secondary {
+            margin-bottom: 20px;
+        }
+    }
+
+    @include break-md() {
+        padding: 80px 260px;
+    }
+
+    @include break-lg() {
+        padding: 120px 400px;
+    }
+}

@@ -1,0 +1,430 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <link rel="stylesheet" href="assets/css/homepage.css" />
+    <link rel="stylesheet" href="assets/css/common.css" />
+    <link rel="stylesheet" href="assets/css/prism.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+
+    <script type="text/javascript" src="assets/js/prism.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <style type="text/css">
+
+        body {
+            background: #fff;
+        }
+
+        .main-header {
+            background-color:#111;
+            color:#eaeaea;
+            min-height:40px;
+            margin-bottom:10px;
+            line-height:40px;
+        }
+
+        .guide-section {
+            margin-bottom:50px;
+        }
+
+        .guide-header {
+            padding:0 0 20px;
+        }
+        .guide-header h2 {
+            font-size:2rem;
+            line-height:2.5rem;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+        }
+
+        .guide-elements {
+            margin-bottom: 20px;
+        }
+
+        .nav-sections {
+            position:fixed;
+            right:0;
+        }
+
+        .guide-elements span + p {
+            margin-top: 10px;
+        }
+    </style>
+
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="col-md-12">
+                <h1>Web Template Theme Guide</h1>
+            </div>			
+        </div>
+    </header>
+
+    <main class="container">
+
+        <div class="col-md-8">
+
+            <section id="typography" class="guide-section">
+                <header class="guide-header">
+                    <h2>Typography</h2>
+                    <p>Style for headers, text and lists</p>
+                </header>
+                <h1 class="h-primary">Header 1</h1>
+                <h2 class="h-secondary">Header 2</h2>
+                <h3 class="h-tertiary">Header 3</h3>
+                <p class="preamble">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie
+                    et ligula vel posuere.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, <a href="http://www.google.com" target="_blank" class="external-link">consectetur</a> adipiscing elit. Donec molestie 
+                    et ligula vel posuere. Maecenas maximus, nulla vitae porttitor scelerisque, libero purus congue nibh, 
+                    non laoreet nisi arcu et enim. Aenean viverra luctus nibh tempus ultrices. Maecenas quis ex id felis 
+                    euismod elementum id eu purus. Pellentesque habitant morbi tristique senectus et netus et malesuada 
+                    fames ac turpis	egestas. Fusce sed turpis vitae nisi vehicula euismod id quis elit. Nam nec commodo 
+                    turpis. <em>Quisque</em> egestas turpis odio. Mauris id ipsum nec velit finibus placerat. Maecenas 
+                    convallis interdum velit sit amet tempor. Fusce cursus magna et odio luctus bibendum. Quisque nec 
+                    purus eros. Phasellus venenatis <strong>volutpat</strong> ante.
+                </p>
+                <ul>
+                    <li>
+                        List item 1
+                    </li>
+                    <li>
+                        List item 2
+                    </li>
+                    <li>
+                        List item 3
+                    </li>
+                </ul>
+
+                <ol>
+                    <li>
+                        List item 1
+                    </li>
+                    <li>
+                        List item 2
+                    </li>
+                    <li>
+                        List item 3
+                    </li>
+                </ol>
+            </section>
+
+            <section id="panel" class="guide-section">
+                <header class="guide-header">
+                    <h2>Panel</h2>
+                    <p>Styling for box panels</p>
+                </header>
+                <section class="panel">
+                    <header class="panel-header">
+                        <h2>Panel title</h2>
+                    </header>
+                    <div class="panel-body">
+                        <p>Panel content</p>
+                    </div>
+                    <footer class="panel-footer">
+                        <small>Panel footer</small>
+                    </footer>
+                </section>
+
+
+                <section class="panel panel-primary">
+                    <header class="panel-header">
+                        <h2>Primary Panel title</h2>
+                    </header>
+                    <div class="panel-body">
+                        <p>Panel content</p>
+                    </div>
+                    <footer class="panel-footer">
+                        <small>Panel footer</small>
+                    </footer>
+                </section>
+
+                <h3>Code Example</h3>			
+<pre><code class="language-html"><script type="text/html"><section class="panel">
+    <header class="panel-header">
+        <h2>Panel title</h2>
+    </header>
+    <div class="panel-body">
+        <p>Panel content</p>
+    </div>
+    <footer class="panel-footer">
+        <small>Panel footer</small>
+    </footer>
+</section></script></code></pre>
+            </section>
+
+            <section id="button" class="guide-section">
+                <header class="guide-header">
+                    <h2>Button</h2>
+                    <p>Styling for box panels</p>
+                </header>
+                <div class="guide-elements">
+                    <button class="btn btn-primary" type="button">Primary Button</button>
+                    <button class="btn btn-primary disabled" type="button">Disabled Button</button>
+                    <button class="btn btn-default btn-xs" type="button">Extra Small Button</button>
+                    <button class="btn btn-default btn-sm" type="button">Small Button</button>
+                    <button class="btn btn-default btn-lg" type="button">Large Button</button>
+                    <div style="background:#1c1c1c;padding:20px;margin-top:10px;">
+                        <button class="btn btn-alt" type="button">Alt Button</button>
+                    </div>
+                </div>
+                <h3>Code Example</h3>
+<pre><code class="language-html"><script type="text/html"><button class="btn btn-primary" type="button">Primary Button</button>
+<button class="btn btn-primary disabled" type="button">Disabled Button</button>
+<button class="btn btn-default btn-xs" type="button">Extra Small Button</button>
+<button class="btn btn-default btn-sm" type="button">Small Button</button>
+<button class="btn btn-default btn-lg" type="button">Large Button</button>
+<button class="btn btn-alt" type="button">Alt Button</button></script></code></pre>
+            </section>
+
+            <section id="form" class="guide-section">
+                <header class="guide-header">
+                    <h2>Form</h2>
+                    <p>Style for inputs, selects, checkboxes and radio buttons</p>
+                </header>
+                <div class="guide-elements">
+                    <div class="form-group">
+                        <label for="emailAddress">Email address</label>
+                        <input type="email" class="form-control" id="emailAddress" placeholder="Enter Email" />
+                    </div>
+                </div>
+                <h3>Code Example</h3>
+<pre><code class="language-html"><script type="text/html"><div class="form-group">
+    <label for="emailAddress">Email address</label>
+    <input type="email" class="form-control" id="emailAddress" placeholder="Enter Email" />
+</div></script></code></pre>
+            </section>
+
+            <section id="navigation" class="guide-section">
+                <header class="guide-header">
+                    <h2>Navigation</h2>
+                    <p>Style for navigation tabs and pills</p>
+                </header>
+                <div class="guide-elements">
+                    <ul class="nav nav-tabs">
+                        <li role="presentation" class="active"><a href="#">Home</a></li>
+                        <li role="presentation"><a href="#">Profile</a></li>
+                        <li role="presentation"><a href="#">Messages</a></li>
+                    </ul>
+                    <ul class="nav nav-pills">
+                        <li role="presentation" class="active"><a href="#">Home</a></li>
+                        <li role="presentation"><a href="#">Profile</a></li>
+                        <li role="presentation"><a href="#">Messages</a></li>
+                    </ul>
+                </div>
+                <h3>Code Example</h3>
+<pre><code class="language-html"><script type="text/html"><ul class="nav nav-tabs">
+    <li role="presentation" class="active"><a href="#">Home</a></li>
+    <li role="presentation"><a href="#">Profile</a></li>
+    <li role="presentation"><a href="#">Messages</a></li>
+</ul>
+<ul class="nav nav-pills">
+    <li role="presentation" class="active"><a href="#">Home</a></li>
+    <li role="presentation"><a href="#">Profile</a></li>
+    <li role="presentation"><a href="#">Messages</a></li>
+</ul></script></code></pre>
+            </section>
+
+            <section id="breadcrumbs" class="guide-section">
+                <header class="guide-header">
+                    <h2>Breadcrumbs</h2>
+                    <p>Style for breadcrumbs</p>
+                </header>
+                <div class="guide-elements">
+                    <ol class="breadcrumb">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Library</a></li>
+                        <li class="active">Data</li>
+                    </ol>
+                </div>
+                <h3>Code Example</h3>
+<pre><code class="language-html"><script type="text/html"><ol class="breadcrumb">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Library</a></li>
+    <li class="active">Data</li>
+</ol></script></code></pre>
+            </section>
+
+            <section id="paging" class="guide-section">
+                <header class="guide-header">
+                    <h2>Paging</h2>
+                    <p>Style for paging</p>
+                </header>
+                <div class="guide-elements">
+                    <ul class="pagination">
+                        <li>
+                            <a href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li>
+                            <a href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <h3>Code Example</h3>
+<pre><code class="language-html"><script type="text/html"><ul class="pagination">
+    <li>
+        <a href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+        </a>
+    </li>
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li>
+        <a href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+        </a>
+    </li>
+</ul></script></code></pre>
+            </section>
+
+            <section id="table" class="guide-section">
+                <header class="guide-header">
+                    <h2>Table</h2>
+                    <p>Style for tables</p>
+                </header>
+                <div class="guide-elements">
+                    <h3>Default Table</h3>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Room Type</th>
+                                <th>Board Basis</th>
+                                <th>Price</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Studio</td>
+                                <td>Self Catering</td>
+                                <td>£320.98</td>
+                                <td><button type="button" class="btn btn-primary">Book</button></td>
+                            </tr>
+                            <tr>
+                                <td>Studio</td>
+                                <td>Bed and Breakfast</td>
+                                <td>£359.48</td>
+                                <td><button type="button" class="btn btn-primary">Book</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3>Striped Table</h3>
+
+                    <h3>Table Hover</h3>
+                </div>
+                <h3>Code Example</h3>
+<pre><code class="language-html"><script type="text/html"><table class="table">
+    <thead>
+        <tr>
+            <th>Room Type</th>
+            <th>Board Basis</th>
+            <th>Price</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Studio</td>
+            <td>Self Catering</td>
+            <td>£320.98</td>
+            <td><button type="button" class="btn btn-primary">Book</button></td>
+        </tr>
+        <tr>
+            <td>Studio</td>
+            <td>Bed and Breakfast</td>
+            <td>£359.48</td>
+            <td><button type="button" class="btn btn-primary">Book</button></td>
+        </tr>
+    </tbody>
+</table></script></code></pre>
+            </section>
+
+            <section id="rating" class="guide-section">
+                <header class="guide-header">
+                    <h2>Rating</h2>
+                    <p>Rating picked up from <strong>data-rating</strong> attribute. Works with 4, 4.0 and 4.5</p>
+                    <p>itemprop <strong>award</strong> used for hotel star ratings</p>
+                    <p>itemprop <strong>aggregateRating</strong> and <strong>ratingValue</strong> can be used for review ratings</p>
+                    <p></p>
+                </header>
+                <div class="guide-elements">
+                    <p>Default</p>
+                    <span data-rating="4" itemprop="award" class="rating">4 Stars</span>
+                    <p>Extra Small</p>
+                    <span data-rating="4" itemprop="award" class="rating rating-xs">4 Stars</span>
+                    <p>Small</p>
+                    <span data-rating="4.0" itemprop="award" class="rating rating-sm">4 Stars</span>
+                    <p>Large</p>
+                    <span data-rating="3.5" itemprop="award" class="rating rating-full rating-lg">4 Stars</span>
+                    <p>Reviews</p>
+                    <div itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+                        <span itemprop="ratingValue" data-rating="4" class="rating rating-full">4 stars</span>
+                        <p>based on <span itemprop="reviewCount">250</span> reviews</p>
+                    </div>
+                </div>
+                <h3>Code Example</h3>
+<pre><code class="language-html"><script type="text/html"><!-- Default -->
+<span data-rating="4" itemprop="award" class="rating">4 Stars</span>
+
+<!-- Extra Small -->
+<span data-rating="4" itemprop="award" class="rating rating-xs">4 Stars</span>
+
+<!-- Small -->
+<span data-rating="4.0" itemprop="award" class="rating rating-sm">4 Stars</span>
+
+<!-- Large, half rating and full -->
+<span data-rating="3.5" itemprop="award" class="rating rating-full rating-lg">3.5 Stars</span>
+
+<!--Reviews-->
+<div itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+    <span itemprop="ratingValue" data-rating="4" class="rating rating-full">4 stars</span>
+    <p>based on <span itemprop="reviewCount">250</span> reviews</p>
+</div></script></code></pre>
+            </section>
+        </div>
+
+        <nav class="col-md-4 nav-sections">
+            <h2>Component</h2>
+            <ul>
+                <li><a href="#typography">Typography</a></li>
+                <li><a href="#panel">Panel</a></li>
+                <li><a href="#button">Button</a></li>
+                <li><a href="#form">Form</a></li>
+                <li><a href="#navigation">Navigation</a></li>
+                <li><a href="#breadcrumbs">Breadcrumbs</a></li>
+                <li><a href="#paging">Paging</a></li>
+                <li><a href="#table">Table</a></li>
+                <li><a href="#rating">Rating</a></li>
+            </ul>
+        </nav>
+    
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+</html>

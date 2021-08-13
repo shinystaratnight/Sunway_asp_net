@@ -1,0 +1,20 @@
+﻿@import "../../mixins/media";
+@import "../../variables";
+
+.location-information-content {
+    .location-title {
+        margin-bottom: 0;
+    }
+
+    .map-image-container {
+        overflow: hidden;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .climate-row {
+        padding-top: 50px;
+    }
+}

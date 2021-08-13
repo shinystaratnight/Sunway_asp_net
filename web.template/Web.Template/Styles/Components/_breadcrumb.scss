@@ -1,0 +1,84 @@
+﻿@import "../variables";
+@import "../mixins/clearfix";
+
+//== Breadcrumbs Styling
+//
+//## Component specific styling relating to breadcrumbs used on the website
+
+.breadcrumb {
+    @include clearfix;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.breadcrumb-item {
+    float: left;
+}
+
+.breadcrumb-indexed {
+    position: relative;
+
+    &:before {
+        display: block;
+        position: absolute;
+        top: 18px;
+        width: 100%;
+        border-top: 2px solid #ddd;
+        content: " ";
+        z-index: 1;
+    }
+
+
+    .breadcrumb-item {
+        position: relative;
+        float: left;
+        text-align: center;
+        text-transform: capitalize;
+        z-index: 2;
+
+        .breadcrumb-index {
+            display: block;
+            width: 32px;
+            height: 32px;
+            margin: 0 auto $spacing-xs;
+            border: 3px solid $body-bg;
+            border-radius: 50%;
+            background: $btn-primary-bg;
+            color: $btn-primary-color;
+            font-size: 0.875rem;
+            line-height: 32px;
+            text-align: center;
+        }
+    }
+
+    $i: 1;
+
+    @while $i <= 6 {
+        $width: (100 / $i) * 1%;
+
+        &[data-pages="#{$i}"] {
+            .breadcrumb-item {
+                width: $width;
+            }
+        }
+
+        $i: $i + 1;
+    }
+
+
+
+    .breadcrumb-item.active {
+        .breadcrumb-index {
+            background: $brand-inverse;
+            color: $body-alt-color;
+        }
+    }
+
+    .breadcrumb-item.disabled {
+        .breadcrumb-index {
+            background: $gray-dark;
+            color: $gray-light;
+        }
+    }
+}

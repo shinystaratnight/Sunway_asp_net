@@ -1,0 +1,211 @@
+﻿@import "../variables";
+@import "../mixins/sprite";
+@import "../mixins/clearfix";
+@import "../mixins/media";
+
+//== Form Styling
+//
+//## Component specific styling relating to form elements used on the website
+
+.form {
+    .warning {
+        position: relative;
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid $brand-danger;
+        color: $brand-danger;
+
+        .icon {
+            display: inline-block;
+            margin-right: $spacing-sm;
+        }
+
+        .warning-text {
+            display: inline-block;
+        }
+    }
+}
+
+.form-group {
+    margin-bottom: $spacing-md;
+
+    label {
+        cursor: pointer;
+    }
+
+    &.has-error {
+        .form-control::placeholder,
+        .icon {
+            color: $brand-danger;
+        }
+
+        .text-input-container,
+        .form-control,
+        .custom-select {
+            border-width: 3px;
+            border-color: $brand-danger;
+            background-color: $brand-danger-background;
+			color: $brand-danger;
+        }
+
+        .custom-select {
+            .has-placeholder {
+                color: $brand-danger;
+            }
+        }
+    }
+
+    .col-form-label {
+        line-height: $input-height-md;
+    }
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: $input-height-md;
+    padding: $input-padding-y $input-padding-x;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    border: $input-border;
+    border-radius: $input-border-radius-md;
+    background-color: $input-bg;
+    color: $input-color;
+    font-size: $input-font-size;
+    line-height: $input-line-height;
+    box-shadow: $input-box-shadow;
+
+    &::placeholder {
+        color: $input-placeholder-color;
+        opacity: 1;
+    }
+
+    &:focus {
+        border: $input-focus-border;
+        outline: 0;
+        box-shadow: $input-focus-box-shadow;
+    }
+
+    &.disabled {
+        cursor: not-allowed;
+        opacity: 0.5;
+    }
+
+    &.form-control-sm {
+         height: $input-height-sm;
+         border-radius: $input-border-radius-sm;
+    }
+
+    &.form-control-lg {
+         height: $input-height-lg;
+         border-radius: $input-border-radius-lg;
+    }
+}
+
+.custom-select {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    border: $input-border;
+    background-color: $input-bg;
+
+    &::after {
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 12px;
+        width: 0;
+        height: 0;
+        margin-top: -4px;
+        border-top: 8px solid #555;
+        border-right: 6px solid transparent;
+        border-left: 6px solid transparent;
+        content: " ";
+        cursor: pointer;
+        z-index: 0;
+    }
+
+    .form-control {
+        position: relative;
+        height: $input-height-md - 2px;
+        padding: $input-padding-y 30px $input-padding-y $input-padding-x;
+        border: none;
+        background: transparent;
+        appearance: none;
+        z-index: 1;
+
+        &::-ms-expand {
+            display: none;
+        }
+    }
+
+    .has-placeholder,
+    .placeholder:disabled {
+        color: $input-placeholder-color;
+    }
+
+    .option {
+        color: $input-color;
+    }
+
+    select:disabled {
+		background-color: $input-bg-disabled;
+
+        &:hover {
+            cursor: not-allowed;
+        }
+    }
+}
+
+.form-check {
+    display: block;
+    position: relative;
+    margin-bottom: $spacing-sm;
+    padding-left: 20px;
+
+    &.no-label {
+        height: $input-height-sm;
+    }
+
+    &.form-check-inline {
+        display: inline-block;
+    }
+
+    &.has-error {
+        .form-check-label,
+        .icon {
+            color: $brand-danger;
+        }
+    }
+}
+
+.form-check-label {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 0;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+.form-check-input {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin: 0;
+    transform: translateY(-50%);
+}
+
+
+.form-inline {
+    @include clearfix;
+
+    .form-group {
+        margin-right: $spacing-sm;
+        float: left;
+    }
+}
+
+.text-danger {
+    text-align: right;
+    text-transform: uppercase;
+}

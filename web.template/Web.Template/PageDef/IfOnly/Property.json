@@ -1,0 +1,238 @@
+{
+    "Id": 1,
+    "Name": "Property",
+    "Sections": [
+        {
+            "Id": 1,
+            "Name": "header",
+            "Widgets": [
+                {
+                    "Id": 1,
+                    "Name": "SiteBuilderToolbar",
+                    "ServerSideRender": false,
+                    "ClientSideRender": true,
+                    "Access": "AdminLoggedIn"
+                },
+                {
+                    "Id": 1,
+                    "Name": "Header",
+                    "Context": "default",
+                    "ServerSideRender": true,
+                    "ClientSideRender": true
+                }
+            ]
+        },
+        {
+            "Id": 2,
+            "Name": "main",
+            "Widgets": [
+                {
+                    "Id": 1,
+                    "Name": "WidgetEdit",
+                    "ClientSideRender": true,
+                    "ServerSideRender": false,
+                    "Access": "AdminLoggedIn"
+                },
+                {
+                    "Id": 2,
+                    "Name": "PropertyHeroImage",
+                    "Context": "property-hero-image",
+                    "EntitySpecific": false,
+                    "ServerSideRender": false,
+                    "ClientSideRender": true,
+                    "NotEditable": true,
+                    "EntityList": [
+                        {
+                            "Type": "Property",
+                            "SourceType": "",
+                            "Source": "SiteBuilder"
+                        },
+                        {
+                            "Type": "Property",
+                            "SourceType": "PropertyFull",
+                            "Source": "iVector"
+                        }
+                    ]
+                },
+                {
+                    "Id": 3,
+                    "Name": "StickyNav",
+                    "Context": "property-sticky-nav",
+                    "EntitySpecific": false,
+                    "ServerSideRender": false,
+                    "ClientSideRender": true
+                },
+                {
+                    "Id": 4,
+                    "Name": "SubNavigation",
+                    "Context": "default",
+                    "ServerSideRender": true,
+                    "ClientSideRender": false,
+                    "EntitySpecific": false
+                },
+                {
+                    "Id": 2,
+                    "Name": "SimpleTextContent",
+                    "Context": "property-overview",
+                    "EntitySpecific": true,
+                    "ServerSideRender": true,
+                    "ClientSideRender": false
+                },
+                {
+                    "Id": 2,
+                    "Name": "TripAdvisor",
+                    "Context": "default",
+                    "EntitySpecific": false,
+                    "ServerSideRender": true,
+                    "ClientSideRender": false,
+                    "NotEditable": true,
+                    "EntityList": [
+                        {
+                            "Type": "Property",
+                            "SourceType": "",
+                            "Source": "SiteBuilder"
+                        },
+                        {
+                            "Type": "Property",
+                            "SourceType": "PropertyFull",
+                            "Source": "iVector"
+                        }
+                    ]
+                },
+                {
+                    "Id": 4,
+                    "Name": "SpecialOfferDetails",
+                    "Context": "special-offer-details",
+                    "EntitySpecific": false,
+                    "ServerSideRender": false,
+                    "ClientSideRender": true
+                },
+                {
+                    "Id": 2,
+                    "Name": "CarouselContent",
+                    "Context": "property-selling-points",
+                    "EntitySpecific": true,
+                    "ServerSideRender": false,
+                    "ClientSideRender": true
+                },
+                {
+                    "Id": 2,
+                    "Name": "HotelFacilitiesContent",
+                    "Context": "hotel-facilities",
+                    "EntitySpecific": true,
+                    "ServerSideRender": true,
+                    "ClientSideRender": false
+                },
+                {
+                  "Id": 2,
+                  "Name": "SidePreviewCarousel",
+                  "Context": "property-travel-made-beautiful",
+                  "EntitySpecific": true,
+                  "ServerSideRender": false,
+                  "ClientSideRender": true
+                },
+                {
+                    "Id": 2,
+                    "Name": "PropertyTabbedContent",
+                    "Context": "property-tabbed-content",
+                    "EntitySpecific": true,
+                    "ServerSideRender": false,
+                    "ClientSideRender": true
+                },
+                //{
+                //    "Id": 12,
+                //    "Name": "ExpertOpinionCarousel",
+                //    "Context": "property-expert-opinion",
+                //    "EntitySpecific": false,
+                //    "ServerSideRender": false,
+                //    "ClientSideRender": true
+                //},
+                {
+                    "Id": 2,
+                    "Name": "LocationInformation",
+                    "Context": "property-location-information",
+                    "EntitySpecific": false,
+                    "ServerSideRender": true,
+                    "ClientSideRender": false,
+                    "NotEditable": true, 
+                    "EntityList": [
+                        {
+                            "Type": "Region",
+                            "SourceType": "",
+                            "Source": "SiteBuilder"
+                        },
+                        {
+                            "Type": "Property",
+                            "SourceType": "",
+                            "Source": "SiteBuilder"
+                        },
+                        {
+                            "Type": "Property",
+                            "SourceType": "PropertyFull",
+                            "Source": "iVector"
+                        }
+                    ]
+                },
+                {
+                    "Id": 2,
+                    "Name": "PropertyLocationText",
+                    "Context": "property-location-text",
+                    "EntitySpecific": false,
+                    "ServerSideRender": true,
+                    "ClientSideRender": false,
+                    "NotEditable": true,
+                    "EntityList": [
+                        {
+                            "Type": "Property",
+                            "SourceType": "",
+                            "Source": "SiteBuilder"
+                        },
+                        {
+                            "Type": "Property",
+                            "SourceType": "PropertyFull",
+                            "Source": "iVector"
+                        }
+                    ]
+                },
+
+                {
+                    "Id": 9,
+                    "Name": "SpecialOffers",
+                    "Context": "property-featured-hotels",
+                    "ServerSideRender": false,
+                    "ClientSideRender": true,
+                    "EntitySpecific": true
+                },
+                {
+                    "Id": 10,
+                    "Name": "RedirectEdit",
+                    "ServerSideRender": false,
+                    "ClientSideRender": true,
+                    "Access": "AdminLoggedIn"
+                }
+
+            ]
+        },
+        {
+            "Id": 1,
+            "Name": "footer",
+            "Widgets": [
+                {
+                    "Id": 1,
+                    "Name": "NewsletterSignup",
+                    "Context": "default",
+                    "ServerSideRender": true,
+                    "ClientSideRender": false
+                },
+                {
+                    "Id": 2,
+                    "Name": "Footer",
+                    "Context": "default",
+                    "ServerSideRender": true
+                }
+            ]
+        }
+    ],
+    "Template": "FullContent",
+    "EntityType": "property"
+}

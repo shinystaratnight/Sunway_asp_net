@@ -1,0 +1,37 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "SubNavigation",
+  "type": "object",
+  "properties": {
+    "SocialMedia": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/SocialMedia"
+      }
+    }
+  },
+  "definitions": {
+    "SocialMedia": {
+      "type": "object",
+      "properties": {
+        "URL": {
+          "type": "string"
+        },
+        "Icon": {
+          "type": "string",
+          "format": "select",
+          "enum": [
+            "Facebook",
+            "Twitter",
+            "GooglePlus",
+            "Linkedin"
+          ]
+        }
+      },
+      "required": [
+        "URL",
+        "Icon"
+      ]
+    }
+  }
+}

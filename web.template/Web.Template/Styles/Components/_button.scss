@@ -1,0 +1,132 @@
+﻿@import "../variables";
+@import "../mixins/media";
+
+//== Button Styling
+//
+//## Component specific styling relating to buttons used on the website
+
+@mixin button-color($border, $bg, $color) {
+    border: $border;
+    background: $bg;
+    color: $color;
+}
+
+@mixin button-hover($hover-border, $hover-bg, $hover-color) {
+    &:hover {
+        border: $hover-border;
+        background: $hover-bg;
+        color: $hover-color;
+    }
+
+}
+
+@mixin button-disabled($disabled-border, $disabled-bg, $disabled-color) {
+	&:disabled {
+		border: $disabled-border;
+		background: $disabled-bg;
+		color: $disabled-color;
+	}
+}
+
+@mixin button-size($height, $padding-x, $border-radius) {
+    height: $height;
+    padding: 0 $padding-x;
+    border-radius: $border-radius;
+}
+
+@mixin button-font($font-size, $font-weight, $line-height) {
+    font-size: $font-size;
+    font-weight: $font-weight;
+    line-height: $line-height;
+}
+
+.btn {
+    @include button-size($btn-height-md, $btn-padding-x-md, $btn-border-radius-md);
+    @include button-font($btn-font-size-md, $btn-font-weight-md, $btn-line-height-md);
+    display: inline-block;
+    cursor: pointer;
+
+    &.btn-default {
+        @include button-color($btn-default-border, $btn-default-bg, $btn-default-color);
+        @include button-hover($btn-default-hover-border, $btn-default-hover-bg, $btn-default-hover-color);
+    }
+
+    &.btn-primary {
+        @include button-color($btn-primary-border, $btn-primary-bg, $btn-primary-color);
+        @include button-hover($btn-primary-hover-border, $btn-primary-hover-bg, $btn-primary-hover-color);
+		@include button-disabled($btn-primary-border, $input-bg-disabled, $btn-primary-color);
+    }
+
+    &.btn-alt,
+    &.btn-inverse {
+        @include button-color($btn-inverse-border, $btn-inverse-bg, $btn-inverse-color);
+        @include button-hover($btn-inverse-hover-border, $btn-inverse-hover-bg, $btn-inverse-hover-color);
+    }
+
+
+    &.btn-xs {
+        @include button-size($btn-height-xs, $btn-padding-x-xs, $btn-border-radius-xs);
+        @include button-font($btn-font-size-xs, $btn-font-weight-xs, $btn-line-height-xs);
+    }
+
+    &.btn-sm {
+        @include button-size($btn-height-sm, $btn-padding-x-sm, $btn-border-radius-sm);
+        @include button-font($btn-font-size-sm, $btn-font-weight-sm, $btn-line-height-sm);
+    }
+
+    &.btn-lg {
+        @include button-size($btn-height-lg, $btn-padding-x-lg, $btn-border-radius-lg);
+        @include button-font($btn-font-size-lg, $btn-font-weight-lg, $btn-line-height-lg);
+    }
+    
+    &.btn-block,
+    &.btn-block-xs,
+    &.btn-block-sm {
+        width: 100%;
+    }
+
+    &.disabled {
+        opacity: 0.3;
+        pointer-events: none;
+    }
+}
+
+
+.alt {
+    .btn-default {
+        @extend .btn-alt;
+    }
+}
+
+@include break-sm() {
+    .btn {
+        &.btn-block-xs {
+            width: initial;
+        }
+    }
+
+    .btn-text-xs {
+        line-height: $btn-line-height-xs !important;
+    }
+
+    .btn-text-sm {
+        line-height: $btn-line-height-sm !important;
+    }
+
+    .btn-text-md {
+        line-height: $btn-line-height-md !important;
+    }
+
+    .btn-text-lg {
+        line-height: $btn-line-height-lg !important;
+    }
+
+}
+
+@include break-md() {
+    .btn {
+        &.btn-block-sm {
+            width: initial;
+        }
+    }
+}

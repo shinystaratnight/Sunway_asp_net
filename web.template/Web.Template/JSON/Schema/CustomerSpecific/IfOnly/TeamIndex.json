@@ -1,0 +1,39 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title": "Team Index",
+  "description": "Widget to display staff members and their job titles.",
+  "type": "object",
+  "properties": {
+    "Title": {
+      "type": "string"
+    },
+    "LeadParagraph": {
+      "type": "string",
+      "description": "Larger styled paragraph to appear before the main content",
+      "format": "textarea" 
+    },
+    "Configuration": {
+      "type": "object",
+      "title": "Configuration",
+      "description": "Configuration options for the accordion widget",
+      "format": "tab",
+      "properties": {
+        "ContainerPadding": {
+          "type": "string",
+          "format": "select",
+          "default": "Medium",
+          "enum": [ "None", "Small", "Medium", "Large" ]
+        },
+        "ContainerStyle": {
+          "type": "string",
+          "format": "select",
+          "enum": [
+            "Default",
+            "Highlight",
+            "Alternate"
+          ]
+        }
+      }
+    }
+  }
+}

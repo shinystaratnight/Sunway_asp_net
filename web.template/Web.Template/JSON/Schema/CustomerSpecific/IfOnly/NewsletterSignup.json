@@ -1,0 +1,46 @@
+﻿{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "NewsletterSignup",
+    "type": "object",
+    "properties": {
+        "LoggedInTitle": {
+            "type": "string",
+            "default": "Sign up to our newsletter"
+        },
+        "LoggedOutTitle": {
+            "type": "string",
+            "default": "Sign up to our newsletter"
+        },
+        "LoggedInScript": {
+            "type": "string",
+            "format": "textarea",
+            "description": "Script that will be loaded when a user is logged in to the website",
+            "default": ""
+        },
+        "LoggedOutScript": {
+            "type": "string",
+            "format": "textarea",
+            "description": "Script that will be loaded when a user is not logged in to the website",
+            "default": ""
+        },
+        "Configuration": {
+            "type": "object",
+            "title": "Configuration",
+            "description": "Configuration options for the newsletter signup widget",
+            "properties": {
+                "ContainerStyle": {
+                    "type": "string",
+                    "format": "select",
+                    "default": "Default",
+                    "enum": [ "Default", "Highlight", "Alternate" ]
+                },
+                "ContainerPadding": {
+                    "type": "string",
+                    "format": "select",
+                    "default": "None",
+                    "enum": [ "None", "Small", "Medium", "Large" ]
+                }
+            }
+        }
+    }
+}

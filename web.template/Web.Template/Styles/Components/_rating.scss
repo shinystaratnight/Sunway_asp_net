@@ -1,0 +1,145 @@
+﻿@import "../variables";
+
+//== Rating Styling
+//
+//## Component specific styling relating to ratings used on the website
+
+.rating-container {
+
+    .rating-append-text {
+        padding-left: $spacing-xs;
+        color: $rating-color;
+    }
+
+    &.white {
+        .rating::after,
+        .rating-append-text {
+            color: #fff;
+        }
+    }
+}
+
+.rating {
+    height: $rating-size;
+    font-family: FontAwesome;
+    font-size: 0;
+    line-height: $rating-size;
+
+    &[data-rating="0.0"] {
+        font-family: $body-font-stack;
+        font-size: $body-font-size;
+    }
+
+    &::after {
+        color: $rating-color;
+        font-size: $rating-size;
+        text-indent: 0;
+        overflow: hidden;
+    }
+
+    &.white {
+        &::after {
+            color: #fff;
+        }
+    }
+
+    $i: 0;
+
+    @while $i <= 5 {
+
+        $j: 1;
+        $stars: "";
+        @while $j <= $i {
+            $stars: $stars + " \f005";
+            $j: $j + 1;
+        }
+
+        $k: 1;
+        $max: 5 - $i;
+        $empyStars: "";
+        @while $k <= $max {
+            $empyStars: $empyStars + " \f006";
+            $k: $k + 1;
+        }
+        
+        $k: 1;
+        $max: $max - 1;
+        $empyStarsHalf: "";
+        @while $k <= $max {
+            $empyStarsHalf: $empyStarsHalf + " \f006";
+            $k: $k + 1;
+        }
+
+        &[data-rating="#{$i}"],
+        &[data-rating="#{$i}.0"] {
+            &::after {
+                content: $stars;
+            }
+
+            &.rating-full::after {
+                content: $stars + $empyStars;
+            }
+        }
+
+        &[data-rating="#{$i}.5"] {
+            &::after {
+                content: $stars + " \f089";
+            }
+
+            &.rating-full::after {
+                content: $stars + " \f123" + $empyStarsHalf;
+            }
+        }
+
+        $i: $i + 1;
+    }
+}
+
+.rating-xs {
+    .rating {
+        height: $rating-size-xs;
+        line-height: $rating-size-xs;
+
+        &::after {
+            font-size: $rating-size-xs;
+        }
+   }
+
+    .rating-append-text {
+        height: $rating-text-size-xs;
+        font-size: $rating-text-size-xs;
+        line-height: $rating-text-size-xs;
+    }
+}
+
+.rating-sm {
+    .rating {
+        height: $rating-size-sm;
+        line-height: $rating-size-sm;
+
+        &::after {
+            font-size: $rating-size-sm;
+        }
+   }
+
+    .rating-append-text {
+        height: $rating-text-size-sm;
+        font-size: $rating-text-size-sm;
+        line-height: $rating-text-size-sm;
+    }
+}
+
+.rating-lg {
+
+    .rating,
+    .rating-append-text {
+        height: $rating-size-lg;
+        line-height: $rating-size-lg;
+   }
+
+    .rating::after {
+        height: $rating-text-size-lg;
+        font-size: $rating-text-size-lg;
+        line-height: $rating-text-size-lg;
+    }
+}

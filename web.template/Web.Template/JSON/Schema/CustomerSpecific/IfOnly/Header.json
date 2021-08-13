@@ -1,0 +1,112 @@
+﻿{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Header",
+    "type": "object",
+    "properties": {
+        "Image": {
+            "type": "string",
+            "format": "image"
+        },
+        "PhoneNumber": {
+            "type": "string"
+        },
+        "NavItems": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+                "$ref": "#/definitions/NavItem"
+            }
+        },
+        "ContactText": {
+            "type": "string"
+        },
+        "AllowLogIn": {
+            "type": "boolean"
+        },
+        "SignUpURL": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "NavItems",
+        "AllowLogIn"
+    ],
+    "definitions": {
+        "NavItem": {
+            "type": "object",
+            "properties": {
+                "Name": {
+                    "type": "string"
+                },
+                "Extension": {
+                    "type": "object",
+                    "anyOf": [
+                        {
+                            "properties": {
+                                "URL": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "URL"
+                            ]
+                        },
+                        {
+                            "properties": {
+                                "NavSections": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/definitions/NavSection"
+                                    }
+                                }
+                            },
+                            "required": [
+                                "NavSections"
+                            ]
+                        }
+                    ]
+                }
+            },
+            "required": [
+                "Name",
+                "Extension"
+            ]
+        },
+        "NavSection": {
+            "type": "object",
+            "properties": {
+                "Title": {
+                    "type": "string"
+                },
+                "NavLinks": {
+                    "type": "array",
+                    "items": {
+                        "Nav_Link": {
+                            "$ref": "#/definitions/NavLink"
+                        }
+                    }
+                }
+            },
+            "required": [
+                "Title",
+                "NavLinks"
+            ]
+        },
+        "NavLink": {
+            "type": "object",
+            "properties": {
+                "Name": {
+                    "type": "string"
+                },
+                "URL": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "Name",
+                "URL"
+            ]
+        }
+    }
+}

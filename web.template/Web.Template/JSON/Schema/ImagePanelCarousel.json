@@ -1,0 +1,74 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Image Panel Carousel",
+  "type": "object",
+  "properties": {
+    "Images": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "properties": {
+          "ImageUrl": {
+            "type": "string"
+          },
+          "LinkUrl": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "Configuration": {
+      "type": "object",
+      "title": "Configuration",
+      "description": "Configuration options for the Image Panel Carousel widget",
+      "properties": {
+        "CarouselHeightMobile": {
+          "type": "string",
+          "format": "select",
+          "default": "Medium",
+          "enum": [
+            "Extra Small",
+            "Small",
+            "Medium",
+            "Large",
+            "Extra Large"
+          ]
+        },
+        "CarouselHeight": {
+          "type": "string",
+          "format": "select",
+          "default": "Medium",
+          "enum": [
+            "Extra Small",
+            "Small",
+            "Medium",
+            "Large",
+            "Extra Large"
+          ]
+        },
+        "ContainerStyle": {
+          "type": "string",
+          "format": "select",
+          "default": "Highlight",
+          "enum": [
+            "Default",
+            "Highlight",
+            "Alternate"
+          ]
+        },
+        "ContainerPadding": {
+          "type": "string",
+          "format": "select",
+          "default": "Medium",
+          "enum": [
+            "None",
+            "Small",
+            "Medium",
+            "Large"
+          ]
+        }
+      }
+    }
+  }
+}

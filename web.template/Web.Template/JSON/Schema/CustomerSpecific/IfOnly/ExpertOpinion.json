@@ -1,0 +1,17 @@
+﻿{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "AccordionContent",
+    "type": "object",
+    "properties": {
+        "ExpertOpinion": {
+            "type": "string",
+            "format": "textarea",
+            "description": "The expert opinion."
+        },
+        "AuthorId": {
+            "title": "Author",
+            "type": "string",
+            "format": "autocontextlookup,staffmember"
+        }
+    }
+}

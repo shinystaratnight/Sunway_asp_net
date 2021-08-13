@@ -1,0 +1,168 @@
+﻿{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "AccordionContent",
+    "type": "object",
+    "properties": {
+        "Title": {
+            "type": "string",
+            "default": "Title"
+        },
+        "LeadParagraph": {
+            "type": "string",
+            "format": "textarea",
+            "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare urna augue, vitae pulvinar augue sollicitudin eget. Integer quis quam at risus consectetur facilisis."
+        },
+        "AccordionContent": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "title": "Accordion Content",
+            "description": "List of items to display in the accordion.",
+            "items": {
+                "type": "object",
+                "title": "Accordion item",
+                "description": "An individual accordion item",
+                "properties": {
+                    "Title": {
+                        "type": "string"
+                    },
+                    "Text": {
+                        "type": "string",
+                        "format": "textarea",
+                        "description": "Markdown text based on CommonMark spec. See http://commonmark.org/help/ for details."
+                    },
+                    "Sequence": {
+                        "type": "integer",
+                        "default": 1,
+                        "description": "Determines the order in which this item is displayed"
+                    },
+                    "Hidden": {
+                        "type": "boolean",
+                        "default": false,
+                        "description": "Tick to hide this item without deleting your content"
+                    }
+                },
+                "required": [
+                    "Title",
+                    "Text",
+                    "Sequence",
+                    "Hidden"
+                ]
+            },
+            "default": [
+                {
+                    "Title": "A placeholder key",
+                    "Text": "A placeholder value associated with a key",
+                    "Sequence": 1,
+                    "Hidden": false
+                },
+                {
+                    "Title": "A placeholder key",
+                    "Text": "A placeholder value associated with a key",
+                    "Sequence": 2,
+                    "Hidden": false
+                },
+                {
+                    "Title": "A placeholder key",
+                    "Text": "A placeholder value associated with a key",
+                    "Sequence": 3,
+                    "Hidden": false
+                },
+                {
+                    "Title": "A placeholder key",
+                    "Text": "A placeholder value associated with a key",
+                    "Sequence": 4,
+                    "Hidden": false
+                },
+                {
+                    "Title": "A placeholder key",
+                    "Text": "A placeholder value associated with a key",
+                    "Sequence": 5,
+                    "Hidden": false
+                },
+                {
+                    "Title": "A placeholder key",
+                    "Text": "A placeholder value associated with a key",
+                    "Sequence": 6,
+                    "Hidden": false
+                }
+            ]
+        },
+        "ShowAllButton": {
+            "type": "object",
+            "title": "Button",
+            "description": "Optional button to appear at the bottom of the content, allowing the user to load any hidden content.",
+            "properties": {
+                "Text": {
+                    "type": "string",
+                    "default": "Load More"
+                },
+                "Style": {
+                    "type": "string",
+                    "format": "select",
+                    "default": "Default",
+                    "enum": [
+                        "Default",
+                        "Arrow"
+                    ]
+                }
+            }
+        },
+        "Configuration": {
+            "type": "object",
+            "title": "Configuration",
+            "description": "Configuration options for the accordion widget",
+            "properties": {
+                "ContainerStyle": {
+                    "type": "string",
+                    "format": "select",
+                    "default": "Default",
+                    "enum": [
+                        "Default",
+                        "Highlight",
+                        "Alternate"
+                    ]
+                },
+                "HighlightedItemStyle": {
+                    "type": "string",
+                    "format": "select",
+                    "default": "Highlight",
+                    "enum": [
+                        "Default",
+                        "Highlight",
+                        "Alternate"
+                    ]
+                },
+                "ContainerPadding": {
+                    "type": "string",
+                    "format": "select",
+                    "default": "Medium",
+                    "enum": [
+                        "None",
+                        "Small",
+                        "Medium",
+                        "Large"
+                    ]
+                },
+                "AccordionItemPadding": {
+                    "type": "string",
+                    "format": "select",
+                    "default": "Medium",
+                    "enum": [
+                        "Small",
+                        "Medium",
+                        "Large"
+                    ]
+                },
+                "ItemsToShowAsDefault": {
+                    "type": "integer",
+                    "description": "This is the number of items that will be shown as default. To see the rest, the user would need to click the button.",
+                    "default": 3
+                }
+            }
+        }
+    },
+    "required": [
+        "AccordionContent"
+    ]
+}

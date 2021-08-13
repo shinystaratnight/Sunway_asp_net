@@ -1,0 +1,331 @@
+﻿{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "title": "Theme",
+    "description": "Theme variable settings to configure the look of the website.",
+    "type": "object",
+    "properties": {
+        "Colours": {
+            "type": "object",
+            "description": "Settings for colours displayed on the website",
+            "properties": {
+                "BrandPrimary": {
+                    "type": "string",
+                    "format": "colorpicker"
+                },
+                "BrandSuccess": {
+                    "type": "string",
+                    "format": "colorpicker"
+                },
+                "BrandInfo": {
+                    "type": "string",
+                    "format": "colorpicker"
+                },
+                "BrandWarning": {
+                    "type": "string",
+                    "format": "colorpicker"
+                },
+                "BrandDanger": {
+                    "type": "string",
+                    "format": "colorpicker"
+                },
+                "BrandInverse": {
+                    "type": "string",
+                    "format": "colorpicker"
+                },
+                "GreyDark": {
+                    "type": "string",
+                    "format": "colorpicker"
+                },
+                "Grey": {
+                    "type": "string",
+                    "format": "colorpicker"
+                },
+                "GreyLight": {
+                    "type": "string",
+                    "format": "colorpicker"
+                },
+                "GreyLighter": {
+                    "type": "string",
+                    "format": "colorpicker"
+                }
+            }
+        },
+        "Generic": {
+            "type": "object",
+            "description": "",
+            "properties": {
+                "BodyBg": {
+                    "title": "Body Background",
+                    "type": "string",
+                    "format": "colorpicker"
+                },
+                "SpacingExtraSmall": {
+                    "type": "number",
+                    "default": 5
+                },
+                "SpacingSmall": {
+                    "type": "number",
+                    "default": 10
+                },
+                "SpacingMedium": {
+                    "type": "number",
+                    "default": 20
+                },
+                "SpacingLarge": {
+                    "type": "number",
+                    "default": 30
+                }
+            }
+        },
+        "Rating": {
+            "type": "object",
+            "description": "",
+            "properties": {
+                "Colour": {
+                    "title": "Rating Colour",
+                    "type": "string",
+                    "format": "colorpicker"
+                }
+            }
+        },
+        "Typography": {
+            "type": "object",
+            "description": "Settings for Typography displayed on the website",
+            "properties": {
+                "FontSource": {
+                    "type": "string",
+                    "enum": [
+                        "Typekit",
+                        "Google"
+                    ]
+                },
+                "FontScript": {
+                    "type": "string",
+                    "format": "script"
+                },
+                "HeaderFontStack": {
+                    "type": "string"
+                },
+                "PreambleFontStack": {
+                    "type": "string"
+                },
+                "BodyFontStack": {
+                    "type": "string"
+                },
+                "LinkFontStack": {
+                    "type": "string"
+                },
+                "HeaderPrimary": {
+                    "type": "object",
+                    "title": "Header Primary",
+                    "description": "Settings for the primary headers on the website.",
+                    "$ref": "#/definitions/font"
+                },
+                "HeaderSecondary": {
+                    "type": "object",
+                    "title": "Header Primary",
+                    "description": "Settings for the secondary headers on the website.",
+                    "$ref": "#/definitions/font"
+                },
+                "HeaderTertiary": {
+                    "type": "object",
+                    "title": "Header Primary",
+                    "description": "Settings for the tertiary headers on the website.",
+                    "$ref": "#/definitions/font"
+                },
+                "Preamble": {
+                    "type": "object",
+                    "title": "Preamble Text",
+                    "description": "Settings for the preamble (lead paragraph) text on the website",
+                    "$ref": "#/definitions/font"
+                },
+                "Body": {
+                    "type": "object",
+                    "title": "Body Text",
+                    "description": "Settings for the body text on the website",
+                    "$ref": "#/definitions/font"
+                },
+                "BodySmall": {
+                    "type": "object",
+                    "title": "Body Text",
+                    "description": "Settings for the small body text on the website",
+                    "$ref": "#/definitions/font"
+                },
+                "Link": {
+                    "description": "Settings for the text links on the website",
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/font"
+                        },
+                        {
+                            "properties": {
+                                "TextDecoration": {
+                                    "type": "string",
+                                    "enum": [
+                                        "none",
+                                        "underline"
+                                    ]
+                                },
+                                "HoverColour": {
+                                    "type": "string",
+                                    "format": "colorpicker"
+                                },
+                                "HoverTextDecoration": {
+                                    "type": "string",
+                                    "enum": [
+                                        "none",
+                                        "underline"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        "Buttons": {
+            "type": "object",
+            "description": "",
+            "properties": {
+                "Colours": {
+                    "type": "object",
+                    "properties": {
+                        "Default": {
+                            "type": "object",
+                            "title": "Button Default Colour",
+                            "description": "Button styling for common buttons used on the website.",
+                            "$ref": "#/definitions/buttoncolour"
+                        },
+                        "Primary": {
+                            "type": "object",
+                            "title": "Button Primary Colour",
+                            "description": "Button styling for main call to action buttons used on the website.",
+                            "$ref": "#/definitions/buttoncolour"
+                        },
+                        "Inverse": {
+                            "type": "object",
+                            "title": "Button Inverse Colour",
+                            "description": "Button styling for buttons that appear on an inverse background.",
+                            "$ref": "#/definitions/buttoncolour"
+                        }
+                    }
+                },
+                "Sizes": {
+                    "type": "object",
+                    "properties": {
+                        "ButtonExtraSmall": {
+                            "type": "object",
+                            "title": "Button Extra Small",
+                            "description": "Settings for the tertiary headers on the website.",
+                            "$ref": "#/definitions/buttonsize"
+                        },
+                        "ButtonSmall": {
+                            "type": "object",
+                            "title": "Button Small",
+                            "description": "Settings for the tertiary headers on the website.",
+                            "$ref": "#/definitions/buttonsize"
+                        },
+                        "ButtonMedium": {
+                            "type": "object",
+                            "title": "Button Medium",
+                            "description": "Settings for the tertiary headers on the website.",
+                            "$ref": "#/definitions/buttonsize"
+                        },
+                        "ButtonLarge": {
+                            "type": "object",
+                            "title": "Button Large",
+                            "description": "Settings for the tertiary headers on the website.",
+                            "$ref": "#/definitions/buttonsize"
+                        },
+                        "ButtonExtraLarge": {
+                            "type": "object",
+                            "title": "Button Extra Large",
+                            "description": "Settings for the tertiary headers on the website.",
+                            "$ref": "#/definitions/buttonsize"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "font": {
+            "type": "object",
+            "properties": {
+                "FontSize": {
+                    "type": "number"
+                },
+                "FontWeight": {
+                    "type": "number"
+                },
+                "LineHeight": {
+                    "type": "number"
+                },
+                "Colour": {
+                    "type": "string",
+                    "format": "colorpicker"
+                },
+                "InverseColour": {
+                    "type": "string",
+                    "format": "colorpicker"
+                }
+            },
+            "required": [
+                "FontSize",
+                "FontWeight"
+            ]
+        },
+        "buttoncolour": {
+            "type": "object",
+            "properties": {
+                "Colour": {
+                    "type": "string",
+                    "format": "colorpicker"
+                },
+                "BackgroundColour": {
+                    "type": "string",
+                    "format": "colorpicker"
+                },
+                "HoverColour": {
+                    "type": "string",
+                    "format": "colorpicker"
+                },
+                "HoverBackgroundColour": {
+                    "type": "string",
+                    "format": "colorpicker"
+                },
+                "BorderWidth": {
+                    "type": "number"
+                },
+                "BorderColour": {
+                    "type": "string",
+                    "format": "colorpicker"
+                },
+                "HoverBorderColour": {
+                    "type": "string",
+                    "format": "colorpicker"
+                }
+            }
+        },
+        "buttonsize": {
+            "type": "object",
+            "properties": {
+                "Height": {
+                    "type": "number"
+                },
+                "PaddingX": {
+                    "type": "number"
+                },
+                "FontSize": {
+                    "type": "number"
+                },
+                "FontWeight": {
+                    "type": "number"
+                },
+                "BorderRadius": {
+                    "type": "number"
+                }
+            }
+        }
+    }
+}

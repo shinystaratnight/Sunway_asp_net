@@ -1,0 +1,319 @@
+﻿@import "../../variables";
+@import "../../mixins/clearfix";
+@import "../../mixins/media";
+
+.widget-search-tool {
+
+    &.sidebar-view {
+        margin-bottom: $spacing-md;
+
+        .react-date-field {
+            width: 100%;
+        }
+
+        .btn-block-sm {
+            width: 100%;
+        }
+    }
+
+    .sidebar-container {
+        padding: 0 $spacing-sm;
+    }
+
+    .tabs {
+        .tab-item {
+            background: $gray;
+
+            .tab-item-name {
+                color: #fff;
+            }
+
+            &.tab-selected,
+            &:hover {
+                background: $brand-inverse;
+            }
+        }
+    }
+
+    .link,
+    .link:hover {
+        color: $body-alt-color;
+    }
+
+    .form-autocomplete {
+        background: $input-bg;
+
+        &.has-error {
+            background: none;
+        }
+    }
+
+    .bootstrap-typeahead {
+        z-index: 10;
+    }
+
+    .search-arrival-input .bootstrap-typeahead {
+        z-index: 20;
+    }
+
+    .dropdown-menu {
+        position: absolute;
+        right: 0;
+        left: 0;
+        margin: 0;
+        padding: 10px;
+        background: #fff;
+        list-style-type: none;
+
+        li.active a,
+        li:hover a {
+            color: #2a63c1;
+            cursor: pointer;
+        }
+    }
+
+    .guests {
+        background-color: $body-highlight-bg;
+    }
+
+    select:required:invalid {
+        color: #5e5e5e;
+    }
+
+    .placeholder {
+        display: none;
+    }
+
+    .form-group .custom-select {
+        width: 100%;
+        border: none;
+    }
+
+    select {
+        height: 54px;
+        padding: 10px 40px 10px 20px;
+        border: none;
+    }
+
+    .form-control,
+    .react-datepicker__input,
+    .custom-select .form-control {
+        height: 54px;
+        padding: 10px 20px;
+        border: none;
+    }
+
+    .guests-container .custom-select .form-control {
+        height: 32px;
+        padding: 0 30px 0 10px;
+    }
+
+    .date-input .react-date-field__calendar-icon {
+        width: 34px;
+        height: 34px;
+        line-height: 34px;
+
+         &::before {
+            width: 34px;
+            height: 34px;
+         }
+    }
+
+    .search-form {
+        padding: 8px 0;
+        background: $brand-inverse;
+    }
+
+    .search-again-container {
+        padding: $spacing-sm;
+        background: $brand-inverse;
+        text-align: center;
+    }
+
+    .form-group {
+        width: 100%;
+        min-height: 54px;
+        margin-bottom: 8px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .search-duration {
+        width: 40%;
+        padding-right: 4px;
+        float: left;
+    }
+
+    .search-guests {
+        width: 60%;
+        padding-left: 4px;
+        float: left;
+    }
+
+    .btn {
+        width: 100%;
+        text-transform: uppercase;
+    }
+
+    .additional-search-toggle {
+        display: block;
+        margin-bottom: $spacing-sm;
+        color: $body-alt-color;
+        cursor: pointer;
+
+        &::after {
+            display: inline-block;
+            width: 0;
+            height: 0;
+            margin-left: 5px;
+            border-top: 8px solid $body-alt-color;
+            border-right: 6px solid transparent;
+            border-left: 6px solid transparent;
+            content: " ";
+            cursor: pointer;
+        }
+
+        &.displayed::after {
+            border-top: none;
+            border-bottom: 8px solid $body-alt-color;
+        }
+    }
+
+    .info-tooltip {
+        display: inline-block;
+        position: relative;
+        padding-left: 5px;
+    }
+
+    .info-tooltip .info-tooltip-text {
+        position: absolute;
+        top: -15px;
+        left: 25px;
+        width: 200px;
+        padding: 10px;
+        border: 1px solid #dcdcdc;
+        background-color: #f4f4f4;
+        color: #5e5e5e;
+        font-family: Lato, arial, helvetica, sans-serif;
+        font-size: 12px;
+        line-height: 24px;
+        text-align: left;
+        visibility: hidden;
+        z-index: 5;
+    }
+
+    .info-tooltip .info-tooltip-text::before {
+        display: block;
+        position: absolute;
+        top: 11px;
+        left: -8px;
+        width: 0;
+        height: 0;
+        border-top: 8px solid transparent;
+        border-right: 8px solid #f4f4f4;
+        border-bottom: 8px solid transparent;
+        content: " ";
+        z-index: 2;
+    }
+
+    .info-tooltip .info-tooltip-text::after {
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: -10px;
+        width: 0;
+        height: 0;
+        border-top: 10px solid transparent;
+        border-right: 10px solid #dcdcdc;
+        border-bottom: 10px solid transparent;
+        content: " ";
+        z-index: 1;
+    }
+
+    .info-tooltip:hover .info-tooltip-text {
+        visibility: visible;
+    }
+
+    @include break-md() {
+        &:not(.sidebar-view) {
+
+            .tabs {
+                .tab-item {
+                    width: auto;
+                }
+            }
+
+            .search-form {
+                padding: 20px 0;
+            }
+
+            .search-option {
+                margin-right: 2px;
+                float: left;
+            }
+
+            .search-departure {
+                width: 200px;
+            }
+
+            .search-arrival {
+                width: 230px;
+            }
+
+            .search-departure-date {
+                width: 140px;
+            }
+
+            .search-duration {
+                width: 120px;
+                padding-right: 0;
+            }
+
+            .search-guests {
+                width: 118px;
+                padding-left: 0;
+            }
+
+            .btn.btn-block-sm {
+                width: auto;
+                float: left;
+            }
+
+            .additional-search-toggle {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    @include break-lg() {
+
+        &:not(.sidebar-view) {
+
+            .search-departure {
+                width: 250px;
+            }
+
+            .search-arrival {
+                width: 250px;
+            }
+
+            .search-departure-date {
+                width: 180px;
+            }
+
+            .search-duration {
+                width: 170px;
+            }
+
+            .search-guests {
+                width: 140px;
+            }
+
+            .btn.btn-block-sm {
+                width: 170px;
+            }
+        }
+    }
+}

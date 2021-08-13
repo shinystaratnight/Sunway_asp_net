@@ -1,0 +1,16 @@
+﻿.waitmessage-content {
+    min-height: 400px;
+
+    img {
+        min-height: 200px;
+    }
+
+    p::before {
+        background-image:url(/Sites/sunway/Images/loader.gif);
+        display: block;
+        content: " ";
+        width: 55px;
+        height: 55px;
+        margin: 0 auto;
+    }
+}

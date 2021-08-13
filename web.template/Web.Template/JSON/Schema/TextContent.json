@@ -1,0 +1,526 @@
+﻿{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Text Content",
+    "description": "Widget to display text content.",
+    "type": "object",
+    "properties": {
+        "Title": {
+            "type": "string",
+            "default": ""
+        },
+        "LeadParagraph": {
+            "type": "string",
+            "format": "textarea",
+            "description": "Larger styled paragraph to appear before the main content.",
+            "default": ""
+        },
+        "BackgroundImage": {
+            "type": "string",
+            "format": "image",
+            "description": "Optional image to appear as the background of the content."
+        },
+        "Content": {
+            "type": "array",
+            "title": "Main Content",
+            "description": "The main content for this widget. It is possible to add multiple widgets here, to configure the alternated content go to the main configuration tab.",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "MarkdownText": {
+                        "type": "string",
+                        "format": "textarea",
+                        "description": "Markdown text based on CommonMark spec. See http://commonmark.org/help/ for details.",
+                        "default": ""
+                    },
+                    "SideImage": {
+                        "type": "string",
+                        "format": "image",
+                        "description": "Optional image to appear at the side of the content."
+                    },
+                    "SideImages": {
+                        "type": "array",
+                        "title": "Side Images",
+                        "description": "list of images to appear in side grid",
+                        "maxItems": 6,
+                        "uniqueItems": false,
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "Image": {
+                                    "type": "string",
+                                    "format": "image"
+                                }
+                            }
+                        }
+                    },
+                    "Accordion": {
+                        "type": "object",
+                        "title": "Accordion",
+                        "description": "Accordion items to display within this section",
+                        "properties": {
+                            "AccordionContent": {
+                                "type": "array",
+                                "minItems": 1,
+                                "uniqueItems": true,
+                                "title": "Accordion Content",
+                                "description": "List of items to display in the accordion.",
+                                "items": {
+                                    "type": "object",
+                                    "title": "Accordion item",
+                                    "description": "An individual accordion item",
+                                    "properties": {
+                                        "Title": {
+                                            "type": "string"
+                                        },
+                                        "Text": {
+                                            "type": "string",
+                                            "format": "textarea",
+                                            "description": "Markdown text based on CommonMark spec. See http://commonmark.org/help/ for details."
+                                        },
+                                        "Sequence": {
+                                            "type": "integer",
+                                            "default": 1,
+                                            "description": "Determines the order in which this item is displayed"
+                                        },
+                                        "Hidden": {
+                                            "type": "boolean",
+                                            "default": false,
+                                            "description": "Tick to hide this item without deleting your content"
+                                        }
+                                    },
+                                    "required": [
+                                        "Title",
+                                        "Text"
+                                    ]
+                                },
+                                "default": [
+                                    {
+                                        "Title": "A placeholder key",
+                                        "Text": "A placeholder value associated with a key",
+                                        "Sequence": 1,
+                                        "Hidden": true
+                                    },
+                                    {
+                                        "Title": "A placeholder key",
+                                        "Text": "A placeholder value associated with a key",
+                                        "Sequence": 2,
+                                        "Hidden": true
+                                    },
+                                    {
+                                        "Title": "A placeholder key",
+                                        "Text": "A placeholder value associated with a key",
+                                        "Sequence": 3,
+                                        "Hidden": true
+                                    },
+                                    {
+                                        "Title": "A placeholder key",
+                                        "Text": "A placeholder value associated with a key",
+                                        "Sequence": 4,
+                                        "Hidden": true
+                                    }
+                                ]
+                            },
+                            "ShowAllButton": {
+                                "type": "object",
+                                "title": "Button",
+                                "description": "Optional button to appear at the bottom of the content, allowing the user to load any hidden content.",
+                                "properties": {
+                                    "ShowAllText": {
+                                        "type": "string",
+                                        "default": "Show all"
+                                    },
+                                    "ShowLessText": {
+                                        "type": "string",
+                                        "default": "Show less"
+                                    },
+                                    "Style": {
+                                        "type": "string",
+                                        "format": "select",
+                                        "default": "Default",
+                                        "enum": [
+                                            "Default",
+                                            "Arrow"
+                                        ]
+                                    }
+                                }
+                            },
+                            "Configuration": {
+                                "type": "object",
+                                "title": "Configuration",
+                                "description": "Configuration options for the accordion widget",
+                                "format": "tab",
+                                "properties": {
+                                    "HighlightedItemStyle": {
+                                        "type": "string",
+                                        "format": "select",
+                                        "default": "Highlight",
+                                        "enum": [
+                                            "Default",
+                                            "Highlight",
+                                            "Alternate"
+                                        ]
+                                    },
+                                    "ContainerPadding": {
+                                        "type": "string",
+                                        "format": "select",
+                                        "default": "Medium",
+                                        "enum": [
+                                            "None",
+                                            "Small",
+                                            "Medium",
+                                            "Large"
+                                        ]
+                                    },
+                                    "AccordionItemPadding": {
+                                        "type": "string",
+                                        "format": "select",
+                                        "default": "Medium",
+                                        "enum": [
+                                            "Small",
+                                            "Medium",
+                                            "Large"
+                                        ]
+                                    },
+                                    "ItemsToShowAsDefault": {
+                                        "type": "integer",
+                                        "description": "This is the number of items that will be shown as default. To see the rest, the user would need to click the button.",
+                                        "default": 3
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "Button": {
+                        "type": "object",
+                        "title": "Button",
+                        "description": "Optional button to appear at the bottom of the content.",
+                        "properties": {
+                            "Text": {
+                                "type": "string"
+                            },
+                            "URL": {
+                                "type": "string"
+                            },
+                            "Style": {
+                                "type": "string",
+                                "format": "select",
+                                "default": "Default",
+                                "enum": [
+                                    "Default",
+                                    "Arrow"
+                                ]
+                            }
+                        }
+                    },
+                    "Sequence": {
+                        "type": "integer",
+                        "default": 1
+                    },
+                    "Hidden": {
+                        "type": "boolean",
+                        "default": false
+                    },
+                    "Configuration": {
+                        "type": "object",
+                        "format": "tab",
+                        "title": "Configuration",
+                        "description": "Configuration options for this specific content",
+                        "properties": {
+                            "TextColumns": {
+                                "type": [
+                                    "string",
+                                    "integer"
+                                ],
+                                "format": "select",
+                                "description": "Set number of columns to overrride the default setting",
+                                "default": "Use default",
+                                "enum": [
+                                    "Use default",
+                                    1,
+                                    2,
+                                    3
+                                ]
+                            },
+                            "TextAlignment": {
+                                "type": "object",
+                                "title": "Text Alignment",
+                                "description": "Set text alignment for each device to overrride the default setting.",
+                                "properties": {
+                                    "Desktop": {
+                                        "type": "string",
+                                        "format": "select",
+                                        "default": "Use default",
+                                        "enum": [
+                                            "Use default",
+                                            "Left",
+                                            "Center",
+                                            "Right"
+                                        ]
+                                    },
+                                    "Tablet": {
+                                        "type": "string",
+                                        "format": "select",
+                                        "default": "Use default",
+                                        "enum": [
+                                            "Use default",
+                                            "Left",
+                                            "Center",
+                                            "Right"
+                                        ]
+                                    },
+                                    "Mobile": {
+                                        "type": "string",
+                                        "format": "select",
+                                        "default": "Use default",
+                                        "enum": [
+                                            "Use default",
+                                            "Left",
+                                            "Center",
+                                            "Right"
+                                        ]
+                                    }
+                                }
+                            },
+                            "SideImage": {
+                                "type": "object",
+                                "title": "Side Image",
+                                "description": "Set side image height and location to overrride the default setting",
+                                "properties": {
+                                    "AspectRatio": {
+                                        "type": "string",
+                                        "format": "select",
+                                        "default": "Use default",
+                                        "enum": [
+                                            "Use default",
+                                            "4:5",
+                                            "1:1",
+                                            "4:3",
+                                            "16:9",
+                                            "9:4",
+                                            "5:2",
+                                            "3:1"
+                                        ]
+                                    },
+                                    "Width": {
+                                        "type": [
+                                            "string",
+                                            "integer"
+                                        ],
+                                        "format": "select",
+                                        "description": "Set number of columns out of 12 to overrride the default setting",
+                                        "default": "Use default",
+                                        "enum": [
+                                            "Use default",
+                                            3,
+                                            4,
+                                            6,
+                                            8,
+                                            9,
+                                            12
+                                        ]
+                                    },
+                                    "Location": {
+                                        "type": "string",
+                                        "format": "select",
+                                        "default": "Use default",
+                                        "enum": [
+                                            "Use default",
+                                            "Left",
+                                            "Right"
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "Configuration": {
+            "type": "object",
+            "title": "Configuration",
+            "description": "Configuration options for the text content widget",
+            "properties": {
+                "ContainerStyle": {
+                    "type": "string",
+                    "format": "select",
+                    "default": "Default",
+                    "enum": [
+                        "Default",
+                        "Highlight",
+                        "Alternate"
+                    ]
+                },
+                "ContainerPadding": {
+                    "type": "string",
+                    "format": "select",
+                    "default": "Medium",
+                    "description": "Sets the padding for the widget.",
+                    "enum": [
+                        "None",
+                        "Small",
+                        "Medium",
+                        "Large"
+                    ]
+                },
+                "ContentPadding": {
+                    "type": "string",
+                    "format": "select",
+                    "default": "None",
+                    "description": "Sets the padding for the inner content items.",
+                    "enum": [
+                        "None",
+                        "Small",
+                        "Medium",
+                        "Large"
+                    ]
+                },
+                "TextColumns": {
+                    "type": "integer",
+                    "format": "select",
+                    "description": "Set number of columns",
+                    "default": 1,
+                    "minimum": 1,
+                    "maximum": 3
+                },
+                "TextAlignment": {
+                    "type": "object",
+                    "title": "Text Alignment",
+                    "description": "Set text alignment for each device. This setting can be overridden on each content's individual configuration",
+                    "properties": {
+                        "Desktop": {
+                            "type": "string",
+                            "format": "select",
+                            "default": "Left",
+                            "enum": [
+                                "Left",
+                                "Center",
+                                "Right"
+                            ]
+                        },
+                        "Tablet": {
+                            "type": "string",
+                            "format": "select",
+                            "default": "Left",
+                            "enum": [
+                                "Left",
+                                "Center",
+                                "Right"
+                            ]
+                        },
+                        "Mobile": {
+                            "type": "string",
+                            "format": "select",
+                            "default": "Left",
+                            "enum": [
+                                "Left",
+                                "Center",
+                                "Right"
+                            ]
+                        }
+                    }
+                },
+                "AlternatedTextAlignment": {
+                    "type": "object",
+                    "title": "Alternated Text Alignment",
+                    "description": "Set text alignment for each device for alternated content. This setting can be overridden on each content's individual configuration",
+                    "properties": {
+                        "Desktop": {
+                            "type": "string",
+                            "format": "select",
+                            "default": "Right",
+                            "enum": [
+                                "Left",
+                                "Center",
+                                "Right"
+                            ]
+                        },
+                        "Tablet": {
+                            "type": "string",
+                            "format": "select",
+                            "default": "Right",
+                            "enum": [
+                                "Left",
+                                "Center",
+                                "Right"
+                            ]
+                        },
+                        "Mobile": {
+                            "type": "string",
+                            "format": "select",
+                            "default": "Right",
+                            "enum": [
+                                "Left",
+                                "Center",
+                                "Right"
+                            ]
+                        }
+                    }
+                },
+                "SideImage": {
+                    "type": "object",
+                    "title": "Side Image",
+                    "description": "Set side image height and location",
+                    "properties": {
+                        "AspectRatio": {
+                            "type": "string",
+                            "format": "select",
+                            "default": "4:3",
+                            "enum": [
+                                "4:5",
+                                "1:1",
+                                "4:3",
+                                "16:9",
+                                "9:4",
+                                "5:2",
+                                "3:1"
+                            ]
+                        },
+                        "Width": {
+                            "type": "integer",
+                            "format": "select",
+                            "description": "Set number of columns out of 12.",
+                            "default": 4,
+                            "enum": [
+                                3,
+                                4,
+                                6,
+                                7,
+                                8,
+                                9,
+                                12
+                            ]
+                        },
+                        "Location": {
+                            "type": "string",
+                            "format": "select",
+                            "default": "Right",
+                            "enum": [
+                                "Left",
+                                "Right"
+                            ]
+                        },
+                        "MobileLocation": {
+                            "type": "string",
+                            "format": "select",
+                            "default": "Top",
+                            "enum": [
+                                "Top",
+                                "Bottom"
+                            ]
+                        },
+                        "AlternatedLocation": {
+                            "type": "string",
+                            "format": "select",
+                            "default": "Left",
+                            "enum": [
+                                "Left",
+                                "Right"
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

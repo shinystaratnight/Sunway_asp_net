@@ -1,0 +1,37 @@
+﻿@import "../variables";
+
+.prompt-container {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: opacity 0.15s linear;
+    z-index: $zindex-popover;
+
+    .h-tertiary {
+        padding-left: 20px;
+    }
+
+    .prompt {
+        width: 500px;
+        margin: 0 auto;
+        transition: $modal-transition;
+    }
+
+    &.fade {
+        opacity: 0;
+
+        .prompt {
+            transform: translate(0, -150%);
+        }
+    }
+
+    &.show {
+        opacity: 1;
+
+        .prompt {
+            transform: translate(0, -50%);
+        }
+    }
+}

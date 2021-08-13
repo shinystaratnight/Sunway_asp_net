@@ -1,0 +1,50 @@
+﻿@import "../variables";
+@import "../mixins/media";
+
+//== Table
+//
+//## Component specific styling relating to tables used on the website
+
+.table {
+    display: table;
+    width: 100%;
+    border: $table-border;
+    background: $table-bg;
+    border-collapse: inherit;
+    border-spacing: 0;
+
+    thead th,
+    .table-header {
+        padding: $table-header-padding;
+        border-top: $table-header-border;
+        border-bottom: $table-header-border;
+        background: $table-header-bg;
+        color: $body-alt-color;
+        font-size: $body-font-size-xs;
+        font-weight: 600;
+        text-align: left;
+    }
+
+    td,
+    .table-cell {
+        padding: $table-cell-padding;
+    }
+
+    .table-row {
+        display: table-row;
+    }
+
+    .table-header,
+    .table-cell {
+        display: table-cell;
+    }
+}
+
+@include break-md() {
+    .table {
+        thead th,
+        .table-header {
+            font-size: $body-font-size;
+        }
+    }
+}

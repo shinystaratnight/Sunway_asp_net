@@ -1,0 +1,195 @@
+﻿@import "../variables";
+@import "../Mixins/clearfix";
+
+//== Generic Styling
+//
+//## Global styles
+
+// Stop safari from styling phone numbers
+a[href^=tel] {
+    color: inherit;
+    text-decoration: none;
+}
+
+// border box
+ article, aside, footer, header, hgroup, main, nav, section, div, 
+ article:before, aside:before, footer:before, header:before, hgroup:before, main:before,
+ nav:before, section:before, div:before, select, input, textarea,
+ article:after, aside:after, footer:after, header:after, hgroup:after, main:after,
+ nav:after, section:after, div:after, li, p, h1, h2, h3, h4, h5, img, label,
+ dl, dt, dd {
+  box-sizing: border-box;
+}
+
+// clearfix
+.clear {
+    @include clearfix;
+}
+
+// hidden
+.hidden {
+    display: none !important;
+}
+
+// hidden screen reader
+.hidden-sr {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+// Display as block
+.block {
+    display: block;
+}
+
+// center block
+.center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    float: none !important;
+    text-align: center;
+}
+
+.btn.btn-alt.center-block {
+    display: block;
+}
+
+// Display as inline block
+.inline-block {
+    display: inline-block;
+}
+
+// Full width
+.full-width {
+    width: 100%;
+}
+
+// Basic Vertical Align trick
+.align-vertical-child {
+    position: absolute;
+    top: 50%;
+    max-height: 100%;
+    transform: translateY(-50%);
+}
+
+.align-vertical-parent {
+    position: relative;
+    height: 100%;
+}
+
+// inputs
+textarea:focus, input:focus, button:focus {
+    outline: 0;
+}
+
+// remove ie10 clear X icon	
+input::-ms-clear {
+    display: none;
+}
+    
+// Removes blue cross and arrows
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button,
+input::-webkit-search-cancel-button {
+  appearance: none;
+  margin: 0;
+}
+
+
+// Body reset
+html {
+    height: 101%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+    height: 100%;
+    background-color: $body-bg;
+    color: $body-color;
+    font-family: $body-font-stack;
+    font-size: $body-font-size;
+    line-height: $body-line-height;
+}
+
+// Reset fonts for relevant elements
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+
+// Links
+a {
+  color: $link-color;
+  text-decoration: $link-decoration;
+
+  &:hover {
+    color: $link-hover-color;
+    text-decoration: $link-hover-decoration;
+  }
+
+}
+
+//Forms and inputs
+
+select, input {
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+select {
+    border-radius: 0;
+}
+
+.header {
+    /*margin-bottom: $spacing-md;*/
+    background-color: #fff;
+}
+
+.border {
+    border: 1px solid #dcdcdc;
+}
+
+//standard padding
+.padding-sm {
+    padding: $padding-small;
+}
+
+.padding-vertical-sm {
+    padding-top: $padding-small;
+    padding-bottom: $padding-small;
+}
+
+.padding-md {
+    padding: $padding-base;
+}
+
+.padding-vertical-md {
+    padding-top: $padding-base;
+    padding-bottom: $padding-base;
+}
+
+.padding-lg {
+    padding: $padding-large;
+}
+
+.padding-vertical-lg {
+    padding-top: $padding-large;
+    padding-bottom: $padding-large;
+}
+
+.main {
+    min-height: 400px;
+}

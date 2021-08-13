@@ -1,0 +1,374 @@
+﻿{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "CarouselContent",
+    "type": "object",
+    "properties": {
+        "Title": {
+            "type": "string",
+            "default": "Title"
+        },
+        "LeadParagraph": {
+            "type": "string",
+            "format": "textarea",
+            "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare urna augue, vitae pulvinar augue sollicitudin eget. Integer quis quam at risus consectetur facilisis."
+        },
+        "BackgroundImage": {
+            "type": "string",
+            "format": "image",
+            "description": "Optional image to appear as the background of the content."
+        },
+        "CarouselItemType": {
+            "type": "string",
+            "format": "definition,CarouselItems",
+            "default": "HeroBanner",
+            "enum": [ "HeroBanner", "CaptionImage", "TextContent", "FeaturedHotel", "FeaturedOpinion" ]
+        },
+        "CarouselItems": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "title": "Carousel Items",
+            "description": "List of items to display in the carousel that match chosen item Type.",
+            "items": {
+                "anyOf": [
+                    { "$ref": "#/definitions/HeroBanner" },
+                    { "$ref": "#/definitions/CaptionImage" },
+                    { "$ref": "#/definitions/TextContent" },
+                    { "$ref": "#/definitions/FeaturedHotel" },
+                    { "$ref": "#/definitions/FeaturedOpinion" }
+                ]
+            },
+            "default": [
+                {
+                    "Image": "http://placehold.it/1600x400&text=%20",
+                    "URL": "",
+                    "Caption": {
+                        "Header": "Caption Header",
+                        "Text": "Caption text",
+                        "VerticalPosition": "Middle",
+                        "HorizontalPosition": "Left"
+                    },
+                    "Sequence": 1
+                }
+            ]
+        },
+        "Button": {
+            "type": "object",
+            "title": "Button",
+            "description": "Optional button to appear at the bottom of the content.",
+            "properties": {
+                "Text": { "type": "string" },
+                "URL": { "type": "string" },
+                "Style": {
+                    "type": "string",
+                    "format": "select",
+                    "default": "Default",
+                    "enum": [ "Default", "Arrow" ]
+                }
+            }
+        },
+        "Configuration": {
+            "type": "object",
+            "title": "Configuration",
+            "description": "Configuration options for the carousel content widget",
+            "properties": {
+                "ContainerStyle": {
+                    "type": "string",
+                    "format": "select",
+                    "default": "Default",
+                    "enum": [ "Default", "Highlight", "Alternate" ]
+                },
+                "ContainerPadding": {
+                    "type": "string",
+                    "format": "select",
+                    "default": "Medium",
+                    "enum": [ "None", "Small", "Medium", "Large" ]
+                },
+                "CarouselTiles": {
+                    "type": "integer",
+                    "default": 0,
+                    "format": "select",
+                    "enum": [ 0, 1, 2, 3, 4 ]
+                },
+                "CarouselItemHeight": {
+                    "type": "integer",
+                    "default": 400
+                },
+                "CarouselItemMobileHeight": { "type": "integer" },
+                "CarouselOptions": {
+                    "type": "object",
+                    "title": "Carousel Options",
+                    "description": "",
+                    "properties": {
+                        "AutoScroll": {
+                            "type": "boolean",
+                            "default": false
+                        },
+                        "PauseOnHover": {
+                            "type": "boolean",
+                            "default": false
+                        },
+                        "Delay": {
+                            "type": "integer",
+                            "default": 5000
+                        },
+                        "DisplayArrows": {
+                            "type": "boolean",
+                            "default": true
+                        },
+                        "ArrowOffsetY": {
+                            "type": "integer",
+                            "default": 0
+                        },
+                        "IndicatorType": {
+                            "type": "string",
+                            "default": "Circles",
+                            "format": "select",
+                            "enum": [ "None", "Circles", "Numbers" ]
+                        },
+                        "IndicatorPosition": {
+                            "type": "string",
+                            "default": "Center",
+                            "format": "select",
+                            "enum": [ "Left", "Center", "Right" ]
+                        },
+                        "TransitionType": {
+                            "type": "string",
+                            "default": "Scroll",
+                            "enum": [ "Fade", "Scroll" ]
+                        },
+                        "TransitionDuration": {
+                            "type": "integer",
+                            "default": 1000
+                        },
+                        "TransitionTiming": {
+                            "type": "string",
+                            "default": "Ease",
+                            "enum": [ "Linear", "Ease", "Ease-in", "Ease-out", "Ease-in-out" ]
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "required": [ "CarouselItemType", "CarouselItems" ],
+    "definitions": {
+        "HeroBanner": {
+            "type": "object",
+            "properties": {
+                "Image": {
+                    "type": "string",
+                    "format": "image"
+                },
+                "URL": { "type": "string" },
+                "Caption": {
+                    "type": "object",
+                    "title": "Caption",
+                    "description": "",
+                    "properties": {
+                        "Header": { "type": "string" },
+                        "SubHeader": { "type": "string" },
+                        "Text": { "type": "string" },
+                        "Rating": { "type": "number" }
+                    }
+                },
+                "Configuration": {
+                    "type": "object",
+                    "format": "tab",
+                    "title": "Configuration",
+                    "description": "Configuration options for the hero banner",
+                    "properties": {
+                        "Sequence": { "type": "integer" },
+                        "Caption": {
+                            "type": "object",
+                            "title": "Caption",
+                            "description": "",
+                            "properties": {
+                                "VerticalPosition": {
+                                    "type": "string",
+                                    "format": "select",
+                                    "default": "Middle",
+                                    "enum": [ "Top", "Middle", "Bottom" ]
+                                },
+                                "HorizontalPosition": {
+                                    "type": "string",
+                                    "format": "select",
+                                    "default": "Left",
+                                    "enum": [ "Left", "Center", "Right" ]
+                                },
+                                "DesktopTextWidth": {
+                                    "type": "integer",
+                                    "format": "select",
+                                    "description": "Set number of columns (1-12) based on Bootstrap's grid system.",
+                                    "default": 4,
+                                    "minimum": 1,
+                                    "maximum": 12
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "required": [ "Image" ]
+        },
+        "CaptionImage": {
+            "type": "object",
+            "properties": {
+                "Image": { "type": "string" },
+                "Header": { "type": "string" },
+                "Text": { "type": "string" }
+            }
+        },
+        "TextContent": {
+            "type": "object",
+            "properties": {
+                "Title": { "type": "string" },
+                "LeadParagraph": {
+                    "type": "string",
+                    "format": "textarea",
+                    "description": "Larger styled paragraph to appear before the main content."
+                },
+                "MarkdownText": {
+                    "type": "string",
+                    "format": "textarea",
+                    "description": "Markdown text based on CommonMark spec. See http://commonmark.org/help/ for details."
+                },
+                "BackgroundImage": {
+                    "type": "string",
+                    "format": "image",
+                    "description": "Optional image to appear as the background of the content."
+                },
+                "SideImage": {
+                    "type": "string",
+                    "format": "image",
+                    "description": "Optional image to appear at the side of the content."
+                },
+                "Button": {
+                    "type": "object",
+                    "title": "Button",
+                    "description": "Optional button to appear at the bottom of the content.",
+                    "properties": {
+                        "Text": { "type": "string" },
+                        "URL": { "type": "string" },
+                        "Style": {
+                            "type": "string",
+                            "format": "select",
+                            "default": "Default",
+                            "enum": [ "Default", "Arrow" ]
+                        }
+                    }
+                },
+                "Configuration": {
+                    "type": "object",
+                    "format": "tab",
+                    "title": "Configuration",
+                    "description": "Configuration options for the text content widget",
+                    "properties": {
+                        "TextAlignment": {
+                            "type": "object",
+                            "title": "Text Alignment",
+                            "description": "Set text alignment for each device",
+                            "properties": {
+                                "Desktop": {
+                                    "type": "string",
+                                    "format": "select",
+                                    "enum": [ "Left", "Center", "Right" ]
+                                },
+                                "Tablet": {
+                                    "type": "string",
+                                    "format": "select",
+                                    "enum": [ "Left", "Center", "Right" ]
+                                },
+                                "Mobile": {
+                                    "type": "string",
+                                    "format": "select",
+                                    "enum": [ "Left", "Center", "Right" ]
+                                },
+                                "VerticalPosition": {
+                                    "type": "string",
+                                    "format": "select",
+                                    "default": "Top",
+                                    "enum": [ "Top", "Middle", "Bottom" ]
+                                }
+                            }
+                        },
+                        "DesktopTextWidth": {
+                            "type": "integer",
+                            "format": "select",
+                            "description": "Set number of columns (1-12) based on Bootstrap's grid system. Applies to desktop screen sizes.",
+                            "default": 12,
+                            "minimum": 1,
+                            "maximum": 12
+                        },
+                        "WidgetStyle": {
+                            "type": "string",
+                            "format": "select",
+                            "description": "Choose the background style of this individual widget. To match the container, choose inherit",
+                            "default": "Inherit",
+                            "enum": [ "Inherit", "Default", "Highlight", "Alternate" ]
+                        },
+                        "SideImage": {
+                            "type": "object",
+                            "title": "Side Image",
+                            "description": "Set side image height and location",
+                            "properties": {
+                                "AspectRatio": {
+                                    "type": "string",
+                                    "format": "select",
+                                    "default": "4:3",
+                                    "enum": [
+                                        "4:5",
+                                        "1:1",
+                                        "4:3",
+                                        "16:9",
+                                        "9:4",
+                                        "5:2",
+                                        "3:1"
+                                    ]
+                                },
+                                "Width": {
+                                    "type": "integer",
+                                    "format": "select",
+                                    "description": "Set number of columns out of 12.",
+                                    "default": 4,
+                                    "enum": [ 3, 4, 6, 8, 9, 12 ]
+                                },
+                                "Location": {
+                                    "type": "string",
+                                    "format": "select",
+                                    "default": "Right",
+                                    "enum": [ "Left", "Right" ]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "FeaturedHotel": {
+                "type": "object",
+                "properties": {
+                    "PropertyId": {
+                        "type": "integer",
+                        "format": "autolookup,propertySummary"
+                    },
+                    "OfferText": { "type": "string" },
+                    "OfferPricing": { "type": "string" },
+                    "URL": { "type": "string" },
+                    "Sequence": { "type": "integer" }
+                },
+                "required": [ "PropertyId", "OfferText", "URL" ]
+            },
+            "FeaturedOpinion": {
+                "type": "object",
+                "properties": {
+                    "OpinionId": {
+                        "type": "integer",
+                        "format": "autocontextlookup,expertopinion"
+                    },
+                    "Sequence": { "type": "integer" }
+                },
+                "required": [ "PropertyId", "OfferText", "URL" ]
+            }
+        }
+    }
+}

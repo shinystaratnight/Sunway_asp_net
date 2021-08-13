@@ -1,0 +1,134 @@
+﻿import moment from 'moment';
+
+class ArrayFunctions {
+    /**
+      * Function to ensure value is correct for sorting
+      * @param {*} value - The value to check
+      * @return {*} The sort safe value
+     */
+    static sortSafeValue(value) {
+        let safeValue = value;
+        if (typeof value === 'number' || !isNaN(value)) {
+            safeValue = parseFloat(value);
+        } else if (typeof value === 'string') {
+            safeValue = value.toLowerCase();
+        }
+        return safeValue;
+    }
+
+    /**
+      * Function to sort an array in ascending order by given property
+      * @param {object} array - The array to sort
+      * @param {string} property - The property to sort on
+      * @return {object} The sorted array
+     */
+    static sortByPropertyAscending(array, property) {
+        const sortedArray = Object.assign([], array);
+        sortedArray.sort((a, b) => {
+            const aValue = ArrayFunctions.sortSafeValue(a[property]);
+            const bValue = ArrayFunctions.sortSafeValue(b[property]);
+            if (aValue > bValue) {
+                return 1;
+            }
+            if (aValue < bValue) {
+                return -1;
+            }
+            return 0;
+        });
+        return sortedArray;
+    }
+
+    /**
+      * Function to sort an array in descending order by given property
+      * @param {object} array - The array to sort
+      * @param {string} property - The property to sort on
+      * @return {object} The sorted array
+     */
+    static sortByPropertyDescending(array, property) {
+        const sortedArray = Object.assign([], array);
+        sortedArray.sort((a, b) => {
+            const aValue = ArrayFunctions.sortSafeValue(a[property]);
+            const bValue = ArrayFunctions.sortSafeValue(b[property]);
+            if (aValue > bValue) {
+                return -1;
+            }
+            if (aValue < bValue) {
+                return 1;
+            }
+            return 0;
+        });
+        return sortedArray;
+    }
+
+    /**
+      * Function to remove given item from an array
+      * @param {object} array - The array to update
+      * @param {string} property - The property to sort on
+      * @param {string} format - The format the date is provided in
+      * @return {object} The updated array
+     */
+    static sortByDatePropertyAscending(array, property, format) {
+        const sortedArray = Object.assign([], array);
+        sortedArray.sort((a, b) => {
+            const aValue = moment(a[property], format);
+            const bValue = moment(b[property], format);
+            if (aValue.isBefore(bValue)) {
+                return -1;
+            }
+            if (aValue.isAfter(bValue)) {
+                return 1;
+            }
+            return 0;
+        });
+        return sortedArray;
+    }
+
+    /**
+      * Function to remove given item from an array
+      * @param {object} array - The array to update
+      * @param {string} property - The property to sort on
+      * @param {string} format - The format the date is provided in
+      * @return {object} The updated array
+     */
+    static sortByDatePropertyDescending(array, property) {
+        const sortedArray = Object.assign([], array);
+        sortedArray.sort((a, b) => {
+            const aValue = new Date(a[property]);
+            const bValue = new Date(b[property]);
+            if (aValue > bValue) {
+                return -1;
+            }
+            if (aValue < bValue) {
+                return 1;
+            }
+            if (a.HotelName < b.HotelName) {
+                return -1;
+            }
+            if (a.HotelName > b.HotelName) {
+                return 1;
+            }
+            return 0;
+        });
+        return sortedArray;
+    }
+
+    /**
+      * Function to remove given item from an array
+      * @param {object} array - The array to update
+      * @param {string} field - The field to match the item on
+      * @param {string} item - The item to remove
+      * @return {object} The updated array
+     */
+    static removeItem(array, field, item) {
+        const updatedArray = Object.assign([], array);
+        const itemIndex = array.findIndex(arrayItem => arrayItem[field] === item);
+
+        if (itemIndex > -1) {
+            updatedArray.splice(itemIndex, 1);
+        }
+
+        return updatedArray;
+    }
+}
+
+export default ArrayFunctions;

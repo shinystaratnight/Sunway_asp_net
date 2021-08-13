@@ -1,0 +1,161 @@
+﻿{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "ContactBanner",
+    "type": "object",
+    "properties": {
+        "InformationBlocks": {
+            "title": "InformationBlocks",
+            "type": "object",
+            "description": "A single block of information",
+            "properties": {
+                "CallBlock": {
+                    "type": "object",
+                    "title": "Call block",
+                    "description": "A block containing information about contacting by phone",
+                    "properties": {
+                        "Title": {
+                            "type": "string",
+                            "default": "Call us"
+                        },
+                        "SubTitle": {
+                            "type": "string",
+                            "default": "Our team of specialists are on hand to help with your inquery"
+                        },
+                        "ReservationsNumber": {
+                            "type": "string",
+                            "default": "01419554000"
+                        },
+                        "AfterSalesNumber": {
+                            "type": "string",
+                            "default": "01419554041"
+                        }
+                    }
+                },
+                "EmailBlock": {
+                    "type": "object",
+                    "title": "Email block",
+                    "description": "A block containing information about contacting by email",
+                    "properties": {
+                        "Title": {
+                            "type": "string",
+                            "default": "Email us"
+                        },
+                        "SubTitle": {
+                            "type": "string",
+                            "default": "You can get in touch with one of our team by emailing us at:"
+                        },
+                        "Email": {
+                            "type": "string",
+                            "default": "test@example.com"
+                        }
+                    }
+                },
+                "PostBlock": {
+                    "type": "object",
+                    "title": "Post block",
+                    "description": "A block containing information about contacting by post. If any lines are not set they will not be shown",
+                    "properties": {
+                        "Title": {
+                            "type": "string",
+                            "default": "Call us"
+                        },
+                        "AddressLineOne": {
+                            "type": "string",
+                            "default": "Milngavie Enterprise Centre"
+                        },
+                        "AddressLineTwo": {
+                            "type": "string",
+                            "default": "Ellangowan Court"
+                        },
+                        "AddressLineThree": {
+                            "type": "string",
+                            "default": "Glasgow"
+                        },
+                        "AddressLineFour": {
+                            "type": "string",
+                            "default": ""
+                        },
+                        "Postcode": {
+                            "type": "string",
+                            "default": "G62 8PH"
+                        }
+                    }
+                }
+            }
+        },
+        "Banner": {
+            "type": "object",
+            "description": "Banner to appear underneath information blocks",
+            "title": "Banner",
+            "properties": {
+                "Title": {
+                    "type": "string",
+                    "description": "Inline lead in title text",
+                    "format": "input",
+                    "default": "Our offices are open"
+                },
+                "Timings": {
+                    "type": "array",
+                    "description": "List of opening times and relevant days",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "Days": {
+                                "type": "string"
+                            },
+                            "Times": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+                "Configuration": {
+                    "type": "object",
+                    "format": "tab",
+                    "title": "Configuration",
+                    "description": "Configuration options for the contact banner",
+                    "properties": {
+                        "ContainerStyle": {
+                            "type": "string",
+                            "format": "select",
+                            "default": "Default",
+                            "enum": [
+                                "Default",
+                                "Highlight",
+                                "Alternate"
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        "Configuration": {
+            "type": "object",
+            "title": "Configuration",
+            "description": "Configuration options for the contact banner",
+            "properties": {
+                "ContainerStyle": {
+                    "type": "string",
+                    "format": "select",
+                    "default": "Default",
+                    "enum": [
+                        "Default",
+                        "Highlight",
+                        "Alternate"
+                    ]
+                },
+                "ContainerPadding": {
+                    "type": "string",
+                    "format": "select",
+                    "default": "None",
+                    "enum": [
+                        "None",
+                        "Small",
+                        "Medium",
+                        "Large"
+                    ]
+                }
+            }
+        }
+    }
+}

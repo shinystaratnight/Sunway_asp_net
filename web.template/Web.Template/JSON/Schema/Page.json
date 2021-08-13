@@ -1,0 +1,29 @@
+﻿{
+	"$schema": "http://json-schema.org/draft-04/schema",
+	"title": "Page",
+	"type": "object",
+	"properties": {
+		"PageTitle": {
+			"type": "string",
+			"description": "Title used for page title tag, will appear to search engines."
+		},
+		"MetaDescription": {
+			"type": "string",
+			"format": "textarea",
+			"description": "Description used for page meta description tag, will appear to search engines."
+		},
+		"SocialMediaTitle": {
+			"type": "string",
+			"description": "Title used when page is shared on social media."
+		},
+		"SocialMediaDescription": {
+			"type": "string",
+			"description": "decription used when page is shared on social media."
+		},
+		"PageImage": {
+			"type": "string",
+			"format": "image",
+			"description": "Image used for both Facebook's open graph and Twitter cards for social media sharing. Image should be at least 1200 x 630 pixels in size."
+		}
+	}
+}

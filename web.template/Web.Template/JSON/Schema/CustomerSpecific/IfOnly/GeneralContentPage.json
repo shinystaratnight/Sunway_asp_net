@@ -1,0 +1,10 @@
+﻿{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "General Content Page",
+    "type": "object",
+    "properties": {
+        "Name": {
+            "type": "string"
+        }
+    }
+}

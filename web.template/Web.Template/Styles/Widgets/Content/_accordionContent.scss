@@ -1,0 +1,187 @@
+﻿@import "../../variables";
+@import "../../mixins/media";
+@import "../../mixins/sprite";
+
+$accordion-top-padding: 35px;
+
+.widget-accordioncontent {
+
+    .accordion-item {
+        position: relative;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &.default {
+            background-color: $body-bg;
+
+            .rendered-markdown {
+                h1,
+                h2,
+                h3,
+                h4,
+                h5,
+                h6,
+                p,
+                a,
+                span,
+                label,
+                code,
+                small,
+                tr,
+                td,
+                ul,
+                li {
+                    color: $body-color;
+                }
+            }
+
+            a:hover {
+                color: #38939b;
+            }
+        }
+
+        &.highlight {
+            background-color: $body-alt-color;
+
+            .rendered-markdown {
+                h1,
+                h2,
+                h3,
+                h4,
+                h5,
+                h6,
+                p,
+                a,
+                span,
+                label,
+                code,
+                small,
+                tr,
+                td,
+                ul,
+                li {
+                    color: $body-color;
+                }
+            }
+
+            a:hover {
+                color: #38939b;
+            }
+        }
+
+        &.alt {
+            background-color: #1c1c1c;
+            color: $body-alt-color;
+
+            .rendered-markdown {
+                h1,
+                h2,
+                h3,
+                h4,
+                h5,
+                h6,
+                p,
+                a,
+                span,
+                label,
+                code,
+                small,
+                tr,
+                td,
+                ul,
+                li {
+                    color: $body-alt-color;
+                }
+            }
+
+            a:hover {
+                color: #38939b;
+            }
+
+            .accordion-title:after {
+                @include sprite(-850px, 0, 50px);
+            }
+        }
+
+        .accordion-title {
+            padding-right: 30px;
+        }
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .container-style-default,
+    .container-style-highlight {
+
+        .accordion-title:after {
+            @include sprite(-850px, -50px, 50px);
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            transform: rotate(90deg);
+            content: " ";
+        }
+    }
+
+    .container-style-alt {
+
+        .accordion-title:after {
+            @include sprite(-850px, 0, 50px);
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            transform: rotate(90deg);
+            content: " ";
+        }
+    }
+
+    .expanded {
+        display: block;
+
+        .accordion-title:after {
+            transform: rotate(270deg);
+        }
+    }
+
+    .collapsed {
+        .accordion-content {
+            display: none;
+        }
+    }
+
+    .accordion-content {
+        padding-top: $accordion-top-padding;
+    }
+
+    .accordion-item-padding-none {
+        .accordion-item {
+            padding: 0;
+        }
+    }
+
+    .accordion-item-padding-sm {
+        .accordion-item {
+            padding: $padding-small;
+        }
+    }
+
+    .accordion-item-padding-md {
+        .accordion-item {
+            padding: $padding-base;
+        }
+    }
+
+    .accordion-item-padding-lg {
+        .accordion-item {
+            padding: $padding-large;
+        }
+    }
+
+    .button-row {
+        padding-top: $accordion-top-padding;
+    }
+}

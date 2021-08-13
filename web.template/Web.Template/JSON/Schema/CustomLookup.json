@@ -1,0 +1,29 @@
+﻿{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Custom Lookup",
+    "description": "A collection of custom lookups used on the website",
+    "type": "object",
+    "properties": {
+        "Items": {
+            "type": "array",
+            "description": "A collection of lookup items",
+            "minItems": 1,
+            "items": {
+                "type": "object",
+                "properties": {
+                    "Name": {
+                        "type": "string"
+                    },
+                    "AgentsOnly": {
+                        "type": "boolean",
+                        "description": "Select if item will only be visible to logged in agents.",
+                        "default": false
+                    }
+                },
+                "required": [
+                    "Name"
+                ]
+            }
+        }
+    }
+}

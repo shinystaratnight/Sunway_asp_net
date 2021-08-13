@@ -1,0 +1,34 @@
+﻿@mixin aspect-ratio-image ($screens, $columns-list, $aspect-ratio-list, $default-screen-size) {
+
+    @each $column in $columns-list {
+        .col-xs-#{$column} {
+            @each $ratio in $aspect-ratio-list {
+                .img-aspect-#{nth($ratio, 1)}-#{nth($ratio, 2)} {
+                    $screen-pixels: $default-screen-size;
+                    $total-width: ($screen-pixels / 12) * $column;
+                    $one-unit: $total-width / nth($ratio, 1);
+                    $total-height: $one-unit * nth($ratio, 2);
+                    height: floor($total-height);
+                }
+            }
+        }
+    }
+
+    @each $screen in $screens {
+        @media only screen and (min-width: $screen) {
+            @each $column in $columns-list {
+                .col-md-#{$column} {
+                    @each $ratio in $aspect-ratio-list {
+                        .img-aspect-#{nth($ratio, 1)}-#{nth($ratio, 2)} {
+                            $screen-pixels: $screen;
+                            $total-width: ($screen-pixels / 12) * $column;
+                            $one-unit: $total-width / nth($ratio, 1);
+                            $total-height: $one-unit * nth($ratio, 2);
+                            height: floor($total-height);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

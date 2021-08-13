@@ -1,0 +1,168 @@
+﻿{
+    "Id": 0,
+    "Name": "Agent Dashboard",
+    "Sections": [
+        {
+            "Id": 1,
+            "Name": "header",
+			"Widgets": [
+				{
+				  "Id": 1,
+				  "Name": "SiteBuilderToolbar",
+				  "ServerSideRender": false,
+				  "ClientSideRender": true,
+				  "Access": "AdminLoggedIn"
+				},
+				{
+					"Id": 1,
+					"Name": "Header",
+					"Context": "default",
+					"ServerSideRender": true,
+					"ClientSideRender": true
+				}
+			]
+        },
+        {
+            "Id": 2,
+            "Name": "main",
+            "Widgets": [
+                {
+                    "Id": 1,
+                    "Name": "WidgetEdit",
+                    "ServerSideRender": false,
+                    "ClientSideRender": true,
+                    "Access": "AdminLoggedIn"
+                },
+                {
+                    "Id": 2,
+                    "Name": "AgentBanner",
+                    "Context": "agent-banner",
+                    "EntitySpecific": false,
+                    "ServerSideRender": true,
+                    "ClientSideRender": false
+                },
+                {
+                    "Id": 3,
+                    "Name": "StickyNav",
+                    "Context": "agent-dashboard-sticky-nav",
+                    "ServerSideRender": false,
+                    "ClientSideRender": true
+                },
+                {
+                    "Id": 4,
+                    "Name": "SubNavigation",
+                    "Context": "default-no-media",
+                    "ServerSideRender": true,
+                    "ClientSideRender": false,
+                    "EntitySpecific": false
+                },
+                {
+                    "Id": 3,
+                    "Name": "SearchTool",
+                    "Context": "agent-searchtool",
+                    "Shared": true,
+                    "ServerSideRender": true,
+                    "ClientSideRender": true,
+                    "Access": "TradeLoggedIn"
+                },
+                {
+                    "Id": 2,
+                    "Name": "AgentInformation",
+                    "Context": "agent-information",
+                    "ServerSideRender": false,
+                    "ClientSideRender": true,
+                    "Entities": [ "TradeContactGroup", "BusinessDevelopmentManager", "TradeGroup", "TradeParentGroup", "Incentive" ]
+                },
+                {
+                    "Id": 8,
+                    "Name": "AgentNews",
+                    "Context": "agent-news",
+                    "ServerSideRender": false,
+                    "ClientSideRender": true,
+                    "EntitySpecific": false,
+                    "Entities": [ "BlogItem" ],
+                    "Entity": [ "BlogItem" ]
+                },
+                {
+                    "Id": 9,
+                    "Name": "SpecialOffers",
+                    "Context": "agent-featured-hotels",
+                    "ServerSideRender": false,
+                    "ClientSideRender": true,
+                    "EntitySpecific": false
+                },
+                {
+                    "Id": 9,
+                    "Name": "OverlappingSideImage",
+                    "Context": "overlapping-1",
+                    "ServerSideRender": true,
+                    "ClientSideRender": false
+                },
+                {
+                    "Id": 9,
+                    "Name": "OverlappingSideImage",
+                    "Context": "overlapping-2",
+                    "ServerSideRender": true,
+                    "ClientSideRender": false
+                },
+                {
+                    "Id": 9,
+                    "Name": "OverlappingSideImage",
+                    "Context": "overlapping-3",
+                    "ServerSideRender": true,
+                    "ClientSideRender": false
+                },
+                {
+                    "Id": 9,
+                    "Name": "OverlappingSideImage",
+                    "Context": "overlapping-4",
+                    "ServerSideRender": true,
+                    "ClientSideRender": false
+                },
+                {
+                    "Id": 9,
+                    "Name": "OverlappingSideImage",
+                    "Context": "overlapping-5",
+                    "ServerSideRender": true,
+                    "ClientSideRender": false
+                },
+                {
+                    "Id": 9,
+                    "Name": "OverlappingSideImage",
+                    "Context": "overlapping-6",
+                    "ServerSideRender": true,
+                    "ClientSideRender": false
+                },
+                {
+                    "Id": 10,
+                    "Name": "RedirectEdit",
+                    "ServerSideRender": false,
+                    "ClientSideRender": true,
+                    "Access": "AdminLoggedIn"
+                }
+            ]
+        },
+        {
+            "Id": 1,
+            "Name": "footer",
+            "Widgets": [
+                {
+                    "Id": 1,
+                    "Name": "NewsletterSignup",
+                    "Context": "default",
+                    "ServerSideRender": true,
+                    "ClientSideRender": false
+                },
+                {
+                    "Id": 2,
+                    "Name": "Footer",
+                    "Context": "default",
+                    "ServerSideRender": true
+                }
+            ]
+        }
+    ],
+    "Template": "FullContent",
+    "Url": "agent-dashboard",
+    "Access": "TradeLoggedIn"
+}

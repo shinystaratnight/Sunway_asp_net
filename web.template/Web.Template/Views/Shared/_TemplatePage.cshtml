@@ -1,0 +1,136 @@
+@using Web.Template.Application.Interfaces.Tracking
+@using Web.Template.Application.PageDefinition
+@using Web.Template.Helpers
+@model Web.Template.Application.PageDefinition.Page
+@{
+    string bodyClass = $"{Model.SiteName.ToLower()} {Model.Name.ToLower()}";
+    bodyClass += Model.AdminMode ? " admin-mode" : "";
+
+    string theme = Model.SiteName;
+
+    string htmlClass = Model.FontSource == "Typekit" ? "wf-loading" : "";
+}
+<!DOCTYPE html>
+<html class="@htmlClass">
+<head>
+    @if (Model.TrackingAffiliates != null)
+    {
+        foreach (ITrackingAffiliate trackingAffiliate in Model.TrackingAffiliates.Where(t => t.Position == "Top Header"))
+        {
+            @Html.Raw(trackingAffiliate.Script)
+        }
+    }
+
+    <meta name="viewport" content="width=device-width" />
+
+    <title>@Model.MetaInformation.PageTitle</title>
+    <meta name="description" content="@Model.MetaInformation.MetaDescription">
+
+    <meta property="og:url" content="@Model.MetaInformation.CanonicalUrl" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="@Model.MetaInformation.SocialMediaTitle" />
+    <meta property="og:description" content="@Model.MetaInformation.SocialMediaDescription" />
+    <meta property="og:image" content="@Model.MetaInformation.PageImage" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@Model.SiteName" />
+    <meta name="twitter:title" content="@Model.MetaInformation.SocialMediaTitle" />
+    <meta name="twitter:description" content="@Model.MetaInformation.SocialMediaDescription" />
+    <meta name="twitter:image" content="@Model.MetaInformation.PageImage"/>
+    <meta name="twitter:creator" content="@Model.TwitterHandle" />
+
+    <link rel="icon" href="/Sites/@Model.SiteName/Images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" href="/Sites/@Model.SiteName/Images/favicon-16x16.png" sizes="16x16">
+
+    @if (Model.FontSource == "Typekit")
+    {
+        <!-- hide text while typkit is loading -->
+        <style type="text/css">
+            .wf-loading h1,
+            .wf-loading h2,
+            .wf-loading h3,
+            .wf-loading h4,
+            .wf-loading h5,
+            .wf-loading p,
+            .wf-loading span,
+            .wf-loading a:not(.img-link) {
+                opacity: 0;
+            }
+        </style>
+    }
+
+    @if (HttpContext.Current.IsDebuggingEnabled)
+    {
+        <!-- use css file in debug mode to enable use of source map -->
+        <link rel="stylesheet" href="/assets/@theme/css/main.css" />
+        @Html.InlineStyles("/assets/css/font-awesome.min.css")
+    }
+    else
+    {
+        @Html.InlineStyles($"~/assets/{theme}/css/main.css")
+        @Html.InlineStyles("/assets/css/font-awesome.min.css")
+    }
+
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    @if (Model.TrackingAffiliates != null)
+    {
+        foreach (ITrackingAffiliate trackingAffiliate in Model.TrackingAffiliates.Where(t => t.Position == "Bottom Header"))
+        {
+            @Html.Raw(@trackingAffiliate.Script)
+        }
+    }
+</head>
+<body class="@bodyClass">
+    @if (Model.TrackingAffiliates != null)
+    {
+        foreach (ITrackingAffiliate trackingAffiliate in Model.TrackingAffiliates.Where(t => t.Position == "Top Body"))
+        {
+            @Html.Raw(@trackingAffiliate.Script)
+        }
+    }
+    @if (Model.Sections.Any(section => section.Name.ToLower() == "header"))
+    {
+        <header class="header">
+            @foreach (Section section in Model.Sections.Where(section => section.Name.ToLower() == "header"))
+            {
+                foreach (Widget widget in section.Widgets)
+                {
+                    @Html.Partial("_Widget", widget)
+                }
+            }
+        </header>
+    }
+
+    @RenderBody()
+
+    @if (Model.Sections.Any(section => section.Name.ToLower() == "footer"))
+    {
+        <footer class="footer">
+            @foreach (Section section in Model.Sections.Where(section => section.Name.ToLower() == "footer"))
+            {
+                foreach (Widget widget in section.Widgets)
+                {
+                    @Html.Partial("_Widget", widget)
+                }
+            }
+        </footer>
+    }
+    @Html.Raw(Model.FontScript)
+    <script>
+        window.__PRELOADED_STATE__ = @Html.Raw(Json.Encode(Model.PreLoadedState))
+    </script>
+    <script type="text/javascript" src="~/assets/js/vendor.bundle.js"></script>
+    <script type="text/javascript" src="~/assets/@theme/js/main.js"></script>
+    @if (Model.TrackingAffiliates != null)
+    {
+        foreach (ITrackingAffiliate trackingAffiliate in Model.TrackingAffiliates.Where(t => t.Position == "Bottom Body"))
+        {
+            @Html.Raw(@trackingAffiliate.Script)
+        }
+    }
+</body>
+
+</html>

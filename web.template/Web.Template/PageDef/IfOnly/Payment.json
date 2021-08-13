@@ -1,0 +1,137 @@
+﻿{
+    "Id": 1,
+    "Name": "PaymentPage",
+    "Sections": [
+        {
+            "Id": 1,
+            "Name": "header",
+            "Widgets": [
+                {
+                    "Id": 1,
+                    "Name": "Header",
+                    "Context": "default",
+                    "ServerSideRender": true,
+                    "ClientSideRender":  true
+                }
+            ]
+        },
+        {
+            "Id": 2,
+            "Name": "main",
+            "Widgets": [
+                {
+                    "Id": 1,
+                    "Name": "Warnings",
+                    "ServerSideRender": false,
+                    "ClientSideRender":  true
+                },
+                {
+                    "Id": 1,
+                    "Name": "WidgetEdit",
+                    "ClientSideRender":  true,
+                    "ServerSideRender": false,
+                    "Access": "AdminLoggedIn"
+                },
+                {
+                    "Id": 2,
+                    "Name": "GuestDetails",
+                    "ServerSideRender": false,
+                    "ClientSideRender":  true,
+                    "Context": "default"
+                },
+                {
+                    "Id": 2,
+                    "Name": "LeadGuestDetails",
+                    "ServerSideRender": false,
+                    "ClientSideRender":  true,
+                    "Context": "default"
+                },
+                {
+                    "Id": 3,
+                    "Name": "HotelRequests",
+                    "ServerSideRender": false,
+                    "ClientSideRender":  true,
+                    "Context": "default"
+                },
+                {
+                    "Id": 4,
+                    "Name": "TermsAndConditions",
+                    "ServerSideRender": false,
+                    "ClientSideRender":  true,
+                    "Context": "default"
+                },
+                {
+                    "Id": 5,
+                    "Name": "Errata",
+                    "ServerSideRender": false,
+                    "ClientSideRender":  true,
+                    "Context": "default"
+                },
+                {
+                    "Id": 6,
+                    "Name": "TradeReference",
+                    "ServerSideRender": false,
+                    "ClientSideRender":  true,
+                    "Context": "default"
+                },
+                {
+                    "Id": 7,
+                    "Name": "CancellationCharges",
+                    "ServerSideRender": false,
+                    "ClientSideRender":  true,
+                    "Context": "default"
+                },
+                {
+                    "Id": 8,
+                    "Name": "PaymentBreakdown",
+                    "ServerSideRender": false,
+                    "ClientSideRender":  true,
+                    "Context": "default"
+                },
+                {
+                    "Id": 9,
+                    "Name": "PromoCode",
+                    "ServerSideRender": false,
+                    "ClientSideRender":  true,
+                    "Context": "default"
+                },
+                {
+                    "Id": 10,
+                    "Name": "CompleteBooking",
+                    "ServerSideRender": false,
+                    "ClientSideRender":  true,
+                    "Context": "default"
+                },
+                {
+                    "Id": 11,
+                    "Name": "RedirectEdit",
+                    "ServerSideRender": false,
+                    "ClientSideRender": true,
+                    "Access": "AdminLoggedIn"
+                }
+
+            ]
+        },
+        {
+            "Id": 1,
+            "Name": "footer",
+            "Widgets": [
+                {
+                    "Id": 1,
+                    "Name": "NewsletterSignup",
+                    "Context": "default",
+                    "ServerSideRender": true,
+                    "ClientSideRender": false
+                },
+                {
+                    "Id": 2,
+                    "Name": "Footer",
+                    "Context": "default",
+                    "ServerSideRender": true
+                }
+            ]
+        }
+    ],
+    "Template": "FullContent",
+    "Url": "payment"
+}

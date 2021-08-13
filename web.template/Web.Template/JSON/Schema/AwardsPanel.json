@@ -1,0 +1,60 @@
+﻿{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Awards Panel",
+    "type": "object",
+    "properties": {
+        "Title": {
+            "type": "string"
+        },
+        "Description": {
+            "type": "string"
+        },
+        "Awards": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "title": "Awards",
+            "description": "List of awards to display tiled",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "Image": {
+                        "type": "string",
+                        "format": "image"
+                    },
+                    "Url": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "Configuration": {
+            "type": "object",
+            "title": "Configuration",
+            "description": "Configuration options for the Text Panel widget",
+            "properties": {
+                "ContainerStyle": {
+                    "type": "string",
+                    "format": "select",
+                    "default": "Highlight",
+                    "enum": [
+                        "Default",
+                        "Highlight",
+                        "Alternate"
+                    ]
+                },
+                "ContainerPadding": {
+                    "type": "string",
+                    "format": "select",
+                    "default": "Medium",
+                    "enum": [
+                        "None",
+                        "Small",
+                        "Medium",
+                        "Large"
+                    ]
+                }
+            }
+        }
+    }
+}

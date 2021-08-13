@@ -1,0 +1,21 @@
+﻿{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "ClimateGrid",
+    "type": "object",
+    "properties": {
+        "RegionId": {
+            "title": "Region", 
+            "type": "string",
+            "format": "autocontextlookup,region"
+        },
+        "TitleOverride": {
+            "type": "string",
+            "description": "Enter a title to override the entity title."
+        },
+        "SummaryOverride": {
+            "type": "string",
+            "format": "textarea", 
+            "description": "Enter a summary to override the entity summary."
+        }
+    }
+}

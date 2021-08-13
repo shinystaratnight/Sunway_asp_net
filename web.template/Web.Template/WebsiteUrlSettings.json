@@ -1,0 +1,62 @@
+﻿{
+  "Websites": [
+    {
+      "SiteName": "Sunway",
+      "Environment": "dev",
+      "Url": "http://sunwaytest.ivector.co.uk",
+      "Urls": [
+                "http://sunwaytest.ivector.co.uk/",
+                "https://sunwaytest.ivector.co.uk/",
+                "https://sunwaytest.ivector.co.uk"
+      ]
+    },
+    {
+      "SiteName": "Sunway",
+      "Environment": "staging",
+      "Url": "http://sunwaystaging.ivector.co.uk",
+      "Urls": [
+                "http://sunwaystaging.ivector.co.uk/",
+                "https://sunwaystaging.ivector.co.uk/",
+                "https://sunwaystaging.ivector.co.uk"
+      ]
+    },
+    {
+      "SiteName": "Sunway",
+      "Environment": "live",
+      "Url": "http://www.sunway.ie",
+      "Urls": [
+        "http://sunwaylive.ivector.co.uk/",
+                "https://sunwaylive.ivector.co.uk/",
+                "http://agent.sunway.ie/",
+                "https://agent.sunway.ie/",
+                "https://agent.sunway.ie"
+      ]
+    },
+    {
+      "SiteName": "SunwayB2C",
+      "Environment": "dev",
+      "Url": "http://sunwayb2ctest.ivector.co.uk",
+      "Urls": [
+        "http://sunwayb2ctest.ivector.co.uk/"
+      ]
+    },
+    {
+      "SiteName": "SunwayB2C",
+            "Environment": "staging",
+            "Url": "http://sunwayb2cstaging.ivector.co.uk",
+            "Urls": [
+                "http://sunwayb2cstaging.ivector.co.uk/",
+				"https://sunwayb2cstaging.ivector.co.uk/"
+            ]
+        },
+        {
+            "SiteName": "SunwayB2C",
+      "Environment": "live",
+      "Url": "http://www.sunway.ie",
+      "Urls": [
+        "http://sunwayb2clive.ivector.co.uk/",
+        "http://www.sunway.ie/"
+      ]
+    }
+  ]
+}

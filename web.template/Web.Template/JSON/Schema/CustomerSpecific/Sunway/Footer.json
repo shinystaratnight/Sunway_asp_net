@@ -1,0 +1,65 @@
+﻿{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Footer",
+    "type": "object",
+    "properties": {
+        "FooterLinks": {
+            "type": "array",
+            "title": "Footer Links",
+            "description": "Links that will appear in the top section of the footer.",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+                "type": "object",
+                "properties": {
+                    "Name": {
+                        "type": "string"
+                    },
+                    "Url": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "ContactAddress": {
+            "type": "string"
+        },
+        "ContactEmail": {
+            "type": "string"
+        },
+        "ContactNumber": {
+            "type": "string"
+        },
+        "TermsAndConditions": {
+            "type": "string"
+        },
+        "Configuration": {
+            "type": "object",
+            "title": "Configuration",
+            "description": "Configuration options for the Text Panel widget",
+            "properties": {
+                "ContainerStyle": {
+                    "type": "string",
+                    "format": "select",
+                    "default": "Highlight",
+                    "enum": [
+                        "Default",
+                        "Highlight",
+                        "Alternate"
+                    ]
+                },
+                "ContainerPadding": {
+                    "type": "string",
+                    "format": "select",
+                    "default": "Medium",
+                    "enum": [
+                        "None",
+                        "Small",
+                        "Medium",
+                        "Large"
+                    ]
+                }
+            }
+        }
+    }
+}

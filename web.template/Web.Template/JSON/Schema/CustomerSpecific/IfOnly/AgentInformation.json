@@ -1,0 +1,50 @@
+﻿{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Agent information",
+    "type": "object",
+    "properties": {
+        "Incentives": {
+            "type": "object",
+            "title": "Incentives",
+            "description": "Options for incentives",
+            "properties": {
+                "Heading": {
+                    "type": "string",
+                    "default": "Featured Incentives",
+                    "description": "Heading that is displayed above the incentives carousel"
+                },
+                "DefaultIncentiveId": {
+                    "title": "Default Incentive",
+                    "type": "string",
+                    "format": "autocontextlookup,Incentive"
+                },
+                "CarouselRotationTime": {
+                    "type": "integer",
+                    "default": 7,
+                    "description": "Time in seconds before carousel rotates to the next item"
+                }
+            }
+        },
+        "BusinessDevelopmentManager": {
+            "type": "object",
+            "title": "Business Development Manager",
+            "description": "Options for business development manager",
+            "properties": {
+                "Heading": {
+                    "type": "string",
+                    "default": "Your business development manager",
+                    "description": "Heading that is displayed above the business development manager tile"
+                },
+                "Button": {
+                    "type": "object",
+                    "title": "Button",
+                    "description": "Button that appears below the business development manager contact details",
+                    "properties": {
+                        "Text": { "type": "string" },
+                        "URL": { "type": "string" }
+                    }
+                }
+            }
+        }
+    }
+}

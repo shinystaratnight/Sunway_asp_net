@@ -1,0 +1,83 @@
+﻿@import "../variables";
+@import "../mixins/media";
+
+//== Alter Styling
+//
+//## Component specific styling relating to alerts used on the website
+
+$alert-icon-size: 32px;
+
+@mixin alert-color($border, $bg, $color) {
+    border-color: $border;
+    background-color: $bg;
+    color: $color;
+}
+
+.alert {
+    position: relative;
+    min-height: $alert-icon-size;
+    margin-bottom: $spacing-md;
+    padding: $spacing-md;
+    padding-left: $alert-icon-size + ($spacing-md * 2);
+    border: 1px solid transparent;
+    border-radius: $border-radius-base;
+}
+
+.alert-icon {
+    display: block;
+    position: absolute;
+    top: $spacing-md;
+    left: $spacing-md;
+    font-family: FontAwesome;
+    font-size: 2rem;
+    font-style: normal;
+    line-height: $alert-icon-size;
+}
+
+.alert-close {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-family: FontAwesome;
+    font-size: 1rem;
+    font-style: normal;
+    line-height: 1rem;
+    cursor: pointer;
+
+    &::before {
+        content: "\f00d";
+    }
+}
+
+.alert-success {
+    @include alert-color($brand-success, lighten($brand-success, 30%), $brand-success);
+
+    .alert-icon::before {
+        content: "\f00c";
+    }
+}
+
+.alert-info {
+    @include alert-color($brand-info, lighten($brand-info, 30%), $brand-info);
+
+    .alert-icon::before {
+        content: "\f05a";
+    }
+}
+
+.alert-warning {
+    @include alert-color($brand-warning, lighten($brand-warning, 30%), $brand-warning);
+
+    .alert-icon::before {
+        content: "\f071";
+    }
+}
+
+.alert-danger {
+    @include alert-color($brand-danger, lighten($brand-danger, 30%), $brand-danger);
+
+    .alert-icon::before {
+        content: "\f071";
+    }
+}

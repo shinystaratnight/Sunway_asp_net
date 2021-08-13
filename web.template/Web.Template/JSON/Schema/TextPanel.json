@@ -1,0 +1,42 @@
+﻿{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Text Panel",
+    "type": "object",
+    "properties": {
+        "Title": {
+            "type": "string"
+        },
+        "Markdown": {
+            "type": "string",
+            "format": "textarea"
+        },
+        "Configuration": {
+            "type": "object",
+            "title": "Configuration",
+            "description": "Configuration options for the Text Panel widget",
+            "properties": {
+                "ContainerStyle": {
+                    "type": "string",
+                    "format": "select",
+                    "default": "Highlight",
+                    "enum": [
+                        "Default",
+                        "Highlight",
+                        "Alternate"
+                    ]
+                },
+                "ContainerPadding": {
+                    "type": "string",
+                    "format": "select",
+                    "default": "Medium",
+                    "enum": [
+                        "None",
+                        "Small",
+                        "Medium",
+                        "Large"
+                    ]
+                }
+            }
+        }
+    }
+}

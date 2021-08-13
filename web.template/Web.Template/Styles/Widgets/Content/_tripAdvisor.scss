@@ -1,0 +1,39 @@
+﻿@import "../../variables";
+@import "../../mixins/clearfix";
+
+.trip-advisor-content {
+
+    .cdsROW {
+        width: 100% !important;
+        margin: 0 auto;
+        
+    }
+
+    .cdsComponent {
+        &.cdsLocName {
+            width: auto;
+            max-width: 400px !important;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 468px) {
+            display: block !important;
+
+            &.cdsLocName {
+                max-width: 100% !important;
+                margin-bottom: 10px;
+            }
+
+            &.logo {
+                display: table-row !important;
+            }
+        }
+    }
+
+    @media (max-width: 468px) {
+        .cdsROW {
+            width: 308px !important;
+            height: auto !important;
+        }
+    }
+}

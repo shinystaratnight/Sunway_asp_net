@@ -1,0 +1,24 @@
+﻿{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Staff Member",
+    "type": "object",
+    "properties": {
+        "FirstName": {
+            "type": "string"
+        },
+        "LastName": {
+            "type": "string"
+        },
+        "Image": {
+            "type": "string",
+            "format": "image"
+        },
+        "JobTitle": {
+            "type": "string"
+        },
+        "Summary": {
+            "type": "string",
+            "format": "textarea"
+        }
+    }
+}

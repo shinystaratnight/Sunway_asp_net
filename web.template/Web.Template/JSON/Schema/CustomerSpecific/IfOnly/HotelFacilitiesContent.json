@@ -1,0 +1,65 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "HotelFacilities",
+  "type": "object",
+  "properties": {
+    "Body": {
+      "type": "object",
+      "description": "Brief summary of hotel and surrounding area facilites.",
+      "properties": {
+        "Title": {
+          "type": "string",
+          "default": "Facilities"
+        },
+        "Text": {
+          "type": "string",
+          "format": "textarea",
+          "default": "Lorem ipsum sit delor..."
+        }
+      }
+    },
+    "List": {
+      "type": "object",
+      "description": "List to appear on the right hand side of the widget.",
+      "properties": {
+        "Title": {
+          "type": "string",
+          "default": "At a glance"
+        },
+        "ListItems": {
+          "type": "array",
+          "uniqueItems": true,
+          "title": "List Items",
+          "items": {
+            "type": "object",
+            "properties": {
+              "Value": {
+                "type": "string",
+                "default": "placeholder"
+              }
+            }
+          }
+        }
+      }
+    },
+    "Configuration": {
+      "type": "object",
+      "title": "Configuration",
+      "description": "Configuration options for hotel facilities widget",
+      "properties": {
+        "ContainerStyle": {
+          "type": "string",
+          "format": "select",
+          "default": "Default",
+          "enum": [ "Default", "Highlight", "Alternate" ]
+        },
+        "ContainerPadding": {
+          "type": "string",
+          "format": "select",
+          "default": "Medium",
+          "enum": [ "None", "Small", "Medium", "Large" ]
+        }
+      }
+    }
+  }
+}

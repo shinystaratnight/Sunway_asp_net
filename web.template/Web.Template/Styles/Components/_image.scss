@@ -1,0 +1,89 @@
+﻿@import "../variables";
+@import "../layout/_gridvariables";
+@import "../Mixins/_aspectratioimage";
+
+//== Images
+//
+//## Component specific styling relating to tables used on the website
+
+.img-container {
+    position: relative;
+
+    &.overlay {
+        &::after {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.3);
+            content: " ";
+            z-index: 2;
+        }
+    }
+
+    &.gradient-overlay {
+        &::after {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+            content: " ";
+            z-index: 2;
+        }
+    }
+}
+
+.img-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    transition: all 0.4s ease-in-out;
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+}
+
+.img-zoom-hover {
+    position: relative;
+    overflow: hidden;
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        min-height: 100%;
+        transition: all 0.4s ease-in-out;
+        z-index: 1;
+    }
+
+    &:hover {
+        img,
+        .img-background {
+            transform: scale(1.1);
+        }
+    }
+}
+
+.img-rounded {
+  border-radius: $border-radius-large;
+}
+
+.img-circle {
+  border-radius: 50%;
+}
+
+// Images sorted out by aspect ratio
+$columns-list: 3 4 5 6 7 8 9 12;
+$aspect-ratio-list: 4 5, 1 1, 4 3, 16 9, 9 4, 5 2, 3 1;
+$screens: $screen-sm, $screen-md, $screen-lg;
+$default-screen-size: 400px;
+
+@include aspect-ratio-image($screens, $columns-list, $aspect-ratio-list, $default-screen-size);

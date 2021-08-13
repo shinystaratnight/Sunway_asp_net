@@ -1,0 +1,53 @@
+﻿{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Agent Login",
+    "type": "object",
+    "properties": {
+        "Title": {
+            "type": "string"
+        },
+        "SaveLoginText": {
+            "type": "string"
+        },
+        "LoginButtonText": {
+            "type": "string"
+        },
+        "InvalidUsernameWarning": {
+            "type": "string"
+        },
+        "InvalidPasswordWarning": {
+            "type": "string"
+        },
+        "FailedLoginWarning": {
+            "type": "string"
+        },
+        "Configuration": {
+            "type": "object",
+            "title": "Configuration",
+            "description": "Configuration options for the Agent Login widget",
+            "properties": {
+                "ContainerStyle": {
+                    "type": "string",
+                    "format": "select",
+                    "default": "Highlight",
+                    "enum": [
+                        "Default",
+                        "Highlight",
+                        "Alternate"
+                    ]
+                },
+                "ContainerPadding": {
+                    "type": "string",
+                    "format": "select",
+                    "default": "Medium",
+                    "enum": [
+                        "None",
+                        "Small",
+                        "Medium",
+                        "Large"
+                    ]
+                }
+            }
+        }
+    }
+}

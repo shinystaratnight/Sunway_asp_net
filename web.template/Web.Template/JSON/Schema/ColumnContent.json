@@ -1,0 +1,107 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "ColumnContent",
+  "type": "object",
+  "properties": {
+    "ColumnRight": {
+      "type": "array",
+      "title": "ColumnRight",
+      "description": "Individual items on the right hand side of the page",
+      "items": {
+        "$ref": "#/definitions/ColumnItem"
+      },
+      "minItems": 1
+    },
+    "Configuration": {
+      "type": "object",
+      "title": "Configuration",
+      "description": "Configuration options for the accordion widget",
+      "properties": {
+        "ContainerStyle": {
+          "type": "string",
+          "format": "select",
+          "default": "Default",
+          "enum": [
+            "Default",
+            "Highlight",
+            "Alternate"
+          ]
+        },
+        "ContainerPadding": {
+          "type": "string",
+          "format": "select",
+          "default": "None",
+          "enum": [
+            "None",
+            "Small",
+            "Medium",
+            "Large"
+          ]
+        },
+        "LeftHandSideStyle": {
+          "type": "string",
+          "format": "select",
+          "default": "Default",
+          "enum": [
+            "Default",
+            "Highlight",
+            "Alternate"
+          ]
+        },
+        "RightHandSideStyle": {
+          "type": "string",
+          "format": "select",
+          "default": "Default",
+          "enum": [
+            "Default",
+            "Highlight",
+            "Alternate"
+          ]
+        }
+      }
+    }
+  },
+  "required": [
+    "ColumnLeft",
+    "ColumnRight",
+    "Configuration"
+  ],
+  "definitions": {
+    "ColumnItem": {
+      "type": "object",
+      "properties": {
+        "Title": {
+          "type": "string"
+        },
+        "Icon": {
+          "type": "string",
+          "format": "select",
+          "enum": [
+            "Silhouette",
+            "SpeechBubble",
+            "Phone",
+            "Brochure"
+          ]
+        },
+        "MarkdownText": {
+          "type": "string",
+          "format": "textarea",
+          "description": "Markdown text based on CommonMark spec. See http://commonmark.org/help/ for details."
+        },
+        "Button": {
+          "type": "object",
+          "title": "Button",
+          "description": "Optional button to appear at the bottom of the content.",
+          "properties": {
+            "Text": {
+              "type": "string"
+            },
+            "URL": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+﻿{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "title": "Site Settings",
+    "description": "Generic settings that apply across the website.", 
+    "type": "object",
+    "properties": {
+        "Search": {
+            "type": "object",
+            "description": "Site settings relating to Search",
+            "properties": {
+                "SearchModes": {
+                    "type": "object",
+                    "title": "Search Modes",
+                    "description": "Search modes that will be enabled on the website and will appear on the search tool.",
+                    "properties": {
+                        "FlightOnly": {
+                            "type": "boolean"
+                        },
+                        "HotelOnly": {
+                            "type": "boolean"
+                        },
+                        "FlightPlusHotel": {
+                            "type": "boolean"
+                        },
+                        "Package": {
+                            "type": "boolean"
+                        },
+                        "TransferOnly": {
+                            "type": "boolean"
+                        },
+                        "ExtraOnly": {
+                            "type": "boolean"
+                        } 
+                    }
+                },
+                "SearchBookAhead": {
+                    "type": "integer",
+                    "description": "The minimum days ahead searches are allowed for. 0 = today, 1 = tomorrow etc."
+                },
+                "SearchExpiry": {
+                    "type": "integer",
+                    "description": "Number of minutes a user's search will saved for."
+                } 
+            }
+        }
+    }
+}

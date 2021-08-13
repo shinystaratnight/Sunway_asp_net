@@ -1,0 +1,226 @@
+﻿@import "../../variables";
+@import "../../mixins/media";
+
+.widget-keyvalueitems {
+    .highlight {
+        background-color: #fff;
+    }
+
+    .alt {
+        background-color: #1c1c1c;
+    }
+
+    .default {
+        background-color: $body-bg;
+    }
+
+    .row-highlighted-highlight {
+        .key-value-row {
+            .key-value-item {
+                &:nth-child(odd) {
+                    background-color: #fff;
+                    color: #1c1c1c;
+                }
+            }
+        }
+    }
+
+    .row-highlighted-alt {
+        .key-value-row {
+            .key-value-item {
+                &:nth-child(odd) {
+                    background-color: #1c1c1c;
+                    color: $body-alt-color;
+
+                    .rendered-markdown {
+                        h1,
+                        h2,
+                        h3,
+                        h4,
+                        h5,
+                        h6,
+                        p,
+                        a,
+                        span,
+                        label,
+                        code,
+                        small,
+                        tr,
+                        td,
+                        ul,
+                        li {
+                            color: $body-alt-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .row-highlighted-default {
+        .key-value-row {
+            .key-value-item {
+                &:nth-child(odd) {
+                    background-color: $body-bg;
+                    color: #1c1c1c;
+                }
+            }
+        }
+    }
+
+    .row-padding-sm {
+        .key-value-item {
+            padding: $padding-small 0;
+        }
+    }
+
+    .row-padding-md {
+        .key-value-item {
+            padding: $padding-base 0;
+        }
+    }
+
+    .row-padding-lg {
+        .key-value-item {
+            padding: $padding-large 0;
+        }
+    }
+
+    .key-value-item {
+        width: 100%;
+        float: left;
+    }
+
+    .container {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .key-value-inner-container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 8px;
+    }
+
+    @include break-sm() {
+        .key-value-inner-container {
+            width: 736px;
+            margin: 0 auto;
+        }
+    }
+
+    @include break-md() {
+
+        .row-highlighted-alt {
+            .key-value-row {
+                .key-value-item {
+                    &:nth-child(odd) {
+                        color: unset;
+
+                        .rendered-markdown p {
+                            color: unset;
+                        }
+                    }
+                }
+            }
+        }
+
+        .row-padding-sm {
+            padding: $padding-small 0;
+
+            .key-value-item {
+                padding: 0;
+            }
+        }
+
+        .row-padding-md {
+            padding: $padding-base 0;
+
+            .key-value-item {
+                padding: 0;
+            }
+        }
+
+        .row-padding-lg {
+            padding: $padding-large 0;
+
+            .key-value-item {
+                padding: 0;
+            }
+        }
+
+        .row-highlighted-highlight {
+            .key-value-row {
+                &:nth-child(even) {
+                    background-color: #fff;
+                    color: $body-color;
+                }
+            }
+        }
+
+        .row-highlighted-alt {
+            .key-value-row {
+                &:nth-child(even) {
+                    background-color: #1c1c1c;
+                    color: $body-alt-color;
+
+                    .rendered-markdown {
+                        h1,
+                        h2,
+                        h3,
+                        h4,
+                        h5,
+                        h6,
+                        p,
+                        a,
+                        span,
+                        label,
+                        code,
+                        small,
+                        tr,
+                        td,
+                        ul,
+                        li {
+                            li {
+                                color: $body-alt-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .row-highlighted-default {
+            .key-value-row {
+                &:nth-child(even) {
+                    background-color: $body-bg;
+                    color: $body-color;
+                }
+            }
+        }
+
+        .key-value-item {
+            float: none;
+        }
+
+        .key-value-inner-container {
+            width: unset;
+            margin: 0 -8px;
+        }
+
+        .container {
+            width: 956px;
+            margin-right: auto;
+            margin-left: auto;
+            padding-right: 8px;
+            padding-left: 8px;
+        }
+    }
+
+    @include break-lg() {
+        .container {
+            width: 1186px;
+        }
+    }
+}

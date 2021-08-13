@@ -1,0 +1,557 @@
+﻿@import "../../variables";
+@import "../../mixins/clearfix";
+@import "../../mixins/media";
+@import "../../mixins/sprite";
+
+$offer-tile-padding: 24px;
+
+// Styling of filters and sort
+.widget-specialofferslist,
+.widget-propertylist {
+    .form-group {
+        margin-right: 0;
+        margin-bottom: 2px;
+
+        .form-control {
+            box-shadow: none;
+        }
+
+        &.departureAirport,
+        &.region,
+        &.country {
+            width: 100%;
+        }
+
+        &.mealBasis {
+            width: 50%;
+            padding-right: 1px;
+        }
+
+        &.productAttribute {
+            width: 50%;
+            padding-left: 1px;
+        }
+
+        &.guests-container {
+            position: relative;
+            padding-right: 1px;
+
+            .guests {
+                height: 56px;
+                border: none;
+                background-color: #f4f4f4;
+            }
+
+            .guests-table {
+                width: 100%;
+                background-color: #fff;
+            }
+        }
+
+        &.starRating {
+            width: 50%;
+            padding-left: 1px;
+        }
+    }
+
+    .price-slider-header {
+        margin-top: 20px;
+        margin-bottom: -24px;
+        margin-left: 6px;
+        font-size: 1.125rem;
+    }
+
+    .min-price-input {
+        margin-left: -15px;
+    }
+
+    .max-price-input {
+        margin-left: 15px;
+        padding-right: 0;
+    }
+
+    .slider-input-container {
+        padding: 30px 20px;
+        clear: both;
+    }
+
+    .guests-option {
+        z-index: 2;
+    }
+
+    .sort-container {
+        width: 100%;
+
+        .sort-by-select-label {
+            display: block;
+            width: 20%;
+            margin-top: 16px;
+            float: left;
+        }
+
+        .sort-by-select {
+            border: 1px solid #ccc;
+        }
+
+        .form-group {
+            width: 80%;
+            float: left;
+        }
+    }
+
+    .custom-select {
+        position: relative;
+        width: 100%;
+        border: none;
+        background: #f4f4f4;
+    }
+
+    .guests-container {
+        .guests {
+            padding: 10px 40px 10px 20px;
+            border: none;
+            background: #f4f4f4;
+        }
+    }
+
+
+    .filter-header {
+        padding-top: 36px;
+        padding-bottom: $padding-base;
+    }
+
+    .clear-filter-link {
+        padding-top: 10px;
+        .link {
+            color: #38939b;
+            font-size: 1.125rem;
+            text-decoration: underline;
+        }
+    }
+
+    @include break-sm() {
+
+        .clear-filter-link {
+            text-align: right;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .form-group {
+            // Styling of all filter containers
+            &.departureAirport {
+                width: 50%;
+                padding-right: 1px;
+            }
+
+            &.region,
+            &.country {
+                width: 50%;
+                padding-left: 1px;
+            }
+
+            &.mealBasis {
+                width: 25%;
+                padding-right: 1px;
+            }
+
+            &.productAttribute {
+                width: 25%;
+                padding-right: 1px;
+            }
+
+            &.guests-container {
+                width: 25%;
+                padding-left: 1px;
+
+                .guests-option {
+                    right: 8px;
+                    left: 50%;
+                }
+            }
+
+            &.starRating {
+                width: 25%;
+            }
+        }
+
+        .sort-container {
+            width: 50%;
+            max-width: 325px;
+            float: right;
+        }
+    }
+
+    @include break-md() {
+
+        .widget-top {
+            min-height: 297px;
+        }
+
+        .widget-specialofferslist,
+        .widget-propertylist {
+
+            .min-price-input {
+                margin-left: 0;
+            }
+
+            .max-price-input {
+                margin-left: 0;
+            }
+
+            .price-slider-header {
+                 font-size: 1rem;
+            }
+        }
+
+        .form-group {
+            &.departureAirport {
+                width: 195px;
+                padding: 0 2px 0 0;
+            }
+
+            &.region,
+            &.country {
+                width: 160px;
+                padding: 0 2px 0 0;
+            }
+
+            &.mealBasis {
+                width: 145px;
+                padding: 0 2px 0 0;
+            }
+
+            &.productAttribute {
+                width: 145px;
+                padding: 0 2px 0 0;
+            }
+
+            &.guests-container {
+                width: 150px;
+                padding: 0 2px 0 0;
+
+                .guests-option {
+                    right: 8px;
+                    left: 588px;
+
+                    th {
+                        border: none;
+                    }
+                }
+            }
+
+            &.starRating {
+                width: 145px;
+                padding: 0;
+            }
+        }
+    }
+
+    @include break-lg() {
+        .form-group {
+            &.departureAirport {
+                width: 215px;
+                padding: 0 2px 0 0;
+            }
+
+            &.region, 
+            &.country {
+                width: 215px;
+                padding: 0 2px 0 0;
+            }
+
+            &.mealBasis {
+                width: 184px;
+                padding: 0 2px 0 0;
+            }
+
+            &.productAttribute {
+                width: 184px;
+                padding: 0 2px 0 0;
+            }
+
+            &.guests-container {
+                width: 184px;
+                padding: 0 2px 0 0;
+
+                .guests-option {
+                    right: 8px;
+                    left: 0;
+                }
+            }
+
+            &.starRating {
+                width: 188px;
+                padding: 0;
+            }
+        }
+    }
+}
+
+// The Special Offer Tiles styling
+.widget-specialofferslist {
+
+    .offers-header {
+        padding: 8px;
+    }
+
+    .offers-heading {
+        display: block;
+        width: 100%;
+        margin-bottom: $offer-tile-padding;
+        font-weight: 500;
+    }
+
+    .offers-header-dropdown {
+        display: block;
+        width: 100%;
+        max-width: 300px;
+        height: 50px;
+        float: left;
+    }
+
+    .sort-by-text {
+        display: inline-block;
+        width: 30%;
+        max-width: 90px;
+        margin-top: 12px;
+    }
+
+    .dropdown {
+        width: 70%;
+        max-width: 360px;
+        height: 100%;
+        float: right;
+    }
+
+    .offer-results-content {
+        display: block;
+        width: 100%;
+        float: left;
+    }
+
+    .offer-horizontal {
+        position: relative;
+        height: auto;
+        margin-top: $offer-tile-padding;
+        border: 1px #dcdcdc solid;
+        background: #fff;
+
+        &:hover {
+            .btn {
+                background: #1c1c1c;
+                color: #fff;
+            }
+        }
+    }
+
+    .offer-link {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        cursor: pointer;
+        z-index: 5;
+    }
+
+    .offer-image-container {
+        display: block;
+        width: 100%;
+        min-height: 300px;
+        float: left;
+        overflow: hidden;
+    }
+
+    .offer-image {
+        min-width: 100%;
+        min-height: 100%;
+    }
+
+    .offer-content {
+        display: block;
+        width: 100%;
+        height: auto;
+        padding: $offer-tile-padding;
+        float: left;
+    }
+
+    .rating {
+        margin-top: 8px;
+    }
+
+    .offer-type {
+        margin-top: 16px;
+    }
+
+    .list-styled {
+        margin: 0 0 20px;
+    }
+
+    .offer-pricing {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: $offer-tile-padding;
+        float: left;
+        background: #1c1c1c;
+    }
+
+    .offer-pricing-bottom {
+        position: relative;
+    }
+
+    .offer-results-pagination {
+        display: block;
+        position: relative;
+        width: 100%;
+        padding-top: 30px;
+        float: left;
+    }
+
+    .rendered-markdown {
+        height: 76px;
+        color: $body-secondary-color;
+
+        ul {
+            margin-top: 0;
+            margin-bottom: 0;
+
+            li {
+                padding-left: 0;
+                line-height: 1.125rem;
+                list-style: none;
+
+                &::before {
+                    color: #1c1c1c;
+                    content: "\2012 ";
+                }
+            }
+        }
+    }
+
+    .mobile-button {
+        display: block;
+        width: 100%;
+        margin-top: 1.5rem;
+    }
+
+    .address {
+        text-overflow: ellipsis;
+    }
+
+    @include break-sm() {
+
+        .offers-header {
+            padding: 0;
+        }
+
+        .offers-heading {
+            width: 50%;
+            max-width: 400px;
+            margin-top: 12px;
+            float: left;
+        }
+
+        .offers-header-dropdown {
+            float: right;
+        }
+
+        .offer-horizontal {
+            height: 400px;
+        }
+
+        .offer-image-container {
+            width: 40%;
+        }
+
+        .offer-content {
+            position: relative;
+            width: 60%;
+            height: 300px;
+
+            .offer-content-text {
+                max-height: 204px;
+                overflow: hidden;
+            }
+        }
+
+        .offer-pricing {
+            width: 100%;
+            height: 100px;
+        }
+
+        .offer-pricing-bottom {
+            position: absolute;
+            right: $offer-tile-padding;
+            bottom: $offer-tile-padding;
+        }
+
+        .tablet-button {
+            position: absolute;
+            bottom: $offer-tile-padding;
+            left: $offer-tile-padding;
+            width: 392px;
+        }
+    }
+
+
+    @include break-md() {
+
+        .offer-content {
+            .btn {
+                width: auto;
+            }
+        }
+
+        .tablet-button {
+            width: 524px;
+        }
+
+        .offer-pricing {
+            .h-secondary {
+                font-size: 1.5rem;
+                line-height: 1.5rem;
+            }
+        }
+    }
+
+    @include break-lg() {
+        .offer-horizontal {
+            height: 300px;
+        }
+
+        .offer-image-container {
+            width: 29%;
+            height: 100%;
+        }
+
+        .offer-content {
+            width: 42%;
+            height: 100%;
+        }
+
+        .offer-pricing {
+            width: 29%;
+            height: 100%;
+
+            .h-secondary {
+                font-size: 2.625rem;
+                line-height: 2.625rem;
+            }
+        }
+
+        .offer-pricing-bottom {
+            position: absolute;
+            bottom: $offer-tile-padding;
+            left: $offer-tile-padding;
+        }
+
+        .tablet-button {
+            width: 449px;
+        }
+    }
+}

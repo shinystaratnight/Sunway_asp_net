@@ -1,0 +1,73 @@
+﻿{
+    "Id": 1,
+    "Name": "SearchResults",
+    "Sections": [
+        {
+            "Id": 1,
+            "Name": "header",
+            "Widgets": [
+                {
+                    "Id": 1,
+                    "Name": "Header",
+                    "Context": "default",
+                    "ServerSideRender": false,
+                    "ClientSideRender":  true
+                }
+            ]
+        },
+        {
+            "Id": 2,
+            "Name": "main",
+            "Widgets": [
+                {
+                    "Id": 1,
+                    "Name": "WidgetEdit",
+                    "ServerSideRender": false
+                },
+                {
+                    "Id": 1,
+                    "Name": "SearchResults",
+                    "Context":  "searchresults-flight", 
+                    "ServerSideRender": false,
+                    "ClientSideRender":  true
+                },
+                {
+                    "Id": 2,
+                    "Name": "SearchResults",
+                    "Context": "searchresults-hotel",
+                    "ServerSideRender": false,
+                    "ClientSideRender":  true
+                },
+                {
+                    "Id": 3,
+                    "Name": "RedirectEdit",
+                    "ServerSideRender": false,
+                    "ClientSideRender": true,
+                    "Access": "AdminLoggedIn"
+                }
+
+            ]
+        },
+        {
+            "Id": 1,
+            "Name": "footer",
+            "Widgets": [
+                {
+                    "Id": 1,
+                    "Name": "NewsletterSignup",
+                    "Context": "default",
+                    "ServerSideRender": true,
+                    "ClientSideRender": false
+                },
+                {
+                    "Id": 2,
+                    "Name": "Footer",
+                    "Context": "default",
+                    "ServerSideRender": true
+                }
+            ]
+        }
+    ],
+    "Template": "FullContent",
+    "Url": "search-results"
+}

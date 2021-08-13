@@ -1,0 +1,88 @@
+﻿@import "../mixins/media";
+@import "../variables";
+
+//== Utility Typography Styling
+//
+//## Classes to help with common styling declarations for typography
+
+// Alignment
+.text-left {
+    text-align: left !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+// Responsive alignment
+@include break-sm() {
+    .text-sm-left {
+        text-align: left !important;
+    }
+
+    .text-sm-center {
+        text-align: center !important;
+    }
+
+    .text-sm-right {
+        text-align: right !important;
+    }
+}
+
+@include break-md() {
+    .text-md-left {
+        text-align: left !important;
+    }
+
+    .text-md-center {
+        text-align: center !important;
+    }
+
+    .text-md-right {
+        text-align: right !important;
+    }
+}
+
+// Transformation
+.text-lowercase {
+    text-transform: lowercase !important;
+}
+
+.text-uppercase {
+    text-transform: uppercase !important;
+}
+
+.text-capitalize {
+    text-transform: capitalize !important;
+}
+
+// Weight and italics
+.font-weight-bold {
+    font-weight: $font-weight-bold !important;
+}
+
+.font-weight-normal {
+    font-weight: $font-weight-normal !important;
+}
+
+.font-italic {
+    font-style: italic !important;
+}
+
+// Contextual colors
+@mixin text-context-variant($parent, $color) {
+    #{$parent} {
+        color: $color !important;
+    }
+}
+
+@include text-context-variant(".text-white", #fff);
+@include text-context-variant(".text-primary", $brand-primary);
+@include text-context-variant(".text-success", $brand-success);
+@include text-context-variant(".text-info", $brand-info);
+@include text-context-variant(".text-warning", $brand-warning);
+@include text-context-variant(".text-danger", $brand-danger);

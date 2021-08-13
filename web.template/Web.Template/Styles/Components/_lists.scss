@@ -1,0 +1,59 @@
+﻿@import "../variables";
+
+//== Lists Styling
+//
+//## Component specific styling relating to lists used on the website
+
+.list-styled {
+    li {
+        color: $list-primary-color;
+        line-height: 2rem;
+        list-style: none;
+
+        &::before {
+            color: #1c1c1c;
+            content: "\2012 ";
+        }
+    }
+}
+
+.list-styled-condensed {
+    li {
+        line-height: 1.125rem;
+    }
+}
+
+.list-styled-dots {
+    li {
+        color: $list-primary-color;
+        line-height: 2.25rem;
+        list-style: none;
+
+        &::before {
+            color: #1c1c1c;
+            content: "\2022 ";
+        }
+    }
+}
+
+.list-styled-dots-secondary {
+    li {
+        color: $list-primary-color;
+        line-height: 2.25rem;
+        list-style: none;
+
+        &::before {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            margin-right: 15px;
+            border-radius: 50%;
+            background: $link-hover-color;
+            content: " ";
+        }
+    }
+}
+
+.list-no-padding {
+    padding-left: 0;
+}

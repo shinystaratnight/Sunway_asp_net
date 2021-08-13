@@ -1,0 +1,52 @@
+﻿﻿{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "title": "Team Item Visited",
+  "type": "object",
+  "properties": {
+    "Title": {
+      "type": "string"
+    },
+    "VisitedProperties": {
+      "type": "array",
+      "title": "Visited Properties",
+      "description": "List of properties employee has visited",
+      "items": {
+        "type": "object",
+        "properties": {
+          "PropertyId": {
+            "type": "integer",
+            "format": "autocmslookup,propertySummary"
+          }
+        }
+      }
+    },
+    "Configuration": {
+      "type": "object",
+      "title": "Configuration",
+      "description": "Configuration options for the blog list widget",
+      "properties": {
+        "ContainerStyle": {
+          "type": "string",
+          "format": "select",
+          "default": "Default",
+          "enum": [
+            "Default",
+            "Highlight",
+            "Alternate"
+          ]
+        },
+        "ContainerPadding": {
+          "type": "string",
+          "format": "select",
+          "default": "Medium",
+          "enum": [
+            "None",
+            "Small",
+            "Medium",
+            "Large"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,122 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Text Content",
+  "description": "Widget to display text content.",
+  "type": "object",
+  "properties": {
+    "Title": {
+      "type": "string",
+      "default": "Title"
+    },
+    "Message": {
+      "type": "string",
+      "format": "textarea",
+      "description": "Text that appears at the top of the form",
+      "default": ""
+    },
+    "SuccessMessage": {
+      "type": "string",
+      "format": "textarea",
+      "description": "Text that appears at the top of the form when the user successfully submits it",
+      "default": "For contacting us, we will be in touch shortly"
+    },
+    "SuccessTitle": {
+      "type": "string",
+      "description": "Title that appears at the top of the form when the user successfully submits it",
+      "default": "Thankyou"
+    },
+    "ToEmail": {
+      "type": "string",
+      "description": "The email address that submissions of this form will be sent to.",
+      "default": ""
+    },
+    "EmailSubject": {
+      "type": "string",
+      "description": "The title the email will be sent with, use to identity the form",
+      "default": "Form submission"
+    },
+    "FormSections": {
+      "type": "array",
+      "title": "Form Sections",
+      "description": "List of sections of the form, each containing a title, a messaged and a set of inputs",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Title": {
+            "type": "string",
+            "default": "Title"
+          },
+          "Message": {
+            "type": "string",
+            "format": "textarea",
+            "description": "Text that appears at the top of the form",
+            "default": ""
+          },
+          "FormFields": {
+            "type": "array",
+            "title": "Form Fields",
+            "description": "List of fields to display to the user",
+            "items": {
+              "type": "object",
+              "properties": {
+                "Title": {
+                  "type": "string",
+                  "default": ""
+                },
+                "Placeholder": {
+                  "type": "string",
+                  "default": "",
+                  "description": "Text that appears as place holder within the field"
+                },
+                "Type": {
+                  "type": "string",
+                  "format": "select",
+                  "default": "TextBox",
+                  "enum": [
+                    "TextBox",
+                    "Dropdown",
+                    "Password",
+                    "Email",
+                    "PhoneNumber",
+                    "Date",
+                    "MultiSelect"
+                  ]
+                },
+                "Values": {
+                  "type": "string",
+                  "format": "textarea",
+                  "description": "Comma separated list of values, used by drop downs e.g. mr,mrs,miss for a list of titles"
+                },
+                "Required": {
+                  "type": "boolean",
+                  "default": false,
+                  "description": "Tick to force the user to input this field"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "SubmitButton": {
+      "type": "object",
+      "title": "Button",
+      "description": "Button that appears at the end of the form used to submit it",
+      "properties": {
+        "Text": {
+          "type": "string",
+          "default": "Submit"
+        },
+        "Style": {
+          "type": "string",
+          "format": "select",
+          "default": "Default",
+          "enum": [
+            "Default",
+            "Arrow"
+          ]
+        }
+      }
+    }
+  }
+}

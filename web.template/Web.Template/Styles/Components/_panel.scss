@@ -1,0 +1,48 @@
+﻿@import "../mixins/clearfix";
+@import "../variables";
+
+//== Panel Styling
+//
+//## Component specific styling relating to panels used on the website
+
+.panel {
+    margin-bottom: $spacing-md;
+    border: $panel-border;
+    border-radius: $panel-border-radius;
+
+    .panel-header {
+        @include clearfix;
+        padding: $padding-base;
+    }
+
+    .panel-body {
+        @include clearfix;
+        padding: $padding-base;
+        background: $panel-bg;
+    }
+
+    .panel-footer {
+        @include clearfix;
+        padding: $padding-base;
+    }
+
+    &.panel-basic {
+        .panel-header {
+            padding-bottom: 0;
+            background: #fff;
+        }
+        .panel-footer {
+            padding-top: 0;
+            background: #fff;
+        }
+    }
+
+    &.panel-primary {
+        .panel-header {
+            background: $brand-primary;
+            .h-tertiary {
+                color: $body-alt-color;
+            }
+        }
+    }
+}

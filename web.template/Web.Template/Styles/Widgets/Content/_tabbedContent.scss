@@ -1,0 +1,120 @@
+﻿@import "../../variables";
+@import "../../mixins/media";
+@import "../../mixins/sprite";
+
+.widget-tabbed-content {
+
+    &.highlight {
+        background: #fff;
+    }
+
+    &.v-padding-top {
+        padding-top: 60px;
+    }
+   
+    .tabbed-content {
+        padding: 20px 0;
+        background: #fff;
+    }
+
+    .nav-tabs {
+        height: unset;
+
+        .nav {
+            height: 45px;
+        }
+
+        &.align-tabs-left {
+            text-align: left;
+        }
+        }
+
+    &.widget-tabbed-content-alt {
+        .tab-item {
+            padding: 1px;
+            .tab-link {
+                background: rgba(0, 0, 0, 0.5);
+                color: #fff;
+            }
+            .active {
+                padding-bottom: 1px;
+                background: #1c1c1c;
+            }
+        }
+    }
+
+    .tabbed-content-alt {
+        background: #1c1c1c;
+    }
+
+    @include break-md() {
+        .tabbed-content {
+            padding: 60px 0;
+        }
+    }
+}
+
+.experience {
+    margin: 0 7px;
+    margin-bottom: 20px;
+
+    .experience-image {
+        display: block;
+        width: 100%;
+    }
+
+    .experience-content {
+        padding: 30px;
+        border: 1px solid #dcdcdc;
+        border-top: none;
+    }
+
+    .h-tertiary {
+        margin-bottom: 5px;
+    }
+
+    .rating {
+        margin-bottom: 10px;
+    }
+
+    .offer-description {
+        margin-bottom: 20px;
+    }
+
+    .experience-offer {
+        position: relative;
+        padding-top: 20px;
+        border-top: 1px solid #dcdcdc;
+        cursor: pointer;
+
+        &::after {
+            @include sprite(-450px, -30px);      
+            display: inline-block;
+            position: absolute;
+            top: 26px;
+            right: 0;
+            margin: 0;
+            content: " ";
+        }
+
+        &:hover {
+
+            .experience-offer-link {
+                color: $link-hover-color;
+            }
+
+            &::after {
+                @include sprite(-450px, -60px);
+            }
+        }
+    }
+
+    .experience-offer-link {
+        display: block;
+        width: 150px;
+        font-family: $link-font-stack;
+        font-size: $link-font-size;
+        font-weight: $link-font-weight;
+    }
+
+}

@@ -1,0 +1,15 @@
+﻿@import "../../mixins/media";
+
+.widget-agentlogin {
+    padding: 0;
+    
+    .form .btn {
+        width: 100%;
+    }
+
+    @include break-sm {
+        .form .btn {
+            width: auto;
+        }
+    }
+}

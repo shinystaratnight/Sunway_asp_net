@@ -1,0 +1,173 @@
+﻿{
+    "Id": 0,
+    "Name": "Country",
+    "Sections": [
+        {
+            "Id": 1,
+            "Name": "header",
+            "Widgets": [
+                {
+                    "Id": 1,
+                    "Name": "SiteBuilderToolbar",
+                    "ServerSideRender": false,
+                    "ClientSideRender": true,
+                    "Access": "AdminLoggedIn"
+                },
+                {
+                    "Id": 1,
+                    "Name": "Header",
+                    "Context": "default",
+                    "ServerSideRender": true,
+                    "ClientSideRender": true
+                }
+            ]
+        },
+        {
+            "Id": 2,
+            "Name": "main",
+            "Widgets": [
+                {
+                    "Id": 1,
+                    "Name": "WidgetEdit",
+                    "ServerSideRender": false,
+                    "ClientSideRender": true,
+                    "Access": "AdminLoggedIn"
+                },
+                {
+                    "Id": 2,
+                    "Name": "StaticHeroImage",
+                    "Context": "country-hero-image",
+                    "ServerSideRender": true,
+                    "ClientSideRender": true,
+                    "EntitySpecific": true
+                },
+                {
+                    "Id": 3,
+                    "Name": "StickyNav",
+                    "Context": "country-sticky-nav",
+                    "ServerSideRender": false,
+                    "ClientSideRender": true,
+                    "EntitySpecific": false
+                },
+                {
+                    "Id": 4,
+                    "Name": "SubNavigation",
+                    "Context": "default",
+                    "ServerSideRender": true,
+                    "ClientSideRender":  false,
+                    "EntitySpecific": false
+                },
+                {
+                    "Id": 5,
+                    "Name": "SimpleTextContent",
+                    "Context": "country-overview",
+                    "EntitySpecific": true,
+                    "ServerSideRender": true,
+                    "ClientSideRender": false
+                },
+                {
+                    "Id": 6,
+                    "Name": "CarouselContent",
+                    "Context": "country-selling-points",
+                    "ServerSideRender": false,
+                    "ClientSideRender": true,
+                    "EntitySpecific": true
+                },
+                {
+                    "Id": 7,
+                    "Name": "AlternatedGeoContent",
+                    "Context": "country-sub-regions",
+                    "EntitySpecific": true,
+                    "ClientSideRender": true,
+                    "ServerSideRender": false
+                },
+                //{
+                //    "Id": 8,
+                //    "Name": "CarouselContent",
+                //    "Context": "country-travel-made-beautiful",
+                //    "ServerSideRender": false,
+                //    "ClientSideRender": true,
+                //    "EntitySpecific": true
+                //},
+                {
+                    "Id": 9,
+                    "Name": "SpecialOffers",
+                    "Context": "country-featured-hotels",
+                    "ServerSideRender": false,
+                    "ClientSideRender": true,
+                    "EntitySpecific": true
+                },
+                //{
+                //    "Id": 10,
+                //    "Name": "SpecialOffers",
+                //    "Context": "country-special-offers",
+                //    "ServerSideRender": false,
+                //    "ClientSideRender": true,
+                //    "EntitySpecific": true
+                //},
+                {
+                    "Id": 11,
+                    "Name": "TextContent",
+                    "Context": "country-highlights",
+                    "EntitySpecific": true,
+                    "ServerSideRender": true,
+                    "ClientSideRender": false
+                },
+                //{
+                //    "Id": 12,
+                //    "Name": "ExpertOpinionCarousel",
+                //    "Context": "country-expert-opinion",
+                //    "EntitySpecific": true,
+                //    "ServerSideRender": false,
+                //    "ClientSideRender": true
+                //},
+                {
+                    "Id": 13,
+                    "Name": "SimpleTextContent",
+                    "Context": "country-when-to-visit",
+                    "EntitySpecific": true,
+                    "ServerSideRender": true,
+                    "ClientSideRender": false
+                },
+                {
+                    "Id": 14,
+                    "Name": "KeyValueItems",
+                    "Context": "country-useful-information",
+                    "EntitySpecific": true,
+                    "ServerSideRender": false,
+                    "ClientSideRender": true
+                },
+                {
+                    "Id": 15,
+                    "Name": "RedirectEdit",
+                    "ServerSideRender": false,
+                    "ClientSideRender": true,
+                    "Access": "AdminLoggedIn"
+                }
+
+            ]
+        },
+        {
+            "Id": 1,
+            "Name": "footer",
+            "Widgets": [
+                {
+                    "Id": 1,
+                    "Name": "NewsletterSignup",
+                    "Context": "default",
+                    "ServerSideRender": true,
+                    "ClientSideRender": false
+                },
+                {
+                    "Id": 2,
+                    "Name": "Footer",
+                    "Context": "default",
+                    "ServerSideRender": true
+                }
+            ]
+        }
+    ],
+    "Template": "FullContent",
+    "EntityType": "country",
+    "url": "country"
+}

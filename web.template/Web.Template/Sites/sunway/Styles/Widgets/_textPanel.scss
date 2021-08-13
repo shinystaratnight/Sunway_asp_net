@@ -1,0 +1,23 @@
+﻿@import "../../../../styles/Mixins/media";
+#widget-textpanel-container-home-panel-text .panel-body {
+    min-height: 246px;
+}
+
+#widget-textpanel-container-login-text-primary .panel-body {
+    min-height: 186px;
+}
+
+
+#widget-awardspanel-container-login-awards .panel-body {
+    min-height: 310px;
+}
+
+@include break-lg() {
+    #widget-textpanel-container-home-panel-text .panel-body {
+        min-height: 272px;
+    }
+
+    #widget-awardspanel-container-login-awards .panel-body {
+        min-height: 288px;
+    }
+}

@@ -1,0 +1,51 @@
+﻿﻿{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title": "Team Item",
+  "description": "Widget to display staff member details",
+  "type": "object",
+  "properties": {
+    "UpperText": {
+      "type": "string",
+      "description": "Name and job description of employee",
+      "format": "textarea"
+    },
+    "LowerText": {
+      "type": "string",
+      "description": "Employee description",
+      "format": "textarea"
+    },
+    "Image": {
+      "type": "string",
+      "format": "image"
+    },
+    "Recommendation": {
+      "title": "Recommendation",
+      "description" : "Travel recommendation from employee",
+      "type": "object",
+      "properties": {
+        "PropertyId": {
+          "type": "integer",
+          "format": "autocmslookup,propertySummary"
+        },
+        "Text": {
+          "type": "string",
+          "description": "Employee recommendations",
+          "format": "textarea"
+        }
+      }
+    },
+    "Configuration": {
+      "type": "object",
+      "title": "Configuration",
+      "description": "Configuration options for the text content widget",
+      "properties": {
+        "ContainerStyle": {
+          "type": "string",
+          "format": "select",
+          "default": "Default",
+          "enum": [ "Default", "Highlight", "Alternate" ]
+        }
+      }
+    }
+  }
+}

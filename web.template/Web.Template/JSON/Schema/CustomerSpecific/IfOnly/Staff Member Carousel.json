@@ -1,0 +1,65 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Staff Member Carousel",
+  "type": "object",
+  "properties": {
+    "Title": {
+        "type": "string"
+    },
+    "LeadParagraph": {
+        "type": "string",
+        "format": "textarea",
+        "description": "Larger styled paragraph to appear before the carousel items."
+    },
+    "StaffMembers": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "automulticontextlookup,staffmember"
+      }
+    },
+    "Button": {
+        "type": "object",
+        "title": "Button",
+        "description": "Optional button to appear at the bottom of the content.",
+        "properties": {
+            "Text": { "type": "string" },
+            "URL": { "type": "string" },
+            "Style": {
+                "type": "string",
+                "format": "select",
+                "default": "Default",
+                "enum": [ "Default", "Arrow" ]
+            }
+        }
+    },
+    "Configuration": {
+      "type": "object",
+      "title": "Configuration",
+      "description": "Configuration options",
+      "properties": {
+        "ContainerStyle": {
+          "type": "string",
+          "format": "select",
+          "default": "Default",
+          "enum": [
+            "Default",
+            "Highlight",
+            "Alternate"
+          ]
+        },
+        "ContainerPadding": {
+          "type": "string",
+          "format": "select",
+          "default": "Medium",
+          "enum": [
+            "None",
+            "Small",
+            "Medium",
+            "Large"
+          ]
+        }
+      }
+    }
+  }
+}

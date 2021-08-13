@@ -1,0 +1,16 @@
+﻿@import "../variables";
+
+$grid-x-count: 20;
+$grid-y-count: 14;
+
+@mixin sprite($x-offset, $y-offset, $size: 30px, $color: "") {
+    width: $size;
+    height: $size;
+
+    @if $color != "" {
+        background: $color url($sprite-image) no-repeat $x-offset $y-offset;
+    } @else {
+        background: url($sprite-image) no-repeat $x-offset $y-offset;
+    }
+    background-size: ($size * $grid-x-count) ($size * $grid-y-count) !important;
+}
