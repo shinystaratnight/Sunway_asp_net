@@ -1,0 +1,7 @@
+web.template.application.tests/bin/
+web.template.application/bin/
+web.template.application/packages/
+web.template.application/packages/*
+web.template.application/obj/
+web.template.application.tests/obj/
+*.user

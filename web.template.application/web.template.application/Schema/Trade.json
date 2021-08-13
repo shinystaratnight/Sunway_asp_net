@@ -1,0 +1,123 @@
+﻿{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "title": "Trade",
+    "type": "object",
+    "properties": {
+        "Logo": {
+            "type": "string",
+            "format": "image"
+        },
+        "Contact": {
+            "type": "object",
+            "title": "Contact",
+            "description": "Contact information displayed on the website",
+            "properties": {
+                "PhoneNumber": {
+                    "type": "string"
+                },
+                "Address": {
+                    "type": "string"
+                },
+                "Email": {
+                    "type": "string"
+                },
+                "CallUsText": {
+                    "type": "string",
+                    "default": "Call us on"
+                }
+            }
+        },
+        "Header": {
+            "type": "object",
+            "title": "Header",
+            "description": "Options for the header on the website",
+            "properties": {
+                "Header": {
+                    "type": "string"
+                },
+                "HeaderColour": {
+                    "type": "string"
+                },
+                "BackgroundColour": {
+                    "type": "string"
+                },
+                "FontColour": {
+                    "type": "string"
+                },
+                "Navigation": {
+                    "type": "object",
+                    "title": "Navigation",
+                    "description": "Options for the navigation that appears in the header.",
+                    "properties": {
+                        "BackgroundColour": {
+                            "type": "string"
+                        },
+                        "FontColour": {
+                            "type": "string"
+                        },
+                        "ActiveBackgroundColour": {
+                            "type": "string"
+                        },
+                        "ActiveFontColour": {
+                            "type": "string"
+                        },
+                        "Links": {
+                            "type": "array",
+                            "minItems": 1,
+                            "uniqueItems": true,
+                            "title": "Links",
+                            "description": "Links to appear on the navigation bar in the header",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "Name": {
+                                        "type": "string"
+                                    },
+                                    "Url": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "Footer": {
+            "type": "object",
+            "title": "Footer",
+            "description": "Options for the footer on the website",
+            "properties": {
+                "BackgroundColour": {
+                    "type": "string"
+                },
+                "FontColour": {
+                    "type": "string"
+                },
+                "Links": {
+                    "type": "array",
+                    "title": "Links",
+                    "description": "Links that will appear in the top section of the footer.",
+                    "minItems": 1,
+                    "uniqueItems": true,
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "Name": {
+                                "type": "string"
+                            },
+                            "Url": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+                "Terms": {
+                    "type": "string",
+                    "description": "Text that will appear at the bottom of the footer such as copyright information."
+
+                }
+            }
+        }
+    }
+}

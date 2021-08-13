@@ -1,0 +1,367 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title": "Site Settings",
+  "description": "Generic settings that apply across the website.",
+  "type": "object",
+  "properties": {
+    "BrandId": {
+      "type": "integer",
+      "format": "selectlookup,booking/brand"
+    },
+    "DefaultCurrency": {
+      "type": "object",
+      "properties": {
+        "CurrencyCode": {
+          "type": "string",
+          "format": "selectlookup,payment/currency,CurrencyCode"
+        }
+      }
+    },
+    "DefaultLanguage": {
+      "type": "object",
+      "properties": {
+        "CultureCode": {
+          "type": "string",
+          "format": "selectlookup,booking/language,CultureCode"
+        }
+      }
+    },
+    "DefaultPage": {
+      "type": "string"
+    },
+    "IvectorConnectConfiguration": {
+      "type": "object",
+      "title": "IvectorConnect Configuration",
+      "description": "",
+      "properties": {
+        "BaseUrl": {
+          "type": "string"
+        },
+        "Username": {
+          "type": "string"
+        },
+        "Password": {
+          "type": "string"
+        },
+        "ContentUsername": {
+          "type": "string"
+        },
+        "ContentPassword": {
+          "type": "string"
+        }
+      }
+    },
+    "OriginUrl": {
+      "type": "string",
+      "description": "Url that the website will redirect to when there is a failure"
+    },
+    "BookingJourneyConfiguration": {
+      "type": "object",
+      "title": "Booking Journey Configuration",
+      "description": "",
+      "properties": {
+        "SearchModes": {
+          "type": "array",
+          "title": "Search Modes",
+          "description": "Configure search modes that will be used on the website.",
+          "items": {
+            "type": "object",
+            "properties": {
+              "Mode": {
+                "type": "string",
+                "format": "select",
+                "enum": [
+                  "FlightPlusHotel",
+                  "Hotel",
+                  "Flight",
+                  "Transfer"
+                ]
+              },
+              "Pages": {
+                "type": "array",
+                "format": "multiselect",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "results",
+                    "details",
+                    "extras",
+                    "payment",
+                    "confirmation"
+                  ]
+                }
+              },
+              "UpsellItems": {
+                "type": "array",
+                "format": "multiselect",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "Baggage",
+                    "Transfers",
+                    "Extras",
+                    "CarHire",
+                    "AirportParking",
+                    "Insurance"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "OnRequestDisplay": {
+          "type": "string",
+          "format": "select",
+          "default": "None",
+          "enum": [
+            "None"
+          ],
+          "description": "Show on request results on website booking search"
+        },
+        "ThreeDSecureProvider": {
+          "type": "string",
+          "format": "select",
+          "default": "None",
+          "enum": [
+            "None",
+            "Adyen",
+            "Barclays",
+            "Ogone",
+            "Realex"
+          ]
+        },
+        "ChangeFlightPages": {
+          "type": "array",
+          "format": "multiselect",
+          "items": {
+            "type": "string",
+            "enum": [
+              "results",
+              "details"
+            ]
+          }
+        },
+        "DefaultDepositPayment": {
+          "type": "boolean",
+          "format": "select",
+          "default": false,
+          "description": "Sets whether the deposit or full amount is the default selected option"
+        },
+        "PaymentUrl": {
+          "type": "string",
+          "format": "select",
+          "default": "payment",
+          "description": "Sets the URL of the Payment page",
+          "enum": [
+            "payment",
+            "conditions"
+          ]
+        }
+      }
+    },
+    "DateConfiguration": {
+      "type": "object",
+      "title": "Date Configuration",
+      "description": "",
+      "properties": {
+        "DatePickerFirstDay": {
+          "type": "string",
+          "format": "select",
+          "enum": [
+            "Sunday",
+            "Monday"
+          ]
+        },
+        "DatePickerDropdowns": {
+          "type": "boolean",
+          "description": "Controls whether the month and year dropdowns are displayed on the date picker control."
+        },
+        "DatePickerMonths": {
+          "type": "integer",
+          "format": "select",
+          "description": "Controls whether 1 or 2 months are displayed on the date picker control.",
+          "enum": [
+            1,
+            2
+          ]
+        }
+      }
+    },
+    "PricingConfiguration": {
+      "type": "object",
+      "title": "Pricing Configuration",
+      "description": "Controls how prices are displayed across the website.",
+      "properties": {
+        "PackagePrice": {
+          "type": "boolean"
+        },
+        "PerPersonPricing": {
+          "type": "boolean"
+        },
+        "PerPersonPriceFormat": {
+          "type": "string",
+          "format": "select",
+          "default": "TwoDP",
+          "enum": [
+            "TwoDP",
+            "Rounded"
+          ]
+        },
+        "PriceFormat": {
+          "type": "string",
+          "format": "select",
+          "enum": [
+            "TwoDP",
+            "Rounded"
+          ]
+        },
+        "ShowGroupSeparator": {
+          "type": "boolean"
+        }
+      }
+    },
+    "SearchConfiguration": {
+      "type": "object",
+      "title": "Search Configuration",
+      "description": "Site settings relating to Search",
+      "properties": {
+        "SearchModes": {
+          "type": "array",
+          "title": "Search Modes",
+          "description": "Search modes that will be enabled on the website and will appear on the search tool."
+        },
+        "PackageSearch": {
+          "type": "boolean",
+          "description": "Sets flight plus hotel search mode to use the package search."
+        },
+        "SearchBookAhead": {
+          "type": "integer",
+          "description": "The minimum days ahead searches are allowed for. 0 = today, 1 = tomorrow etc."
+        },
+        "SearchExpiry": {
+          "type": "integer",
+          "description": "Number of minutes a user's search will saved for."
+        },
+        "FailedSearchUrl": {
+          "type": "string",
+          "description": "Url that the website will redirect to when the search has failed."
+        },
+        "SearchBookingAdjustments": {
+          "type": "boolean",
+          "format": "select",
+          "default": false,
+          "description": "Sets whether booking adjustments are searched for to include in the displayed prices before pre book."
+        }
+      }
+    },
+    "FlightConfiguration": {
+      "type": "object",
+      "title": "Flight Configuration",
+      "description": "Configuration options specific to flights",
+      "properties": {
+        "ShowFlightExtras": {
+          "type": "boolean"
+        }
+      }
+    },
+    "TradeConfiguration": {
+      "type": "object",
+      "title": "Trade Configuration",
+      "description": "Configuration options specific to trade",
+      "properties": {
+        "DisplayDirectDebits": {
+          "type": "boolean",
+          "default": false,
+          "description": "Sets whether direct debits are displayed on the manage bookings page"
+        }
+      }
+    },
+    "TwitterConfiguration": {
+      "type": "object",
+      "title": "Twitter Configuration",
+      "description": "Credentials to access the Twitter Api",
+      "properties": {
+        "AccessToken": {
+          "type": "string"
+        },
+        "AccessTokenSecret": {
+          "type": "string"
+        },
+        "ConsumerKey": {
+          "type": "string"
+        },
+        "ConsumerSecret": {
+          "type": "string"
+        },
+        "TwitterHandle": {
+          "type": "string"
+        }
+      }
+    },
+    "MapConfiguration": {
+      "type": "object",
+      "title": "Map Configuration",
+      "description": "Configuration options for maps on the website.",
+      "properties": {
+        "Key": {
+          "type": "string"
+        }
+      }
+    },
+    "CmsConfiguration": {
+      "type": "object",
+      "title": "CMS Configuration",
+      "description": "Configuration options for cms content on the website.",
+      "properties": {
+        "BaseUrl": {
+          "type": "string"
+        }
+      }
+    },
+    "StarRatingConfiguration": {
+      "type": "object",
+      "title": "Star Rating Configuration",
+      "description": "Controls how star ratings appear on the website",
+      "properties": {
+        "DisplayHalfRatings": {
+          "type": "boolean",
+          "default": true,
+          "description": "Sets whether half stars are displayed on the website. If false the rating will be rounded down e.g. 3.5 stars displayed as 3 stars."
+        },
+        "AppendText": {
+          "type": "array",
+          "title": "Append Text",
+          "description": "Text that will be displayed after the rating.",
+          "items": {
+            "type": "object",
+            "properties": {
+              "Rating": {
+                "type": "number",
+                "format": "select",
+                "enum": [
+                  0.5,
+                  1,
+                  1.5,
+                  2,
+                  2.5,
+                  3,
+                  3.5,
+                  4,
+                  4.5,
+                  5,
+                  5.5,
+                  6
+                ]
+              },
+              "Text": {
+                "type": "string",
+                "format": "textarea"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}

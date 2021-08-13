@@ -1,0 +1,35 @@
+<StyleCopSettings Version="105">
+  <GlobalSettings>
+    <StringProperty Name="LinkedSettingsFile">\\uranus\Data\Development\Dev Settings\Settings.StyleCop</StringProperty>
+    <StringProperty Name="MergeSettingsFiles">Linked</StringProperty>
+    <CollectionProperty Name="RecognizedWords">
+      <Value>abtaatol</Value>
+      <Value>cms</Value>
+      <Value>ip</Value>
+      <Value>Ip</Value>
+      <Value>IP</Value>
+      <Value>ivector</Value>
+      <Value>ivectorconnect</Value>
+      <Value>json</Value>
+      <Value>prebook</Value>
+      <Value>prebooked</Value>
+      <Value>sitebuilder</Value>
+      <Value>subwidget</Value>
+      <Value>subwidgets</Value>
+      <Value>ui</Value>
+      <Value>widget</Value>
+      <Value>widgets</Value>
+    </CollectionProperty>
+  </GlobalSettings>
+  <Analyzers>
+    <Analyzer AnalyzerId="StyleCop.CSharp.NamingRules">
+      <AnalyzerSettings>
+        <CollectionProperty Name="Hungarian">
+          <Value>iv</Value>
+          <Value>iV</Value>
+          <Value>IV</Value>
+        </CollectionProperty>
+      </AnalyzerSettings>
+    </Analyzer>
+  </Analyzers>
+</StyleCopSettings>
